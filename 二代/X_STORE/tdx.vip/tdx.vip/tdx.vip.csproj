@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9DEEBCB-1CBB-424F-8C76-FDF5BF28E4A1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tdx.vip</RootNamespace>
+    <AssemblyName>tdx.vip</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vip\coupon.aspx" />
+    <Content Include="vip\css\comm.css" />
+    <Content Include="vip\css\coupon.css" />
+    <Content Include="vip\css\log.css" />
+    <Content Include="vip\css\myhome.css" />
+    <Content Include="vip\css\orders.css" />
+    <Content Include="vip\css\privilege.css" />
+    <Content Include="vip\css\promptumenu.css" />
+    <Content Include="vip\css\redeem.css" />
+    <Content Include="vip\css\regvip.css" />
+    <Content Include="vip\css\share.css" />
+    <Content Include="vip\image\bgBody.jpg" />
+    <Content Include="vip\image\bgFooter.png" />
+    <Content Include="vip\image\bgVIPCard.png" />
+    <Content Include="vip\image\couponCustom.png" />
+    <Content Include="vip\image\pagination1.png" />
+    <Content Include="vip\image\pagination2.png" />
+    <Content Include="vip\image\pinkCoupon.png" />
+    <Content Include="vip\image\purpleCoupon.png" />
+    <Content Include="vip\image\redCoupon.png" />
+    <Content Include="vip\image\vip_icon.png" />
+    <Content Include="vip\js\jquery-1.11.0.min.js" />
+    <Content Include="vip\js\jquery.promptu-menu.js" />
+    <Content Include="vip\log.aspx" />
+    <Content Include="vip\myhome.aspx" />
+    <Content Include="vip\orders.aspx" />
+    <Content Include="vip\privilege.aspx" />
+    <Content Include="vip\redeem.aspx" />
+    <Content Include="vip\regvip.aspx" />
+    <Content Include="vip\share.aspx" />
+    <Content Include="vip\vipFooter.ascx" />
+    <Content Include="vip\vip_Goods_Show.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vip\coupon.aspx.cs">
+      <DependentUpon>coupon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vip\coupon.aspx.designer.cs">
+      <DependentUpon>coupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\getmsg.ashx.cs">
+      <DependentUpon>getmsg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\log.aspx.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vip\log.aspx.designer.cs">
+      <DependentUpon>log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\myhome.aspx.cs">
+      <DependentUpon>myhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vip\myhome.aspx.designer.cs">
+      <DependentUpon>myhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\orders.aspx.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vip\orders.aspx.designer.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\privilege.aspx.cs">
+      <DependentUpon>privilege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vip\privilege.aspx.designer.cs">
+      <DependentUpon>privilege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\redeem.aspx.cs">
+      <DependentUpon>redeem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vip\redeem.aspx.designer.cs">
+      <DependentUpon>redeem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\redeemAjax.ashx.cs">
+      <DependentUpon>redeemAjax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\redeemGoCart.ashx.cs">
+      <DependentUpon>redeemGoCart.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\regvip.aspx.cs">
+      <DependentUpon>regvip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vip\regvip.aspx.designer.cs">
+      <DependentUpon>regvip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\share.aspx.cs">
+      <DependentUpon>share.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vip\share.aspx.designer.cs">
+      <DependentUpon>share.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\vipFooter.ascx.cs">
+      <DependentUpon>vipFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vip\vipFooter.ascx.designer.cs">
+      <DependentUpon>vipFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vip\vip_Goods_Show.aspx.cs">
+      <DependentUpon>vip_Goods_Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vip\vip_Goods_Show.aspx.designer.cs">
+      <DependentUpon>vip_Goods_Show.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vip\getmsg.ashx" />
+    <Content Include="vip\redeemAjax.ashx" />
+    <Content Include="vip\redeemGoCart.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Creatrue.Common\Creatrue.Common\Creatrue.Common.csproj">
+      <Project>{5183A7C2-23FD-4A06-BFB6-6DCA5905A44A}</Project>
+      <Name>Creatrue.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Creatrue.kernel\Creatrue.kernel\Creatrue.kernel.csproj">
+      <Project>{D27829F1-A736-4EB0-8A69-1B421362740E}</Project>
+      <Name>Creatrue.kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tdx.database\tdx.database\tdx.database.csproj">
+      <Project>{E4DEEE0D-3D80-485B-BB0E-5BC81BD4C84E}</Project>
+      <Name>tdx.database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tdx.Weixin\tdx.Weixin\tdx.Weixin.csproj">
+      <Project>{A19EC680-F471-4F67-83A1-EC6BC74D8559}</Project>
+      <Name>tdx.Weixin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>36705</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

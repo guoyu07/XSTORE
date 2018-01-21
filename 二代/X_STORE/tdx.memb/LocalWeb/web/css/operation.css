@@ -1,0 +1,48 @@
+.topTitle {
+  width: 94%;
+  padding: 10px 3%; }
+  .topTitle img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    margin-right: 10px; }
+  .topTitle .disInfo {
+    font: 14px/40px "microsoft yahei";
+    color: #000; }
+
+ul {
+  width: 100%; }
+  ul li {
+    width: 94%;
+    padding: 6px 3%;
+    border-bottom: solid 1px #ccc; }
+    ul li .l, ul li .r {
+      font: 16px/30px "microsoft yahei";
+      color: #333; }
+  ul .faultStatus a {
+    width: 100%; }
+    ul .faultStatus a .l, ul .faultStatus a .r {
+      font: 16px/30px "microsoft yahei";
+      color: #333; }
+
+.btnWrap {
+  width: 94%;
+  padding: 10px 3%; }
+  .btnWrap a {
+    display: inline-block;
+    font: 16px/40px "microsoft yahei";
+    color: #fff;
+    background: #ef473a;
+    text-align: center;
+    width: 100%;
+    border-radius: 2px; }
+
+.thead {
+  width: 94%;
+  padding: 0 3%;
+  background: #ccc;
+  border-bottom: solid 1px #ccc;
+  font: 14px/30px "microsoft yahei";
+  color: #f60;
+  text-align: left; }

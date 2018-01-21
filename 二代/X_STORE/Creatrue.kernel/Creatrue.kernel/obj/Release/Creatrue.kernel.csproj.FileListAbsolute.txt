@@ -1,0 +1,17 @@
+F:\xxc\幸事多\Creatrue.kernel\Creatrue.kernel\obj\Release\Creatrue.kernel.csprojResolveAssemblyReference.cache
+F:\xxc\幸事多\Creatrue.kernel\Creatrue.kernel\bin\Release\Creatrue.kernel.dll
+F:\xxc\幸事多\Creatrue.kernel\Creatrue.kernel\bin\Release\Creatrue.kernel.pdb
+F:\xxc\幸事多\Creatrue.kernel\Creatrue.kernel\bin\Release\ThoughtWorks.QRCode.dll
+F:\xxc\幸事多\Creatrue.kernel\Creatrue.kernel\obj\Release\Creatrue.kernel.dll
+F:\xxc\幸事多\Creatrue.kernel\Creatrue.kernel\obj\Release\Creatrue.kernel.pdb
+F:\xxc\XingShiDuo\Creatrue.kernel\Creatrue.kernel\bin\Release\Creatrue.kernel.dll
+F:\xxc\XingShiDuo\Creatrue.kernel\Creatrue.kernel\bin\Release\Creatrue.kernel.pdb
+F:\xxc\XingShiDuo\Creatrue.kernel\Creatrue.kernel\bin\Release\ThoughtWorks.QRCode.dll
+F:\xxc\XingShiDuo\Creatrue.kernel\Creatrue.kernel\obj\Release\Creatrue.kernel.dll
+F:\xxc\XingShiDuo\Creatrue.kernel\Creatrue.kernel\obj\Release\Creatrue.kernel.pdb
+F:\xxc\XingShiDuo\Creatrue.kernel\Creatrue.kernel\obj\Release\Creatrue.kernel.csprojResolveAssemblyReference.cache
+E:\iM\OneDrive\X_STORE\Creatrue.kernel\Creatrue.kernel\bin\Release\Creatrue.kernel.dll
+E:\iM\OneDrive\X_STORE\Creatrue.kernel\Creatrue.kernel\bin\Release\Creatrue.kernel.pdb
+E:\iM\OneDrive\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Release\Creatrue.kernel.csproj.CoreCompileInputs.cache
+E:\iM\OneDrive\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Release\Creatrue.kernel.dll
+E:\iM\OneDrive\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Release\Creatrue.kernel.pdb

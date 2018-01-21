@@ -1,0 +1,189 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>灵山_列表页</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/respond.src.js"></script>
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="js/jqurey.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!--列表页下拉-->
+    <script src="js/common.js"></script>
+
+    <!--手机导航按钮-->
+    <script src="js/pc_phone.js"></script>
+
+
+    <!--轮播大图-->
+    <script src="js/slider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.banner .list').bxSlider({
+                auto: true
+            });
+        });
+
+    </script>
+
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script><!--tabs选项卡-->
+    <script>  $(function () { $(".tabs").tabs({ event: "mouseover" }); });  </script>
+    <style type="text/css">
+        .shop li.ui-tabs-active {
+            background-color: #bf2b2b;
+        }
+
+            .shop li.ui-tabs-active a {
+                color: #fff;
+            }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById('weixin');
+            var b = document.getElementById('wxm');
+            a.onmouseover = function () {
+                b.style.display = 'block';
+            }
+            a.onmouseout = function () {
+                b.style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+    <body class="style_body">
+
+        <!-- 头部导航开始 -->
+        <div class="top_menu">
+            <div class="logo_img"><img src="images/logo_s.png" /></div>
+            <div class="wrap clear mainNav">
+                <div class="row slide_l">
+                    <div class="clear">
+                        <div class="nav_toggle">
+                            <span class=""></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                    </div>
+                    <div class="nav_bg1">
+                        <ul class="navs clear ">
+                            <li class="first"><a href="index.html"  class="active">首页</a></li><li><a href="ProList_001005_l_1.html">旅游商业规划</a></li><li><a href="ProList_001006_l_1.html">旅游商业策划</a></li><li><a href="ProList_001007_l_1.html">旅游商业场景</a></li><li><a href="ProList_001008_l_1.html">旅游商业体验</a></li><li><a href="ProList_001009_l_1.html">旅游商品研发</a></li><li><a href="ProList_001010_l_1.html">旅游商业管理</a></li><li class="last"><a href="about_001_d_10.html">关于我们</a></li><li class="last"><a href="ProList_001011_l_1.html">项目案例</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                //绑定滚动条事件
+                $(window).bind("scroll", function () {
+                    var sTop = $(window).scrollTop();
+                    var sTop = parseInt(sTop);
+                    if (sTop >= 70) {
+                        $('.top_menu').addClass("headbg");
+                        $('.logo2').addClass("logo");
+                        $('.logo_img').addClass("logo_img_block");
+                    }
+                    else {
+                        $('.top_menu').removeClass("headbg");
+                        $('.logo2').removeClass("logo");
+                        $('.logo_img').removeClass("logo_img_block");
+                    }
+                });
+            })
+        </script>
+        <!-- 头部导航结束 -->
+        <!-- 轮播大图开始 -->
+        <div class="banner">
+            <ul class="list">
+                <li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/20151120920230.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701010.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701110.jpg></a></li>
+            </ul>
+        </div>
+
+        <!-- 轮播大图结束 -->
+        <!-- 当前位置开始 -->
+        <div class=" box_b">
+            <div class="wrap clear">
+                <div class="selects clear">
+                    <ul class="clear">
+                        <li class="li1">
+                            <div class="dv_select">
+                                <span>旅游商业体验</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dv_select">
+                                <span class="shows">旅游商业体验</span><div class="slids width1"><a href=Pro_001008_d_194.html class="select">旅游商业体验</a><a href=Pro_001008_d_195.html>旅游商业活动</a></div></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mianbao">
+                        <span class="weizhi">当前位置：</span><a href="index.html">首页</a>&gt;<span>旅游商业体验</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 当前位置开始 -->
+        <!--内页正文开始-->
+        <div class="box_t">
+            <div class="wrap">
+                <div class="content clear">
+                    <p style="text-align: center;"><img src="/Upload/FCKEditor/201511/23/ls6.jpg" width="785" height="487" alt="" /></p>
+<p>那么，闻名遐迩的灵山大佛有什么特别之处呢？有哪些特殊的因缘际会呢？</p>
+<p>首先，大佛所在位置系由唐玄奘命名的小灵山，故名灵山大佛。其次，灵山大佛是在德高望重的原中国佛教协会会长赵朴初先生亲自主持下建造起来的，得到了中国佛教界以及社会各界的鼎力襄助。在灵山大佛建设过程中，赵朴初先生还提出了神州&ldquo;五方五佛&rdquo;的理念――伴随着灵山大佛的建成，得以圆满了东方灵山大佛、南方天坛大佛、西方乐山大佛、北方云冈大佛、中原龙门大佛之&ldquo;五方五佛&rdquo;的格局。作为目前世界上最高大的露天青铜释迦牟尼立像，灵山大佛比四川乐山大佛还要高17米，由1560块青铜壁板拼装焊接而成的，总用铜量达到了700多吨，全部铜板展开面积可达到9000多平方米，焊接它们的焊缝总长度达了35公里。在大佛的建造过程中，运用了现代高新科技，如先进的抗风、防震、避雷等措施，其中，避雷针就被巧妙的藏在大佛的发髻里。由于使用了特型铜壁板和先进的焊接技术，大佛的外型达到&ldquo;天衣无缝&rdquo;的程度。大佛右手指天，称为&ldquo;施无畏印&rdquo;，那是大佛在为众生除去痛苦；左手指地，称为&ldquo;与愿印&rdquo;，那是在保佑众生平安快乐。庄严安详的大佛，时时刻刻都在祝福我们呢。可以说，灵山大佛是集文化、艺术和宗教于一体的大型艺术珍品。 如此浩大的工程，也只有在我们现在这样国泰民安、国富民强的盛世，才能实现这一盛举。</p>
+<p>不知道大家在朝拜大佛时是否注意到――瞻仰大佛，不论您走近走远，或左或右，大佛的&ldquo;眼神&rdquo;总跟随着你，关注着你。这是为什么呢？难道&ldquo;佛眼&rdquo;真的会&ldquo;动&rdquo;，难道是&ldquo;佛法无边，无所不见&rdquo;么？其实是雕塑家的神来之笔和建设过程中的天作之合，创造了如此神奇的效果。关于灵山大佛的神奇，在民间和游客、信众中还有许多传说，例如灵山大佛开光时的奇异瑞象、太子像开光千僧大法会时的祥瑞天气等等，如果您有兴趣，不妨前来灵山探个究竟吧!</p>
+<p>此外，到了灵山，您可别忘了去抱抱佛脚，这可是唯一能够亲近大佛的方式。我们常说：&ldquo;摸摸佛手有福气，抱抱佛脚抱平安&rdquo;，在灵山抱佛脚能给大家带去平安吉祥、福寿康乐。</p>
+                </div>
+            </div>
+        </div>
+        <!--内页正文结束-->
+        <!-- 底部开始-->
+        <div class="foot_bg">
+            <div class="wrap clear">
+                <div class="top_f clear">
+
+                    <div class="left clear">
+
+                        <dl class="action">
+                            <dt>关注我们</dt>
+                            <dd><a href="#" id="weixin">微信<i class="icon_wechat"></i><span class="img_ewm_wechat"></span></a><div id="wxm" class="wxm"><img src="images/weixin.jpg" /></div></dd>
+
+                            <dd><a href="#">新浪<i class="icon_xinl"></i><span class="img_ewm_xinl"></span></a></dd>
+                            <dd class="last"><a href="#">腾讯<i class="icon_tengx"></i><span class="img_ewm_tengx"></span></a></dd>
+                        </dl>
+                    </div>
+                    <ul class="right clear">
+                        <li>
+                            <a href="index.html">灵山首页</a>
+                            <a href="about_001_d_10.html">关于我们</a>
+                            <a href="about_001_d_12.html">联系我们</a>
+                            <a href="#">网络地图</a>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <p>地址：江苏省无锡市滨湖区马山古竹路18号</p>
+<p>邮编：214091</p>
+<p>电话：0510-85686894</p>
+<p>传真：0510-85686894</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="bottom_f">
+                    <p>版权所有 动力启航 © Copyright 2009 - 2012. dtcms.net. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;备案号：粤ICP备11064298号</p>
+                    <p>技术支持：<a href="http://www.china-mail.com.cn/" target="_blank">实创科技</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部结束 -->
+
+    </body>
+</html>

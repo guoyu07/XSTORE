@@ -1,0 +1,166 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DTcms网站管理系统 - 动力启航_开源cms_NET开源_cms建站</title>
+    <meta name="keywords" content="动力启航,DTCMS系统,ASP.NET开源,开源CMS,网站管理系统,互联网开发" />
+    <meta name="description" content="$简介$>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        function pagego() {
+            if ($("#pagego").val() == "" || $("#pagego").val() == null) {
+
+                window.location.href = '#';
+
+            }
+            else {
+
+                if (parseInt($("#btnsize").val()) >= parseInt($("#pagego").val())) {
+
+                    window.location.href = $("#typecno").val() + $("#pagego").val() + ".html";
+
+                } else {
+                    window.location.href = $("#typecno").val() + "1.html";
+                }
+            }
+        }
+    </script>
+
+
+    <!--///查询三级列表  2015.7.6 新增-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/menu_min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".menu ul li").menu();
+          
+        });
+    </script>
+    
+    <!--///查询三级列表  2015.7.6 新增-->
+
+    <!-- 头部导航下拉效果 2015.7.6 -->
+
+    <link href="css/nav.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('.menuduo li').hover(function () {
+
+                $(this).children('ul').show();
+
+                $(this).focus().addClass('focusa')
+
+            }, function () {
+
+                $(this).children('ul').hide();
+
+                $(this).focus().removeClass('focusa')
+            });
+            DD_belatedPNG.fix('ul,.more');
+        });
+    </script>
+
+    <!-- 头部导航下拉效果 2015.7.6 -->
+
+    <link href="css/topnav.css" rel="stylesheet" />
+   
+    <script type="text/javascript" src="css/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="css/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            $("a[rel=example_group]").fancybox({
+                'transitionIn': 'none',
+                'transitionOut': 'none',
+                'titlePosition': 'over',
+                'titleFormat': function (title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });
+
+
+        });
+    </script>
+
+</head>
+
+<body class="style_body">
+    <!--顶部开始-->
+    <div class="wrap">
+        <div class="top_bar clear">
+            <ul class="left fl clear">
+                <li class="home"><a href="index.html">HOME</a></li>
+                <li><em>|</em></li>
+                <li class="map"><a href="map.html">SITE MAP</a></li>
+                <li><em>|</em></li>
+                <li class="contact"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="right fr clear"><a href="http://qfzf.creatrue.net/">中文</a><em>|</em><a href="#">ENGLISH</a></div>
+        </div>
+    </div>
+    <!--顶部结束-->
+    <div class="wrap clear">
+        <div class=" radius style_man">
+            <div class="top_b clear">
+                <div class="logo fl"><a href="/"><img src="images/logo.png"></a></div>
+                <ul class="nav fl menuduo clear">
+                    <li><a href="aboutus.html">关于我们</a></li><li><a href="NewsList_001_l_1.html">新闻中心</a></li><li><a href="product.html" class="more">产品中心</a><ul class="erjiclass hdw"><li><a href='ProList_001001_l_0.html' class="more">汽车制动软管</a><ul class='sanjiclass hdwq clear' ><li><a href='ProList_001001001_l_1.html'>高温制动软管</a></li><li><a href='ProList_001001002_l_1.html'>高温制动软管总成</a></li></ul></li><li><a href='ProList_001002_l_1.html' class="more">氟胶管</a><ul class='sanjiclass hdwq clear' ><li><a href='ProList_001002001_l_1.html'>二元氟胶管</a></li><li><a href='ProList_001002002_l_1.html'>三元氟胶管</a></li><li><a href='ProList_001002003_l_1.html'>氟硅胶管</a></li></ul></li><li><a href='ProList_001003_l_2.html' class="more">氟胶条</a><ul class='sanjiclass hdwq clear' ><li><a href='ProList_001003001_l_1.html'>氟硅胶条</a></li><li><a href='ProList_001003002_l_1.html'>通用氟胶条</a></li></ul></li><li><a href='ProList_001004_l_3.html' class="more">特种氟胶混炼胶</a><ul class='sanjiclass hdwq clear' ><li><a href='ProList_001004001_l_1.html'>特种氟胶预混胶</a></li><li><a href='ProList_001004002_l_1.html'>特种氟硅混炼胶</a></li></ul></li></ul></li><li><a href="#">质量追溯</a></li><li><a href="zizhizhengshu.html">资质证书</a></li>
+                </ul>
+                <div class="car"><img src="images/tpic.png"></div>
+            </div>
+            <div class="top_bb"></div>
+
+            <div class="main clear">
+                <div class="left fl">
+                    <div class="box_das news">
+                        <div class="bj clear box_ra">
+                            <div class="title clear"><h2>Products（产品中心）</h2> </div>
+                            <div id="content">
+                                <div class="menu">
+                                    <ul>
+                                        
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_das contact">
+                        <div class="bj clear box_ra">
+                            <h2 class="title">ContactUs</h2>
+                            <div class="con">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right sttle_main fr">
+                    <div class="location"><strong>您现在的位置：</strong><a href="index.html">首页 </a><em>></em><a href="NewsList_001_l_1.html">新闻中心</a></div>
+                    <div class="cont clear">
+                        <center class='title'>吉利在俄召回2.8万辆帝豪EC7 制动软管故障</center><p>【环球网综合报道】据俄罗斯国际文传电讯社5月18日消息，中国吉利集团自2015年5月15日起从俄罗斯市场召回本土生产销售近2.8万辆汽车，以检查帝豪EC7汽车后制动软管问题。</p>
+<div>据报道，召回原因可能是在俄罗斯本地进行装配生产时，汽车后制动软管安装发生错误。一般情况下，若出现此类失误，吉利集团官方会进行设备检查及维修。根据吉利公司质量政策和无条件优先保证安全的原则，吉利决定召回俄市场问题汽车并进行全面检查。此次共召回俄罗斯生产车辆27695辆。</div>
+<div>吉利公司表示，将对所有召回车辆进行检查，必要时调整位置或更换制动软管。此次召回过程中的所有维修和服务将对客户免费。(实习编译：王兵 审稿：翟潞曼)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部开始-->
+    <div class="main_bottom">
+        <div class="wrap clear">
+            版权所有 动力启航 © Copyright 2009 - 2012. dtcms.net. All Rights Reserved.
+        </div>
+    </div>
+    <!--底部结束-->
+</body>
+</html>

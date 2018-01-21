@@ -1,0 +1,25 @@
+2017-05-25 10:02:24.518 orderno 申请退款: -----
+2017-05-25 10:02:24.566 是否存在订单 0: -----
+2017-05-25 10:05:20.211 orderno S2017032700003: -----
+2017-05-25 10:05:20.264 是否存在订单 1: -----
+2017-05-25 10:05:20.264 out_trade_no S2017032700003_29582: -----
+2017-05-25 10:05:20.265 out_refund_no S2017032700003: -----
+2017-05-25 10:05:20.265 total_fee 1: -----
+2017-05-25 10:05:20.266 refund_fee : -----
+2017-05-25 10:05:20.266 op_user_id 1452727202: -----
+2017-05-25 10:05:20.277 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx322cfaa6ba67fb0e]]></appid><mch_id><![CDATA[1452727202]]></mch_id><nonce_str><![CDATA[62b9821ccf204916af1c93854e9ccd19]]></nonce_str><op_user_id><![CDATA[1452727202]]></op_user_id><out_refund_no><![CDATA[S2017032700003]]></out_refund_no><out_trade_no><![CDATA[S2017032700003_29582]]></out_trade_no><refund_fee>1</refund_fee><sign><![CDATA[2D1388304ED9CF8EF6A4D793C2E97605]]></sign><total_fee>1</total_fee></xml>
+2017-05-25 10:05:20.309 DEBUG path: F:\幸事多\幸事多\T+演示\tdx.memb\tdx.memb\
+2017-05-25 10:05:20.482 ERROR HttpService: System.Security.Cryptography.CryptographicException: 指定的网络密码不正确。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._LoadCertFromFile(String fileName, IntPtr password, UInt32 dwFlags, Boolean persistKeySet, SafeCertContextHandle& pCertCtx)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 f:\幸事多\幸事多\T+演示\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66
+2017-05-25 10:05:20.493 tuikuan System.Security.Cryptography.CryptographicException: 指定的网络密码不正确。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._LoadCertFromFile(String fileName, IntPtr password, UInt32 dwFlags, Boolean persistKeySet, SafeCertContextHandle& pCertCtx)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 f:\幸事多\幸事多\T+演示\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66: 数据异常

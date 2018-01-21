@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>幸事多私享空间</title>
+		<link rel="icon" href="../img/logo.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/login.css" />
+        <script src="../js/jquery-1.7.2.min.js"></script>
+        <script>
+            function tuikuan() {
+                if (confirm('lalala')) {
+                    $.ajax({
+                        type: "get",
+                        datatype: "json",
+                        url: "../../Xsd_Api/Home/HelloP",
+                        data: {},
+                        async: false,
+                        success: function (data) {
+                            alert(data);
+                        }
+                    });
+                }
+            }
+        </script>
+	</head>
+	<body>
+		<div class="imgWrap">
+			<img src="../img/logo.png" alt="" />
+		</div>
+		<div class="account">
+			<input type="text" placeholder="请输入用户名"/>
+		</div>
+		<div class="password">
+			<input type="password" placeholder="请输入密码"/>
+		</div>
+		<div class="btnWrap">
+			<div class="loginBtn">登录</div>
+		</div>
+        <input type="button" value="aaaaaaaa" onclick="tuikuan()"/>
+	</body>
+</html>

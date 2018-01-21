@@ -1,0 +1,70 @@
+2017-09-07 09:28:54.639 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = ''
+2017-09-07 09:28:55.142 页面：mySpace 方法：PageLoad: 状态：2
+2017-09-07 09:31:29.296 页面：mySpace 方法：PageLoad: 进入2:861853031485105
+2017-09-07 09:31:31.469 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-07 09:31:31.469 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwAIJWc_6rJ194St-mZaU5Vs' and wp_会员表.openid <> '' and  isshow=1
+2017-09-07 09:31:31.574 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwAIJWc_6rJ194St-mZaU5Vs' AND openid <> ''
+2017-09-07 09:31:31.640 类：BasePage 方法：UserId: _userid:106
+2017-09-07 09:31:31.641 页面：enter 方法：submit_button_ServerClick: select_sql:select id from WP_用户权限 where 用户id = 106 and 仓库id in(
+select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '861853031485105')
+2017-09-07 09:31:31.714 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-07 09:31:41.332 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：
+2017-09-07 09:31:41.350 页面：qaBoxCheck 方法：qaBoxCheck: 异常信息：序列号无效
+2017-09-07 09:33:15.128 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：
+2017-09-07 09:33:15.143 页面：qaBoxCheck 方法：qaBoxCheck: 异常信息：序列号无效
+2017-09-07 09:33:52.635 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：
+2017-09-07 09:34:52.146 页面：qaBoxCheck 方法：qaBoxCheck: 异常信息：序列号无效
+2017-09-07 09:34:59.680 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：861853031485105
+2017-09-07 09:34:59.681 发送：02383631383533303331343835313035010000000000000000000000 : 
+2017-09-07 09:35:02.193 接收：EF033211090613262E03383631383533303331343835313035000000000000000000000000000000000000000000000603CC : 
+2017-09-07 09:35:02.195 类：RemoteBoxHelperNew 方法：checkOk: substr:350000000000000000000000
+2017-09-07 09:35:02.196 类：RemoteBoxHelperNew 方法：checkOk: substr:000000000000000000000000
+2017-09-07 09:35:02.196 类：RemoteBoxHelperNew 方法：checkOk: i:0
+2017-09-07 09:35:02.197 类：RemoteBoxHelperNew 方法：checkOk: startIndex:50
+2017-09-07 09:35:02.197 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-09-07 09:35:02.198 页面：qaBoxCheck 方法：qaBoxCheck: 0:True
+2017-09-07 09:35:02.198 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-07 09:35:02.199 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwAIJWc_6rJ194St-mZaU5Vs' and wp_会员表.openid <> '' and  isshow=1
+2017-09-07 09:35:02.266 页面：qaBoxCheck 方法：qaBoxCheck: insert_sql：INSERT INTO [dbo].[WP_ 开箱记录表]
+           ([箱子MAC]
+           ,[openid]
+           ,[操作人id]
+           ,[联系电话]
+           ,[操作时间]
+           ,[操作日志]
+           ,[操作结果])
+     VALUES
+           ('861853031485105'
+           ,'o8eAHwAIJWc_6rJ194St-mZaU5Vs'
+           ,106
+           ,'13701516424'
+           ,getdate()
+           ,'0:执行开箱操作'
+           ,'开箱成功')
+2017-09-07 09:35:03.956 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：861853031485105
+2017-09-07 09:35:03.956 发送：02383631383533303331343835313035000000000100000000000000 : 
+2017-09-07 09:35:06.206 接收：EF033211090613262E03383631383533303331343835313035000000000000000000000000000000000000000000000603CC : 
+2017-09-07 09:35:06.207 类：RemoteBoxHelperNew 方法：checkOk: substr:350000000000000000000000
+2017-09-07 09:35:06.208 类：RemoteBoxHelperNew 方法：checkOk: substr:000000000000000000000000
+2017-09-07 09:35:06.209 类：RemoteBoxHelperNew 方法：checkOk: i:4
+2017-09-07 09:35:06.210 类：RemoteBoxHelperNew 方法：checkOk: startIndex:58
+2017-09-07 09:35:06.211 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-09-07 09:35:06.212 页面：qaBoxCheck 方法：qaBoxCheck: 4:True
+2017-09-07 09:35:06.212 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-07 09:35:06.213 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwAIJWc_6rJ194St-mZaU5Vs' and wp_会员表.openid <> '' and  isshow=1
+2017-09-07 09:35:06.278 页面：qaBoxCheck 方法：qaBoxCheck: insert_sql：INSERT INTO [dbo].[WP_ 开箱记录表]
+           ([箱子MAC]
+           ,[openid]
+           ,[操作人id]
+           ,[联系电话]
+           ,[操作时间]
+           ,[操作日志]
+           ,[操作结果])
+     VALUES
+           ('861853031485105'
+           ,'o8eAHwAIJWc_6rJ194St-mZaU5Vs'
+           ,106
+           ,'13701516424'
+           ,getdate()
+           ,'4:执行开箱操作'
+           ,'开箱成功')

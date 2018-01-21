@@ -1,0 +1,97 @@
+﻿
+/*手机中均分情况*/
+.pf_tab { width:100%; display:flex; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; background-color:#fff;}
+.pf_tab > li { flex:1; -webkit-box-flex: 1; -webkit-flex: 1; -moz-box-flex: 1; -moz-flex: 1; -ms-flex: 1; text-align:center; }
+
+/*首页轮播图下方  左右两张图*/
+.main_bbs_m { padding-top:10px;}
+.main_bbs_m a { display:block;}
+.main_bbs_m img { width:96%; height:auto; margin-left:auto; margin-right:auto;}
+
+/*板块列表*/
+.main_bbs_list {}
+.bbs_list { background-color:#FFF; font-family:"微软雅黑"}
+.bbs_list li { padding-top:12px; padding-bottom:12px;}
+.bbs_list .item { padding: 0px 0px 0px 55px; display: block; color: #666; position: relative; min-height:50px;}
+.bbs_list a.title_bbs { display:block; font-size:110%; padding-bottom:0px; }
+.bbs_list .s_pic { position:absolute; left:0px; top:0; width:50px; height:50px; overflow:hidden; border-radius:6px;}
+.bbs_list .s_pic a { display:block;}
+.bbs_list .s_pic img { width:100%; height:auto;}
+.bbs_list .s_row { font-size:92%; color:#9a9a9a;}
+.bbs_list .s_row span { padding-right:4px; padding-left:8px;}
+
+/*主题列表*/
+.style_bbs_list {}
+.style_bbs_list .wrap { padding-top:10px; padding-bottom:10px;}
+
+/*评论*/
+.review_t { position:relative; padding-top:10px;}
+.review_t img { width:46px; height:46px; border-radius:50%; display:block; position:absolute; left:0;} 
+.review_t .bbs_top { padding-left:56px; height:46px;}
+.review_t .bbs_pp { }
+.review_t .bbs_pp span { display:block; }
+.review_t .bbs_pp span.pl_name { color:#888; font-size:92%; line-height:22px;}
+.review_t .bbs_pp span.pl_time {color:#b5b5b5; font-size:82%; line-height:16px;}
+.review_t .bbs_title { font-size:110%; line-height:26px; padding-top:8px; padding-bottom:8px;}
+.review_t a.bbs_title { display:block;}
+
+.review_l { padding-top:10px;}
+.review_l li { position:relative; margin-bottom:6px; }
+.review_l img { width:26px; height:26px; border-radius:50%; position:absolute; left:0;} 
+.review_l .bbs_cc { padding-left:36px; min-height:26px;}
+.review_l .bbs_pp {  }
+.review_l .bbs_pp span { font-size:92%; }
+.review_l .bbs_pp span.pl_name { color:#3B97CE;}
+.review_l .bbs_pp span.pl_con {color:#666;}
+.list_c .more a { display:block; font-size:82%; color:#808080; text-align:center; line-height:32px; background-color:#f9f9f9;}
+
+.review_c { position:relative; }
+.review_c li{padding-top:10px;}
+.review_c img { width:26px; height:26px; border-radius:50%; display:block; position:absolute; left:0;} 
+.review_c .bbs_top { padding-left:36px; height:26px;}
+.review_c .bbs_pp { }
+.review_c .bbs_pp span { display:block; }
+.review_c .bbs_pp span.pl_name { color:#888; font-size:92%; line-height:22px;}
+.review_c .bbs_title { font-size:100%; line-height:26px; padding-top:8px; padding-bottom:8px;}
+
+
+/* 底部通用悬浮按钮*/
+.bott_fix { position:fixed; bottom:0; background-color:#fff; width:100%; z-index:9998; height:46px; border-top:#dfdfdf solid 1px;}
+.btn_ft { text-align:center;}
+.btn_ft a { display:block; color:#f60; font-size:110%; line-height:46px;}
+.btn_ft span {}
+.btn_ft i { padding-right:8px; font-size:130%; position:relative; top:1px;}
+.btn_ft i:before { content:"\f12c"; color:#f60;}
+
+.btn_hf { text-align:center;}
+.btn_hf a { display:block; color:#f60; font-size:110%; line-height:46px;}
+.btn_hf span {}
+.btn_hf i { padding-right:8px; font-size:130%; position:relative; top:3px;}
+.btn_hf i:before { content:"\f11a"; color:#f60;}
+
+/*点赞回复*/
+.dz_hf { text-align:right; padding-bottom:6px;}
+.dz_hf span { font-size:82%; color:#9a9a9a; padding-left:8px;}
+.dz_hf i {padding-right:4px; font-size:120%; color:#999;}
+.dz_hf .dz i:before {content:"\f387";  position:relative; top:1px;}
+.dz_hf .dz i.on:before {content:"\f388"; }
+.dz_hf .share i:before {content:"\f3ac";  position:relative; top:0px;}
+.dz_hf .hf i:before {content:"\f11a"; position:relative; top:2px;}
+
+.hf_time {}
+.hf_time span { display:block;}
+.hf_time span.pl_time { width:60%; float:left; text-align:left; padding-left:0;}
+.hf_time span.hf { width:35%; float:right; text-align:right;}
+
+/*发帖*/
+.f_title { background-color:#f9f9f9; font-size:100%;}
+.ft_title { padding-top:10px; padding-bottom:10px; padding-left:8px;}
+.ft_title_sub { font-size:82%; text-align:right; padding-bottom:0px; position:absolute; right:0px; bottom:0px;}
+.sport .weui_cell_primary { position:relative;}
+.sport .weui_textarea_counter { text-align:left;}
+.sport .weui_cell { padding:10px 8px;}
+
+/*帖子详情页*/
+.content_t { color:#989898; line-height:20px; font-size:100%;}
+.content_t img { max-width:100%; height:auto;}
+

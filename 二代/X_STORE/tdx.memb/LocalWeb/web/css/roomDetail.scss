@@ -1,0 +1,120 @@
+section{
+    width:100%;
+    padding:10px 0;
+    border-bottom: solid 1px #ccc;
+    .publishProgress{
+        width:100%;
+        dd{
+            width:20%;
+            text-align: center;
+            .icon{
+                font:600 14px/20px "microsoft yahei";
+                color:#CCCCCC;
+            }
+            h4{
+                font:14px/20px "microsoft yahei";
+                color:#CCCCCC;
+                text-align: center;
+            }
+        }
+        dd:first{
+            h4{
+                color:#a7db4c;
+            }
+        }
+        dd.pass{
+             .icon{
+                color:#f60;
+            }
+            h4{
+                color:#f60;
+            }
+        }
+        dt{
+            width:20%;
+            padding-top:16px;
+            .progressCenter{
+                background:#ccc;
+                height:10px;
+            }
+        }
+        dt.pass{
+            .progressCenter{
+                background:#f60;
+            }
+        }
+    }
+}
+.main{
+    dl{
+        width:100%;
+        dt{
+            width:94%;
+            padding:10px 3%;
+            border-bottom: solid 1px #ccc;
+            .identifier,.goodsName,.pic,.lattice{
+                width:25%;
+                font:14px/30px "microsoft yahei";
+                color:#000;
+                text-align: center;
+            }
+        }
+        dd{
+            width:94%;
+            padding:10px 3%;
+            border-bottom: solid 1px #ccc;
+            .lid,.idf,.gdn{
+                width:25%;
+                font:12px/60px "microsoft yahei";
+                color:#666;
+                text-align: center;
+            }
+            .imgWrap{
+                width:25%;
+                text-align: center;
+                img{
+                    width:60px;
+                    height:60px;
+                }
+            }
+            .btnWrap{
+                width:25%;
+                text-align: center;
+                button{
+                    width:60px;
+                    text-align: center;
+                    margin-top:10px;
+                    font:12px/40px "microsoft yahei";
+                    color:#fff;
+                    border:none;
+                    background:#ff6600;
+                    background-size: 100%;
+                    border-radius: 4px;
+                }
+            }
+        }
+        dd.close{
+            button{
+                background:#ccc;
+            }
+        }
+        dd:last-child{
+            border-bottom:none;
+        }
+    }
+    .fnWrap{
+        border-top: solid 1px #ccc;
+        width:94%;
+        padding:10px 3%;
+        .finish{
+            display:block;
+            border:none;
+            width:100%;
+            font:16px/50px "microsoft yahei";
+            color:#fff;
+            background: #ff6600;
+            text-align: center;
+            border-radius: 4px;
+        }
+    }
+}

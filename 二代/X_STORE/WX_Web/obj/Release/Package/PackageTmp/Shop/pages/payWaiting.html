@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>幸事多私享空间-等待支付</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+
+    <style>
+        .imgWrap {
+            width: 100%;
+            padding-top: 40%;
+            /*display:none;*/
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        form {
+            display: none;
+        }
+
+        .remind_title {
+            font-family: 'Microsoft YaHei';
+            font-size: 14px;
+            margin: 15px auto;
+            text-align: center;
+            font-weight: 400;
+            color: red;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="remind_title">请支付完成后返回微信!!!!</div>
+    <div class="imgWrap">
+        <img src="../img/payWaiting.png" alt="" />
+    </div>
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/Util.js"></script>
+    <script type="text/javascript">
+
+        function is_weixin() {
+            var money, order;
+            var urlparamStr = location.search;
+            self = Util.Deserialize(urlparamStr);
+            console.log(self)
+            money = self.money;
+            order = self.order;
+            console.log(money)
+            console.log(order)
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                $(".imgWrap").show();
+                var xmlhttp;
+                if (window.XMLHttpRequest) {
+                    // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                    xmlhttp = new XMLHttpRequest();
+                }
+                else {
+                    // IE6, IE5 浏览器执行代码
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        console.log(xmlhttp.responseText);
+                        var o = eval('(' + xmlhttp.responseText + ')');
+                        if (o.state == 1) {
+                            window.location.href = "../pages/paySuccess.aspx?order=" + order + "";
+                        }
+                    }
+                }
+                xmlhttp.open("GET", "../ashx/AlipayEnter.ashx?order=" + order + "", true);
+                xmlhttp.send();
+
+
+            } else {
+
+                $.ajax({
+                    url: '../ashx/alipay.ashx',
+                    type: 'post',
+                    dataType: 'text',
+                    async: false,
+                    data: {
+                        money: money,
+                        order: order
+                    },
+                    success: function (json) {
+
+                        console.log(json);
+                        $('body').html(json)
+
+                    },
+                    error: function (json) {
+                        console.log('err', json);
+                    }
+
+                })
+            }
+        }
+        is_weixin();
+        $(function () {
+            timeID = setInterval('is_weixin()', 3000); //注意:执行的函数需要加引号,否则会报错的 
+        });
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+body {
+  background: #fff; }
+
+#view {
+  width: 100%;
+  height: -moz-calc(100% - 55px);
+  height: -webkit-calc(100% - 55px);
+  height: calc(100% - 55px);
+  overflow-y: scroll; }
+  #view #home {
+    width: 100%;
+    height: 100%; }
+    #view #home .personalInfo {
+      width: 94%;
+      padding: 3%; }
+      #view #home .personalInfo .headPortrait {
+        text-align: center;
+        width: 80px;
+        font: 40px/80px "microsoft yahei";
+        color: #fff;
+        border-radius: 50%; }
+      #view #home .personalInfo .positinInfo {
+        margin-left: 10px;
+        width: calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+        width: -moz-calc(100% - 90px); }
+        #view #home .personalInfo .positinInfo .market {
+          font: 18px/40px "microsoft yahei";
+          color: #000;
+          height: 80px;
+          width: 40%;
+          text-align: center; }
+          #view #home .personalInfo .positinInfo .market .job {
+            font: 16px/40px "microsoft yahei";
+            color: #333; }
+        #view #home .personalInfo .positinInfo .area {
+          margin-top: 20px;
+          margin-left: 3%;
+          font: 14px/20px "microsoft yahei";
+          color: #666;
+          height: 40px;
+          width: 57%;
+          text-align: center; }
+    #view #home ul {
+      width: 100%; }
+      #view #home ul li {
+        width: 94%;
+        padding: 3%;
+        border-bottom: solid 1px #ccc; }
+        #view #home ul li .l i {
+          display: inline-block;
+          text-align: center;
+          width: 30px;
+          font: 16px/30px "microsoft yahei";
+          color: #fff;
+          border-radius: 50%; }
+        #view #home ul li .l span {
+          font: 14px/30px "microsoft yahei";
+          color: #333; }
+        #view #home ul li .r {
+          font: 14px/30px "microsoft yahei";
+          color: #333; }
+      #view #home ul li:last-child {
+        border-bottom: none; }
+      #view #home ul .hotel i {
+        background: #f60; }
+      #view #home ul .stock i {
+        background: #f60; }
+      #view #home ul .report i {
+        background: #f60; }
+      #view #home ul .achievement i {
+        background: #f60; }
+      #view #home ul .better i {
+        background: #f60; }
+      #view #home ul .changePsd i, #view #home ul .cancellation i {
+        background: #007AFF; }
+  #view #hotelList {
+    width: 100%;
+    height: 100%;
+    background: #eee; }
+    #view #hotelList header {
+      width: 100%;
+      padding: 0 3%;
+      font: 16px/44px "microsoft yahei";
+      background: #fff;
+      text-align: center;
+      box-shadow: 0 1px 6px #ccc; }
+    #view #hotelList .topInputContaienr {
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box; }
+      #view #hotelList .topInputContaienr input {
+        margin: 0;
+        width: 100%;
+        border: none;
+        font: 14px/40px "microsoft yahei";
+        text-align: center; }
+    #view #hotelList .HL_listItem {
+      background: #fff;
+      width: 100%; }
+      #view #hotelList .HL_listItem ul {
+        width: 100%; }
+        #view #hotelList .HL_listItem ul li {
+          width: 94%;
+          padding: 0 3%;
+          border-bottom: solid 1px #ccc; }
+          #view #hotelList .HL_listItem ul li a {
+            display: block;
+            width: 100%;
+            padding: 10px 0; }
+            #view #hotelList .HL_listItem ul li a .imgWrap {
+              border: solid 1px #ccc;
+              border-radius: 2px; }
+              #view #hotelList .HL_listItem ul li a .imgWrap img {
+                display: block;
+                width: 60px;
+                height: 60px; }
+            #view #hotelList .HL_listItem ul li a .lPart {
+              margin-left: 10px;
+              width: calc(100% - 92px);
+              width: -webkit-calc(100% - 92px);
+              width: -moz-calc(100% - 92px); }
+              #view #hotelList .HL_listItem ul li a .lPart h3 {
+                width: 100%;
+                font: 14px/30px "microsoft yahei";
+                color: #000;
+                margin: 0; }
+              #view #hotelList .HL_listItem ul li a .lPart p {
+                font: 12px/30px "microsoft yahei";
+                color: #a4a4a4;
+                margin: 0; }
+                #view #hotelList .HL_listItem ul li a .lPart p .room {
+                  margin-right: 10px; }
+            #view #hotelList .HL_listItem ul li a .r {
+              font: 14px/60px "microsoft yahei";
+              color: #6b6b6b; }
+  #view #goodsList {
+    width: 100%;
+    height: 100%; }
+    #view #goodsList .topNav {
+      width: 100%; }
+      #view #goodsList .topNav .l, #view #goodsList .topNav .r {
+        text-align: center;
+        font: 18px/30px "microsoft yahei";
+        color: #000;
+        width: 40%;
+        margin: 0 5%;
+        border-bottom: solid 1px #ffffff; }
+    #view #goodsList .ReportInputContaienr {
+      width: 100%;
+      display: flex;
+      display: -webkit-flex;
+      align-content: center;
+      align-items: center;
+      height: 40px;
+      background-color: #fff;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      #view #goodsList .ReportInputContaienr .line {
+        width: 5%;
+        font-size: 12px;
+        overflow: hidden; }
+      #view #goodsList .ReportInputContaienr .selectBeginTime, #view #goodsList .ReportInputContaienr .selectEndTime {
+        width: 40%;
+        text-align: center;
+        color: #666666; }
+        #view #goodsList .ReportInputContaienr .selectBeginTime input, #view #goodsList .ReportInputContaienr .selectEndTime input {
+          width: 80%;
+          height: 22px;
+          font-size: 12px;
+          background: #fff; }
+        #view #goodsList .ReportInputContaienr .selectBeginTime label, #view #goodsList .ReportInputContaienr .selectEndTime label {
+          font: 12px/20px "microsoft yahei";
+          color: #999; }
+      #view #goodsList .ReportInputContaienr .search {
+        width: 13%;
+        padding: 6px 0;
+        margin-right: 2%;
+        font-size: 12px;
+        background-color: #FF6601;
+        border: 1px solid #FF6601;
+        color: #fff; }
+    #view #goodsList .goods {
+      width: 100%; }
+      #view #goodsList .goods .sum {
+        width: 94%;
+        padding: 0 3%;
+        border-bottom: solid 1px #ccc; }
+        #view #goodsList .goods .sum p {
+          font: 16px/30px "microsoft yahei";
+          color: #FF6600; }
+      #view #goodsList .goods table {
+        width: 100%; }
+        #view #goodsList .goods table .topic {
+          width: 100%; }
+        #view #goodsList .goods table tr {
+          border-bottom: solid 1px #ccc; }
+        #view #goodsList .goods table th, #view #goodsList .goods table td {
+          text-align: center;
+          font: 14px/30px "microsoft yahei";
+          color: #666; }
+      #view #goodsList .goods .total_money {
+        width: 94%;
+        padding: 0 3%;
+        text-align: right;
+        font: 16px/30px "microsoft yahei";
+        color: #ff6600; }
+    #view #goodsList .distributer {
+      display: none;
+      width: 100%; }
+      #view #goodsList .distributer dl {
+        width: 100%; }
+        #view #goodsList .distributer dl dt, #view #goodsList .distributer dl dd {
+          padding: 0 3%;
+          width: 94%;
+          font: 14px/30px "microsoft yahei";
+          color: #666;
+          border-bottom: solid 1px #ccc; }
+    #view #goodsList #reportBox {
+      width: 100%;
+      background-color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99; }
+    #view #goodsList #reportBox .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+      color: #FE8355;
+      border-bottom: 2px solid #FF5C12;
+      border-bottom-width: 50%; }
+    #view #goodsList .ReportInputContaienr .line {
+      top: 0; }
+    #view #goodsList .Am_table > tbody > tr:active {
+      background-color: #f5f5f5; }
+    #view #goodsList .Am_table {
+      width: 100%;
+      background-color: #fff; }
+    #view #goodsList .Am_table tbody tr th {
+      padding: 10px 8px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      font-size: 15px; }
+    #view #goodsList .Am_table tbody tr td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      font-size: 14px; }
+    #view #goodsList .Am_table tbody tr td:last-child {
+      color: #ff5001; }
+    #view #goodsList .bootomBar {
+      position: fixed;
+      bottom: 51px;
+      width: 100%;
+      height: 50px;
+      padding: 0 15px;
+      text-align: right;
+      background-color: #fff; }
+    #view #goodsList .bootomBar p {
+      color: #000000;
+      font-size: 15px;
+      line-height: 50px;
+      margin: 0;
+      text-align: right; }
+    #view #goodsList .bootomBar p span {
+      color: #FF5053; }
+    #view #goodsList .ReportInputContaienr {
+      height: 50px; }
+    #view #goodsList .ReportInputContaienr .selectBeginTime input, #view #goodsList .ReportInputContaienr .selectEndTime input {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      border: none;
+      text-align: center; }
+    #view #goodsList .ReportInputContaienr div p {
+      padding: 0;
+      margin: 0;
+      border: none;
+      font-size: 12px;
+      width: 100%;
+      text-align: center; }
+    #view #goodsList .reportBoxControlContents {
+      width: 100%;
+      margin-top: 50px; }
+
+#foot {
+  height: 49px;
+  width: 100%;
+  border-top: solid 1px #ddd; }
+  #foot ul {
+    width: 100%;
+    height: 100%; }
+    #foot ul li {
+      float: left;
+      width: 33.3%; }
+      #foot ul li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #f1c4c5;
+        text-align: center;
+        margin-top: 8px; }
+        #foot ul li a .index_bot {
+          margin-bottom: 4px; }
+          #foot ul li a .index_bot img {
+            width: 20px;
+            display: block;
+            margin: 0 auto; }
+          #foot ul li a .index_bot .picOn {
+            display: none; }
+        #foot ul li a p {
+          font: 12px/12px "microsoft yahei";
+          color: #f1c4c5; }
+    #foot ul li.clickOn a .index_bot .picOn {
+      display: block; }
+    #foot ul li.clickOn a .index_bot .picOff {
+      display: none; }
+    #foot ul li.clickOn a p {
+      color: #ec4643; }
+
+.tips {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 40%;
+  text-align: center; }
+  .tips .tipsContent {
+    display: inline-block;
+    width: 80%;
+    background: #fff; }
+    .tips .tipsContent .tipsTopic {
+      width: 100%;
+      text-align: center;
+      font: 16px/50px "microsoft yahei";
+      color: #000; }
+    .tips .tipsContent p {
+      width: 100%;
+      text-align: center;
+      font: 14px/30px "microsoft yahei";
+      color: #333; }
+    .tips .tipsContent ul {
+      width: 100%; }
+      .tips .tipsContent ul li {
+        width: 50%;
+        text-align: center;
+        font: 16px/40px "microsoft yahei"; }
+      .tips .tipsContent ul .cancel {
+        color: #000; }
+      .tips .tipsContent ul .continue {
+        color: #fff;
+        background: #18E59A; }

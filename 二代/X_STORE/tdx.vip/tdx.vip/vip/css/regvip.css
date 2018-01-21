@@ -1,0 +1,27 @@
+﻿.regIntroduction:after,.regReg:after{ display:block; content:""; clear:both;}
+.regBody{ height:100%;  width :100%; padding-bottom:60px;}
+.regVipCardBody{height:auto;padding:4% 8%;background:#fff url(../image/bgBody.jpg) no-repeat scroll top; background-size:100% auto;}
+.regVipCard{height:auto; max-width:400px; margin:auto;}
+.regVipCard img{ width:100%;}
+.regVipCard span{ bottom: 4%; display: block; font-size: 12px; height: 2em; line-height: 2em; position: absolute;right: 6%;}
+.regVipCard .regVIPCardLogo{ background-color: #F2E5B2; border: 2px solid #FFFFFF;height: 30%; left: 6%; position: absolute; top: 17%; width: 18%;border-radius: 100%; overflow:hidden; }
+.regVipCard .regVIPCardLogo img{height:100%; width:100%; display:block; position:absolute; top:0; left:0;border-radius: 100%;}
+.regIntroduction{top:0; left:0; z-index:1; padding:0 0 16px 0;}
+.regToReg,.regPerfectInfo{ border-width:1px 0; border-style:solid; border-color:#ddd; font-size:1.5em; color:#fff; height:2em; line-height:2em; background-color:#56bde8; text-align:center;}
+.regListTitle{ background-color:#c5eafa; margin:2% 4% 0 4%; overflow:hidden;}
+.regListTitle a{ color:#666; display:block;height:1.5em; font-size:1.5em; padding:4px 0; background-image:url(../image/vip_icon.png);background-origin: content-box; text-indent:44px; background-repeat:no-repeat;}
+.regListContent{background-color:#f1f1f1; margin:0 4% 0 4%; overflow:hidden;-webkit-transition:height 0.5s;transition:height 0.5s;}
+.regListContent:nth-child(3){ display:block;}
+.regListContent p{ display:block; line-height:2em; padding:4px 0;color:#999; text-indent:44px; }
+.regListContent p:nth-child(n+2){border-top:1px solid #ddd; }
+.regListTitle:nth-child(2) a{background-position:0 -135px;}
+.regListTitle:nth-child(4) a{background-position:0 -29px;}
+.regListTitle:nth-child(6) a{background-position:11px -805px;}
+.regListTitle:nth-child(8) a{background-position:0 -170px;}
+.regListTitle:nth-child(10) a{background-position:11px -743px;}
+.regReg{margin:auto;top:0; left:100%; z-index:2;transition: all 0.5s cubic-bezier(0,0,0,1); background-color:#fff; position:absolute;}
+.regReg ul li{ padding:8px;}
+.regReg ul li span{ color:#666; width: 20%; display:inline-block;}
+.regReg ul li input[type=text]{ height:2em; line-height:2em; width:65%; background-color:#c5eafa; border:1px solid #ddd; padding:0 0 0 2%; color:#999; font-size:16px;}
+.regReg ul li input[type=button]{ height:2em; color:#fff; line-height:2em; width:50%; background:-webkit-gradient(linear, 0 0, 0 100%, from(#9fe4f2),color-stop(10%, #22bcde),color-stop(33%, #1db6d9),color-stop(66%, #0fa3ca),color-stop(100%, #0392bc)); border:1px solid #ddd; padding:0 0 0 2%; font-size:16px;}
+

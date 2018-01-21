@@ -1,0 +1,866 @@
+2017-08-08 15:46:00.918 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:46:00.919 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:46:01.719 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:46:01.755 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-08 15:46:01.820 类：BasePage 方法：UserId: _userid:23
+2017-08-08 15:46:01.940 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:48:32.135 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:48:32.186 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:48:32.258 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:48:32.362 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:48:35.287 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:48:35.287 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:48:35.355 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:48:35.467 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:06.914 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:06.916 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:49:15.370 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:20.842 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:25.662 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:25.713 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:27.854 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:28.135 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:31.735 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:31.820 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:32.323 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:32.951 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:33.763 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:38.843 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:49:41.692 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:51:17.635 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:51:17.636 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:51:22.987 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:53:09.161 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:53:09.162 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:53:10.586 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:53:10.586 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:53:10.608 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:53:10.608 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:53:12.749 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:53:17.031 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:54:02.273 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:02.275 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:54:05.618 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:13.600 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:13.603 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-08 15:54:13.677 类：BasePage 方法：UserId: _userid:1
+2017-08-08 15:54:16.040 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:20.207 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:20.207 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:54:23.498 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:23.499 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:54:25.182 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:25.463 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:26.030 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:26.469 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:27.090 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:27.699 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:29.528 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:54:30.377 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:56:48.195 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-08 15:56:48.503 类：BasePage 方法：UserId: _userid:1
+2017-08-08 15:57:02.273 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:57:02.274 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:57:03.715 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:57:03.715 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:57:03.780 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:57:03.839 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:58:52.221 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:58:52.221 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:58:52.283 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:58:52.335 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:58:55.308 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:58:55.309 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:58:58.561 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:58:59.572 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:58:59.907 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:03.586 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:10.328 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:10.965 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:11.575 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:13.716 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:28.011 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:28.011 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 15:59:30.154 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:30.851 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:33.413 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:38.156 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:38.466 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:39.062 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:39.449 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:39.932 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:41.058 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:42.400 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 15:59:45.403 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:00:45.153 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:00:45.153 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:00:46.373 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:00:46.397 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:00:47.350 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:00:55.769 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:00:55.769 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:00:56.892 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:00:59.905 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:00:59.906 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:01:02.641 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:01:03.014 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:01:03.123 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:01:03.694 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:01:04.044 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:01:04.537 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:01:05.451 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:01:07.031 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:01:49.748 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:01:59.590 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:02:00.255 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:02:02.338 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:02:05.476 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:03:39.100 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:03:39.101 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:03:40.979 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:03:41.366 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:03:41.461 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:03:41.740 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:03:42.343 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:03:43.073 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:03:43.433 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:03:44.224 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-08 16:03:44.287 类：BasePage 方法：UserId: _userid:1
+2017-08-08 16:03:44.351 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:04:23.149 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:04:23.150 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:04:24.449 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:04:24.478 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:04:25.270 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-08 16:04:25.333 类：BasePage 方法：UserId: _userid:1
+2017-08-08 16:04:25.388 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:04:52.469 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:04:52.470 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:04:58.066 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:04:58.069 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:05:03.293 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:05:14.000 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:06:39.940 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:06:39.941 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:06:47.546 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:06:58.178 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:07:14.567 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:07:21.797 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:08:26.077 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:08:26.077 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:08:32.825 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:08:34.713 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:08:37.742 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:08:41.049 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:13:19.177 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-08 16:13:19.498 类：BasePage 方法：UserId: _userid:1
+2017-08-08 16:13:51.069 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:13:51.070 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:14:02.726 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:14:05.021 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:14:10.570 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:14:15.074 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:23:17.571 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:23:17.573 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:23:19.511 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:23:21.873 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-08 16:23:21.931 类：BasePage 方法：UserId: _userid:1
+2017-08-08 16:23:21.985 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:23:29.144 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:23:29.144 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:23:32.229 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:23:32.230 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:23:32.303 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:23:32.353 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:24:05.661 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:24:05.661 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:34:18.199 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:34:18.200 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:34:18.520 类：BasePage 方法：UserInfo: _userinfo:0
+2017-08-08 16:34:31.065 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:34:31.067 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:34:31.123 类：BasePage 方法：UserInfo: _userinfo:0
+2017-08-08 16:35:09.496 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:35:09.498 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:35:09.854 类：BasePage 方法：UserInfo: _userinfo:0
+2017-08-08 16:37:14.582 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:37:14.583 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:37:14.889 类：BasePage 方法：UserInfo: _userinfo:0
+2017-08-08 16:37:17.036 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:37:17.037 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:37:17.078 类：BasePage 方法：UserInfo: _userinfo:0
+2017-08-08 16:58:35.149 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:58:35.150 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 16:58:36.490 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:58:36.493 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' AND openid <> ''
+2017-08-08 16:58:36.581 类：BasePage 方法：UserId: _userid:1
+2017-08-08 16:58:36.687 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:59:35.657 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:59:35.785 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:59:44.735 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:59:44.800 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:59:54.768 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 16:59:54.769 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:00:13.336 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:00:13.337 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:00:13.549 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:00:17.490 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:00:17.508 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:00:17.509 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:00:24.493 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 82
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:00:24.732 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":22.99,"编码":"D","品名":"杜蕾斯","图片路径":"/upload/201706/12/201706121340484982.jpg","前台库存":null,"房间库存":29.0,"销量":29.0},{"本站价":49.99,"编码":"J","品名":"空气套X2","图片路径":"/upload/201706/12/201706121347135394.jpg","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":59.99,"编码":"G","品名":"龙抬头","图片路径":"/upload/201706/13/201706131605342746.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":11.99,"编码":"B","品名":"旺仔X2","图片路径":"/upload/201707/06/201707061607229662.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":15.99,"编码":"A","品名":"红牛X2","图片路径":"/upload/201707/06/201707061615581164.jpg","前台库存":null,"房间库存":1.0,"销量":1.0}]
+2017-08-08 17:00:24.733 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:00:24.733 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:00:24.734 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:00:24.734 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:00:24.735 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:00:24.735 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:02:02.983 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 82
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:02:03.074 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":22.99,"编码":"D","品名":"杜蕾斯","图片路径":"/upload/201706/12/201706121340484982.jpg","前台库存":null,"房间库存":29.0,"销量":29.0},{"本站价":49.99,"编码":"J","品名":"空气套X2","图片路径":"/upload/201706/12/201706121347135394.jpg","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":59.99,"编码":"G","品名":"龙抬头","图片路径":"/upload/201706/13/201706131605342746.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":11.99,"编码":"B","品名":"旺仔X2","图片路径":"/upload/201707/06/201707061607229662.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":15.99,"编码":"A","品名":"红牛X2","图片路径":"/upload/201707/06/201707061615581164.jpg","前台库存":null,"房间库存":1.0,"销量":1.0}]
+2017-08-08 17:02:03.075 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:02:03.075 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:02:03.076 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:02:03.076 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:02:03.077 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:02:03.077 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:03:01.268 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 82
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:03:01.343 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":22.99,"编码":"D","品名":"杜蕾斯","图片路径":"/upload/201706/12/201706121340484982.jpg","前台库存":null,"房间库存":29.0,"销量":29.0},{"本站价":49.99,"编码":"J","品名":"空气套X2","图片路径":"/upload/201706/12/201706121347135394.jpg","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":59.99,"编码":"G","品名":"龙抬头","图片路径":"/upload/201706/13/201706131605342746.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":11.99,"编码":"B","品名":"旺仔X2","图片路径":"/upload/201707/06/201707061607229662.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":15.99,"编码":"A","品名":"红牛X2","图片路径":"/upload/201707/06/201707061615581164.jpg","前台库存":null,"房间库存":1.0,"销量":1.0}]
+2017-08-08 17:03:01.343 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:03:01.344 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:03:01.344 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:03:01.345 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:03:01.345 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:03:01.346 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:05:14.954 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' AND openid <> ''
+2017-08-08 17:05:15.265 类：BasePage 方法：UserId: _userid:1
+2017-08-08 17:05:17.086 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 79
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:05:17.367 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":0.02,"编码":"1","品名":"杜蕾斯","图片路径":"/upload/201705/09/201705091134487853.jpg","前台库存":3212.0,"房间库存":814.0,"销量":814.0},{"本站价":0.02,"编码":"12","品名":"杜蕾斯AiR","图片路径":"/upload/201705/09/201705091143345239.jpg","前台库存":220.0,"房间库存":920.0,"销量":920.0},{"本站价":0.01,"编码":"13","品名":"网衣","图片路径":"/upload/201706/13/201706131610197202.jpg","前台库存":6558.0,"房间库存":40100.0,"销量":40586.0},{"本站价":0.01,"编码":"23","品名":"龙抬头","图片路径":"/upload/201706/13/201706131606059330.jpg","前台库存":34.0,"房间库存":652.0,"销量":652.0},{"本站价":0.01,"编码":"32","品名":"粉红跳蛋","图片路径":"/upload/201705/10/201705101133265347.jpg","前台库存":126.0,"房间库存":289.0,"销量":286.0},{"本站价":0.03,"编码":"15","品名":"OMYSKY","图片路径":"/upload/201705/10/201705101142496766.jpg","前台库存":44.0,"房间库存":202.0,"销量":202.0},{"本站价":0.03,"编码":"12","品名":"性感内衣","图片路径":"/upload/201705/10/201705101145593114.jpg","前台库存":113.0,"房间库存":156.0,"销量":156.0},{"本站价":0.01,"编码":null,"品名":"滑石粉","图片路径":"","前台库存":null,"房间库存":40.0,"销量":40.0},{"本站价":0.01,"编码":null,"品名":"滑石","图片路径":"","前台库存":null,"房间库存":120.0,"销量":120.0},{"本站价":0.01,"编码":"21","品名":"牛奶泡泡浴","图片路径":"/upload/201705/11/201705110954349382.jpg","前台库存":360.0,"房间库存":53.0,"销量":53.0},{"本站价":0.01,"编码":null,"品名":"佳洁士","图片路径":"/upload/201705/11/201705110956568741.jpg","前台库存":null,"房间库存":1045.0,"销量":1045.0},{"本站价":0.01,"编码":null,"品名":"雅润湿巾","图片路径":"/upload/201705/18/201705181553076114.gif","前台库存":null,"房间库存":150.0,"销量":150.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":729.0,"销量":729.0},{"本站价":0.01,"编码":"232","品名":"测试组合01","图片路径":"/upload/201706/15/201706151051077242.jpg","前台库存":-3.0,"房间库存":342.0,"销量":342.0},{"本站价":0.01,"编码":"65655555554645","品名":"测试组合02","图片路径":"/upload/201706/15/201706151108262491.jpg","前台库存":-20.0,"房间库存":null,"销量":null}]
+2017-08-08 17:05:17.367 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:05:17.368 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:05:17.368 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:05:17.369 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:05:17.369 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:05:17.370 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:05:17.370 类：comprehensive_hm 方法：BindGoods: dr6：
+2017-08-08 17:05:17.370 类：comprehensive_hm 方法：BindGoods: dr7：
+2017-08-08 17:05:17.371 类：comprehensive_hm 方法：BindGoods: dr8：
+2017-08-08 17:05:17.371 类：comprehensive_hm 方法：BindGoods: dr9：
+2017-08-08 17:05:17.371 类：comprehensive_hm 方法：BindGoods: dr10：
+2017-08-08 17:05:17.372 类：comprehensive_hm 方法：BindGoods: dr11：
+2017-08-08 17:05:17.372 类：comprehensive_hm 方法：BindGoods: dr12：
+2017-08-08 17:05:17.373 类：comprehensive_hm 方法：BindGoods: dr13：
+2017-08-08 17:05:17.373 类：comprehensive_hm 方法：BindGoods: dr14：
+2017-08-08 17:05:39.231 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:05:39.232 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:05:42.638 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:05:42.639 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:05:42.727 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:05:42.788 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:05:51.007 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 85
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:05:51.109 类：comprehensive_hm 方法：BindGoods: dt：[]
+2017-08-08 17:06:00.741 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 85
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:06:00.818 类：comprehensive_hm 方法：BindGoods: dt：[]
+2017-08-08 17:06:12.113 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:06:12.114 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:06:12.185 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:06:12.240 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:06:33.805 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:06:34.030 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:07:03.803 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 85
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:07:03.867 类：comprehensive_hm 方法：BindGoods: dt：[]
+2017-08-08 17:10:29.020 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' AND openid <> ''
+2017-08-08 17:10:29.288 类：BasePage 方法：UserId: _userid:1
+2017-08-08 17:10:30.994 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 79
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:10:31.285 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":0.02,"编码":"1","品名":"杜蕾斯","图片路径":"/upload/201705/09/201705091134487853.jpg","前台库存":3212.0,"房间库存":814.0,"销量":814.0},{"本站价":0.02,"编码":"12","品名":"杜蕾斯AiR","图片路径":"/upload/201705/09/201705091143345239.jpg","前台库存":220.0,"房间库存":920.0,"销量":920.0},{"本站价":0.01,"编码":"13","品名":"网衣","图片路径":"/upload/201706/13/201706131610197202.jpg","前台库存":6558.0,"房间库存":40100.0,"销量":40586.0},{"本站价":0.01,"编码":"23","品名":"龙抬头","图片路径":"/upload/201706/13/201706131606059330.jpg","前台库存":34.0,"房间库存":652.0,"销量":652.0},{"本站价":0.01,"编码":"32","品名":"粉红跳蛋","图片路径":"/upload/201705/10/201705101133265347.jpg","前台库存":126.0,"房间库存":289.0,"销量":286.0},{"本站价":0.03,"编码":"15","品名":"OMYSKY","图片路径":"/upload/201705/10/201705101142496766.jpg","前台库存":44.0,"房间库存":202.0,"销量":202.0},{"本站价":0.03,"编码":"12","品名":"性感内衣","图片路径":"/upload/201705/10/201705101145593114.jpg","前台库存":113.0,"房间库存":156.0,"销量":156.0},{"本站价":0.01,"编码":null,"品名":"滑石粉","图片路径":"","前台库存":null,"房间库存":40.0,"销量":40.0},{"本站价":0.01,"编码":null,"品名":"滑石","图片路径":"","前台库存":null,"房间库存":120.0,"销量":120.0},{"本站价":0.01,"编码":"21","品名":"牛奶泡泡浴","图片路径":"/upload/201705/11/201705110954349382.jpg","前台库存":360.0,"房间库存":53.0,"销量":53.0},{"本站价":0.01,"编码":null,"品名":"佳洁士","图片路径":"/upload/201705/11/201705110956568741.jpg","前台库存":null,"房间库存":1045.0,"销量":1045.0},{"本站价":0.01,"编码":null,"品名":"雅润湿巾","图片路径":"/upload/201705/18/201705181553076114.gif","前台库存":null,"房间库存":150.0,"销量":150.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":729.0,"销量":729.0},{"本站价":0.01,"编码":"232","品名":"测试组合01","图片路径":"/upload/201706/15/201706151051077242.jpg","前台库存":-3.0,"房间库存":342.0,"销量":342.0},{"本站价":0.01,"编码":"65655555554645","品名":"测试组合02","图片路径":"/upload/201706/15/201706151108262491.jpg","前台库存":-20.0,"房间库存":null,"销量":null}]
+2017-08-08 17:10:31.286 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:10:31.287 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:10:31.287 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:10:31.288 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:10:31.288 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:10:31.289 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:10:31.289 类：comprehensive_hm 方法：BindGoods: dr6：
+2017-08-08 17:10:31.290 类：comprehensive_hm 方法：BindGoods: dr7：
+2017-08-08 17:10:31.290 类：comprehensive_hm 方法：BindGoods: dr8：
+2017-08-08 17:10:31.290 类：comprehensive_hm 方法：BindGoods: dr9：
+2017-08-08 17:10:31.291 类：comprehensive_hm 方法：BindGoods: dr10：
+2017-08-08 17:10:31.291 类：comprehensive_hm 方法：BindGoods: dr11：
+2017-08-08 17:10:31.292 类：comprehensive_hm 方法：BindGoods: dr12：
+2017-08-08 17:10:31.292 类：comprehensive_hm 方法：BindGoods: dr13：
+2017-08-08 17:10:31.292 类：comprehensive_hm 方法：BindGoods: dr14：
+2017-08-08 17:10:49.322 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 79
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:10:49.553 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":0.02,"编码":"1","品名":"杜蕾斯","图片路径":"/upload/201705/09/201705091134487853.jpg","前台库存":3212.0,"房间库存":814.0,"销量":814.0},{"本站价":0.02,"编码":"12","品名":"杜蕾斯AiR","图片路径":"/upload/201705/09/201705091143345239.jpg","前台库存":220.0,"房间库存":920.0,"销量":920.0},{"本站价":0.01,"编码":"13","品名":"网衣","图片路径":"/upload/201706/13/201706131610197202.jpg","前台库存":6558.0,"房间库存":40100.0,"销量":40586.0},{"本站价":0.01,"编码":"23","品名":"龙抬头","图片路径":"/upload/201706/13/201706131606059330.jpg","前台库存":34.0,"房间库存":652.0,"销量":652.0},{"本站价":0.01,"编码":"32","品名":"粉红跳蛋","图片路径":"/upload/201705/10/201705101133265347.jpg","前台库存":126.0,"房间库存":289.0,"销量":286.0},{"本站价":0.03,"编码":"15","品名":"OMYSKY","图片路径":"/upload/201705/10/201705101142496766.jpg","前台库存":44.0,"房间库存":202.0,"销量":202.0},{"本站价":0.03,"编码":"12","品名":"性感内衣","图片路径":"/upload/201705/10/201705101145593114.jpg","前台库存":113.0,"房间库存":156.0,"销量":156.0},{"本站价":0.01,"编码":null,"品名":"滑石粉","图片路径":"","前台库存":null,"房间库存":40.0,"销量":40.0},{"本站价":0.01,"编码":null,"品名":"滑石","图片路径":"","前台库存":null,"房间库存":120.0,"销量":120.0},{"本站价":0.01,"编码":"21","品名":"牛奶泡泡浴","图片路径":"/upload/201705/11/201705110954349382.jpg","前台库存":360.0,"房间库存":53.0,"销量":53.0},{"本站价":0.01,"编码":null,"品名":"佳洁士","图片路径":"/upload/201705/11/201705110956568741.jpg","前台库存":null,"房间库存":1045.0,"销量":1045.0},{"本站价":0.01,"编码":null,"品名":"雅润湿巾","图片路径":"/upload/201705/18/201705181553076114.gif","前台库存":null,"房间库存":150.0,"销量":150.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":729.0,"销量":729.0},{"本站价":0.01,"编码":"232","品名":"测试组合01","图片路径":"/upload/201706/15/201706151051077242.jpg","前台库存":-3.0,"房间库存":342.0,"销量":342.0},{"本站价":0.01,"编码":"65655555554645","品名":"测试组合02","图片路径":"/upload/201706/15/201706151108262491.jpg","前台库存":-20.0,"房间库存":null,"销量":null}]
+2017-08-08 17:10:49.554 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:10:49.554 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:10:49.555 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:10:49.555 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:10:49.556 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:10:49.556 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:10:49.557 类：comprehensive_hm 方法：BindGoods: dr6：
+2017-08-08 17:10:49.557 类：comprehensive_hm 方法：BindGoods: dr7：
+2017-08-08 17:10:49.558 类：comprehensive_hm 方法：BindGoods: dr8：
+2017-08-08 17:10:49.558 类：comprehensive_hm 方法：BindGoods: dr9：
+2017-08-08 17:10:49.559 类：comprehensive_hm 方法：BindGoods: dr10：
+2017-08-08 17:10:49.559 类：comprehensive_hm 方法：BindGoods: dr11：
+2017-08-08 17:10:49.559 类：comprehensive_hm 方法：BindGoods: dr12：
+2017-08-08 17:10:49.560 类：comprehensive_hm 方法：BindGoods: dr13：
+2017-08-08 17:10:49.560 类：comprehensive_hm 方法：BindGoods: dr14：
+2017-08-08 17:10:58.880 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:10:58.880 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:10:58.962 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:10:59.023 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:11:14.759 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:11:14.759 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:11:17.753 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:11:17.753 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:11:17.826 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:11:17.880 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:11:38.510 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 82
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:11:38.580 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":22.99,"编码":"D","品名":"杜蕾斯","图片路径":"/upload/201706/12/201706121340484982.jpg","前台库存":null,"房间库存":29.0,"销量":29.0},{"本站价":49.99,"编码":"J","品名":"空气套X2","图片路径":"/upload/201706/12/201706121347135394.jpg","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":59.99,"编码":"G","品名":"龙抬头","图片路径":"/upload/201706/13/201706131605342746.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":11.99,"编码":"B","品名":"旺仔X2","图片路径":"/upload/201707/06/201707061607229662.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":15.99,"编码":"A","品名":"红牛X2","图片路径":"/upload/201707/06/201707061615581164.jpg","前台库存":null,"房间库存":1.0,"销量":1.0}]
+2017-08-08 17:11:38.580 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:11:38.581 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:11:38.581 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:11:38.582 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:11:38.582 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:11:38.583 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:12:04.229 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:12:04.230 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:12:04.306 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:12:04.368 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:13:01.634 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:13:01.635 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:13:02.085 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:13:02.088 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' AND openid <> ''
+2017-08-08 17:13:02.152 类：BasePage 方法：UserId: _userid:1
+2017-08-08 17:13:02.212 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:13:33.257 页面：comprehensive 方法：BindRoom: 异常信息：列名 '用户名' 无效。select WP_库位表.id,WP_库位表.仓库id,库位名,用户名,cast(0 as int) 数量 
+from WP_库位表 
+where WP_库位表.IsShow=1 and WP_库位表.仓库id=82 and 库位名 not like '%总台库%' and 库位名 not like '%总台%'
+2017-08-08 17:14:32.013 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' AND openid <> ''
+2017-08-08 17:14:32.246 类：BasePage 方法：UserId: _userid:1
+2017-08-08 17:14:32.515 页面：comprehensive 方法：BindRoom: 异常信息：列名 '用户名' 无效。select WP_库位表.id,WP_库位表.仓库id,库位名,用户名,cast(0 as int) 数量 
+from WP_库位表 
+where WP_库位表.IsShow=1 and WP_库位表.仓库id=79 and 库位名 not like '%总台库%' and 库位名 not like '%总台%'
+2017-08-08 17:14:39.239 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:14:39.240 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:14:39.322 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:14:39.323 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' AND openid <> ''
+2017-08-08 17:14:39.383 类：BasePage 方法：UserId: _userid:1
+2017-08-08 17:14:39.433 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:14:46.333 页面：comprehensive 方法：BindRoom: 异常信息：列名 '用户名' 无效。select WP_库位表.id,WP_库位表.仓库id,库位名,用户名,cast(0 as int) 数量 
+from WP_库位表 
+where WP_库位表.IsShow=1 and WP_库位表.仓库id=82 and 库位名 not like '%总台库%' and 库位名 not like '%总台%'
+2017-08-08 17:16:13.617 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' AND openid <> ''
+2017-08-08 17:16:13.932 类：BasePage 方法：UserId: _userid:1
+2017-08-08 17:16:15.520 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 79
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:16:15.807 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":0.02,"编码":"1","品名":"杜蕾斯","图片路径":"/upload/201705/09/201705091134487853.jpg","前台库存":3212.0,"房间库存":814.0,"销量":814.0},{"本站价":0.02,"编码":"12","品名":"杜蕾斯AiR","图片路径":"/upload/201705/09/201705091143345239.jpg","前台库存":220.0,"房间库存":920.0,"销量":920.0},{"本站价":0.01,"编码":"13","品名":"网衣","图片路径":"/upload/201706/13/201706131610197202.jpg","前台库存":6558.0,"房间库存":40100.0,"销量":40586.0},{"本站价":0.01,"编码":"23","品名":"龙抬头","图片路径":"/upload/201706/13/201706131606059330.jpg","前台库存":34.0,"房间库存":652.0,"销量":652.0},{"本站价":0.01,"编码":"32","品名":"粉红跳蛋","图片路径":"/upload/201705/10/201705101133265347.jpg","前台库存":126.0,"房间库存":289.0,"销量":286.0},{"本站价":0.03,"编码":"15","品名":"OMYSKY","图片路径":"/upload/201705/10/201705101142496766.jpg","前台库存":44.0,"房间库存":202.0,"销量":202.0},{"本站价":0.03,"编码":"12","品名":"性感内衣","图片路径":"/upload/201705/10/201705101145593114.jpg","前台库存":113.0,"房间库存":156.0,"销量":156.0},{"本站价":0.01,"编码":null,"品名":"滑石粉","图片路径":"","前台库存":null,"房间库存":40.0,"销量":40.0},{"本站价":0.01,"编码":null,"品名":"滑石","图片路径":"","前台库存":null,"房间库存":120.0,"销量":120.0},{"本站价":0.01,"编码":"21","品名":"牛奶泡泡浴","图片路径":"/upload/201705/11/201705110954349382.jpg","前台库存":360.0,"房间库存":53.0,"销量":53.0},{"本站价":0.01,"编码":null,"品名":"佳洁士","图片路径":"/upload/201705/11/201705110956568741.jpg","前台库存":null,"房间库存":1045.0,"销量":1045.0},{"本站价":0.01,"编码":null,"品名":"雅润湿巾","图片路径":"/upload/201705/18/201705181553076114.gif","前台库存":null,"房间库存":150.0,"销量":150.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":729.0,"销量":729.0},{"本站价":0.01,"编码":"232","品名":"测试组合01","图片路径":"/upload/201706/15/201706151051077242.jpg","前台库存":-3.0,"房间库存":342.0,"销量":342.0},{"本站价":0.01,"编码":"65655555554645","品名":"测试组合02","图片路径":"/upload/201706/15/201706151108262491.jpg","前台库存":-20.0,"房间库存":null,"销量":null}]
+2017-08-08 17:16:15.807 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:16:15.808 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:16:15.808 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:16:15.809 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:16:15.809 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:16:15.809 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:16:15.810 类：comprehensive_hm 方法：BindGoods: dr6：
+2017-08-08 17:16:15.810 类：comprehensive_hm 方法：BindGoods: dr7：
+2017-08-08 17:16:15.811 类：comprehensive_hm 方法：BindGoods: dr8：
+2017-08-08 17:16:15.811 类：comprehensive_hm 方法：BindGoods: dr9：
+2017-08-08 17:16:15.812 类：comprehensive_hm 方法：BindGoods: dr10：
+2017-08-08 17:16:15.812 类：comprehensive_hm 方法：BindGoods: dr11：
+2017-08-08 17:16:15.813 类：comprehensive_hm 方法：BindGoods: dr12：
+2017-08-08 17:16:15.813 类：comprehensive_hm 方法：BindGoods: dr13：
+2017-08-08 17:16:15.814 类：comprehensive_hm 方法：BindGoods: dr14：
+2017-08-08 17:16:25.172 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:16:25.173 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:16:25.239 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:16:25.290 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:16:32.478 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:16:32.479 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:16:34.752 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:16:34.752 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:16:34.846 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:16:34.892 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:16:39.910 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 82
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:16:39.974 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":22.99,"编码":"D","品名":"杜蕾斯","图片路径":"/upload/201706/12/201706121340484982.jpg","前台库存":null,"房间库存":29.0,"销量":29.0},{"本站价":49.99,"编码":"J","品名":"空气套X2","图片路径":"/upload/201706/12/201706121347135394.jpg","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":59.99,"编码":"G","品名":"龙抬头","图片路径":"/upload/201706/13/201706131605342746.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":11.99,"编码":"B","品名":"旺仔X2","图片路径":"/upload/201707/06/201707061607229662.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":15.99,"编码":"A","品名":"红牛X2","图片路径":"/upload/201707/06/201707061615581164.jpg","前台库存":null,"房间库存":1.0,"销量":1.0}]
+2017-08-08 17:16:39.974 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:16:39.975 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:16:39.976 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:16:39.976 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:16:39.977 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:16:39.977 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:16:45.185 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 82
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:16:45.261 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":22.99,"编码":"D","品名":"杜蕾斯","图片路径":"/upload/201706/12/201706121340484982.jpg","前台库存":null,"房间库存":29.0,"销量":29.0},{"本站价":49.99,"编码":"J","品名":"空气套X2","图片路径":"/upload/201706/12/201706121347135394.jpg","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":59.99,"编码":"G","品名":"龙抬头","图片路径":"/upload/201706/13/201706131605342746.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":11.99,"编码":"B","品名":"旺仔X2","图片路径":"/upload/201707/06/201707061607229662.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":15.99,"编码":"A","品名":"红牛X2","图片路径":"/upload/201707/06/201707061615581164.jpg","前台库存":null,"房间库存":1.0,"销量":1.0}]
+2017-08-08 17:16:45.262 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:16:45.263 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:16:45.264 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:16:45.264 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:16:45.265 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:16:45.266 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:16:56.401 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:16:56.402 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:16:58.352 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:16:58.353 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:16:58.416 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:16:58.466 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:17:07.637 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 83
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:17:07.721 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":22.99,"编码":"D","品名":"杜蕾斯","图片路径":"/upload/201706/12/201706121340484982.jpg","前台库存":null,"房间库存":19.0,"销量":19.0},{"本站价":49.99,"编码":"J","品名":"空气套X2","图片路径":"/upload/201706/12/201706121347135394.jpg","前台库存":null,"房间库存":4.0,"销量":4.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":7.0,"销量":7.0},{"本站价":99.99,"编码":"K","品名":"OMYSKY","图片路径":"/upload/201706/12/201706121514054634.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":36.99,"编码":"I","品名":"性感内衣","图片路径":"/upload/201706/12/201706121517137340.jpg","前台库存":null,"房间库存":7.0,"销量":7.0},{"本站价":59.99,"编码":"G","品名":"龙抬头","图片路径":"/upload/201706/13/201706131605342746.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":11.99,"编码":"B","品名":"旺仔X2","图片路径":"/upload/201707/06/201707061607229662.jpg","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":15.99,"编码":"A","品名":"红牛X2","图片路径":"/upload/201707/06/201707061615581164.jpg","前台库存":null,"房间库存":3.0,"销量":3.0}]
+2017-08-08 17:17:07.722 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:17:07.722 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:17:07.723 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:17:07.724 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:17:07.724 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:17:07.725 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:17:07.726 类：comprehensive_hm 方法：BindGoods: dr6：
+2017-08-08 17:17:07.727 类：comprehensive_hm 方法：BindGoods: dr7：
+2017-08-08 17:17:30.141 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:17:30.141 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:17:31.476 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:17:31.477 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:17:31.536 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:17:31.585 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:17:37.308 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 82
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:17:37.377 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":22.99,"编码":"D","品名":"杜蕾斯","图片路径":"/upload/201706/12/201706121340484982.jpg","前台库存":null,"房间库存":29.0,"销量":29.0},{"本站价":49.99,"编码":"J","品名":"空气套X2","图片路径":"/upload/201706/12/201706121347135394.jpg","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":3.0,"销量":3.0},{"本站价":59.99,"编码":"G","品名":"龙抬头","图片路径":"/upload/201706/13/201706131605342746.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":11.99,"编码":"B","品名":"旺仔X2","图片路径":"/upload/201707/06/201707061607229662.jpg","前台库存":null,"房间库存":1.0,"销量":1.0},{"本站价":15.99,"编码":"A","品名":"红牛X2","图片路径":"/upload/201707/06/201707061615581164.jpg","前台库存":null,"房间库存":1.0,"销量":1.0}]
+2017-08-08 17:17:37.377 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-08 17:17:37.378 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-08 17:17:37.379 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-08 17:17:37.379 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-08 17:17:37.379 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-08 17:17:37.380 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-08 17:17:46.657 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:17:46.662 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:17:47.880 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:17:47.880 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:17:47.938 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:17:47.984 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:17:50.277 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 85
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-08 17:17:50.326 类：comprehensive_hm 方法：BindGoods: dt：[]
+2017-08-08 17:20:01.292 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:20:01.292 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:20:03.906 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:20:03.907 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:20:03.966 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:20:04.017 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:21:38.639 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:21:38.640 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:21:42.726 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id]) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =1 AND 是否补货完成 = 0) AND  仓库id=79
+
+2017-08-08 17:21:44.603 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:21:44.604 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:21:57.802 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:21:57.802 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:21:59.560 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:21:59.560 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:21:59.626 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:21:59.672 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:22:01.813 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-08-08 17:22:01.972 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-08-08 17:22:02.069 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-08-08 17:22:14.105 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:22:14.105 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:22:14.166 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:22:14.213 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:22:28.623 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:22:28.624 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:22:30.266 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:22:30.267 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM94iBA0GGYsh8tnJ1pmuM8' and wp_会员表.openid <> '' and  isshow=1
+2017-08-08 17:22:30.335 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-08 17:22:30.384 类：BasePage 方法：UserInfo: UserInfo进入:

@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F796C609-8BB8-4712-A66C-B814AF96071D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tdx.installer</RootNamespace>
+    <AssemblyName>tdx.installer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Creatrue.Common">
+      <HintPath>..\..\Creatrue.Common\Creatrue.Common\bin\Debug\Creatrue.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Creatrue.kernel">
+      <HintPath>..\..\Creatrue.kernel\Creatrue.kernel\bin\Debug\Creatrue.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\attachicons\attachimg.gif" />
+    <Content Include="images\attachicons\attachment.gif" />
+    <Content Include="images\attachicons\attachurl.gif" />
+    <Content Include="images\attachicons\common.gif" />
+    <Content Include="images\attachicons\common_new.gif" />
+    <Content Include="images\attachicons\image.gif" />
+    <Content Include="images\attachicons\rar.gif" />
+    <Content Include="images\common\advclose.gif" />
+    <Content Include="images\common\app_add.gif" />
+    <Content Include="images\common\app_set.gif" />
+    <Content Include="images\common\arw.gif" />
+    <Content Include="images\common\back.gif" />
+    <Content Include="images\common\camera.swf" />
+    <Content Include="images\common\card_btn.png" />
+    <Content Include="images\common\clipboard.swf" />
+    <Content Include="images\common\close.gif" />
+    <Content Include="images\common\codebg.gif" />
+    <Content Include="images\common\connect_qq.gif" />
+    <Content Include="images\common\debate_bg.gif" />
+    <Content Include="images\common\debate_chart.gif" />
+    <Content Include="images\common\debate_vs.gif" />
+    <Content Include="images\common\dot.gif" />
+    <Content Include="images\common\editor.gif" />
+    <Content Include="images\common\faq.gif" />
+    <Content Include="images\common\flvplayer.swf" />
+    <Content Include="images\common\imgerror.png" />
+    <Content Include="images\common\imgerror2.png" />
+    <Content Include="images\common\imgloading.png" />
+    <Content Include="images\common\loading.gif" />
+    <Content Include="images\common\loading_wide.gif" />
+    <Content Include="images\common\locale.xml" />
+    <Content Include="images\common\newwindow.gif" />
+    <Content Include="images\common\noavatar_large.gif" />
+    <Content Include="images\common\noavatar_medium.gif" />
+    <Content Include="images\common\noavatar_small.gif" />
+    <Content Include="images\common\none.gif" />
+    <Content Include="images\common\op.png" />
+    <Content Include="images\common\pdbt.gif" />
+    <Content Include="images\common\pm_ntc.gif" />
+    <Content Include="images\common\pn.png" />
+    <Content Include="images\common\qq_bind_small.gif" />
+    <Content Include="images\common\qq_login.gif" />
+    <Content Include="images\common\resize.gif" />
+    <Content Include="images\common\stat.swf" />
+    <Content Include="images\common\upload.swf" />
+    <Content Include="images\common\uploading.gif" />
+    <Content Include="images\common\warning.gif" />
+    <Content Include="images\epayment\alipay_logo.gif" />
+    <Content Include="images\epayment\tenpay_logo.gif" />
+    <Content Include="images\fileicons\default.gif" />
+    <Content Include="images\fileicons\gif.gif" />
+    <Content Include="images\fileicons\jpg.gif" />
+    <Content Include="images\fileicons\rar.gif" />
+    <Content Include="images\fileicons\zip.gif" />
+    <Content Include="images\focus1.swf" />
+    <Content Include="images\gender\female.gif" />
+    <Content Include="images\gender\male.gif" />
+    <Content Include="images\groupicons\admin.gif" />
+    <Content Include="images\groupicons\guest.gif" />
+    <Content Include="images\groupicons\member.gif" />
+    <Content Include="images\groupicons\moder.gif" />
+    <Content Include="images\groupicons\supermoder.gif" />
+    <Content Include="images\groupicons\vip.gif" />
+    <Content Include="images\help\dot.gif" />
+    <Content Include="images\help\dot2.gif" />
+    <Content Include="images\help\dot3.gif" />
+    <Content Include="images\help\dot4.gif" />
+    <Content Include="images\help\gotop.gif" />
+    <Content Include="images\identify\001.gif" />
+    <Content Include="images\identify\001_small.gif" />
+    <Content Include="images\identify\002.gif" />
+    <Content Include="images\identify\002_small.gif" />
+    <Content Include="images\identify\003.gif" />
+    <Content Include="images\identify\003_small.gif" />
+    <Content Include="images\identify\004.gif" />
+    <Content Include="images\identify\004_small.gif" />
+    <Content Include="images\identify\005.gif" />
+    <Content Include="images\identify\005_small.gif" />
+    <Content Include="images\identify\006.gif" />
+    <Content Include="images\identify\006_small.gif" />
+    <Content Include="images\identify\007.gif" />
+    <Content Include="images\identify\007_small.gif" />
+    <Content Include="images\identify\008.gif" />
+    <Content Include="images\identify\008_small.gif" />
+    <Content Include="images\identify\009.gif" />
+    <Content Include="images\identify\009_small.gif" />
+    <Content Include="images\identify\010.gif" />
+    <Content Include="images\identify\010_small.gif" />
+    <Content Include="images\identify\bq.gif" />
+    <Content Include="images\identify\bq2.gif" />
+    <Content Include="images\identify\bq_small.gif" />
+    <Content Include="images\identify\bt.gif" />
+    <Content Include="images\identify\bt2.gif" />
+    <Content Include="images\identify\bt_small.gif" />
+    <Content Include="images\identify\cj.gif" />
+    <Content Include="images\identify\cj_small.gif" />
+    <Content Include="images\identify\cz.gif" />
+    <Content Include="images\identify\cz_small.gif" />
+    <Content Include="images\identify\gf.gif" />
+    <Content Include="images\identify\gf_small.gif" />
+    <Content Include="images\identify\gx.gif" />
+    <Content Include="images\identify\gx_small.gif" />
+    <Content Include="images\identify\hx.gif" />
+    <Content Include="images\identify\hx_small.gif" />
+    <Content Include="images\identify\jc.gif" />
+    <Content Include="images\identify\jc_small.gif" />
+    <Content Include="images\identify\lj.gif" />
+    <Content Include="images\identify\lj_small.gif" />
+    <Content Include="images\identify\nb.gif" />
+    <Content Include="images\identify\nb_small.gif" />
+    <Content Include="images\identify\tj.gif" />
+    <Content Include="images\identify\tj2.gif" />
+    <Content Include="images\identify\tj_small.gif" />
+    <Content Include="images\identify\wl.gif" />
+    <Content Include="images\identify\wl_small.gif" />
+    <Content Include="images\identify\wq.gif" />
+    <Content Include="images\identify\wq_small.gif" />
+    <Content Include="images\identify\ws.gif" />
+    <Content Include="images\identify\ws_small.gif" />
+    <Content Include="images\identify\xx.gif" />
+    <Content Include="images\identify\xx_small.gif" />
+    <Content Include="images\identify\xy.gif" />
+    <Content Include="images\identify\xy_small.gif" />
+    <Content Include="images\identify\zc.gif" />
+    <Content Include="images\identify\zc_small.gif" />
+    <Content Include="images\level\1.gif" />
+    <Content Include="images\level\2.gif" />
+    <Content Include="images\level\3.gif" />
+    <Content Include="images\level\4.gif" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\medals\medal1.gif" />
+    <Content Include="images\medals\medal10.gif" />
+    <Content Include="images\medals\medal11.gif" />
+    <Content Include="images\medals\medal12.gif" />
+    <Content Include="images\medals\medal13.gif" />
+    <Content Include="images\medals\medal14.gif" />
+    <Content Include="images\medals\medal15.gif" />
+    <Content Include="images\medals\medal16.gif" />
+    <Content Include="images\medals\medal17.gif" />
+    <Content Include="images\medals\medal18.gif" />
+    <Content Include="images\medals\medal19.gif" />
+    <Content Include="images\medals\medal2.gif" />
+    <Content Include="images\medals\medal20.gif" />
+    <Content Include="images\medals\medal3.gif" />
+    <Content Include="images\medals\medal4.gif" />
+    <Content Include="images\medals\medal5.gif" />
+    <Content Include="images\medals\medal6.gif" />
+    <Content Include="images\medals\medal7.gif" />
+    <Content Include="images\medals\medal8.gif" />
+    <Content Include="images\medals\medal9.gif" />
+    <Content Include="images\page\first.gif" />
+    <Content Include="images\page\last.gif" />
+    <Content Include="images\page\next.gif" />
+    <Content Include="images\page\prev.gif" />
+    <Content Include="images\polls\0.gif" />
+    <Content Include="images\polls\1.gif" />
+    <Content Include="images\polls\2.gif" />
+    <Content Include="images\polls\3.gif" />
+    <Content Include="images\polls\4.gif" />
+    <Content Include="images\polls\5.gif" />
+    <Content Include="images\polls\6.gif" />
+    <Content Include="images\polls\7.gif" />
+    <Content Include="images\polls\8.gif" />
+    <Content Include="images\polls\9.gif" />
+    <Content Include="images\posticons\0.gif" />
+    <Content Include="images\posticons\1.gif" />
+    <Content Include="images\posticons\10.gif" />
+    <Content Include="images\posticons\11.gif" />
+    <Content Include="images\posticons\12.gif" />
+    <Content Include="images\posticons\13.gif" />
+    <Content Include="images\posticons\14.gif" />
+    <Content Include="images\posticons\15.gif" />
+    <Content Include="images\posticons\2.gif" />
+    <Content Include="images\posticons\3.gif" />
+    <Content Include="images\posticons\4.gif" />
+    <Content Include="images\posticons\5.gif" />
+    <Content Include="images\posticons\6.gif" />
+    <Content Include="images\posticons\7.gif" />
+    <Content Include="images\posticons\8.gif" />
+    <Content Include="images\posticons\9.gif" />
+    <Content Include="images\share\baidu.gif" />
+    <Content Include="images\share\douban.gif" />
+    <Content Include="images\share\favorite.gif" />
+    <Content Include="images\share\google.gif" />
+    <Content Include="images\share\kaixin001.gif" />
+    <Content Include="images\share\live.gif" />
+    <Content Include="images\share\qq.gif" />
+    <Content Include="images\share\renren.gif" />
+    <Content Include="images\share\sina.gif" />
+    <Content Include="images\share\sohu.gif" />
+    <Content Include="images\share\vivi.gif" />
+    <Content Include="images\stats\aix.gif" />
+    <Content Include="images\stats\firefox.gif" />
+    <Content Include="images\stats\freebsd.gif" />
+    <Content Include="images\stats\konqueror.gif" />
+    <Content Include="images\stats\linux.gif" />
+    <Content Include="images\stats\lynx.gif" />
+    <Content Include="images\stats\mac.gif" />
+    <Content Include="images\stats\mozilla.gif" />
+    <Content Include="images\stats\msie.gif" />
+    <Content Include="images\stats\netscape.gif" />
+    <Content Include="images\stats\opera.gif" />
+    <Content Include="images\stats\os2.gif" />
+    <Content Include="images\stats\other.gif" />
+    <Content Include="images\stats\safari.gif" />
+    <Content Include="images\stats\spiders.gif" />
+    <Content Include="images\stats\sunos.gif" />
+    <Content Include="images\stats\windows.gif" />
+    <Content Include="images\tree\file.gif" />
+    <Content Include="images\tree\folder.gif" />
+    <Content Include="images\tree\folderopen.gif" />
+    <Content Include="images\tree\l0.gif" />
+    <Content Include="images\tree\l1.gif" />
+    <Content Include="images\tree\l2.gif" />
+    <Content Include="images\tree\l3.gif" />
+    <Content Include="images\tree\l4.gif" />
+    <Content Include="images\tree\l5.gif" />
+    <Content Include="images\tree\m0.gif" />
+    <Content Include="images\tree\m1.gif" />
+    <Content Include="images\tree\m2.gif" />
+    <Content Include="images\tree\m3.gif" />
+    <Content Include="images\tree\m5.gif" />
+    <Content Include="images\tree\p0.gif" />
+    <Content Include="images\tree\p1.gif" />
+    <Content Include="images\tree\p2.gif" />
+    <Content Include="images\tree\p3.gif" />
+    <Content Include="install\css\styles.css" />
+    <Content Include="install\dbconfig.aspx" />
+    <Content Include="install\images\ad.jpg" />
+    <Content Include="install\images\bodybg.png" />
+    <Content Include="install\images\curbg.png" />
+    <Content Include="install\images\error.gif" />
+    <Content Include="install\images\hint.gif" />
+    <Content Include="install\images\icon.gif" />
+    <Content Include="install\images\icon_item.gif" />
+    <Content Include="install\images\icon_true.gif" />
+    <Content Include="install\images\list_bg.gif" />
+    <Content Include="install\images\list_icon.gif" />
+    <Content Include="install\images\logo.png" />
+    <Content Include="install\images\navbg.png" />
+    <Content Include="install\images\ok.gif" />
+    <Content Include="install\images\right.gif" />
+    <Content Include="install\images\txt_bg.gif" />
+    <Content Include="install\images\wrapbg.png" />
+    <Content Include="install\images\wrap_bg.jpg" />
+    <Content Include="install\install.aspx" />
+    <Content Include="install\installer.aspx" />
+    <Content Include="install\js\jquery.js" />
+    <Content Include="install\js\jquery_boxy\css\boxy.css" />
+    <Content Include="install\js\jquery_boxy\css\common.css" />
+    <Content Include="install\js\jquery_boxy\image\boxy\boxy-ne.png" />
+    <Content Include="install\js\jquery_boxy\image\boxy\boxy-nw.png" />
+    <Content Include="install\js\jquery_boxy\image\boxy\boxy-se.png" />
+    <Content Include="install\js\jquery_boxy\image\boxy\boxy-sw.png" />
+    <Content Include="install\js\jquery_boxy\js\jquery.boxy.js" />
+    <Content Include="install\js\jquery_boxy\page\jQuery-plugin-boxy-test.html" />
+    <Content Include="install\js\jquery_boxy\page\jQuery-plugin-boxy.html" />
+    <Content Include="install\js\setup.js" />
+    <Content Include="install\main.css" />
+    <Content Include="install\siteconfig.aspx" />
+    <Content Include="install\sqlscript\sqlserver\setup1.sql" />
+    <Content Include="install\sqlscript\sqlserver\setup2.1.sql" />
+    <Content Include="install\sqlscript\sqlserver\setup2.2 - 2005.sql" />
+    <Content Include="install\sqlscript\sqlserver\setup2.2.sql" />
+    <Content Include="install\sqlscript\sqlserver\setup2.3.sql" />
+    <Content Include="install\sqlscript\sqlserver\setup3.sql" />
+    <Content Include="install\upload\B2C_Account.sql" />
+    <Content Include="install\upload\B2C_AccountConfig.sql" />
+    <Content Include="install\upload\B2C_AdClass.sql" />
+    <Content Include="install\upload\B2C_ADS.sql" />
+    <Content Include="install\upload\B2C_brand.sql" />
+    <Content Include="install\upload\B2C_card_action.sql" />
+    <Content Include="install\upload\B2C_category.sql" />
+    <Content Include="install\upload\B2C_config.sql" />
+    <Content Include="install\upload\B2C_Dclass.sql" />
+    <Content Include="install\upload\B2C_Downs.sql" />
+    <Content Include="install\upload\B2C_Franchises.sql" />
+    <Content Include="install\upload\B2C_Goods.sql" />
+    <Content Include="install\upload\B2C_Goods_M.sql" />
+    <Content Include="install\upload\B2C_group_fran.sql" />
+    <Content Include="install\upload\B2C_Hclass.sql" />
+    <Content Include="install\upload\B2C_Honor.sql" />
+    <Content Include="install\upload\B2C_HY.sql" />
+    <Content Include="install\upload\B2C_kemu.sql" />
+    <Content Include="install\upload\B2C_logs.sql" />
+    <Content Include="install\upload\B2C_mailaddress.sql" />
+    <Content Include="install\upload\B2C_mem.sql" />
+    <Content Include="install\upload\B2C_memvip.sql" />
+    <Content Include="install\upload\B2C_menu.sql" />
+    <Content Include="install\upload\B2C_menu2.sql" />
+    <Content Include="install\upload\B2C_MS.sql" />
+    <Content Include="install\upload\B2C_note.sql" />
+    <Content Include="install\upload\B2C_orders.sql" />
+    <Content Include="install\upload\B2C_order_active.sql" />
+    <Content Include="install\upload\B2C_order_addr.sql" />
+    <Content Include="install\upload\B2C_order_d.sql" />
+    <Content Include="install\upload\B2C_order_log.sql" />
+    <Content Include="install\upload\B2C_order_pay.sql" />
+    <Content Include="install\upload\B2C_paytype.sql" />
+    <Content Include="install\upload\B2C_pclass.sql" />
+    <Content Include="install\upload\B2C_PeopleInfo.sql" />
+    <Content Include="install\upload\B2C_photo.sql" />
+    <Content Include="install\upload\B2C_rankinfo.sql" />
+    <Content Include="install\upload\B2C_rankvsfran.sql" />
+    <Content Include="install\upload\B2C_rank_style.sql" />
+    <Content Include="install\upload\B2C_rights.sql" />
+    <Content Include="install\upload\B2C_sendtype.sql" />
+    <Content Include="install\upload\B2C_share.sql" />
+    <Content Include="install\upload\B2C_share_log.sql" />
+    <Content Include="install\upload\B2C_shop_config.sql" />
+    <Content Include="install\upload\B2C_tclass.sql" />
+    <Content Include="install\upload\B2C_Team.sql" />
+    <Content Include="install\upload\B2C_tmsg.sql" />
+    <Content Include="install\upload\B2C_tpage.sql" />
+    <Content Include="install\upload\B2C_TPclass.sql" />
+    <Content Include="install\upload\B2C_user.sql" />
+    <Content Include="install\upload\B2C_user_rank.sql" />
+    <Content Include="install\upload\B2C_vipcard.sql" />
+    <Content Include="install\upload\B2C_wallet.sql" />
+    <Content Include="install\upload\B2C_worker.sql" />
+    <Content Include="install\upload\B2C_worker_sp.sql" />
+    <Content Include="install\upload\BJ_obj.sql" />
+    <Content Include="install\upload\BJ_value.sql" />
+    <Content Include="install\upload\C2C_Account.sql" />
+    <Content Include="install\upload\C2C_BaikeApp.sql" />
+    <Content Include="install\upload\C2C_TranslateEn.sql" />
+    <Content Include="install\upload\C2C_TranslateZh.sql" />
+    <Content Include="install\upload\C2C_voucher.sql" />
+    <Content Include="install\upload\C2C_voucher_log.sql" />
+    <Content Include="install\upload\C2C_WeatherApp.sql" />
+    <Content Include="install\upload\card_bg_dic.sql" />
+    <Content Include="install\upload\card_temp_dic.sql" />
+    <Content Include="install\upload\control_dict.sql" />
+    <Content Include="install\upload\control_key.sql" />
+    <Content Include="install\upload\control_obj.sql" />
+    <Content Include="install\upload\control_user.sql" />
+    <Content Include="install\upload\control_value.sql" />
+    <Content Include="install\upload\dt_manager.sql" />
+    <Content Include="install\upload\dt_manager_log.sql" />
+    <Content Include="install\upload\dt_manager_role.sql" />
+    <Content Include="install\upload\dt_manager_role_value.sql" />
+    <Content Include="install\upload\dt_navigation.sql" />
+    <Content Include="install\upload\ex_message.sql" />
+    <Content Include="install\upload\ms_orders.sql" />
+    <Content Include="install\upload\ms_order_addr.sql" />
+    <Content Include="install\upload\ms_order_d.sql" />
+    <Content Include="install\upload\ms_order_log.sql" />
+    <Content Include="install\upload\Sub_To_Service.sql" />
+    <Content Include="install\upload\tm_orders.sql" />
+    <Content Include="install\upload\tm_order_addr.sql" />
+    <Content Include="install\upload\tm_order_d.sql" />
+    <Content Include="install\upload\tm_order_log.sql" />
+    <Content Include="install\upload\vote_Album.sql" />
+    <Content Include="install\upload\vote_bigpic.sql" />
+    <Content Include="install\upload\vote_log.sql" />
+    <Content Include="install\upload\weixin_class.sql" />
+    <Content Include="install\upload\wx_acm_action.sql" />
+    <Content Include="install\upload\wx_acm_action_gains.sql" />
+    <Content Include="install\upload\wx_acm_action_log.sql" />
+    <Content Include="install\upload\wx_acm_gain.sql" />
+    <Content Include="install\upload\wx_acm_gain_log.sql" />
+    <Content Include="install\upload\wx_acm_holiday.sql" />
+    <Content Include="install\upload\wx_acm_level.sql" />
+    <Content Include="install\upload\wx_acm_test.sql" />
+    <Content Include="install\upload\wx_acm_with.sql" />
+    <Content Include="install\upload\wx_action.sql" />
+    <Content Include="install\upload\wx_actions.sql" />
+    <Content Include="install\upload\wx_actions2.sql" />
+    <Content Include="install\upload\Wx_action_gain.sql" />
+    <Content Include="install\upload\Wx_action_logs.sql" />
+    <Content Include="install\upload\wx_config.sql" />
+    <Content Include="install\upload\wx_honor.sql" />
+    <Content Include="install\upload\wx_keys.sql" />
+    <Content Include="install\upload\wx_keys_f.sql" />
+    <Content Include="install\upload\wx_logs.sql" />
+    <Content Include="install\upload\wx_mp.sql" />
+    <Content Include="install\upload\wx_theme.sql" />
+    <Content Include="install\upload\wx_tmsg.sql" />
+    <Content Include="install\upload\wx_userInfo.sql" />
+    <Content Include="install\upload\wx_youhui.sql" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="install\ajax.ashx.cs">
+      <DependentUpon>ajax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="install\dbconfig.aspx.cs">
+      <DependentUpon>dbconfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\dbconfig.aspx.designer.cs">
+      <DependentUpon>dbconfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="install\install.aspx.cs">
+      <DependentUpon>install.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\install.aspx.designer.cs">
+      <DependentUpon>install.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="install\installer.aspx.cs">
+      <DependentUpon>installer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\installer.aspx.designer.cs">
+      <DependentUpon>installer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="install\siteconfig.aspx.cs">
+      <DependentUpon>siteconfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="install\siteconfig.aspx.designer.cs">
+      <DependentUpon>siteconfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="install\ajax.ashx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16065</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

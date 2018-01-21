@@ -1,0 +1,42 @@
+.topic {
+  width: 100%; }
+  .topic li {
+    float: left;
+    text-align: center;
+    font: 16px/40px "microsoft yahei";
+    color: #000;
+    width: 20%;
+    margin: 0 2.5%;
+    border-bottom: solid 1px #ffffff; }
+  .topic li.clickOn {
+    color: #f60;
+    border-bottom: solid 1px #f60; }
+
+.main {
+  width: 94%;
+  padding: 10px 3%;
+  height: calc(100% - 73px);
+  height: -webkit-calc(100% - 73px);
+  height: -moz-calc(100% - 73px);
+  overflow-y: auto; }
+  .main .sale, .main .addGoods, .main .getGoods, .main .broadcast {
+    width: 100%;
+    display: none; }
+    .main .sale dt, .main .addGoods dt, .main .getGoods dt, .main .broadcast dt {
+      width: 100%;
+      font: 14px/30px "microsoft yahei";
+      color: #000;
+      border-bottom: solid 1px #f60; }
+    .main .sale dd, .main .addGoods dd, .main .getGoods dd, .main .broadcast dd {
+      padding: 10px 0;
+      width: 100%;
+      border-bottom: solid 1px #ccc; }
+      .main .sale dd h3, .main .addGoods dd h3, .main .getGoods dd h3, .main .broadcast dd h3 {
+        margin-bottom: 6px; }
+      .main .sale dd h3, .main .sale dd p, .main .addGoods dd h3, .main .addGoods dd p, .main .getGoods dd h3, .main .getGoods dd p, .main .broadcast dd h3, .main .broadcast dd p {
+        font: 12px/20px "microsoft yahei";
+        color: #666; }
+    .main .sale dd:last-child, .main .addGoods dd:last-child, .main .getGoods dd:last-child, .main .broadcast dd:last-child {
+      border-bottom: none; }
+  .main .sale {
+    display: block; }

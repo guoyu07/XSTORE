@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.min.css"/>
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/common.css" />	
+		<link rel="stylesheet" href="../css/layer.css" />
+		<title>幸事多私享空间-业务处理</title>
+		<style type="text/css">
+			li{
+				list-style: none;
+			}
+			#dealBox {
+			    width: 100%;
+			    background-color: #fff;
+			    position: fixed;
+			    top: 0;
+			    z-index: 99;
+			}
+			#dealBox .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+			    color: #FE8355;
+			    border-bottom: 2px solid #FF5C12;
+			    border-bottom-width: 50%;
+			}
+			.dealBoxControlContents{
+				padding-top: 40px;
+				width: 100%;
+				margin-top: 10px;
+			}	
+			.mui-table-view-cell{
+				background-color: #fff;
+			}
+			.dealContent1Title{
+				width: 100%;
+				height: 40px;
+				text-align: left;
+				background-color: #fff;
+				border-bottom: 1px solid #ddd;
+				padding: 0 15px;
+			}
+			.ReplenishmentItem{
+				margin-top: 10px;
+				border-bottom: 1px solid #ddd;
+			}	
+			.dealContent1Title span{
+				line-height: 40px;
+				font-size: 15px;
+			}
+			.AM_title{
+				font-size: 15px;
+				color: #000000;
+			}
+			.numText{
+				font-size: 14px;
+				color: #666;
+			}
+			.danjia{
+				margin-left: 10px;
+				font-size: 14px;
+				color: #666;
+			}
+			.totle{
+				font-size: 14px;
+				color: #666;
+			}
+			.totle .yuan{
+				font-size: 14px;
+				color: #FF0000;
+			}	
+			#content2 .mui-table-view-cell input{
+				width: 100%;
+				border: none;
+				background-color: #FF5C12;
+				color: #fff;
+				font-size: 14px;
+				height: 40px;
+			}	
+			.deliveryRecordContainer{
+				width: 100%;
+				margin-top: 15px;
+			}	
+			.deliveryRecordContainer .deliveryRecordTitle{
+				width: 100%;
+				height: 40px;
+				display: table;
+				text-align: center;
+				background-color: #fff;
+				border-bottom: 1px solid #ddd;
+			}	
+			.deliveryRecordContainer .deliveryRecordTitle span{
+				display: table-cell;
+				line-height: 40px;
+				font-size: 15px;
+			}	
+			.fixedBox{
+				position: fixed;
+				bottom: 150px;
+				width: 30px;				
+				z-index: 99;
+				right: 5px;
+				text-align: center;
+				border:solid 1px #ccc;
+				background:#fff;
+			}	
+			.fixedBox div{
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				border-bottom:solid 1px #ccc;			
+				text-align: center;
+			}
+			.fixedBox div:last-child{
+				border-bottom:none;
+			}
+			.fixedBox div a{
+				color: #ccc;
+				font-size: 14px;
+			}
+			.fixedBox div.clickOn{
+				background:#f60;
+			}
+			.fixedBox div.clickOn a{
+				color: #fff;
+			}
+			.ReplenishmentItem{
+				display:none;
+			}
+			.ReplenishmentItem:first-child{
+				display:block;
+			}
+			.imgWrap{
+				width:40px;
+				height:40px;
+				margin-right:10px;
+			}
+			.imgWrap img{
+				width:100%;
+				height:100%;
+				display:block;
+			}
+			.info h3{
+				font:14px/30px "microsoft yahei";
+				color:#666;
+			}
+			.num{
+				font:14px/30px "microsoft yahei";
+				color:#999;
+			}
+			.makeSure{
+				margin-top:10px;
+				width:100%;
+				padding:3%;
+				background:#fff;
+			}
+			.makeSure a{
+				width: 100%;
+				font:14px/40px "microsoft yahei";
+				color:#fff;
+				display: block;
+				text-align: center;
+				background:#f60;
+			}
+			.deliveryRecordContainer{
+				display:none;
+			}
+			.deliveryRecordContainer:first-child{
+				display: block;
+			}
+			.errorOperation ul li dl dd{
+				width:25%;
+			}
+			.errorOperation ul li dl dd a{
+				width:100%;
+				display: block;
+				text-align: center;
+				font:14px/30px "microsoft yahei";
+				color:#000;
+			}
+			.forget ul li a button,.send button{
+				color:#f60;
+				border-color:#f60;
+			}
+			.mui-table-cell{
+				position: relative;
+			}
+			.mui-btn-outlined.mui-btn-blue{
+				position:absolute;
+				bottom:6px;
+				right:10px;
+				border-color:#f60;
+				color:#f60;
+			}
+			.mui-btn-blue.mui-active:enabled, .mui-btn-blue:enabled:active, .mui-btn-primary.mui-active:enabled, .mui-btn-primary:enabled:active, input[type=submit].mui-active:enabled, input[type=submit]:enabled:active{
+				background-color:#f60;
+				border-color:#f60;
+			}
+		</style>
+	</head>
+	<body>
+	    <div id="dealBox">
+			<div id="dealBoxControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted ">
+				<a class="mui-control-item mui-active" href="#content1">待处理</a>
+				<a class="mui-control-item" href="#content2">已处理</a>
+			</div>
+		</div>	
+		<div id="rdealBoxControlContents" class="dealBoxControlContents">
+			<div id="content1" class="mui-control-content mui-active">
+				<ul>
+			        <li class="mui-table-view-cell">
+			            <div class="mui-table">
+			                <div class="mui-table-cell mui-col-xs-10">
+			                    <p class="mui-ellipsis AM_title"><span>Jissbon超薄激爽</span> &nbsp;商品编码：<span>1512366</span></p>
+			                    <h5 class="numText">房间：<span>1501</span> &nbsp;格号：<span class="danjia">01</span></h5>
+			                    <p class="mui-h6 mui-ellipsis totle">2017-06-02 18：38</span> </p>
+			                    <button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">确认</button>
+			                </div>
+			            </div>
+			        </li>
+			        <li class="mui-table-view-cell">
+			            <div class="mui-table">
+			                <div class="mui-table-cell mui-col-xs-10">
+			                    <p class="mui-ellipsis AM_title"><span>Jissbon超薄激爽</span> &nbsp;商品编码：<span>1512366</span></p>
+			                    <h5 class="numText">房间：<span>1501</span> &nbsp;格号：<span class="danjia">01</span></h5>
+			                    <p class="mui-h6 mui-ellipsis totle">2017-06-02 18：38</span> </p>
+			                     <button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">确认</button>
+			                </div>
+			            </div>
+			        </li>
+			        <li class="mui-table-view-cell">
+			            <div class="mui-table">
+			                <div class="mui-table-cell mui-col-xs-10">
+			                    <p class="mui-ellipsis AM_title"><span>Jissbon超薄激爽</span> &nbsp;商品编码：<span>1512366</span></p>
+			                    <h5 class="numText">房间：<span>1501</span> &nbsp;格号：<span class="danjia">01</span></h5>
+			                    <p class="mui-h6 mui-ellipsis totle">2017-06-02 18：38</span> </p>
+			                     <button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">确认</button>
+			                </div>
+			            </div>
+			        </li>
+			        <li class="mui-table-view-cell">
+			            <div class="mui-table">
+			                <div class="mui-table-cell mui-col-xs-10">
+			                    <p class="mui-ellipsis AM_title"><span>Jissbon超薄激爽</span> &nbsp;商品编码：<span>1512366</span></p>
+			                    <h5 class="numText">房间：<span>1501</span> &nbsp;格号：<span class="danjia">01</span></h5>
+			                    <p class="mui-h6 mui-ellipsis totle">2017-06-02 18：38</span> </p>
+			                     <button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">确认</button>
+			                </div>
+			            </div>
+			        </li>
+			        <li class="mui-table-view-cell">
+			            <div class="mui-table">
+			                <div class="mui-table-cell mui-col-xs-10">
+			                    <p class="mui-ellipsis AM_title"><span>Jissbon超薄激爽</span> &nbsp;商品编码：<span>1512366</span></p>
+			                    <h5 class="numText">房间：<span>1501</span> &nbsp;格号：<span class="danjia">01</span></h5>
+			                    <p class="mui-h6 mui-ellipsis totle">2017-06-02 18：38</span> </p>
+			                     <button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">确认</button>
+			                </div>
+			            </div>
+			        </li>
+			        <li class="mui-table-view-cell">
+			            <div class="mui-table">
+			                <div class="mui-table-cell mui-col-xs-10">
+			                    <p class="mui-ellipsis AM_title"><span>Jissbon超薄激爽</span> &nbsp;商品编码：<span>1512366</span></p>
+			                    <h5 class="numText">房间：<span>1501</span> &nbsp;格号：<span class="danjia">01</span></h5>
+			                    <p class="mui-h6 mui-ellipsis totle">2017-06-02 18：38</span> </p>
+			                    <button type="button" class="mui-btn mui-btn-blue mui-btn-outlined">确认</button>
+			                </div>
+			            </div>
+			        </li>
+		       </ul>
+			</div>
+			<div id="content2" class="mui-control-content">		
+			    <ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<div class="mui-table">
+							<div class="mui-table-cell mui-col-xs-10">
+								<p class="mui-ellipsis AM_title"><span>Jissbon超薄激爽</span> &nbsp;商品编码：<span>1512366</span></p>
+								<h5 class="numText">房间：<span>1501</span> &nbsp;格号：<span class="danjia">01</span></h5>
+								<p class="mui-h6 mui-ellipsis totle">2017-06-02 18：38</span></p>
+								<a class="mui-btn mui-btn-blue mui-btn-outlined">已处理</a>
+							</div>
+						</div>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="mui-table">
+							<div class="mui-table-cell mui-col-xs-10">
+								<p class="mui-ellipsis AM_title"><span>Jissbon超薄激爽</span> &nbsp;商品编码：<span>1512366</span></p>
+								<h5 class="numText">房间：<span>1501</span> &nbsp;格号：<span class="danjia">01</span></h5>
+								<p class="mui-h6 mui-ellipsis totle">2017-06-02 18：38</span></p>
+								<a class="mui-btn mui-btn-blue mui-btn-outlined">已处理</a>
+							</div>
+						</div>
+					</li>
+					<li class="mui-table-view-cell">
+						<div class="mui-table">
+							<div class="mui-table-cell mui-col-xs-10">
+								<p class="mui-ellipsis AM_title"><span>Jissbon超薄激爽</span> &nbsp;商品编码：<span>1512366</span></p>
+								<h5 class="numText">房间：<span>1501</span> &nbsp;格号：<span class="danjia">01</span></h5>
+								<p class="mui-h6 mui-ellipsis totle">2017-06-02 18：38</span></p>
+								<a class="mui-btn mui-btn-blue mui-btn-outlined">已处理</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="../js/plugins/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/plugins/zepto.min.js"></script>
+		<script src="../js/plugins/layer.js"></script>
+		<script>
+			$(function(){
+				$('#content1 .fixedBox div').on('click',function(){
+					$(this).addClass('clickOn').siblings().removeClass('clickOn');
+					var index=$(this).index();
+					$('#content1 .ReplenishmentItem').eq(index).show().siblings().hide();
+				})
+				$('#content2 .fixedBox div').on('click',function(){
+					$(this).addClass('clickOn').siblings().removeClass('clickOn');
+					var index=$(this).index();
+					$('#content2 .deliveryRecordContainer').eq(index).show().siblings().hide();
+				})
+				mui('#content1').on('tap','.mui-btn-outlined',function(){
+					layer.open({
+						content:'您是否已经将货品送到房间',
+						btn:['确认','取消'],
+						yes:function(index){
+							layer.close(index);
+						}
+					})
+				})
+			})
+		</script>
+	</body>
+</html>

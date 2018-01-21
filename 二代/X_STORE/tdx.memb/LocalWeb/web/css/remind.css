@@ -1,0 +1,63 @@
+.topic {
+  width: 100%; }
+  .topic li {
+    float: left;
+    text-align: center;
+    font: 15px/40px "microsoft yahei";
+    color: #000;
+    width: 20%;
+    margin: 0 2.5%;
+    border-bottom: solid 1px #ffffff;
+    position: relative; }
+    .topic li label {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 2px 3px;
+      font: 10px/10px "microsoft yahei";
+      background: #f60;
+      color: #fff;
+      border-radius: 7px; }
+  .topic li.clickOn {
+    color: #f60;
+    border-bottom: solid 1px #f60; }
+
+.main {
+  width: 94%;
+  padding: 10px 3%;
+  height: calc(100% - 73px);
+  height: -webkit-calc(100% - 73px);
+  height: -moz-calc(100% - 73px);
+  overflow-y: auto; }
+  .main .sale, .main .addGoods, .main .getGoods, .main .broadcast {
+    width: 100%;
+    display: none; }
+    .main .sale dt, .main .addGoods dt, .main .getGoods dt, .main .broadcast dt {
+      width: 100%;
+      font: 14px/30px "microsoft yahei";
+      color: #000;
+      border-bottom: solid 1px #f60; }
+    .main .sale dd, .main .addGoods dd, .main .getGoods dd, .main .broadcast dd {
+      padding: 10px 0;
+      width: 100%;
+      border-bottom: solid 1px #ccc; }
+      .main .sale dd h3, .main .addGoods dd h3, .main .getGoods dd h3, .main .broadcast dd h3 {
+        margin-bottom: 6px; }
+      .main .sale dd h3, .main .sale dd p, .main .addGoods dd h3, .main .addGoods dd p, .main .getGoods dd h3, .main .getGoods dd p, .main .broadcast dd h3, .main .broadcast dd p {
+        font: 12px/20px "microsoft yahei";
+        color: #666; }
+        .main .sale dd h3 span, .main .sale dd p span, .main .addGoods dd h3 span, .main .addGoods dd p span, .main .getGoods dd h3 span, .main .getGoods dd p span, .main .broadcast dd h3 span, .main .broadcast dd p span {
+          color: #f60; }
+      .main .sale dd div ul, .main .addGoods dd div ul, .main .getGoods dd div ul, .main .broadcast dd div ul {
+        width: calc(100% - 36px);
+        width: -webkit-calc(100% - 36px);
+        width: -moz-calc(100% - 36px); }
+        .main .sale dd div ul li, .main .addGoods dd div ul li, .main .getGoods dd div ul li, .main .broadcast dd div ul li {
+          font: 12px/20px "microsoft yahei";
+          color: #666; }
+          .main .sale dd div ul li span, .main .addGoods dd div ul li span, .main .getGoods dd div ul li span, .main .broadcast dd div ul li span {
+            color: #f60; }
+    .main .sale dd:last-child, .main .addGoods dd:last-child, .main .getGoods dd:last-child, .main .broadcast dd:last-child {
+      border-bottom: none; }
+  .main .sale {
+    display: block; }

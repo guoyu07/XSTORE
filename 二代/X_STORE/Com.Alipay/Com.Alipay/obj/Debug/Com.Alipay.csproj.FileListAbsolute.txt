@@ -1,0 +1,12 @@
+D:\单用户微信\Com.Alipay\Com.Alipay\bin\Debug\Com.Alipay.dll
+D:\单用户微信\Com.Alipay\Com.Alipay\bin\Debug\Com.Alipay.pdb
+D:\单用户微信\Com.Alipay\Com.Alipay\obj\Debug\Com.Alipay.dll
+D:\单用户微信\Com.Alipay\Com.Alipay\obj\Debug\Com.Alipay.pdb
+E:\单用户微信\单用户微信\Com.Alipay\Com.Alipay\bin\Debug\Com.Alipay.dll
+E:\单用户微信\单用户微信\Com.Alipay\Com.Alipay\bin\Debug\Com.Alipay.pdb
+E:\单用户微信\单用户微信\Com.Alipay\Com.Alipay\obj\Debug\Com.Alipay.dll
+E:\单用户微信\单用户微信\Com.Alipay\Com.Alipay\obj\Debug\Com.Alipay.pdb
+E:\Project\最新后台\最新后台\Com.Alipay\Com.Alipay\bin\Debug\Com.Alipay.dll
+E:\Project\最新后台\最新后台\Com.Alipay\Com.Alipay\bin\Debug\Com.Alipay.pdb
+E:\Project\最新后台\最新后台\Com.Alipay\Com.Alipay\obj\Debug\Com.Alipay.dll
+E:\Project\最新后台\最新后台\Com.Alipay\Com.Alipay\obj\Debug\Com.Alipay.pdb

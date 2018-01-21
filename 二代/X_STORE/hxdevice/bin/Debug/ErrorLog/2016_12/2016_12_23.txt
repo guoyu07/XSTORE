@@ -1,0 +1,2207 @@
+与服务器的连接已建立;
+
+My MAC Is D9E9BB184F68962458A96297
+
+与服务器的连接已建立;
+
+My MAC Is 195D6E5A02D7F8970A8C167C
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316362201D9E9BB184F68962458A962970000000000000000000000000006DF
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X36 0X23 0X01 0XD9 0XE9 0XBB 0X18 0X4F 0X68 0X96 0X24 0X58 0XA9 0X62 0X97 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X06 0XBB
+
+收到原始数据：EF020016122316362301D9E9BB184F68962458A962970000000000000000000000000006BB
+
+收到心跳响应：EF020016122316362301D9E9BB184F68962458A962970000000000000000000000000006BB
+
+192.168.31.158:2756，服务器返回的数据:0X44 0X39 0X45 0X39 0X42 0X42 0X31 0X38 0X34 0X46 0X36 0X38 0X39 0X36 0X32 0X34 0X35 0X38 0X41 0X39 0X36 0X32 0X39 0X37 0X3B 0X31 0X39 0X32 0X2E 0X31 0X36 0X38 0X2E 0X33 0X31 0X2E 0X31 0X35 0X38 0X3A 0X33 0X39 0X39 0X33 0X39
+
+收到原始数据：
+
+收到异常报文
+
+192.168.31.158:2756，服务器返回的数据:0X44 0X39 0X45 0X39 0X42 0X42 0X31 0X38 0X34 0X46 0X36 0X38 0X39 0X36 0X32 0X34 0X35 0X38 0X41 0X39 0X36 0X32 0X39 0X37 0X3B 0X31 0X39 0X32 0X2E 0X31 0X36 0X38 0X2E 0X33 0X31 0X2E 0X31 0X35 0X38 0X3A 0X33 0X39 0X39 0X33 0X39
+
+收到原始数据：
+
+收到异常报文
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316363201195D6E5A02D7F8970A8C167C0000000000000000000000000005BD
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X36 0X32 0X01 0X19 0X5D 0X6E 0X5A 0X02 0XD7 0XF8 0X97 0X0A 0X8C 0X16 0X7C 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X05 0X98
+
+收到原始数据：EF020016122316363201195D6E5A02D7F8970A8C167C000000000000000000000000000598
+
+收到心跳响应：EF020016122316363201195D6E5A02D7F8970A8C167C000000000000000000000000000598
+
+192.168.31.158:2756，服务器返回的数据:0X31 0X39 0X35 0X44 0X36 0X45 0X35 0X41 0X30 0X32 0X44 0X37 0X46 0X38 0X39 0X37 0X30 0X41 0X38 0X43 0X31 0X36 0X37 0X43 0X3B 0X31 0X39 0X32 0X2E 0X31 0X36 0X38 0X2E 0X33 0X31 0X2E 0X31 0X35 0X38 0X3A 0X33 0X39 0X39 0X34 0X30
+
+收到原始数据：
+
+收到异常报文
+
+192.168.31.158:2756，服务器返回的数据:0X31 0X39 0X35 0X44 0X36 0X45 0X35 0X41 0X30 0X32 0X44 0X37 0X46 0X38 0X39 0X37 0X30 0X41 0X38 0X43 0X31 0X36 0X37 0X43 0X3B 0X31 0X39 0X32 0X2E 0X31 0X36 0X38 0X2E 0X33 0X31 0X2E 0X31 0X35 0X38 0X3A 0X33 0X39 0X39 0X34 0X30
+
+收到原始数据：
+
+收到异常报文
+
+My MAC Is 195D6E5A02D7F8970A8C167C
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316370501D9E9BB184F68962458A962970000000000000000000000000006C3
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X37 0X05 0X01 0XD9 0XE9 0XBB 0X18 0X4F 0X68 0X96 0X24 0X58 0XA9 0X62 0X97 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X06 0X9E
+
+收到原始数据：EF020016122316370501D9E9BB184F68962458A9629700000000000000000000000000069E
+
+收到心跳响应：EF020016122316370501D9E9BB184F68962458A9629700000000000000000000000000069E
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X25 0X16 0X12 0X23 0X16 0X37 0X12 0X03 0X19 0X5D 0X6E 0X5A 0X02 0XD7 0XF8 0X97 0X0A 0X8C 0X16 0X7C 0X01 0X01 0X01 0X01 0X01 0X01 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X05 0XA6
+
+收到原始数据：EF022516122316371203195D6E5A02D7F8970A8C167C0101010101010000000000000005A6
+
+收到开箱指令：EF022516122316371203195D6E5A02D7F8970A8C167C0101010101010000000000000005A6
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316371303195D6E5A02D7F8970A8C167C0101010101010000000000000005A7
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316371401195D6E5A02D7F8970A8C167C0101010101010000000000000005A6
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X37 0X14 0X01 0X19 0X5D 0X6E 0X5A 0X02 0XD7 0XF8 0X97 0X0A 0X8C 0X16 0X7C 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X05 0X7B
+
+收到原始数据：EF020016122316371401195D6E5A02D7F8970A8C167C00000000000000000000000000057B
+
+收到心跳响应：EF020016122316371401195D6E5A02D7F8970A8C167C00000000000000000000000000057B
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316372301D9E9BB184F68962458A962970000000000000000000000000006E1
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X37 0X23 0X01 0XD9 0XE9 0XBB 0X18 0X4F 0X68 0X96 0X24 0X58 0XA9 0X62 0X97 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X06 0XBC
+
+收到原始数据：EF020016122316372301D9E9BB184F68962458A962970000000000000000000000000006BC
+
+收到心跳响应：EF020016122316372301D9E9BB184F68962458A962970000000000000000000000000006BC
+
+与服务器：192.168.31.158:2756，断开连接
+
+与服务器：192.168.31.158:2756，断开连接
+
+出现错误：无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。；位置：   在 System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   在 hxdevice.Units.TCPConnecter.TCPCallBack(IAsyncResult ar) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 134
+
+出现错误：无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。；位置：   在 System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   在 hxdevice.Units.TCPConnecter.TCPCallBack(IAsyncResult ar) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 134
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+与服务器的连接已建立;
+
+与服务器：192.168.31.158:2756，已建立连接
+
+My MAC Is 195D6E5A02D7F8970A8C167C
+
+与服务器的连接已建立;
+
+与服务器：192.168.31.158:2756，已建立连接
+
+My MAC Is D9E9BB184F68962458A96297
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316510501D9E9BB184F68962458A962970000000000000000000000000006DD
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X51 0X05 0X01 0XD9 0XE9 0XBB 0X18 0X4F 0X68 0X96 0X24 0X58 0XA9 0X62 0X97 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X06 0XB8
+
+收到原始数据：EF020016122316510501D9E9BB184F68962458A962970000000000000000000000000006B8
+
+收到心跳响应：EF020016122316510501D9E9BB184F68962458A962970000000000000000000000000006B8
+
+192.168.31.158:2756，服务器返回的数据:0X44 0X39 0X45 0X39 0X42 0X42 0X31 0X38 0X34 0X46 0X36 0X38 0X39 0X36 0X32 0X34 0X35 0X38 0X41 0X39 0X36 0X32 0X39 0X37 0X3B 0X31 0X39 0X32 0X2E 0X31 0X36 0X38 0X2E 0X33 0X31 0X2E 0X31 0X35 0X38 0X3A 0X34 0X30 0X31 0X37 0X35
+
+收到原始数据：
+
+收到异常报文
+
+192.168.31.158:2756，服务器返回的数据:0X44 0X39 0X45 0X39 0X42 0X42 0X31 0X38 0X34 0X46 0X36 0X38 0X39 0X36 0X32 0X34 0X35 0X38 0X41 0X39 0X36 0X32 0X39 0X37 0X3B 0X31 0X39 0X32 0X2E 0X31 0X36 0X38 0X2E 0X33 0X31 0X2E 0X31 0X35 0X38 0X3A 0X34 0X30 0X31 0X37 0X35
+
+收到原始数据：
+
+收到异常报文
+
+My MAC Is D9E9BB184F68962458A96297
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316511501195D6E5A02D7F8970A8C167C0000000000000000000000000005BB
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X51 0X15 0X01 0X19 0X5D 0X6E 0X5A 0X02 0XD7 0XF8 0X97 0X0A 0X8C 0X16 0X7C 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X05 0X96
+
+收到原始数据：EF020016122316511501195D6E5A02D7F8970A8C167C000000000000000000000000000596
+
+收到心跳响应：EF020016122316511501195D6E5A02D7F8970A8C167C000000000000000000000000000596
+
+192.168.31.158:2756，服务器返回的数据:0X31 0X39 0X35 0X44 0X36 0X45 0X35 0X41 0X30 0X32 0X44 0X37 0X46 0X38 0X39 0X37 0X30 0X41 0X38 0X43 0X31 0X36 0X37 0X43 0X3B 0X31 0X39 0X32 0X2E 0X31 0X36 0X38 0X2E 0X33 0X31 0X2E 0X31 0X35 0X38 0X3A 0X34 0X30 0X31 0X37 0X34
+
+收到原始数据：
+
+收到异常报文
+
+192.168.31.158:2756，服务器返回的数据:0X31 0X39 0X35 0X44 0X36 0X45 0X35 0X41 0X30 0X32 0X44 0X37 0X46 0X38 0X39 0X37 0X30 0X41 0X38 0X43 0X31 0X36 0X37 0X43 0X3B 0X31 0X39 0X32 0X2E 0X31 0X36 0X38 0X2E 0X33 0X31 0X2E 0X31 0X35 0X38 0X3A 0X34 0X30 0X31 0X37 0X34
+
+收到原始数据：
+
+收到异常报文
+
+My MAC Is D9E9BB184F68962458A96297
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316511901195D6E5A02D7F8970A8C167C0000000000000000000000000005BF
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X51 0X19 0X01 0X19 0X5D 0X6E 0X5A 0X02 0XD7 0XF8 0X97 0X0A 0X8C 0X16 0X7C 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X05 0X9A
+
+收到原始数据：EF020016122316511901195D6E5A02D7F8970A8C167C00000000000000000000000000059A
+
+收到心跳响应：EF020016122316511901195D6E5A02D7F8970A8C167C00000000000000000000000000059A
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316512301D9E9BB184F68962458A962970000000000000000000000000006FB
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X25 0X16 0X12 0X23 0X16 0X51 0X22 0X03 0X19 0X5D 0X6E 0X5A 0X02 0XD7 0XF8 0X97 0X0A 0X8C 0X16 0X7C 0X01 0X01 0X01 0X01 0X01 0X01 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X05 0XD0
+
+收到原始数据：EF022516122316512203195D6E5A02D7F8970A8C167C0101010101010000000000000005D0
+
+收到开箱指令：EF022516122316512203195D6E5A02D7F8970A8C167C0101010101010000000000000005D0
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316512303195D6E5A02D7F8970A8C167C0101010101010000000000000005D1
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X51 0X23 0X01 0XD9 0XE9 0XBB 0X18 0X4F 0X68 0X96 0X24 0X58 0XA9 0X62 0X97 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X06 0XD6
+
+收到原始数据：EF020016122316512301D9E9BB184F68962458A962970000000000000000000000000006D6
+
+收到心跳响应：EF020016122316512301D9E9BB184F68962458A962970000000000000000000000000006D6
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316512301D9E9BB184F68962458A962970000000000000000000000000006FB
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X51 0X23 0X01 0XD9 0XE9 0XBB 0X18 0X4F 0X68 0X96 0X24 0X58 0XA9 0X62 0X97 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X06 0XD6
+
+收到原始数据：EF020016122316512301D9E9BB184F68962458A962970000000000000000000000000006D6
+
+收到心跳响应：EF020016122316512301D9E9BB184F68962458A962970000000000000000000000000006D6
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316513301195D6E5A02D7F8970A8C167C0101010101010000000000000005DF
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X51 0X33 0X01 0X19 0X5D 0X6E 0X5A 0X02 0XD7 0XF8 0X97 0X0A 0X8C 0X16 0X7C 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X05 0XB4
+
+收到原始数据：EF020016122316513301195D6E5A02D7F8970A8C167C0000000000000000000000000005B4
+
+收到心跳响应：EF020016122316513301195D6E5A02D7F8970A8C167C0000000000000000000000000005B4
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316513701195D6E5A02D7F8970A8C167C0101010101010000000000000005E3
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X51 0X37 0X01 0X19 0X5D 0X6E 0X5A 0X02 0XD7 0XF8 0X97 0X0A 0X8C 0X16 0X7C 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X05 0XB8
+
+收到原始数据：EF020016122316513701195D6E5A02D7F8970A8C167C0000000000000000000000000005B8
+
+收到心跳响应：EF020016122316513701195D6E5A02D7F8970A8C167C0000000000000000000000000005B8
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X25 0X16 0X12 0X23 0X16 0X51 0X3B 0X03 0X19 0X5D 0X6E 0X5A 0X02 0XD7 0XF8 0X97 0X0A 0X8C 0X16 0X7C 0X01 0X01 0X01 0X01 0X01 0X01 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X05 0XE9
+
+收到原始数据：EF022516122316513B03195D6E5A02D7F8970A8C167C0101010101010000000000000005E9
+
+收到开箱指令：EF022516122316513B03195D6E5A02D7F8970A8C167C0101010101010000000000000005E9
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316520003195D6E5A02D7F8970A8C167C0101010101010000000000000005AF
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316520501D9E9BB184F68962458A962970000000000000000000000000006DE
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X52 0X05 0X01 0XD9 0XE9 0XBB 0X18 0X4F 0X68 0X96 0X24 0X58 0XA9 0X62 0X97 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X06 0XB9
+
+收到原始数据：EF020016122316520501D9E9BB184F68962458A962970000000000000000000000000006B9
+
+收到心跳响应：EF020016122316520501D9E9BB184F68962458A962970000000000000000000000000006B9
+
+向服务器192.168.31.158:2756，发送的数据:EF022516122316520501D9E9BB184F68962458A962970000000000000000000000000006DE
+
+192.168.31.158:2756，服务器返回的数据:0XEF 0X02 0X00 0X16 0X12 0X23 0X16 0X52 0X05 0X01 0XD9 0XE9 0XBB 0X18 0X4F 0X68 0X96 0X24 0X58 0XA9 0X62 0X97 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X00 0X06 0XB9
+
+收到原始数据：EF020016122316520501D9E9BB184F68962458A962970000000000000000000000000006B9
+
+收到心跳响应：EF020016122316520501D9E9BB184F68962458A962970000000000000000000000000006B9
+
+与服务器：192.168.31.158:2756，断开连接
+
+与服务器：192.168.31.158:2756，断开连接
+
+出现错误：无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。；位置：   在 System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   在 hxdevice.Units.TCPConnecter.TCPCallBack(IAsyncResult ar) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 134
+
+出现错误：无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。；位置：   在 System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   在 hxdevice.Units.TCPConnecter.TCPCallBack(IAsyncResult ar) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 134
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+
+程序异常:不允许对非连接的套接字执行此操作。;位置   在 System.Net.Sockets.TcpClient.GetStream()
+   在 hxdevice.Units.TCPConnecter.TCPSend(Byte[] cmd) 位置 e:\实创2016\智能货箱\1220测试及模拟\huoxiangdevice\hxdevice\Units\TCPConnecter.cs:行号 51
+

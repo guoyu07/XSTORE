@@ -1,0 +1,16 @@
+D:\单用户微信\tdx.appx\tdx.appx\bin\tdx.appx.dll
+D:\单用户微信\tdx.appx\tdx.appx\bin\tdx.appx.pdb
+D:\单用户微信\tdx.appx\tdx.appx\bin\Com.Alipay.dll
+D:\单用户微信\tdx.appx\tdx.appx\bin\Creatrue.Common.dll
+D:\单用户微信\tdx.appx\tdx.appx\bin\Creatrue.kernel.dll
+D:\单用户微信\tdx.appx\tdx.appx\bin\Newtonsoft.Json.dll
+D:\单用户微信\tdx.appx\tdx.appx\bin\tdx.database.dll
+D:\单用户微信\tdx.appx\tdx.appx\bin\tdx.Weixin.dll
+D:\单用户微信\tdx.appx\tdx.appx\bin\Com.Alipay.pdb
+D:\单用户微信\tdx.appx\tdx.appx\bin\Creatrue.Common.pdb
+D:\单用户微信\tdx.appx\tdx.appx\bin\Creatrue.kernel.pdb
+D:\单用户微信\tdx.appx\tdx.appx\bin\tdx.database.pdb
+D:\单用户微信\tdx.appx\tdx.appx\bin\tdx.Weixin.pdb
+D:\单用户微信\tdx.appx\tdx.appx\obj\Debug\tdx.appx.csprojResolveAssemblyReference.cache
+D:\单用户微信\tdx.appx\tdx.appx\obj\Debug\tdx.appx.dll
+D:\单用户微信\tdx.appx\tdx.appx\obj\Debug\tdx.appx.pdb

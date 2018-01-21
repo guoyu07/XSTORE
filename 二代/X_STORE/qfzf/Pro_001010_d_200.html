@@ -1,0 +1,214 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>灵山_列表页</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/respond.src.js"></script>
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="js/jqurey.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!--列表页下拉-->
+    <script src="js/common.js"></script>
+
+    <!--手机导航按钮-->
+    <script src="js/pc_phone.js"></script>
+
+
+    <!--轮播大图-->
+    <script src="js/slider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.banner .list').bxSlider({
+                auto: true
+            });
+        });
+
+    </script>
+
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script><!--tabs选项卡-->
+    <script>  $(function () { $(".tabs").tabs({ event: "mouseover" }); });  </script>
+    <style type="text/css">
+        .shop li.ui-tabs-active {
+            background-color: #bf2b2b;
+        }
+
+            .shop li.ui-tabs-active a {
+                color: #fff;
+            }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById('weixin');
+            var b = document.getElementById('wxm');
+            a.onmouseover = function () {
+                b.style.display = 'block';
+            }
+            a.onmouseout = function () {
+                b.style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+    <body class="style_body">
+
+        <!-- 头部导航开始 -->
+        <div class="top_menu">
+            <div class="logo_img"><img src="images/logo_s.png" /></div>
+            <div class="wrap clear mainNav">
+                <div class="row slide_l">
+                    <div class="clear">
+                        <div class="nav_toggle">
+                            <span class=""></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                    </div>
+                    <div class="nav_bg1">
+                        <ul class="navs clear ">
+                            <li class="first"><a href="index.html"  class="active">首页</a></li><li><a href="ProList_001005_l_1.html">旅游商业规划</a></li><li><a href="ProList_001006_l_1.html">旅游商业策划</a></li><li><a href="ProList_001007_l_1.html">旅游商业场景</a></li><li><a href="ProList_001008_l_1.html">旅游商业体验</a></li><li><a href="ProList_001009_l_1.html">旅游商品研发</a></li><li><a href="ProList_001010_l_1.html">旅游商业管理</a></li><li class="last"><a href="about_001_d_10.html">关于我们</a></li><li class="last"><a href="ProList_001011_l_1.html">项目案例</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                //绑定滚动条事件
+                $(window).bind("scroll", function () {
+                    var sTop = $(window).scrollTop();
+                    var sTop = parseInt(sTop);
+                    if (sTop >= 70) {
+                        $('.top_menu').addClass("headbg");
+                        $('.logo2').addClass("logo");
+                        $('.logo_img').addClass("logo_img_block");
+                    }
+                    else {
+                        $('.top_menu').removeClass("headbg");
+                        $('.logo2').removeClass("logo");
+                        $('.logo_img').removeClass("logo_img_block");
+                    }
+                });
+            })
+        </script>
+        <!-- 头部导航结束 -->
+        <!-- 轮播大图开始 -->
+        <div class="banner">
+            <ul class="list">
+                <li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/20151120920230.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701010.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701110.jpg></a></li>
+            </ul>
+        </div>
+
+        <!-- 轮播大图结束 -->
+        <!-- 当前位置开始 -->
+        <div class=" box_b">
+            <div class="wrap clear">
+                <div class="selects clear">
+                    <ul class="clear">
+                        <li class="li1">
+                            <div class="dv_select">
+                                <span>旅游商业管理</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dv_select">
+                                <span class="shows">物流体系规划</span><div class="slids width1"><a href=Pro_001010_d_200.html class="select">物流体系规划</a><a href=Pro_001010_d_199.html>人力资源体系</a><a href=Pro_001010_d_201.html>信息系统建设</a><a href=Pro_001010_d_202.html>物流管理体系</a></div></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mianbao">
+                        <span class="weizhi">当前位置：</span><a href="index.html">首页</a>&gt;<span>旅游商业管理</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 当前位置开始 -->
+        <!--内页正文开始-->
+        <div class="box_t">
+            <div class="wrap">
+                <div class="content clear">
+                    <p style="text-align: center;"><img src="/Upload/FCKEditor/201511/19/image/33-2(1).jpg" width="600" height="438" alt="" /></p>
+<p>2004年6月12日上午10时许，87岁的陈邦织女士，看上去有些手足无措。过去的50年里，作为一个宗教领袖的夫人，她和赵朴初一起见过众多国家级外宾。然而，无锡灵山大佛脚下的她，面向缅怀赵朴初的人们，只是微微鞠躬或者作揖。捏在指间的发言稿，颤巍巍地抖动着，好像根本就没有念。末尾，人们才听到这位宗教领袖的遗孀，以残留着淮扬方言的准普通话说：&ldquo;我不会说话，也从未在公开的场合跟这么多的人说过话。说得不好，请大家体谅。&rdquo;</p>
+<p>此前一天，陈邦织在大佛脚下的这个&ldquo;新家&rdquo;里，好几回无语凝噎。这是一座青砖灰瓦的京式四合院，门前的金银花还没来得及绽放。内里的家具陈设，一如北京西城南小栓胡同1号，那个他们夫妇居住了40余载的家。摆放着兰花的书房里，搁着一摞《赵朴初韵文集》，正房以及附设于左右的两个耳房，空荡荡的，唯有墙壁上的照片和诗词，行云流水地叙述着赵朴初94年的人生路。</p>
+<p>无尽意斋，是赵朴初生前的书斋名。陈邦织实在想不起来，1960年代的赵朴老为什么取了这么个名字。她只知道，无尽意，依佛教的解释，乃圆融无碍之意。佛教中有个无尽意菩萨，观一切事象之因缘果报皆为无尽意，而发心上求无尽意之诸佛功德，下度无尽意之众生。赵的生前友好认为，上求无尽意之诸佛功德，下度无尽意之众生，是人间佛教的精神，赵朴初以无尽意命名他的书斋，显示其&ldquo;人间佛教&rdquo;的毕生追求。</p>
+<p>陈邦织并不打算住在这个&ldquo;新家&rdquo;里，尽管这里藏有赵朴初居士圆寂后的两颗舍利子：一块眉骨，一颗牙。赵是安徽太湖人，陈觉得，赵的舍利和无尽意斋，在他辞世4年后归宿于太湖畔的灵山大佛脚下，皆殊胜因缘所致。</p>
+<p>88米的露天青铜大佛，距无尽意斋不足百米。泛舟太湖，人们发现微笑而慈祥的大佛，似乎在垂注着&ldquo;无尽意斋&rdquo;。</p>
+<p>2000年5月21日，赵朴初圆寂，留有1990年代就写好的临终偈。这份我们俗世所谓的遗嘱中有8句：生固欣然，死亦无憾，花开花落，流水不断；我兮何有，谁欤安息？明月清风，不劳寻觅。</p>
+<p>熟知偈语者诧异，朴老既有&ldquo;明月清风，不劳寻觅&rdquo;的遗愿，灵山又为何造他个&ldquo;无尽意斋&rdquo;？&nbsp;</p>
+<p>陈还是两个字：因缘。</p>
+<p><strong>慈悲待人</strong></p>
+<p>1997年秋天，大陆知名策划人王志纲，在一个夜晚，被无锡人策划至太湖畔。次日晨起，推窗远眺，不禁瞠目结舌：一个伸入太湖腹地的半岛上，一尊法相慈悲庄严的大佛，北依濯濯灵山，南望万顷太湖，左边是青龙山，右边是白虎山，三峰环抱，波光潋滟，气象万千。</p>
+<p>据称，王惊叹:不知什么样的高人，策划了这样的大手笔！</p>
+<p>原江苏省宗教局一副局长说：功德圆满第一人，朴老也。</p>
+<p>1994年4月10日，赵朴初第一次涉足灵山。知晓灵山大佛10年风云者称，与灵山素无渊源的赵朴老，之所以结缘于此，皆慈悲待人的本性使然。</p>
+<p>彼时，灵山还叫做马山。相传秦始皇为寻不死药，所骑神马飞掠太湖时，小栖于此。腾空的瞬间，由于腿力强劲，崖石上烙下深深的4只马蹄的印记。马迹山由此得名，尚简洁者，迳呼马山。</p>
+<p>1993年，国务院对马山请求建国家级度假区的批复，已逾一年。怎么开发这个伸入太湖腹地15公里的小岛？主事者最终敲定，恢复缘起唐僧玄奘的祥符寺，并造一座世所罕见的大佛。</p>
+<p>&ldquo;恢复庙宇不难，难的是造大佛。&rdquo;海南大学一位身兼海南佛学研究会会长的教授提醒：&ldquo;此事政策性太强，若无赵朴老的肯定，没有政策执掌机构的批准，则可能半途而废。&rdquo;&nbsp;</p>
+<p>考虑到大佛身份的确定，需要政教两界，马山方面的报告书，一方面经无锡市府呈报江苏省府，另一方面由无锡市佛教协会行文，请江苏省佛教协会递送中国佛教协会。</p>
+<p>报告书还在逐层呈报的途路上，主事者迂回得知，赵朴初要陪一台湾高僧来江苏，高僧去泰州探访年事已高的母亲，赵则留待江苏等候。倘能藉此机缘当面游说赵朴老，该有多好？</p>
+<p>1994年4月8日，借着秘书的关系，灵山人走进了赵朴初夫妇下榻于南京的西康宾馆，昔日美国驻华大使馆，毛泽东著文别离司徒雷登的地方。陈邦织女士回忆10年前的场景：&ldquo;我去秘书房间，他们马上把报告递交给我，我不理解无锡为什么要造大佛，没太理会。&rdquo;&nbsp;</p>
+<p>末了，感动于无锡人的诚恳，政策水平甚高的&ldquo;老统战&rdquo;陈邦织，耐心地听取了主事者详尽的报告，并要言不烦地转述给年事已高听力不佳的赵朴初。陈邦织说：&ldquo;朴老听明白后，就同意接见无锡方面的客人，他看看报告书，询问了其中的一些细节。记忆中，朴初没有表态。&rdquo;</p>
+<p>江苏省宗教局一个官员提醒无锡人，如果赵朴初能去实地踏看详符寺遗址并赞同你们的动议，造大佛的事，或可有七分把握。但负责安排赵朴初行程的夫人不同意。陈邦织说：&ldquo;高层领导的行程，有它的预期性和周密性，是不能随便改变的。况且，当时有3个地方的领导人，恳请朴初前往，都没能答应，如果突然去了无锡，不妥当。&rdquo;&nbsp;</p>
+<p>没承想，机缘巧合，赵朴初次日要去安徽广德太极洞。根据计划，一路上，赵还要参观宜兴紫砂、茶场、竹海，太极洞是末站。是年赵朴初虚年88岁，晚上返回南京，必定太过疲累。无锡人于是辗转告诉陈邦织，住宿宜兴，条件太差劲，最好最方便的住所当是无锡太湖边的锦园饭店。许是江苏省宗教局安排具体行程者，感念无锡人的难处和诚心，随缘劝说赵朴初夜宿无锡，待天明顺便去马山看看。</p>
+<p>慈悲待人的赵朴初，欣然同意。</p>
+<p>第二天，有些冷，清瘦的赵朴初着西装领带，披一袭呢子大衣，拄根拐杖，乘上昨夜为他们夫妇赶做的那乘竹制轿子，在连夜为他铺就的通往马山的小道上，颠簸前行。车过太湖十八湾，赵朴初感叹：&ldquo;上有天堂，下有苏杭，我看太湖波澜壮阔，风光胜天堂。&rdquo;&nbsp;</p>
+<p>车过十八湾，上得&ldquo;神仙岛&rdquo;，遇第一座佛笑桥，夫人陈邦织指着桥上的十六尊弥勒佛石像，赵朴初不禁笑曰：&ldquo;佛笑桥，好，好！&rdquo;据称，大肚弥勒佛是释迦牟尼大雷音寺的知客僧，相当于当下的接待办主任。</p>
+<p>乱坟岗似的荒凉，丛生的杂草，赵朴初在主事者的引领下，寻觅到祥符寺废墟上的旧日大殿柱基，以及柱基边发现不久的祥符寺八角古井。就在赵俯身探勘古井的刹那，闪光灯忽地一亮，我们今天看到的赵朴老视察祥符寺旧迹的照片，就拍成了。</p>
+<p>赵再度询问起祥符寺的过去，他在南京翻看灵山人送递的报告书，好像听他们说起过一段不寻常的历史。</p>
+<p>据称，接待赵朴老的是位具文人气质的地方官员，曾数度研读相关典籍。见赵朴老兴致勃勃，当即择其精要，娓娓道来：</p>
+<p>唐朝贞观年间，助李世民父子打下江山的右将军杭恽解甲归田，并捐出故乡马山的一处产业建了一个寺庙。传杭恽相知于玄奘法师，遂邀约玄奘访问马山。见寺后山峦酷似印度佛祖的灵鹫峰，玄奘当即为之取名&ldquo;小灵山&rdquo;。杭恽所造之寺庙，也随之得名&ldquo;小灵山寺&rdquo;。由于玄奘的大弟子乘基在小灵山寺开法宣教，乘基师徒又是法相宗的祖师，&ldquo;小灵山寺&rdquo;便成了法相宗重要祖庭之一。直到宋代祥符年间，理学成为潮流，佛教的禅宗亦发达起来，&ldquo;小灵山寺&rdquo;这才与时俱进，更名&ldquo;祥符禅寺&rdquo;。</p>
+                </div>
+            </div>
+        </div>
+        <!--内页正文结束-->
+        <!-- 底部开始-->
+        <div class="foot_bg">
+            <div class="wrap clear">
+                <div class="top_f clear">
+
+                    <div class="left clear">
+
+                        <dl class="action">
+                            <dt>关注我们</dt>
+                            <dd><a href="#" id="weixin">微信<i class="icon_wechat"></i><span class="img_ewm_wechat"></span></a><div id="wxm" class="wxm"><img src="images/weixin.jpg" /></div></dd>
+
+                            <dd><a href="#">新浪<i class="icon_xinl"></i><span class="img_ewm_xinl"></span></a></dd>
+                            <dd class="last"><a href="#">腾讯<i class="icon_tengx"></i><span class="img_ewm_tengx"></span></a></dd>
+                        </dl>
+                    </div>
+                    <ul class="right clear">
+                        <li>
+                            <a href="index.html">灵山首页</a>
+                            <a href="about_001_d_10.html">关于我们</a>
+                            <a href="about_001_d_12.html">联系我们</a>
+                            <a href="#">网络地图</a>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <p>地址：江苏省无锡市滨湖区马山古竹路18号</p>
+<p>邮编：214091</p>
+<p>电话：0510-85686894</p>
+<p>传真：0510-85686894</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="bottom_f">
+                    <p>版权所有 动力启航 © Copyright 2009 - 2012. dtcms.net. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;备案号：粤ICP备11064298号</p>
+                    <p>技术支持：<a href="http://www.china-mail.com.cn/" target="_blank">实创科技</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部结束 -->
+
+    </body>
+</html>

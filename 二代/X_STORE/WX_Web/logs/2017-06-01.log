@@ -1,0 +1,179 @@
+2017-06-01 11:14:03.375 dismyself userid: 
+2017-06-01 11:15:24.373 dismyself userid: 
+2017-06-01 11:15:46.310 dismyself userid: 
+2017-06-01 11:15:48.817 dismyself userid: 
+2017-06-01 11:15:50.327 dismyself userid: 
+2017-06-01 11:15:51.011 dismyself userid: 
+2017-06-01 11:15:51.289 dismyself userid: 
+2017-06-01 11:15:51.516 dismyself userid: 
+2017-06-01 11:16:43.003 dismyself userid: 
+2017-06-01 15:16:18.205  : myspace.aspx
+2017-06-01 15:16:18.207  OpenId: 
+2017-06-01 15:16:18.208  boxmac: 
+2017-06-01 15:16:18.458  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 15:16:55.382  : myspace.aspx
+2017-06-01 15:16:55.383  OpenId: 
+2017-06-01 15:16:55.384  boxmac: 
+2017-06-01 15:16:55.585  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 15:16:55.652 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=1&kwid=245
+2017-06-01 15:16:55.654 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=1&kwid=245
+2017-06-01 15:16:55.655 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=2&kwid=245
+2017-06-01 15:16:55.655 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=2&kwid=245
+2017-06-01 15:16:55.656 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=3&kwid=245
+2017-06-01 15:16:55.657 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=3&kwid=245
+2017-06-01 15:16:55.658 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=4&kwid=245
+2017-06-01 15:16:55.659 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=4&kwid=245
+2017-06-01 15:16:55.659 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=5&kwid=245
+2017-06-01 15:16:55.660 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=5&kwid=245
+2017-06-01 15:16:55.661 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=6&kwid=245
+2017-06-01 15:16:55.662 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=6&kwid=245
+2017-06-01 15:16:55.663 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=7&kwid=245
+2017-06-01 15:16:55.664 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=7&kwid=245
+2017-06-01 15:16:55.664 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=43&weizhi=8&kwid=245
+2017-06-01 15:16:55.665 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=43&weizhi=8&kwid=245
+2017-06-01 15:16:55.666 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=45&weizhi=9&kwid=245
+2017-06-01 15:16:55.667 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=45&weizhi=9&kwid=245
+2017-06-01 15:16:55.667 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=10&kwid=245
+2017-06-01 15:16:55.668 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=10&kwid=245
+2017-06-01 15:16:55.669 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=11&kwid=245
+2017-06-01 15:16:55.670 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=11&kwid=245
+2017-06-01 15:16:55.671 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=12&kwid=245
+2017-06-01 15:16:55.671 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=12&kwid=245
+2017-06-01 15:26:02.721  : myspace.aspx
+2017-06-01 15:26:02.723  OpenId: 
+2017-06-01 15:26:02.723  boxmac: 
+2017-06-01 15:26:02.958  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 15:26:03.044 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=1&kwid=245
+2017-06-01 15:26:03.045 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=2&kwid=245
+2017-06-01 15:26:03.047 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=3&kwid=245
+2017-06-01 15:26:03.049 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=4&kwid=245
+2017-06-01 15:26:03.051 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=5&kwid=245
+2017-06-01 15:26:03.053 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=6&kwid=245
+2017-06-01 15:26:03.055 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=7&kwid=245
+2017-06-01 15:26:03.057 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=43&weizhi=8&kwid=245
+2017-06-01 15:26:03.059 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=45&weizhi=9&kwid=245
+2017-06-01 15:26:03.064 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=10&kwid=245
+2017-06-01 15:26:03.066 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=11&kwid=245
+2017-06-01 15:26:03.068 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=12&kwid=245
+2017-06-01 15:28:40.701  : myspace.aspx
+2017-06-01 15:28:40.702  OpenId: 
+2017-06-01 15:28:40.703  boxmac: 
+2017-06-01 15:28:40.777  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 15:28:40.855 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=1&kwid=245
+2017-06-01 15:28:40.856 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=2&kwid=245
+2017-06-01 15:28:40.857 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=3&kwid=245
+2017-06-01 15:28:40.858 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=4&kwid=245
+2017-06-01 15:28:40.859 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=5&kwid=245
+2017-06-01 15:28:40.860 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=6&kwid=245
+2017-06-01 15:28:40.862 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=7&kwid=245
+2017-06-01 15:28:40.863 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=43&weizhi=8&kwid=245
+2017-06-01 15:28:40.864 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=45&weizhi=9&kwid=245
+2017-06-01 15:28:40.865 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=10&kwid=245
+2017-06-01 15:28:40.866 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=11&kwid=245
+2017-06-01 15:28:40.867 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=12&kwid=245
+2017-06-01 15:43:39.581  : myspace.aspx
+2017-06-01 15:43:39.591  OpenId: 
+2017-06-01 15:43:39.592  boxmac: 
+2017-06-01 15:43:39.687  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 15:43:39.776 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=1&kwid=245
+2017-06-01 15:43:39.777 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=2&kwid=245
+2017-06-01 15:43:39.777 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=3&kwid=245
+2017-06-01 15:43:39.778 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=4&kwid=245
+2017-06-01 15:43:39.778 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=5&kwid=245
+2017-06-01 15:43:39.779 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=6&kwid=245
+2017-06-01 15:43:39.779 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=7&kwid=245
+2017-06-01 15:43:39.780 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=43&weizhi=8&kwid=245
+2017-06-01 15:43:39.781 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=45&weizhi=9&kwid=245
+2017-06-01 15:43:39.782 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=10&kwid=245
+2017-06-01 15:43:39.783 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=11&kwid=245
+2017-06-01 15:43:39.784 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=12&kwid=245
+2017-06-01 15:44:38.736  : myspace.aspx
+2017-06-01 15:44:38.737  OpenId: 
+2017-06-01 15:44:38.737  boxmac: 
+2017-06-01 15:44:38.806  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 15:44:38.873 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=1&kwid=245
+2017-06-01 15:44:38.873 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=2&kwid=245
+2017-06-01 15:44:38.874 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=3&kwid=245
+2017-06-01 15:44:38.875 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=4&kwid=245
+2017-06-01 15:44:38.876 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=5&kwid=245
+2017-06-01 15:44:38.877 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=6&kwid=245
+2017-06-01 15:44:38.878 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=7&kwid=245
+2017-06-01 15:44:38.878 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=43&weizhi=8&kwid=245
+2017-06-01 15:44:38.879 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=45&weizhi=9&kwid=245
+2017-06-01 15:44:38.880 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=10&kwid=245
+2017-06-01 15:44:38.881 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=90&weizhi=11&kwid=245
+2017-06-01 15:44:38.881 ---------------- myspace-link_detal: ../pages/detail.aspx?goods_id=42&weizhi=12&kwid=245
+2017-06-01 15:50:04.615  : myspace.aspx
+2017-06-01 15:50:04.617  OpenId: 
+2017-06-01 15:50:04.618  boxmac: 
+2017-06-01 15:50:04.857  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 16:22:20.118  : http://www.kuaidi100.com/kuaidiresult?id=56044677
+2017-06-01 16:24:16.116  : http://www.kuaidi100.com/kuaidiresult?id=56044931
+2017-06-01 16:32:15.007  : ERROR:公司代码不合法
+2017-06-01 16:32:50.172  : ERROR:公司代码不合法
+2017-06-01 16:32:54.938  : http://www.kuaidi100.com/kuaidiresult?id=56046369
+2017-06-01 16:33:17.413  : http://www.kuaidi100.com/kuaidiresult?id=56046407
+2017-06-01 16:35:04.664  : myspace.aspx
+2017-06-01 16:35:04.666  OpenId: 
+2017-06-01 16:35:04.667  boxmac: 
+2017-06-01 16:35:04.923  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 16:35:51.321  : myspace.aspx
+2017-06-01 16:35:51.321  OpenId: 
+2017-06-01 16:35:51.322  boxmac: 
+2017-06-01 16:35:51.384  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 17:08:55.879  : myspace.aspx
+2017-06-01 17:08:55.881  OpenId: 
+2017-06-01 17:08:55.882  boxmac: 
+2017-06-01 17:08:56.203  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 17:10:02.916  : myspace.aspx
+2017-06-01 17:10:02.918  OpenId: 
+2017-06-01 17:10:02.919  boxmac: 
+2017-06-01 17:10:03.203  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 17:21:03.469  : myspace.aspx
+2017-06-01 17:21:03.471  OpenId: 
+2017-06-01 17:21:03.471  boxmac: 
+2017-06-01 17:21:03.732  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 17:27:25.733  : myspace.aspx
+2017-06-01 17:27:25.734  OpenId: 
+2017-06-01 17:27:25.735  boxmac: 
+2017-06-01 17:27:25.987  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 17:33:44.121  : myspace.aspx
+2017-06-01 17:33:44.134  OpenId: 
+2017-06-01 17:33:44.139  boxmac: 
+2017-06-01 17:33:44.447  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 17:35:40.736  : myspace.aspx
+2017-06-01 17:35:40.737  OpenId: 
+2017-06-01 17:35:40.738  boxmac: 
+2017-06-01 17:35:41.068  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 17:39:06.456  : myspace.aspx
+2017-06-01 17:39:06.457  OpenId: 
+2017-06-01 17:39:06.458  boxmac: 
+2017-06-01 17:39:06.748  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 17:41:24.559  : myspace.aspx
+2017-06-01 17:41:24.559  OpenId: 
+2017-06-01 17:41:24.560  boxmac: 
+2017-06-01 17:41:24.634  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 18:13:52.001  : myspace.aspx
+2017-06-01 18:13:52.003  OpenId: 
+2017-06-01 18:13:52.004  boxmac: 
+2017-06-01 18:13:52.074  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 18:13:55.835 ---------------- details-join_car_Click: 109&weizhi=1&kwid=245
+2017-06-01 18:14:12.752  : myspace.aspx
+2017-06-01 18:14:12.762  OpenId: 
+2017-06-01 18:14:12.762  boxmac: 
+2017-06-01 18:14:13.051  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 18:14:29.062 ---------------- details-join_car_Click: 109&weizhi=1&kwid=245
+2017-06-01 18:15:27.499  : myspace.aspx
+2017-06-01 18:15:27.501  OpenId: 
+2017-06-01 18:15:27.502  boxmac: 
+2017-06-01 18:15:27.813  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 18:15:55.976  : myspace.aspx
+2017-06-01 18:15:55.978  OpenId: 
+2017-06-01 18:15:55.978  boxmac: 
+2017-06-01 18:15:56.267  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-01 18:16:29.266 ---------------- details-join_car_Click: 109&weizhi=1&kwid=245
+2017-06-01 18:16:29.309 ---------------- details-join_car_Click: 109&weizhi=1&kwid=245
+2017-06-01 18:16:29.383 ---------------- details-join_car_Click: 109&weizhi=1&kwid=245
+2017-06-01 18:16:34.493 ---------------- details-join_car_Click: 109&weizhi=1&kwid=245
+2017-06-01 18:16:39.305 ---------------- details-join_car_Click: 109&weizhi=1&kwid=245
+2017-06-01 18:16:48.145 ---------------- details-join_car_Click: 109&weizhi=1&kwid=245

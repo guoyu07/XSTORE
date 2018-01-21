@@ -1,0 +1,22 @@
+﻿body{ background-color:#fff;}
+.i_ads{ display:block;}
+.i_hotLine,.i_head,.i_wel{ display:none;}
+.i_content{ padding:8px; margin:auto;}
+.i_content ul{ margin:auto; display:block;}
+.i_content ul li{ width:33.33%; padding:0px;}
+.i_content ul li:nth-child(odd) div{overflow:hidden;background-color:#004EA2;}
+.i_content ul li:nth-child(even) div{overflow:hidden;background-color:#fff;}
+.i_content ul li p{display:block; height: 100px; margin: 0 auto; overflow: hidden; padding: 6px;}
+.i_content ul li p a{display:block; height:100px; overflow:hidden;}
+.i_content ul li p a img{width:100%; height:100px; display:block; border: 0 none;} 
+.i_content ul li span{ height:1.5em; line-height:1.5em; overflow:hidden; display:block; margin:4px 8px;}
+.i_content ul li:nth-child(odd) span{overflow:hidden;color:#fff;}
+.i_content ul li:nth-child(even) span{overflow:hidden;color:#004EA2;}
+.i_content ul li span em { display:none;}
+
+.i_foot{ display:none;}
+.i_Navigation{ background-color:#646464; position: fixed; width:50%; padding:8px; border-radius:8px; top:100px;  z-index:3; display:none;}
+.i_Navigation .l_arrow{color: #646464; font-size: 25px; position: relative; top: -15px; height: 8px; overflow: hidden;}
+.i_Navigation ul{ width:100%; margin:auto; }
+.i_Navigation ul li{ float:left; width:46%; padding:2%;}
+.i_Navigation ul li a{ background-color:#787878; color:#fff; display:block; height:2em;  line-height:2em;}

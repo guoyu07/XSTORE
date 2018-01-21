@@ -1,0 +1,13 @@
+﻿.i_head,.i_wel,.i_hotLine{ display:none;}
+.i_ads{ display:block;}
+.i_content{ padding:8px; margin:auto;}
+.i_content ul{ margin:auto; display:block;}
+.i_content ul li{ width:50%; padding:0px; margin:4px auto; min-width:112px;}
+.i_content ul li div{border: 1px solid #CCCCCC; border-radius: 5px; margin:8px; overflow:hidden; padding:8px 0; background-color:#fff;}
+.i_content ul li p{display:block; background-color: #F9F9F9; border-radius: 100px;  box-shadow: 0 1px 2px 0 #999 inset; display: block; height: 100px; margin: 0 auto; overflow: hidden; padding: 6px; width: 100px;}
+.i_content ul li p a{display:block; border-radius: 100px; width:100px; height:100px; overflow:hidden;}
+.i_content ul li p a img{width:100px; height:100px; display:block;border-radius: 100px; border: 0 none;} 
+.i_content ul li span{ height:1.5em; line-height:1.5em; overflow:hidden; display:block; margin:4px 8px;}
+.i_content ul li span em { display:none;}
+.i_foot{ display:none;}
+.i_Navigation{ display:none;}

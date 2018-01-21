@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>幸事多私享空间</title>
+		<link rel="icon" href="img/logo.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css">
+		<link rel="stylesheet" href="../css/layer.css" />
+		<link rel="stylesheet" href="../css/operation.css"/>
+	</head>
+	<body>
+		<div class="clearfix topTitle">
+			<img class="l" src="../img/wx.png"/>
+			<div class="l disInfo">
+				房间号 ：<span class="status">1053</span>
+			</div>
+		</div>
+		<ul>
+			<div class="thead">対全部格子进行操作</div>
+			<li class="clearfix errorOpen">
+				<div class="l">开箱纠错</div>
+				<div class="r iconfont icon-gengduo"></div>
+			</li>
+			<li class="clearfix stopStatus">
+				<div class="l">箱子停用</div>
+				<div class="r iconfont icon-gengduo"></div>
+			</li>
+			<li class="clearfix returnNormal">
+				<div class="l">恢复使用</div>
+				<div class="r iconfont icon-gengduo"></div>
+			</li>
+			<div class="thead">対具体格子进行操作</div>
+			<li class="clearfix faultStatus">
+				<a href="roomGoods.html" class="clearfix">
+					<div class="l">设为故障</div>
+					<div class="r iconfont icon-gengduo"></div>
+				</a>
+			</li>
+			<li class="normalOpen">
+				<a href="roomGoods.html" class="clearfix">
+					<div class="l">设为正常</div>
+					<div class="r iconfont icon-gengduo"></div>
+				</a>
+			</li>
+		</ul>
+		<div class="interval"></div>
+		<div class="btnWrap">
+			<a href="../distributer.html#roomStatus">返回房间</a>
+		</div>
+	</body>
+	<script src="../js/plugins/zepto.min.js"></script>
+	<script src="../js/plugins/layer.js"></script>
+	<script>
+		$(function(){
+			$('.errorOpen').on('click',function(){
+				layer.open({
+					content:'请将错误商品取出，放入正确的商品',
+					skin:'msg',
+					time:2
+				})
+			});
+			$('.stopStatus').on('click',function(){
+				layer.open({
+					content:'所有格子已停用',
+					skin:'msg',
+					time:2
+				})
+			});
+			$('.returnNormal').on('click',function(){
+				layer.open({
+					content:'所有格子已恢复使用',
+					skin:'msg',
+					time:2
+				})
+			});
+		})
+	</script>
+</html>

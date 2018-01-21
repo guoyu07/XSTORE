@@ -1,0 +1,87 @@
+2016-05-09 10:01:25.232 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[443ec99d0ca145b49519eeccfa1d0f21]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[7593DF9F55C7DE774173EE2FA032978B]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:01:25.706 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\hongdouWSB\红豆\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 63
+2016-05-09 10:02:14.104 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[ad9814e14caf4674b722963777a1cf64]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[9D901D28B9398CABAC5D30B25C41AC44]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:02:14.408 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\hongdouWSB\红豆\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 63
+2016-05-09 10:15:48.748 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[af68852eba914e4490fad42be634f85a]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[7A8B44C680847F35DDD245A56F91957F]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:15:49.184 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\hongdouWSB\红豆\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 63
+2016-05-09 10:16:36.106 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[19a1a3af69d84d359a98a0a09e0aba71]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[7CF03550BB91C0EF4C2857BF92F29D32]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:16:37.135 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\hongdouWSB\红豆\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 63
+2016-05-09 10:17:11.509 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[f77c256ecf194c9ea434cad05161cb63]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[481E3D94FC18CB676A7230A061A86FE4]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:18:29.404 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\hongdouWSB\红豆\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 63
+2016-05-09 10:20:25.354 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[28719e35205c40769d522bd3a0950f03]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[44EC1F434B6748B570DBFD46B2A1C31E]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:20:38.661 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\hongdouWSB\红豆\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 63
+2016-05-09 10:20:51.564 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[e806cc4a482a45c780fd69a19b13f119]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[81FE77C7D913C79A400D372158EBD389]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:21:16.294 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\hongdouWSB\红豆\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 63
+2016-05-09 10:22:01.690 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[ecd612d75de046f69fd55869d38b8219]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[16675A7B200CECA76AF162A3440717D8]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:22:02.236 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\hongdouWSB\红豆\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 63
+2016-05-09 10:22:17.834 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[64922adf81d24aa9b2a667fefa9e4d16]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[A50879AAC8D030D7FE2385CEE8F9B276]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:23:04.665 DEBUG WxPayApi: PostXml used cert
+2016-05-09 10:23:05.040 DEBUG WxPayApi: Refund response : <xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[transaction_id and out_trade_no is empty]]></return_msg>
+</xml>
+2016-05-09 10:23:28.239 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[c0caefc004594747b1434847e9f8f09a]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[635A6C1D3BE69B29241140D72686421A]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:23:28.629 DEBUG WxPayApi: PostXml used cert
+2016-05-09 10:23:29.877 DEBUG WxPayApi: Refund response : <xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[transaction_id and out_trade_no is empty]]></return_msg>
+</xml>
+2016-05-09 10:50:30.242 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[5c3a57fa0939478e966b47e43e0865b9]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[E61735FFB12CA26213F7A1FEAF93E382]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:50:57.616 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\hongdouWSB\红豆\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 63
+2016-05-09 10:53:09.643 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx3d1ca2a2bd1797a1]]></appid><mch_id><![CDATA[1325030101]]></mch_id><nonce_str><![CDATA[a6d32aea2b324322a48010945df945ea]]></nonce_str><op_user_id><![CDATA[1325030101]]></op_user_id><out_refund_no><![CDATA[S2016042900005]]></out_refund_no><out_trade_no><![CDATA[]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[A45BB990A62E7D78319BC203585F4DD8]]></sign><total_fee>10</total_fee></xml>
+2016-05-09 10:53:25.680 DEBUG WxPayApi: PostXml used cert
+2016-05-09 10:53:25.961 DEBUG WxPayApi: Refund response : <xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[transaction_id and out_trade_no is empty]]></return_msg>
+</xml>

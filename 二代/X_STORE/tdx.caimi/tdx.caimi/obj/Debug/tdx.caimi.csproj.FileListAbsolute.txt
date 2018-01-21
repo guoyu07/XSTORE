@@ -1,0 +1,17 @@
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\tdx.caimi.dll
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\tdx.caimi.pdb
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\Creatrue.Common.dll
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\Creatrue.kernel.dll
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\Newtonsoft.Json.dll
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\tdx.database.dll
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\tdx.Weixin.dll
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\Creatrue.Common.pdb
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\Creatrue.kernel.pdb
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\tdx.database.pdb
+D:\单用户微信\tdx.caimi\tdx.caimi\bin\tdx.Weixin.pdb
+D:\单用户微信\tdx.caimi\tdx.caimi\obj\Debug\tdx.caimi.csprojResolveAssemblyReference.cache
+D:\单用户微信\tdx.caimi\tdx.caimi\obj\Debug\tdx.caimi.dll
+D:\单用户微信\tdx.caimi\tdx.caimi\obj\Debug\tdx.caimi.pdb
+E:\Project\最新后台\最新后台\tdx.caimi\tdx.caimi\obj\Debug\tdx.caimi.csprojResolveAssemblyReference.cache
+E:\Project\最新后台\最新后台\tdx.caimi\tdx.caimi\obj\Debug\tdx.caimi.dll
+E:\Project\最新后台\最新后台\tdx.caimi\tdx.caimi\obj\Debug\tdx.caimi.pdb

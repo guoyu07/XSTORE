@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>幸事多私享空间-支付成功</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="icon" href="../img/logo.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/paySuccess.css" />
+		<link rel="stylesheet" href="../css/layer.css" />
+	</head>
+	<body>
+		<div class="banner clearfix">
+			<div class="l">
+				付款成功
+			</div>
+			<img src="../img/paymentSuccessed.png" alt="" class="r"/>
+		</div>
+		<div class="total_money">
+			合计：<i>¥ <span>99.98</span></i>
+		</div>
+		<div class="cutDown clearfix">
+			<div class="l">开箱倒计时</div>
+			<div class="r countDown"></div>
+		</div>
+		<div class="remind">
+			<p>请付款后15分钟内开箱取走商品，否则将视作放弃！</p>
+		</div>
+		<div class="menu clearfix">
+			<div class="l">查看订单</div>
+			<button class="r" id="open_now" disabled="disabled" style="background: #ccc;">立即开箱</button>
+		</div>
+		<a class="tel" href="tel:15261597477">
+			<div class="telWrap">
+				<div class="telContent clearfix">
+					<img src="../img/tel.png" class="l" alt="" />
+					<span class="l">联系前台：<em>15261597477</em></span>
+				</div>
+			</div>
+		</a>
+		<a class="tel" href="tel:400-880-2482">
+			<div class="telWrap">
+				<div class="telContent clearfix">
+					<img src="../img/tel.png" class="l" alt="" />
+					<span class="l">联系客服：<em>400-880-2482</em></span>
+				</div>
+			</div>
+		</a>
+		<div class="sendGoods">
+			<button type="button" disabled="disabled">申请服务员送货</button>
+		</div>
+		<a class="problem" href="problem.html">常见问题</a>
+		<div class="qrcode">
+			<img src="../img/qrcode.jpg" alt="" />
+		</div>
+		<div class="isRefund">
+			<dl>
+				<dd><a href="tel:400-880-2482">联系客服:<span>400-880-2482</span></a></dd>
+				<dd><a href="tel:12543698701">联系前台:<span>12543698701</span></a></dd>
+				<dd class="toRefund"><a>去退款</a></dd>
+			</dl>
+		</div>
+		<script src="../js/plugins/zepto.min.js"></script>
+		<script src="../js/plugins/layer.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#open_now').on('click',function(){
+				$.ajax({
+		    		url:'openbox.ashx',
+		    		type:'get',
+		    		data:{
+		    			orderno:$('#order_lbl').text()
+		    		},
+		    		success:function(result){
+		    			layer.open({
+		    				 content: result,
+		    				 time:2
+		    			});
+		    		}
+		    	})
+			});
+			$('.refundBTN').on('click',function(){
+				$('.isRefund').show();
+			});
+			$('.isRefund').on('click',function(){
+				$(this).hide();
+			});
+			$('.isRefund dl').on('click',function(event){
+				event.stopPropagation();
+			});
+			$('.toRefund').on('click',function(){
+				$('.isRefund').hide();
+			  	layer.open({
+			    	content: '亲~真的不要了吗？',
+			    	btn: ['确认','取消',],
+			    	yes: function(index){
+				    layer.close(index);
+				    	$.ajax({
+				    		url:'tuikuan.ashx',
+				    		type:'get',
+				    		data:{
+				    			orderno:$('#order_lbl').text()
+				    		},
+				    		success:function(result){
+				    			layer.open({
+				    				 content: result,
+				    				 time:2
+				    			});
+				    		}
+				    	})
+				    }
+			  	});
+			});
+				/*var flag=true;
+				cutDown($('#pay_time').text());
+				function cutDown(param){
+					$('#open_now').one('click',function(){
+						alert(6666);
+						clearInterval(clock);
+						$(this).css('background','#ccc');
+						$('.refundBTN').hide();
+						var orderno=$('#order_lbl').text();
+						applyInfo(orderno);
+					});
+					var clock=setInterval(function(){
+						var paramTime=dealDay(param);
+						var EndTime= new Date(paramTime);
+						var NowTime = new Date(); 
+						var t=EndTime.getTime() + 15*60*1000 - NowTime.getTime();
+						console.log(t);
+						if(t<=0){
+							clearInterval(clock);
+							$('#open_now').attr('disabled','disabled').css('background','#ccc');
+							$('.refundBTN').hide();
+						}else{
+							var m=addZero(parseInt(Math.floor(t/1000/60%60))); 
+							var s=addZero(parseInt(Math.floor(t/1000%60)));
+							$('.countDown').html(m+':'+s);
+							if(flag){
+								$('#open_now').removeAttr('disabled').css('background','#FF6600');
+								flag=false;
+							}
+						}
+					},1000);
+				}
+				function dealDay(dayTime){
+					var result=dayTime.replace(/-/g, "/");
+					return result;
+				}
+				function addZero(num){
+					if(num<10){
+						num='0'+num;
+					};
+					return num;
+				}
+				function openBox(param){
+					alert(param);
+				}
+				function applyInfo(param){
+					$.ajax({
+						url:'openbox.ashx',
+						type:'get',
+						data:{
+							orderno:param
+						},
+						success:function(result){
+							alert(result);
+							$('.countDown').html(result);
+						}
+					})
+				}*/
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,156 @@
+2017-08-10 09:13:54.906 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:13:54.907 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-10 09:13:55.633 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:13:55.635 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-10 09:13:55.715 类：BasePage 方法：UserId: _userid:1
+2017-08-10 09:13:55.830 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:14:19.018 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:14:19.019 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-10 09:14:21.367 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:14:21.367 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-10 09:14:21.432 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:14:21.486 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:14:59.375 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:14:59.474 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-10 09:15:01.158 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:15:01.158 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-10 09:15:01.225 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:15:01.281 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:17:42.841 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:17:42.843 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-10 09:17:43.244 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 09:17:43.246 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-10 09:17:43.317 类：BasePage 方法：UserId: _userid:1
+2017-08-10 09:17:43.438 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 13:46:15.001 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 13:46:15.002 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-10 13:46:15.751 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 13:46:15.754 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-10 13:46:15.815 类：BasePage 方法：UserId: _userid:1
+2017-08-10 13:46:15.916 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-10 13:46:20.469 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 79
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-10 13:46:20.857 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":0.02,"编码":"1","品名":"杜蕾斯","图片路径":"/upload/201705/09/201705091134487853.jpg","前台库存":3212.0,"房间库存":836.0,"销量":836.0},{"本站价":0.02,"编码":"12","品名":"杜蕾斯AiR","图片路径":"/upload/201705/09/201705091143345239.jpg","前台库存":220.0,"房间库存":920.0,"销量":920.0},{"本站价":0.01,"编码":"13","品名":"网衣","图片路径":"/upload/201706/13/201706131610197202.jpg","前台库存":6558.0,"房间库存":40100.0,"销量":40586.0},{"本站价":0.01,"编码":"23","品名":"龙抬头","图片路径":"/upload/201706/13/201706131606059330.jpg","前台库存":34.0,"房间库存":652.0,"销量":652.0},{"本站价":0.01,"编码":"32","品名":"粉红跳蛋","图片路径":"/upload/201705/10/201705101133265347.jpg","前台库存":126.0,"房间库存":289.0,"销量":286.0},{"本站价":0.03,"编码":"15","品名":"OMYSKY","图片路径":"/upload/201705/10/201705101142496766.jpg","前台库存":44.0,"房间库存":202.0,"销量":202.0},{"本站价":0.03,"编码":"12","品名":"性感内衣","图片路径":"/upload/201705/10/201705101145593114.jpg","前台库存":113.0,"房间库存":156.0,"销量":156.0},{"本站价":0.01,"编码":null,"品名":"滑石粉","图片路径":"","前台库存":null,"房间库存":40.0,"销量":40.0},{"本站价":0.01,"编码":null,"品名":"滑石","图片路径":"","前台库存":null,"房间库存":120.0,"销量":120.0},{"本站价":0.01,"编码":"21","品名":"牛奶泡泡浴","图片路径":"/upload/201705/11/201705110954349382.jpg","前台库存":360.0,"房间库存":53.0,"销量":53.0},{"本站价":0.01,"编码":"12","品名":"佳洁适","图片路径":"/upload/201705/11/201705110956568741.jpg","前台库存":null,"房间库存":1064.0,"销量":1064.0},{"本站价":0.01,"编码":null,"品名":"雅润湿巾","图片路径":"/upload/201705/18/201705181553076114.gif","前台库存":null,"房间库存":150.0,"销量":150.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":729.0,"销量":729.0},{"本站价":0.01,"编码":"232","品名":"测试组合01","图片路径":"/upload/201706/15/201706151051077242.jpg","前台库存":-3.0,"房间库存":342.0,"销量":342.0},{"本站价":0.01,"编码":"65655555554645","品名":"测试组合02","图片路径":"/upload/201706/15/201706151108262491.jpg","前台库存":-20.0,"房间库存":null,"销量":null}]
+2017-08-10 13:46:20.857 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-10 13:46:20.858 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-10 13:46:20.859 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-10 13:46:20.859 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-10 13:46:20.860 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-10 13:46:20.860 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-10 13:46:20.860 类：comprehensive_hm 方法：BindGoods: dr6：
+2017-08-10 13:46:20.861 类：comprehensive_hm 方法：BindGoods: dr7：
+2017-08-10 13:46:20.861 类：comprehensive_hm 方法：BindGoods: dr8：
+2017-08-10 13:46:20.862 类：comprehensive_hm 方法：BindGoods: dr9：
+2017-08-10 13:46:20.862 类：comprehensive_hm 方法：BindGoods: dr10：
+2017-08-10 13:46:20.863 类：comprehensive_hm 方法：BindGoods: dr11：
+2017-08-10 13:46:20.863 类：comprehensive_hm 方法：BindGoods: dr12：
+2017-08-10 13:46:20.863 类：comprehensive_hm 方法：BindGoods: dr13：
+2017-08-10 13:46:20.864 类：comprehensive_hm 方法：BindGoods: dr14：
+2017-08-10 17:11:52.216 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 79
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-10 17:11:52.465 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":0.02,"编码":"1","品名":"杜蕾斯","图片路径":"/upload/201705/09/201705091134487853.jpg","前台库存":3212.0,"房间库存":836.0,"销量":836.0},{"本站价":0.02,"编码":"12","品名":"杜蕾斯AiR","图片路径":"/upload/201705/09/201705091143345239.jpg","前台库存":220.0,"房间库存":920.0,"销量":920.0},{"本站价":0.01,"编码":"13","品名":"网衣","图片路径":"/upload/201706/13/201706131610197202.jpg","前台库存":6558.0,"房间库存":40100.0,"销量":40586.0},{"本站价":0.01,"编码":"23","品名":"龙抬头","图片路径":"/upload/201706/13/201706131606059330.jpg","前台库存":34.0,"房间库存":652.0,"销量":652.0},{"本站价":0.01,"编码":"32","品名":"粉红跳蛋","图片路径":"/upload/201705/10/201705101133265347.jpg","前台库存":126.0,"房间库存":289.0,"销量":286.0},{"本站价":0.03,"编码":"15","品名":"OMYSKY","图片路径":"/upload/201705/10/201705101142496766.jpg","前台库存":44.0,"房间库存":202.0,"销量":202.0},{"本站价":0.03,"编码":"12","品名":"性感内衣","图片路径":"/upload/201705/10/201705101145593114.jpg","前台库存":113.0,"房间库存":156.0,"销量":156.0},{"本站价":0.01,"编码":null,"品名":"滑石粉","图片路径":"","前台库存":null,"房间库存":40.0,"销量":40.0},{"本站价":0.01,"编码":null,"品名":"滑石","图片路径":"","前台库存":null,"房间库存":120.0,"销量":120.0},{"本站价":0.01,"编码":"21","品名":"牛奶泡泡浴","图片路径":"/upload/201705/11/201705110954349382.jpg","前台库存":360.0,"房间库存":53.0,"销量":53.0},{"本站价":0.01,"编码":"12","品名":"佳洁适","图片路径":"/upload/201705/11/201705110956568741.jpg","前台库存":null,"房间库存":1064.0,"销量":1064.0},{"本站价":0.01,"编码":null,"品名":"雅润湿巾","图片路径":"/upload/201705/18/201705181553076114.gif","前台库存":null,"房间库存":150.0,"销量":150.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":729.0,"销量":729.0},{"本站价":0.01,"编码":"232","品名":"测试组合01","图片路径":"/upload/201706/15/201706151051077242.jpg","前台库存":-3.0,"房间库存":342.0,"销量":342.0},{"本站价":0.01,"编码":"65655555554645","品名":"测试组合02","图片路径":"/upload/201706/15/201706151108262491.jpg","前台库存":-20.0,"房间库存":null,"销量":null}]
+2017-08-10 17:11:52.466 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-10 17:11:52.468 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-10 17:11:52.469 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-10 17:11:52.470 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-10 17:11:52.472 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-10 17:11:52.474 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-10 17:11:52.476 类：comprehensive_hm 方法：BindGoods: dr6：
+2017-08-10 17:11:52.478 类：comprehensive_hm 方法：BindGoods: dr7：
+2017-08-10 17:11:52.479 类：comprehensive_hm 方法：BindGoods: dr8：
+2017-08-10 17:11:52.480 类：comprehensive_hm 方法：BindGoods: dr9：
+2017-08-10 17:11:52.481 类：comprehensive_hm 方法：BindGoods: dr10：
+2017-08-10 17:11:52.481 类：comprehensive_hm 方法：BindGoods: dr11：
+2017-08-10 17:11:52.482 类：comprehensive_hm 方法：BindGoods: dr12：
+2017-08-10 17:11:52.483 类：comprehensive_hm 方法：BindGoods: dr13：
+2017-08-10 17:11:52.484 类：comprehensive_hm 方法：BindGoods: dr14：
+2017-08-10 17:11:54.913 类：comprehensive_hm 方法：BindGoods: all_sql： 
+declare @s int
+  set @s = 79
+  select b.本站价,b.编码,b.品名,isnull(c.图片路径,'') as 图片路径,
+    (select (sum(isnull(WP_入库表.数量,0))-sum(isnull(WP_出库表.数量,0))) as kucuncount from WP_入库表 left join WP_出库表 on WP_入库表.库位id = WP_出库表.库位id and WP_入库表.商品id =WP_出库表.商品id where WP_入库表.库位id in (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 = '总台' and 仓库id = @s ) and WP_入库表.商品id = b.id group by WP_入库表.商品id,WP_出库表.商品id ) as 前台库存
+  ,(select 
+  sum(isnull(WP_入库表.数量,0)) as rukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_入库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_入库表.商品id = b.id) as 房间库存
+    ,(select 
+  sum(isnull(WP_出库表.数量,0)) as chukucount 
+  from WP_入库表 
+  left join WP_出库表 
+  on WP_入库表.库位id = WP_出库表.库位id 
+  and WP_入库表.商品id =WP_出库表.商品id 
+  where WP_出库表.库位id in 
+  (SELECT id FROM [tshop].[dbo].[WP_库位表] where 库位名 not in('总台','总台库') and 仓库id = @s) 
+  and WP_出库表.商品id = b.id) as 销量
+  from  WP_商品表 b left join WP_商品图片表 c on b.编号 =c.商品编号
+  where b.id in(select 商品id from [dbo].[视图在库表] a where a.库位id in(select id from WP_库位表 where 仓库id = @s))
+
+2017-08-10 17:11:55.127 类：comprehensive_hm 方法：BindGoods: dt：[{"本站价":0.02,"编码":"1","品名":"杜蕾斯","图片路径":"/upload/201705/09/201705091134487853.jpg","前台库存":3212.0,"房间库存":836.0,"销量":836.0},{"本站价":0.02,"编码":"12","品名":"杜蕾斯AiR","图片路径":"/upload/201705/09/201705091143345239.jpg","前台库存":220.0,"房间库存":920.0,"销量":920.0},{"本站价":0.01,"编码":"13","品名":"网衣","图片路径":"/upload/201706/13/201706131610197202.jpg","前台库存":6558.0,"房间库存":40100.0,"销量":40586.0},{"本站价":0.01,"编码":"23","品名":"龙抬头","图片路径":"/upload/201706/13/201706131606059330.jpg","前台库存":34.0,"房间库存":652.0,"销量":652.0},{"本站价":0.01,"编码":"32","品名":"粉红跳蛋","图片路径":"/upload/201705/10/201705101133265347.jpg","前台库存":126.0,"房间库存":289.0,"销量":286.0},{"本站价":0.03,"编码":"15","品名":"OMYSKY","图片路径":"/upload/201705/10/201705101142496766.jpg","前台库存":44.0,"房间库存":202.0,"销量":202.0},{"本站价":0.03,"编码":"12","品名":"性感内衣","图片路径":"/upload/201705/10/201705101145593114.jpg","前台库存":113.0,"房间库存":156.0,"销量":156.0},{"本站价":0.01,"编码":null,"品名":"滑石粉","图片路径":"","前台库存":null,"房间库存":40.0,"销量":40.0},{"本站价":0.01,"编码":null,"品名":"滑石","图片路径":"","前台库存":null,"房间库存":120.0,"销量":120.0},{"本站价":0.01,"编码":"21","品名":"牛奶泡泡浴","图片路径":"/upload/201705/11/201705110954349382.jpg","前台库存":360.0,"房间库存":53.0,"销量":53.0},{"本站价":0.01,"编码":"12","品名":"佳洁适","图片路径":"/upload/201705/11/201705110956568741.jpg","前台库存":null,"房间库存":1064.0,"销量":1064.0},{"本站价":0.01,"编码":null,"品名":"雅润湿巾","图片路径":"/upload/201705/18/201705181553076114.gif","前台库存":null,"房间库存":150.0,"销量":150.0},{"本站价":39.99,"编码":"H","品名":"粉红跳蛋","图片路径":"/upload/201706/15/201706151554496115.png","前台库存":null,"房间库存":729.0,"销量":729.0},{"本站价":0.01,"编码":"232","品名":"测试组合01","图片路径":"/upload/201706/15/201706151051077242.jpg","前台库存":-3.0,"房间库存":342.0,"销量":342.0},{"本站价":0.01,"编码":"65655555554645","品名":"测试组合02","图片路径":"/upload/201706/15/201706151108262491.jpg","前台库存":-20.0,"房间库存":null,"销量":null}]
+2017-08-10 17:11:55.128 类：comprehensive_hm 方法：BindGoods: dr0：
+2017-08-10 17:11:55.130 类：comprehensive_hm 方法：BindGoods: dr1：
+2017-08-10 17:11:55.131 类：comprehensive_hm 方法：BindGoods: dr2：
+2017-08-10 17:11:55.132 类：comprehensive_hm 方法：BindGoods: dr3：
+2017-08-10 17:11:55.133 类：comprehensive_hm 方法：BindGoods: dr4：
+2017-08-10 17:11:55.134 类：comprehensive_hm 方法：BindGoods: dr5：
+2017-08-10 17:11:55.136 类：comprehensive_hm 方法：BindGoods: dr6：
+2017-08-10 17:11:55.137 类：comprehensive_hm 方法：BindGoods: dr7：
+2017-08-10 17:11:55.138 类：comprehensive_hm 方法：BindGoods: dr8：
+2017-08-10 17:11:55.139 类：comprehensive_hm 方法：BindGoods: dr9：
+2017-08-10 17:11:55.140 类：comprehensive_hm 方法：BindGoods: dr10：
+2017-08-10 17:11:55.142 类：comprehensive_hm 方法：BindGoods: dr11：
+2017-08-10 17:11:55.143 类：comprehensive_hm 方法：BindGoods: dr12：
+2017-08-10 17:11:55.144 类：comprehensive_hm 方法：BindGoods: dr13：
+2017-08-10 17:11:55.145 类：comprehensive_hm 方法：BindGoods: dr14：

@@ -1,0 +1,18 @@
+﻿.nei_body {background:url( bg.jpg) no-repeat top left; margin:0 auto;}
+.l_body{padding-top:25%; width:100%; margin:0 auto;}
+.l_body:after{display:block;content:"";clear:both;}
+.l_content{ width:60%; float:right; margin-right:5%;}
+.l_content h1{font-weight: bold;display:block;font-size:14px;background:url(divbj03.png);height:30px; line-height:30px; width:100%; text-align:left;  text-indent:0.5em; color:#333;margin-bottom:10px;}
+.l_content ul { float:right; width:100%;}
+.l_content ul li{ float:none; margin-bottom:10px;}
+.l_content ul li:after{display:block;clear:both;content:"";}
+.l_content ul li h1 { background:none;}
+.l_content ul li a{ display:block; text-decoration:none; height:30px; line-height:30px; width:100%; background:url(divbj01.png);}
+.l_content ul li a:hover { background:url(divbj02.png);}
+.l_content ul li a:hover h1 { color:#FFF; margin-bottom:0px;}
+.l_content ul li a:after{display:block;clear:both;content:"";}
+.l_content ul li a img{ display:none;}
+.l_content ul li a h1{font-weight:normal;display:block;font-size:14px;color:#333;text-align:left; border-width:0px; padding:0; height:30px; line-height:30px;}
+.l_content p{ display:none;}
+.proTitle { display:none;background-color: #FFFFFF;font-size: 12px;height: 2em;line-height: 2em;margin: auto;overflow: hidden;padding: 0 13px;position: relative;top: -1px;width: 6em;z-index: 1; border-radius:0px 0px 6px 6px;}
+.i_copyright { position:fixed; bottom:2em; display:block; margin:0 auto; width:100%;}

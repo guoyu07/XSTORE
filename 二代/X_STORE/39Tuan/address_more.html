@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>收货地址</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/checkbox.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="js/jquery-1.7.2.min.js" charset="utf-8"></script> 
+	<script language="javascript" src="js/swipe.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/menu_min.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){ 
+  $(".menu ul li").menu();
+}); 
+</script> 
+
+</head>
+<body>
+<div class="container">
+<div class="address_more">
+	<div class="wrap padd_10 clear">
+    	<label class="add_l">姓名：</label><input type="text" class="name" value="王永健" />
+    </div>
+</div>
+<div class="hei_15"></div>
+<div class="address_more">
+	<div class="wrap padd_10 clear">
+    	<label class="add_l">电话：</label><input type="text" class="tel"  value="15898658410" />
+    </div>
+</div>
+<div class="hei_15"></div>
+<div class="address_more">
+	<div class="wrap padd_10 clear">
+    	<label class="add_l">地区：</label><a href="#" class="province">江苏省</a><a href="#" class="city">无锡市</a><a href="district" class="Province">新区</a>
+    </div>
+</div>
+<div class="hei_15"></div>
+<div class="address_more">
+	<div class="wrap padd_10 clear">
+    	<label class="add_l">详细地址：</label><input type="text" class="address"  value="无锡市新区长江路16号8906" />
+    </div>
+</div>
+<div class="hei_15"></div>
+<div class="address_more">
+	<div class="wrap padd_10 clear">
+    	<label class="default">设为默认地址</label><div class="onoffswitch greensea">
+                      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch-on" checked="">
+                      <label class="onoffswitch-label" for="switch-on">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                      </label>
+                    </div><!--<input type="checkbox" class="default"  value="无锡市新区长江路16号8906" />-->
+    </div>
+</div>
+<div class="hei_15"></div>
+<div class="address_more">
+	<div class="wrap padd_10 clear">
+    	<label class="add_l">邮政编码：</label><input type="text" class="name"  placeholder="邮政编码（选填）" />
+    </div>
+</div>
+<div class="hei_15"></div>
+</div>
+<div class="m_15"><div class="copyright">实创科技</div></div>
+
+<div class="bott">
+	<div class="wrap padd_10 clear">
+    	<div class="del fl"><a href="#"><s></s><span>删除</span></a></div>
+        <div class="buy_bt fr"><input type="button" value="保存" /></div>
+    </div>
+</div>
+
+</body>
+</html>

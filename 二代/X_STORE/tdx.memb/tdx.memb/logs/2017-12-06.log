@@ -1,0 +1,34 @@
+2017-12-06 23:02:19.489 _openboxTimer_Elapsed sql：select 订单编号,mac, LEFT(位置,LEN(位置)-1) as 位置 from (
+select top 1 
+(select isnull(箱子MAC,'') from WP_库位表 where id = a.库位id) as mac,
+(select convert(nvarchar(2),位置-1)+',' from WP_订单子表 where 订单编号 = a.订单编号 FOR XML PATH('')) as 位置,
+a.订单编号
+ from WP_订单子表 a left join WP_订单表 b on a.订单编号 = b.订单编号 where 订单编号 = 'S201712545865179'
+) as c: ------
+2017-12-06 23:05:12.599 _openboxTimer_Elapsed sql：select 订单编号,mac, LEFT(位置,LEN(位置)-1) as 位置 from (
+select top 1 
+(select isnull(箱子MAC,'') from WP_库位表 where id = a.库位id) as mac,
+(select convert(nvarchar(2),位置-1)+',' from WP_订单子表 where 订单编号 = a.订单编号 FOR XML PATH('')) as 位置,
+a.订单编号
+ from WP_订单子表 a left join WP_订单表 b on a.订单编号 = b.订单编号 where 订单编号 = 'S201712572569085'
+) as c: ------
+2017-12-06 23:06:23.429 _openboxTimer_Elapsed sql：select 订单编号,mac, LEFT(位置,LEN(位置)-1) as 位置 from (
+select top 1 
+(select isnull(箱子MAC,'') from WP_库位表 where id = a.库位id) as mac,
+(select convert(nvarchar(2),位置-1)+',' from WP_订单子表 where 订单编号 = a.订单编号 FOR XML PATH('')) as 位置,
+a.订单编号
+ from WP_订单子表 a left join WP_订单表 b on a.订单编号 = b.订单编号 where b.订单编号 = 'S201712572569085'
+) as c: ------
+2017-12-06 23:06:36.090 _openboxTimer_Elapsed selectDtCount：1: ------
+2017-12-06 23:06:58.775 类：RemoteBoxHelper 方法：OpenRemoteBox: orderNo：201712572569085
+2017-12-06 23:06:58.781 类：RemoteBoxHelper 方法：OpenRemoteBox: 开箱命令：EF025002383631383533303332303037313731000000000000000000000100323031373132353732353639303835313506C9
+2017-12-06 23:07:19.074 _openboxTimer_Elapsed sql：select 订单编号,mac, LEFT(位置,LEN(位置)-1) as 位置 from (
+select top 1 
+(select isnull(箱子MAC,'') from WP_库位表 where id = a.库位id) as mac,
+(select convert(nvarchar(2),位置-1)+',' from WP_订单子表 where 订单编号 = a.订单编号 FOR XML PATH('')) as 位置,
+a.订单编号
+ from WP_订单子表 a left join WP_订单表 b on a.订单编号 = b.订单编号 where b.订单编号 = 'S201712572569085'
+) as c: ------
+2017-12-06 23:07:19.128 _openboxTimer_Elapsed selectDtCount：1: ------
+2017-12-06 23:07:19.129 类：RemoteBoxHelper 方法：OpenRemoteBox: orderNo：201712572569085
+2017-12-06 23:07:19.129 类：RemoteBoxHelper 方法：OpenRemoteBox: 开箱命令：EF025002383631383533303332303037313731000000000000000000000100323031373132353732353639303835313506C9

@@ -1,0 +1,189 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>灵山_列表页</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/respond.src.js"></script>
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="js/jqurey.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!--列表页下拉-->
+    <script src="js/common.js"></script>
+
+    <!--手机导航按钮-->
+    <script src="js/pc_phone.js"></script>
+
+
+    <!--轮播大图-->
+    <script src="js/slider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.banner .list').bxSlider({
+                auto: true
+            });
+        });
+
+    </script>
+
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script><!--tabs选项卡-->
+    <script>  $(function () { $(".tabs").tabs({ event: "mouseover" }); });  </script>
+    <style type="text/css">
+        .shop li.ui-tabs-active {
+            background-color: #bf2b2b;
+        }
+
+            .shop li.ui-tabs-active a {
+                color: #fff;
+            }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById('weixin');
+            var b = document.getElementById('wxm');
+            a.onmouseover = function () {
+                b.style.display = 'block';
+            }
+            a.onmouseout = function () {
+                b.style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+    <body class="style_body">
+
+        <!-- 头部导航开始 -->
+        <div class="top_menu">
+            <div class="logo_img"><img src="images/logo_s.png" /></div>
+            <div class="wrap clear mainNav">
+                <div class="row slide_l">
+                    <div class="clear">
+                        <div class="nav_toggle">
+                            <span class=""></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                    </div>
+                    <div class="nav_bg1">
+                        <ul class="navs clear ">
+                            <li class="first"><a href="index.html"  class="active">首页</a></li><li><a href="ProList_001005_l_1.html">旅游商业规划</a></li><li><a href="ProList_001006_l_1.html">旅游商业策划</a></li><li><a href="ProList_001007_l_1.html">旅游商业场景</a></li><li><a href="ProList_001008_l_1.html">旅游商业体验</a></li><li><a href="ProList_001009_l_1.html">旅游商品研发</a></li><li><a href="ProList_001010_l_1.html">旅游商业管理</a></li><li class="last"><a href="about_001_d_10.html">关于我们</a></li><li class="last"><a href="ProList_001011_l_1.html">项目案例</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                //绑定滚动条事件
+                $(window).bind("scroll", function () {
+                    var sTop = $(window).scrollTop();
+                    var sTop = parseInt(sTop);
+                    if (sTop >= 70) {
+                        $('.top_menu').addClass("headbg");
+                        $('.logo2').addClass("logo");
+                        $('.logo_img').addClass("logo_img_block");
+                    }
+                    else {
+                        $('.top_menu').removeClass("headbg");
+                        $('.logo2').removeClass("logo");
+                        $('.logo_img').removeClass("logo_img_block");
+                    }
+                });
+            })
+        </script>
+        <!-- 头部导航结束 -->
+        <!-- 轮播大图开始 -->
+        <div class="banner">
+            <ul class="list">
+                <li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/20151120920230.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701010.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701110.jpg></a></li>
+            </ul>
+        </div>
+
+        <!-- 轮播大图结束 -->
+        <!-- 当前位置开始 -->
+        <div class=" box_b">
+            <div class="wrap clear">
+                <div class="selects clear">
+                    <ul class="clear">
+                        <li class="li1">
+                            <div class="dv_select">
+                                <span>项目案例</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dv_select">
+                                <span class="shows">尼山胜境</span><div class="slids width1"><a href=Pro_001011_d_205.html class="select">尼山胜境</a><a href=Pro_001011_d_203.html>灵山胜镜</a><a href=Pro_001011_d_204.html>灵山小镇</a><a href=Pro_001011_d_206.html>汉源博物馆</a></div></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mianbao">
+                        <span class="weizhi">当前位置：</span><a href="index.html">首页</a>&gt;<span>项目案例</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 当前位置开始 -->
+        <!--内页正文开始-->
+        <div class="box_t">
+            <div class="wrap">
+                <div class="content clear">
+                    <p style="text-align: center;"><img src="/Upload/FCKEditor/201511/19/image/3665.jpg" width="500" height="349" alt="" /></p>
+<p>&ldquo;五方五佛&rdquo;是佛教中的概念。佛教以时空无尽、世界无尽、众生无尽、佛无尽为其根本理念。佛既然无尽，所以体现在佛像的塑造供养方面有很多仪轨，有供一佛的、有供三佛、五佛、七佛、千佛、万佛的，无非因指则明、借事显理。其中所谓五佛，又称五智佛、五智如来，根据密宗教义而设立，以五佛配五方：中央毗卢遮那佛、东方阿从佛、南方宝生佛、西方阿弥陀佛、北方成就佛。在新的时代里、新的形势下，前全国佛教协会会长赵朴初从构建中国佛教信徒信仰体系的角度出发，对&ldquo;五方五佛&rdquo;理论作了全新的解释和演绎。</p>
+<p>赵朴老认为，神州大地上东、南、西、北、中五个方位分别有五尊大佛--东方灵山大佛、南方天坛大佛、西方乐山大佛、北方云冈大佛、中央龙门大佛。尽管这五尊佛像的名称与佛经中的五方佛名称不完全一致，但佛佛道齐，事相上的差别，不碍理性上的平等、一致。因此，这五尊佛像从理论上说已是五智俱足，从自然法则上说是五大协和，从修因证果的关系上说，在因行上有四大名山四大菩萨的信仰，在果德上有五方五佛的崇奉。赵朴老认为，中国佛教界在佛像供奉方面要注意把事相设施上的差别性和理论体系上的完整性结合贯通起来，要注意保持像四大名山四大菩萨、五方五佛这种信仰的体系，让这种信仰体系在广大信徒的心目中形成一种稳定的依托，有助于信仰情感的落实，有助于整个教团的信仰上形成一种凝聚力。赵朴老号召中国佛教界从信仰体系的高度深入理解五方五佛和四大名山四大菩萨信仰的深刻意义，并保持这种信仰体系的格局。</p>
+<p>在北京钓鱼台国宾馆举行的灵山大佛工程签约仪式上，朴老再次发表讲话，称灵山大佛的建造是中国佛教史上近百年来最大的一件盛事，在世界佛教史上具有划时代的意义。</p>
+<p>赵朴老的&ldquo;五方五佛&rdquo;理念，从根本上肯定了年轻的灵山大佛在中国佛教界的崇高地位，为灵山大佛景区发展成为江南佛教文化的代表性丛林奠定了坚实的理论基础。</p>
+                </div>
+            </div>
+        </div>
+        <!--内页正文结束-->
+        <!-- 底部开始-->
+        <div class="foot_bg">
+            <div class="wrap clear">
+                <div class="top_f clear">
+
+                    <div class="left clear">
+
+                        <dl class="action">
+                            <dt>关注我们</dt>
+                            <dd><a href="#" id="weixin">微信<i class="icon_wechat"></i><span class="img_ewm_wechat"></span></a><div id="wxm" class="wxm"><img src="images/weixin.jpg" /></div></dd>
+
+                            <dd><a href="#">新浪<i class="icon_xinl"></i><span class="img_ewm_xinl"></span></a></dd>
+                            <dd class="last"><a href="#">腾讯<i class="icon_tengx"></i><span class="img_ewm_tengx"></span></a></dd>
+                        </dl>
+                    </div>
+                    <ul class="right clear">
+                        <li>
+                            <a href="index.html">灵山首页</a>
+                            <a href="about_001_d_10.html">关于我们</a>
+                            <a href="about_001_d_12.html">联系我们</a>
+                            <a href="#">网络地图</a>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <p>地址：江苏省无锡市滨湖区马山古竹路18号</p>
+<p>邮编：214091</p>
+<p>电话：0510-85686894</p>
+<p>传真：0510-85686894</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="bottom_f">
+                    <p>版权所有 动力启航 © Copyright 2009 - 2012. dtcms.net. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;备案号：粤ICP备11064298号</p>
+                    <p>技术支持：<a href="http://www.china-mail.com.cn/" target="_blank">实创科技</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部结束 -->
+
+    </body>
+</html>

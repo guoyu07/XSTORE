@@ -1,0 +1,7 @@
+﻿.pager { font-size:14px; color:#333;float: left; display: inline-block;}
+.pager a{ text-decoration:none;color:#333;  margin-left:-1px;cursor: pointer;}
+.pager .in:hover  { background-color:#f0f0f0;padding:3px 10px 3px 10px;border:1px solid #dbdbdb; color:#666666}
+.pager .on  { background-color:#33B5E5;padding:3px 10px 3px 10px;border:1px solid #33B5E5; color:#ffffff}
+.pager  a {line-height:28px; border:1px solid #dbdbdb; height:28px; overflow:hidden;  padding:3px 10px 3px 10px; font-size:14px; }
+.pager  .off{ color:#cccccc;}
+.pager input{ height: 20px;width: 28px;line-height:28px;}

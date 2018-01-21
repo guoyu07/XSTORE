@@ -1,0 +1,7 @@
+2017-07-17 09:49:04.249 类：BasePage 方法：OpenId: _openid:
+2017-07-17 09:49:04.250 类：BasePage 方法：OpenId: Session:
+2017-07-17 09:49:04.250 类：BasePage 方法：OpenId: _openid为空
+2017-07-17 09:49:04.269 类：BasePage 方法：RedrectWeiXin: code为空
+2017-07-17 09:49:04.270 类：BasePage 方法：RedrectWeiXin: URL：https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4b52212c5d5983ad&redirect_uri=http://localhost/shop/pages/nopower.aspx&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect
+2017-07-17 09:49:04.314 类：BasePage 方法：OpenId: 重新获取_openid：
+2017-07-17 09:49:04.315 类：BasePage 方法：OpenId: 赋值到session：

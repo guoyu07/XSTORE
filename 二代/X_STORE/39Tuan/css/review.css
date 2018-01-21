@@ -1,0 +1,50 @@
+﻿.box_shadow {}
+.box { background-color:#f5f5f5; margin-bottom:10px; border:#f0f0f0 solid 1px;}
+.box_padd { padding:10px;}
+.release {  border:#e0e0e0 solid 1px; padding:3px 8px; background-color:#fff;}
+
+.box s { background-image:url(../images/icon_1.png); background-repeat:no-repeat; width:20px; height:22px; display:block; float:left;background-size:370px 20px; }
+.box s.girl { background-position:-50px 3px;}
+.box s.boy { background-position:0px 3px;}
+.box s.share { background-position:-99px 4px;}
+.box s.zan { background-position:-155px 5px;}
+.box s.old_zan { background-position:-204px 4px;}
+.box s.review { background-position:-258px 5px;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+.box s {  background-image:url(../images/icon_1@2x.png); }
+}
+
+.box span { display:block; float:left;}
+.box_padd .time { font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#B3B3B3;}
+.box_padd .cont { line-height:24px;}
+ul.operating { border-top:#DADADA  solid 1px; border-bottom:#DADADA  solid 1px; margin-top:8px;}
+ul.operating li { float:left; width:33%;}
+ul.operating li a { display:block; padding-left:15%; margin:5px auto;}
+.d_content .about_us { background-color:#6CC556; color:#fff; border:none;}
+.num_zan { border-bottom:#DADADA  solid 1px; padding-top:6px; padding-bottom:6px;}
+.review_list { margin-top:6px;}
+.autho { font-size:16px; color:#0d74ab;}
+li .autho { float:left; padding-right:2px; font-size:14px;}
+.autho span { color:#113198;}
+
+.showfenxiang {display:block; position:fixed;width:1000px;height:1000px; opacity:0.5;background-color:#000000;text-align:right;margin:0px;padding:0px; z-index:20000;
+        }
+.hidefenxiang {display:none;}
+.showfenxiang img {height: 180px;
+position: fixed;
+right: 18px;
+top: 5px;
+width: 260px;
+z-index: 20001;}
+
+body.liu_body { background: url(bg2.jpg) no-repeat; background-size: 100%; }
+
+.i_copyright {
+position: fixed;
+bottom: 2em;
+display: block;
+margin: 0 auto;
+width: 100%;}
+
+.d_content { padding:8px;}		

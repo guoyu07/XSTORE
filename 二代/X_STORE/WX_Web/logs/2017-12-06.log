@@ -1,0 +1,599 @@
+2017-12-06 20:38:13.619 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:38:13.621 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:38:14.068 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwM5_75X286k5teZThpp8ns8' AND openid <> ''
+2017-12-06 20:38:14.127 类：BasePage 方法：UserId: _userid:384
+2017-12-06 20:38:14.128 页面：enter 方法：submit_button_ServerClick: select_sql:select id from WP_用户权限 where 用户id = 384 and 仓库id in(
+select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '')
+2017-12-06 20:38:14.195 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:38:14.195 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:38:15.403 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC=''
+2017-12-06 20:39:07.692 页面：mySpace 方法：PageLoad: 进入2:861853032006603
+2017-12-06 20:49:45.466 页面：mySpace 方法：PageLoad: 进入2:861853032006603
+2017-12-06 20:49:52.171 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:49:52.171 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:49:52.550 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwM5_75X286k5teZThpp8ns8' AND openid <> ''
+2017-12-06 20:49:52.596 类：BasePage 方法：UserId: _userid:384
+2017-12-06 20:49:52.596 页面：enter 方法：submit_button_ServerClick: select_sql:select id from WP_用户权限 where 用户id = 384 and 仓库id in(
+select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '861853032006603')
+2017-12-06 20:49:52.667 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:49:52.668 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:49:52.782 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006603'
+2017-12-06 20:51:24.463 页面：mySpace 方法：PageLoad: 进入2:861853032006603
+2017-12-06 20:51:34.796 页面：mySpace 方法：PageLoad: 进入2:861853032008153
+2017-12-06 20:51:37.364 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:37.364 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:51:37.414 页面：enter 方法：submit_button_ServerClick: select_sql:select id from WP_用户权限 where 用户id = 384 and 仓库id in(
+select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '861853032008153')
+2017-12-06 20:51:37.483 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:37.483 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:37.501 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032008153'
+2017-12-06 20:51:37.684 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='2428' and WP_箱子表.status=1 order by 位置 asc
+2017-12-06 20:51:37.896 页面：mySpace 方法：goods: rexiao_id：110
+2017-12-06 20:51:37.905 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.905 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 20:51:37.906 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.906 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.907 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-06 20:51:37.907 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.907 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.908 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-06 20:51:37.908 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.908 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.909 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-06 20:51:37.909 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.909 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.910 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-06 20:51:37.910 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.910 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.911 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 20:51:37.911 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.911 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.912 类：roomGoods 方法：link_ul: goods_id：122
+2017-12-06 20:51:37.912 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.913 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.913 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 20:51:37.913 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.914 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.914 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-06 20:51:37.915 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.915 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.916 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-06 20:51:37.916 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.917 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.917 类：roomGoods 方法：link_ul: goods_id：125
+2017-12-06 20:51:37.918 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:37.918 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:51:37.919 类：roomGoods 方法：link_ul: goods_id：124
+2017-12-06 20:51:37.919 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:51:54.543 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:54.544 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:51:56.311 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:56.312 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:51:56.380 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:56.381 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:56.427 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:58.401 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:58.401 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:51:58.458 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:58.459 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:51:58.504 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:52:16.461 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:52:16.461 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:52:16.511 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:52:16.512 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:52:16.559 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:52:19.169 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:52:19.170 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:52:19.229 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:52:19.229 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:52:19.277 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:39.399 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:39.400 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:54:39.449 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:39.450 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:39.498 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:49.922 页面：mySpace 方法：PageLoad: 进入2:861853032008153
+2017-12-06 20:54:52.052 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:52.053 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:54:52.103 页面：enter 方法：submit_button_ServerClick: select_sql:select id from WP_用户权限 where 用户id = 384 and 仓库id in(
+select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '861853032008153')
+2017-12-06 20:54:52.166 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:52.167 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:52.182 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032008153'
+2017-12-06 20:54:52.284 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='2428' and WP_箱子表.status=1 order by 位置 asc
+2017-12-06 20:54:52.806 页面：mySpace 方法：goods: rexiao_id：110
+2017-12-06 20:54:52.807 页面：mySpace 方法：goods: a0
+2017-12-06 20:54:52.808 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.809 类：roomGoods 方法：link_ul: goods_id：0
+2017-12-06 20:54:52.809 类：roomGoods 方法：link_ul: display:block;
+2017-12-06 20:54:52.809 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.810 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-06 20:54:52.810 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:52.811 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.811 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-06 20:54:52.811 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:52.812 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.812 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-06 20:54:52.813 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:52.814 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.814 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-06 20:54:52.814 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:52.815 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.815 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 20:54:52.816 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:52.816 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.817 类：roomGoods 方法：link_ul: goods_id：122
+2017-12-06 20:54:52.817 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:52.818 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.818 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 20:54:52.819 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:52.819 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.820 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-06 20:54:52.820 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:52.821 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.821 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-06 20:54:52.821 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:52.822 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.823 类：roomGoods 方法：link_ul: goods_id：125
+2017-12-06 20:54:52.823 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:52.824 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 20:54:52.824 类：roomGoods 方法：link_ul: goods_id：124
+2017-12-06 20:54:52.824 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 20:54:55.710 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:55.710 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:54:57.008 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:57.008 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:54:57.061 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:57.062 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:54:57.108 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:55:01.459 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:55:01.459 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:55:01.570 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-12-06 20:55:07.635 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:55:07.635 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:56:14.832 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:14.832 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:56:32.344 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:32.344 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:56:32.396 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:32.397 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:32.454 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:36.072 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:36.073 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:56:36.169 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=132
+
+2017-12-06 20:56:37.921 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:37.922 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:56:37.973 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:37.973 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:38.034 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:39.922 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:39.922 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:56:39.974 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:39.974 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:40.020 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:43.288 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:43.289 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:56:52.382 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:52.383 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:56:52.440 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:52.441 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:52.489 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:56.144 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:56:56.145 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:56:56.279 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=131
+
+2017-12-06 20:57:01.434 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:01.434 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:57:01.485 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:01.485 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:01.536 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:05.217 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:05.217 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:57:09.539 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:09.540 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:57:09.594 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:09.595 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:09.650 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:12.394 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:12.394 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:57:15.408 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:57:15.409 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:57:15.567 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-12-06 20:59:02.453 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:59:02.454 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:59:02.551 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-12-06 20:59:04.640 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:59:04.641 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:59:04.738 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-12-06 20:59:05.479 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:59:05.480 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:59:05.592 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-12-06 20:59:06.119 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:59:06.119 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:59:06.221 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-12-06 20:59:06.631 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:59:06.632 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:59:06.726 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-12-06 20:59:06.910 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:59:06.911 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:59:07.018 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-12-06 20:59:07.334 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:59:07.335 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:59:07.439 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-12-06 20:59:07.734 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:59:07.734 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 20:59:07.839 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-12-06 20:59:48.002 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 20:59:48.003 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 21:00:05.603 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 21:00:05.604 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 21:00:05.654 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 21:00:05.655 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 21:00:05.703 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 21:00:26.825 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2413
+2017-12-06 21:00:26.928 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2413
+2017-12-06 21:00:27.039 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2413
+2017-12-06 21:00:27.130 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2414
+2017-12-06 21:00:27.225 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2414
+2017-12-06 21:00:27.317 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2414
+2017-12-06 21:00:27.421 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2415
+2017-12-06 21:00:27.513 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2415
+2017-12-06 21:00:27.617 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2415
+2017-12-06 21:00:28.023 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2416
+2017-12-06 21:00:28.140 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2416
+2017-12-06 21:00:28.425 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2416
+2017-12-06 21:00:28.523 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2417
+2017-12-06 21:00:28.613 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2417
+2017-12-06 21:00:28.715 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2417
+2017-12-06 21:00:28.805 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2418
+2017-12-06 21:00:28.894 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2418
+2017-12-06 21:00:28.996 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2418
+2017-12-06 21:00:29.180 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2419
+2017-12-06 21:00:29.367 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2419
+2017-12-06 21:00:29.462 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2419
+2017-12-06 21:00:29.591 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2420
+2017-12-06 21:00:29.686 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2420
+2017-12-06 21:00:29.899 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2420
+2017-12-06 21:00:30.133 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2421
+2017-12-06 21:00:30.225 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2421
+2017-12-06 21:00:30.361 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2421
+2017-12-06 21:00:30.455 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2422
+2017-12-06 21:00:30.581 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2422
+2017-12-06 21:00:30.680 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2422
+2017-12-06 21:00:30.771 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2423
+2017-12-06 21:00:30.865 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2423
+2017-12-06 21:00:30.953 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2423
+2017-12-06 21:00:31.051 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2424
+2017-12-06 21:00:31.153 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2424
+2017-12-06 21:00:31.257 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2424
+2017-12-06 21:00:31.376 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2425
+2017-12-06 21:00:31.470 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2425
+2017-12-06 21:00:31.565 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2425
+2017-12-06 21:00:31.658 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2426
+2017-12-06 21:00:31.753 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2426
+2017-12-06 21:00:31.845 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2426
+2017-12-06 21:00:31.939 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2427
+2017-12-06 21:00:32.030 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2427
+2017-12-06 21:00:32.431 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2427
+2017-12-06 21:00:32.561 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2428
+2017-12-06 21:00:32.660 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2428
+2017-12-06 21:00:32.749 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2428
+2017-12-06 21:00:32.842 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2430
+2017-12-06 21:00:32.937 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2430
+2017-12-06 21:00:33.033 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2430
+2017-12-06 21:00:33.140 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2431
+2017-12-06 21:00:33.245 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2431
+2017-12-06 21:00:33.345 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2431
+2017-12-06 21:00:33.453 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2432
+2017-12-06 21:00:33.555 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2432
+2017-12-06 21:00:33.649 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2432
+2017-12-06 21:00:33.745 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2433
+2017-12-06 21:00:33.839 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2433
+2017-12-06 21:00:33.933 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2433
+2017-12-06 21:00:34.026 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2434
+2017-12-06 21:00:34.117 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2434
+2017-12-06 21:00:34.215 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=2434
+2017-12-06 21:00:42.546 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名,WP_商品表.编码 as 实际商品编码 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='2428' and WP_箱子表.status=1 order by 位置 asc
+2017-12-06 21:00:42.614 页面：mySpace 方法：goods: 1：
+2017-12-06 21:00:42.791 页面：mySpace 方法：goods: 2：
+2017-12-06 21:00:42.792 页面：mySpace 方法：goods: rexiao_id：110
+2017-12-06 21:00:42.792 页面：mySpace 方法：goods: 3：
+2017-12-06 21:00:42.792 页面：mySpace 方法：goods: 3：0
+2017-12-06 21:00:42.793 页面：mySpace 方法：goods: 4：0
+2017-12-06 21:00:42.793 页面：mySpace 方法：goods: xxx：113
+2017-12-06 21:00:42.794 页面：mySpace 方法：goods: 4：0
+2017-12-06 21:00:42.794 页面：mySpace 方法：goods: 5：0
+2017-12-06 21:00:42.794 页面：mySpace 方法：goods: 6：0
+2017-12-06 21:00:42.795 页面：mySpace 方法：goods: 7：0
+2017-12-06 21:00:42.795 页面：mySpace 方法：goods: 3：1
+2017-12-06 21:00:42.796 页面：mySpace 方法：goods: 4：1
+2017-12-06 21:00:42.796 页面：mySpace 方法：goods: xxx：1172
+2017-12-06 21:00:42.796 页面：mySpace 方法：goods: 4：1
+2017-12-06 21:00:42.797 页面：mySpace 方法：goods: 5：1
+2017-12-06 21:00:42.797 页面：mySpace 方法：goods: 6：1
+2017-12-06 21:00:42.797 页面：mySpace 方法：goods: a1
+2017-12-06 21:00:42.798 页面：mySpace 方法：goods: 7：1
+2017-12-06 21:00:42.798 页面：mySpace 方法：goods: 3：2
+2017-12-06 21:00:42.798 页面：mySpace 方法：goods: 4：2
+2017-12-06 21:00:42.799 页面：mySpace 方法：goods: xxx：1172
+2017-12-06 21:00:42.799 页面：mySpace 方法：goods: 4：2
+2017-12-06 21:00:42.800 页面：mySpace 方法：goods: 5：2
+2017-12-06 21:00:42.800 页面：mySpace 方法：goods: 6：2
+2017-12-06 21:00:42.800 页面：mySpace 方法：goods: 7：2
+2017-12-06 21:00:42.801 页面：mySpace 方法：goods: 3：3
+2017-12-06 21:00:42.801 页面：mySpace 方法：goods: 4：3
+2017-12-06 21:00:42.802 页面：mySpace 方法：goods: xxx：123
+2017-12-06 21:00:42.802 页面：mySpace 方法：goods: 4：3
+2017-12-06 21:00:42.803 页面：mySpace 方法：goods: 5：3
+2017-12-06 21:00:42.803 页面：mySpace 方法：goods: 6：3
+2017-12-06 21:00:42.804 页面：mySpace 方法：goods: 7：3
+2017-12-06 21:00:42.804 页面：mySpace 方法：goods: 3：4
+2017-12-06 21:00:42.805 页面：mySpace 方法：goods: 4：4
+2017-12-06 21:00:42.805 页面：mySpace 方法：goods: xxx：111
+2017-12-06 21:00:42.806 页面：mySpace 方法：goods: 4：4
+2017-12-06 21:00:42.806 页面：mySpace 方法：goods: 5：4
+2017-12-06 21:00:42.806 页面：mySpace 方法：goods: 6：4
+2017-12-06 21:00:42.807 页面：mySpace 方法：goods: 7：4
+2017-12-06 21:00:42.807 页面：mySpace 方法：goods: 3：5
+2017-12-06 21:00:42.808 页面：mySpace 方法：goods: 4：5
+2017-12-06 21:00:42.808 页面：mySpace 方法：goods: xxx：113
+2017-12-06 21:00:42.809 页面：mySpace 方法：goods: 4：5
+2017-12-06 21:00:42.809 页面：mySpace 方法：goods: 5：5
+2017-12-06 21:00:42.810 页面：mySpace 方法：goods: 6：5
+2017-12-06 21:00:42.810 页面：mySpace 方法：goods: 7：5
+2017-12-06 21:00:42.810 页面：mySpace 方法：goods: 3：6
+2017-12-06 21:00:42.811 页面：mySpace 方法：goods: 4：6
+2017-12-06 21:00:42.811 页面：mySpace 方法：goods: xxx：113
+2017-12-06 21:00:42.812 页面：mySpace 方法：goods: 4：6
+2017-12-06 21:00:42.812 页面：mySpace 方法：goods: 5：6
+2017-12-06 21:00:42.813 页面：mySpace 方法：goods: 6：6
+2017-12-06 21:00:42.813 页面：mySpace 方法：goods: 7：6
+2017-12-06 21:00:42.814 页面：mySpace 方法：goods: 3：7
+2017-12-06 21:00:42.814 页面：mySpace 方法：goods: 4：7
+2017-12-06 21:00:42.814 页面：mySpace 方法：goods: xxx：113
+2017-12-06 21:00:42.815 页面：mySpace 方法：goods: 4：7
+2017-12-06 21:00:42.815 页面：mySpace 方法：goods: 5：7
+2017-12-06 21:00:42.816 页面：mySpace 方法：goods: 6：7
+2017-12-06 21:00:42.816 页面：mySpace 方法：goods: 7：7
+2017-12-06 21:00:42.817 页面：mySpace 方法：goods: 3：8
+2017-12-06 21:00:42.817 页面：mySpace 方法：goods: 4：8
+2017-12-06 21:00:42.817 页面：mySpace 方法：goods: xxx：116
+2017-12-06 21:00:42.818 页面：mySpace 方法：goods: 4：8
+2017-12-06 21:00:42.819 页面：mySpace 方法：goods: 5：8
+2017-12-06 21:00:42.819 页面：mySpace 方法：goods: 6：8
+2017-12-06 21:00:42.820 页面：mySpace 方法：goods: 7：8
+2017-12-06 21:00:42.820 页面：mySpace 方法：goods: 3：9
+2017-12-06 21:00:42.821 页面：mySpace 方法：goods: 4：9
+2017-12-06 21:00:42.821 页面：mySpace 方法：goods: xxx：113
+2017-12-06 21:00:42.821 页面：mySpace 方法：goods: 4：9
+2017-12-06 21:00:42.822 页面：mySpace 方法：goods: 5：9
+2017-12-06 21:00:42.822 页面：mySpace 方法：goods: 6：9
+2017-12-06 21:00:42.823 页面：mySpace 方法：goods: 7：9
+2017-12-06 21:00:42.823 页面：mySpace 方法：goods: 3：10
+2017-12-06 21:00:42.824 页面：mySpace 方法：goods: 4：10
+2017-12-06 21:00:42.824 页面：mySpace 方法：goods: xxx：124
+2017-12-06 21:00:42.825 页面：mySpace 方法：goods: 4：10
+2017-12-06 21:00:42.825 页面：mySpace 方法：goods: 5：10
+2017-12-06 21:00:42.826 页面：mySpace 方法：goods: 6：10
+2017-12-06 21:00:42.826 页面：mySpace 方法：goods: 7：10
+2017-12-06 21:00:42.826 页面：mySpace 方法：goods: 3：11
+2017-12-06 21:00:42.827 页面：mySpace 方法：goods: 4：11
+2017-12-06 21:00:42.828 页面：mySpace 方法：goods: xxx：126
+2017-12-06 21:00:42.828 页面：mySpace 方法：goods: 4：11
+2017-12-06 21:00:42.829 页面：mySpace 方法：goods: 5：11
+2017-12-06 21:00:42.829 页面：mySpace 方法：goods: 6：11
+2017-12-06 21:00:42.829 页面：mySpace 方法：goods: 7：11
+2017-12-06 21:00:42.962 类：roomGoods 方法：link_ul: test：[{"箱子id":13875,"库位id":2428,"位置":1,"默认商品id":113,"默认商品品名":"OMYSKY","默认商品价格":"99.99","默认图片路径":"/upload/201706/12/201706121514054634.jpg","默认商品编码":"K","实际商品id":113,"本站价":99.99,"图片路径":"/upload/201706/12/201706121514054634.jpg","实际商品品名":"OMYSKY","实际商品编码":"K"},{"箱子id":13876,"库位id":2428,"位置":2,"默认商品id":1172,"默认商品品名":"测试组合03","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031113207283.jpg","默认商品编码":"3","实际商品id":0,"本站价":0.01,"图片路径":"/upload/201711/03/201711031113207283.jpg","实际商品品名":"测试组合03","实际商品编码":"3"},{"箱子id":13877,"库位id":2428,"位置":3,"默认商品id":1172,"默认商品品名":"测试组合03","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031113207283.jpg","默认商品编码":"3","实际商品id":1172,"本站价":0.01,"图片路径":"/upload/201711/03/201711031113207283.jpg","实际商品品名":"测试组合03","实际商品编码":"3"},{"箱子id":13878,"库位id":2428,"位置":4,"默认商品id":123,"默认商品品名":"面膜X2","默认商品价格":"18.88","默认图片路径":"/upload/201706/12/201706121557116509.jpg","默认商品编码":"C","实际商品id":114,"本站价":38.88,"图片路径":"/upload/201706/12/201706121517137340.jpg","实际商品品名":"性感内衣","实际商品编码":"I"},{"箱子id":13879,"库位id":2428,"位置":5,"默认商品id":111,"默认商品品名":"空气套X2","默认商品价格":"49.99","默认图片路径":"/upload/201706/12/201706121347135394.jpg","默认商品编码":"J","实际商品id":114,"本站价":38.88,"图片路径":"/upload/201706/12/201706121517137340.jpg","实际商品品名":"性感内衣","实际商品编码":"I"},{"箱子id":13880,"库位id":2428,"位置":6,"默认商品id":113,"默认商品品名":"OMYSKY","默认商品价格":"99.99","默认图片路径":"/upload/201706/12/201706121514054634.jpg","默认商品编码":"K","实际商品id":113,"本站价":99.99,"图片路径":"/upload/201706/12/201706121514054634.jpg","实际商品品名":"OMYSKY","实际商品编码":"K"},{"箱子id":13881,"库位id":2428,"位置":7,"默认商品id":113,"默认商品品名":"OMYSKY","默认商品价格":"99.99","默认图片路径":"/upload/201706/12/201706121514054634.jpg","默认商品编码":"K","实际商品id":122,"本站价":27.77,"图片路径":"/upload/201706/12/201706121552536443.jpg","实际商品品名":"佳洁适","实际商品编码":"L"},{"箱子id":13882,"库位id":2428,"位置":8,"默认商品id":113,"默认商品品名":"OMYSKY","默认商品价格":"99.99","默认图片路径":"/upload/201706/12/201706121514054634.jpg","默认商品编码":"K","实际商品id":113,"本站价":99.99,"图片路径":"/upload/201706/12/201706121514054634.jpg","实际商品品名":"OMYSKY","实际商品编码":"K"},{"箱子id":13883,"库位id":2428,"位置":9,"默认商品id":116,"默认商品品名":"龙抬头","默认商品价格":"59.99","默认图片路径":"/upload/201706/13/201706131605342746.jpg","默认商品编码":"G","实际商品id":112,"本站价":39.99,"图片路径":"/upload/201706/15/201706151554496115.png","实际商品品名":"粉红跳蛋","实际商品编码":"H"},{"箱子id":13884,"库位id":2428,"位置":10,"默认商品id":113,"默认商品品名":"OMYSKY","默认商品价格":"99.99","默认图片路径":"/upload/201706/12/201706121514054634.jpg","默认商品编码":"K","实际商品id":112,"本站价":39.99,"图片路径":"/upload/201706/15/201706151554496115.png","实际商品品名":"粉红跳蛋","实际商品编码":"H"},{"箱子id":13885,"库位id":2428,"位置":11,"默认商品id":124,"默认商品品名":"亮肤泡泡浴","默认商品价格":"69.99","默认图片路径":"/upload/201706/13/201706131428572354.jpg","默认商品编码":"M","实际商品id":125,"本站价":17.77,"图片路径":"/upload/201706/12/201706121602127508.jpg","实际商品品名":"泡澡袋","实际商品编码":"L1"},{"箱子id":13886,"库位id":2428,"位置":12,"默认商品id":126,"默认商品品名":"牛奶泡泡浴","默认商品价格":"36.99","默认图片路径":"/upload/201706/12/201706121632461364.jpg","默认商品编码":"E","实际商品id":124,"本站价":69.99,"图片路径":"/upload/201706/13/201706131428572354.jpg","实际商品品名":"亮肤泡泡浴","实际商品编码":"M"}]
+2017-12-06 21:00:42.964 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.965 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 21:00:42.965 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:42.966 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.966 类：roomGoods 方法：link_ul: goods_id：0
+2017-12-06 21:00:42.967 类：roomGoods 方法：link_ul: display:block;
+2017-12-06 21:00:42.967 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.968 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-06 21:00:42.968 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:42.969 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.970 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-06 21:00:42.970 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:42.971 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.971 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-06 21:00:42.971 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:42.972 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.973 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 21:00:42.973 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:42.974 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.974 类：roomGoods 方法：link_ul: goods_id：122
+2017-12-06 21:00:42.975 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:42.976 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.976 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 21:00:42.977 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:42.977 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.978 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-06 21:00:42.978 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:42.979 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.979 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-06 21:00:42.980 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:42.980 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.981 类：roomGoods 方法：link_ul: goods_id：125
+2017-12-06 21:00:42.981 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:42.982 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:00:42.982 类：roomGoods 方法：link_ul: goods_id：124
+2017-12-06 21:00:42.983 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:00:51.237 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 21:00:51.237 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 21:00:51.347 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =384 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=143
+
+2017-12-06 21:00:55.083 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 21:00:55.084 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 21:00:56.998 页面：PickUp 方法：markSure_OnServerClick: sql： Begin Tran  insert into WP_取货记录表(用户id,补货的房间id,是否补货完成) values (384,2428,0) If @@ERROR>0
+                                Rollback Tran  
+                            Else
+                                Commit Tran
+                            Go
+2017-12-06 21:00:58.183 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 21:00:58.184 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 21:00:58.284 页面：PickUp 方法：PageInit: sql_kw：
+SELECT a.id,a.库位名 FROM  WP_取货记录表 b left join  [WP_库位表] a on a.id = b.补货的房间id WHERE a.IsShow=1 AND  a.库位名  NOT LIKE '%总台%' AND  a.仓库id=143 AND b.用户id =384 and b.是否补货完成=0
+2017-12-06 21:01:12.979 页面：mySpace 方法：PageLoad: 进入2:861853032008153
+2017-12-06 21:01:15.627 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 21:01:15.628 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-06 21:01:15.680 页面：enter 方法：submit_button_ServerClick: select_sql:select id from WP_用户权限 where 用户id = 384 and 仓库id in(
+select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '861853032008153')
+2017-12-06 21:01:15.739 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 21:01:15.739 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-06 21:01:15.756 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032008153'
+2017-12-06 21:01:15.909 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='2428' and WP_箱子表.status=1 order by 位置 asc
+2017-12-06 21:01:16.078 页面：mySpace 方法：goods: rexiao_id：110
+2017-12-06 21:01:16.079 页面：mySpace 方法：goods: a1
+2017-12-06 21:01:16.079 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.080 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 21:01:16.080 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.081 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.081 类：roomGoods 方法：link_ul: goods_id：0
+2017-12-06 21:01:16.081 类：roomGoods 方法：link_ul: display:block;
+2017-12-06 21:01:16.082 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.082 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-06 21:01:16.083 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.083 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.084 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-06 21:01:16.084 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.085 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.085 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-06 21:01:16.086 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.086 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.086 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 21:01:16.087 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.087 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.087 类：roomGoods 方法：link_ul: goods_id：122
+2017-12-06 21:01:16.088 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.088 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.088 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 21:01:16.089 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.089 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.090 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-06 21:01:16.090 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.090 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.091 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-06 21:01:16.091 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.092 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.092 类：roomGoods 方法：link_ul: goods_id：125
+2017-12-06 21:01:16.093 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.093 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:16.094 类：roomGoods 方法：link_ul: goods_id：124
+2017-12-06 21:01:16.094 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:16.189 页面：roomDetail 方法：PageInit: sql：SELECT WP_商品表.id,品名,编号new AS 编号,补货商品.箱子位置 AS 位置,补货商品.箱子MAC, wp_商品图片表.图片路径 FROM (SELECT * FROM 视图获取投放商品id WHERE  投放库位id = 2428) AS 补货商品 
+LEFT JOIN WP_商品表 ON 补货商品.最新商品id = WP_商品表.id
+LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号
+2017-12-06 21:01:16.255 页面：roomDetail 方法：OpenBox: mac：861853032008153
+2017-12-06 21:01:16.255 页面：roomDetail 方法：OpenBox: postion_list：1
+2017-12-06 21:01:16.258 类：RemoteBoxHelper 方法：OpenRemoteBox: orderNo：999999999999999
+2017-12-06 21:01:16.261 类：RemoteBoxHelper 方法：OpenRemoteBox: 开箱命令：EF02500238363138353330333230303831353300010000000000000000000039393939393939393939393939393931350715
+2017-12-06 21:01:24.599 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='2428' and WP_箱子表.status=1 order by 位置 asc
+2017-12-06 21:01:25.122 页面：mySpace 方法：goods: rexiao_id：110
+2017-12-06 21:01:25.123 页面：mySpace 方法：goods: a1
+2017-12-06 21:01:25.124 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.124 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 21:01:25.125 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.125 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.126 类：roomGoods 方法：link_ul: goods_id：0
+2017-12-06 21:01:25.126 类：roomGoods 方法：link_ul: display:block;
+2017-12-06 21:01:25.126 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.127 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-06 21:01:25.127 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.128 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.128 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-06 21:01:25.128 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.129 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.129 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-06 21:01:25.130 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.130 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.130 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 21:01:25.131 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.131 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.132 类：roomGoods 方法：link_ul: goods_id：122
+2017-12-06 21:01:25.132 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.133 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.133 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-06 21:01:25.133 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.134 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.134 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-06 21:01:25.135 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.135 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.136 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-06 21:01:25.136 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.136 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.137 类：roomGoods 方法：link_ul: goods_id：125
+2017-12-06 21:01:25.137 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.138 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-06 21:01:25.138 类：roomGoods 方法：link_ul: goods_id：124
+2017-12-06 21:01:25.139 类：roomGoods 方法：link_ul: display:none;
+2017-12-06 21:01:25.240 页面：roomDetail 方法：PageInit: sql：SELECT WP_商品表.id,品名,编号new AS 编号,补货商品.箱子位置 AS 位置,补货商品.箱子MAC, wp_商品图片表.图片路径 FROM (SELECT * FROM 视图获取投放商品id WHERE  投放库位id = 2428) AS 补货商品 
+LEFT JOIN WP_商品表 ON 补货商品.最新商品id = WP_商品表.id
+LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号
+2017-12-06 21:01:25.300 页面：roomDetail 方法：OpenBox: mac：861853032008153
+2017-12-06 21:01:25.303 页面：roomDetail 方法：OpenBox: postion_list：1
+2017-12-06 21:01:25.311 类：RemoteBoxHelper 方法：OpenRemoteBox: orderNo：999999999999999
+2017-12-06 21:01:25.320 类：RemoteBoxHelper 方法：OpenRemoteBox: 开箱命令：EF02500238363138353330333230303831353300010000000000000000000039393939393939393939393939393931350715
+2017-12-06 21:47:24.436 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S20177534650611' AND state in(2,5)
+2017-12-06 21:47:54.770 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S20177534650611' and state = 3
+2017-12-06 21:49:03.810 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S20177534650611' AND state in(2,5)
+2017-12-06 21:49:37.165 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S20177534650611' and state = 3
+2017-12-06 22:00:43.446 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S20177534650611' AND state in(2,5)
+2017-12-06 22:00:43.742 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S20177534650611' AND state in(2,5)
+2017-12-06 22:01:13.895 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S20177534650611' and state = 3
+2017-12-06 22:01:49.986 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S20177534650611' AND state in(2,5)
+2017-12-06 22:02:20.278 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S20177534650611' and state = 3
+2017-12-06 22:11:53.508 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S20177534650611' AND state in(2,5)
+2017-12-06 22:11:54.529 ERROR tdx.database.Common_Pay.WeiXinPay.JsApiPay: UnifiedOrder response error!
+2017-12-06 22:11:54.542 页面：payCenter 方法：Page_Load: 异常：UnifiedOrder response error!
+2017-12-06 22:12:04.882 ERROR tdx.database.Common_Pay.WeiXinPay.JsApiPay: UnifiedOrder response error!
+2017-12-06 22:12:04.891 页面：payCenter 方法：Page_Load: 异常：UnifiedOrder response error!

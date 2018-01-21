@@ -1,0 +1,44 @@
+﻿
+/*手机中均分情况*/
+.pf_tab { width:100%; display:flex; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; background-color:#fff;}
+.pf_tab > li { flex:1; -webkit-box-flex: 1; -webkit-flex: 1; -moz-box-flex: 1; -moz-flex: 1; -ms-flex: 1; text-align:center; }
+
+/*首页轮播图下方  左右两张图*/
+.main_fx { line-height:36px;}
+.main_fx .bg_c1 { width:98%; border-right:#dfdede solid 1px;}
+.main_fx span { padding-left:5px;}
+.main_fx i { font-size:130%; color:#A73838; padding-right:5px; position:relative; top:3px;}
+.main_fx .fx_jb i:before { content:"\f119";}
+.main_fx .fx_peo i:before { content:"\f2d9";}
+/*头像部分*/
+.main_bbs_list {}
+.bbs_list { background-color:#FFF; font-family:"微软雅黑"}
+.bbs_list .bb_cc { padding-top:12px; padding-bottom:12px;}
+.bbs_list .item { padding: 0px 0px 0px 58px; display: block; color: #666; position: relative; min-height:50px;}
+.bbs_list a.title_bbs { display:block; font-size:110%; padding-bottom:0px; }
+.bbs_list .s_pic { position:absolute; left:0px; top:0; width:50px; height:50px; overflow:hidden; border-radius:6px;}
+.bbs_list .s_pic a { display:block;}
+.bbs_list .s_pic img { width:100%; height:auto;}
+.bbs_list .s_row { font-size:92%; color:#9a9a9a;}
+.bbs_list .s_row span { padding-right:4px;}
+
+/*分销中心*/
+.user_list {}
+.user_list li { background-color:#fff;}
+.user_list li .wrap { position:relative; width:96%;}
+.user_list li a { display:block; color:#333; height:32px; line-height:32px; padding-top:8px; padding-bottom:8px;}
+.user_list li a:after { font-size:110%; color:#a5a5a5; content:"\f3d1"; position:absolute; right:0;}
+.user_list li a span { font-family:"微软雅黑"; font-size:100%; position:absolute; left:32px; top:8px;}
+.user_list li i:before { font-size:150%; text-align:right;}
+.user_list li.user_01 i:before { content:"\f12e"; color:#26b1f6;}
+.user_list li.user_02 i:before { content:"\f39b"; color:#f55d4f;}
+.user_list li.user_03 i:before { content:"\f318"; color:#1db56a; font-size:140%;}
+.user_list li.user_04 i:before { content:"\f374"; color:#eb4b87; font-size:140%;}
+.user_list li.user_05 i:before { content:"\f12c"; color:#26b1f6;}
+.user_list li.user_06 i:before { content:"\f119"; color:#f2990b; font-size:140%;}
+.user_list li.user_07 i:before { content:"\f388"; color:#eb4b87; font-size:140%;}
+.user_list li.user_08 i:before { content:"\f2b5"; color:#58bc36;}
+.user_list li.user_09 i:before { content:"\f2d8"; color:#aa64c4;}
+
+.hei_2 { text-align:center; line-height:26px; font-size:72%; height:26px;}
+

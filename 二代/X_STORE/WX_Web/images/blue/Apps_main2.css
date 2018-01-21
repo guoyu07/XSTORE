@@ -1,0 +1,113 @@
+﻿@charset "utf-8";
+/* CSS Document */ 
+*{padding:0; margin:0;} 
+body, button, select, textarea { font-size:12px; font-family:"Microsoft YaHei","tahoma","arial","simsun"; color:#666;}
+
+div, form, h1, h2, h3, h4, dl, dt, dd, ul, ol, li, table, td, th {
+    list-style: none outside none;
+    margin:0;
+    padding:0;
+}
+.body{
+	max-width:640px;
+	margin:auto;
+	min-height:100%; 
+	background: #e4e4e4;
+}
+a:link {color: #666;text-decoration: none;}
+a:visited {text-decoration: none;color: #666;}
+a:hover {text-decoration: none;color: #f60;}
+a:active {text-decoration: none;color: #666;}
+		
+em {font-style:normal; color:#989898;  }
+strong { font-weight:bold;}
+img { border:none;}
+.margin_top10{ margin-top:10px;}
+.clear { clear:both;}
+.fl { float:left;}
+.fr { float:right;}		
+.clear1{width:100%;height:2px;clear: both;} 
+.clear2{
+	width: 100%;
+	height: 5px;
+	clear: both;	
+} 
+.clearW{clear: both; border-bottom: 1px dashed #cccccc;}
+.waiting{
+	width:200px;height:40px;line-height:35px;background:#f1f1f1;border:1px solid #cccccc;
+	position:absolute;z-index:1000;display: none;text-align: center;
+}
+ 
+.Appcontent{width: 100%;min-height:100%;height: auto;overflow:hidden;margin:0 auto;padding:0;}  
+h1{ height:48px; text-align:center; line-height:48px; background-color:#074e58; font-size:18px; color:#ebeced;}		
+/*轮播图片*/
+.box_swipe{ overflow:hidden; position:relative;}
+.box_swipe ul{-webkit-padding-start: 0px;}
+.box_title{
+				width: 100%;
+				height: 20px;
+				line-height: 20px;
+				z-index:9;
+				position: absolute;
+				bottom: 0;
+				margin:0;padding:5px;background: #f3f3f3;filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.5;  
+			}
+.box_title h3{line-height: 20px;color: #000; font-size:14px;}
+.box_title p{display: none;}
+.box_swipe>ol{
+				width:100%;
+				height:20px;
+				position:absolute;
+				z-index:10;
+				margin:auto;
+				padding-right:15px;  
+				bottom:40px;
+				background:none; 
+				text-align:center;
+			}
+.box_swipe>ol>li{
+				display:inline-block;
+				margin:5px 0;
+				width:10px;
+				height:10px; 
+				border-radius: 10px;
+				background:#fff;
+			}
+.box_swipe>ul>li img{width: 100%;}
+.box_swipe>ol>li.on{
+				background:rgb(255,0,0);
+				border:none;
+			}
+
+/*首页 产品列表*/		
+	
+.main2 {width: 100%;height: auto;overflow: hidden;margin:0 auto;padding:0;}		
+.main2 .pro { margin-top:10px;}
+.main2 .pro .content {}
+.main2 .pro .content li { float:left; width:50%; text-align:center; margin-bottom:-20px; margin-left:auto; margin-right:auto;}
+.main2 .pro .content li .pic { width:96%; height:auto; border-radius:8px 8px 8px 8px; overflow:hidden; margin-left:auto; margin-right:auto;}
+.main2 .pro .content li .pic img { width:100%;  border-radius:8px 8px 8px 8px;}
+.main2 .pro .content li .pro_name { font-size:16px; color:#666; height:36px; line-height:36px; position:relative; bottom:36px; color:#FFF;  background-color:#000; display:block;filter:alpha(Opacity=80);-moz-opacity:0.7;opacity: 0.7; border-radius:0px 0px 8px 8px; overflow:hidden;}
+/*导航菜单*/
+.menu { margin-top:4px; font-size:14px; border-top:#b1b1b1 solid 1px; height:auto; display:block; width:100%;}
+.menu ul { border-top:#ffffff solid 1px;}
+.menu li { width:25%; float:left; text-align:center; background-color:#074e58; height:48px; line-height:35px; padding-top:10px;}
+.menu li b { background-image:url(nav.png); background-repeat:no-repeat; width:5em; height:30px; display:block; float:left; width:50%}
+.menu li span { padding-right:3em; width:50%; }
+.menu li a { color:#FFF;}
+.menu li.home b { background-position:2.2em 0px;}
+.menu li.list b { background-position:-6.8em -2px;}
+.menu li.trolley b { background-position:-15.8em -1px;}
+.menu li.user b { background-position:-24.8em 0px;}
+
+.menu li:hover { background:url(0.png) no-repeat center top; background-color:#074e58;}
+
+.menu li.on {background:url(0.png) no-repeat center top; background-color:#074e58;}
+
+/*热线电话*/
+.main {width: 98%;height: auto;overflow: hidden;margin:0 auto;padding:0;}		
+
+.roundf60 { border-radius:6px; background-color:#F60; padding:8px 16px; margin-top:16px;}
+.roundf60 .tel { height:40px; background:url(tel.png) no-repeat left;}
+.roundf60 .tel em { font-family:"微软雅黑"; font-size:16px; font-style:italic; color:#FFF; padding-right:4em; padding-left:6em;}
+.roundf60 .tel span { font-size:24px; color:#FFF; font-family:Arial; line-height:40px; font-style:italic;}

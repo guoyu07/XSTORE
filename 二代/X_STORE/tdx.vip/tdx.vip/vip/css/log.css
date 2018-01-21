@@ -1,0 +1,14 @@
+﻿.lBody{height:100%; overflow-x:hidden; width :100%; padding-bottom:60px;}
+.lOptions ul{border-width: 0 0 1px 0;border-style: solid;border-color: #ddd;color: #fff;height: 3em;background-color: #15abd0;text-align: center;}
+.lOptions ul:after{ display:block; clear:both; content:"";}
+.lOptions ul li{ float:left; width:50%;}
+.lOptions ul li a{ height:100%; width:100%; display:block; line-height:3em; text-align:center;}
+.lOptions .select{ background-color:#56bde8;}
+.lLogList div{font-size:14px;background-color:#c5eafa; margin:2% 4% 0 4%; overflow:hidden;padding:0 16px 0 40px; text-align:right;}
+.lLogList span{ line-height:3em; display:inline-block; height:3em; line-height:3em; float: left; color:#999;}
+.lLogList a{ line-height:3em; margin-right:16px; color:#999;}
+.lLogList i { line-height:3em; color:#15abd0;}
+.lConsumption,.lRecharge,.lCashback{ background-image:url( ../image/vip_icon.png); background-repeat:no-repeat; }
+.lConsumption{ background-position:2px -589px;}
+.lRecharge{ background-position:3px -547px;}
+.lCashback{ background-position:3px -507px;}

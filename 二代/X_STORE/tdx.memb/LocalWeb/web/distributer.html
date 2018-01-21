@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>幸事多私享空间-酒店服务系统</title>
+		<link rel="icon" href="img/logo.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="fonts/iconfont.css">
+		<link rel="stylesheet" href="css/distributer.css"/>
+		<link rel="stylesheet" href="css/layer.css" />
+	</head>
+	<body>
+		<!--可视区-->
+		<div id='view' style="-webkit-overflow-scrolling:touch;">
+			
+		</div>
+		<!--底部导航栏-->
+		<nav id="foot">
+			<ul class="clearfix">
+				<li>
+					<a href="#roomStatus" class="current">
+						<div class="index_bot">
+							<img class="picOff" src="img/disRoom.png" alt="" />
+							<img class="picOn" src="img/disRoom_on.png" alt=""/>
+						</div>
+						<p>特殊处理</p>
+					</a>
+				</li>
+				<li>
+					<a href="#pickUp" class="current">
+						<div class="index_bot">
+							<img class="picOff" src="img/pickUp.png" alt="" />
+							<img class="picOn" src="img/pickUp_on.png" alt=""/>
+						</div>
+						<p>常规补货</p>
+					</a>
+				</li>
+				<li>
+					<a href="#disMyself">
+						<div class="index_bot">
+							<img class="picOff" src="img/myself.png" alt="" />
+							<img class="picOn" src="img/myself_on.png"/>
+						</div>
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<script src='js/plugins/zepto.min.js'></script>
+		<script src='js/plugins/vipspa.js'></script>
+		<script src="js/plugins/vipspa-dev.js"></script>
+		<script type="text/javascript" src="js/plugins/jweixin-1.0.0.js"></script>
+		<script src="js/plugins/layer.js"></script>
+		<script>
+			$(function() {
+				wx.config({
+					debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+					//debug : true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+					appId: <%=data.appId%>, // 必填，公众号的唯一标识
+					timestamp: data.timestamp, // 必填，生成签名的时间戳
+					nonceStr: data.noncestr, // 必填，生成签名的随机串
+					signature: data.signature, // 必填，签名，见附录1
+					jsApiList: apis
+					// 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+				});
+				wx.ready(function() {
+					wx.scanQRCode({
+						needResult: 1, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+						scanType: ["qrCode", "barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+						success: function(res) {
+							var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+						}
+					});
+				});
+				//启动前端路由
+				vipspa.start({
+					view:'#view',//匹配的路由信息 在那个元素显示
+					router:{ //路由配置
+						//状态:{templateUrl:'模板地址',controller:'js操作路径' }
+						"roomStatus":{
+							templateUrl:'views/roomStatus.html',
+							controller:'js/modules/roomStatus.js'
+						},
+						"pickUp":{
+							templateUrl:'views/pickUp.html',
+							controller:'js/modules/pickUp.js'
+						},
+						"disMyself":{
+							templateUrl:'views/disMyself.html',
+							controller:'js/modules/disMyself.js'
+						}
+					}
+				});
+				var hashValue=window.location.hash.substring(1);
+				if(hashValue == "undefined") { 
+					window.location.hash='roomStatus';
+				};
+			})
+	</script>
+	</body>
+</html>
+

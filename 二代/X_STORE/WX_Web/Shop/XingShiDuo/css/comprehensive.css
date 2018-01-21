@@ -1,0 +1,128 @@
+html, body {
+  height: 100%; }
+
+.topNav {
+  width: 100%; }
+  .topNav li {
+    text-align: center;
+    font: 16px/40px "microsoft yahei";
+    color: #000;
+    width: 23.3%;
+    margin: 0 5%;
+    border-bottom: solid 1px #ffffff; }
+  .topNav li.clickOn {
+    border-bottom: solid 1px #f60;
+    color: #f60; }
+
+.topInputContaienr {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background: #eee; }
+  .topInputContaienr input {
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    border: none;
+    font: 14px/30px "microsoft yahei"; }
+
+.item {
+  display: none; }
+
+.main {
+  width: 100%;
+  overflow-y: auto;
+  height: calc(100% - 41px);
+  height: -webkit-calc(100% - 41px);
+  height: -moz-calc(100% - 41px); }
+  .main .room {
+    width: 100%;
+    display: block; }
+    .main .room ul {
+      width: 100%; }
+      .main .room ul li {
+        width: 94%;
+        padding: 6px 3%;
+        border-bottom: solid 1px #ccc; }
+        .main .room ul li a {
+          width: 100%;
+          display: block; }
+          .main .room ul li a .l p {
+            font: 14px/30px "microsoft yahei";
+            color: #000; }
+          .main .room ul li a .r {
+            width: 30px; }
+            .main .room ul li a .r .num {
+              font: 14px/30px "microsoft yahei";
+              border-radius: 30%;
+              background: #FF6600;
+              color: #fff;
+              text-align: center; }
+            .main .room ul li a .r .status {
+              font: 14px/30px "microsoft yahei";
+              color: #666; }
+  .main .user {
+    width: 100%; }
+    .main .user ul {
+      width: 100%; }
+      .main .user ul li {
+        width: 94%;
+        padding: 3%;
+        border-bottom: solid 1px #ccc; }
+        .main .user ul li h1, .main .user ul li h2 {
+          width: 50%;
+          text-align: center;
+          font: 14px/30px "microsoft yahei";
+          color: #666; }
+        .main .user ul li h2 {
+          color: #999; }
+        .main .user ul li .newStrip {
+          width: 100%; }
+          .main .user ul li .newStrip h3, .main .user ul li .newStrip p {
+            font: 14px/30px "microsoft yahei";
+            color: #f60; }
+          .main .user ul li .newStrip .iconChange {
+            font: 14px/30px "microsoft yahei";
+            color: #ccc; }
+          .main .user ul li .newStrip .icon-gengduo2 {
+            display: none; }
+        .main .user ul li dl {
+          display: none;
+          width: 100%;
+          border: solid 1px #ccc;
+          box-sizing: border-box; }
+          .main .user ul li dl dd {
+            width: 100%; }
+            .main .user ul li dl dd h3, .main .user ul li dl dd p {
+              width: 50%;
+              text-align: center;
+              font: 14px/24px "microsoft yahei";
+              color: #666; }
+            .main .user ul li dl dd p {
+              color: #999; }
+      .main .user ul li.showContent .newStrip .icon-gengduo1 {
+        display: none; }
+      .main .user ul li.showContent .newStrip .icon-gengduo2 {
+        display: block; }
+      .main .user ul li:last-child {
+        border: none; }
+  .main .goods {
+    width: 100%;
+    height: calc(100% - 97px);
+    height: -webkit-calc(100% - 97px);
+    height: -moz-calc(100% - 97px); }
+    .main .goods table {
+      width: 100%; }
+      .main .goods table .topic {
+        width: 100%; }
+      .main .goods table tr {
+        border-bottom: solid 1px #ccc; }
+      .main .goods table th, .main .goods table td {
+        text-align: center;
+        font: 14px/30px "microsoft yahei";
+        color: #666;
+        vertical-align: middle; }
+        .main .goods table th img, .main .goods table td img {
+          display: block;
+          width: 60px;
+          height: 60px; }

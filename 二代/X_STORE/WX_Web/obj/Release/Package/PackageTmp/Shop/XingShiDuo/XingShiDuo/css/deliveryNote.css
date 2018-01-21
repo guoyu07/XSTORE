@@ -1,0 +1,23 @@
+ul {
+  width: 100%; }
+  ul li {
+    width: 94%;
+    padding: 10px 3%;
+    border-bottom: solid 1px #ccc; }
+    ul li a {
+      width: 100%;
+      display: block; }
+      ul li a .imgWrap {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px; }
+        ul li a .imgWrap img {
+          display: block;
+          width: 100%;
+          height: 100%; }
+      ul li a .info .releaseTime, ul li a .info .releasePlace {
+        font: 12px/30px "microsoft yahei";
+        color: #666; }
+      ul li a .r {
+        font: 12px/60px "microsoft yahei";
+        color: #ff6600; }

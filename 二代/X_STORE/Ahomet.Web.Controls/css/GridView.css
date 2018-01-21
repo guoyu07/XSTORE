@@ -1,0 +1,52 @@
+.gird
+{
+	font-size: 12px;
+	position: relative;
+	border:1px #b8c9d6 double;
+}
+.grid-view
+{
+	left: 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+}
+.grid-head
+{
+	border-left: 0 none !important;
+	border-right: 0 none !important;
+	border-top: 0 none !important;
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	position: relative;
+}
+.grid-headbox
+{
+	float: left;
+	padding-right: 20px;
+}
+.grid-headtable
+{
+	margin: 0;
+	table-layout: fixed;
+}
+.grid-body
+{
+	margin:0px;
+	overflow: auto;
+	padding:0px;
+	position:relative;
+	scrollbar-face-color: #e7eff8;
+	scrollbar-shadow-color: #e7eff8;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-3dlight-color: #b8c9d6;
+	scrollbar-darkshadow-color:#b8c9d6; 
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #48779a;
+}
+.grid-bodytable
+{
+	margin: 0;
+	table-layout: fixed;
+}

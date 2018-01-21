@@ -1,0 +1,33 @@
+2017-10-30 23:07:16.629 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-10-30 23:07:17.787 类：BasePage 方法：UserId: _userid:1
+2017-10-30 23:07:17.903 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:07:17.904 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-30 23:07:17.971 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:07:17.972 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:07:18.015 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:07:23.056 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:07:23.057 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-30 23:08:00.193 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:08:00.194 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-30 23:08:00.243 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:08:00.246 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:08:00.295 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:20:08.181 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-10-30 23:20:08.578 类：BasePage 方法：UserId: _userid:1
+2017-10-30 23:20:08.675 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:20:08.675 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-30 23:20:08.727 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:20:08.727 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:20:08.767 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:29:17.703 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:29:17.703 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-30 23:29:17.742 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:29:17.743 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:29:17.782 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:29:21.021 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:29:21.021 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-30 23:30:13.798 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:30:13.801 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-30 23:30:13.846 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:30:13.846 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-30 23:30:13.884 类：BasePage 方法：UserInfo: UserInfo进入:

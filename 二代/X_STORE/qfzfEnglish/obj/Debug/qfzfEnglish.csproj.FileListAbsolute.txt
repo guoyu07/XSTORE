@@ -1,0 +1,178 @@
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\obj\Debug\qfzfEnglish.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\qfzfEnglish.dll.config
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\qfzfEnglish.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\qfzfEnglish.pdb
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\Creatrue.Common.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\Creatrue.kernel.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\DTcms.BLL.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\DTcms.Model.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\itextsharp.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\OWC10Chart.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\ThoughtWorks.QRCode.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\DTcms.DAL.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\DTcms.Common.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\DTcms.DBUtility.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\Creatrue.Common.pdb
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\Creatrue.kernel.pdb
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\DTcms.BLL.pdb
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\DTcms.Model.pdb
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\DTcms.DAL.pdb
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\DTcms.Common.pdb
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\bin\DTcms.DBUtility.pdb
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\obj\Debug\qfzfEnglish.dll
+C:\Users\Administrator\Desktop\千富之丰\qfzf\qfzfEnglish\obj\Debug\qfzfEnglish.pdb
+G:\王永健\qfzf\qfzfEnglish\bin\qfzfEnglish.dll.config
+G:\王永健\qfzf\qfzfEnglish\bin\qfzfEnglish.dll
+G:\王永健\qfzf\qfzfEnglish\bin\qfzfEnglish.pdb
+G:\王永健\qfzf\qfzfEnglish\bin\Creatrue.Common.dll
+G:\王永健\qfzf\qfzfEnglish\bin\Creatrue.kernel.dll
+G:\王永健\qfzf\qfzfEnglish\bin\DTcms.BLL.dll
+G:\王永健\qfzf\qfzfEnglish\bin\DTcms.Model.dll
+G:\王永健\qfzf\qfzfEnglish\bin\itextsharp.dll
+G:\王永健\qfzf\qfzfEnglish\bin\ICSharpCode.SharpZipLib.dll
+G:\王永健\qfzf\qfzfEnglish\bin\OWC10Chart.dll
+G:\王永健\qfzf\qfzfEnglish\bin\Microsoft.Office.Interop.Owc11.dll
+G:\王永健\qfzf\qfzfEnglish\bin\Newtonsoft.Json.dll
+G:\王永健\qfzf\qfzfEnglish\bin\ThoughtWorks.QRCode.dll
+G:\王永健\qfzf\qfzfEnglish\bin\DTcms.DAL.dll
+G:\王永健\qfzf\qfzfEnglish\bin\DTcms.Common.dll
+G:\王永健\qfzf\qfzfEnglish\bin\DTcms.DBUtility.dll
+G:\王永健\qfzf\qfzfEnglish\bin\Creatrue.Common.pdb
+G:\王永健\qfzf\qfzfEnglish\bin\Creatrue.kernel.pdb
+G:\王永健\qfzf\qfzfEnglish\bin\DTcms.BLL.pdb
+G:\王永健\qfzf\qfzfEnglish\bin\DTcms.Model.pdb
+G:\王永健\qfzf\qfzfEnglish\bin\DTcms.DAL.pdb
+G:\王永健\qfzf\qfzfEnglish\bin\DTcms.Common.pdb
+G:\王永健\qfzf\qfzfEnglish\bin\DTcms.DBUtility.pdb
+G:\王永健\qfzf\qfzfEnglish\obj\Debug\qfzfEnglish.csprojResolveAssemblyReference.cache
+G:\王永健\qfzf\qfzfEnglish\obj\Debug\qfzfEnglish.dll
+G:\王永健\qfzf\qfzfEnglish\obj\Debug\qfzfEnglish.pdb
+D:\WebSvn\qfzf\qfzfEnglish\bin\qfzfEnglish.dll.config
+D:\WebSvn\qfzf\qfzfEnglish\bin\qfzfEnglish.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\qfzfEnglish.pdb
+D:\WebSvn\qfzf\qfzfEnglish\bin\Creatrue.Common.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\Creatrue.kernel.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\DTcms.BLL.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\DTcms.Model.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\itextsharp.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\ICSharpCode.SharpZipLib.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\OWC10Chart.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\Microsoft.Office.Interop.Owc11.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\Newtonsoft.Json.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\ThoughtWorks.QRCode.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\DTcms.DAL.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\DTcms.Common.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\DTcms.DBUtility.dll
+D:\WebSvn\qfzf\qfzfEnglish\bin\Creatrue.Common.pdb
+D:\WebSvn\qfzf\qfzfEnglish\bin\Creatrue.kernel.pdb
+D:\WebSvn\qfzf\qfzfEnglish\bin\DTcms.BLL.pdb
+D:\WebSvn\qfzf\qfzfEnglish\bin\DTcms.Model.pdb
+D:\WebSvn\qfzf\qfzfEnglish\bin\DTcms.DAL.pdb
+D:\WebSvn\qfzf\qfzfEnglish\bin\DTcms.Common.pdb
+D:\WebSvn\qfzf\qfzfEnglish\bin\DTcms.DBUtility.pdb
+D:\WebSvn\qfzf\qfzfEnglish\obj\Debug\qfzfEnglish.csprojResolveAssemblyReference.cache
+D:\WebSvn\qfzf\qfzfEnglish\obj\Debug\qfzfEnglish.dll
+D:\WebSvn\qfzf\qfzfEnglish\obj\Debug\qfzfEnglish.pdb
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\qfzfEnglish.dll.config
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\qfzfEnglish.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\qfzfEnglish.pdb
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\Creatrue.Common.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\Creatrue.kernel.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\DTcms.BLL.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\DTcms.Model.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\itextsharp.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\ICSharpCode.SharpZipLib.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\OWC10Chart.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\Microsoft.Office.Interop.Owc11.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\Newtonsoft.Json.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\ThoughtWorks.QRCode.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\DTcms.DAL.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\DTcms.Common.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\DTcms.DBUtility.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\Creatrue.Common.pdb
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\Creatrue.kernel.pdb
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\DTcms.BLL.pdb
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\DTcms.Model.pdb
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\DTcms.DAL.pdb
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\DTcms.Common.pdb
+D:\WebSvn\灵山企业站\qfzfEnglish\bin\DTcms.DBUtility.pdb
+D:\WebSvn\灵山企业站\qfzfEnglish\obj\Debug\qfzfEnglish.csprojResolveAssemblyReference.cache
+D:\WebSvn\灵山企业站\qfzfEnglish\obj\Debug\qfzfEnglish.dll
+D:\WebSvn\灵山企业站\qfzfEnglish\obj\Debug\qfzfEnglish.pdb
+F:\红豆\qfzfEnglish\bin\qfzfEnglish.dll
+F:\红豆\qfzfEnglish\bin\qfzfEnglish.pdb
+F:\红豆\qfzfEnglish\bin\Creatrue.Common.dll
+F:\红豆\qfzfEnglish\bin\Creatrue.kernel.dll
+F:\红豆\qfzfEnglish\bin\DTcms.BLL.dll
+F:\红豆\qfzfEnglish\bin\DTcms.Model.dll
+F:\红豆\qfzfEnglish\bin\itextsharp.dll
+F:\红豆\qfzfEnglish\bin\ICSharpCode.SharpZipLib.dll
+F:\红豆\qfzfEnglish\bin\OWC10Chart.dll
+F:\红豆\qfzfEnglish\bin\Newtonsoft.Json.dll
+F:\红豆\qfzfEnglish\bin\ThoughtWorks.QRCode.dll
+F:\红豆\qfzfEnglish\bin\DTcms.DAL.dll
+F:\红豆\qfzfEnglish\bin\DTcms.Common.dll
+F:\红豆\qfzfEnglish\bin\DTcms.DBUtility.dll
+F:\红豆\qfzfEnglish\bin\Creatrue.Common.pdb
+F:\红豆\qfzfEnglish\bin\Creatrue.kernel.pdb
+F:\红豆\qfzfEnglish\bin\DTcms.BLL.pdb
+F:\红豆\qfzfEnglish\bin\DTcms.Model.pdb
+F:\红豆\qfzfEnglish\bin\DTcms.DAL.pdb
+F:\红豆\qfzfEnglish\bin\DTcms.Common.pdb
+F:\红豆\qfzfEnglish\bin\DTcms.DBUtility.pdb
+F:\红豆\qfzfEnglish\obj\Debug\ResolveAssemblyReference.cache
+F:\红豆\qfzfEnglish\obj\Debug\qfzfEnglish.dll
+F:\红豆\qfzfEnglish\obj\Debug\qfzfEnglish.pdb
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\qfzfEnglish.dll.config
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\qfzfEnglish.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\qfzfEnglish.pdb
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\Creatrue.Common.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\Creatrue.kernel.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\DTcms.BLL.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\DTcms.Model.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\itextsharp.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\ICSharpCode.SharpZipLib.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\OWC10Chart.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\Newtonsoft.Json.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\ThoughtWorks.QRCode.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\DTcms.DAL.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\DTcms.Common.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\DTcms.DBUtility.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\Creatrue.Common.pdb
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\Creatrue.kernel.pdb
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\DTcms.BLL.pdb
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\DTcms.Model.pdb
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\DTcms.DAL.pdb
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\DTcms.Common.pdb
+E:\公司项目\红豆商城\红豆\qfzfEnglish\bin\DTcms.DBUtility.pdb
+E:\公司项目\红豆商城\红豆\qfzfEnglish\obj\Debug\qfzfEnglish.csprojResolveAssemblyReference.cache
+E:\公司项目\红豆商城\红豆\qfzfEnglish\obj\Debug\qfzfEnglish.dll
+E:\公司项目\红豆商城\红豆\qfzfEnglish\obj\Debug\qfzfEnglish.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\qfzfEnglish.dll.config
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\qfzfEnglish.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\qfzfEnglish.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\Creatrue.Common.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\Creatrue.kernel.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\DTcms.BLL.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\DTcms.Model.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\itextsharp.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\ICSharpCode.SharpZipLib.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\OWC10Chart.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\Microsoft.Office.Interop.Owc11.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\Newtonsoft.Json.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\ThoughtWorks.QRCode.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\DTcms.DAL.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\DTcms.Common.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\DTcms.DBUtility.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\Creatrue.Common.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\Creatrue.kernel.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\DTcms.BLL.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\DTcms.Model.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\DTcms.DAL.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\DTcms.Common.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\bin\DTcms.DBUtility.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\obj\Debug\qfzfEnglish.csprojResolveAssemblyReference.cache
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\obj\Debug\qfzfEnglish.dll
+D:\WebSvn\红豆 2015-12-23\红豆\qfzfEnglish\obj\Debug\qfzfEnglish.pdb

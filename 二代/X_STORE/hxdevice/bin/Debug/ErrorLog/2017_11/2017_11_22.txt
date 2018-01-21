@@ -1,0 +1,30 @@
+与服务器的连接已建立;
+
+与服务器：，建立连接失败
+
+出现错误：由于目标计算机积极拒绝，无法连接。 192.168.1.146:2756；位置：   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   在 hxdevice.Units.TCPConnecter.ConnectCallback(IAsyncResult ar) 位置 X:\OneDrive\X_STORE\hxdevice\Units\TCPConnecter.cs:行号 104
+
+与服务器的连接已建立;
+
+与服务器：139.199.160.173:2758，已建立连接
+
+与服务器：，断开连接
+
+与服务器的连接已建立;
+
+与服务器：139.199.160.173:2758，已建立连接
+
+与服务器的连接已建立;
+
+与服务器：，建立连接失败
+
+出现错误：由于目标计算机积极拒绝，无法连接。 139.199.160.173:2756；位置：   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   在 hxdevice.Units.TCPConnecter.ConnectCallback(IAsyncResult ar) 位置 X:\OneDrive\X_STORE\hxdevice\Units\TCPConnecter.cs:行号 104
+
+与服务器的连接已建立;
+
+与服务器：139.199.160.173:2758，已建立连接
+

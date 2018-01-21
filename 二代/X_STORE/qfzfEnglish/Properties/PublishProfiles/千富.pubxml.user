@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\李亚雪_工作资料\发布项目\千富</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Creatrue.Common.dll">
+      <publishTime>10/31/2015 11:23:37</publishTime>
+    </File>
+    <File Include="bin/Creatrue.Common.pdb">
+      <publishTime>10/31/2015 11:23:36</publishTime>
+    </File>
+    <File Include="bin/Creatrue.kernel.dll">
+      <publishTime>10/31/2015 11:23:35</publishTime>
+    </File>
+    <File Include="bin/Creatrue.kernel.pdb">
+      <publishTime>10/31/2015 11:23:35</publishTime>
+    </File>
+    <File Include="bin/DTcms.BLL.dll">
+      <publishTime>10/31/2015 10:51:51</publishTime>
+    </File>
+    <File Include="bin/DTcms.BLL.pdb">
+      <publishTime>10/31/2015 10:51:50</publishTime>
+    </File>
+    <File Include="bin/DTcms.Common.dll">
+      <publishTime>10/31/2015 10:51:47</publishTime>
+    </File>
+    <File Include="bin/DTcms.Common.pdb">
+      <publishTime>10/31/2015 10:51:47</publishTime>
+    </File>
+    <File Include="bin/DTcms.DAL.dll">
+      <publishTime>10/31/2015 10:51:50</publishTime>
+    </File>
+    <File Include="bin/DTcms.DAL.pdb">
+      <publishTime>10/31/2015 10:51:50</publishTime>
+    </File>
+    <File Include="bin/DTcms.DBUtility.dll">
+      <publishTime>10/31/2015 10:51:48</publishTime>
+    </File>
+    <File Include="bin/DTcms.DBUtility.pdb">
+      <publishTime>10/31/2015 10:51:47</publishTime>
+    </File>
+    <File Include="bin/DTcms.Model.dll">
+      <publishTime>10/31/2015 10:51:49</publishTime>
+    </File>
+    <File Include="bin/DTcms.Model.pdb">
+      <publishTime>10/31/2015 10:51:49</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>10/30/2015 19:12:37</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>10/30/2015 19:12:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Office.Interop.Owc11.dll">
+      <publishTime>10/30/2015 19:12:37</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/30/2015 19:12:37</publishTime>
+    </File>
+    <File Include="bin/OWC10Chart.dll">
+      <publishTime>10/30/2015 19:12:37</publishTime>
+    </File>
+    <File Include="bin/qfzfEnglish.dll">
+      <publishTime>11/09/2015 09:15:16</publishTime>
+    </File>
+    <File Include="bin/qfzfEnglish.pdb">
+      <publishTime>11/09/2015 09:15:16</publishTime>
+    </File>
+    <File Include="bin/ThoughtWorks.QRCode.dll">
+      <publishTime>10/30/2015 19:11:02</publishTime>
+    </File>
+    <File Include="css/common.css">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/default.css">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/blank.gif">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancybox-x.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancybox-y.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancybox.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_close.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_loading.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_nav_left.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_nav_right.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_shadow_e.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_shadow_n.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_shadow_ne.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_shadow_nw.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_shadow_s.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_shadow_se.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_shadow_sw.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_shadow_w.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_title_left.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_title_main.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_title_over.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/fancy_title_right.png">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/jquery.easing-1.3.pack.js">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/jquery.fancybox-1.3.4.css">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/jquery.fancybox-1.3.4.js">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/jquery.fancybox-1.3.4.pack.js">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/fancybox/jquery.mousewheel-3.0.4.pack.js">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/nav.css">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/nivo-slider.css">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="css/topnav.css">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="images/00.jpg">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/02.jpg">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/7.png">
+      <publishTime>10/30/2015 19:10:47</publishTime>
+    </File>
+    <File Include="images/arrows.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/b01.jpg">
+      <publishTime>10/30/2015 19:10:47</publishTime>
+    </File>
+    <File Include="images/b02.jpg">
+      <publishTime>10/30/2015 19:10:47</publishTime>
+    </File>
+    <File Include="images/bg.jpg">
+      <publishTime>10/30/2015 19:10:47</publishTime>
+    </File>
+    <File Include="images/bg1.jpg">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/bg2.jpg">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/bg2.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/bg3.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/icon.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/index_bg.jpg">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/jt.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/jt_left.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/jt_right.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/left.gif">
+      <publishTime>10/30/2015 19:10:47</publishTime>
+    </File>
+    <File Include="images/left.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/logo.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/nav1bg.jpg">
+      <publishTime>10/30/2015 19:10:47</publishTime>
+    </File>
+    <File Include="images/navbg.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/off.png">
+      <publishTime>10/30/2015 19:10:47</publishTime>
+    </File>
+    <File Include="images/on.png">
+      <publishTime>10/30/2015 19:10:47</publishTime>
+    </File>
+    <File Include="images/probg.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/right.png">
+      <publishTime>10/30/2015 19:10:47</publishTime>
+    </File>
+    <File Include="images/top1.jpg">
+      <publishTime>10/30/2015 19:10:47</publishTime>
+    </File>
+    <File Include="images/tpic.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/xbg2.jpg">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="images/zakladka.png">
+      <publishTime>10/30/2015 19:10:46</publishTime>
+    </File>
+    <File Include="index_mo.html">
+      <publishTime>10/30/2015 19:10:52</publishTime>
+    </File>
+    <File Include="js/DD_belatedPNG.js">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="js/jquery-1.6.4.min.js">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="js/jquery-1.9.1.min.js">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="js/jquery-ui-1.10.3.custom.min.js">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="js/jquery.min.js">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="js/jquery.nivo.slider.js">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="js/jquery.SuperSlide.js">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="js/menu_min.js">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="qfzfWebEnglish.aspx">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="style_mo.html">
+      <publishTime>10/30/2015 19:10:54</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/09/2015 09:15:17</publishTime>
+    </File>
+    <File Include="xmlconfig/alipay.config">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="xmlconfig/chinabank.config">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="xmlconfig/order.config">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="xmlconfig/site.config">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="xmlconfig/tenpay.config">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="xmlconfig/urls.config">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+    <File Include="xmlconfig/user.config">
+      <publishTime>10/30/2015 19:10:53</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

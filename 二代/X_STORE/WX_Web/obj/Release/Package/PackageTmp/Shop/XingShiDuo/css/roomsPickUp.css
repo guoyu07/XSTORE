@@ -1,0 +1,32 @@
+ul {
+  width: 94%;
+  padding: 10px 3%; }
+  ul li {
+    float: left;
+    width: 20%;
+    position: relative;
+    margin-bottom: 10px; }
+    ul li a {
+      width: 100%;
+      display: block; }
+      ul li a img {
+        display: block;
+        width: 80%;
+        margin: 0 auto; }
+      ul li a .roomNumber {
+        text-align: center;
+        width: 100%;
+        font: 12px/12px "microsoft yahei";
+        color: #fff;
+        position: absolute;
+        bottom: 3.5px;
+        left: 0; }
+      ul li a .label {
+        padding: 4px;
+        border-radius: 50%;
+        font: 12px/12px "microsoft yahei";
+        color: #fff;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: #666; }

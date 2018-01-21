@@ -1,0 +1,189 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>灵山_列表页</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/respond.src.js"></script>
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="js/jqurey.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!--列表页下拉-->
+    <script src="js/common.js"></script>
+
+    <!--手机导航按钮-->
+    <script src="js/pc_phone.js"></script>
+
+
+    <!--轮播大图-->
+    <script src="js/slider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.banner .list').bxSlider({
+                auto: true
+            });
+        });
+
+    </script>
+
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script><!--tabs选项卡-->
+    <script>  $(function () { $(".tabs").tabs({ event: "mouseover" }); });  </script>
+    <style type="text/css">
+        .shop li.ui-tabs-active {
+            background-color: #bf2b2b;
+        }
+
+            .shop li.ui-tabs-active a {
+                color: #fff;
+            }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById('weixin');
+            var b = document.getElementById('wxm');
+            a.onmouseover = function () {
+                b.style.display = 'block';
+            }
+            a.onmouseout = function () {
+                b.style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+    <body class="style_body">
+
+        <!-- 头部导航开始 -->
+        <div class="top_menu">
+            <div class="logo_img"><img src="images/logo_s.png" /></div>
+            <div class="wrap clear mainNav">
+                <div class="row slide_l">
+                    <div class="clear">
+                        <div class="nav_toggle">
+                            <span class=""></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                    </div>
+                    <div class="nav_bg1">
+                        <ul class="navs clear ">
+                            <li class="first"><a href="index.html"  class="active">首页</a></li><li><a href="ProList_001005_l_1.html">旅游商业规划</a></li><li><a href="ProList_001006_l_1.html">旅游商业策划</a></li><li><a href="ProList_001007_l_1.html">旅游商业场景</a></li><li><a href="ProList_001008_l_1.html">旅游商业体验</a></li><li><a href="ProList_001009_l_1.html">旅游商品研发</a></li><li><a href="ProList_001010_l_1.html">旅游商业管理</a></li><li class="last"><a href="about_001_d_10.html">关于我们</a></li><li class="last"><a href="ProList_001011_l_1.html">项目案例</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                //绑定滚动条事件
+                $(window).bind("scroll", function () {
+                    var sTop = $(window).scrollTop();
+                    var sTop = parseInt(sTop);
+                    if (sTop >= 70) {
+                        $('.top_menu').addClass("headbg");
+                        $('.logo2').addClass("logo");
+                        $('.logo_img').addClass("logo_img_block");
+                    }
+                    else {
+                        $('.top_menu').removeClass("headbg");
+                        $('.logo2').removeClass("logo");
+                        $('.logo_img').removeClass("logo_img_block");
+                    }
+                });
+            })
+        </script>
+        <!-- 头部导航结束 -->
+        <!-- 轮播大图开始 -->
+        <div class="banner">
+            <ul class="list">
+                <li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/20151120920230.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701010.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701110.jpg></a></li>
+            </ul>
+        </div>
+
+        <!-- 轮播大图结束 -->
+        <!-- 当前位置开始 -->
+        <div class=" box_b">
+            <div class="wrap clear">
+                <div class="selects clear">
+                    <ul class="clear">
+                        <li class="li1">
+                            <div class="dv_select">
+                                <span>旅游商品研发</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dv_select">
+                                <span class="shows">旅游商品研发</span><div class="slids width1"><a href=Pro_001009_d_197.html class="select">旅游商品研发</a><a href=Pro_001009_d_196.html>旅游商品规划</a><a href=Pro_001009_d_198.html>旅游商品生产</a></div></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mianbao">
+                        <span class="weizhi">当前位置：</span><a href="index.html">首页</a>&gt;<span>旅游商品研发</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 当前位置开始 -->
+        <!--内页正文开始-->
+        <div class="box_t">
+            <div class="wrap">
+                <div class="content clear">
+                    <p style="text-align: center;">&nbsp;<img src="/Upload/FCKEditor/201511/19/image/c2.jpg" width="500" height="333" alt="" /></p>
+<p>&ldquo;佛前结缘，情定三生。&ldquo;每一位沉浸在浪漫爱情中的情侣们都希望能在七夕这个特殊的日子里，与自己相爱的人相守、相伴，一起度过一个与众不同的节日，一起许下一份甜美而忠贞的誓言。送玫瑰？看电影？OUT啦！看演出？有！玩游戏？有！七夕来灵山，不仅可以免费观看灵山香水海上精彩纷呈的灯光秀表演、参加景区内丰富多彩的互动性游戏，还有灵山特色七夕禅缘压轴亮点&mdash;&mdash;寂静法师亲自为情侣们开示，阐述爱情的真谛！</p>
+<p>你也许见过法相庄严的灵山大佛，雄伟壮观的灵山梵宫，但你见过夜间在七彩斑斓灯光照耀下的九龙灌浴吗？你见过火树银花环绕下的五印坛城吗？2014年8月1日至8月2日，&ldquo;执手七夕&bull;缘定灵山&rdquo;&mdash;&mdash;2014年无锡灵山胜境七夕禅缘夜公园将再度开放，这也是近年来灵山除了元旦、除夕撞钟外首次开放夜公园，向游客展示灵山的绝美夜景。浪漫夏夜，来灵山有缘佳地，携手仰望明净如洗的星空，聆听清脆悦耳的虫鸣，与你的TA度过一生最难忘的禅缘七夕。</p>
+<p>此次的灵山禅缘七夕灯光秀可谓是又一大亮点，景区将通过投影、灯光等多项高科技手段，用成千上万的五彩灯光将整个香水海打造成光影梦境，情侣们可以尽情陶醉和畅游其中，香水海上空将呈现出一个充满梦幻色彩的华美幻境。此外，在寂静法师的引领下，游客将手捧莲灯，许下心愿，在光影交错的香水海中放入莲灯。试想五彩斑斓的香水海水面漂浮着盏盏莲灯，波光粼粼，映照着月色，情侣们甜蜜相依，整个灵山都笼罩在一片浪漫禅缘的美妙氛围之中。</p>
+<p style="text-align: left;">除了美轮美奂的华丽水上灯光秀，夺人眼球的烟火表演也将在五印坛城香水海隆重上演。电光火石间，一道闪电般的耀眼光芒向着璀璨的夜空飞去，同时一道长达数米、由无数冷烟火组成的巨大银色瀑布瞬间点燃，横跨于整个香水海水面，让人真正见识到了&ldquo;飞流直下三千尺，疑是银河落九天&rdquo;的震撼情景。&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        <!--内页正文结束-->
+        <!-- 底部开始-->
+        <div class="foot_bg">
+            <div class="wrap clear">
+                <div class="top_f clear">
+
+                    <div class="left clear">
+
+                        <dl class="action">
+                            <dt>关注我们</dt>
+                            <dd><a href="#" id="weixin">微信<i class="icon_wechat"></i><span class="img_ewm_wechat"></span></a><div id="wxm" class="wxm"><img src="images/weixin.jpg" /></div></dd>
+
+                            <dd><a href="#">新浪<i class="icon_xinl"></i><span class="img_ewm_xinl"></span></a></dd>
+                            <dd class="last"><a href="#">腾讯<i class="icon_tengx"></i><span class="img_ewm_tengx"></span></a></dd>
+                        </dl>
+                    </div>
+                    <ul class="right clear">
+                        <li>
+                            <a href="index.html">灵山首页</a>
+                            <a href="about_001_d_10.html">关于我们</a>
+                            <a href="about_001_d_12.html">联系我们</a>
+                            <a href="#">网络地图</a>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <p>地址：江苏省无锡市滨湖区马山古竹路18号</p>
+<p>邮编：214091</p>
+<p>电话：0510-85686894</p>
+<p>传真：0510-85686894</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="bottom_f">
+                    <p>版权所有 动力启航 © Copyright 2009 - 2012. dtcms.net. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;备案号：粤ICP备11064298号</p>
+                    <p>技术支持：<a href="http://www.china-mail.com.cn/" target="_blank">实创科技</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部结束 -->
+
+    </body>
+</html>

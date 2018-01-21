@@ -1,0 +1,266 @@
+D:\天地行独立\tdxdll\trunk\fsWeixin\fsWeixin\bin\tdx.dll
+D:\天地行独立\tdxdll\trunk\fsWeixin\fsWeixin\bin\tdx.pdb
+D:\天地行独立\tdxdll\trunk\fsWeixin\fsWeixin\obj\Debug\ResolveAssemblyReference.cache
+D:\天地行独立\tdxdll\trunk\fsWeixin\fsWeixin\obj\Debug\tdx.dll
+D:\天地行独立\tdxdll\trunk\fsWeixin\fsWeixin\obj\Debug\tdx.pdb
+E:\网站工作\微信系统\tdxdll\fsWeixin\bin\tdx.dll
+E:\网站工作\微信系统\tdxdll\fsWeixin\bin\tdx.pdb
+E:\网站工作\微信系统\tdxdll\fsWeixin\obj\Debug\ResolveAssemblyReference.cache
+E:\网站工作\微信系统\tdxdll\fsWeixin\obj\Debug\tdx.dll
+E:\网站工作\微信系统\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+C:\Users\SumCoderZ\Desktop\鼋头渚手机\tdxdll\fsWeixin\bin\tdx.dll
+C:\Users\SumCoderZ\Desktop\鼋头渚手机\tdxdll\fsWeixin\bin\tdx.pdb
+C:\Users\SumCoderZ\Desktop\鼋头渚手机\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+C:\Users\SumCoderZ\Desktop\鼋头渚手机\tdxdll\fsWeixin\obj\Debug\tdx.dll
+C:\Users\SumCoderZ\Desktop\鼋头渚手机\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+E:\动物园微网站\tdxdll\fsWeixin\bin\tdx.dll
+E:\动物园微网站\tdxdll\fsWeixin\bin\tdx.pdb
+E:\动物园微网站\tdxdll\fsWeixin\obj\Debug\tdx.dll
+E:\动物园微网站\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+E:\动物园微网站\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+E:\无锡动物园\动物园微网站\tdxdll\fsWeixin\bin\tdx.dll
+E:\无锡动物园\动物园微网站\tdxdll\fsWeixin\bin\tdx.pdb
+E:\无锡动物园\动物园微网站\tdxdll\fsWeixin\obj\Debug\tdx.dll
+E:\无锡动物园\动物园微网站\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+C:\Users\SumCoderZ\Desktop\无锡动物园\动物园微网站\tdxdll\fsWeixin\bin\tdx.dll
+C:\Users\SumCoderZ\Desktop\无锡动物园\动物园微网站\tdxdll\fsWeixin\bin\tdx.pdb
+C:\Users\SumCoderZ\Desktop\无锡动物园\动物园微网站\tdxdll\fsWeixin\obj\Debug\tdx.dll
+C:\Users\SumCoderZ\Desktop\无锡动物园\动物园微网站\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+E:\无锡动物园\动物园微网站\无锡动物园\无锡动物园\动物园微网站\tdxdll\fsWeixin\bin\tdx.dll
+E:\无锡动物园\动物园微网站\无锡动物园\无锡动物园\动物园微网站\tdxdll\fsWeixin\bin\tdx.pdb
+E:\无锡动物园\动物园微网站\无锡动物园\无锡动物园\动物园微网站\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+E:\无锡动物园\动物园微网站\无锡动物园\无锡动物园\动物园微网站\tdxdll\fsWeixin\obj\Debug\tdx.dll
+E:\无锡动物园\动物园微网站\无锡动物园\无锡动物园\动物园微网站\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+E:\临港风来\tdxdll\fsWeixin\bin\tdx.dll
+E:\临港风来\tdxdll\fsWeixin\bin\tdx.pdb
+E:\临港风来\tdxdll\fsWeixin\obj\Debug\tdx.dll
+E:\临港风来\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+C:\Users\KnI\Desktop\后台\临港风来\tdxdll\fsWeixin\bin\tdx.dll
+C:\Users\KnI\Desktop\后台\临港风来\tdxdll\fsWeixin\bin\tdx.pdb
+C:\Users\KnI\Desktop\后台\临港风来\tdxdll\fsWeixin\obj\Debug\tdx.dll
+C:\Users\KnI\Desktop\后台\临港风来\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+C:\Users\SumCoderZ\Desktop\后台\临港风来\tdxdll\fsWeixin\bin\tdx.dll
+C:\Users\SumCoderZ\Desktop\后台\临港风来\tdxdll\fsWeixin\bin\tdx.pdb
+C:\Users\SumCoderZ\Desktop\后台\临港风来\tdxdll\fsWeixin\obj\Debug\tdx.dll
+C:\Users\SumCoderZ\Desktop\后台\临港风来\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+C:\Users\Administrator\Desktop\新建文件夹 (2)\最新后台\最新后台\tdxdll\fsWeixin\bin\tdx.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\最新后台\最新后台\tdxdll\fsWeixin\bin\tdx.pdb
+C:\Users\Administrator\Desktop\新建文件夹 (2)\最新后台\最新后台\tdxdll\fsWeixin\obj\Debug\tdx.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\最新后台\最新后台\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+E:\Projects\Creatrue\tdxdll\fsWeixin\bin\tdx.dll
+E:\Projects\Creatrue\tdxdll\fsWeixin\bin\tdx.pdb
+E:\Projects\Creatrue\tdxdll\fsWeixin\obj\Debug\tdx.dll
+E:\Projects\Creatrue\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+G:\王永健\qfzf\tdxdll\fsWeixin\bin\tdx.dll
+G:\王永健\qfzf\tdxdll\fsWeixin\bin\tdx.pdb
+G:\王永健\qfzf\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+G:\王永健\qfzf\tdxdll\fsWeixin\obj\Debug\tdx.dll
+G:\王永健\qfzf\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+D:\WebSvn\灵山企业站\tdxdll\fsWeixin\bin\tdx.dll
+D:\WebSvn\灵山企业站\tdxdll\fsWeixin\bin\tdx.pdb
+D:\WebSvn\灵山企业站\tdxdll\fsWeixin\obj\Debug\tdx.dll
+D:\WebSvn\灵山企业站\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+D:\WebSvn\灵山企业站\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+D:\WebSvn\红豆\tdxdll\fsWeixin\bin\tdx.dll
+D:\WebSvn\红豆\tdxdll\fsWeixin\bin\tdx.pdb
+D:\WebSvn\红豆\tdxdll\fsWeixin\obj\Debug\tdx.dll
+D:\WebSvn\红豆\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+F:\红豆\tdxdll\fsWeixin\bin\tdx.dll
+F:\红豆\tdxdll\fsWeixin\bin\tdx.pdb
+F:\红豆\tdxdll\fsWeixin\obj\Debug\ResolveAssemblyReference.cache
+F:\红豆\tdxdll\fsWeixin\obj\Debug\tdx.dll
+F:\红豆\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+E:\公司项目\红豆商城\红豆\tdxdll\fsWeixin\bin\tdx.dll
+E:\公司项目\红豆商城\红豆\tdxdll\fsWeixin\bin\tdx.pdb
+E:\公司项目\红豆商城\红豆\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+E:\公司项目\红豆商城\红豆\tdxdll\fsWeixin\obj\Debug\tdx.dll
+E:\公司项目\红豆商城\红豆\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+F:\红豆\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+F:\红豆\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+F:\红豆\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+F:\红豆\tdxdll\fsWeixin\bin\tdx.database.dll
+F:\红豆\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+F:\红豆\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+F:\红豆\tdxdll\fsWeixin\bin\tdx.database.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.dll
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.database.dll
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.database.pdb
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\obj\Debug\tdx.dll
+D:\WebSvn\红豆 2015-12-23\红豆\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.dll
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.pdb
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.database.dll
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\bin\tdx.database.pdb
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\obj\Debug\tdx.dll
+C:\working\2016年工作\红豆微信升级\红豆 2015-12-23\红豆\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\tdx.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\tdx.pdb
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\tdx.database.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\DTcms.Common.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\DTcms.DBUtility.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\LitJSON.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\NPOI.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\Ionic.Zip.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\tdx.database.pdb
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\DTcms.Common.pdb
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\bin\DTcms.DBUtility.pdb
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\obj\Debug\tdx.dll
+D:\hongdouWSB\红豆\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\tdx.dll
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\tdx.pdb
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\tdx.database.dll
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\DTcms.Common.dll
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\DTcms.DBUtility.dll
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\LitJSON.dll
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\NPOI.dll
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\tdx.database.pdb
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\DTcms.Common.pdb
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\bin\DTcms.DBUtility.pdb
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\obj\Debug\tdx.dll
+F:\项目\T+商城\T+商城\T+演示\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.dll
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.pdb
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.database.dll
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\DTcms.Common.dll
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\DTcms.DBUtility.dll
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\LitJSON.dll
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\NPOI.dll
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.database.pdb
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\DTcms.Common.pdb
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\bin\DTcms.DBUtility.pdb
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\obj\Debug\tdx.dll
+F:\项目\幸事多\T+演示\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.dll
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.pdb
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.database.dll
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\DTcms.Common.dll
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\DTcms.DBUtility.dll
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\LitJSON.dll
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\NPOI.dll
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\tdx.database.pdb
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\DTcms.Common.pdb
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\bin\DTcms.DBUtility.pdb
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\obj\Debug\tdx.dll
+F:\项目源码备份\幸事多\T+演示\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\tdx.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\tdx.pdb
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\tdx.database.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\DTcms.Common.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\DTcms.DBUtility.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\DTcms.BLL.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\DTcms.Model.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\LitJSON.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\NPOI.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\DTcms.DAL.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\Chanjet.TP.OpenAPI.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\tdx.database.pdb
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\DTcms.DBUtility.pdb
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\DTcms.BLL.pdb
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\DTcms.Model.pdb
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\bin\DTcms.DAL.pdb
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\obj\Debug\tdx.dll
+E:\SC.Znhg\ProjectSpace\XingShiDuo\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\bin\tdx.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\bin\tdx.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\bin\tdx.database.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\bin\DTcms.Common.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\bin\LitJSON.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\obj\Debug\tdx.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\tdx.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\tdx.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\tdx.database.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\DTcms.Common.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\DTcms.DBUtility.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\DTcms.BLL.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\DTcms.Model.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\LitJSON.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\DTcms.DAL.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\Chanjet.TP.OpenAPI.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\tdx.database.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\DTcms.DBUtility.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\DTcms.BLL.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\DTcms.Model.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\bin\DTcms.DAL.pdb
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\obj\Debug\tdx.dll
+E:\SC.Znhg\ProjectSpace\SC.XinShiDuo(正式)\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+D:\OneDrive\x-store\tdxdll\fsWeixin\obj\Debug\tdx.csprojResolveAssemblyReference.cache
+D:\OneDrive\x-store\tdxdll\fsWeixin\obj\Debug\tdx.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\obj\Debug\tdx.pdb
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\tdx.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\tdx.pdb
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\Creatrue.kernel.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\tdx.Weixin.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\ThoughtWorks.QRCode.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\tdx.database.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\DTcms.Common.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\LitJSON.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\DTcms.Model.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\DTcms.DBUtility.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\DTcms.BLL.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\NPOI.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\DTcms.DAL.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\Chanjet.TP.OpenAPI.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\ICSharpCode.SharpZipLib.dll
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\Creatrue.kernel.pdb
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\tdx.Weixin.pdb
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\tdx.database.pdb
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\DTcms.Model.pdb
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\DTcms.DBUtility.pdb
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\DTcms.BLL.pdb
+D:\OneDrive\x-store\tdxdll\fsWeixin\bin\DTcms.DAL.pdb

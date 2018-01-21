@@ -1,0 +1,131 @@
+html,body{
+    height:100%;
+}
+.topNav{
+    width:100%;
+    li{
+        text-align: center;
+        font:16px/40px "microsoft yahei";
+        color:#000;
+        width:23.3%;
+        margin:0 5%;
+        border-bottom:solid 1px #ffffff;
+    }
+    li.clickOn{
+        border-bottom:solid 1px #f60;
+        color:#f60;
+    }
+}
+.topInputContaienr{
+    width:94%;
+    padding:0 3%;
+    input{
+        border:none;
+        font:14px/30px "microsoft yahei";
+    }
+}
+.item{
+    display:none;
+}
+.room{
+    width:100%;
+    display: block;
+    ul{
+        width:100%;
+        li{
+            width:94%;
+            padding:6px 3%;
+            border-bottom:solid 1px #ccc;
+            a{
+                width:100%;
+                display:block;
+                .l{
+                    p{
+                        font:14px/30px "microsoft yahei";
+                        color:#000;
+                    }
+                }
+                .r{
+                    .num{
+                        font:14px/30px "microsoft yahei";
+                        border-radius:30%;
+                        background:#FF6600;
+                        color:#fff;
+                        text-align: center;
+                    }
+                    .status{
+                        font:14px/30px "microsoft yahei";
+                        color:#666;
+                    }
+                }
+            }
+        }
+    }
+}
+.distributer{
+    width:100%;
+    ul{
+        width:100%;
+        li{
+            width:94%;
+            padding:6px 3%;
+            a{
+                width:100%;
+                display:block;
+                .iconfont{
+                    text-align: center;
+                    width:40px;
+                    font:20px/40px "microsoft yahei";
+                    color:#fff;
+                    border-radius:50%;
+                    background:#ff6600;
+                    margin-right:10px;
+                }
+                .disInfo{
+                    .replenishment{
+                        font:14px/20px "microsoft yahei";
+                        color:#000;
+                    }
+                    .roomSum{
+                        font:12px/20px "microsoft yahei";
+                        color:#666;
+                    }
+                }
+                .num{
+                    width:40px;
+                    font:14px/40px "microsoft yahei";
+                    border-radius:30%;
+                    background:#FF6600;
+                    color:#fff;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.goods{
+    width:100%;
+    height:calc(100% - 97px);
+    height:-webkit-calc(100% - 97px);
+    height:-moz-calc(100% - 97px);
+    table{
+        width:100%;
+        .topic{
+            width:100%;
+        }
+        tr{
+            border-bottom: solid 1px #ccc;
+        }
+        th,td{
+            text-align: center;
+            font:14px/30px "microsoft yahei";
+            color:#666;
+            vertical-align: middle;
+            img{
+                display: block;
+                width:60px;
+                height:60px;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+    <div>
+
+        <form id='alipaysubmit' name='alipaysubmit' action='https://openapi.alipay.com/gateway.do?charset=UTF-8' method='POST'>
+            <input name='app_id' value='2017061207475665' /><input name='biz_content' value='{    "body":"",    "subject":"",    "out_trade_no":"",    "timeout_express":"30m",    "total_amount":"0",    "product_code":"alipay.trade.wap.pay"  }' />
+            <input name='charset' value='UTF-8' /><input name='format' value='json' />
+            <input name='method' value='alipay.trade.wap.pay' />
+            <input name='notify_url' value='http://g.china-mail.com.cn/NotifyPay/alipaypc/notify_url.aspx' />
+            <input name='return_url' value='http://g.china-mail.com.cn/goujiu_web/pages/empty.html?order_no=&amount=0&subject=' />
+            <input name='sign_type' value='RSA' />
+            <input name='timestamp' value='2017-06-14 11:30:38' />
+            <input name='version' value='1.0' />
+            <input name='sign' value='hLg3m7aFIRntyHf/lw7GTLD2Ru1B1ghFjR4rJ2xG6uEk82sG+8yvxg9f0ZwtwyC74ZKFPRaBYhi81LCifIDNKhhxeUBDDCzJzRZQFLGflPAv7u1s4sN5f9nblF/Zav2razz+rL39BhNRdZkvCVEFsCug7fvPNZMHqkUKq4sa/YM=' />
+            <input type='submit' value='POST' style='display:none;'>
+        </form>
+        <script>document.forms['alipaysubmit'].submit();</script>
+
+    </div>
+</body>
+</html>

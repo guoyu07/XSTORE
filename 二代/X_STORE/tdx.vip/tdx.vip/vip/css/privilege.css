@@ -1,0 +1,18 @@
+﻿.pBody{height:100%; overflow-x:hidden; width :100%; padding-bottom:60px;}
+.pOptions ul{border-width: 0 0 1px 0;border-style: solid;border-color: #ddd;color: #fff;height: 3em;background-color: #15abd0;text-align: center;}
+.pOptions ul:after{ display:block; clear:both; content:"";}
+.pOptions ul li{ float:left; width:50%;}
+.pOptions ul li a{ height:3em; line-height:3em; text-align:center;}
+.pOptions .select{ background-color:#56bde8;}
+.pContent{ margin:4px auto; width:90%; overflow:hidden;}
+.pContent a{ display:block; margin:auto;}
+.pContent a img{ max-height:200px; max-width:100%; margin:auto; display:block;}
+.pContent a span{ position:absolute; background-color:#000; opacity:0.6; color:#fff; bottom:0; right:0; width:100%;}/*transform:rotate(-45deg);-webkit-transform:rotate(-45deg);*/
+.pContent a span:after{ display:block;  clear:both; content:"";}
+.pContent a span i{ float:right; margin-right:4px;}
+.pContent a span em{ float:left; margin-left:4px;}
+.pContent input[type=button]{ height:2em; color:#fff; line-height:2em; width:50%; background:-webkit-gradient(linear, 0 0, 0 100%, from(#9fe4f2),color-stop(10%, #22bcde),color-stop(33%, #1db6d9),color-stop(66%, #0fa3ca),color-stop(100%, #0392bc)); border:1px solid #ddd; padding:0 0 0 2%; font-size:16px; margin:16px auto; display:block;}
+#pToday{ overflow:hidden; height:264px;}
+#pToday ul{ position:absolute; top:0; left:0;}
+#pToday ul:after{ clear:both; content:""; display:block;}
+#pToday ul li{ float:left; width:100%; padding-bottom:16px;}

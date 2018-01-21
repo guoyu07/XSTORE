@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,p,div,h1,h2,h3,h4,h5,ul,li{margin:0;padding:0;font-size: 12px;font-family: 微软雅黑;color: #666;} 
+body{width:100%;height: 100%;overflow: auto;}
+a{text-decoration: none;color: #333;} 
+a:hover { color: #fea005;} 
+img{border: 0px;}
+
+
+#header{width:100%;background: #0D5BBD;
+    border-top: 1px solid #CBCBCB;
+	color: #fff;
+    font-size: 14px;
+    height: 50px; }
+	
+	.logo{width: 100px;float: left; color: #fff;}
+	.mainMenu{width: 60%;height: 50px;float: left;margin-left: 20px;}
+		.mainMenu ul{overflow:hidden;}
+		.mainMenu li{height: 30px;line-height: 28px;margin:10px 5px 0 5px;padding: 0 10px 0 10px;list-style: none;float: left;overflow:hidden;}
+			.mainMenu li a{color: #fff;font-size:14px;letter-space: 1.5em;}
+			.mainMenu li.active{background:#4d8dcf;border-radius:5px;box-shadow:2px 2px 5px 1px rgba(0,0,0,.1) inset;}
+			.mainMenu li:hover{background:#6cadf1;border-radius:5px;box-shadow:2px 2px 5px 1px rgba(0,0,0,.1) inset;}
+	.userChannel{width: 160px;float: right;color: #fff;}
+		.userFace{width: 40px;height:40px;margin:10px 0 0 0;float: left;overflow:hidden;text-align: right;}
+			.userFace img{width: 20px; height: 20px;padding-top:5px;}
+		.userTitle{width:100px;height: 50px;line-height: 50px; float: left;color: #fff;cursor: pointer;position:relative;background: url(02.jpg) right center no-repeat;}
+			.userTitle ul{
+				width: 130px;
+				height: auto;
+				line-height: 25px;
+				margin: 0 0 0 30px;
+				padding:0;
+				position: absolute;
+				z-index: 999;
+				display: none;
+				left: -50px;
+			}
+			.userTitle ul li{ 
+					 list-style: none;
+					 background:  #eeeeee;
+ 					 border-bottom:#666666 1px solid; 
+					 height:30px; 
+					 line-height:30px; 
+					 padding-left: 10px;
+					 font-size:12px;
+				} 
+				.userTitle ul  li a:link  {
+				 color: #a35817; text-decoration:none;
+				}
+				.userTitle ul li a:visited  {
+				 color:  #a35817;text-decoration:none;
+				}
+				.userTitle ul li:hover { 
+				 	background:#FF9900; 
+				}
+					.userTitle ul li:hover a{color: #FFFFFF;text-decoration:none;font-weight:normal;}
+
+#wrap{
+		width: 100%;
+		height: auto;
+		min-height: 635px;
+		margin:0;padding:0;
+		overflow: hidden;
+		position: relative;
+	}
+#lefter{width: 210px; 
+	   height: 100%;
+	   color:#fff;
+	   position: absolute;
+	   top: 0; 
+	   left:0;
+	   z-index:1; 
+	   border-right:1px solid #C9C9C9; 
+  }
+	
+	#lefter ul{overflow:hidden;}
+		#lefter ul li{background: #E9E9E9;
+    				  border-bottom: 1px solid #C9C9C9;
+                     color: #444444;
+                     display: block;
+                     font-size: 14px;
+    				font-weight: bold;
+    				height: 40px;
+    				line-height: 40px;
+    				text-decoration: none;
+    				text-indent: 20px;
+				}
+			#lefter dd{display: none;overflow:hidden;margin:0;padding:0;background: none;}
+			#lefter dd.current{display:block;}
+				#lefter dd li{background: #fff;color: #999;font-weight: normal;background: url("sketchn1.png") no-repeat 10px center;padding-left: 14px;}
+
+
+.nei{height:610px;margin: 20px 0 0 10px; padding-left: 210px;}
+
+.btnGreen { 
+		padding:2px 8px;
+		cursor:pointer;
+		display:inline-block;
+		text-align:center;
+		vertical-align:bottom;
+		overflow:visible;
+		border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		*zoom:1;
+		background-color:#5ba607;
+		background-image:linear-gradient(bottom, #4d910c 3%, #69b310 97%, #fff 100%);
+		background-image:-moz-linear-gradient(bottom, #4d910c 3%, #69b310 97%, #fff 100%);
+		background-image:-webkit-linear-gradient(bottom, #4d910c 3%, #69b310 97%, #fff 100%);
+		color:#fff; font-size:14px; line-height: 1.5;
+	} 

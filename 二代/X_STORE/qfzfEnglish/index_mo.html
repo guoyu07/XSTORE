@@ -1,0 +1,140 @@
+﻿ <!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><$标题$></title>
+    <meta name="keywords" content="<$关键字$>" />
+    <meta name="description" content="$简介$>" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script><!--public-->
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script><!--轮播大图-->
+   
+     <!-- 头部导航下拉效果 2015.7.6 -->
+  
+    <link href="css/nav.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('.menuduo li').hover(function () {
+
+                $(this).children('ul').show();
+
+                $(this).focus().addClass('focusa')
+
+            }, function () {
+
+                $(this).children('ul').hide();
+
+                $(this).focus().removeClass('focusa')
+            });
+            DD_belatedPNG.fix('ul,.more');
+        });
+    </script>
+     
+    <!-- 头部导航下拉效果 2015.7.6 -->
+    <link href="css/topnav.css" rel="stylesheet" />
+   
+</head>
+
+<body class="index_body">
+    <!--顶部开始-->
+    <div class="wrap">
+        <div class="top_bar clear">
+            <ul class="left fl clear">
+                <li class="home"><a href="index.html">HOME</a></li>
+                <li><em>|</em></li>
+                <li class="map"><a href="map.html">SITE MAP</a></li>
+                <li><em>|</em></li>
+                <li class="contact"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="right fr clear"><a href="http://qfzf.creatrue.net/">中文</a><em>|</em><a href="#">ENGLISH</a></div>
+        </div>
+    </div>
+    <!--顶部结束-->
+    <div class="wrap clear">
+        <div class=" radius index_man">
+            <div class="top_b clear">
+                <div class="logo fl"><a href="index.html"><img src="images/logo.png"></a></div>
+                <ul class="nav fl  menuduo clear">
+                    <$网页nav$>
+
+                </ul>
+                <div class="car"><img src="images/tpic.png"></div>
+            </div>
+            <div class="top_bb"></div>
+
+            <div class="main clear">
+                <div class="left fl">
+                    <div class="box_das news">
+                        <div class="bj clear box_ra">
+                            <div class="title clear"><h2>News</h2><a href="NewsList_002_l_1.html">more+</a></div>
+                            <ul>
+                                <$首页新闻列表$>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box_das contact">
+                        <div class="bj clear box_ra">
+                            <h2 class="title">Contact Us</h2>
+                            <div class="con">
+                                <$首页联系我们$>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right fr">
+                    <div class="banner">
+                        <div class="theme-default">
+                            <div class="slider nivoSlider">
+                                <$首页轮播图$>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                        $(window).load(function () {
+                            $('.slider').nivoSlider();
+                        });
+                    </script>
+                    <div class="index_bot clear">
+                        <div class="pro_cate fl">
+                            <div class="bj">
+                                <div class="title clear"><h2>Product Category</h2><a href="product.html">more+</a></div>
+                                <ul>
+                                    <$产品类别$>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pro_main fr">
+                            <div class="box_ra bj clear">
+                                <div class="title clear"><h2>Products </h2><a href="product.html">more+</a></div>
+                                <ul class="clear">
+                                    <$主打产品$>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部开始-->
+    <div class="main_bottom">
+        <div class="wrap clear">
+            <$版权$>
+
+        </div>
+    </div>
+    <!--底部结束-->
+</body>
+</html>

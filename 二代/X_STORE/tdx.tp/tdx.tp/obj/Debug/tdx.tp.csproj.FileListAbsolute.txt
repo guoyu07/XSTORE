@@ -1,0 +1,14 @@
+D:\单用户微信\tdx.tp\tdx.tp\obj\Debug\tdx.tp.csprojResolveAssemblyReference.cache
+D:\单用户微信\tdx.tp\tdx.tp\bin\tdx.tp.dll
+D:\单用户微信\tdx.tp\tdx.tp\bin\tdx.tp.pdb
+D:\单用户微信\tdx.tp\tdx.tp\bin\Creatrue.Common.dll
+D:\单用户微信\tdx.tp\tdx.tp\bin\Creatrue.kernel.dll
+D:\单用户微信\tdx.tp\tdx.tp\bin\Newtonsoft.Json.dll
+D:\单用户微信\tdx.tp\tdx.tp\bin\tdx.database.dll
+D:\单用户微信\tdx.tp\tdx.tp\bin\tdx.Weixin.dll
+D:\单用户微信\tdx.tp\tdx.tp\bin\Creatrue.Common.pdb
+D:\单用户微信\tdx.tp\tdx.tp\bin\Creatrue.kernel.pdb
+D:\单用户微信\tdx.tp\tdx.tp\bin\tdx.database.pdb
+D:\单用户微信\tdx.tp\tdx.tp\bin\tdx.Weixin.pdb
+D:\单用户微信\tdx.tp\tdx.tp\obj\Debug\tdx.tp.dll
+D:\单用户微信\tdx.tp\tdx.tp\obj\Debug\tdx.tp.pdb

@@ -1,0 +1,5 @@
+2017-09-04 13:51:37.865 页面：details 方法：goods_news: kwid:251
+2017-09-04 13:51:37.908 页面：details 方法：goods_news: OpenId:o8eAHwCOGWFalh37wPcWYLjQEbRI
+2017-09-04 13:51:40.047 接口：GetCartNum 方法：ProcessRequest: kwid：251
+2017-09-04 13:51:40.047 接口：GetCartNum 方法：ProcessRequest: openid：
+2017-09-04 13:51:40.047 接口：GetCartNum 方法：ProcessRequest: sql_cart：select * from wp_购物车 where 是否结算=0 and 库位id = 251 and openid=''

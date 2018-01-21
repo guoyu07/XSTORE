@@ -1,0 +1,34 @@
+2017-10-14 12:41:59.766 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-14 12:41:59.770 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-14 12:42:00.177 类：BasePage 方法：UserInfo: _userinfo:0
+2017-10-14 12:42:00.180 页面：enter 方法：submit_button_ServerClick: UserInfo是空
+2017-10-14 12:42:01.617 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = ''
+2017-10-14 12:42:01.681 页面：mySpace 方法：PageLoad: 状态：2
+2017-10-14 12:44:32.615 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-14 12:44:32.615 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-14 12:44:32.664 类：BasePage 方法：UserInfo: _userinfo:0
+2017-10-14 12:44:32.665 页面：enter 方法：submit_button_ServerClick: UserInfo是空
+2017-10-14 12:44:32.679 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = ''
+2017-10-14 12:44:32.721 页面：mySpace 方法：PageLoad: 状态：2
+2017-10-14 12:44:55.032 页面：mySpace 方法：PageLoad: 进入2:861853032006314
+2017-10-14 12:44:57.675 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-14 12:44:57.676 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-14 12:44:57.725 类：BasePage 方法：UserInfo: _userinfo:0
+2017-10-14 12:44:57.725 页面：enter 方法：submit_button_ServerClick: UserInfo是空
+2017-10-14 12:44:57.741 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006314'
+2017-10-14 12:44:57.787 页面：mySpace 方法：PageLoad: 状态：1
+2017-10-14 12:44:57.839 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='126' and WP_箱子表.status=1 order by 位置 asc
+2017-10-14 12:44:57.978 页面：mySpace 方法：goods: rexiao_id：110
+2017-10-14 12:44:57.979 页面：mySpace 方法：goods: test数量:12
+2017-10-14 12:44:58.082 页面：mySpace 方法：goods: test:[{"箱子id":5366,"库位id":126,"位置":1,"默认商品id":1131,"默认商品品名":"红牛两罐","默认商品价格":"15.99","默认图片路径":"/upload/201707/06/201707061615581164.jpg","实际商品id":1131,"本站价":15.99,"图片路径":"/upload/201707/06/201707061615581164.jpg","实际商品品名":"红牛两罐"},{"箱子id":5367,"库位id":126,"位置":2,"默认商品id":1129,"默认商品品名":"旺仔两罐","默认商品价格":"13.99","默认图片路径":"/upload/201707/06/201707061607229662.jpg","实际商品id":1129,"本站价":13.99,"图片路径":"/upload/201707/06/201707061607229662.jpg","实际商品品名":"旺仔两罐"},{"箱子id":5368,"库位id":126,"位置":3,"默认商品id":1153,"默认商品品名":"冈本","默认商品价格":"39.99","默认图片路径":"/upload/201708/29/201708291029115882.jpg","实际商品id":1153,"本站价":39.99,"图片路径":"/upload/201708/29/201708291029115882.jpg","实际商品品名":"冈本"},{"箱子id":5369,"库位id":126,"位置":4,"默认商品id":114,"默认商品品名":"性感内衣","默认商品价格":"38.88","默认图片路径":"/upload/201706/12/201706121517137340.jpg","实际商品id":114,"本站价":38.88,"图片路径":"/upload/201706/12/201706121517137340.jpg","实际商品品名":"性感内衣"},{"箱子id":5370,"库位id":126,"位置":5,"默认商品id":110,"默认商品品名":"杜蕾斯","默认商品价格":"22.99","默认图片路径":"/upload/201706/12/201706121340484982.jpg","实际商品id":110,"本站价":22.99,"图片路径":"/upload/201706/12/201706121340484982.jpg","实际商品品名":"杜蕾斯"},{"箱子id":5371,"库位id":126,"位置":6,"默认商品id":112,"默认商品品名":"粉红跳蛋","默认商品价格":"39.99","默认图片路径":"/upload/201706/15/201706151554496115.png","实际商品id":112,"本站价":39.99,"图片路径":"/upload/201706/15/201706151554496115.png","实际商品品名":"粉红跳蛋"},{"箱子id":5372,"库位id":126,"位置":7,"默认商品id":116,"默认商品品名":"龙抬头","默认商品价格":"59.99","默认图片路径":"/upload/201706/13/201706131605342746.jpg","实际商品id":116,"本站价":59.99,"图片路径":"/upload/201706/13/201706131605342746.jpg","实际商品品名":"龙抬头"},{"箱子id":5373,"库位id":126,"位置":8,"默认商品id":1153,"默认商品品名":"冈本","默认商品价格":"39.99","默认图片路径":"/upload/201708/29/201708291029115882.jpg","实际商品id":1153,"本站价":39.99,"图片路径":"/upload/201708/29/201708291029115882.jpg","实际商品品名":"冈本"},{"箱子id":5374,"库位id":126,"位置":9,"默认商品id":1143,"默认商品品名":"海豚震动棒","默认商品价格":"68.88","默认图片路径":"/upload/201708/13/201708130638086229.jpg","实际商品id":1143,"本站价":68.88,"图片路径":"/upload/201708/13/201708130638086229.jpg","实际商品品名":"海豚震动棒"},{"箱子id":5375,"库位id":126,"位置":10,"默认商品id":1140,"默认商品品名":"性感裙","默认商品价格":"49.99","默认图片路径":"/upload/201708/06/201708061650478225.JPG","实际商品id":1140,"本站价":49.99,"图片路径":"/upload/201708/06/201708061650478225.JPG","实际商品品名":"性感裙"},{"箱子id":5376,"库位id":126,"位置":11,"默认商品id":110,"默认商品品名":"杜蕾斯","默认商品价格":"22.99","默认图片路径":"/upload/201706/12/201706121340484982.jpg","实际商品id":110,"本站价":22.99,"图片路径":"/upload/201706/12/201706121340484982.jpg","实际商品品名":"杜蕾斯"},{"箱子id":5377,"库位id":126,"位置":12,"默认商品id":1155,"默认商品品名":"安太医延时","默认商品价格":"25.90","默认图片路径":"/upload/201708/29/201708291038402055.jpg","实际商品id":1155,"本站价":25.90,"图片路径":"/upload/201708/29/201708291038402055.jpg","实际商品品名":"安太医延时"}]
+2017-10-14 12:45:06.425 页面：details 方法：goods_news: kwid:126
+2017-10-14 12:45:06.425 页面：details 方法：goods_news: OpenId:o8eAHwCOGWFalh37wPcWYLjQEbRI
+2017-10-14 12:45:07.132 接口：GetCartNum 方法：ProcessRequest: kwid：126
+2017-10-14 12:45:07.133 接口：GetCartNum 方法：ProcessRequest: openid：
+2017-10-14 12:45:07.134 接口：GetCartNum 方法：ProcessRequest: sql_cart：select * from wp_购物车 where 是否结算=0 and 库位id = 126 and openid=''
+2017-10-14 12:45:19.287 页面：details 方法：goods_news: kwid:126
+2017-10-14 12:45:19.288 页面：details 方法：goods_news: OpenId:o8eAHwCOGWFalh37wPcWYLjQEbRI
+2017-10-14 12:45:19.692 接口：GetCartNum 方法：ProcessRequest: kwid：126
+2017-10-14 12:45:19.697 接口：GetCartNum 方法：ProcessRequest: openid：
+2017-10-14 12:45:19.699 接口：GetCartNum 方法：ProcessRequest: sql_cart：select * from wp_购物车 where 是否结算=0 and 库位id = 126 and openid=''
+2017-10-14 12:45:27.723 接口：buynow 方法：ProcessRequest: sql_ck：select id as 库位id,仓库id from WP_库位表 where id='126'

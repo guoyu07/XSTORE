@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>拼好货</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="js/jquery-1.7.2.min.js" charset="utf-8"></script> 
+	<script language="javascript" src="js/swipe.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/menu_min.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){ 
+  $(".menu ul li").menu();
+}); 
+</script> 
+
+</head>
+<body>
+<!--广告轮播图片-->
+<div class="banner">
+	<div style="-webkit-transform:translate3d(0,0,0);">
+		<div id="banner_box" class="box_swipe">
+			<ul>
+				<li><a href="#"><img src='images/b01.jpg' /></a>
+				</li> 
+				<li><a href="#"><img src='images/b02.jpg' /></a>
+				</li> 
+				<li><a href="#"><img src='images/b03.jpg' /></a>
+				</li> 
+			</ul>
+			<ol>
+				<li class="on"></li>
+				<li></li>
+				<li></li>
+			</ol> 
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		new Swipe(document.getElementById('banner_box'), {
+		speed:500,
+		auto:3000,
+		callback: function(){
+		var lis = $(this.element).next("ol").children();
+		lis.removeClass("on").eq(this.index).addClass("on");
+			}
+		});
+	});
+</script>
+<div class="banner_title">
+	<div class="wrap padd_10">
+    	<div class="title">夏日名茶大促</div>
+    	<div class="price"><strong>¥ 149</strong><em>¥ 199</em></div> 
+    </div>
+</div>
+<div class="hei_15"></div>
+<!--广告轮播图片结束-->
+<div class="num padd_10">
+	<div class="wrap dj-xm">
+    	<div class="price clear">
+            	<span class="pr_01">¥149</span>
+                <span class="pr_02">¥98</span>
+                <span class="pr_03">¥79</span>
+		</div>
+    	<div class="progress">
+        	<div class="progress-red"><!--<i class="p-left"></i>-->
+            	<div class="progress-w" style="width:33%"><i class="p-right">3</i></div>
+        	</div>
+        </div>
+		<div class="count clear">
+			<span class="cou_01">1</span>
+			<span class="cou_02">3</span>
+			<span class="cou_03">9</span>
+		</div> 
+    </div>
+</div>
+<div class="hei_15"></div>
+<div class="menu">
+			<ul>
+				<li class="list_cj"><a href="#">我的团员</a>
+					<ul class="contt clear">
+						<li><img src="images/03.jpg"  /><span class="s02">王小花</span></li>
+						<li><img src="images/03.jpg"  /><span class="s02">潘小树</span></li>
+						<li><img src="images/03.jpg"  /><span class="s02">宣小草</span></li>
+						<li><img src="images/03.jpg"  /><span class="s02">王小花</span></li>
+						<li><img src="images/03.jpg"  /><span class="s02">潘小树</span></li>
+						<li><img src="images/03.jpg"  /><span class="s02">宣小草</span></li>
+						<li><img src="images/03.jpg"  /><span class="s02">王小花</span></li>
+						<li><img src="images/03.jpg"  /><span class="s02">潘小树</span></li>
+						<li><img src="images/03.jpg"  /><span class="s02">宣小草</span></li>
+					</ul>				
+				</li>
+                <li class="hei_15"></li>
+				<li class="list_aq"><a href="#">商品详情</a>
+					<ul class="cont clear">
+                    	商品详情商品详情商品详情商品详情
+                        <img src="images/03.jpg"  />
+					</ul>				
+				</li>
+                <li class="hei_15"></li>
+				<li class="list_hj"><a href="#">商品特色</a>
+					<ul class="cont clear">
+                    	<li>
+                    	商品详情商品详情商品详情商品详情
+                        <img src="images/03.jpg"  />
+                        </li>
+					</ul>					
+				</li>
+                <li class="hei_15"></li>
+    			<li class="list_yy"><a href="#">注意事项</a>
+					<ul class="cont clear">
+                    <li>
+                    	<p>1.注意事项01 </p>
+                        <p>2.注意事项02 </p>
+                        <p>3.注意事项03 </p>
+                        <p>4.注意事项04 </p>
+                        <p>5.注意事项05 </p>
+                        <p>6.注意事项06 </p>
+                    </li>    
+					</ul>				
+				</li>
+                <li class="hei_15"></li>
+                <li class="list_yy"><a href="#">资质证明</a>
+					<ul class="cont clear">
+                    	<li>资质证明资质证明资质证明资质证明资质证明</li>
+					</ul>				
+				</li>
+                <li class="hei_15"></li>
+                <li class="list_yy"><a href="#">品牌介绍</a>
+					<ul class="cont clear">
+                    	<li>品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍</li>
+					</ul>				
+				</li>
+			</ul>
+</div>
+<div class="hei_15"></div>
+<div class="bott">
+	<div class="wrap padd_10 clear">
+    	<div class="price fl"><strong>¥ 149</strong><em>¥ 199</em></div>
+        <div class="buy_bt fr"><input type="button" value="立即订购" /></div>
+    </div>
+</div>
+</body>
+</html>

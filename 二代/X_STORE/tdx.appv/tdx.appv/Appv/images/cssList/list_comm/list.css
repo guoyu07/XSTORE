@@ -1,0 +1,12 @@
+﻿.l_body{position:relative;padding-top:62px; z-index:1;}
+.l_body:after{display:block;content:"";clear:both;}
+.l_content{position:relative;z-index:1;background-color: #FFF; }
+.l_content h1{font-weight: bold;display:block;font-size:12px;color:#333;line-height:1.5em;text-align: center; background-color:#fff; padding:8px 0 4px 0; margin:0 16px; border-bottom:1px solid #aaa;}
+.l_content ul li{float:none;background-color: #FFF; padding:8px 8px 4px 8px; border-bottom:1px solid #ddd;}
+.l_content ul li:after{display:block;clear:both;content:"";}
+.l_content ul li a{ display:block; text-decoration:none;}
+.l_content ul li a:after{display:block;clear:both;content:"";}
+.l_content ul li a img{width:40px;height:40px;float:left;}
+.l_content ul li a h1{font-weight:normal;margin:0 0 0 44px;display:block;font-size:12px;color:#333;line-height:1.5em;text-align:left; border-width:0px; padding:0;}
+.l_content p{display:block;margin-left:44px;font-size:12px;color:#999;line-height:1.5em;text-align:left;}
+.proTitle {background-color: #FFFFFF;border-color: #999999;border-style: solid;border-width: 0 1px 1px;font-size: 12px;height: 2em;line-height: 2em;margin: auto;overflow: hidden;padding: 0 13px;position: relative;top: -1px;width: 6em;z-index: 1;}

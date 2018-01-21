@@ -1,0 +1,189 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>灵山_列表页</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/respond.src.js"></script>
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="js/jqurey.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!--列表页下拉-->
+    <script src="js/common.js"></script>
+
+    <!--手机导航按钮-->
+    <script src="js/pc_phone.js"></script>
+
+
+    <!--轮播大图-->
+    <script src="js/slider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.banner .list').bxSlider({
+                auto: true
+            });
+        });
+
+    </script>
+
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script><!--tabs选项卡-->
+    <script>  $(function () { $(".tabs").tabs({ event: "mouseover" }); });  </script>
+    <style type="text/css">
+        .shop li.ui-tabs-active {
+            background-color: #bf2b2b;
+        }
+
+            .shop li.ui-tabs-active a {
+                color: #fff;
+            }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById('weixin');
+            var b = document.getElementById('wxm');
+            a.onmouseover = function () {
+                b.style.display = 'block';
+            }
+            a.onmouseout = function () {
+                b.style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+    <body class="style_body">
+
+        <!-- 头部导航开始 -->
+        <div class="top_menu">
+            <div class="logo_img"><img src="images/logo_s.png" /></div>
+            <div class="wrap clear mainNav">
+                <div class="row slide_l">
+                    <div class="clear">
+                        <div class="nav_toggle">
+                            <span class=""></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                    </div>
+                    <div class="nav_bg1">
+                        <ul class="navs clear ">
+                            <li class="first"><a href="index.html"  class="active">首页</a></li><li><a href="ProList_001005_l_1.html">旅游商业规划</a></li><li><a href="ProList_001006_l_1.html">旅游商业策划</a></li><li><a href="ProList_001007_l_1.html">旅游商业场景</a></li><li><a href="ProList_001008_l_1.html">旅游商业体验</a></li><li><a href="ProList_001009_l_1.html">旅游商品研发</a></li><li><a href="ProList_001010_l_1.html">旅游商业管理</a></li><li class="last"><a href="about_001_d_10.html">关于我们</a></li><li class="last"><a href="ProList_001011_l_1.html">项目案例</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                //绑定滚动条事件
+                $(window).bind("scroll", function () {
+                    var sTop = $(window).scrollTop();
+                    var sTop = parseInt(sTop);
+                    if (sTop >= 70) {
+                        $('.top_menu').addClass("headbg");
+                        $('.logo2').addClass("logo");
+                        $('.logo_img').addClass("logo_img_block");
+                    }
+                    else {
+                        $('.top_menu').removeClass("headbg");
+                        $('.logo2').removeClass("logo");
+                        $('.logo_img').removeClass("logo_img_block");
+                    }
+                });
+            })
+        </script>
+        <!-- 头部导航结束 -->
+        <!-- 轮播大图开始 -->
+        <div class="banner">
+            <ul class="list">
+                <li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/20151120920230.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701010.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701110.jpg></a></li>
+            </ul>
+        </div>
+
+        <!-- 轮播大图结束 -->
+        <!-- 当前位置开始 -->
+        <div class=" box_b">
+            <div class="wrap clear">
+                <div class="selects clear">
+                    <ul class="clear">
+                        <li class="li1">
+                            <div class="dv_select">
+                                <span>项目案例</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dv_select">
+                                <span class="shows">汉源博物馆</span><div class="slids width1"><a href=Pro_001011_d_206.html class="select">汉源博物馆</a><a href=Pro_001011_d_203.html>灵山胜镜</a><a href=Pro_001011_d_204.html>灵山小镇</a><a href=Pro_001011_d_205.html>尼山胜境</a></div></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mianbao">
+                        <span class="weizhi">当前位置：</span><a href="index.html">首页</a>&gt;<span>项目案例</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 当前位置开始 -->
+        <!--内页正文开始-->
+        <div class="box_t">
+            <div class="wrap">
+                <div class="content clear">
+                    <p style="text-align: center;"><img src="/Upload/FCKEditor/201511/23/ls8(1).jpg" width="840" height="514" alt="" /></p>
+<p>华夏大地，凡名山胜境，多少梵宇，震旦禅学，盛自齐梁，所谓&ldquo;南朝四百八十寺，多少楼台烟雨中&rdquo;云尔。祥符禅寺，无锡太湖马迹山之古迹也。自马迹山邑人，唐右将军杭恽舍山建刹，玄奘大弟子窥基与此首开慈恩宗，至宋大中祥符宣和四年，合理学之潮演为禅宗，遂名祥符禅院，旋升寺，沿用至今。近代以来，历经兵燹，颇多废兴。遗址尚存香积厨数间及银杏等古树耳。</p>
+<p>时岁更替，乾坤清明，国泰民安，政通人和。沐党宗教政策之春风，为弘演佛法真德有依，循扬善举义助有靠，祈福膜拜祝祷有处，虔修参禅静思有所，并宣佛法之宏旨，传佛学之正宗，藉太湖灵山福地之因缘际会，成江南佛教之名胜丛林。政府欣然决定修复古刹祥符禅寺并兴建高八十八米青铜立佛于小灵山上，广纳十方佛子，普接善男信女，尽信众之大力，创佛学之巔峰，以图大佛与古寺齐辉，光耀东南。善举既兴，万方呼应。省市政府殷切关怀，中国佛协倾力支持，原系中国政协副主席、佛协会长赵朴初居士亲临马迹山，踏勘古寺遗址并周遭环境，两次题词，首肯是举。</p>
+<p>公元一九九四年十月二十日，久雨初霁，晴日朗照，大佛奠基。诸事齐备，建造顺利。至一九九七年，适逢金秋吉日，佛像开光，十万信众，纷至沓来，高僧主法，盛况空前。至此，灵山大佛与北方之山西云岗大佛、中原之洛阳龙门大佛、西方之四川乐山大佛、南方之香港天坛大佛，构特立耸峙而遙相呼应之格局，朴老&ldquo;五方五佛&rdquo;之理念遂得圆满。灵山大佛雄立于兹，香客之盛，游客之众，盖出意料之外；惊叹博大，复求精深，固亦情理之中。遂于公园二零零三年兴建灵山胜境新园区。邑中哲人云，大佛立在前为上篇，园区建于后为下篇。上下联卷，堪称合璧。诚哉斯言，善哉斯言。</p>
+<p>今日之灵山胜境方圆千余亩，以佛教文化为主题，&ldquo;庄严国土，利乐有情&rdquo;为主旨，&ldquo;山连鹫岭，法继慈恩&rdquo;为主线，显灵山之底蕴，窥佛景之堂奥。龙虎二山拱卫，八功德水萦绕，布以五明桥、大照壁、佛足坛、五智门、九龙灌浴、降魔、阿育王柱、祥符禅寺、佛教文化博物馆、灵山大佛。主体景观为九龙灌浴与灵山大佛。胜境各景丝丝入扣，层层推进，一线相连，乃有两极呼应，一气呵成之妙；自下而行，拾阶而上，且有佛在人间、缘佛而行之效。赵朴初大居士云&ldquo;不意鹫峰飞到此，天花烂漫散吾家。&rdquo;此之谓也。如此，朴老生前宏愿得遂，灵山胜境千秋长盛矣。</p>
+                </div>
+            </div>
+        </div>
+        <!--内页正文结束-->
+        <!-- 底部开始-->
+        <div class="foot_bg">
+            <div class="wrap clear">
+                <div class="top_f clear">
+
+                    <div class="left clear">
+
+                        <dl class="action">
+                            <dt>关注我们</dt>
+                            <dd><a href="#" id="weixin">微信<i class="icon_wechat"></i><span class="img_ewm_wechat"></span></a><div id="wxm" class="wxm"><img src="images/weixin.jpg" /></div></dd>
+
+                            <dd><a href="#">新浪<i class="icon_xinl"></i><span class="img_ewm_xinl"></span></a></dd>
+                            <dd class="last"><a href="#">腾讯<i class="icon_tengx"></i><span class="img_ewm_tengx"></span></a></dd>
+                        </dl>
+                    </div>
+                    <ul class="right clear">
+                        <li>
+                            <a href="index.html">灵山首页</a>
+                            <a href="about_001_d_10.html">关于我们</a>
+                            <a href="about_001_d_12.html">联系我们</a>
+                            <a href="#">网络地图</a>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <p>地址：江苏省无锡市滨湖区马山古竹路18号</p>
+<p>邮编：214091</p>
+<p>电话：0510-85686894</p>
+<p>传真：0510-85686894</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="bottom_f">
+                    <p>版权所有 动力启航 © Copyright 2009 - 2012. dtcms.net. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;备案号：粤ICP备11064298号</p>
+                    <p>技术支持：<a href="http://www.china-mail.com.cn/" target="_blank">实创科技</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部结束 -->
+
+    </body>
+</html>

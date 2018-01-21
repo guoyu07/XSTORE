@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F61D987-1D4C-4C3B-B4C5-A083B978126C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tdx.caimi</RootNamespace>
+    <AssemblyName>tdx.caimi</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="caimi\css\common.css" />
+    <Content Include="caimi\honoraction\honor.js" />
+    <Content Include="caimi\honoraction\honor2.js" />
+    <Content Include="caimi\honoraction\images\activity-lottery-1.png" />
+    <Content Include="caimi\honoraction\images\activity-lottery-2.jpg" />
+    <Content Include="caimi\honoraction\images\activity-lottery-2.png" />
+    <Content Include="caimi\honoraction\images\activity-lottery-3.png" />
+    <Content Include="caimi\honoraction\images\activity-lottery-bg.png" />
+    <Content Include="caimi\honoraction\images\activity-lottery-bg2.jpg" />
+    <Content Include="caimi\honoraction\images\activity-scratch-card-bg.jpg" />
+    <Content Include="caimi\honoraction\images\activity-style.css" />
+    <Content Include="caimi\honoraction\images\title-bg-brown.png" />
+    <Content Include="caimi\honoraction\images\title-bg-green.png" />
+    <Content Include="caimi\honoraction\images\title-bg-orange.png" />
+    <Content Include="caimi\honoraction\images\title-bg-red.png" />
+    <Content Include="caimi\honor_action.aspx" />
+    <Content Include="caimi\honor_action2.aspx" />
+    <Content Include="caimi\images\bg.jpg" />
+    <Content Include="caimi\images\loading.gif" />
+    <Content Include="caimi\images\tt.jpg" />
+    <Content Include="caimi\images\tt01.png" />
+    <Content Include="caimi\index.aspx" />
+    <Content Include="caimi\index.html" />
+    <Content Include="caimi\index2.aspx" />
+    <Content Include="caimi\js\caimi.js" />
+    <Content Include="caimi\js\caimi2.js" />
+    <Content Include="caimi\js\jquery-1.7.2.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="caimi\AnswerMiYu.ashx.cs">
+      <DependentUpon>AnswerMiYu.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="caimi\GetMiYu.ashx.cs">
+      <DependentUpon>GetMiYu.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="caimi\honor_action.aspx.cs">
+      <DependentUpon>honor_action.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="caimi\honor_action.aspx.designer.cs">
+      <DependentUpon>honor_action.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="caimi\honor_action2.aspx.cs">
+      <DependentUpon>honor_action2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="caimi\honor_action2.aspx.designer.cs">
+      <DependentUpon>honor_action2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="caimi\honor_cj.ashx.cs">
+      <DependentUpon>honor_cj.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="caimi\honor_cj2.ashx.cs">
+      <DependentUpon>honor_cj2.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="caimi\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="caimi\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="caimi\index2.aspx.cs">
+      <DependentUpon>index2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="caimi\index2.aspx.designer.cs">
+      <DependentUpon>index2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="caimi\AnswerMiYu.ashx" />
+    <Content Include="caimi\GetMiYu.ashx" />
+    <Content Include="caimi\honor_cj.ashx" />
+    <Content Include="caimi\honor_cj2.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Creatrue.Common\Creatrue.Common\Creatrue.Common.csproj">
+      <Project>{5183A7C2-23FD-4A06-BFB6-6DCA5905A44A}</Project>
+      <Name>Creatrue.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Creatrue.kernel\Creatrue.kernel\Creatrue.kernel.csproj">
+      <Project>{D27829F1-A736-4EB0-8A69-1B421362740E}</Project>
+      <Name>Creatrue.kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tdx.database\tdx.database\tdx.database.csproj">
+      <Project>{E4DEEE0D-3D80-485B-BB0E-5BC81BD4C84E}</Project>
+      <Name>tdx.database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tdx.Weixin\tdx.Weixin\tdx.Weixin.csproj">
+      <Project>{A19EC680-F471-4F67-83A1-EC6BC74D8559}</Project>
+      <Name>tdx.Weixin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>36713</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

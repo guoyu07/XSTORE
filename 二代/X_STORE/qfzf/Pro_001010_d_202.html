@@ -1,0 +1,200 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>灵山_列表页</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/respond.src.js"></script>
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="js/jqurey.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!--列表页下拉-->
+    <script src="js/common.js"></script>
+
+    <!--手机导航按钮-->
+    <script src="js/pc_phone.js"></script>
+
+
+    <!--轮播大图-->
+    <script src="js/slider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.banner .list').bxSlider({
+                auto: true
+            });
+        });
+
+    </script>
+
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script><!--tabs选项卡-->
+    <script>  $(function () { $(".tabs").tabs({ event: "mouseover" }); });  </script>
+    <style type="text/css">
+        .shop li.ui-tabs-active {
+            background-color: #bf2b2b;
+        }
+
+            .shop li.ui-tabs-active a {
+                color: #fff;
+            }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById('weixin');
+            var b = document.getElementById('wxm');
+            a.onmouseover = function () {
+                b.style.display = 'block';
+            }
+            a.onmouseout = function () {
+                b.style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+    <body class="style_body">
+
+        <!-- 头部导航开始 -->
+        <div class="top_menu">
+            <div class="logo_img"><img src="images/logo_s.png" /></div>
+            <div class="wrap clear mainNav">
+                <div class="row slide_l">
+                    <div class="clear">
+                        <div class="nav_toggle">
+                            <span class=""></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                    </div>
+                    <div class="nav_bg1">
+                        <ul class="navs clear ">
+                            <li class="first"><a href="index.html"  class="active">首页</a></li><li><a href="ProList_001005_l_1.html">旅游商业规划</a></li><li><a href="ProList_001006_l_1.html">旅游商业策划</a></li><li><a href="ProList_001007_l_1.html">旅游商业场景</a></li><li><a href="ProList_001008_l_1.html">旅游商业体验</a></li><li><a href="ProList_001009_l_1.html">旅游商品研发</a></li><li><a href="ProList_001010_l_1.html">旅游商业管理</a></li><li class="last"><a href="about_001_d_10.html">关于我们</a></li><li class="last"><a href="ProList_001011_l_1.html">项目案例</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                //绑定滚动条事件
+                $(window).bind("scroll", function () {
+                    var sTop = $(window).scrollTop();
+                    var sTop = parseInt(sTop);
+                    if (sTop >= 70) {
+                        $('.top_menu').addClass("headbg");
+                        $('.logo2').addClass("logo");
+                        $('.logo_img').addClass("logo_img_block");
+                    }
+                    else {
+                        $('.top_menu').removeClass("headbg");
+                        $('.logo2').removeClass("logo");
+                        $('.logo_img').removeClass("logo_img_block");
+                    }
+                });
+            })
+        </script>
+        <!-- 头部导航结束 -->
+        <!-- 轮播大图开始 -->
+        <div class="banner">
+            <ul class="list">
+                <li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/20151120920230.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701010.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701110.jpg></a></li>
+            </ul>
+        </div>
+
+        <!-- 轮播大图结束 -->
+        <!-- 当前位置开始 -->
+        <div class=" box_b">
+            <div class="wrap clear">
+                <div class="selects clear">
+                    <ul class="clear">
+                        <li class="li1">
+                            <div class="dv_select">
+                                <span>旅游商业管理</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dv_select">
+                                <span class="shows">物流管理体系</span><div class="slids width1"><a href=Pro_001010_d_202.html class="select">物流管理体系</a><a href=Pro_001010_d_199.html>人力资源体系</a><a href=Pro_001010_d_200.html>物流体系规划</a><a href=Pro_001010_d_201.html>信息系统建设</a></div></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mianbao">
+                        <span class="weizhi">当前位置：</span><a href="index.html">首页</a>&gt;<span>旅游商业管理</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 当前位置开始 -->
+        <!--内页正文开始-->
+        <div class="box_t">
+            <div class="wrap">
+                <div class="content clear">
+                    <p style="text-align: center;"><img src="/Upload/FCKEditor/201511/19/image/5.jpg" width="480" height="200" alt="" /></p>
+<p>马迹山中的祥符寺可是太湖沿岸鼎鼎有名的寺庙，不仅风光绝佳，而且香火很盛，可是你知道它的来历吗？这里面的故事可多了，这里我先跟你说说杭将军舍山的事。</p>
+<p>据说唐朝贞观年间，天下太平，佛教盛行。上至皇帝，下至平民，人人都好佛法，特别是王公贵族，更是与和尚结交为荣。当时马迹山人杭恽随唐高祖平定天下后，做官做到了右将军，他在长安做官时就与大慈恩寺的玄奘法师交好，杭将军念佛心诚，渐入佳境，于是看破红尘，六十岁时就回到老家养老。而这个时候，玄奘法师也西行到天竺取经去了，杭将军行前就告诉朝中好友鄂国公尉迟恭说，若是玄奘法师归来，请转告大师，就说杭某回乡养老，若有缘他日再聚一叙，于是杭将军就回到马山，寄情山水之间，每天在家念佛，倒也自得其乐。</p>
+<p>而那玄奘法师从天竺归来后，拜为国师，更是一心促成佛教的传播，于是在国内各地奔波，弘扬佛法，一次他来到苏州灵岩山弘法，突然想到鄂国公的话，想到还有一个旧朋友就住在这太湖边，正好趁此前往相聚，于是欣然坐船前往马山拜访杭将军。杭将军听到消息，赶忙到岸边迎接，一路上玄奘法师看见冠嶂、秦履几个山峰，层峦叠翠，欢喜得不得了。这杭将军本是重情之人，于是竭力挽留，让国师在马迹山多待一些日子，玄奘法师念旧，加上马山风光实在迷人，也一口应承下来。</p>
+<p>于是杭将军每天陪着玄奘法师在岛上各处游玩，开始几日，玄奘法师倒蛮高兴，后几日显得有些心事重重。杭将军怕是招待不周，于是小心问道：</p>
+<p>&ldquo;法师这几日愁眉日聚，不知是杭某招待有误，还是另有心事?&rdquo;</p>
+<p>玄奘法师看了看杭将军，叹了口气说&ldquo;杭公招待很好，只是杭公所居这马山乃是难得的净土，风景极佳，百姓善良。可是这么大一个岛却没有一座寺院，贫僧乃出家之人，心有所想啊。&rdquo;</p>
+<p>杭将军一下明白了法师的意思，心里思量一番，觉得法师所言极是，加之自己是好佛之人，于是慨然允诺说；&ldquo;法师，这等事还得靠法师指点，杭某虽不是万户人家，但建寺之地还是拿得出来，只要经法师选定即可。不过，杭某有一要求，这庙建成了，法师可得亲自传法。&rdquo; 玄奘法师一听十分高兴，于是两人相约第二天去看地。</p>
+<p>第二天一早，两人就出发了，一路游览，一路选址，一路上，好多地方都是地灵形胜，但玄奘法师还是不点头，这倒让杭将军着急起来，时至中午，行至秦履峰东南侧，这里是杭将军家传的山地，也是最后一块，玄奘法师一看，大觉惊奇，此地左右各有一山，中间更有一山，整个山形十分特奇，于是对杭将军说；</p>
+<p>&ldquo;杭公，这左右两山叫什么山，中间又叫什么山?&rdquo;</p>
+<p>杭将军忙说：</p>
+<p>&ldquo;法师，这左右分别叫青龙山和白虎山。至于中间吗，乡野中人唤作背山。法师，此地莫非可以建寺?&rdquo;&nbsp;</p>
+<p>玄奘法师大喜，说；&ldquo;此地地形十分神奇，很象贫僧前往天竺取经时所见的佛祖讲经的灵鹫峰，不过比那圣山小，我看就叫小灵山吧!杭公，马山建寺，佳地非此莫属。&rdquo;</p>
+<p>杭将军一听，心中大喜，当下决定舍此山建弘法之地，就说：</p>
+<p>&ldquo;杭某就依法师之盲，不过法师别忘了你我两人之约啊!&rdquo;</p>
+<p>从第二天起，杭将军就将这小灵山周围几百亩山地捐出，修了座灵山庵，这就是祥符寺的前身，这可是马迹山中第一座佛寺，后来玄奘也如约前来弘法，并命弟子开宗，同时感激杭将军的乐善好施，于佛堂内挂杭将军像，让弟子同时敬香供奉，此乃后话，这里就不多说了。这就是马迹山中第一座寺庙的来历。</p>
+                </div>
+            </div>
+        </div>
+        <!--内页正文结束-->
+        <!-- 底部开始-->
+        <div class="foot_bg">
+            <div class="wrap clear">
+                <div class="top_f clear">
+
+                    <div class="left clear">
+
+                        <dl class="action">
+                            <dt>关注我们</dt>
+                            <dd><a href="#" id="weixin">微信<i class="icon_wechat"></i><span class="img_ewm_wechat"></span></a><div id="wxm" class="wxm"><img src="images/weixin.jpg" /></div></dd>
+
+                            <dd><a href="#">新浪<i class="icon_xinl"></i><span class="img_ewm_xinl"></span></a></dd>
+                            <dd class="last"><a href="#">腾讯<i class="icon_tengx"></i><span class="img_ewm_tengx"></span></a></dd>
+                        </dl>
+                    </div>
+                    <ul class="right clear">
+                        <li>
+                            <a href="index.html">灵山首页</a>
+                            <a href="about_001_d_10.html">关于我们</a>
+                            <a href="about_001_d_12.html">联系我们</a>
+                            <a href="#">网络地图</a>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <p>地址：江苏省无锡市滨湖区马山古竹路18号</p>
+<p>邮编：214091</p>
+<p>电话：0510-85686894</p>
+<p>传真：0510-85686894</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="bottom_f">
+                    <p>版权所有 动力启航 © Copyright 2009 - 2012. dtcms.net. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;备案号：粤ICP备11064298号</p>
+                    <p>技术支持：<a href="http://www.china-mail.com.cn/" target="_blank">实创科技</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部结束 -->
+
+    </body>
+</html>

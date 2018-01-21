@@ -1,0 +1,8 @@
+2017-12-19 23:36:02.742 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='0' and WP_箱子表.status=1 order by 位置 asc
+2017-12-19 23:36:02.924 页面：mySpace 方法：goods: rexiao_id：110

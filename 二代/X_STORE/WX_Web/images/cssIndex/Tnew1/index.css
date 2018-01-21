@@ -1,0 +1,21 @@
+﻿.i_head,.i_wel,.i_hotLine,.i_ads{ display:none;}
+.i_body { background:url( image/bg.jpg) no-repeat top left; width:100%; margin:0 auto; padding-top:32%; min-height:100%;}
+
+.i_content{width:98%; margin:0px auto; overflow:hidden; padding:0; margin-bottom:20%;}
+.i_content ul{ display:block; width:100%; margin:0 auto;}
+.i_content ul li { width:70%;  height:38px; line-height:38px; margin-bottom:1.5%; background:url( image/divbj02.png);}
+.i_content ul li a { display:block;background:url( image/jt2.png) no-repeat right; height:38px; width:100%; z-index:99;}
+.i_content ul li span {width:55%; color:#dddada; text-align:left; text-indent:1em; position:relative; bottom:38px; display:block; z-index:1;}
+.i_content ul li:hover {background:url( image/divbj01.png);}
+.i_content ul li:hover a {background:url( image/jt1.png) no-repeat right;}
+.i_content ul li:hover span {color:#333;}
+
+
+.i_content ul li p a img { display:none;}
+.i_content ul li span em { display:none;}
+.i_foot{ display:none;}
+.i_Navigation{ background-color:#646464; position: fixed; width:50%; padding:8px; border-radius:8px; top:100px;  z-index:3; display:none;}
+.i_Navigation .l_arrow{color: #646464; font-size: 25px; position: relative; top: -15px; height: 8px; overflow: hidden;}
+.i_Navigation ul{ width:100%; margin:auto; }
+.i_Navigation ul li{ float:left; width:46%; padding:2%;}
+.i_Navigation ul li a{ background-color:#787878; color:#fff; display:block; height:2em;  line-height:2em;}

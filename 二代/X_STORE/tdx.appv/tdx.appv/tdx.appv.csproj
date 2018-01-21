@@ -1,0 +1,954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16B63CC2-640F-4F70-A947-B7910E61976F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tdx.appv</RootNamespace>
+    <AssemblyName>tdx.appv</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="tdx.Weixin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\tdx.Weixin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Appv\aboutus.aspx" />
+    <Content Include="Appv\appv_foot.ascx" />
+    <Content Include="Appv\appv_head.ascx" />
+    <Content Include="Appv\build\dist\chart\bar.js" />
+    <Content Include="Appv\build\dist\chart\chord.js" />
+    <Content Include="Appv\build\dist\chart\eventRiver.js" />
+    <Content Include="Appv\build\dist\chart\force.js" />
+    <Content Include="Appv\build\dist\chart\funnel.js" />
+    <Content Include="Appv\build\dist\chart\gauge.js" />
+    <Content Include="Appv\build\dist\chart\k.js" />
+    <Content Include="Appv\build\dist\chart\line.js" />
+    <Content Include="Appv\build\dist\chart\map.js" />
+    <Content Include="Appv\build\dist\chart\pie.js" />
+    <Content Include="Appv\build\dist\chart\radar.js" />
+    <Content Include="Appv\build\dist\chart\scatter.js" />
+    <Content Include="Appv\build\dist\chart\treemap.js" />
+    <Content Include="Appv\build\dist\chart\venn.js" />
+    <Content Include="Appv\build\dist\echarts-all.js" />
+    <Content Include="Appv\build\dist\echarts.js" />
+    <Content Include="Appv\build\echarts-optimize-conf.js" />
+    <Content Include="Appv\build\laydate.dev.js" />
+    <Content Include="Appv\build\My97DatePicker\calendar.js" />
+    <Content Include="Appv\build\My97DatePicker\lang\en.js" />
+    <Content Include="Appv\build\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="Appv\build\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="Appv\build\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="Appv\build\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="Appv\build\My97DatePicker\skin\default\img.gif" />
+    <Content Include="Appv\build\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="Appv\build\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="Appv\build\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="Appv\build\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="Appv\build\My97DatePicker\WdatePicker.js" />
+    <Content Include="Appv\build\My97DatePicker\开发包\lang\en.js" />
+    <Content Include="Appv\build\My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="Appv\build\My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="Appv\build\My97DatePicker\开发包\readme.txt" />
+    <Content Include="Appv\build\My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="Appv\build\My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="Appv\build\My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="Appv\build\My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="Appv\build\My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="Appv\build\My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="Appv\build\My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="Appv\build\source\chart\bar.js" />
+    <Content Include="Appv\build\source\chart\chord.js" />
+    <Content Include="Appv\build\source\chart\eventRiver.js" />
+    <Content Include="Appv\build\source\chart\force.js" />
+    <Content Include="Appv\build\source\chart\funnel.js" />
+    <Content Include="Appv\build\source\chart\gauge.js" />
+    <Content Include="Appv\build\source\chart\k.js" />
+    <Content Include="Appv\build\source\chart\line.js" />
+    <Content Include="Appv\build\source\chart\map.js" />
+    <Content Include="Appv\build\source\chart\pie.js" />
+    <Content Include="Appv\build\source\chart\radar.js" />
+    <Content Include="Appv\build\source\chart\scatter.js" />
+    <Content Include="Appv\build\source\chart\treemap.js" />
+    <Content Include="Appv\build\source\chart\venn.js" />
+    <Content Include="Appv\build\source\echarts-all.js" />
+    <Content Include="Appv\build\source\echarts.js" />
+    <Content Include="Appv\contactus.aspx" />
+    <Content Include="Appv\css\common.css" />
+    <Content Include="Appv\css\default.css" />
+    <Content Include="Appv\css\nivo-slider.css" />
+    <Content Include="Appv\css\swiper.min.css" />
+    <Content Include="Appv\EditVip.aspx" />
+    <Content Include="Appv\err.aspx" />
+    <Content Include="Appv\feedback.aspx" />
+    <Content Include="Appv\gongneng.aspx" />
+    <Content Include="Appv\helps.aspx" />
+    <Content Include="Appv\honoraction\honor.js" />
+    <Content Include="Appv\honoraction\imageegg\eggs.css" />
+    <Content Include="Appv\honoraction\imageegg\egg_1.png" />
+    <Content Include="Appv\honoraction\imageegg\egg_2.png" />
+    <Content Include="Appv\honoraction\imageegg\img-4.png" />
+    <Content Include="Appv\honoraction\imageegg\img-6.png" />
+    <Content Include="Appv\honoraction\images2\activity-scratch-card-bannerbg.png" />
+    <Content Include="Appv\honoraction\images2\activity-style.css" />
+    <Content Include="Appv\honoraction\images2\alert.js" />
+    <Content Include="Appv\honoraction\images2\mario.png" />
+    <Content Include="Appv\honoraction\images2\slide1.jpg" />
+    <Content Include="Appv\honoraction\images2\title-bg-brown.png" />
+    <Content Include="Appv\honoraction\images2\title-bg-green.png" />
+    <Content Include="Appv\honoraction\images2\title-bg-orange.png" />
+    <Content Include="Appv\honoraction\images2\title-bg-red.png" />
+    <Content Include="Appv\honoraction\images2\wScratchPad.js" />
+    <Content Include="Appv\honoraction\images\activity-lottery-1.png" />
+    <Content Include="Appv\honoraction\images\activity-lottery-2.png" />
+    <Content Include="Appv\honoraction\images\activity-lottery-bg.png" />
+    <Content Include="Appv\honoraction\images\activity-lottery-bg2.jpg" />
+    <Content Include="Appv\honoraction\images\activity-scratch-card-bg.jpg" />
+    <Content Include="Appv\honoraction\images\activity-style.css" />
+    <Content Include="Appv\honoraction\images\title-bg-brown.png" />
+    <Content Include="Appv\honoraction\images\title-bg-green.png" />
+    <Content Include="Appv\honoraction\images\title-bg-orange.png" />
+    <Content Include="Appv\honoraction\images\title-bg-red.png" />
+    <Content Include="Appv\honor_action.aspx" />
+    <Content Include="Appv\honor_action2.aspx" />
+    <Content Include="Appv\honor_actionegg.aspx" />
+    <Content Include="Appv\honor_contactus.aspx" />
+    <Content Include="Appv\honor_list.aspx" />
+    <Content Include="Appv\honor_youhui.aspx" />
+    <Content Include="Appv\images\11.jpg" />
+    <Content Include="Appv\images\22.jpg" />
+    <Content Include="Appv\images\cssDetail\detail_2\bg_bottom.jpg" />
+    <Content Include="Appv\images\cssDetail\detail_2\detail.css" />
+    <Content Include="Appv\images\cssDetail\detail_2\tm.png" />
+    <Content Include="Appv\images\cssDetail\detail_3\detail.css" />
+    <Content Include="Appv\images\cssDetail\detail_3\tm.png" />
+    <Content Include="Appv\images\cssDetail\detail_comm\detail.css" />
+    <Content Include="Appv\images\cssIndex\bangc\Apps_main.css" />
+    <Content Include="Appv\images\cssIndex\bangc\Apps_win.css" />
+    <Content Include="Appv\images\cssIndex\bangc\btn_bg.png" />
+    <Content Include="Appv\images\cssIndex\bangc\btn_bg2.png" />
+    <Content Include="Appv\images\cssIndex\bangc\comm.css" />
+    <Content Include="Appv\images\cssIndex\bangc\detail.css" />
+    <Content Include="Appv\images\cssIndex\bangc\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\bangc\index.css" />
+    <Content Include="Appv\images\cssIndex\bangc\index.jpg" />
+    <Content Include="Appv\images\cssIndex\bangc\list.css" />
+    <Content Include="Appv\images\cssIndex\bangc\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\bangc\menu_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\bangc\menu_cart.png" />
+    <Content Include="Appv\images\cssIndex\bangc\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\bangc\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\bangc\menu_refresh.png" />
+    <Content Include="Appv\images\cssIndex\bangc\menu_up.png" />
+    <Content Include="Appv\images\cssIndex\bangc\topMenu_sub_bg.png" />
+    <Content Include="Appv\images\cssIndex\bangc\topMenu_sub_bottom.png" />
+    <Content Include="Appv\images\cssIndex\bangc\topMenu_sub_header.png" />
+    <Content Include="Appv\images\cssIndex\bangc\topMenu_sub_li.png" />
+    <Content Include="Appv\images\cssIndex\black\3.png" />
+    <Content Include="Appv\images\cssIndex\black\ad.png" />
+    <Content Include="Appv\images\cssIndex\black\ad2.png" />
+    <Content Include="Appv\images\cssIndex\black\ad_bg.png" />
+    <Content Include="Appv\images\cssIndex\black\Apps_main.css" />
+    <Content Include="Appv\images\cssIndex\black\Apps_win.css" />
+    <Content Include="Appv\images\cssIndex\black\arrow.png" />
+    <Content Include="Appv\images\cssIndex\black\arrow2.png" />
+    <Content Include="Appv\images\cssIndex\black\btn1.png" />
+    <Content Include="Appv\images\cssIndex\black\btn2.png" />
+    <Content Include="Appv\images\cssIndex\black\btnDel.png" />
+    <Content Include="Appv\images\cssIndex\black\btnMod.png" />
+    <Content Include="Appv\images\cssIndex\black\btnOrder.gif" />
+    <Content Include="Appv\images\cssIndex\black\btnOrder.png" />
+    <Content Include="Appv\images\cssIndex\black\btn_bg.png" />
+    <Content Include="Appv\images\cssIndex\black\comm.css" />
+    <Content Include="Appv\images\cssIndex\black\detail.css" />
+    <Content Include="Appv\images\cssIndex\black\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\black\index.css" />
+    <Content Include="Appv\images\cssIndex\black\index.jpg" />
+    <Content Include="Appv\images\cssIndex\black\list.css" />
+    <Content Include="Appv\images\cssIndex\black\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\black\menu_bg.png" />
+    <Content Include="Appv\images\cssIndex\black\menu_cart.png" />
+    <Content Include="Appv\images\cssIndex\black\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\black\menu_helps.png" />
+    <Content Include="Appv\images\cssIndex\black\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\black\menu_news.png" />
+    <Content Include="Appv\images\cssIndex\black\menu_pros.png" />
+    <Content Include="Appv\images\cssIndex\black\tb_2d.png" />
+    <Content Include="Appv\images\cssIndex\black\tb_3d.png" />
+    <Content Include="Appv\images\cssIndex\black\tb_aboutus.png" />
+    <Content Include="Appv\images\cssIndex\black\tb_bg.png" />
+    <Content Include="Appv\images\cssIndex\black\tb_contactus.png" />
+    <Content Include="Appv\images\cssIndex\black\tb_helps.png" />
+    <Content Include="Appv\images\cssIndex\black\tb_more.png" />
+    <Content Include="Appv\images\cssIndex\black\tb_news.png" />
+    <Content Include="Appv\images\cssIndex\black\tb_others.png" />
+    <Content Include="Appv\images\cssIndex\black\tb_pros.png" />
+    <Content Include="Appv\images\cssIndex\black\users\grip.gif" />
+    <Content Include="Appv\images\cssIndex\black\users\track.gif" />
+    <Content Include="Appv\images\cssIndex\creatrue\comm.css" />
+    <Content Include="Appv\images\cssIndex\creatrue\image\bg.jpg" />
+    <Content Include="Appv\images\cssIndex\creatrue\image\bg_bottom.jpg" />
+    <Content Include="Appv\images\cssIndex\creatrue\image\divbj01.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\image\divbj02.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\image\fw.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\image\hd.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\image\home.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\image\tubiao.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\image\ytz.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\index.css" />
+    <Content Include="Appv\images\cssIndex\creatrue\index.jpg" />
+    <Content Include="Appv\images\cssIndex\creatrue\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\creatrue\menu_up.png" />
+    <Content Include="Appv\images\cssIndex\gogo\Apps_main.css" />
+    <Content Include="Appv\images\cssIndex\gogo\Apps_win.css" />
+    <Content Include="Appv\images\cssIndex\gogo\bt1.png" />
+    <Content Include="Appv\images\cssIndex\gogo\btn_bg.png" />
+    <Content Include="Appv\images\cssIndex\gogo\btn_bg2.png" />
+    <Content Include="Appv\images\cssIndex\gogo\comm.css" />
+    <Content Include="Appv\images\cssIndex\gogo\detail.css" />
+    <Content Include="Appv\images\cssIndex\gogo\image\1.png" />
+    <Content Include="Appv\images\cssIndex\gogo\image\2.png" />
+    <Content Include="Appv\images\cssIndex\gogo\image\3.png" />
+    <Content Include="Appv\images\cssIndex\gogo\image\4.png" />
+    <Content Include="Appv\images\cssIndex\gogo\image\5.png" />
+    <Content Include="Appv\images\cssIndex\gogo\image\6.png" />
+    <Content Include="Appv\images\cssIndex\gogo\image\go_icon.png" />
+    <Content Include="Appv\images\cssIndex\gogo\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\gogo\image\icon.png" />
+    <Content Include="Appv\images\cssIndex\gogo\index.css" />
+    <Content Include="Appv\images\cssIndex\gogo\index.jpg" />
+    <Content Include="Appv\images\cssIndex\gogo\list.css" />
+    <Content Include="Appv\images\cssIndex\gogo\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\gogo\menu_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\gogo\menu_cart.png" />
+    <Content Include="Appv\images\cssIndex\gogo\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\gogo\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\gogo\menu_refresh.png" />
+    <Content Include="Appv\images\cssIndex\gogo\menu_up.png" />
+    <Content Include="Appv\images\cssIndex\gogo\topMenu_sub_bg.png" />
+    <Content Include="Appv\images\cssIndex\gogo\topMenu_sub_bottom.png" />
+    <Content Include="Appv\images\cssIndex\gogo\topMenu_sub_header.png" />
+    <Content Include="Appv\images\cssIndex\gogo\topMenu_sub_li.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\btn_bg.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\btn_bg2.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\comm.css" />
+    <Content Include="Appv\images\cssIndex\haiyi\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\image\tb1.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\image\tb2.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\image\tb3.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\image\tb4.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\image\tb5.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\image\tb6.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\image\tb7.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\index.css" />
+    <Content Include="Appv\images\cssIndex\haiyi\index.jpg" />
+    <Content Include="Appv\images\cssIndex\haiyi\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\menu_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\haiyi\menu_cart.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\menu_refresh.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\menu_up.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\topMenu_sub_bg.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\topMenu_sub_bottom.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\topMenu_sub_header.png" />
+    <Content Include="Appv\images\cssIndex\haiyi\topMenu_sub_li.png" />
+    <Content Include="Appv\images\cssIndex\health\20141141007550.png" />
+    <Content Include="Appv\images\cssIndex\health\20141141008140.png" />
+    <Content Include="Appv\images\cssIndex\health\20141141008440.png" />
+    <Content Include="Appv\images\cssIndex\health\20141141009040.png" />
+    <Content Include="Appv\images\cssIndex\health\20141141018550.png" />
+    <Content Include="Appv\images\cssIndex\health\2014171528280.jpg" />
+    <Content Include="Appv\images\cssIndex\health\2014171528390.jpg" />
+    <Content Include="Appv\images\cssIndex\health\2014171528480.jpg" />
+    <Content Include="Appv\images\cssIndex\health\2014171528590.jpg" />
+    <Content Include="Appv\images\cssIndex\health\comm.css" />
+    <Content Include="Appv\images\cssIndex\health\icon_guide.png" />
+    <Content Include="Appv\images\cssIndex\health\index.css" />
+    <Content Include="Appv\images\cssIndex\health\loading.gif" />
+    <Content Include="Appv\images\cssIndex\health\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\health\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\health\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\images\1.jpg" />
+    <Content Include="Appv\images\cssIndex\images\111.png" />
+    <Content Include="Appv\images\cssIndex\images\222.png" />
+    <Content Include="Appv\images\cssIndex\images\mb1\mb1_01.png" />
+    <Content Include="Appv\images\cssIndex\images\mb1\mb1_04.png" />
+    <Content Include="Appv\images\cssIndex\images\mb1\mb1_07.png" />
+    <Content Include="Appv\images\cssIndex\images\mb1\mb1_08.png" />
+    <Content Include="Appv\images\cssIndex\images\mb1\mb1_09.png" />
+    <Content Include="Appv\images\cssIndex\images\mb1\mb1_13.png" />
+    <Content Include="Appv\images\cssIndex\images\mb1\mb1_16.png" />
+    <Content Include="Appv\images\cssIndex\images\mb1\mb1_17.png" />
+    <Content Include="Appv\images\cssIndex\images\mb1\mb1_18.png" />
+    <Content Include="Appv\images\cssIndex\images\mb2\mb2_01.png" />
+    <Content Include="Appv\images\cssIndex\images\mb2\mb2_16.png" />
+    <Content Include="Appv\images\cssIndex\images\mb2\sb3.png" />
+    <Content Include="Appv\images\cssIndex\images\mb2\手机模版4_02-05.png" />
+    <Content Include="Appv\images\cssIndex\images\mb2\手机模版4_02-07.png" />
+    <Content Include="Appv\images\cssIndex\images\mb2\手机模版4_02-13.png" />
+    <Content Include="Appv\images\cssIndex\images\mb2\手机模版4_02.png" />
+    <Content Include="Appv\images\cssIndex\industry1\Apps_main.css" />
+    <Content Include="Appv\images\cssIndex\industry1\Apps_win.css" />
+    <Content Include="Appv\images\cssIndex\industry1\comm.css" />
+    <Content Include="Appv\images\cssIndex\industry1\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\industry1\image\tb.png" />
+    <Content Include="Appv\images\cssIndex\industry1\image\tb01.png" />
+    <Content Include="Appv\images\cssIndex\industry1\image\tel.png" />
+    <Content Include="Appv\images\cssIndex\industry1\index.css" />
+    <Content Include="Appv\images\cssIndex\industry1\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\industry1\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\industry1\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\industry1\menu_up.png" />
+    <Content Include="Appv\images\cssIndex\industry2\Apps_main.css" />
+    <Content Include="Appv\images\cssIndex\industry2\Apps_win.css" />
+    <Content Include="Appv\images\cssIndex\industry2\comm.css" />
+    <Content Include="Appv\images\cssIndex\industry2\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\industry2\image\tb.png" />
+    <Content Include="Appv\images\cssIndex\industry2\image\tb01.png" />
+    <Content Include="Appv\images\cssIndex\industry2\image\tel.png" />
+    <Content Include="Appv\images\cssIndex\industry2\index.css" />
+    <Content Include="Appv\images\cssIndex\industry2\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\industry2\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\industry2\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\industry2\menu_up.png" />
+    <Content Include="Appv\images\cssIndex\jiach\Apps_main.css" />
+    <Content Include="Appv\images\cssIndex\jiach\Apps_win.css" />
+    <Content Include="Appv\images\cssIndex\jiach\bodynei_bg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\body_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\jiach\btn_bg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\btn_bg2.png" />
+    <Content Include="Appv\images\cssIndex\jiach\comm.css" />
+    <Content Include="Appv\images\cssIndex\jiach\detail.css" />
+    <Content Include="Appv\images\cssIndex\jiach\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\index.css" />
+    <Content Include="Appv\images\cssIndex\jiach\index.jpg" />
+    <Content Include="Appv\images\cssIndex\jiach\list.css" />
+    <Content Include="Appv\images\cssIndex\jiach\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\jiach\menu_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\jiach\menu_cart.png" />
+    <Content Include="Appv\images\cssIndex\jiach\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\jiach\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\jiach\menu_refresh.png" />
+    <Content Include="Appv\images\cssIndex\jiach\menu_up.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_2d.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_2d_bg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_3d.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_3d_bg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_aboutus.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_aboutus_bg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_bg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_contactus.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_contactus_bg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_news.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_news_bg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_pros.png" />
+    <Content Include="Appv\images\cssIndex\jiach\tb_pros_bg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\topMenu_sub_bg.png" />
+    <Content Include="Appv\images\cssIndex\jiach\topMenu_sub_bottom.png" />
+    <Content Include="Appv\images\cssIndex\jiach\topMenu_sub_header.png" />
+    <Content Include="Appv\images\cssIndex\jiach\topMenu_sub_li.png" />
+    <Content Include="Appv\images\cssIndex\minu\index.jpg" />
+    <Content Include="Appv\images\cssIndex\wdp\apps_main.css" />
+    <Content Include="Appv\images\cssIndex\wdp\comm.css" />
+    <Content Include="Appv\images\cssIndex\wdp\detail.css" />
+    <Content Include="Appv\images\cssIndex\wdp\heng_02.png" />
+    <Content Include="Appv\images\cssIndex\wdp\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\wdp\image\index_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\wdp\index.css" />
+    <Content Include="Appv\images\cssIndex\wdp\index.jpg" />
+    <Content Include="Appv\images\cssIndex\wdp\list.css" />
+    <Content Include="Appv\images\cssIndex\wdp\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\wdp\menu_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\wdp\menu_cart.png" />
+    <Content Include="Appv\images\cssIndex\wdp\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\wdp\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\wdp\menu_news.png" />
+    <Content Include="Appv\images\cssIndex\wdp\menu_pros.png" />
+    <Content Include="Appv\images\cssIndex\wdp\menu_up.png" />
+    <Content Include="Appv\images\cssIndex\wdp\tb_03-03.png" />
+    <Content Include="Appv\images\cssIndex\wdp\tb_03-04.png" />
+    <Content Include="Appv\images\cssIndex\wdp\tb_03-05.png" />
+    <Content Include="Appv\images\cssIndex\wdp\tb_03-06.png" />
+    <Content Include="Appv\images\cssIndex\wdp\tb_03.png" />
+    <Content Include="Appv\images\cssIndex\wdp\topMenu_sub_bg.png" />
+    <Content Include="Appv\images\cssIndex\wdp\topMenu_sub_bottom.png" />
+    <Content Include="Appv\images\cssIndex\wdp\topMenu_sub_header.png" />
+    <Content Include="Appv\images\cssIndex\wdp\topMenu_sub_li.png" />
+    <Content Include="Appv\images\cssIndex\wdp\wa_03.png" />
+    <Content Include="Appv\images\cssIndex\wdp\wa_05.png" />
+    <Content Include="Appv\images\cssIndex\wdp\wa_09.png" />
+    <Content Include="Appv\images\cssIndex\wdp\wa_11.png" />
+    <Content Include="Appv\images\cssIndex\wdp\wa_13.png" />
+    <Content Include="Appv\images\cssIndex\wdp\wd.jpg" />
+    <Content Include="Appv\images\cssIndex\white\Apps_main.css" />
+    <Content Include="Appv\images\cssIndex\white\Apps_win.css" />
+    <Content Include="Appv\images\cssIndex\white\bodynei_bg.png" />
+    <Content Include="Appv\images\cssIndex\white\body_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\white\comm.css" />
+    <Content Include="Appv\images\cssIndex\white\image\index_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\white\index.css" />
+    <Content Include="Appv\images\cssIndex\white\index.jpg" />
+    <Content Include="Appv\images\cssIndex\white\tb_2d.png" />
+    <Content Include="Appv\images\cssIndex\white\tb_3d.png" />
+    <Content Include="Appv\images\cssIndex\white\tb_aboutus.png" />
+    <Content Include="Appv\images\cssIndex\white\tb_contactus.png" />
+    <Content Include="Appv\images\cssIndex\white\tb_news.png" />
+    <Content Include="Appv\images\cssIndex\white\tb_pros.png" />
+    <Content Include="Appv\images\cssIndex\win8\Apps_main.css" />
+    <Content Include="Appv\images\cssIndex\win8\Apps_win.css" />
+    <Content Include="Appv\images\cssIndex\win8\bodynei_bg.png" />
+    <Content Include="Appv\images\cssIndex\win8\body_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\win8\btn1.png" />
+    <Content Include="Appv\images\cssIndex\win8\btn2.png" />
+    <Content Include="Appv\images\cssIndex\win8\btnDel.png" />
+    <Content Include="Appv\images\cssIndex\win8\btnMod.png" />
+    <Content Include="Appv\images\cssIndex\win8\btnOrder.gif" />
+    <Content Include="Appv\images\cssIndex\win8\btnOrder.png" />
+    <Content Include="Appv\images\cssIndex\win8\btn_bg2.png" />
+    <Content Include="Appv\images\cssIndex\win8\comm.css" />
+    <Content Include="Appv\images\cssIndex\win8\detail.css" />
+    <Content Include="Appv\images\cssIndex\win8\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\win8\image\index_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\win8\index.css" />
+    <Content Include="Appv\images\cssIndex\win8\index.jpg" />
+    <Content Include="Appv\images\cssIndex\win8\jjks.png" />
+    <Content Include="Appv\images\cssIndex\win8\list.css" />
+    <Content Include="Appv\images\cssIndex\win8\ljms.png" />
+    <Content Include="Appv\images\cssIndex\win8\ljtg.png" />
+    <Content Include="Appv\images\cssIndex\win8\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\win8\menu_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\win8\menu_cart.png" />
+    <Content Include="Appv\images\cssIndex\win8\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\win8\menu_helps.png" />
+    <Content Include="Appv\images\cssIndex\win8\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\win8\menu_news.png" />
+    <Content Include="Appv\images\cssIndex\win8\menu_pros.png" />
+    <Content Include="Appv\images\cssIndex\win8\menu_refresh.png" />
+    <Content Include="Appv\images\cssIndex\win8\menu_up.png" />
+    <Content Include="Appv\images\cssIndex\win8\msjs.png" />
+    <Content Include="Appv\images\cssIndex\win8\nlwl.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_2d.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_2d_bg.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_3d.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_3d_bg.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_aboutus.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_aboutus_bg.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_bg.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_contactus.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_contactus_bg.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_news.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_news_bg.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_pros.png" />
+    <Content Include="Appv\images\cssIndex\win8\tb_pros_bg.png" />
+    <Content Include="Appv\images\cssIndex\win8\topMenu_sub_bg.png" />
+    <Content Include="Appv\images\cssIndex\win8\topMenu_sub_bottom.png" />
+    <Content Include="Appv\images\cssIndex\win8\topMenu_sub_header.png" />
+    <Content Include="Appv\images\cssIndex\win8\topMenu_sub_li.png" />
+    <Content Include="Appv\images\cssIndex\wine\3.png" />
+    <Content Include="Appv\images\cssIndex\wine\7.png" />
+    <Content Include="Appv\images\cssIndex\wine\Apps_main.css" />
+    <Content Include="Appv\images\cssIndex\wine\Apps_win.css" />
+    <Content Include="Appv\images\cssIndex\wine\arrow.png" />
+    <Content Include="Appv\images\cssIndex\wine\bodynei_bg.png" />
+    <Content Include="Appv\images\cssIndex\wine\body_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\wine\btn1.png" />
+    <Content Include="Appv\images\cssIndex\wine\btn2.png" />
+    <Content Include="Appv\images\cssIndex\wine\btn_bg.png" />
+    <Content Include="Appv\images\cssIndex\wine\comm.css" />
+    <Content Include="Appv\images\cssIndex\wine\detail.css" />
+    <Content Include="Appv\images\cssIndex\wine\image\index_bg.jpg" />
+    <Content Include="Appv\images\cssIndex\wine\index.css" />
+    <Content Include="Appv\images\cssIndex\wine\index.jpg" />
+    <Content Include="Appv\images\cssIndex\wine\Larrow.jpg" />
+    <Content Include="Appv\images\cssIndex\wine\list.css" />
+    <Content Include="Appv\images\cssIndex\wine\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\wine\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\wine\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\wine\Rarrow.jpg" />
+    <Content Include="Appv\images\cssIndex\wine\tb_2d.png" />
+    <Content Include="Appv\images\cssIndex\wine\tb_3d.png" />
+    <Content Include="Appv\images\cssIndex\wine\tb_aboutus.png" />
+    <Content Include="Appv\images\cssIndex\wine\tb_contactus.png" />
+    <Content Include="Appv\images\cssIndex\wine\tb_news.png" />
+    <Content Include="Appv\images\cssIndex\wine\tb_pros.png" />
+    <Content Include="Appv\images\cssIndex\yisa\20141141007550.png" />
+    <Content Include="Appv\images\cssIndex\yisa\20141141008140.png" />
+    <Content Include="Appv\images\cssIndex\yisa\20141141008440.png" />
+    <Content Include="Appv\images\cssIndex\yisa\20141141008530.png" />
+    <Content Include="Appv\images\cssIndex\yisa\20141141009040.png" />
+    <Content Include="Appv\images\cssIndex\yisa\20141141018550.png" />
+    <Content Include="Appv\images\cssIndex\yisa\2014171528280.jpg" />
+    <Content Include="Appv\images\cssIndex\yisa\2014171528390.jpg" />
+    <Content Include="Appv\images\cssIndex\yisa\2014171528480.jpg" />
+    <Content Include="Appv\images\cssIndex\yisa\2014171528590.jpg" />
+    <Content Include="Appv\images\cssIndex\yisa\aa2_06.png" />
+    <Content Include="Appv\images\cssIndex\yisa\bg.png" />
+    <Content Include="Appv\images\cssIndex\yisa\comm.css" />
+    <Content Include="Appv\images\cssIndex\yisa\fsWeixin_apps.js" />
+    <Content Include="Appv\images\cssIndex\yisa\headbg.png" />
+    <Content Include="Appv\images\cssIndex\yisa\icon_guide.png" />
+    <Content Include="Appv\images\cssIndex\yisa\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\yisa\index.css" />
+    <Content Include="Appv\images\cssIndex\yisa\jquery-1.js" />
+    <Content Include="Appv\images\cssIndex\yisa\loading.gif" />
+    <Content Include="Appv\images\cssIndex\yisa\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\yisa\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\yisa\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\yisa\swipe.js" />
+    <Content Include="Appv\images\cssIndex\yisa\tb_more.html" />
+    <Content Include="Appv\images\cssIndex\yisa\tb_others.html" />
+    <Content Include="Appv\images\cssIndex\yisa\tb_others3.html" />
+    <Content Include="Appv\images\cssIndex\yisa\wsite.css" />
+    <Content Include="Appv\images\cssIndex\yisa\yisa_detail.css" />
+    <Content Include="Appv\images\cssIndex\ytz\comm.css" />
+    <Content Include="Appv\images\cssIndex\ytz\fw.png" />
+    <Content Include="Appv\images\cssIndex\ytz\hd.png" />
+    <Content Include="Appv\images\cssIndex\ytz\home.png" />
+    <Content Include="Appv\images\cssIndex\ytz\image\bg.jpg" />
+    <Content Include="Appv\images\cssIndex\ytz\image\bg_bottom.jpg" />
+    <Content Include="Appv\images\cssIndex\ytz\image\headbg.png" />
+    <Content Include="Appv\images\cssIndex\ytz\image\logo.png" />
+    <Content Include="Appv\images\cssIndex\ytz\image\tubiao.png" />
+    <Content Include="Appv\images\cssIndex\ytz\index.css" />
+    <Content Include="Appv\images\cssIndex\ytz\menu_back.png" />
+    <Content Include="Appv\images\cssIndex\ytz\menu_down.png" />
+    <Content Include="Appv\images\cssIndex\ytz\menu_home.png" />
+    <Content Include="Appv\images\cssIndex\ytz\ytz.png" />
+    <Content Include="Appv\images\cssList\list_2\bg_bottom_list.jpg" />
+    <Content Include="Appv\images\cssList\list_2\list.css" />
+    <Content Include="Appv\images\cssList\list_2\tm.png" />
+    <Content Include="Appv\images\cssList\list_3\bg.jpg" />
+    <Content Include="Appv\images\cssList\list_3\divbj01.png" />
+    <Content Include="Appv\images\cssList\list_3\divbj02.png" />
+    <Content Include="Appv\images\cssList\list_3\divbj03.png" />
+    <Content Include="Appv\images\cssList\list_3\list.css" />
+    <Content Include="Appv\images\cssList\list_3\tm.png" />
+    <Content Include="Appv\images\cssList\list_comm\list.css" />
+    <Content Include="Appv\images\icon_back.png" />
+    <Content Include="Appv\images\icon_guide.png" />
+    <Content Include="Appv\images\icon_msg.png" />
+    <Content Include="Appv\images\icon_tel.png" />
+    <Content Include="Appv\images\icon_timeline.png" />
+    <Content Include="Appv\images\jjks.png" />
+    <Content Include="Appv\images\ljms.png" />
+    <Content Include="Appv\images\ljtg.png" />
+    <Content Include="Appv\images\loading.gif" />
+    <Content Include="Appv\images\msjs.png" />
+    <Content Include="Appv\images\nlwl.png" />
+    <Content Include="Appv\images\nopic.png" />
+    <Content Include="Appv\images\wsite\black\kuai.jpg" />
+    <Content Include="Appv\images\wsite\black\wsite.css" />
+    <Content Include="Appv\images\wsite\blue\kuai.jpg" />
+    <Content Include="Appv\images\wsite\blue\wsite.css" />
+    <Content Include="Appv\images\wsite\green\kuai.jpg" />
+    <Content Include="Appv\images\wsite\green\wsite.css" />
+    <Content Include="Appv\images\wsite\kuai.jpg" />
+    <Content Include="Appv\images\wsite\orange\kuai.jpg" />
+    <Content Include="Appv\images\wsite\orange\wsite.css" />
+    <Content Include="Appv\images\wsite\plug-home.png" />
+    <Content Include="Appv\images\wsite\plug-local.png" />
+    <Content Include="Appv\images\wsite\plug-main.png" />
+    <Content Include="Appv\images\wsite\plug-news.png" />
+    <Content Include="Appv\images\wsite\plug-phone.png" />
+    <Content Include="Appv\images\wsite\red\kuai.jpg" />
+    <Content Include="Appv\images\wsite\red\wsite.css" />
+    <Content Include="Appv\images\wsite\wsite.css" />
+    <Content Include="Appv\images\黑色模板.jpg" />
+    <Content Include="Appv\index.aspx" />
+    <Content Include="Appv\js\Calendar5.js" />
+    <Content Include="Appv\js\CutPic.js" />
+    <Content Include="Appv\js\fsWeixin_apps.js" />
+    <Content Include="Appv\js\fsWeixin_win.js" />
+    <Content Include="Appv\js\jquery-1.10.2.min.js" />
+    <Content Include="Appv\js\jquery-1.7.2.min.js" />
+    <Content Include="Appv\js\jquery.mobile-1.3.2.min.css" />
+    <Content Include="Appv\js\jquery.mobile-1.3.2.min.js" />
+    <Content Include="Appv\js\swipe.js" />
+    <Content Include="Appv\news.aspx" />
+    <Content Include="Appv\newslist.aspx" />
+    <Content Include="Appv\obj\Debug\Technology.csproj.FileListAbsolute.txt" />
+    <Content Include="Appv\obj\Debug\Technology.dll" />
+    <Content Include="Appv\obj\Debug\Technology.pdb" />
+    <Content Include="Appv\photolist.aspx" />
+    <Content Include="Appv\prolist.aspx" />
+    <Content Include="Appv\pros.aspx" />
+    <Content Include="Appv\ShowControl.aspx" />
+    <Content Include="Appv\ShowKeys.aspx" />
+    <Content Include="Appv\shownews.aspx" />
+    <Content Include="Appv\showpro.aspx" />
+    <Content Include="Appv\tpage.aspx" />
+    <Content Include="Appv\tpagelist.aspx" />
+    <Content Include="Appv\upload\201504\04\201504041441030.jpg" />
+    <Content Include="Appv\upload\201504\04\201504041444140.jpg" />
+    <Content Include="Appv\upload\201504\06\201504061736400.jpg" />
+    <Content Include="Appv\upload\201504\06\201504061737170.jpg" />
+    <Content Include="Appv\vipCard.aspx" />
+    <Content Include="Appv\wxv.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Appv\aboutus.aspx.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\aboutus.aspx.designer.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\appv_foot.ascx.cs">
+      <DependentUpon>appv_foot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\appv_foot.ascx.designer.cs">
+      <DependentUpon>appv_foot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\appv_head.ascx.cs">
+      <DependentUpon>appv_head.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\appv_head.ascx.designer.cs">
+      <DependentUpon>appv_head.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\EditVip.aspx.cs">
+      <DependentUpon>EditVip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\EditVip.aspx.designer.cs">
+      <DependentUpon>EditVip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\err.aspx.cs">
+      <DependentUpon>err.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\err.aspx.designer.cs">
+      <DependentUpon>err.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\gongneng.aspx.cs">
+      <DependentUpon>gongneng.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\gongneng.aspx.designer.cs">
+      <DependentUpon>gongneng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\helps.aspx.cs">
+      <DependentUpon>helps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\helps.aspx.designer.cs">
+      <DependentUpon>helps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\honor_action.aspx.cs">
+      <DependentUpon>honor_action.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\honor_action.aspx.designer.cs">
+      <DependentUpon>honor_action.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\honor_action2.aspx.cs">
+      <DependentUpon>honor_action2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\honor_action2.aspx.designer.cs">
+      <DependentUpon>honor_action2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\honor_actionegg.aspx.cs">
+      <DependentUpon>honor_actionegg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\honor_actionegg.aspx.designer.cs">
+      <DependentUpon>honor_actionegg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\honor_cj.ashx.cs">
+      <DependentUpon>honor_cj.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\honor_contactus.aspx.cs">
+      <DependentUpon>honor_contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\honor_contactus.aspx.designer.cs">
+      <DependentUpon>honor_contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\honor_list.aspx.cs">
+      <DependentUpon>honor_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\honor_list.aspx.designer.cs">
+      <DependentUpon>honor_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\honor_youhui.aspx.cs">
+      <DependentUpon>honor_youhui.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\honor_youhui.aspx.designer.cs">
+      <DependentUpon>honor_youhui.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\news.aspx.designer.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\newslist.ashx.cs">
+      <DependentUpon>newslist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\newslist.aspx.cs">
+      <DependentUpon>newslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\newslist.aspx.designer.cs">
+      <DependentUpon>newslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\photolist.aspx.cs">
+      <DependentUpon>photolist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\photolist.aspx.designer.cs">
+      <DependentUpon>photolist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\prolist.ashx.cs">
+      <DependentUpon>prolist.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\prolist.aspx.cs">
+      <DependentUpon>prolist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\prolist.aspx.designer.cs">
+      <DependentUpon>prolist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\pros.aspx.cs">
+      <DependentUpon>pros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\pros.aspx.designer.cs">
+      <DependentUpon>pros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\ShowControl.aspx.cs">
+      <DependentUpon>ShowControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\ShowControl.aspx.designer.cs">
+      <DependentUpon>ShowControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\ShowKeys.aspx.cs">
+      <DependentUpon>ShowKeys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\ShowKeys.aspx.designer.cs">
+      <DependentUpon>ShowKeys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\shownews.aspx.cs">
+      <DependentUpon>shownews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\shownews.aspx.designer.cs">
+      <DependentUpon>shownews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\showpro.aspx.cs">
+      <DependentUpon>showpro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\showpro.aspx.designer.cs">
+      <DependentUpon>showpro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\tpage.aspx.cs">
+      <DependentUpon>tpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\tpage.aspx.designer.cs">
+      <DependentUpon>tpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\tpagelist.aspx.cs">
+      <DependentUpon>tpagelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\tpagelist.aspx.designer.cs">
+      <DependentUpon>tpagelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\vipCard.aspx.cs">
+      <DependentUpon>vipCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\vipCard.aspx.designer.cs">
+      <DependentUpon>vipCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Appv\wanli.cs" />
+    <Compile Include="Appv\wxv.aspx.cs">
+      <DependentUpon>wxv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appv\wxv.aspx.designer.cs">
+      <DependentUpon>wxv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Appv\images\cssIndex\Tnew1\" />
+    <Folder Include="Appv\images\cssIndex\Tnew2\" />
+    <Folder Include="Appv\obj\Debug\TempPE\" />
+    <Folder Include="Appv\Properties\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Appv\honor_cj.ashx" />
+    <None Include="Appv\images\cssIndex\black\黑色模板.psd" />
+    <None Include="Appv\images\cssIndex\jiach\111.psd" />
+    <None Include="Appv\images\cssIndex\jiach\222.psd" />
+    <None Include="Appv\images\cssIndex\jiach\333.psd" />
+    <None Include="Appv\images\cssIndex\jiach\444.psd" />
+    <None Include="Appv\images\cssIndex\jiach\555.psd" />
+    <None Include="Appv\images\cssIndex\jiach\line-bg.psd" />
+    <None Include="Appv\images\cssIndex\win8\111.psd" />
+    <None Include="Appv\images\cssIndex\win8\222.psd" />
+    <None Include="Appv\images\cssIndex\win8\333.psd" />
+    <None Include="Appv\images\cssIndex\win8\444.psd" />
+    <None Include="Appv\images\cssIndex\win8\555.psd" />
+    <None Include="Appv\images\cssIndex\win8\line-bg.psd" />
+    <Content Include="Appv\newslist.ashx" />
+    <Content Include="Appv\prolist.ashx" />
+    <Content Include="Appv\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <Content Include="Appv\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Appv\obj\Debug\Technology.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Com.Alipay\Com.Alipay\Com.Alipay.csproj">
+      <Project>{1A5DEF29-D236-4F28-98A7-E7A739755D96}</Project>
+      <Name>Com.Alipay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Creatrue.Common\Creatrue.Common\Creatrue.Common.csproj">
+      <Project>{5183A7C2-23FD-4A06-BFB6-6DCA5905A44A}</Project>
+      <Name>Creatrue.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Creatrue.kernel\Creatrue.kernel\Creatrue.kernel.csproj">
+      <Project>{D27829F1-A736-4EB0-8A69-1B421362740E}</Project>
+      <Name>Creatrue.kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tdx.database\tdx.database\tdx.database.csproj">
+      <Project>{E4DEEE0D-3D80-485B-BB0E-5BC81BD4C84E}</Project>
+      <Name>tdx.database</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>36255</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

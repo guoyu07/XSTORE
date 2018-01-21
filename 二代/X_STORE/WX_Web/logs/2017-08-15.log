@@ -1,0 +1,81 @@
+2017-08-15 13:37:31.404 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:37:31.405 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 13:37:32.350 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 13:37:32.419 类：BasePage 方法：UserId: _userid:1
+2017-08-15 13:37:32.542 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =1 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-08-15 13:38:38.863 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 13:38:39.407 类：BasePage 方法：UserId: _userid:1
+2017-08-15 13:41:29.787 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:41:29.788 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 13:41:29.795 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 13:41:30.182 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 13:41:30.239 类：BasePage 方法：UserId: _userid:1
+2017-08-15 13:41:30.339 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =1 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-08-15 13:41:30.469 类：BasePage 方法：UserId: _userid:1
+2017-08-15 13:44:54.966 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 13:44:54.974 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:44:54.975 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 13:44:55.316 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 13:44:55.389 类：BasePage 方法：UserId: _userid:1
+2017-08-15 13:44:55.515 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =1 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-08-15 13:44:55.522 类：BasePage 方法：UserId: _userid:1
+2017-08-15 13:44:57.170 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:44:57.171 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 13:44:57.253 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:44:57.253 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:44:57.311 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:46:01.035 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:46:01.036 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 13:46:01.380 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 13:46:01.432 类：BasePage 方法：UserId: _userid:1
+2017-08-15 13:46:01.544 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =1 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-08-15 13:46:37.162 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:46:37.163 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 13:46:41.318 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:46:41.936 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:46:52.817 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:47:31.406 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:47:31.408 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 13:47:31.750 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 13:47:31.809 类：BasePage 方法：UserId: _userid:1
+2017-08-15 13:47:31.937 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =1 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-08-15 13:49:29.725 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:49:29.726 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 13:49:30.167 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 13:49:30.221 类：BasePage 方法：UserId: _userid:1
+2017-08-15 13:49:30.349 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =1 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-08-15 13:58:13.942 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:58:13.999 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 13:58:21.784 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:58:21.785 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 13:58:21.902 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:58:21.903 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 13:58:21.972 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 14:00:22.034 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 14:00:22.035 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 14:00:22.044 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 14:00:22.378 类：BasePage 方法：UserId: _userid:1
+2017-08-15 14:00:22.572 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-15 14:00:22.641 类：BasePage 方法：UserId: _userid:1
+2017-08-15 14:00:22.760 页面：PickUp 方法：PageInit: sql_kw：
+SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id =1 AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id=79
+
+2017-08-15 14:02:53.150 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 14:02:53.150 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 14:02:55.117 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 14:02:55.118 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-15 14:02:55.184 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 14:02:55.184 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-15 14:02:55.234 类：BasePage 方法：UserInfo: UserInfo进入:

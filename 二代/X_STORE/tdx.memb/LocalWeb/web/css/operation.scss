@@ -1,0 +1,58 @@
+.topTitle{
+    width:94%;
+    padding:10px 3%;
+    img{
+        width:40px;
+        height:40px;
+        display:block;
+        border-radius:50%;
+        margin-right:10px;
+    }
+    .disInfo{
+        font:14px/40px "microsoft yahei";
+        color:#000;
+    }
+}
+ul{
+    width:100%;
+    li{
+        width:94%;
+        padding:6px 3%;
+        border-bottom: solid 1px #ccc;
+        .l,.r{
+           font:16px/30px "microsoft yahei";
+            color:#333; 
+        }
+    }
+    .faultStatus{
+        a{
+            width:100%;
+            .l,.r{
+            font:16px/30px "microsoft yahei";
+            color:#333; 
+        }
+        }
+    }
+}
+.btnWrap{
+    width:94%;
+    padding:10px 3%;
+    a{
+        display:inline-block;
+       font:16px/40px "microsoft yahei";
+       color:#fff;
+       background:rgb(239,71,58);
+       text-align: center;
+       width:100%;
+       border-radius: 2px;
+    }
+}
+.thead{
+    width:94%;
+    padding:0 3%;
+    background:#ccc;
+    border-bottom:solid 1px #ccc;
+    font:14px/30px "microsoft yahei";
+    color:#f60;
+    text-align: left;
+}

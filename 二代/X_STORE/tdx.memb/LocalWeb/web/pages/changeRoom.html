@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>幸事多私享空间-申请换房间</title>
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<style>
+			header.mui-bar{
+				background:#fff;
+			}
+			body .mui-content .mui-table-view-cell .roomItem .changeRoom{
+				border-color:#f60;
+				color: #f60;
+			}
+			body .mui-content .mui-table-view-cell .roomItem{
+				padding-right:15px;
+			}
+			body .mui-content .mui-table-view-cell .roomItem label{
+				margin-right:80px;
+			}
+			#OtherHomeListPopOver{
+				width: 90%;
+				margin-left: 5%;
+				height: 400px;
+				background-color: #fff;
+			}
+			._table{
+				width: 100%;
+				background-color: #fff;
+				border: 1px solid #ddd;
+			}
+			._table tr th{
+				padding:10px 8px;
+				border-bottom: 1px solid #ddd;
+				text-align: center;
+				font-size: 15px;
+			}
+			._table tr td{
+				padding:10px 8px;
+				border-bottom: 1px solid #ddd;
+				text-align: center;
+				font-size: 14px;
+			}
+			.popTitle{
+				padding: 10px 15px;
+				font-size: 16px;
+				border-bottom: 1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <h1 class="mui-title">爱之源-学前东路店</h1>
+		</header>
+		<div class="mui-content">
+		    <ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-collapse">
+					<a class="mui-navigate-right title" href="#">砖头房</a>
+					<ul class="mui-table-view mui-table-view-chevron changeRoomWrap">
+						<li class="mui-table-view-cell chevronList  roomItem">
+							<span class="mui-pull-left">1501</span>
+							<input type="button" value="换房" class="mui-pull-right changeRoom">
+							<label class="mui-pull-right"></label>
+						</li>
+						<li class="mui-table-view-cell chevronList roomItem">
+							<span class="mui-pull-left">1502</span>
+							<input type="button" value="换房" class="mui-pull-right changeRoom">
+							<label class="mui-pull-right"></label>
+						</li>
+						<li class="mui-table-view-cell chevronList roomItem">
+							<span class="mui-pull-left">1503</span>
+							<input type="button" value="换房" class="mui-pull-right changeRoom">
+							<label class="mui-pull-right"></label>
+						</li>
+					</ul>
+				</li>
+				<li class="mui-table-view-cell mui-collapse">
+					<a class="mui-navigate-right title" href="#">其他房间</a>
+					<ul class="mui-table-view mui-table-view-chevron otherRoom">
+						<li class="mui-table-view-cell OtherHomeList">
+							<a class="mui-navigate-right" href="#"><span class="mui-pull-left">1501</span></a>							
+						</li>
+						<li class="mui-table-view-cell OtherHomeList">
+							<a class="mui-navigate-right" href="#"><span class="mui-pull-left">1502</span></a>
+						</li>
+						<li class="mui-table-view-cell OtherHomeList">
+							<a class="mui-navigate-right" href="#"><span class="mui-pull-left">1503</span></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="OtherHomeListPopOver" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+			    	<div class="mui-popup-title popTitle">
+			    		商品记录
+			    	</div>
+				    <table border="" cellspacing="" cellpadding="" class="_table">
+				    <thead>
+				      <tr>							  
+					      <th>商品名</th>
+					      <th>单价</th>
+					      <th>箱号</th>
+				   	  </tr>
+				   	<thead>
+				   	<tbody>
+				   		<tr>
+						    <td>白雪公主</td>
+						    <td>¥ <span>99.98</span></td>
+						    <td><span>10</span></td>
+						  </tr>
+				   	</tbody>
+				    </table>
+				</div>
+			</div>
+		</div>
+		<script src="../js/plugins/zepto.min.js"></script>
+		<script src="../js/plugins/mui.min.js"></script>
+		<script src="../js/plugins/mui.picker.min.js"></script>
+		<script src="../js/plugins/layer.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var userId=window.location.href;
+				userId=userId.split('?')[1].split('=')[1];
+				console.log(userId);
+				//换房间
+				mui('body').on('tap','.changeRoom', function(event) {
+					event.stopPropagation();
+					if(!$(this).parent().find('label').attr('data-id')){
+						mui.toast('未选择房间');
+					}else{
+						var oldNum=$(this).parent().attr('id');
+						var toNum=$(this).parent().find('label').attr('data-id');
+						$.ajax({
+							url:'http://x.x-store.com.cn:8092/Home/ApplyChangeRooms',
+							data:{
+								user_id:userId,
+								new_roomsId:toNum,
+								old_roomsId:oldNum
+							},
+							type:'get',
+							dataType:'json',
+							success:function(result){
+								if(result.state==1){
+									layer.open({
+										title:['提交成功','border-bottom:solid 1px #ccc;'],
+										content:result.info,
+										time:2
+									})
+								}else{
+									layer.open({
+										title:['提交失败','border-bottom:solid 1px #ccc;'],
+										content:result.info,
+										time:2
+									})
+								}
+							}
+						})
+					};
+				});
+				//其他房间
+				mui.ajax('http://x.x-store.com.cn:8092/Home/otherRooms',{
+					data:{
+						user_id:userId
+					},
+					dataType:'json',
+					type:'get',
+					success:function(result){
+						console.log(result);
+						if(result.state==1){
+							var content='';
+							for(var i=0;i<result.data.length;i++){
+								content	+= 	'<li class="mui-table-view-cell OtherHomeList" id="'+result.data[i].value+'">'
+										+		'<a class="mui-navigate-right" href="#"><span class="mui-pull-left">'+result.data[i].text+'</span></a>'							
+										+	'</li>'
+							};
+							$('.otherRoom').html(content);
+							$('.otherProduct').html(content);
+						}else{
+							layer.open({
+								content:'数据获取失败',
+								time:2,
+							})
+						}
+					}
+				});
+				//30无销售房间
+				mui.ajax('http://x.x-store.com.cn:8092/Home/changeRooms',{
+					data:{
+						user_id:userId
+					},
+					dataType:'json',
+					type:'get',
+					success:function(result){
+						console.log(result);
+						if(result.state==1){
+							var content='';
+							for(var i=0;i<result.data.length;i++){
+								content	+= '<li class="mui-table-view-cell chevronList roomItem" id="'+result.data[i].value+'">'
+										+		'<span class="mui-pull-left">'+result.data[i].text+'</span>'
+										+		'<input type="button" value="换房" class="mui-pull-right changeRoom"/>'
+										+		'<label class="mui-pull-right"></label>'
+										+	'</li>'
+							};
+							$('.changeRoomWrap').html(content);
+						}else{
+							layer.open({
+								content:'数据获取失败',
+								time:2,
+							})
+						}
+					}
+				});
+				var userPicker1 = new mui.PopPicker();
+				var dataPackage1;
+				//可选房间
+				mui.ajax('http://x.x-store.com.cn:8092/Home/readyToChangeRooms',{
+					data:{
+						user_id:userId
+					},
+					dataType:'json',
+					type:'get',
+					success:function(result){
+						if(result.state==1){
+							dataPackage1=result.data;
+							console.log(dataPackage1);
+							userPicker1.setData(dataPackage1);
+							mui('body').on('tap','.roomItem', function(event) {
+								var result=this.lastElementChild;
+								userPicker1.show(function(items) {
+									result.innerText = items[0].text;
+									result.setAttribute('data-id',items[0].value);
+								});
+							}, false);
+						}else{
+							layer.open({
+								content:'数据获取失败',
+								time:2,
+							})
+						}
+					}
+				});
+				var OtherHomeListPopOver = document.getElementById("OtherHomeListPopOver");
+				OtherHomeListPopOver.style.height = screen.height * 0.6 + 'px';
+				OtherHomeListPopOver.style.bottom = screen.height * 0.15 + 'px';
+				//其他房间商品列表
+				mui('body').on('tap','.OtherHomeList',function(){
+					var that=this;
+					mui.ajax('http://x.x-store.com.cn:8092/Home/otherRoomsDetails',{
+						data:{
+							rooms_id:$(that).attr('id')
+						},
+						dataType:'json',
+						type:'get',
+						success:function(result){
+							console.log(result);
+							if(result.state==1){
+								var content='';
+								for(var i=0;i<result.data.length;i++){
+									content	+= 	'<tr>'
+											+	  '<td>'+result.data[i].goods_name+'</td>'
+											+	  '<td>¥ <span>'+result.data[i].price+'</span></td>'
+											+	  '<td><span>'+result.data[i].box_address+'</span></td>'
+											+	'</tr>'
+								};
+								$('table tbody').html(content);
+							}else{
+								layer.open({
+									content:'数据获取失败',
+									time:2,
+								})
+							}
+						}
+					});
+					mui('#OtherHomeListPopOver').popover('toggle');
+				});
+				mui('.mui-scroll-wrapper').scroll();
+			});
+		</script>
+	</body>
+</html>

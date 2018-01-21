@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A59299BF-D873-43CB-A60C-F31FB74F8072}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LocalWeb</RootNamespace>
+    <AssemblyName>LocalWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.1\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="web\buyerIndex.html" />
+    <Content Include="web\css\buyerIndex.css" />
+    <Content Include="web\css\changePsd.css" />
+    <Content Include="web\css\common.css" />
+    <Content Include="web\css\comprehensive.css" />
+    <Content Include="web\css\deliveryNote.css" />
+    <Content Include="web\css\detail.css" />
+    <Content Include="web\css\disRoomList.css" />
+    <Content Include="web\css\distributer.css" />
+    <Content Include="web\css\equipment.css" />
+    <Content Include="web\css\goodsList.css" />
+    <Content Include="web\css\historyNews.css" />
+    <Content Include="web\css\hotelList.css" />
+    <Content Include="web\css\hotelManager.css" />
+    <Content Include="web\css\layer.css" />
+    <Content Include="web\css\login.css" />
+    <Content Include="web\css\mac.css" />
+    <Content Include="web\css\mui.min.css" />
+    <Content Include="web\css\mui.picker.min.css" />
+    <Content Include="web\css\operateManager.css" />
+    <Content Include="web\css\operation.css" />
+    <Content Include="web\css\payCenter.css" />
+    <Content Include="web\css\paySuccess.css" />
+    <Content Include="web\css\remind.css" />
+    <Content Include="web\css\report.css" />
+    <Content Include="web\css\reset.css" />
+    <Content Include="web\css\roomDetail.css" />
+    <Content Include="web\css\roomGoods.css" />
+    <Content Include="web\css\roomsPickUp.css" />
+    <Content Include="web\css\settlement.css" />
+    <Content Include="web\css\swiper.min.css" />
+    <Content Include="web\distributer.html" />
+    <Content Include="web\fonts\demo.css" />
+    <Content Include="web\fonts\demo_fontclass.html" />
+    <Content Include="web\fonts\demo_symbol.html" />
+    <Content Include="web\fonts\demo_unicode.html" />
+    <Content Include="web\fonts\iconfont.css" />
+    <Content Include="web\fonts\iconfont.js" />
+    <Content Include="web\fonts\iconfont.svg" />
+    <Content Include="web\img\1.png" />
+    <Content Include="web\img\2.png" />
+    <Content Include="web\img\3.png" />
+    <Content Include="web\img\4.png" />
+    <Content Include="web\img\5.png" />
+    <Content Include="web\img\6.png" />
+    <Content Include="web\img\7.png" />
+    <Content Include="web\img\area.png" />
+    <Content Include="web\img\cart.png" />
+    <Content Include="web\img\cart_on.png" />
+    <Content Include="web\img\default.jpg" />
+    <Content Include="web\img\delivery.png" />
+    <Content Include="web\img\disRoom.png" />
+    <Content Include="web\img\disRoom_on.png" />
+    <Content Include="web\img\fail.png" />
+    <Content Include="web\img\guide\active.png" />
+    <Content Include="web\img\guide\bottom.png" />
+    <Content Include="web\img\guide\btns.png" />
+    <Content Include="web\img\guide\no-active.png" />
+    <Content Include="web\img\guide\top.png" />
+    <Content Include="web\img\home.png" />
+    <Content Include="web\img\home_on.png" />
+    <Content Include="web\img\hotel.png" />
+    <Content Include="web\img\list.png" />
+    <Content Include="web\img\list_on.png" />
+    <Content Include="web\img\loading.gif" />
+    <Content Include="web\img\logo.png" />
+    <Content Include="web\img\muwu.jpg" />
+    <Content Include="web\img\myself.png" />
+    <Content Include="web\img\myself_on.png" />
+    <Content Include="web\img\mySpace.png" />
+    <Content Include="web\img\mySpace_on.png" />
+    <Content Include="web\img\news.png" />
+    <Content Include="web\img\news_on.png" />
+    <Content Include="web\img\no-image.jpg" />
+    <Content Include="web\img\no-power.png" />
+    <Content Include="web\img\null.png" />
+    <Content Include="web\img\paymentFail.png" />
+    <Content Include="web\img\paymentSuccessed.png" />
+    <Content Include="web\img\payWaiting.png" />
+    <Content Include="web\img\pickUp.png" />
+    <Content Include="web\img\pickUp_on.png" />
+    <Content Include="web\img\problem.png" />
+    <Content Include="web\img\problem2.png" />
+    <Content Include="web\img\qrcode.jpg" />
+    <Content Include="web\img\report.png" />
+    <Content Include="web\img\report_on.png" />
+    <Content Include="web\img\room-full.png" />
+    <Content Include="web\img\room.png" />
+    <Content Include="web\img\room_off.png" />
+    <Content Include="web\img\shoppingCart.png" />
+    <Content Include="web\img\start.jpg" />
+    <Content Include="web\img\starts\01.png" />
+    <Content Include="web\img\starts\02.png" />
+    <Content Include="web\img\starts\03.png" />
+    <Content Include="web\img\starts\04.png" />
+    <Content Include="web\img\starts\05.png" />
+    <Content Include="web\img\success.png" />
+    <Content Include="web\img\tel.png" />
+    <Content Include="web\img\wx.png" />
+    <Content Include="web\img\xs.png" />
+    <Content Include="web\img\xsd.png" />
+    <Content Include="web\img\xsd_on.png" />
+    <Content Include="web\img\xs_on.png" />
+    <Content Include="web\img\zfb.png" />
+    <Content Include="web\img\_对勾.png" />
+    <Content Include="web\img\对勾.png" />
+    <Content Include="web\js\common.js" />
+    <Content Include="web\js\comprehensive.js" />
+    <Content Include="web\js\comprehensive_hm.js" />
+    <Content Include="web\js\historyNews.js" />
+    <Content Include="web\js\modules\cart.js" />
+    <Content Include="web\js\modules\disMyself.js" />
+    <Content Include="web\js\modules\goodsList.js" />
+    <Content Include="web\js\modules\home.js" />
+    <Content Include="web\js\modules\hotelList.js" />
+    <Content Include="web\js\modules\myself.js" />
+    <Content Include="web\js\modules\mySpace.js" />
+    <Content Include="web\js\modules\news.js" />
+    <Content Include="web\js\modules\pickUp.js" />
+    <Content Include="web\js\modules\roomStatus.js" />
+    <Content Include="web\js\modules\xStore.js" />
+    <Content Include="web\js\plugins\jweixin-1.0.0.js" />
+    <Content Include="web\js\plugins\layer.js" />
+    <Content Include="web\js\plugins\mui.min.js" />
+    <Content Include="web\js\plugins\mui.picker.min.js" />
+    <Content Include="web\js\plugins\need\layer.css" />
+    <Content Include="web\js\plugins\require.min.js" />
+    <Content Include="web\js\plugins\swiper.min.js" />
+    <Content Include="web\js\plugins\touch.js" />
+    <Content Include="web\js\plugins\VConsole.js" />
+    <Content Include="web\js\plugins\vipspa-dev.js" />
+    <Content Include="web\js\plugins\vipspa.js" />
+    <Content Include="web\js\plugins\zepto.min.js" />
+    <Content Include="web\js\roomDetail.js" />
+    <Content Include="web\pages\achievement.html" />
+    <Content Include="web\pages\better.html" />
+    <Content Include="web\pages\better_hm.html" />
+    <Content Include="web\pages\changePsd.html" />
+    <Content Include="web\pages\changeRoom.html" />
+    <Content Include="web\pages\comprehensive.html" />
+    <Content Include="web\pages\comprehensive_hm.html" />
+    <Content Include="web\pages\configure.html" />
+    <Content Include="web\pages\deal.html" />
+    <Content Include="web\pages\deliveryNote.html" />
+    <Content Include="web\pages\deliveryTask.html" />
+    <Content Include="web\pages\detail.html" />
+    <Content Include="web\pages\disRoomList.html" />
+    <Content Include="web\pages\enter.html" />
+    <Content Include="web\pages\goodsList.html" />
+    <Content Include="web\pages\hotelFinance.html" />
+    <Content Include="web\pages\hotelManager.html" />
+    <Content Include="web\pages\login.html" />
+    <Content Include="web\pages\mac.html" />
+    <Content Include="web\pages\noPower.html" />
+    <Content Include="web\pages\operateFinance.html" />
+    <Content Include="web\pages\operateManager.html" />
+    <Content Include="web\pages\operateReport.html" />
+    <Content Include="web\pages\operation.html" />
+    <Content Include="web\pages\payCenter.html" />
+    <Content Include="web\pages\paySuccess.html" />
+    <Content Include="web\pages\payWaiting.html" />
+    <Content Include="web\pages\problem.html" />
+    <Content Include="web\pages\remind.html" />
+    <Content Include="web\pages\report.html" />
+    <Content Include="web\pages\roomDetail.html" />
+    <Content Include="web\pages\roomGoods.html" />
+    <Content Include="web\pages\roomsPickUp.html" />
+    <Content Include="web\pages\settlement.html" />
+    <Content Include="web\psd\01购物.jpg" />
+    <Content Include="web\psd\02产品详情.jpg" />
+    <Content Include="web\psd\03确认订单.jpg" />
+    <Content Include="web\psd\04支付成功.jpg" />
+    <Content Include="web\psd\05我的-2.jpg" />
+    <Content Include="web\psd\05我的.jpg" />
+    <Content Include="web\psd\06关于.jpg" />
+    <Content Include="web\psd\1 登录.jpg" />
+    <Content Include="web\psd\191765861116760642.jpg" />
+    <Content Include="web\psd\2房间.jpg" />
+    <Content Include="web\psd\3房间物品.jpg" />
+    <Content Include="web\psd\4我的.jpg" />
+    <Content Include="web\psd\5L_9LC[_5%28]H63[H}YB5]]7.jpg" />
+    <Content Include="web\psd\5投放记录.jpg" />
+    <Content Include="web\psd\6投放任务.jpg" />
+    <Content Include="web\psd\7修改密码.jpg" />
+    <Content Include="web\psd\8消息.jpg" />
+    <Content Include="web\psd\9消息内容.jpg" />
+    <Content Include="web\views\cart.html" />
+    <Content Include="web\views\disMyself.html" />
+    <Content Include="web\views\goodsList.html" />
+    <Content Include="web\views\home.html" />
+    <Content Include="web\views\hotelList.html" />
+    <Content Include="web\views\myself.html" />
+    <Content Include="web\views\mySpace.html" />
+    <Content Include="web\views\news.html" />
+    <Content Include="web\views\pickUp.html" />
+    <Content Include="web\views\roomSelect.html" />
+    <Content Include="web\views\roomStatus.html" />
+    <Content Include="web\views\x-store.html" />
+    <Content Include="web\views\xsd.html" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Site.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="web\.project" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\buyerIndex.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\cart.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\changePsd.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\common.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\comprehensive.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\dekiveryNote.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\deliveryNote.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\detail.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\disRoomList.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\distributer.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\equipment.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\goodsList.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\historyNews.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\hotelManager.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\index.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\login.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\mac.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\operateManager.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\operation.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\operatManager.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\payCenter.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\paySuccess.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\remind.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\remind_hm.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\report.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\roomDetail.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\roomGoods.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\roomsPickUp.scssc" />
+    <Content Include="web\css\.sass-cache\8e57fcb561d7381a805e389f7ff25b726e0bf0ac\settlement.scssc" />
+    <Content Include="web\css\buyerIndex.scss" />
+    <Content Include="web\css\changePsd.scss" />
+    <Content Include="web\css\common.scss" />
+    <Content Include="web\css\comprehensive.scss" />
+    <Content Include="web\css\deliveryNote.scss" />
+    <Content Include="web\css\detail.scss" />
+    <Content Include="web\css\disRoomList.scss" />
+    <Content Include="web\css\distributer.scss" />
+    <Content Include="web\css\equipment.scss" />
+    <Content Include="web\css\goodsList.scss" />
+    <Content Include="web\css\historyNews.scss" />
+    <Content Include="web\css\hotelManager.scss" />
+    <Content Include="web\css\login.scss" />
+    <Content Include="web\css\mac.scss" />
+    <Content Include="web\css\operateManager.scss" />
+    <Content Include="web\css\operation.scss" />
+    <Content Include="web\css\payCenter.scss" />
+    <Content Include="web\css\paySuccess.scss" />
+    <Content Include="web\css\remind.scss" />
+    <Content Include="web\css\report.scss" />
+    <Content Include="web\css\roomDetail.scss" />
+    <Content Include="web\css\roomGoods.scss" />
+    <Content Include="web\css\roomsPickUp.scss" />
+    <Content Include="web\css\settlement.scss" />
+    <Content Include="web\fonts\iconfont.eot" />
+    <Content Include="web\fonts\iconfont.ttf" />
+    <Content Include="web\fonts\iconfont.woff" />
+    <Content Include="web\fonts\mui.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25987</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:25987/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

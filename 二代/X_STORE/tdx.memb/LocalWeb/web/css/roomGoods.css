@@ -1,0 +1,55 @@
+.topTitle {
+  width: 94%;
+  padding: 6px 3%; }
+  .topTitle .roomNumber, .topTitle .distributer {
+    font: 14px/30px "microsoft yahei";
+    color: #333; }
+
+ul {
+  background: #fff;
+  width: 100%; }
+  ul li {
+    float: left;
+    width: 27%;
+    padding: 3%;
+    border-right: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    text-align: center; }
+    ul li .pic {
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      overflow: hidden; }
+      ul li .pic img {
+        width: 100%;
+        height: auto;
+        display: block; }
+      ul li .pic p {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font: 14px/24px "microsoft yahei";
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        bottom: 0px;
+        left: 0px; }
+    ul li .price {
+      width: 100%;
+      text-align: center;
+      font: 14px/24px "microsoft yahei";
+      color: #F6433C; }
+    ul li .buy, ul li .fault {
+      width: 100%;
+      border-radius: 2px;
+      background: #ff6600;
+      text-align: center;
+      color: #fff;
+      font: 14px/24px "microsoft yahei"; }
+    ul li .fault {
+      background: #999;
+      display: none;
+      color: #fff; }
+  ul li.kong .buy {
+    display: none; }
+  ul li.kong .fault {
+    display: block; }

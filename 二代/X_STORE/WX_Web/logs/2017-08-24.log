@@ -1,0 +1,166 @@
+2017-08-24 10:59:29.574 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：861853031485105
+2017-08-24 10:59:29.575 发送：02383631383533303331343835313035010000000000000000000000 : 
+2017-08-24 10:59:32.859 接收：EF0332110818092E3403383631383533303331343835313035000000000000000000000000000000000000000000000603E1 : 
+2017-08-24 10:59:32.860 类：RemoteBoxHelperNew 方法：checkOk: substr:350000000000000000000000
+2017-08-24 10:59:32.860 类：RemoteBoxHelperNew 方法：checkOk: substr:000000000000000000000000
+2017-08-24 10:59:32.861 类：RemoteBoxHelperNew 方法：checkOk: i:0
+2017-08-24 10:59:32.861 类：RemoteBoxHelperNew 方法：checkOk: startIndex:50
+2017-08-24 10:59:32.862 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 10:59:32.862 页面：qaBoxCheck 方法：qaBoxCheck: 0:True
+2017-08-24 10:59:36.722 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：861853031485105
+2017-08-24 10:59:36.722 发送：02383631383533303331343835313035000100000000000000000000 : 
+2017-08-24 10:59:39.235 接收：EF0332110818092E3403383631383533303331343835313035000000000000000000000000000000000000000000000603E1 : 
+2017-08-24 10:59:39.236 类：RemoteBoxHelperNew 方法：checkOk: substr:350000000000000000000000
+2017-08-24 10:59:39.236 类：RemoteBoxHelperNew 方法：checkOk: substr:000000000000000000000000
+2017-08-24 10:59:39.237 类：RemoteBoxHelperNew 方法：checkOk: i:1
+2017-08-24 10:59:39.237 类：RemoteBoxHelperNew 方法：checkOk: startIndex:52
+2017-08-24 10:59:39.237 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 10:59:39.238 页面：qaBoxCheck 方法：qaBoxCheck: 1:True
+2017-08-24 11:00:43.469 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：861853031485105
+2017-08-24 11:00:43.471 发送：02383631383533303331343835313035000100000000000000000000 : 
+2017-08-24 11:00:45.482 接收：EF0332110818092E3403383631383533303331343835313035000000000000000000000000000000000000000000000603E1 : 
+2017-08-24 11:00:45.483 类：RemoteBoxHelperNew 方法：checkOk: substr:350000000000000000000000
+2017-08-24 11:00:45.483 类：RemoteBoxHelperNew 方法：checkOk: substr:000000000000000000000000
+2017-08-24 11:00:45.484 类：RemoteBoxHelperNew 方法：checkOk: i:1
+2017-08-24 11:00:45.484 类：RemoteBoxHelperNew 方法：checkOk: startIndex:52
+2017-08-24 11:00:45.484 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:00:45.485 页面：qaBoxCheck 方法：qaBoxCheck: 1:True
+2017-08-24 11:28:16.621 类：BasePage 方法：OpenId: _openid:
+2017-08-24 11:28:16.641 类：BasePage 方法：OpenId: Session:
+2017-08-24 11:28:16.641 类：BasePage 方法：OpenId: _openid为空
+2017-08-24 11:28:16.643 类：BasePage 方法：RedrectWeiXin: code为空
+2017-08-24 11:28:16.644 类：BasePage 方法：RedrectWeiXin: URL：https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4b52212c5d5983ad&redirect_uri=http://localhost/shop/pages/qaboxcheck.aspx&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect
+2017-08-24 11:28:16.676 类：BasePage 方法：OpenId: 重新获取_openid：
+2017-08-24 11:28:16.677 类：BasePage 方法：OpenId: 赋值到session：
+2017-08-24 11:37:52.021 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：861853031485105
+2017-08-24 11:37:52.041 发送：02383631383533303331343835313035010101010101010101010101 : 
+2017-08-24 11:37:57.130 接收：EF0332110818092E3403383631383533303331343835313035000000000000000000000000000000000000000000000603E1 : 
+2017-08-24 11:37:57.131 类：RemoteBoxHelperNew 方法：checkOk: substr:350000000000000000000000
+2017-08-24 11:37:57.132 类：RemoteBoxHelperNew 方法：checkOk: substr:000000000000000000000000
+2017-08-24 11:37:57.132 类：RemoteBoxHelperNew 方法：checkOk: i:0
+2017-08-24 11:37:57.132 类：RemoteBoxHelperNew 方法：checkOk: startIndex:50
+2017-08-24 11:37:57.133 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.133 类：RemoteBoxHelperNew 方法：checkOk: i:1
+2017-08-24 11:37:57.133 类：RemoteBoxHelperNew 方法：checkOk: startIndex:52
+2017-08-24 11:37:57.134 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.134 类：RemoteBoxHelperNew 方法：checkOk: i:2
+2017-08-24 11:37:57.134 类：RemoteBoxHelperNew 方法：checkOk: startIndex:54
+2017-08-24 11:37:57.134 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.135 类：RemoteBoxHelperNew 方法：checkOk: i:3
+2017-08-24 11:37:57.135 类：RemoteBoxHelperNew 方法：checkOk: startIndex:56
+2017-08-24 11:37:57.135 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.135 类：RemoteBoxHelperNew 方法：checkOk: i:4
+2017-08-24 11:37:57.136 类：RemoteBoxHelperNew 方法：checkOk: startIndex:58
+2017-08-24 11:37:57.136 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.136 类：RemoteBoxHelperNew 方法：checkOk: i:5
+2017-08-24 11:37:57.136 类：RemoteBoxHelperNew 方法：checkOk: startIndex:60
+2017-08-24 11:37:57.137 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.137 类：RemoteBoxHelperNew 方法：checkOk: i:6
+2017-08-24 11:37:57.137 类：RemoteBoxHelperNew 方法：checkOk: startIndex:62
+2017-08-24 11:37:57.137 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.137 类：RemoteBoxHelperNew 方法：checkOk: i:7
+2017-08-24 11:37:57.138 类：RemoteBoxHelperNew 方法：checkOk: startIndex:64
+2017-08-24 11:37:57.138 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.138 类：RemoteBoxHelperNew 方法：checkOk: i:8
+2017-08-24 11:37:57.139 类：RemoteBoxHelperNew 方法：checkOk: startIndex:66
+2017-08-24 11:37:57.139 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.139 类：RemoteBoxHelperNew 方法：checkOk: i:9
+2017-08-24 11:37:57.140 类：RemoteBoxHelperNew 方法：checkOk: startIndex:68
+2017-08-24 11:37:57.140 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.140 类：RemoteBoxHelperNew 方法：checkOk: i:10
+2017-08-24 11:37:57.140 类：RemoteBoxHelperNew 方法：checkOk: startIndex:70
+2017-08-24 11:37:57.141 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.141 类：RemoteBoxHelperNew 方法：checkOk: i:11
+2017-08-24 11:37:57.141 类：RemoteBoxHelperNew 方法：checkOk: startIndex:72
+2017-08-24 11:37:57.141 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:37:57.142 页面：qaBoxCheck 方法：qaBoxCheck: 0:True
+2017-08-24 11:37:57.142 页面：qaBoxCheck 方法：qaBoxCheck: 1:True
+2017-08-24 11:37:57.142 页面：qaBoxCheck 方法：qaBoxCheck: 2:True
+2017-08-24 11:37:57.142 页面：qaBoxCheck 方法：qaBoxCheck: 3:True
+2017-08-24 11:37:57.143 页面：qaBoxCheck 方法：qaBoxCheck: 4:True
+2017-08-24 11:37:57.143 页面：qaBoxCheck 方法：qaBoxCheck: 5:True
+2017-08-24 11:37:57.143 页面：qaBoxCheck 方法：qaBoxCheck: 6:True
+2017-08-24 11:37:57.143 页面：qaBoxCheck 方法：qaBoxCheck: 7:True
+2017-08-24 11:37:57.144 页面：qaBoxCheck 方法：qaBoxCheck: 8:True
+2017-08-24 11:37:57.144 页面：qaBoxCheck 方法：qaBoxCheck: 9:True
+2017-08-24 11:37:57.144 页面：qaBoxCheck 方法：qaBoxCheck: 10:True
+2017-08-24 11:37:57.144 页面：qaBoxCheck 方法：qaBoxCheck: 11:True
+2017-08-24 11:38:01.308 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-24 11:38:01.836 类：BasePage 方法：UserId: _userid:23
+2017-08-24 11:38:01.839 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-24 11:38:01.840 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-24 11:41:22.976 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：861853031485105
+2017-08-24 11:41:22.977 发送：02383631383533303331343835313035010101010101010101010101 : 
+2017-08-24 11:41:29.816 接收：EF0332110818092E3403383631383533303331343835313035000000000000000000010100000000000000000000000603E3 : 
+2017-08-24 11:41:29.818 类：RemoteBoxHelperNew 方法：checkOk: substr:350000000000000000000101
+2017-08-24 11:41:29.819 类：RemoteBoxHelperNew 方法：checkOk: substr:000000000000000000010100
+2017-08-24 11:41:29.820 类：RemoteBoxHelperNew 方法：checkOk: i:0
+2017-08-24 11:41:29.821 类：RemoteBoxHelperNew 方法：checkOk: startIndex:50
+2017-08-24 11:41:29.821 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:41:29.822 类：RemoteBoxHelperNew 方法：checkOk: i:1
+2017-08-24 11:41:29.822 类：RemoteBoxHelperNew 方法：checkOk: startIndex:52
+2017-08-24 11:41:29.823 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:41:29.824 类：RemoteBoxHelperNew 方法：checkOk: i:2
+2017-08-24 11:41:29.824 类：RemoteBoxHelperNew 方法：checkOk: startIndex:54
+2017-08-24 11:41:29.825 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:41:29.825 类：RemoteBoxHelperNew 方法：checkOk: i:3
+2017-08-24 11:41:29.826 类：RemoteBoxHelperNew 方法：checkOk: startIndex:56
+2017-08-24 11:41:29.827 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:41:29.827 类：RemoteBoxHelperNew 方法：checkOk: i:4
+2017-08-24 11:41:29.828 类：RemoteBoxHelperNew 方法：checkOk: startIndex:58
+2017-08-24 11:41:29.829 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:41:29.829 类：RemoteBoxHelperNew 方法：checkOk: i:5
+2017-08-24 11:41:29.830 类：RemoteBoxHelperNew 方法：checkOk: startIndex:60
+2017-08-24 11:41:29.831 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:41:29.832 类：RemoteBoxHelperNew 方法：checkOk: i:6
+2017-08-24 11:41:29.833 类：RemoteBoxHelperNew 方法：checkOk: startIndex:62
+2017-08-24 11:41:29.833 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:41:29.834 类：RemoteBoxHelperNew 方法：checkOk: i:7
+2017-08-24 11:41:29.835 类：RemoteBoxHelperNew 方法：checkOk: startIndex:64
+2017-08-24 11:41:29.836 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:41:29.837 类：RemoteBoxHelperNew 方法：checkOk: i:8
+2017-08-24 11:41:29.838 类：RemoteBoxHelperNew 方法：checkOk: startIndex:66
+2017-08-24 11:41:29.838 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:41:29.839 类：RemoteBoxHelperNew 方法：checkOk: i:9
+2017-08-24 11:41:29.839 类：RemoteBoxHelperNew 方法：checkOk: startIndex:68
+2017-08-24 11:41:29.840 类：RemoteBoxHelperNew 方法：checkOk: stateCode:01
+2017-08-24 11:41:29.841 类：RemoteBoxHelperNew 方法：checkOk: i:10
+2017-08-24 11:41:29.841 类：RemoteBoxHelperNew 方法：checkOk: startIndex:70
+2017-08-24 11:41:29.842 类：RemoteBoxHelperNew 方法：checkOk: stateCode:01
+2017-08-24 11:41:29.842 类：RemoteBoxHelperNew 方法：checkOk: i:11
+2017-08-24 11:41:29.843 类：RemoteBoxHelperNew 方法：checkOk: startIndex:72
+2017-08-24 11:41:29.844 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-08-24 11:41:29.844 页面：qaBoxCheck 方法：qaBoxCheck: 0:True
+2017-08-24 11:41:29.845 页面：qaBoxCheck 方法：qaBoxCheck: 1:True
+2017-08-24 11:41:29.846 页面：qaBoxCheck 方法：qaBoxCheck: 2:True
+2017-08-24 11:41:29.846 页面：qaBoxCheck 方法：qaBoxCheck: 3:True
+2017-08-24 11:41:29.847 页面：qaBoxCheck 方法：qaBoxCheck: 4:True
+2017-08-24 11:41:29.847 页面：qaBoxCheck 方法：qaBoxCheck: 5:True
+2017-08-24 11:41:29.848 页面：qaBoxCheck 方法：qaBoxCheck: 6:True
+2017-08-24 11:41:29.849 页面：qaBoxCheck 方法：qaBoxCheck: 7:True
+2017-08-24 11:41:29.849 页面：qaBoxCheck 方法：qaBoxCheck: 8:True
+2017-08-24 11:41:29.850 页面：qaBoxCheck 方法：qaBoxCheck: 9:False
+2017-08-24 11:41:29.850 页面：qaBoxCheck 方法：qaBoxCheck: 10:False
+2017-08-24 11:41:29.851 页面：qaBoxCheck 方法：qaBoxCheck: 11:True
+2017-08-24 11:41:29.858 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-08-24 11:41:30.203 类：BasePage 方法：UserId: _userid:23
+2017-08-24 11:41:30.204 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-08-24 11:41:30.204 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-08-24 11:41:30.262 页面：qaBoxCheck 方法：qaBoxCheck: insert_sql：INSERT INTO [dbo].[WP_ 开箱记录表]
+           ([箱子MAC]
+           ,[openid]
+           ,[操作人id]
+           ,[联系电话]
+           ,[操作时间]
+           ,[操作日志]
+           ,[操作结果])
+     VALUES
+           ('861853031485105'
+           ,'o8eAHwCOGWFalh37wPcWYLjQEbRI'
+           ,23
+           ,'13404265055'
+           ,getdate()
+           ,'0,1,2,3,4,5,6,7,8,9,10,11:执行开箱操作'
+           ,'10，11号，开箱失败'')
+2017-08-24 12:35:11.724 接口：Cancellation 方法：ProcessRequest: 进入接口：
+2017-08-24 12:35:15.933 接口：Cancellation 方法：ProcessRequest: user_id：

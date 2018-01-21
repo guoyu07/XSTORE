@@ -1,0 +1,12 @@
+2017-02-06 16:33:44.289  : http://localhost/Shop/error.aspx
+2017-02-06 16:33:53.053  : http://localhost/Shop/error.aspx
+2017-02-06 16:34:17.701  : http://localhost/Shop/error.aspx
+2017-02-06 16:35:48.151  : chuzhiid：0
+2017-02-06 16:47:47.026  : false：System.InvalidCastException: 对象不能从 DBNull 转换为其他类型。
+   在 System.DBNull.System.IConvertible.ToDecimal(IFormatProvider provider)
+   在 System.Convert.ToDecimal(Object value)
+   在 Wx_NewWeb.Shop.jiesuan.Page_Load(Object sender, EventArgs e) 位置 f:\项目最新源码\T+商城\T+\WX_Web\Shop\jiesuan.aspx.cs:行号 282
+2017-02-06 16:55:34.608  : chuzhiid：0
+2017-02-06 16:55:38.468  : 添加储值卡：Success！
+2017-02-06 16:57:20.687  : chuzhiid：0
+2017-02-06 16:57:20.688  : 添加储值卡：Success！

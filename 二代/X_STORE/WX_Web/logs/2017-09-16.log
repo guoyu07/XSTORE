@@ -1,0 +1,286 @@
+2017-09-16 08:56:10.206 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwJv_OKyMpZCcnvlziwglL5Y' AND openid <> ''
+2017-09-16 08:56:10.985 类：BasePage 方法：UserId: _userid:32
+2017-09-16 08:56:11.123 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-16 08:56:11.123 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwJv_OKyMpZCcnvlziwglL5Y' and wp_会员表.openid <> '' and  isshow=1
+2017-09-16 08:56:11.323 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-16 08:56:11.324 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-16 08:56:11.379 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-16 09:13:42.812 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC=''
+2017-09-16 09:16:15.591 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC=''
+2017-09-16 09:16:29.253 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC=''
+2017-09-16 09:17:02.414 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006835'
+2017-09-16 09:17:02.572 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 09:17:02.626 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 09:17:02.752 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 09:17:23.460 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 09:17:34.614 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 09:17:43.822 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 09:18:52.767 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 09:20:38.419 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC=''
+2017-09-16 09:21:24.616 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006835'
+2017-09-16 09:21:28.525 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 09:21:30.366 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 09:21:34.965 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 09:22:34.073 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC=''
+2017-09-16 09:22:42.972 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 09:22:43.177 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006835'
+2017-09-16 09:22:44.017 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 09:22:50.030 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 09:22:53.251 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 09:22:58.912 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 09:23:02.123 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 09:23:04.148 页面：mySpace 方法：goods: a8
+2017-09-16 09:23:04.148 页面：mySpace 方法：goods: a8
+2017-09-16 09:25:06.811 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC=''
+2017-09-16 09:25:09.875 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006835'
+2017-09-16 09:25:12.677 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 09:25:13.970 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 09:25:18.067 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 09:25:39.047 页面：mySpace 方法：goods: a8
+2017-09-16 18:43:39.841 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006835'
+2017-09-16 18:43:44.058 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 18:43:44.108 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 18:43:44.245 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 18:43:44.246 页面：mySpace 方法：goods: a8
+2017-09-16 18:44:18.124 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 18:44:18.170 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 18:44:18.284 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 18:44:18.284 页面：mySpace 方法：goods: a8
+2017-09-16 18:44:29.168 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 18:44:29.214 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 18:44:29.336 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 18:44:29.337 页面：mySpace 方法：goods: a8
+2017-09-16 18:45:02.184 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 18:45:02.231 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 18:45:02.355 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 18:45:02.356 页面：mySpace 方法：goods: a8
+2017-09-16 18:45:11.687 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006835'
+2017-09-16 18:45:11.780 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 18:45:11.826 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 18:45:11.939 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 18:45:11.939 页面：mySpace 方法：goods: a8
+2017-09-16 18:45:53.694 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006835'
+2017-09-16 18:45:54.007 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 18:45:54.051 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 18:45:54.164 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 18:45:54.164 页面：mySpace 方法：goods: a8
+2017-09-16 18:46:01.839 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 18:46:01.886 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 18:46:01.999 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 18:46:01.999 页面：mySpace 方法：goods: a8
+2017-09-16 18:47:06.369 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006835'
+2017-09-16 18:47:06.460 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 18:47:06.505 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 18:47:06.616 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 18:47:06.616 页面：mySpace 方法：goods: a8
+2017-09-16 18:47:54.886 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006835'
+2017-09-16 18:47:55.258 页面：mySpace 方法：goods: Sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,默认商品品名='',默认商品价格='',默认图片路径='',实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id 
+left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  
+where 库位id=251 and WP_箱子表.isshow=1 order by 位置 asc  
+2017-09-16 18:47:55.305 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 18:47:55.409 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 18:47:55.409 页面：mySpace 方法：goods: a8
+2017-09-16 20:01:06.960 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC=''
+2017-09-16 20:03:04.840 页面：mySpace 方法：PageLoad: 进入2:861853032006835
+2017-09-16 20:03:07.721 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-16 20:03:07.721 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwMdHw-coHeul3GY-AuzmFMo' and wp_会员表.openid <> '' and  isshow=1
+2017-09-16 20:03:08.059 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwMdHw-coHeul3GY-AuzmFMo' AND openid <> ''
+2017-09-16 20:03:08.113 类：BasePage 方法：UserId: _userid:58
+2017-09-16 20:03:08.113 页面：enter 方法：submit_button_ServerClick: select_sql:select id from WP_用户权限 where 用户id = 58 and 仓库id in(
+select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '861853032006835')
+2017-09-16 20:03:08.173 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-16 20:03:08.173 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-16 20:03:09.349 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032006835'
+2017-09-16 20:03:09.503 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-09-16 20:03:09.630 页面：mySpace 方法：goods: rexiao_id：42
+2017-09-16 20:03:09.630 页面：mySpace 方法：goods: a8
+2017-09-16 20:03:09.673 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.673 类：roomGoods 方法：link_ul: goods_id：1143
+2017-09-16 20:03:09.673 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.673 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.674 类：roomGoods 方法：link_ul: goods_id：1149
+2017-09-16 20:03:09.674 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.674 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.675 类：roomGoods 方法：link_ul: goods_id：1150
+2017-09-16 20:03:09.675 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.675 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.675 类：roomGoods 方法：link_ul: goods_id：1151
+2017-09-16 20:03:09.676 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.676 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.677 类：roomGoods 方法：link_ul: goods_id：1153
+2017-09-16 20:03:09.677 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.678 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.678 类：roomGoods 方法：link_ul: goods_id：1155
+2017-09-16 20:03:09.678 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.679 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.679 类：roomGoods 方法：link_ul: goods_id：1158
+2017-09-16 20:03:09.679 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.679 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.680 类：roomGoods 方法：link_ul: goods_id：1114
+2017-09-16 20:03:09.680 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.680 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.681 类：roomGoods 方法：link_ul: goods_id：0
+2017-09-16 20:03:09.681 类：roomGoods 方法：link_ul: display:block;
+2017-09-16 20:03:09.681 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.682 类：roomGoods 方法：link_ul: goods_id：1114
+2017-09-16 20:03:09.682 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.682 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.683 类：roomGoods 方法：link_ul: goods_id：1114
+2017-09-16 20:03:09.683 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.683 类：roomGoods 方法：link_ul: 进入了方法
+2017-09-16 20:03:09.684 类：roomGoods 方法：link_ul: goods_id：1114
+2017-09-16 20:03:09.684 类：roomGoods 方法：link_ul: display:none;
+2017-09-16 20:03:09.924 页面：roomDetail 方法：PageInit: sql：SELECT WP_商品表.id,品名,编号new AS 编号,补货商品.箱子位置 AS 位置,补货商品.箱子MAC, wp_商品图片表.图片路径 FROM (SELECT * FROM 视图获取投放商品id WHERE 投放仓库id = 79 AND 投放库位id = 251) AS 补货商品 
+LEFT JOIN WP_商品表 ON 补货商品.最新商品id = WP_商品表.id
+LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号
+2017-09-16 20:03:09.997 类：RemoteBoxHelperNew 方法：OpenRemoteBox: serialNumber：861853032006835
+2017-09-16 20:03:09.998 发送：02383631383533303332303036383335000000000000000001000000 : 
+2017-09-16 20:03:13.704 接收：EF033211090F12270E03383631383533303332303036383335000000000000000000000000000000000000013100020A03ED : 
+2017-09-16 20:03:13.705 类：RemoteBoxHelperNew 方法：checkOk: substr:350000000000000000000000
+2017-09-16 20:03:13.706 类：RemoteBoxHelperNew 方法：checkOk: substr:000000000000000000000000
+2017-09-16 20:03:13.706 类：RemoteBoxHelperNew 方法：checkOk: i:8
+2017-09-16 20:03:13.707 类：RemoteBoxHelperNew 方法：checkOk: startIndex:66
+2017-09-16 20:03:13.707 类：RemoteBoxHelperNew 方法：checkOk: stateCode:00
+2017-09-16 20:03:13.708 页面：roomDetail 方法：OpenBox: 8:True

@@ -1,0 +1,80 @@
+.topic{
+    width:100%;
+    li{
+        float:left;
+        text-align: center;
+        font:15px/40px "microsoft yahei";
+        color:#000;
+        width:20%;
+        margin:0 2.5%;
+        border-bottom:solid 1px #ffffff;
+        position:relative;
+        label{
+            position:absolute;
+            right:0;
+            top:0;
+            padding:2px 3px;
+            font:10px/10px "microsoft yahei";
+            background:#f60;
+            color:#fff;
+            border-radius: 7px;
+        }
+    }
+    li.clickOn{
+        color:#f60;
+        border-bottom:solid 1px #f60;
+    }
+}
+.main{
+    width:94%;
+    padding:10px 3%;
+    height:calc(100% - 73px);
+    height:-webkit-calc(100% - 73px);
+    height:-moz-calc(100% - 73px);
+    overflow-y:auto;
+    .sale,.addGoods,.getGoods,.broadcast{
+        width:100%;
+        display:none;
+        dt{
+            width:100%;
+            font:14px/30px "microsoft yahei";
+            color:#000;
+            border-bottom: solid 1px #f60;
+        }
+        dd{
+            padding:10px 0;
+            width:100%;
+            border-bottom: solid 1px #ccc;
+            h3{
+                margin-bottom: 6px;
+            }
+            h3,p{
+                font: 12px/20px "microsoft yahei";
+                color: #666;
+                span{
+                    color:#f60;
+                }
+            }
+            div{
+                ul{
+                    width:calc(100% - 36px);
+                    width:-webkit-calc(100% - 36px);
+                    width:-moz-calc(100% - 36px);
+                    li{
+                        font:12px/20px "microsoft yahei";
+                        color:#666;
+                        span{
+                            color:#f60;
+                        }
+                    }
+                }
+            }
+        }
+        dd:last-child{
+            border-bottom: none;
+        }
+    }
+    .sale{
+        display: block;
+    }
+}

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F18B278-D81F-4495-891F-260642332CA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tdx</RootNamespace>
+    <AssemblyName>tdx</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\commonTool.cs" />
+    <Compile Include="Common\GetListBy.cs" />
+    <Compile Include="Common\WeChatSendMsg.cs" />
+    <Compile Include="database\B2C_AccOperate.cs" />
+    <Compile Include="database\B2C_Account.cs" />
+    <Compile Include="database\B2C_AccountConfig.cs" />
+    <Compile Include="database\B2C_ADBig.cs" />
+    <Compile Include="database\B2C_ads.cs" />
+    <Compile Include="database\B2C_brand.cs" />
+    <Compile Include="database\B2C_bsjcs.cs" />
+    <Compile Include="database\B2C_Bsj_Act.cs" />
+    <Compile Include="database\B2C_Cards.cs" />
+    <Compile Include="database\B2C_card_action.cs" />
+    <Compile Include="database\B2C_category.cs" />
+    <Compile Include="database\B2C_comcate.cs" />
+    <Compile Include="database\B2C_config.cs" />
+    <Compile Include="database\B2C_dy.cs" />
+    <Compile Include="database\B2C_Franchises.cs" />
+    <Compile Include="database\B2C_Goods.cs" />
+    <Compile Include="database\B2C_Goods_M.cs" />
+    <Compile Include="database\B2C_goods_S.cs" />
+    <Compile Include="database\B2C_goods_SV.cs" />
+    <Compile Include="database\B2C_goods_SVD.cs" />
+    <Compile Include="database\B2C_group_fran.cs" />
+    <Compile Include="database\B2C_Hclass.cs" />
+    <Compile Include="database\B2C_HDN.cs" />
+    <Compile Include="database\B2C_Honor.cs" />
+    <Compile Include="database\B2C_lawanli.cs" />
+    <Compile Include="database\B2C_lawcate.cs" />
+    <Compile Include="database\B2C_laws.cs" />
+    <Compile Include="database\B2C_laws_logs.cs" />
+    <Compile Include="database\B2C_laws_notes.cs" />
+    <Compile Include="database\B2C_logs.cs" />
+    <Compile Include="database\B2C_mailaddress.cs" />
+    <Compile Include="database\B2C_mem.cs" />
+    <Compile Include="database\B2C_memvip.cs" />
+    <Compile Include="database\B2C_mem_company.cs" />
+    <Compile Include="database\B2C_mem_d.cs" />
+    <Compile Include="database\B2C_mem_law.cs" />
+    <Compile Include="database\B2C_mem_logs.cs" />
+    <Compile Include="database\B2C_Mem_Mail.cs" />
+    <Compile Include="database\B2C_mem_p.cs" />
+    <Compile Include="database\B2C_menu.cs" />
+    <Compile Include="database\B2C_menu2.cs" />
+    <Compile Include="database\B2C_MS.cs" />
+    <Compile Include="database\B2C_note.cs" />
+    <Compile Include="database\B2C_orders.cs" />
+    <Compile Include="database\B2C_order_d.cs" />
+    <Compile Include="database\B2C_order_log.cs" />
+    <Compile Include="database\B2C_Pclass.cs" />
+    <Compile Include="database\B2C_PeopleInfo.cs" />
+    <Compile Include="database\B2C_Photo.cs" />
+    <Compile Include="database\B2C_rankinfo.cs" />
+    <Compile Include="database\B2C_rankvsfran.cs" />
+    <Compile Include="database\B2C_share.cs" />
+    <Compile Include="database\B2C_share_log.cs" />
+    <Compile Include="database\B2C_shop_config.cs" />
+    <Compile Include="database\B2C_SMS.cs" />
+    <Compile Include="database\B2C_tclass.cs" />
+    <Compile Include="database\B2C_Team.cs" />
+    <Compile Include="database\B2C_tmsg.cs" />
+    <Compile Include="database\B2C_tpage.cs" />
+    <Compile Include="database\B2C_TPclass.cs" />
+    <Compile Include="database\B2C_user.cs" />
+    <Compile Include="database\B2C_user_rank.cs" />
+    <Compile Include="database\B2C_vipcard.cs" />
+    <Compile Include="database\B2C_wallet.cs" />
+    <Compile Include="database\B2C_WeiXin_Class.cs" />
+    <Compile Include="database\B2C_worker.cs" />
+    <Compile Include="database\B2C_worker_sp.cs" />
+    <Compile Include="database\B2C_YHQ.cs" />
+    <Compile Include="database\B2C_ZXZ.cs" />
+    <Compile Include="database\BJ_obj.cs" />
+    <Compile Include="database\BJ_value.cs" />
+    <Compile Include="database\C2C_BaikeApp.cs" />
+    <Compile Include="database\C2C_TranslateEn.cs" />
+    <Compile Include="database\C2C_TranslateZh.cs" />
+    <Compile Include="database\C2C_voucher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="database\C2C_voucher_log.cs" />
+    <Compile Include="database\C2C_WeatherApp.cs" />
+    <Compile Include="database\control_dict.cs" />
+    <Compile Include="database\control_key.cs" />
+    <Compile Include="database\control_obj.cs" />
+    <Compile Include="database\control_user.cs" />
+    <Compile Include="database\control_value.cs" />
+    <Compile Include="database\CutPhotoHelp.cs" />
+    <Compile Include="database\IP_check.cs" />
+    <Compile Include="database\memAuth.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="database\ms_orders.cs" />
+    <Compile Include="database\ms_order_d.cs" />
+    <Compile Include="database\ms_order_log.cs" />
+    <Compile Include="database\orderAuth.cs" />
+    <Compile Include="database\Sub_To_Service.cs" />
+    <Compile Include="database\tm_orders.cs" />
+    <Compile Include="database\tm_order_d.cs" />
+    <Compile Include="database\tm_order_log.cs" />
+    <Compile Include="database\userAuth.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="database\userAuthor.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="database\workAuth.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="database\wx_acm_action.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="database\wx_acm_action_gains.cs" />
+    <Compile Include="database\Wx_action.cs" />
+    <Compile Include="database\Wx_action_gain.cs" />
+    <Compile Include="database\Wx_action_logs.cs" />
+    <Compile Include="database\wx_honor.cs" />
+    <Compile Include="database\wx_keys.cs" />
+    <Compile Include="database\wx_logs.cs" />
+    <Compile Include="database\wx_mp.cs" />
+    <Compile Include="database\wx_tmsg.cs" />
+    <Compile Include="database\wx_userInfo.cs" />
+    <Compile Include="database\wx_youhui.cs" />
+    <Compile Include="database\zagt_Account.cs" />
+    <Compile Include="database\zagt_Goods.cs" />
+    <Compile Include="database\zagt_kemu.cs" />
+    <Compile Include="database\zagt_paytype.cs" />
+    <Compile Include="database\zagt_tmsg.cs" />
+    <Compile Include="database\zagt_user.cs" />
+    <Compile Include="database\zagt_user_price.cs" />
+    <Compile Include="database\zagt_logs.cs" />
+    <Compile Include="kernel\AlipayConfig.cs" />
+    <Compile Include="kernel\AlipayCore.cs" />
+    <Compile Include="kernel\AlipayNotify.cs" />
+    <Compile Include="kernel\AlipayService.cs" />
+    <Compile Include="kernel\AlipaySubmit.cs" />
+    <Compile Include="kernel\comCharset.cs" />
+    <Compile Include="kernel\comCheck.cs" />
+    <Compile Include="kernel\comEncrypt.cs" />
+    <Compile Include="kernel\comfun.cs" />
+    <Compile Include="kernel\comFunction.cs" />
+    <Compile Include="kernel\comINI.cs" />
+    <Compile Include="kernel\comPage.cs" />
+    <Compile Include="kernel\comSendMail.cs" />
+    <Compile Include="kernel\comSUOYIN.cs" />
+    <Compile Include="kernel\comUpload.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kernel\comURL.cs" />
+    <Compile Include="kernel\consts.cs" />
+    <Compile Include="kernel\func.cs" />
+    <Compile Include="kernel\guotaotao.cs" />
+    <Compile Include="kernel\guotaotao2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="kernel\guotaotao3.cs" />
+    <Compile Include="kernel\QQWry.cs" />
+    <Compile Include="kernel\WeChatSendMsg.cs" />
+    <Compile Include="kernel\weixin.cs" />
+    <Compile Include="kernel\weixinAuth.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kernel\ytzWeixin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Creatrue.kernel\Creatrue.kernel\Creatrue.kernel.csproj">
+      <Project>{D27829F1-A736-4EB0-8A69-1B421362740E}</Project>
+      <Name>Creatrue.kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tdx.Weixin\tdx.Weixin\tdx.Weixin.csproj">
+      <Project>{a19ec680-f471-4f67-83a1-ec6bc74d8559}</Project>
+      <Name>tdx.Weixin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

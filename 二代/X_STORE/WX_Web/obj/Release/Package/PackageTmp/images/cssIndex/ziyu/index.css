@@ -1,0 +1,14 @@
+﻿.i_wel,.i_hotLine,.i_foot,.i_head{ display:none;}
+.i_ads{ display:block;}
+.i_content ul li{ height:134px; border:1px solid #ddd; width:28%; margin:2%; float:left; background-color:#e5e5e5;}
+.i_content ul li span{ color:#666666; font-family:"微软雅黑";display: block;  text-align:center; position:absolute; bottom:10px; width:100%;}
+.i_content ul li div ,.i_content ul li p,.i_content ul li p a{ height:100%; display:block; z-index:1;}
+.i_content ul li p a{}
+.i_content ul li p img{ height:80px; margin-top:15px; text-align:center;}
+.i_Navigation{ background-color:#646464; position: fixed; width:50%; padding:8px; border-radius:8px; top:100px;  z-index:3; display:none;}
+.i_Navigation .l_arrow{color: #646464; font-size: 25px; position: relative; top: -15px; height: 8px; overflow: hidden;}
+.i_Navigation ul{ width:100%; margin:auto; }
+.i_Navigation ul li{ float:left; width:46%; padding:2%;}
+.i_Navigation ul li a{ background-color:#787878; color:#fff; display:block; height:2em;  line-height:2em;}
+
+/*变化的CSS*/

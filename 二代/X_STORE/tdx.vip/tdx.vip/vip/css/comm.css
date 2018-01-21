@@ -1,0 +1,15 @@
+﻿*{ position:relative; font-size:12px; margin:0; padding:0; line-height:1.5em;list-style:none;text-decoration:none;}
+body,form{  margin:0; padding:0;}
+ul li a{ color:#fff;}
+.footer{ z-index:999; position:fixed; bottom:0; background-color:#000; width:100%; height:55px; background-image: url( ../image/bgFooter.png )}
+.footer ul{ list-style:none;}
+.footer ul:after{ display:block; content:""; clear:both;}
+.footer ul li{ float:left; width:20%; height:55px;}
+.footer > ul > li > a{ display:block; width:100%; height:100%; text-align:center; text-decoration:none;}
+.footer > ul > li > a > i{ background-image:url( ../image/vip_icon.png ) ; display:block; margin:auto; width:21px; height:21px; margin-top:10px;}
+.footer > ul > li:nth-child(1) > a > i{ background-position: -2px -360px; }
+.footer > ul > li:nth-child(2) > a > i{background-position: 0px -444px; }
+.footer > ul > li:nth-child(3) > a > i{background-position: -1px -390px; }
+.footer > ul > li:nth-child(4) > a > i{background-position: -2px -418px; }
+.footer > ul > li:nth-child(5) > a > i{background-position: -2px -360px; }
+.footer > ul > li > a > span{ color:#fff;}

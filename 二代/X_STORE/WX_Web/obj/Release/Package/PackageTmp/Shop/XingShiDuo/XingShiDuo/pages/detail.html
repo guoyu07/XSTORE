@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>幸事多私享空间-商品详情</title>
+		<link rel="icon" href="../img/logo.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/swiper.min.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/detail.css" />
+		<link rel="stylesheet" href="../css/layer.css" />
+	</head>
+	<body>
+		<div class="main" style="-webkit-overflow-scrolling:touch;">
+			<div class="banner swiper-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<img src="../img/hotel.png" alt="">
+					</li>
+					<li class="swiper-slide">
+						<img src="../img/hotel.png" alt="">
+					</li>
+					<li class="swiper-slide">
+						<img src="../img/hotel.png" alt="">
+					</li>
+				</ul>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="clearfix pd3">
+				<div class="l goodsName">公鸡面</div>
+				<div class="r goodsPrice">¥ <span>99.98</span></div>
+			</div>
+			<div class="pd3 des">
+				就是一碗方便面嘛搞得那么高大上干啥呀！
+			</div>
+			<div class="goodsInfo pd3">
+				<ul class="topic clearfix">
+					<li class="clickOn">商品详情</li>
+					<li>商品1</li>
+					<li>商品2</li>
+					<li>商品3</li>
+				</ul>
+				<dl class="goodsContent">
+					<dd class="showTime">
+						<div class="remind">
+							<p>选择一个商品后，您可以直接购买。如果还需要购买其他物品，可以先把本物品放到购物车内，然后统一付款。</p>
+						</div>
+						<img src="../img/1.png" alt="" />
+						<img src="../img/2.png" alt="" />
+						<img src="../img/3.png" alt="" />
+					</dd>
+					<dd>
+						<img src="../img/2.png" alt="" />
+						<img src="../img/3.png" alt="" />
+						<img src="../img/4.png" alt="" />
+					</dd>
+					<dd>
+						<img src="../img/3.png" alt="" />
+						<img src="../img/4.png" alt="" />
+						<img src="../img/5.png" alt="" />
+					</dd>
+					<dd>
+						<img src="../img/4.png" alt="" />
+						<img src="../img/5.png" alt="" />
+						<img src="../img/6.png" alt="" />
+					</dd>
+				</dl>
+			</div>
+		</div>
+	<div class="settlement clearfix">
+		<div class="priceInfo l">
+			价格: ¥ <span>99.98</span>
+		</div>
+		<a class="buyBtn r" href="payCenter.html">
+			立即购买
+		</a>
+		<a class="addCart r">
+			加入购物车
+		</a>
+	</div>
+	<div class="cartLabel">
+		<a href="../buyerIndex.html#cart">
+			<span>6</span>
+			<img src="../img/shoppingCart.png" alt="" />
+		</a>
+	</div>
+	<script src="../js/plugins/zepto.min.js"></script>
+	<script src="../js/plugins/swiper.min.js"></script>
+	<script src="../js/plugins/layer.js"></script>
+	<script>
+		$(function(){
+			    $('.addCart').on('click', function () {
+			    	layer.open({
+                        content:'加入购物车',
+                        btn:['ok'],
+                        yes: function (index) {
+                            $('.cartLabel span').text(99);
+                            layer.close(index);
+                        }
+                    });
+                   /* $.ajax({
+                        url: '../ashx/addcart.ashx',
+                        data: {
+                            addgoodsid: $('#goods_infoA').text(),
+                            addgoodsweizhi: $('#goods_infoB').text(),
+                            addgoodskwid:$('#goods_infoC').text()
+                        },
+                        type: 'get',
+                        success: function (result) {
+                            layer.open({
+                                content:'加入购物车',
+                                btn:['ok'],
+                                yes: function (index) {
+                                    $('.cartLabel span').text(result);
+                                    layer.close(index);
+                                }
+                            });
+                        }
+                    })*/
+                })
+			var mySwiper = new Swiper ('.swiper-container', {
+			    direction: 'horizontal',
+			    loop: true,
+			    autoplay:2000,
+			    // 如果需要分页器
+			    pagination: '.swiper-pagination',
+			});
+			$('.topic').on('click','li',function(){
+				$(this).addClass('clickOn').siblings().removeClass('clickOn');
+				var index=$(this).index();
+				$('.goodsContent dd').eq(index).addClass('showTime').siblings().removeClass('showTime');
+			})
+		})
+	</script>
+	</body>
+</html>

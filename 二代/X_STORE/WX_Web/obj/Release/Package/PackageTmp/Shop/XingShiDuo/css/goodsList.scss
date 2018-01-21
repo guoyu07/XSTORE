@@ -1,0 +1,100 @@
+.topNav{
+    width:100%;
+    .l,.r{
+        text-align: center;
+        font:18px/30px "microsoft yahei";
+        color:#000;
+        width:40%;
+        margin:0 5%;
+        border-bottom:solid 1px #ffffff;
+    }
+}
+.ReportInputContaienr{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .line{
+        width: 5%;
+        font-size: 12px;
+        overflow: hidden;
+        position:relative;
+        top:6px;
+    }
+    .selectBeginTime,.selectEndTime{
+        width: 40%;
+        text-align: center;
+        color: #666666;
+        input{
+            width:60%;
+            height:22px;
+            font-size: 12px;
+            background:#fff;
+        }
+        label{
+            font:12px/20px "microsoft yahei";
+            color:#999;
+        }
+    }
+    .search{
+        width: 13%;
+        padding: 6px 0;
+        margin-right: 2%;
+        font-size: 12px;
+        background-color: #FF6601;
+        border: 1px solid #FF6601;
+        color: #fff;
+    }
+}
+.goods{
+    width:100%;
+    .sum{
+        width:94%;
+        padding:0 3%;
+        border-bottom: solid 1px #ccc;
+        p{
+            font:16px/30px "microsoft yahei";
+            color:#FF6600;
+        }
+    }
+    table{
+        width:100%;
+        .topic{
+            width:100%;
+        }
+        tr{
+            border-bottom: solid 1px #ccc;
+        }
+        th,td{
+            text-align: center;
+            font:14px/30px "microsoft yahei";
+            color:#666;
+        }
+    }
+    .total_money{
+        width:94%;
+        padding:0 3%;
+        text-align: right;
+        font:16px/30px "microsoft yahei";
+        color:#ff6600;
+    }
+}
+.distributer{
+    display: none;
+    width:100%;
+    dl{
+        width:100%;
+        dt,dd{
+            padding:0 3%;
+            width:94%;
+            font:14px/30px "microsoft yahei";
+            color:#666;
+            border-bottom:solid 1px #ccc;
+        }
+    }
+}

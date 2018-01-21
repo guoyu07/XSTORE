@@ -1,0 +1,614 @@
+2017-10-29 21:02:45.043 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwKMTjxlGQf4Z_wU9oaJGUeE' AND openid <> ''
+2017-10-29 21:02:45.325 类：BasePage 方法：UserId: _userid:283
+2017-10-29 21:02:45.410 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:02:45.410 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwKMTjxlGQf4Z_wU9oaJGUeE' and wp_会员表.openid <> '' and  isshow=1
+2017-10-29 21:02:45.469 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:02:45.470 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:02:45.510 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:03:32.892 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1906
+2017-10-29 21:03:32.971 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1906
+2017-10-29 21:03:33.051 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1906
+2017-10-29 21:03:33.128 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1907
+2017-10-29 21:03:33.208 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1907
+2017-10-29 21:03:33.289 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1907
+2017-10-29 21:03:33.377 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1908
+2017-10-29 21:03:33.517 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1908
+2017-10-29 21:03:34.510 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1908
+2017-10-29 21:03:34.588 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1909
+2017-10-29 21:03:34.669 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1909
+2017-10-29 21:03:34.755 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1909
+2017-10-29 21:03:34.843 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1910
+2017-10-29 21:03:34.965 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1910
+2017-10-29 21:03:35.064 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1910
+2017-10-29 21:03:35.149 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1911
+2017-10-29 21:03:35.238 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1911
+2017-10-29 21:03:35.320 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1911
+2017-10-29 21:03:35.404 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1912
+2017-10-29 21:03:35.492 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1912
+2017-10-29 21:03:35.573 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1912
+2017-10-29 21:03:35.652 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1913
+2017-10-29 21:03:35.734 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1913
+2017-10-29 21:03:35.816 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1913
+2017-10-29 21:03:35.906 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1914
+2017-10-29 21:03:35.996 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1914
+2017-10-29 21:03:36.082 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1914
+2017-10-29 21:03:36.163 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1915
+2017-10-29 21:03:36.257 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1915
+2017-10-29 21:03:36.340 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1915
+2017-10-29 21:03:36.421 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1916
+2017-10-29 21:03:36.538 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1916
+2017-10-29 21:03:36.636 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1916
+2017-10-29 21:03:36.744 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1917
+2017-10-29 21:03:36.875 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1917
+2017-10-29 21:03:36.962 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1917
+2017-10-29 21:03:37.044 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1918
+2017-10-29 21:03:37.126 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1918
+2017-10-29 21:03:37.225 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1918
+2017-10-29 21:03:37.321 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1919
+2017-10-29 21:03:37.406 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1919
+2017-10-29 21:03:37.484 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1919
+2017-10-29 21:03:37.568 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1920
+2017-10-29 21:03:37.649 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1920
+2017-10-29 21:03:37.725 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1920
+2017-10-29 21:03:37.800 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1921
+2017-10-29 21:03:37.880 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1921
+2017-10-29 21:03:37.964 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1921
+2017-10-29 21:03:38.040 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1922
+2017-10-29 21:03:38.121 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1922
+2017-10-29 21:03:38.199 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1922
+2017-10-29 21:03:38.281 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1923
+2017-10-29 21:03:38.365 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1923
+2017-10-29 21:03:38.448 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1923
+2017-10-29 21:03:38.537 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1924
+2017-10-29 21:03:38.616 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1924
+2017-10-29 21:03:38.718 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1924
+2017-10-29 21:03:38.817 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1925
+2017-10-29 21:03:38.893 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1925
+2017-10-29 21:03:39.000 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1925
+2017-10-29 21:07:23.215 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwKMTjxlGQf4Z_wU9oaJGUeE' AND openid <> ''
+2017-10-29 21:07:23.527 类：BasePage 方法：UserId: _userid:283
+2017-10-29 21:07:23.624 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:07:23.624 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwKMTjxlGQf4Z_wU9oaJGUeE' and wp_会员表.openid <> '' and  isshow=1
+2017-10-29 21:07:23.681 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:07:23.681 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:07:23.727 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:07:28.951 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1906
+2017-10-29 21:07:29.066 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1906
+2017-10-29 21:07:29.181 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1906
+2017-10-29 21:07:29.265 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1907
+2017-10-29 21:07:29.354 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1907
+2017-10-29 21:07:29.447 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1907
+2017-10-29 21:07:29.536 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1908
+2017-10-29 21:07:29.617 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1908
+2017-10-29 21:07:29.703 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1908
+2017-10-29 21:07:29.808 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1909
+2017-10-29 21:07:29.920 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1909
+2017-10-29 21:07:30.059 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1909
+2017-10-29 21:07:30.153 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1910
+2017-10-29 21:07:30.239 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1910
+2017-10-29 21:07:30.325 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1910
+2017-10-29 21:07:30.420 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1911
+2017-10-29 21:07:30.503 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1911
+2017-10-29 21:07:30.595 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1911
+2017-10-29 21:07:30.680 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1912
+2017-10-29 21:07:30.761 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1912
+2017-10-29 21:07:30.845 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1912
+2017-10-29 21:07:30.932 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1913
+2017-10-29 21:07:31.015 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1913
+2017-10-29 21:07:31.102 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1913
+2017-10-29 21:07:31.188 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1914
+2017-10-29 21:07:31.273 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1914
+2017-10-29 21:07:31.352 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1914
+2017-10-29 21:07:31.457 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1915
+2017-10-29 21:07:31.541 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1915
+2017-10-29 21:07:31.624 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1915
+2017-10-29 21:07:31.744 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1916
+2017-10-29 21:07:31.989 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1916
+2017-10-29 21:07:32.068 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1916
+2017-10-29 21:07:32.157 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1917
+2017-10-29 21:07:32.244 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1917
+2017-10-29 21:07:32.338 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1917
+2017-10-29 21:07:32.420 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1918
+2017-10-29 21:07:32.504 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1918
+2017-10-29 21:07:32.599 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1918
+2017-10-29 21:07:32.681 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1919
+2017-10-29 21:07:32.771 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1919
+2017-10-29 21:07:32.852 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1919
+2017-10-29 21:07:32.932 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1920
+2017-10-29 21:07:33.011 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1920
+2017-10-29 21:07:33.097 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1920
+2017-10-29 21:07:33.181 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1921
+2017-10-29 21:07:33.264 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1921
+2017-10-29 21:07:33.348 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1921
+2017-10-29 21:07:33.433 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1922
+2017-10-29 21:07:33.516 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1922
+2017-10-29 21:07:33.599 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1922
+2017-10-29 21:07:33.680 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1923
+2017-10-29 21:07:33.766 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1923
+2017-10-29 21:07:33.852 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1923
+2017-10-29 21:07:33.932 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1924
+2017-10-29 21:07:34.012 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1924
+2017-10-29 21:07:34.099 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1924
+2017-10-29 21:07:34.186 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1925
+2017-10-29 21:07:34.270 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1925
+2017-10-29 21:07:34.352 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1925
+2017-10-29 21:07:44.793 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名,WP_商品表.编码 as 实际商品编码 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='1922' and WP_箱子表.status=1 order by 位置 asc
+2017-10-29 21:07:44.859 页面：mySpace 方法：goods: 1：
+2017-10-29 21:07:44.932 页面：mySpace 方法：goods: 2：
+2017-10-29 21:07:44.933 页面：mySpace 方法：goods: rexiao_id：110
+2017-10-29 21:07:44.933 页面：mySpace 方法：goods: 3：
+2017-10-29 21:07:44.934 页面：mySpace 方法：goods: 3：0
+2017-10-29 21:07:44.934 页面：mySpace 方法：goods: 4：0
+2017-10-29 21:07:44.934 页面：mySpace 方法：goods: xxx：1166
+2017-10-29 21:07:44.935 页面：mySpace 方法：goods: 4：0
+2017-10-29 21:07:44.935 页面：mySpace 方法：goods: 5：0
+2017-10-29 21:07:44.935 页面：mySpace 方法：goods: 6：0
+2017-10-29 21:07:44.935 页面：mySpace 方法：goods: 7：0
+2017-10-29 21:07:44.936 页面：mySpace 方法：goods: 3：1
+2017-10-29 21:07:44.936 页面：mySpace 方法：goods: 4：1
+2017-10-29 21:07:44.936 页面：mySpace 方法：goods: xxx：1164
+2017-10-29 21:07:44.936 页面：mySpace 方法：goods: 4：1
+2017-10-29 21:07:44.937 页面：mySpace 方法：goods: 5：1
+2017-10-29 21:07:44.937 页面：mySpace 方法：goods: 6：1
+2017-10-29 21:07:44.937 页面：mySpace 方法：goods: 7：1
+2017-10-29 21:07:44.938 页面：mySpace 方法：goods: 3：2
+2017-10-29 21:07:44.938 页面：mySpace 方法：goods: 4：2
+2017-10-29 21:07:44.938 页面：mySpace 方法：goods: xxx：116
+2017-10-29 21:07:44.938 页面：mySpace 方法：goods: 4：2
+2017-10-29 21:07:44.939 页面：mySpace 方法：goods: 5：2
+2017-10-29 21:07:44.939 页面：mySpace 方法：goods: 6：2
+2017-10-29 21:07:44.939 页面：mySpace 方法：goods: 7：2
+2017-10-29 21:07:44.939 页面：mySpace 方法：goods: 3：3
+2017-10-29 21:07:44.940 页面：mySpace 方法：goods: 4：3
+2017-10-29 21:07:44.940 页面：mySpace 方法：goods: xxx：114
+2017-10-29 21:07:44.940 页面：mySpace 方法：goods: 4：3
+2017-10-29 21:07:44.941 页面：mySpace 方法：goods: 5：3
+2017-10-29 21:07:44.941 页面：mySpace 方法：goods: 6：3
+2017-10-29 21:07:44.942 页面：mySpace 方法：goods: 7：3
+2017-10-29 21:07:44.942 页面：mySpace 方法：goods: 3：4
+2017-10-29 21:07:44.943 页面：mySpace 方法：goods: 4：4
+2017-10-29 21:07:44.943 页面：mySpace 方法：goods: xxx：1160
+2017-10-29 21:07:44.944 页面：mySpace 方法：goods: 4：4
+2017-10-29 21:07:44.945 页面：mySpace 方法：goods: 5：4
+2017-10-29 21:07:44.946 页面：mySpace 方法：goods: 6：4
+2017-10-29 21:07:44.946 页面：mySpace 方法：goods: 7：4
+2017-10-29 21:07:44.947 页面：mySpace 方法：goods: 3：5
+2017-10-29 21:07:44.947 页面：mySpace 方法：goods: 4：5
+2017-10-29 21:07:44.948 页面：mySpace 方法：goods: xxx：112
+2017-10-29 21:07:44.948 页面：mySpace 方法：goods: 4：5
+2017-10-29 21:07:44.949 页面：mySpace 方法：goods: 5：5
+2017-10-29 21:07:44.949 页面：mySpace 方法：goods: 6：5
+2017-10-29 21:07:44.949 页面：mySpace 方法：goods: 7：5
+2017-10-29 21:07:44.950 页面：mySpace 方法：goods: 3：6
+2017-10-29 21:07:44.950 页面：mySpace 方法：goods: 4：6
+2017-10-29 21:07:44.951 页面：mySpace 方法：goods: xxx：1150
+2017-10-29 21:07:44.951 页面：mySpace 方法：goods: 4：6
+2017-10-29 21:07:44.952 页面：mySpace 方法：goods: 5：6
+2017-10-29 21:07:44.953 页面：mySpace 方法：goods: 6：6
+2017-10-29 21:07:44.953 页面：mySpace 方法：goods: 7：6
+2017-10-29 21:07:44.954 页面：mySpace 方法：goods: 3：7
+2017-10-29 21:07:44.954 页面：mySpace 方法：goods: 4：7
+2017-10-29 21:07:44.955 页面：mySpace 方法：goods: xxx：110
+2017-10-29 21:07:44.955 页面：mySpace 方法：goods: 4：7
+2017-10-29 21:07:44.956 页面：mySpace 方法：goods: 5：7
+2017-10-29 21:07:44.956 页面：mySpace 方法：goods: 6：7
+2017-10-29 21:07:44.957 页面：mySpace 方法：goods: 7：7
+2017-10-29 21:07:44.957 页面：mySpace 方法：goods: 3：8
+2017-10-29 21:07:44.957 页面：mySpace 方法：goods: 4：8
+2017-10-29 21:07:44.958 页面：mySpace 方法：goods: xxx：1143
+2017-10-29 21:07:44.958 页面：mySpace 方法：goods: 4：8
+2017-10-29 21:07:44.958 页面：mySpace 方法：goods: 5：8
+2017-10-29 21:07:44.959 页面：mySpace 方法：goods: 6：8
+2017-10-29 21:07:44.959 页面：mySpace 方法：goods: 7：8
+2017-10-29 21:07:44.960 页面：mySpace 方法：goods: 3：9
+2017-10-29 21:07:44.960 页面：mySpace 方法：goods: 4：9
+2017-10-29 21:07:44.961 页面：mySpace 方法：goods: xxx：1140
+2017-10-29 21:07:44.961 页面：mySpace 方法：goods: 4：9
+2017-10-29 21:07:44.963 页面：mySpace 方法：goods: 5：9
+2017-10-29 21:07:44.963 页面：mySpace 方法：goods: 6：9
+2017-10-29 21:07:44.964 页面：mySpace 方法：goods: 7：9
+2017-10-29 21:07:44.964 页面：mySpace 方法：goods: 3：10
+2017-10-29 21:07:44.965 页面：mySpace 方法：goods: 4：10
+2017-10-29 21:07:44.965 页面：mySpace 方法：goods: xxx：1155
+2017-10-29 21:07:44.965 页面：mySpace 方法：goods: 4：10
+2017-10-29 21:07:44.966 页面：mySpace 方法：goods: 5：10
+2017-10-29 21:07:44.966 页面：mySpace 方法：goods: 6：10
+2017-10-29 21:07:44.967 页面：mySpace 方法：goods: 7：10
+2017-10-29 21:07:44.967 页面：mySpace 方法：goods: 3：11
+2017-10-29 21:07:44.968 页面：mySpace 方法：goods: 4：11
+2017-10-29 21:07:44.968 页面：mySpace 方法：goods: xxx：1168
+2017-10-29 21:07:44.969 页面：mySpace 方法：goods: 4：11
+2017-10-29 21:07:44.969 页面：mySpace 方法：goods: 5：11
+2017-10-29 21:07:44.970 页面：mySpace 方法：goods: 6：11
+2017-10-29 21:07:44.970 页面：mySpace 方法：goods: 7：11
+2017-10-29 21:07:45.068 类：roomGoods 方法：link_ul: test：[{"箱子id":8211,"库位id":1922,"位置":1,"默认商品id":1166,"默认商品品名":"漱口水","默认商品价格":"37.07","默认图片路径":"/upload/201710/22/201710221410227674.jpg","默认商品编码":"O","实际商品id":1166,"本站价":37.07,"图片路径":"/upload/201710/22/201710221410227674.jpg","实际商品品名":"漱口水","实际商品编码":"O"},{"箱子id":8212,"库位id":1922,"位置":2,"默认商品id":1164,"默认商品品名":"致薄002","默认商品价格":"26.88","默认图片路径":"/upload/201709/20/201709201732202864.jpg","默认商品编码":"D3","实际商品id":1164,"本站价":26.88,"图片路径":"/upload/201709/20/201709201732202864.jpg","实际商品品名":"致薄002","实际商品编码":"D3"},{"箱子id":8213,"库位id":1922,"位置":3,"默认商品id":116,"默认商品品名":"龙抬头","默认商品价格":"59.99","默认图片路径":"/upload/201706/13/201706131605342746.jpg","默认商品编码":"G","实际商品id":116,"本站价":59.99,"图片路径":"/upload/201706/13/201706131605342746.jpg","实际商品品名":"龙抬头","实际商品编码":"G"},{"箱子id":8214,"库位id":1922,"位置":4,"默认商品id":114,"默认商品品名":"性感内衣","默认商品价格":"38.88","默认图片路径":"/upload/201706/12/201706121517137340.jpg","默认商品编码":"I","实际商品id":114,"本站价":38.88,"图片路径":"/upload/201706/12/201706121517137340.jpg","实际商品品名":"性感内衣","实际商品编码":"I"},{"箱子id":8215,"库位id":1922,"位置":5,"默认商品id":1160,"默认商品品名":"大胆爱","默认商品价格":"22.99","默认图片路径":"/upload/201709/20/201709201358352300.jpg","默认商品编码":"D2","实际商品id":1160,"本站价":22.99,"图片路径":"/upload/201709/20/201709201358352300.jpg","实际商品品名":"大胆爱","实际商品编码":"D2"},{"箱子id":8216,"库位id":1922,"位置":6,"默认商品id":112,"默认商品品名":"粉红跳蛋","默认商品价格":"39.99","默认图片路径":"/upload/201706/15/201706151554496115.png","默认商品编码":"H","实际商品id":112,"本站价":39.99,"图片路径":"/upload/201706/15/201706151554496115.png","实际商品品名":"粉红跳蛋","实际商品编码":"H"},{"箱子id":8217,"库位id":1922,"位置":7,"默认商品id":1150,"默认商品品名":"红肚兜","默认商品价格":"66.66","默认图片路径":"/upload/201708/29/201708291021231040.jpg","默认商品编码":"F9","实际商品id":1150,"本站价":66.66,"图片路径":"/upload/201708/29/201708291021231040.jpg","实际商品品名":"红肚兜","实际商品编码":"F9"},{"箱子id":8218,"库位id":1922,"位置":8,"默认商品id":110,"默认商品品名":"杜蕾斯","默认商品价格":"24.99","默认图片路径":"/upload/201706/12/201706121340484982.jpg","默认商品编码":"D","实际商品id":110,"本站价":24.99,"图片路径":"/upload/201706/12/201706121340484982.jpg","实际商品品名":"杜蕾斯","实际商品编码":"D"},{"箱子id":8219,"库位id":1922,"位置":9,"默认商品id":1143,"默认商品品名":"海豚震动棒","默认商品价格":"68.88","默认图片路径":"/upload/201708/13/201708130638086229.jpg","默认商品编码":"H2","实际商品id":1143,"本站价":68.88,"图片路径":"/upload/201708/13/201708130638086229.jpg","实际商品品名":"海豚震动棒","实际商品编码":"H2"},{"箱子id":8220,"库位id":1922,"位置":10,"默认商品id":1140,"默认商品品名":"性感裙","默认商品价格":"49.99","默认图片路径":"/upload/201708/06/201708061650478225.JPG","默认商品编码":"F6","实际商品id":1140,"本站价":49.99,"图片路径":"/upload/201708/06/201708061650478225.JPG","实际商品品名":"性感裙","实际商品编码":"F6"},{"箱子id":8221,"库位id":1922,"位置":11,"默认商品id":1155,"默认商品品名":"安太医延时","默认商品价格":"25.90","默认图片路径":"/upload/201708/29/201708291038402055.jpg","默认商品编码":"N","实际商品id":1155,"本站价":25.90,"图片路径":"/upload/201708/29/201708291038402055.jpg","实际商品品名":"安太医延时","实际商品编码":"N"},{"箱子id":8222,"库位id":1922,"位置":12,"默认商品id":1168,"默认商品品名":"多频跳蛋","默认商品价格":"69.96","默认图片路径":"/upload/201710/25/201710251530238838.JPG","默认商品编码":"K2","实际商品id":1168,"本站价":69.96,"图片路径":"/upload/201710/25/201710251530238838.JPG","实际商品品名":"多频跳蛋","实际商品编码":"K2"}]
+2017-10-29 21:07:45.070 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.071 类：roomGoods 方法：link_ul: goods_id：1166
+2017-10-29 21:07:45.071 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.072 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.072 类：roomGoods 方法：link_ul: goods_id：1164
+2017-10-29 21:07:45.073 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.073 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.074 类：roomGoods 方法：link_ul: goods_id：116
+2017-10-29 21:07:45.074 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.075 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.075 类：roomGoods 方法：link_ul: goods_id：114
+2017-10-29 21:07:45.076 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.076 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.077 类：roomGoods 方法：link_ul: goods_id：1160
+2017-10-29 21:07:45.077 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.078 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.078 类：roomGoods 方法：link_ul: goods_id：112
+2017-10-29 21:07:45.079 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.079 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.080 类：roomGoods 方法：link_ul: goods_id：1150
+2017-10-29 21:07:45.080 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.081 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.081 类：roomGoods 方法：link_ul: goods_id：110
+2017-10-29 21:07:45.082 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.082 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.082 类：roomGoods 方法：link_ul: goods_id：1143
+2017-10-29 21:07:45.083 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.083 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.084 类：roomGoods 方法：link_ul: goods_id：1140
+2017-10-29 21:07:45.084 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.085 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.085 类：roomGoods 方法：link_ul: goods_id：1155
+2017-10-29 21:07:45.086 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:07:45.086 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:07:45.087 类：roomGoods 方法：link_ul: goods_id：1168
+2017-10-29 21:07:45.087 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:20:29.695 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-10-29 21:20:30.908 类：BasePage 方法：UserId: _userid:1
+2017-10-29 21:20:31.036 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:20:31.036 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-29 21:20:31.092 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:20:31.093 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:20:31.135 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:20:39.117 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-10-29 21:20:39.208 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-10-29 21:20:39.379 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-10-29 21:20:39.469 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=100
+2017-10-29 21:20:39.551 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=100
+2017-10-29 21:20:39.630 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=100
+2017-10-29 21:20:39.712 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=102
+2017-10-29 21:20:39.792 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=102
+2017-10-29 21:20:39.898 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=102
+2017-10-29 21:20:40.027 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=245
+2017-10-29 21:20:40.107 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=245
+2017-10-29 21:20:40.187 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=245
+2017-10-29 21:20:40.270 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=246
+2017-10-29 21:20:40.352 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=246
+2017-10-29 21:20:40.436 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=246
+2017-10-29 21:20:40.516 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=250
+2017-10-29 21:20:40.601 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=250
+2017-10-29 21:20:40.682 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=250
+2017-10-29 21:20:40.771 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=251
+2017-10-29 21:20:40.858 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=251
+2017-10-29 21:20:40.964 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=251
+2017-10-29 21:20:41.043 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1791
+2017-10-29 21:20:41.151 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1791
+2017-10-29 21:20:41.239 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1791
+2017-10-29 21:21:10.182 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-10-29 21:21:10.464 类：BasePage 方法：UserId: _userid:1
+2017-10-29 21:21:10.580 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:21:10.581 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-29 21:21:10.630 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:21:10.630 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:21:10.672 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:21:13.905 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-10-29 21:21:14.031 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-10-29 21:21:14.116 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-10-29 21:21:14.203 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=100
+2017-10-29 21:21:14.287 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=100
+2017-10-29 21:21:14.397 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=100
+2017-10-29 21:21:14.904 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=102
+2017-10-29 21:21:15.157 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=102
+2017-10-29 21:21:15.258 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=102
+2017-10-29 21:21:15.371 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=245
+2017-10-29 21:21:15.466 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=245
+2017-10-29 21:21:15.568 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=245
+2017-10-29 21:21:15.674 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=246
+2017-10-29 21:21:16.043 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=246
+2017-10-29 21:21:16.432 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=246
+2017-10-29 21:21:16.781 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=250
+2017-10-29 21:21:16.871 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=250
+2017-10-29 21:21:16.965 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=250
+2017-10-29 21:21:17.098 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=251
+2017-10-29 21:21:17.182 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=251
+2017-10-29 21:21:17.487 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=251
+2017-10-29 21:21:17.604 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1791
+2017-10-29 21:21:17.689 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1791
+2017-10-29 21:21:17.808 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1791
+2017-10-29 21:40:50.949 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-10-29 21:40:51.299 类：BasePage 方法：UserId: _userid:1
+2017-10-29 21:40:51.413 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:40:51.414 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-29 21:40:51.471 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:40:51.471 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:40:51.522 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:58:17.980 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-10-29 21:58:18.270 类：BasePage 方法：UserId: _userid:1
+2017-10-29 21:58:18.422 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:58:18.422 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-10-29 21:58:18.478 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:58:18.478 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:58:18.521 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-10-29 21:58:24.755 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-10-29 21:58:24.841 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-10-29 21:58:24.921 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=79
+2017-10-29 21:58:25.004 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=100
+2017-10-29 21:58:25.085 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=100
+2017-10-29 21:58:25.201 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=100
+2017-10-29 21:58:25.370 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=102
+2017-10-29 21:58:25.465 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=102
+2017-10-29 21:58:25.555 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=102
+2017-10-29 21:58:25.637 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=245
+2017-10-29 21:58:25.717 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=245
+2017-10-29 21:58:25.800 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=245
+2017-10-29 21:58:25.890 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=246
+2017-10-29 21:58:25.985 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=246
+2017-10-29 21:58:26.068 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=246
+2017-10-29 21:58:26.148 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=250
+2017-10-29 21:58:26.252 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=250
+2017-10-29 21:58:26.336 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=250
+2017-10-29 21:58:26.477 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=251
+2017-10-29 21:58:26.579 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=251
+2017-10-29 21:58:26.675 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=251
+2017-10-29 21:58:26.786 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1791
+2017-10-29 21:58:27.154 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1791
+2017-10-29 21:58:27.296 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=1791
+2017-10-29 21:58:29.345 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名,WP_商品表.编码 as 实际商品编码 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='251' and WP_箱子表.status=1 order by 位置 asc
+2017-10-29 21:58:29.394 页面：mySpace 方法：goods: 1：
+2017-10-29 21:58:29.471 页面：mySpace 方法：goods: 2：
+2017-10-29 21:58:29.471 页面：mySpace 方法：goods: rexiao_id：110
+2017-10-29 21:58:29.472 页面：mySpace 方法：goods: 3：
+2017-10-29 21:58:29.472 页面：mySpace 方法：goods: 3：0
+2017-10-29 21:58:29.473 页面：mySpace 方法：goods: 4：0
+2017-10-29 21:58:29.473 页面：mySpace 方法：goods: xxx：1164
+2017-10-29 21:58:29.474 页面：mySpace 方法：goods: 4：0
+2017-10-29 21:58:29.474 页面：mySpace 方法：goods: 5：0
+2017-10-29 21:58:29.475 页面：mySpace 方法：goods: 6：0
+2017-10-29 21:58:29.475 页面：mySpace 方法：goods: 7：0
+2017-10-29 21:58:29.475 页面：mySpace 方法：goods: 3：1
+2017-10-29 21:58:29.476 页面：mySpace 方法：goods: 4：1
+2017-10-29 21:58:29.476 页面：mySpace 方法：goods: xxx：1163
+2017-10-29 21:58:29.477 页面：mySpace 方法：goods: 4：1
+2017-10-29 21:58:29.477 页面：mySpace 方法：goods: 5：1
+2017-10-29 21:58:29.478 页面：mySpace 方法：goods: 6：1
+2017-10-29 21:58:29.478 页面：mySpace 方法：goods: 7：1
+2017-10-29 21:58:29.478 页面：mySpace 方法：goods: 3：2
+2017-10-29 21:58:29.479 页面：mySpace 方法：goods: 4：2
+2017-10-29 21:58:29.479 页面：mySpace 方法：goods: xxx：1160
+2017-10-29 21:58:29.480 页面：mySpace 方法：goods: 4：2
+2017-10-29 21:58:29.481 页面：mySpace 方法：goods: 5：2
+2017-10-29 21:58:29.481 页面：mySpace 方法：goods: 6：2
+2017-10-29 21:58:29.481 页面：mySpace 方法：goods: 7：2
+2017-10-29 21:58:29.482 页面：mySpace 方法：goods: 3：3
+2017-10-29 21:58:29.482 页面：mySpace 方法：goods: 4：3
+2017-10-29 21:58:29.483 页面：mySpace 方法：goods: xxx：115
+2017-10-29 21:58:29.483 页面：mySpace 方法：goods: 4：3
+2017-10-29 21:58:29.484 页面：mySpace 方法：goods: 5：3
+2017-10-29 21:58:29.484 页面：mySpace 方法：goods: 6：3
+2017-10-29 21:58:29.485 页面：mySpace 方法：goods: 7：3
+2017-10-29 21:58:29.485 页面：mySpace 方法：goods: 3：4
+2017-10-29 21:58:29.486 页面：mySpace 方法：goods: 4：4
+2017-10-29 21:58:29.486 页面：mySpace 方法：goods: xxx：115
+2017-10-29 21:58:29.486 页面：mySpace 方法：goods: 4：4
+2017-10-29 21:58:29.487 页面：mySpace 方法：goods: 5：4
+2017-10-29 21:58:29.487 页面：mySpace 方法：goods: 6：4
+2017-10-29 21:58:29.488 页面：mySpace 方法：goods: 7：4
+2017-10-29 21:58:29.488 页面：mySpace 方法：goods: 3：5
+2017-10-29 21:58:29.489 页面：mySpace 方法：goods: 4：5
+2017-10-29 21:58:29.489 页面：mySpace 方法：goods: xxx：115
+2017-10-29 21:58:29.490 页面：mySpace 方法：goods: 4：5
+2017-10-29 21:58:29.490 页面：mySpace 方法：goods: 5：5
+2017-10-29 21:58:29.490 页面：mySpace 方法：goods: 6：5
+2017-10-29 21:58:29.491 页面：mySpace 方法：goods: 7：5
+2017-10-29 21:58:29.491 页面：mySpace 方法：goods: 3：6
+2017-10-29 21:58:29.492 页面：mySpace 方法：goods: 4：6
+2017-10-29 21:58:29.492 页面：mySpace 方法：goods: xxx：115
+2017-10-29 21:58:29.492 页面：mySpace 方法：goods: 4：6
+2017-10-29 21:58:29.493 页面：mySpace 方法：goods: 5：6
+2017-10-29 21:58:29.493 页面：mySpace 方法：goods: 6：6
+2017-10-29 21:58:29.494 页面：mySpace 方法：goods: 7：6
+2017-10-29 21:58:29.494 页面：mySpace 方法：goods: 3：7
+2017-10-29 21:58:29.495 页面：mySpace 方法：goods: 4：7
+2017-10-29 21:58:29.495 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:29.495 页面：mySpace 方法：goods: 4：7
+2017-10-29 21:58:29.496 页面：mySpace 方法：goods: 5：7
+2017-10-29 21:58:29.496 页面：mySpace 方法：goods: 6：7
+2017-10-29 21:58:29.497 页面：mySpace 方法：goods: 7：7
+2017-10-29 21:58:29.497 页面：mySpace 方法：goods: 3：8
+2017-10-29 21:58:29.497 页面：mySpace 方法：goods: 4：8
+2017-10-29 21:58:29.498 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:29.498 页面：mySpace 方法：goods: 4：8
+2017-10-29 21:58:29.499 页面：mySpace 方法：goods: 5：8
+2017-10-29 21:58:29.499 页面：mySpace 方法：goods: 6：8
+2017-10-29 21:58:29.500 页面：mySpace 方法：goods: 7：8
+2017-10-29 21:58:29.500 页面：mySpace 方法：goods: 3：9
+2017-10-29 21:58:29.500 页面：mySpace 方法：goods: 4：9
+2017-10-29 21:58:29.501 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:29.501 页面：mySpace 方法：goods: 4：9
+2017-10-29 21:58:29.501 页面：mySpace 方法：goods: 5：9
+2017-10-29 21:58:29.502 页面：mySpace 方法：goods: 6：9
+2017-10-29 21:58:29.502 页面：mySpace 方法：goods: 7：9
+2017-10-29 21:58:29.503 页面：mySpace 方法：goods: 3：10
+2017-10-29 21:58:29.503 页面：mySpace 方法：goods: 4：10
+2017-10-29 21:58:29.503 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:29.504 页面：mySpace 方法：goods: 4：10
+2017-10-29 21:58:29.504 页面：mySpace 方法：goods: 5：10
+2017-10-29 21:58:29.505 页面：mySpace 方法：goods: 6：10
+2017-10-29 21:58:29.505 页面：mySpace 方法：goods: 7：10
+2017-10-29 21:58:29.505 页面：mySpace 方法：goods: 3：11
+2017-10-29 21:58:29.506 页面：mySpace 方法：goods: 4：11
+2017-10-29 21:58:29.506 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:29.507 页面：mySpace 方法：goods: 4：11
+2017-10-29 21:58:29.507 页面：mySpace 方法：goods: 5：11
+2017-10-29 21:58:29.508 页面：mySpace 方法：goods: 6：11
+2017-10-29 21:58:29.508 页面：mySpace 方法：goods: 7：11
+2017-10-29 21:58:29.632 类：roomGoods 方法：link_ul: test：[{"箱子id":204,"库位id":251,"位置":1,"默认商品id":1164,"默认商品品名":"致薄002","默认商品价格":"26.88","默认图片路径":"/upload/201709/20/201709201732202864.jpg","默认商品编码":"D3","实际商品id":1164,"本站价":26.88,"图片路径":"/upload/201709/20/201709201732202864.jpg","实际商品品名":"致薄002","实际商品编码":"D3"},{"箱子id":205,"库位id":251,"位置":2,"默认商品id":1163,"默认商品品名":"粉红魔舌","默认商品价格":"69.00","默认图片路径":"/upload/201709/20/201709201730480993.jpg","默认商品编码":"K1","实际商品id":123,"本站价":18.88,"图片路径":"/upload/201706/12/201706121557116509.jpg","实际商品品名":"面膜X2","实际商品编码":"C"},{"箱子id":206,"库位id":251,"位置":3,"默认商品id":1160,"默认商品品名":"大胆爱","默认商品价格":"22.99","默认图片路径":"/upload/201709/20/201709201358352300.jpg","默认商品编码":"D2","实际商品id":1166,"本站价":37.07,"图片路径":"/upload/201710/22/201710221410227674.jpg","实际商品品名":"漱口水","实际商品编码":"O"},{"箱子id":207,"库位id":251,"位置":4,"默认商品id":115,"默认商品品名":"网衣","默认商品价格":"46.99","默认图片路径":"/upload/201706/12/201706121539108050.jpg","默认商品编码":"I1","实际商品id":1168,"本站价":69.96,"图片路径":"/upload/201710/25/201710251530238838.JPG","实际商品品名":"多频跳蛋","实际商品编码":"K2"},{"箱子id":208,"库位id":251,"位置":5,"默认商品id":115,"默认商品品名":"网衣","默认商品价格":"46.99","默认图片路径":"/upload/201706/12/201706121539108050.jpg","默认商品编码":"I1","实际商品id":1160,"本站价":22.99,"图片路径":"/upload/201709/20/201709201358352300.jpg","实际商品品名":"大胆爱","实际商品编码":"D2"},{"箱子id":209,"库位id":251,"位置":6,"默认商品id":115,"默认商品品名":"网衣","默认商品价格":"46.99","默认图片路径":"/upload/201706/12/201706121539108050.jpg","默认商品编码":"I1","实际商品id":1153,"本站价":39.99,"图片路径":"/upload/201708/29/201708291029115882.jpg","实际商品品名":"冈本","实际商品编码":"D1"},{"箱子id":210,"库位id":251,"位置":7,"默认商品id":115,"默认商品品名":"网衣","默认商品价格":"46.99","默认图片路径":"/upload/201706/12/201706121539108050.jpg","默认商品编码":"I1","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":211,"库位id":251,"位置":8,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":212,"库位id":251,"位置":9,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":213,"库位id":251,"位置":10,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":214,"库位id":251,"位置":11,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":215,"库位id":251,"位置":12,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"}]
+2017-10-29 21:58:29.634 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.635 类：roomGoods 方法：link_ul: goods_id：1164
+2017-10-29 21:58:29.636 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.637 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.638 类：roomGoods 方法：link_ul: goods_id：123
+2017-10-29 21:58:29.638 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.639 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.641 类：roomGoods 方法：link_ul: goods_id：1166
+2017-10-29 21:58:29.641 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.642 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.642 类：roomGoods 方法：link_ul: goods_id：1168
+2017-10-29 21:58:29.643 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.644 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.644 类：roomGoods 方法：link_ul: goods_id：1160
+2017-10-29 21:58:29.645 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.646 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.648 类：roomGoods 方法：link_ul: goods_id：1153
+2017-10-29 21:58:29.649 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.650 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.651 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:29.652 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.652 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.653 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:29.654 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.655 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.655 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:29.656 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.657 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.657 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:29.658 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.658 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.659 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:29.659 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:29.660 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:29.661 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:29.662 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:37.306 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名,WP_商品表.编码 as 实际商品编码 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='250' and WP_箱子表.status=1 order by 位置 asc
+2017-10-29 21:58:37.352 页面：mySpace 方法：goods: 1：
+2017-10-29 21:58:37.422 页面：mySpace 方法：goods: 2：
+2017-10-29 21:58:37.423 页面：mySpace 方法：goods: rexiao_id：110
+2017-10-29 21:58:37.423 页面：mySpace 方法：goods: 3：
+2017-10-29 21:58:37.423 页面：mySpace 方法：goods: 3：0
+2017-10-29 21:58:37.424 页面：mySpace 方法：goods: 4：0
+2017-10-29 21:58:37.424 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.425 页面：mySpace 方法：goods: 4：0
+2017-10-29 21:58:37.425 页面：mySpace 方法：goods: 5：0
+2017-10-29 21:58:37.426 页面：mySpace 方法：goods: 6：0
+2017-10-29 21:58:37.426 页面：mySpace 方法：goods: a0
+2017-10-29 21:58:37.427 页面：mySpace 方法：goods: 7：0
+2017-10-29 21:58:37.427 页面：mySpace 方法：goods: 3：1
+2017-10-29 21:58:37.427 页面：mySpace 方法：goods: 4：1
+2017-10-29 21:58:37.428 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.428 页面：mySpace 方法：goods: 4：1
+2017-10-29 21:58:37.429 页面：mySpace 方法：goods: 5：1
+2017-10-29 21:58:37.429 页面：mySpace 方法：goods: 6：1
+2017-10-29 21:58:37.430 页面：mySpace 方法：goods: a1
+2017-10-29 21:58:37.430 页面：mySpace 方法：goods: 7：1
+2017-10-29 21:58:37.431 页面：mySpace 方法：goods: 3：2
+2017-10-29 21:58:37.431 页面：mySpace 方法：goods: 4：2
+2017-10-29 21:58:37.431 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.432 页面：mySpace 方法：goods: 4：2
+2017-10-29 21:58:37.432 页面：mySpace 方法：goods: 5：2
+2017-10-29 21:58:37.433 页面：mySpace 方法：goods: 6：2
+2017-10-29 21:58:37.433 页面：mySpace 方法：goods: 7：2
+2017-10-29 21:58:37.433 页面：mySpace 方法：goods: 3：3
+2017-10-29 21:58:37.434 页面：mySpace 方法：goods: 4：3
+2017-10-29 21:58:37.434 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.435 页面：mySpace 方法：goods: 4：3
+2017-10-29 21:58:37.435 页面：mySpace 方法：goods: 5：3
+2017-10-29 21:58:37.436 页面：mySpace 方法：goods: 6：3
+2017-10-29 21:58:37.436 页面：mySpace 方法：goods: 7：3
+2017-10-29 21:58:37.436 页面：mySpace 方法：goods: 3：4
+2017-10-29 21:58:37.437 页面：mySpace 方法：goods: 4：4
+2017-10-29 21:58:37.437 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.438 页面：mySpace 方法：goods: 4：4
+2017-10-29 21:58:37.438 页面：mySpace 方法：goods: 5：4
+2017-10-29 21:58:37.438 页面：mySpace 方法：goods: 6：4
+2017-10-29 21:58:37.439 页面：mySpace 方法：goods: 7：4
+2017-10-29 21:58:37.439 页面：mySpace 方法：goods: 3：5
+2017-10-29 21:58:37.439 页面：mySpace 方法：goods: 4：5
+2017-10-29 21:58:37.440 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.440 页面：mySpace 方法：goods: 4：5
+2017-10-29 21:58:37.441 页面：mySpace 方法：goods: 5：5
+2017-10-29 21:58:37.441 页面：mySpace 方法：goods: 6：5
+2017-10-29 21:58:37.441 页面：mySpace 方法：goods: 7：5
+2017-10-29 21:58:37.442 页面：mySpace 方法：goods: 3：6
+2017-10-29 21:58:37.442 页面：mySpace 方法：goods: 4：6
+2017-10-29 21:58:37.442 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.443 页面：mySpace 方法：goods: 4：6
+2017-10-29 21:58:37.443 页面：mySpace 方法：goods: 5：6
+2017-10-29 21:58:37.443 页面：mySpace 方法：goods: 6：6
+2017-10-29 21:58:37.443 页面：mySpace 方法：goods: 7：6
+2017-10-29 21:58:37.444 页面：mySpace 方法：goods: 3：7
+2017-10-29 21:58:37.444 页面：mySpace 方法：goods: 4：7
+2017-10-29 21:58:37.444 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.445 页面：mySpace 方法：goods: 4：7
+2017-10-29 21:58:37.445 页面：mySpace 方法：goods: 5：7
+2017-10-29 21:58:37.445 页面：mySpace 方法：goods: 6：7
+2017-10-29 21:58:37.446 页面：mySpace 方法：goods: 7：7
+2017-10-29 21:58:37.446 页面：mySpace 方法：goods: 3：8
+2017-10-29 21:58:37.446 页面：mySpace 方法：goods: 4：8
+2017-10-29 21:58:37.447 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.447 页面：mySpace 方法：goods: 4：8
+2017-10-29 21:58:37.448 页面：mySpace 方法：goods: 5：8
+2017-10-29 21:58:37.448 页面：mySpace 方法：goods: 6：8
+2017-10-29 21:58:37.448 页面：mySpace 方法：goods: 7：8
+2017-10-29 21:58:37.449 页面：mySpace 方法：goods: 3：9
+2017-10-29 21:58:37.449 页面：mySpace 方法：goods: 4：9
+2017-10-29 21:58:37.449 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.450 页面：mySpace 方法：goods: 4：9
+2017-10-29 21:58:37.450 页面：mySpace 方法：goods: 5：9
+2017-10-29 21:58:37.450 页面：mySpace 方法：goods: 6：9
+2017-10-29 21:58:37.451 页面：mySpace 方法：goods: 7：9
+2017-10-29 21:58:37.451 页面：mySpace 方法：goods: 3：10
+2017-10-29 21:58:37.451 页面：mySpace 方法：goods: 4：10
+2017-10-29 21:58:37.452 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.452 页面：mySpace 方法：goods: 4：10
+2017-10-29 21:58:37.453 页面：mySpace 方法：goods: 5：10
+2017-10-29 21:58:37.453 页面：mySpace 方法：goods: 6：10
+2017-10-29 21:58:37.453 页面：mySpace 方法：goods: 7：10
+2017-10-29 21:58:37.454 页面：mySpace 方法：goods: 3：11
+2017-10-29 21:58:37.454 页面：mySpace 方法：goods: 4：11
+2017-10-29 21:58:37.455 页面：mySpace 方法：goods: xxx：1114
+2017-10-29 21:58:37.455 页面：mySpace 方法：goods: 4：11
+2017-10-29 21:58:37.456 页面：mySpace 方法：goods: 5：11
+2017-10-29 21:58:37.456 页面：mySpace 方法：goods: 6：11
+2017-10-29 21:58:37.457 页面：mySpace 方法：goods: 7：11
+2017-10-29 21:58:37.457 类：roomGoods 方法：link_ul: test：[{"箱子id":216,"库位id":250,"位置":1,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":0,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":217,"库位id":250,"位置":2,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":0,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":218,"库位id":250,"位置":3,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":219,"库位id":250,"位置":4,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":220,"库位id":250,"位置":5,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":221,"库位id":250,"位置":6,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":222,"库位id":250,"位置":7,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":223,"库位id":250,"位置":8,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":224,"库位id":250,"位置":9,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":225,"库位id":250,"位置":10,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":226,"库位id":250,"位置":11,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"},{"箱子id":227,"库位id":250,"位置":12,"默认商品id":1114,"默认商品品名":"测试组合01","默认商品价格":"0.01","默认图片路径":"/upload/201706/15/201706151051077242.jpg","默认商品编码":"232","实际商品id":1114,"本站价":0.01,"图片路径":"/upload/201706/15/201706151051077242.jpg","实际商品品名":"测试组合01","实际商品编码":"232"}]
+2017-10-29 21:58:37.458 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.458 类：roomGoods 方法：link_ul: goods_id：0
+2017-10-29 21:58:37.459 类：roomGoods 方法：link_ul: display:block;
+2017-10-29 21:58:37.459 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.460 类：roomGoods 方法：link_ul: goods_id：0
+2017-10-29 21:58:37.460 类：roomGoods 方法：link_ul: display:block;
+2017-10-29 21:58:37.460 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.461 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:37.462 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:37.462 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.463 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:37.463 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:37.463 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.464 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:37.465 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:37.465 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.465 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:37.466 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:37.466 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.467 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:37.467 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:37.468 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.469 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:37.470 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:37.471 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.471 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:37.471 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:37.472 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.472 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:37.473 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:37.473 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.474 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:37.474 类：roomGoods 方法：link_ul: display:none;
+2017-10-29 21:58:37.475 类：roomGoods 方法：link_ul: 进入了方法
+2017-10-29 21:58:37.476 类：roomGoods 方法：link_ul: goods_id：1114
+2017-10-29 21:58:37.476 类：roomGoods 方法：link_ul: display:none;

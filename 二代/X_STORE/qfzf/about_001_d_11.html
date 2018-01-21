@@ -1,0 +1,206 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>灵山_列表页</title>
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/respond.src.js"></script>
+    <link href="css/slider.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="js/jqurey.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!--列表页下拉-->
+    <script src="js/common.js"></script>
+
+    <!--手机导航按钮-->
+    <script src="js/pc_phone.js"></script>
+
+
+    <!--轮播大图-->
+    <script src="js/slider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.banner .list').bxSlider({
+                auto: true
+            });
+        });
+
+    </script>
+
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script><!--tabs选项卡-->
+    <script>  $(function () { $(".tabs").tabs({ event: "mouseover" }); });  </script>
+    <style type="text/css">
+        .shop li.ui-tabs-active {
+            background-color: #bf2b2b;
+        }
+
+            .shop li.ui-tabs-active a {
+                color: #fff;
+            }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById('weixin');
+            var b = document.getElementById('wxm');
+            a.onmouseover = function () {
+                b.style.display = 'block';
+            }
+            a.onmouseout = function () {
+                b.style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+    <body class="style_body">
+
+        <!-- 头部导航开始 -->
+        <div class="top_menu">
+            <div class="logo_img"><img src="images/logo_s.png" /></div>
+            <div class="wrap clear mainNav">
+                <div class="row slide_l">
+                    <div class="clear">
+                        <div class="nav_toggle">
+                            <span class=""></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                    </div>
+                    <div class="nav_bg1">
+                        <ul class="navs clear ">
+                            <li class="first"><a href="index.html"  class="active">首页</a></li><li><a href="ProList_001005_l_1.html">旅游商业规划</a></li><li><a href="ProList_001006_l_1.html">旅游商业策划</a></li><li><a href="ProList_001007_l_1.html">旅游商业场景</a></li><li><a href="ProList_001008_l_1.html">旅游商业体验</a></li><li><a href="ProList_001009_l_1.html">旅游商品研发</a></li><li><a href="ProList_001010_l_1.html">旅游商业管理</a></li><li class="last"><a href="about_001_d_10.html">关于我们</a></li><li class="last"><a href="ProList_001011_l_1.html">项目案例</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                //绑定滚动条事件
+                $(window).bind("scroll", function () {
+                    var sTop = $(window).scrollTop();
+                    var sTop = parseInt(sTop);
+                    if (sTop >= 70) {
+                        $('.top_menu').addClass("headbg");
+                        $('.logo2').addClass("logo");
+                        $('.logo_img').addClass("logo_img_block");
+                    }
+                    else {
+                        $('.top_menu').removeClass("headbg");
+                        $('.logo2').removeClass("logo");
+                        $('.logo_img').removeClass("logo_img_block");
+                    }
+                });
+            })
+        </script>
+        <!-- 头部导航结束 -->
+        <!-- 轮播大图开始 -->
+        <div class="banner">
+            <ul class="list">
+                <li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/20151120920230.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701010.jpg></a></li><li><a href="#" target="_blank"><img onerror="lod(this)" src=/upload/201511/20/201511201701110.jpg></a></li>
+            </ul>
+        </div>
+
+        <!-- 轮播大图结束 -->
+        <!-- 当前位置开始 -->
+        <div class=" box_b">
+            <div class="wrap clear">
+                <div class="selects clear">
+                    <ul class="clear">
+                        <li class="li1">
+                            <div class="dv_select">
+                                <span>公司荣誉</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dv_select">
+                                <span class="shows">公司荣誉</span><div class="slids width1"><a href=about_001_d_11.html class="select">公司荣誉</a><a href=about_001_d_10.html>公司简介</a><a href=about_001_d_12.html>公司荣誉</a><a href=about_001_d_16.html>联络我们</a></div></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mianbao">
+                        <span class="weizhi">当前位置：</span><a href="index.html">首页</a>&gt;<span>公司荣誉</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 当前位置开始 -->
+        <!--内页正文开始-->
+        <div class="box_t">
+            <div class="wrap">
+                <div class="content clear">
+                    <p>1、2014年1月，无锡灵山文化旅游集团有限公司获中国质量中心颁发的&ldquo;温室气体核查合格证书&rdquo;。</p>
+<p>2、2014年3月，无锡灵山文化旅游集团有限公司经中国质量认证中心认证，职业健康安全管理体系符合&ldquo;OHSAS 18001:2007 GB/T 28001-2011标准&rdquo;证书。</p>
+<p>3、2014年3月，无锡灵山文化旅游集团有限公司经中国质量认证中心认证，环境管理体系符合&ldquo;ISO14001：2004 GB/T 24001-2004标准&rdquo;证书。</p>
+<p>4、2014年2月，无锡灵山文化旅游集团有限公司经中国质量认证中心认证，质量管理体系符合&ldquo;ISO9001：2008 GB/T 19001-2008标准&rdquo;证书。</p>
+<p>5、2013年5月，无锡灵山文化旅游集团有限公司经中国质量认证中心认证，通过ISO14064-1：2006核查，获中国质量认证中心颁发铜牌。</p>
+<p>6、2013年9月，无锡灵山文化旅游集团有限公司被国家质检总局、国家旅游局授予&ldquo;2012年度全国旅游服务质量标杆单位&rdquo;铜牌。</p>
+<p>7、2013年10月，无锡灵山文化旅游集团有限公司获中国旅游景区协会颁发的&ldquo;中国旅游景区协会培训示范基地&rdquo;称号。</p>
+<p>8、2013年，无锡灵山文化旅游集团有限公司经中国质量认证中心认证，质量管理体系符合&ldquo;ISO9001：2008 &nbsp;GB/T 19001-2008标准&rdquo;证书。</p>
+<p>9、2013年，无锡灵山文化旅游集团有限公司经中国质量认证中心认证，环境管理体系符合&ldquo;ISO14001：2004 GB/T 24001-2004标准&rdquo;证书。</p>
+<p>10、2013年，无锡灵山文化旅游集团有限公司经中国质量认证中心认证，职业健康安全管理体系符合&ldquo;OHSAS 18001:2007 GB/T 28001-2011标准&rdquo;证书。</p>
+<p>11、2012年5月，。无锡灵山胜境被国家宗教局授予&ldquo;世界佛教论坛永久会址&rdquo;称号。</p>
+<p>12、2012年2月，无锡灵山实业有限责任公司获中国质量中心颁发的&ldquo;温室气体核查合格证书&rdquo;。</p>
+<p>13、2010年12月，&ldquo;灵山吉祥颂&rdquo;演出列入国家文化部、国家旅游局《国家文化旅游重点项目名录&mdash;&mdash;旅游演出类》项目。</p>
+<p>14、2010年12月，无锡灵山实业有限责任公司荣获中国民族建筑研究会、中国文物保护基金会颁发的&ldquo;中国文化传承典范单位&rdquo;称号。</p>
+<p>15、2010年5月，无锡灵山实业有限责任公司荣获中国残疾人联合会中国残疾人福利基金会颁发的&ldquo;白银爱心企业&rdquo;称号。</p>
+<p>16、2010年2月，灵山慈善基金会荣获中华人民共和国民政部颁发的&ldquo;全国先进社会组织&rdquo;称号。</p>
+<p>17、2010年1月，&ldquo;灵山&rdquo;商标荣获国家工商行政管理总局认定的&ldquo;中国驰名商标&rdquo;称号。</p>
+<p>18、2009年11月，灵山胜境三期工程梵宫建筑（建设单位无锡灵山实业有限责任公司）荣获中国建筑协会&ldquo;中国建筑工程鲁班奖&rdquo;的 &ldquo;金人&rdquo;奖杯。</p>
+<p>19、2009年4月，无锡灵山实业有限责任公司荣获中华全国总工会颁发的&ldquo;全国五一劳动奖状&rdquo;。</p>
+<p>20、2009年3月，无锡灵山景区荣获国家旅游局颁发的&ldquo;国家AAAAA级旅游景区&rdquo;称号。</p>
+<p>21、2005年，无锡灵山实业公司荣获第二届企业公民论坛组委会颁发的&ldquo;2005年中国优秀企业公民&rdquo;荣誉称号。</p>
+<p>22、2001年1月，无锡市灵山景区获国家旅游局&ldquo;国家AAAA级&rdquo;旅游区（点）称号。</p>
+                </div>
+            </div>
+        </div>
+        <!--内页正文结束-->
+        <!-- 底部开始-->
+        <div class="foot_bg">
+            <div class="wrap clear">
+                <div class="top_f clear">
+
+                    <div class="left clear">
+
+                        <dl class="action">
+                            <dt>关注我们</dt>
+                            <dd><a href="#" id="weixin">微信<i class="icon_wechat"></i><span class="img_ewm_wechat"></span></a><div id="wxm" class="wxm"><img src="images/weixin.jpg" /></div></dd>
+
+                            <dd><a href="#">新浪<i class="icon_xinl"></i><span class="img_ewm_xinl"></span></a></dd>
+                            <dd class="last"><a href="#">腾讯<i class="icon_tengx"></i><span class="img_ewm_tengx"></span></a></dd>
+                        </dl>
+                    </div>
+                    <ul class="right clear">
+                        <li>
+                            <a href="index.html">灵山首页</a>
+                            <a href="about_001_d_10.html">关于我们</a>
+                            <a href="about_001_d_12.html">联系我们</a>
+                            <a href="#">网络地图</a>
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li>
+                            <p>地址：江苏省无锡市滨湖区马山古竹路18号</p>
+<p>邮编：214091</p>
+<p>电话：0510-85686894</p>
+<p>传真：0510-85686894</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="bottom_f">
+                    <p>版权所有 动力启航 © Copyright 2009 - 2012. dtcms.net. All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;备案号：粤ICP备11064298号</p>
+                    <p>技术支持：<a href="http://www.china-mail.com.cn/" target="_blank">实创科技</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部结束 -->
+
+    </body>
+</html>

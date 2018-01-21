@@ -1,0 +1,78 @@
+2017-09-20 13:26:35.540 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwNDt5cg4Eu6LGZiUpmi0thA' AND openid <> ''
+2017-09-20 13:26:36.938 类：BasePage 方法：UserId: _userid:32
+2017-09-20 13:26:37.100 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 13:26:37.100 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwNDt5cg4Eu6LGZiUpmi0thA' and wp_会员表.openid <> '' and  isshow=1
+2017-09-20 13:26:37.169 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 13:26:37.170 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 13:26:37.255 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 14:57:41.462 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 14:57:41.476 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwNDt5cg4Eu6LGZiUpmi0thA' and wp_会员表.openid <> '' and  isshow=1
+2017-09-20 14:57:41.877 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwNDt5cg4Eu6LGZiUpmi0thA' AND openid <> ''
+2017-09-20 14:57:41.931 类：BasePage 方法：UserId: _userid:32
+2017-09-20 14:57:41.931 页面：enter 方法：submit_button_ServerClick: select_sql:select id from WP_用户权限 where 用户id = 32 and 仓库id in(
+select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '')
+2017-09-20 14:57:41.990 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 14:57:41.990 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 14:57:43.159 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC=''
+2017-09-20 14:57:52.630 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 14:57:52.631 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwNDt5cg4Eu6LGZiUpmi0thA' and wp_会员表.openid <> '' and  isshow=1
+2017-09-20 14:57:52.719 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 14:57:52.719 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 14:57:52.776 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-09-20 14:58:06.030 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=188
+2017-09-20 14:58:06.174 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=188
+2017-09-20 14:58:06.290 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=188
+2017-09-20 14:58:06.422 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=190
+2017-09-20 14:58:06.568 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=190
+2017-09-20 14:58:06.677 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=190
+2017-09-20 14:58:06.799 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=191
+2017-09-20 14:58:06.901 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=191
+2017-09-20 14:58:07.036 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=191
+2017-09-20 14:58:07.162 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=192
+2017-09-20 14:58:07.285 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=192
+2017-09-20 14:58:07.417 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=192
+2017-09-20 14:58:07.542 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=193
+2017-09-20 14:58:07.660 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=193
+2017-09-20 14:58:07.771 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=193
+2017-09-20 14:58:07.897 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=194
+2017-09-20 14:58:08.004 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=194
+2017-09-20 14:58:08.112 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=194
+2017-09-20 14:58:08.217 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=195
+2017-09-20 14:58:08.329 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=195
+2017-09-20 14:58:08.435 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=195
+2017-09-20 14:58:08.544 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=196
+2017-09-20 14:58:08.657 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=196
+2017-09-20 14:58:08.760 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=196
+2017-09-20 14:58:08.868 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=197
+2017-09-20 14:58:08.971 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=197
+2017-09-20 14:58:09.092 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=197
+2017-09-20 14:58:09.212 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=198
+2017-09-20 14:58:09.329 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=198
+2017-09-20 14:58:09.441 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=198
+2017-09-20 14:58:09.554 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=199
+2017-09-20 14:58:09.672 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=199
+2017-09-20 14:58:09.783 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=199
+2017-09-20 14:58:09.899 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=200
+2017-09-20 14:58:10.004 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=200
+2017-09-20 14:58:10.110 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=200
+2017-09-20 14:58:10.234 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=201
+2017-09-20 14:58:10.359 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=201
+2017-09-20 14:58:10.483 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=201
+2017-09-20 14:58:10.588 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=202
+2017-09-20 14:58:10.704 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=202
+2017-09-20 14:58:10.839 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=202
+2017-09-20 14:58:10.949 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=203
+2017-09-20 14:58:11.080 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=203
+2017-09-20 14:58:11.246 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=203
+2017-09-20 14:58:11.375 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=204
+2017-09-20 14:58:11.514 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=204
+2017-09-20 14:58:11.623 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=204
+2017-09-20 14:58:11.737 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=205
+2017-09-20 14:58:11.850 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=205
+2017-09-20 14:58:11.965 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=205
+2017-09-20 14:58:12.104 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=206
+2017-09-20 14:58:12.230 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=206
+2017-09-20 14:58:12.357 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=206
+2017-09-20 14:58:12.486 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=207
+2017-09-20 14:58:12.612 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=207
+2017-09-20 14:58:12.752 页面：roomStatus 方法：GetRoomStatus: sql:SELECT 状态 FROM [tshop].[dbo].[WP_库位表] WHERE id=207

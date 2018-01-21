@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>幸事多私享空间-区域管理系统</title>
+		<link rel="icon" href="img/logo.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="fonts/iconfont.css">
+		<link rel="stylesheet" href="css/operateManager.css"/>
+	</head>
+	<body>
+		<!--可视区-->
+		<div id='view' style="-webkit-overflow-scrolling:touch;overflow:auto!important;">
+			
+		</div>
+		<!--底部导航栏-->
+		<nav id="foot">
+			<ul class="clearfix">
+				<li>
+					<a href="#home">
+						<div class="index_bot">
+							<img class="picOff" src="img/home.png" alt="" />
+							<img class="picOn" src="img/home_on.png" alt=""/>
+						</div>
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="#hotelList">
+						<div class="index_bot">
+							<img class="picOff" src="img/list.png" alt="" />
+							<img class="picOn" src="img/list_on.png"/>
+						</div>
+						<p>列表</p>
+					</a>
+				</li>
+				<li>
+					<a href="#goodsList">
+						<div class="index_bot">
+							<img class="picOff" src="img/report.png" alt="" />
+							<img class="picOn" src="img/report_on.png" alt=""/>
+						</div>
+						<p>报表</p>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="waiting">
+			<div class="waitWrapper">
+				<img src="img/loading.gif" alt="" />
+			</div>
+		</div>
+		<div class="tips">
+			<div class="tipsContent">
+				<div class="tipsTopic">系统提示</div>
+				<p>您正在注销身份，是否继续？</p>
+				<ul class="clearfix">
+					<li class="cancel l">取消</li>
+					<li class="continue r">继续</li>
+				</ul>
+			</div>
+		</div>
+		<script src='js/plugins/zepto.min.js'></script>
+		<script src='js/plugins/vipspa.js'></script>
+		<script type="text/javascript"  src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="js/plugins/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function() {
+				//启动前端路由
+				vipspa.start({
+					view:'#view',//匹配的路由信息 在那个元素显示
+					router:{ //路由配置
+						//状态:{templateUrl:'模板地址',controller:'js操作路径' }
+						"home":{
+							templateUrl:'views/home.html',
+							controller:'js/modules/home.js'
+						},
+						"hotelList":{
+							templateUrl:'views/hotelList.html',
+							controller:'js/modules/hotelList.js'
+						},
+						"goodsList":{
+							templateUrl:'views/goodsList.html',
+							controller:'js/modules/goodsList.js'
+						}
+					}
+				});
+				var hashValue=window.location.hash.substring(1);
+				if(hashValue == "undefined") { 
+					window.location.hash='home';
+				};
+			})
+	</script>
+	</body>
+</html>
+

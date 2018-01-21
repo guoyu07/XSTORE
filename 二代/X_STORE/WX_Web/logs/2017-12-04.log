@@ -1,0 +1,257 @@
+2017-12-04 22:31:10.564 页面：mySpace 方法：PageLoad: 进入2:861853032008153
+2017-12-04 22:31:13.235 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-04 22:31:13.236 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-04 22:31:13.662 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwM5_75X286k5teZThpp8ns8' AND openid <> ''
+2017-12-04 22:31:13.754 类：BasePage 方法：UserId: _userid:384
+2017-12-04 22:31:13.754 页面：enter 方法：submit_button_ServerClick: select_sql:select id from WP_用户权限 where 用户id = 384 and 仓库id in(
+select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '861853032008153')
+2017-12-04 22:31:13.832 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-04 22:31:13.833 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-04 22:31:14.849 页面：BindMac 方法：PageInit: room_sql:SELECT * FROM WP_库位表 WHERE 箱子MAC='861853032008153'
+2017-12-04 22:31:14.991 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='2428' and WP_箱子表.status=1 order by 位置 asc
+2017-12-04 22:31:15.164 页面：mySpace 方法：goods: rexiao_id：110
+2017-12-04 22:31:15.165 页面：mySpace 方法：goods: a1
+2017-12-04 22:31:15.177 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.177 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:31:15.178 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.178 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.179 类：roomGoods 方法：link_ul: goods_id：0
+2017-12-04 22:31:15.180 类：roomGoods 方法：link_ul: display:block;
+2017-12-04 22:31:15.181 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.182 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-04 22:31:15.182 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.183 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.183 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-04 22:31:15.184 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.184 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.185 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-04 22:31:15.186 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.188 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.188 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:31:15.189 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.190 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.191 类：roomGoods 方法：link_ul: goods_id：122
+2017-12-04 22:31:15.191 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.192 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.192 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:31:15.192 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.193 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.193 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-04 22:31:15.194 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.194 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.195 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-04 22:31:15.195 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.195 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.196 类：roomGoods 方法：link_ul: goods_id：125
+2017-12-04 22:31:15.196 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.197 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:15.198 类：roomGoods 方法：link_ul: goods_id：124
+2017-12-04 22:31:15.198 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:15.402 页面：roomDetail 方法：PageInit: sql：SELECT WP_商品表.id,品名,编号new AS 编号,补货商品.箱子位置 AS 位置,补货商品.箱子MAC, wp_商品图片表.图片路径 FROM (SELECT * FROM 视图获取投放商品id WHERE 投放仓库id = 79 AND 投放库位id = 2428) AS 补货商品 
+LEFT JOIN WP_商品表 ON 补货商品.最新商品id = WP_商品表.id
+LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号
+2017-12-04 22:31:19.367 页面：roomDetail 方法：finish_button_Click: ExSql: Begin Tran  If @@ERROR>0
+                                Rollback Tran  
+                            Else
+                                Commit Tran
+                            Go
+2017-12-04 22:31:19.413 页面：roomDetail 方法：finish_button_Click: b：-1
+2017-12-04 22:31:20.900 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-04 22:31:20.900 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwM5_75X286k5teZThpp8ns8' and wp_会员表.openid <> '' and  isshow=1
+2017-12-04 22:31:20.989 页面：PickUp 方法：PageInit: sql_kw：
+SELECT a.id,a.库位名 FROM  WP_取货记录表 b left join  [WP_库位表] a on a.id = b.补货的房间id WHERE a.IsShow=1 AND  a.库位名  NOT LIKE '%总台%' AND  a.仓库id=79 AND b.用户id =384 and b.是否补货完成=0
+2017-12-04 22:31:23.105 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='2428' and WP_箱子表.status=1 order by 位置 asc
+2017-12-04 22:31:23.259 页面：mySpace 方法：goods: rexiao_id：110
+2017-12-04 22:31:23.260 页面：mySpace 方法：goods: a1
+2017-12-04 22:31:23.260 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.261 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:31:23.261 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.262 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.262 类：roomGoods 方法：link_ul: goods_id：0
+2017-12-04 22:31:23.263 类：roomGoods 方法：link_ul: display:block;
+2017-12-04 22:31:23.263 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.264 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-04 22:31:23.264 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.264 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.265 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-04 22:31:23.265 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.266 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.266 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-04 22:31:23.267 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.267 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.268 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:31:23.268 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.269 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.269 类：roomGoods 方法：link_ul: goods_id：122
+2017-12-04 22:31:23.270 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.270 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.271 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:31:23.271 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.272 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.272 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-04 22:31:23.272 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.273 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.273 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-04 22:31:23.274 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.274 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.275 类：roomGoods 方法：link_ul: goods_id：125
+2017-12-04 22:31:23.275 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.276 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:31:23.276 类：roomGoods 方法：link_ul: goods_id：124
+2017-12-04 22:31:23.277 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:31:23.416 页面：roomDetail 方法：PageInit: sql：SELECT WP_商品表.id,品名,编号new AS 编号,补货商品.箱子位置 AS 位置,补货商品.箱子MAC, wp_商品图片表.图片路径 FROM (SELECT * FROM 视图获取投放商品id WHERE 投放仓库id = 79 AND 投放库位id = 2428) AS 补货商品 
+LEFT JOIN WP_商品表 ON 补货商品.最新商品id = WP_商品表.id
+LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号
+2017-12-04 22:32:00.787 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='2428' and WP_箱子表.status=1 order by 位置 asc
+2017-12-04 22:32:08.719 页面：mySpace 方法：goods: rexiao_id：110
+2017-12-04 22:32:16.799 页面：mySpace 方法：goods: a1
+2017-12-04 22:32:48.137 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.138 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:32:48.139 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:48.140 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.140 类：roomGoods 方法：link_ul: goods_id：0
+2017-12-04 22:32:48.141 类：roomGoods 方法：link_ul: display:block;
+2017-12-04 22:32:48.142 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.143 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-04 22:32:48.144 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:48.145 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.146 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-04 22:32:48.146 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:48.147 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.148 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-04 22:32:48.148 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:48.149 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.149 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:32:48.150 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:48.150 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.151 类：roomGoods 方法：link_ul: goods_id：122
+2017-12-04 22:32:48.151 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:48.152 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.152 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:32:48.153 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:48.153 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.154 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-04 22:32:48.155 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:48.155 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.156 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-04 22:32:48.156 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:48.157 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.157 类：roomGoods 方法：link_ul: goods_id：125
+2017-12-04 22:32:48.158 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:48.158 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:32:48.159 类：roomGoods 方法：link_ul: goods_id：124
+2017-12-04 22:32:48.160 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:32:56.158 页面：roomDetail 方法：PageInit: sql：SELECT WP_商品表.id,品名,编号new AS 编号,补货商品.箱子位置 AS 位置,补货商品.箱子MAC, wp_商品图片表.图片路径 FROM (SELECT * FROM 视图获取投放商品id WHERE 投放仓库id = 79 AND 投放库位id = 2428) AS 补货商品 
+LEFT JOIN WP_商品表 ON 补货商品.最新商品id = WP_商品表.id
+LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号
+2017-12-04 22:34:00.989 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='2428' and WP_箱子表.status=1 order by 位置 asc
+2017-12-04 22:34:01.460 页面：mySpace 方法：goods: rexiao_id：110
+2017-12-04 22:34:01.464 页面：mySpace 方法：goods: a1
+2017-12-04 22:34:01.465 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.466 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:34:01.467 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.469 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.470 类：roomGoods 方法：link_ul: goods_id：0
+2017-12-04 22:34:01.470 类：roomGoods 方法：link_ul: display:block;
+2017-12-04 22:34:01.471 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.472 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-04 22:34:01.473 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.473 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.475 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-04 22:34:01.476 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.477 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.479 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-04 22:34:01.480 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.480 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.481 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:34:01.481 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.482 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.482 类：roomGoods 方法：link_ul: goods_id：122
+2017-12-04 22:34:01.483 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.483 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.484 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:34:01.485 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.485 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.486 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-04 22:34:01.486 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.487 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.487 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-04 22:34:01.488 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.489 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.490 类：roomGoods 方法：link_ul: goods_id：125
+2017-12-04 22:34:01.490 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.493 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:01.495 类：roomGoods 方法：link_ul: goods_id：124
+2017-12-04 22:34:01.495 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:01.666 页面：roomDetail 方法：PageInit: sql：SELECT WP_商品表.id,品名,编号new AS 编号,补货商品.箱子位置 AS 位置,补货商品.箱子MAC, wp_商品图片表.图片路径 FROM (SELECT * FROM 视图获取投放商品id WHERE 投放仓库id = 79 AND 投放库位id = 2428) AS 补货商品 
+LEFT JOIN WP_商品表 ON 补货商品.最新商品id = WP_商品表.id
+LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号
+2017-12-04 22:34:18.137 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,WP_商品表.编码,库位id,位置,默认商品id,
+(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,
+(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,
+(SELECT 编码 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品编码,
+(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,
+实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 
+from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='2428' and WP_箱子表.status=1 order by 位置 asc
+2017-12-04 22:34:18.303 页面：mySpace 方法：goods: rexiao_id：110
+2017-12-04 22:34:18.303 页面：mySpace 方法：goods: a1
+2017-12-04 22:34:18.304 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.304 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:34:18.305 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:18.306 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.306 类：roomGoods 方法：link_ul: goods_id：0
+2017-12-04 22:34:18.308 类：roomGoods 方法：link_ul: display:block;
+2017-12-04 22:34:18.309 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.309 类：roomGoods 方法：link_ul: goods_id：1172
+2017-12-04 22:34:18.310 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:18.311 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.311 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-04 22:34:18.312 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:18.313 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.314 类：roomGoods 方法：link_ul: goods_id：114
+2017-12-04 22:34:18.314 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:18.315 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.316 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:34:18.316 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:18.317 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.318 类：roomGoods 方法：link_ul: goods_id：122
+2017-12-04 22:34:18.319 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:18.320 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.321 类：roomGoods 方法：link_ul: goods_id：113
+2017-12-04 22:34:18.321 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:18.322 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.323 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-04 22:34:18.324 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:18.324 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.325 类：roomGoods 方法：link_ul: goods_id：112
+2017-12-04 22:34:18.325 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:18.326 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.327 类：roomGoods 方法：link_ul: goods_id：125
+2017-12-04 22:34:18.328 类：roomGoods 方法：link_ul: display:none;
+2017-12-04 22:34:18.328 类：roomGoods 方法：link_ul: 进入了方法
+2017-12-04 22:34:18.329 类：roomGoods 方法：link_ul: goods_id：124
+2017-12-04 22:34:18.329 类：roomGoods 方法：link_ul: display:none;

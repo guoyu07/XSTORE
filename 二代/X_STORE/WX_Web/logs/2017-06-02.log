@@ -1,0 +1,225 @@
+2017-06-02 08:31:24.179  : myspace.aspx
+2017-06-02 08:31:24.181  OpenId: 
+2017-06-02 08:31:24.182  boxmac: 
+2017-06-02 08:31:24.567  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 08:35:38.694  : myspace.aspx
+2017-06-02 08:35:38.696  OpenId: 
+2017-06-02 08:35:38.697  boxmac: 
+2017-06-02 08:35:38.974  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 08:36:29.681  : myspace.aspx
+2017-06-02 08:36:29.684  OpenId: 
+2017-06-02 08:36:29.685  boxmac: 
+2017-06-02 08:36:29.970  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 08:49:15.841  : myspace.aspx
+2017-06-02 08:49:15.843  OpenId: 
+2017-06-02 08:49:15.844  boxmac: 
+2017-06-02 08:49:16.143  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 08:50:56.180  : myspace.aspx
+2017-06-02 08:50:56.181  OpenId: 
+2017-06-02 08:50:56.182  boxmac: 
+2017-06-02 08:50:56.494  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 08:57:35.225  : myspace.aspx
+2017-06-02 08:57:35.227  OpenId: 
+2017-06-02 08:57:35.227  boxmac: 
+2017-06-02 08:57:35.532  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 08:59:11.295  : myspace.aspx
+2017-06-02 08:59:11.298  OpenId: 
+2017-06-02 08:59:11.298  boxmac: 
+2017-06-02 08:59:11.601  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 09:02:27.735  : myspace.aspx
+2017-06-02 09:02:27.736  OpenId: 
+2017-06-02 09:02:27.737  boxmac: 
+2017-06-02 09:02:28.094  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 09:04:47.570  : myspace.aspx
+2017-06-02 09:04:47.573  OpenId: 
+2017-06-02 09:04:47.574  boxmac: 
+2017-06-02 09:04:47.884  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 09:06:37.294  : myspace.aspx
+2017-06-02 09:06:37.295  OpenId: 
+2017-06-02 09:06:37.296  boxmac: 
+2017-06-02 09:06:37.570  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 09:11:30.515  : myspace.aspx
+2017-06-02 09:11:30.517  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 09:11:30.517  boxmac: 861853031342827
+2017-06-02 09:11:30.781  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 09:23:59.645  : myspace.aspx
+2017-06-02 09:23:59.646  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 09:23:59.646  boxmac: 861853031342827
+2017-06-02 09:23:59.915  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 09:44:16.120  : myspace.aspx
+2017-06-02 09:44:16.122  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 09:44:16.123  boxmac: 861853031342827
+2017-06-02 09:44:16.424  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 09:44:22.124 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','79','861853031342827','1')
+2017-06-02 09:44:27.807 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','79','861853031342827','1')
+2017-06-02 09:44:29.847 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','79','861853031342827','1')
+2017-06-02 09:44:31.146 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','79','861853031342827','1')
+2017-06-02 09:44:32.546 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','79','861853031342827','1')
+2017-06-02 09:44:34.109 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','79','861853031342827','1')
+2017-06-02 09:51:41.709  : myspace.aspx
+2017-06-02 09:51:41.710  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 09:51:41.710  boxmac: 861853031342827
+2017-06-02 09:51:41.984  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 09:51:57.950 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 09:52:00.974 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 09:52:02.819 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 09:52:04.893 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 09:54:35.182  : myspace.aspx
+2017-06-02 09:54:35.183  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 09:54:35.184  boxmac: 861853031342827
+2017-06-02 09:54:35.487  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 09:55:07.118 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 09:55:16.806 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 10:00:18.241  : myspace.aspx
+2017-06-02 10:00:18.242  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:00:18.242  boxmac: 861853031342827
+2017-06-02 10:00:18.523  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:00:29.424 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 10:01:19.410 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 10:03:04.072 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 10:03:25.179 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 10:36:58.194  : myspace.aspx
+2017-06-02 10:36:58.195  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:36:58.196  boxmac: 861853031342827
+2017-06-02 10:36:58.513  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:40:27.782  : myspace.aspx
+2017-06-02 10:40:27.783  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:40:27.783  boxmac: 861853031342827
+2017-06-02 10:40:28.087  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:41:18.428 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 10:43:31.505 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:43:39.984 购物车订单 test2判断订单是否存在: 
+2017-06-02 10:43:40.090 order_no S2017060200001: 
+2017-06-02 10:43:53.914  : paycenter.aspx
+2017-06-02 10:43:53.916 ---------------- paycenter: 0
+2017-06-02 10:43:53.916  order2: S2017060200001
+2017-06-02 10:43:53.991 paycenter.aspx order: S2017060200001
+2017-06-02 10:43:53.991 ---------------- paycenter.try: S2017060200001++++o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:43:54.075 WxPayApi ---UnifiedOrder: 8
+2017-06-02 10:43:54.076 WxPayApi ---UnifiedOrder: NOTIFY_URL
+2017-06-02 10:43:54.088 DEBUG WxPayApi: UnfiedOrder request : <xml><appid><![CDATA[wx4b52212c5d5983ad]]></appid><attach><![CDATA[日化用品]]></attach><body><![CDATA[日化用品]]></body><goods_tag><![CDATA[test]]></goods_tag><mch_id><![CDATA[1433628402]]></mch_id><nonce_str><![CDATA[4052ec66f69b4e24af28ca11d5dbb598]]></nonce_str><notify_url><![CDATA[http://x.x-store.com.cn/Shop/notify.aspx ]]></notify_url><openid><![CDATA[o8eAHwHbkUqC54iWdndgwukUi6S0]]></openid><out_trade_no><![CDATA[S2017060200001_3232]]></out_trade_no><sign><![CDATA[0ECCBFF6B708348D06E30765BD5484A4]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><time_expire><![CDATA[20170602105354]]></time_expire><time_start><![CDATA[20170602104354]]></time_start><total_fee>100</total_fee><trade_type><![CDATA[JSAPI]]></trade_type></xml>
+2017-06-02 10:43:54.325 DEBUG WxPayApi: UnfiedOrder response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx4b52212c5d5983ad]]></appid>
+<mch_id><![CDATA[1433628402]]></mch_id>
+<nonce_str><![CDATA[P1zjmJOUcsswN5iB]]></nonce_str>
+<sign><![CDATA[4540A0A1B1517F716F0DCAC5000BC156]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20170602104428ae1b774d790578480555]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+2017-06-02 10:43:54.327 DEBUG tdx.database.Common_Pay.WeiXinPay.JsApiPay: JsApiPay::GetJsApiParam is processing...
+2017-06-02 10:43:54.340 DEBUG tdx.database.Common_Pay.WeiXinPay.JsApiPay: Get jsApiParam : {"appId":"wx4b52212c5d5983ad","nonceStr":"ba7c7014e39d44bca7426602a414259e","package":"prepay_id=wx20170602104428ae1b774d790578480555","paySign":"B0D3CDC4B2BB0E986789C050EEC893B9","signType":"MD5","timeStamp":"1496371434"}
+2017-06-02 10:43:54.341 DEBUG ASP.shop_pages_paycenter_aspx: wxJsApiParam : {"appId":"wx4b52212c5d5983ad","nonceStr":"ba7c7014e39d44bca7426602a414259e","package":"prepay_id=wx20170602104428ae1b774d790578480555","paySign":"B0D3CDC4B2BB0E986789C050EEC893B9","signType":"MD5","timeStamp":"1496371434"}
+2017-06-02 10:43:54.344 发送：02383631383533303331333432383237010000000000000000000000 : 
+2017-06-02 10:43:55.417  jsapiPai: 进入try BOOM
+2017-06-02 10:43:55.937 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:43:58.317 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:43:58.670 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:43:59.351 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:44:01.003 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:44:01.752  : myspace.aspx
+2017-06-02 10:44:01.753  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:44:01.753  boxmac: 861853031342827
+2017-06-02 10:44:01.827  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:44:02.182 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:44:03.484 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:44:04.132  : myspace.aspx
+2017-06-02 10:44:04.133  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:44:04.136  boxmac: 861853031342827
+2017-06-02 10:44:04.207  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:44:05.502 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:44:35.127  : myspace.aspx
+2017-06-02 10:44:35.128  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:44:35.130  boxmac: 861853031342827
+2017-06-02 10:44:35.205  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:44:44.795 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','90','0.01','1','0','245','79','861853031342827','2')
+2017-06-02 10:44:47.222 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:44:49.000 购物车订单 test2判断订单是否存在: 
+2017-06-02 10:44:49.114 order_no S2017060200002: 
+2017-06-02 10:44:50.292  : paycenter.aspx
+2017-06-02 10:44:50.293 ---------------- paycenter: 0
+2017-06-02 10:44:50.294  order2: S2017060200002
+2017-06-02 10:44:50.370 paycenter.aspx order: S2017060200002
+2017-06-02 10:44:50.371 ---------------- paycenter.try: S2017060200002++++o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:44:50.447 WxPayApi ---UnifiedOrder: 8
+2017-06-02 10:44:50.448 WxPayApi ---UnifiedOrder: NOTIFY_URL
+2017-06-02 10:44:50.448 DEBUG WxPayApi: UnfiedOrder request : <xml><appid><![CDATA[wx4b52212c5d5983ad]]></appid><attach><![CDATA[日化用品]]></attach><body><![CDATA[日化用品]]></body><goods_tag><![CDATA[test]]></goods_tag><mch_id><![CDATA[1433628402]]></mch_id><nonce_str><![CDATA[6117f65c4bce43e195402b1353cd6131]]></nonce_str><notify_url><![CDATA[http://x.x-store.com.cn/Shop/notify.aspx ]]></notify_url><openid><![CDATA[o8eAHwHbkUqC54iWdndgwukUi6S0]]></openid><out_trade_no><![CDATA[S2017060200002_75941]]></out_trade_no><sign><![CDATA[774047956672BE7CBB2876B0D7B00D98]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><time_expire><![CDATA[20170602105450]]></time_expire><time_start><![CDATA[20170602104450]]></time_start><total_fee>1</total_fee><trade_type><![CDATA[JSAPI]]></trade_type></xml>
+2017-06-02 10:44:50.619 DEBUG WxPayApi: UnfiedOrder response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx4b52212c5d5983ad]]></appid>
+<mch_id><![CDATA[1433628402]]></mch_id>
+<nonce_str><![CDATA[qz3jWXr8xBWWz2w8]]></nonce_str>
+<sign><![CDATA[7EDF51960BFDA61CEC7B056929A990A0]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx201706021045246f1ae573a90601002171]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+2017-06-02 10:44:50.619 DEBUG tdx.database.Common_Pay.WeiXinPay.JsApiPay: JsApiPay::GetJsApiParam is processing...
+2017-06-02 10:44:50.620 DEBUG tdx.database.Common_Pay.WeiXinPay.JsApiPay: Get jsApiParam : {"appId":"wx4b52212c5d5983ad","nonceStr":"7a2c4684298f4a0cbb961c866902caa4","package":"prepay_id=wx201706021045246f1ae573a90601002171","paySign":"D8371ED48CF6CC5CB8977A5E985A0B4E","signType":"MD5","timeStamp":"1496371491"}
+2017-06-02 10:44:50.620 DEBUG ASP.shop_pages_paycenter_aspx: wxJsApiParam : {"appId":"wx4b52212c5d5983ad","nonceStr":"7a2c4684298f4a0cbb961c866902caa4","package":"prepay_id=wx201706021045246f1ae573a90601002171","paySign":"D8371ED48CF6CC5CB8977A5E985A0B4E","signType":"MD5","timeStamp":"1496371491"}
+2017-06-02 10:44:50.621 发送：02383631383533303331333432383237000100000000000000000000 : 
+2017-06-02 10:44:51.715  jsapiPai: 进入try BOOM
+2017-06-02 10:44:52.578 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:46:21.202  : myspace.aspx
+2017-06-02 10:46:21.203  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:46:21.203  boxmac: 861853031342827
+2017-06-02 10:46:21.274  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:46:22.077 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:46:23.427 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:46:23.769  : myspace.aspx
+2017-06-02 10:46:23.769  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:46:23.770  boxmac: 861853031342827
+2017-06-02 10:46:23.843  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:46:24.244 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:46:25.531  : myspace.aspx
+2017-06-02 10:46:25.533  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:46:25.534  boxmac: 861853031342827
+2017-06-02 10:46:25.605  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:46:26.932 购物车 openid: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:46:27.294  : myspace.aspx
+2017-06-02 10:46:27.295  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:46:27.295  boxmac: 861853031342827
+2017-06-02 10:46:27.367  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:47:29.158  : myspace.aspx
+2017-06-02 10:47:29.158  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 10:47:29.159  boxmac: 861853031342827
+2017-06-02 10:47:29.234  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 10:47:39.539 插入购物车数据 : insert into wp_购物车 (openid,商品id,单价,数量,是否结算,库位id,仓库id,箱子MAC,位置)values('o8eAHwHbkUqC54iWdndgwukUi6S0','109','1.00','1','0','245','79','861853031342827','1')
+2017-06-02 17:08:37.267  : myspace.aspx
+2017-06-02 17:08:37.309  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 17:08:37.310  boxmac: 861853031342827
+2017-06-02 17:08:37.555  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'
+2017-06-02 17:09:05.497 ---------------- details-buyNow_Click: 109&weizhi=1&kwid=245
+2017-06-02 17:09:05.609 ---------提交成功------- detail: 109
+2017-06-02 17:09:07.044  : paycenter.aspx
+2017-06-02 17:09:07.046 ---------------- paycenter: 109
+2017-06-02 17:09:07.046 ---------------- paycenter: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 17:09:07.109 paycenter.aspx order: S2017060200003
+2017-06-02 17:09:07.110 ---------------- paycenter.try: S2017060200003++++o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 17:09:07.179 WxPayApi ---UnifiedOrder: 8
+2017-06-02 17:09:07.179 WxPayApi ---UnifiedOrder: NOTIFY_URL
+2017-06-02 17:09:07.183 DEBUG WxPayApi: UnfiedOrder request : <xml><appid><![CDATA[wx4b52212c5d5983ad]]></appid><attach><![CDATA[日化用品]]></attach><body><![CDATA[日化用品]]></body><goods_tag><![CDATA[test]]></goods_tag><mch_id><![CDATA[1433628402]]></mch_id><nonce_str><![CDATA[b2bf187f1e3a4b5abec7e37e20d29997]]></nonce_str><notify_url><![CDATA[http://x.x-store.com.cn/Shop/notify.aspx ]]></notify_url><openid><![CDATA[o8eAHwHbkUqC54iWdndgwukUi6S0]]></openid><out_trade_no><![CDATA[S2017060200003_26353]]></out_trade_no><sign><![CDATA[EA962C449F3707CD74C4B67F1ECDEC89]]></sign><spbill_create_ip><![CDATA[8.8.8.8]]></spbill_create_ip><time_expire><![CDATA[20170602171907]]></time_expire><time_start><![CDATA[20170602170907]]></time_start><total_fee>100</total_fee><trade_type><![CDATA[JSAPI]]></trade_type></xml>
+2017-06-02 17:09:07.373 DEBUG WxPayApi: UnfiedOrder response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx4b52212c5d5983ad]]></appid>
+<mch_id><![CDATA[1433628402]]></mch_id>
+<nonce_str><![CDATA[wu3DJvectXLCu14w]]></nonce_str>
+<sign><![CDATA[C7757497BB4A7BB6A7CB85A055941BA3]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx2017060217094010fd804d190409120064]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+2017-06-02 17:09:07.378 DEBUG tdx.database.Common_Pay.WeiXinPay.JsApiPay: JsApiPay::GetJsApiParam is processing...
+2017-06-02 17:09:07.418 DEBUG tdx.database.Common_Pay.WeiXinPay.JsApiPay: Get jsApiParam : {"appId":"wx4b52212c5d5983ad","nonceStr":"74347cf4ea2e4362b2244d188501e8a9","package":"prepay_id=wx2017060217094010fd804d190409120064","paySign":"999B95D0027E301416FCD121ADC7624C","signType":"MD5","timeStamp":"1496394547"}
+2017-06-02 17:09:07.419 DEBUG ASP.shop_pages_paycenter_aspx: wxJsApiParam : {"appId":"wx4b52212c5d5983ad","nonceStr":"74347cf4ea2e4362b2244d188501e8a9","package":"prepay_id=wx2017060217094010fd804d190409120064","paySign":"999B95D0027E301416FCD121ADC7624C","signType":"MD5","timeStamp":"1496394547"}
+2017-06-02 17:09:07.423 发送：02383631383533303331333432383237010000000000000000000000 : 
+2017-06-02 17:09:08.425  jsapiPai: 进入try BOOM
+2017-06-02 17:33:20.737 ---------------- details-buyNow_Click: 109&weizhi=1&kwid=245
+2017-06-02 17:33:20.849 ---------提交成功------- detail: 109
+2017-06-02 17:33:38.844 ---------------- details-buyNow_Click: 109&weizhi=1&kwid=245
+2017-06-02 17:33:38.953 ---------提交成功------- detail: 109
+2017-06-02 17:42:34.926  : myspace.aspx
+2017-06-02 17:42:34.927  OpenId: o8eAHwHbkUqC54iWdndgwukUi6S0
+2017-06-02 17:42:34.927  boxmac: 861853031342827
+2017-06-02 17:42:35.167  客户: select id as 库位id,仓库id from WP_库位表 where 箱子MAC='861853031342827'

@@ -1,0 +1,43 @@
+2017-12-23 21:19:06.451 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-12-23 21:19:06.914 类：BasePage 方法：UserId: tologin.aspx:
+2017-12-23 21:19:06.915 类：BasePage 方法：UserId: home_url:http://wx2.x-store.com.cn
+2017-12-23 21:19:06.916 类：BasePage 方法：UserId: rul:http://wx2.x-store.com.cn/shop/pages/login.aspx
+2017-12-23 21:19:07.058 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:19:07.059 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-12-23 21:19:07.130 类：BasePage 方法：UserInfo: _userinfo:0
+2017-12-23 21:19:37.551 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-12-23 21:19:37.612 类：BasePage 方法：UserId: tologin.aspx:
+2017-12-23 21:19:37.613 类：BasePage 方法：UserId: home_url:http://wx2.x-store.com.cn
+2017-12-23 21:19:37.613 类：BasePage 方法：UserId: rul:http://wx2.x-store.com.cn/shop/pages/login.aspx
+2017-12-23 21:19:37.734 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:19:37.734 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-12-23 21:19:37.805 类：BasePage 方法：UserInfo: _userinfo:0
+2017-12-23 21:19:43.062 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:19:43.062 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' and wp_会员表.openid <> '' and  isshow=1
+2017-12-23 21:19:43.125 类：BasePage 方法：UserInfo: _userinfo:0
+2017-12-23 21:20:58.302 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwCOGWFalh37wPcWYLjQEbRI' AND openid <> ''
+2017-12-23 21:21:48.225 类：BasePage 方法：UserId: tologin.aspx:
+2017-12-23 21:21:48.226 类：BasePage 方法：UserId: home_url:http://wx2.x-store.com.cn
+2017-12-23 21:21:48.226 类：BasePage 方法：UserId: rul:http://wx2.x-store.com.cn/shop/pages/login.aspx
+2017-12-23 21:21:48.347 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:24:00.400 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwFadTw_pMf6lMyrjYqa4WyY' AND openid <> ''
+2017-12-23 21:24:01.040 类：BasePage 方法：UserId: _userid:1
+2017-12-23 21:24:01.380 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:24:02.096 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwFadTw_pMf6lMyrjYqa4WyY' and wp_会员表.openid <> '' and  isshow=1
+2017-12-23 21:24:02.333 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:24:02.333 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:24:02.394 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:31:34.282 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwFadTw_pMf6lMyrjYqa4WyY' AND openid <> ''
+2017-12-23 21:31:36.427 类：BasePage 方法：UserId: _userid:1
+2017-12-23 21:31:37.034 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:31:37.034 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwFadTw_pMf6lMyrjYqa4WyY' and wp_会员表.openid <> '' and  isshow=1
+2017-12-23 21:31:37.126 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:31:37.127 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:31:37.658 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:41:41.626 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwFadTw_pMf6lMyrjYqa4WyY' AND openid <> ''
+2017-12-23 21:41:45.869 类：BasePage 方法：UserId: _userid:1
+2017-12-23 21:41:46.864 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:41:46.864 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwFadTw_pMf6lMyrjYqa4WyY' and wp_会员表.openid <> '' and  isshow=1
+2017-12-23 21:41:46.984 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:41:46.984 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-23 21:41:47.049 类：BasePage 方法：UserInfo: UserInfo进入:

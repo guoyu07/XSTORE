@@ -1,0 +1,248 @@
+html,body{
+    height:100%;
+}
+.topNav{
+    width:100%;
+    li{
+        text-align: center;
+        font:16px/40px "microsoft yahei";
+        color:#000;
+        width:23.3%;
+        margin:0 5%;
+        border-bottom:solid 1px #ffffff;
+    }
+    li.clickOn{
+        border-bottom:solid 1px #f60;
+        color:#f60;
+    }
+}
+.topInputContaienr{
+    width:100%;
+    padding:15px;
+    box-sizing: border-box;
+    background:#eee;
+    input{
+        background:#fff;
+        width:100%;
+        text-align: center;
+        border:none;
+        font:14px/30px "microsoft yahei";
+    }
+}
+.item{
+    display:none;
+}
+.main{
+    width:100%;
+    overflow-y: auto;
+    height:calc(100% - 41px);
+    height:-webkit-calc(100% - 41px);
+    height:-moz-calc(100% - 41px);
+    .room{
+        width:100%;
+        display: block;
+        padding-bottom: 50px;
+        ul{
+            width:100%;
+            li{
+                width:94%;
+                padding:6px 3%;
+                border-bottom:solid 1px #ccc;
+                a{
+                    width:100%;
+                    display:block;
+                    .l{
+                        p{
+                            font:14px/30px "microsoft yahei";
+                            color:#000;
+                        }
+                    }
+                    .status{
+                        span{
+                           display:block;
+                           padding:0 6px;
+                           border-radius: 4px;
+                           font:14px/30px "microsoft yahei";
+                        }
+                        .online{
+                            display: block;
+                            background:#f60;
+                            color:#fff;
+                        }
+                        .offline{
+                            display: none;
+                            background:#ccc;
+                            color:#666; 
+                        }
+                    }
+                }
+            }
+            li.off{
+                a{
+                    .status{
+                        .online{
+                            display:none;
+                        }
+                        .offline{
+                            display:block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .user{
+        width:100%;
+        table{
+            width:100%;
+            .topic{
+                width:100%;
+            }
+            tr{
+                border-bottom: solid 1px #ccc;
+            }
+            tr:last-child{
+                border-bottom:none;
+            }
+            th,td{
+                text-align: center;
+                font:14px/30px "microsoft yahei";
+                color:#666;
+                vertical-align: middle;
+            }
+        }
+        ul{
+            width:100%;
+            li{
+                width:94%;
+                padding: 3%;
+                border-bottom: solid 1px #ccc;
+                h1,h2,h3,h4{
+                    width:25%;
+                    text-align: center;
+                    font:14px/30px "microsoft yahei";
+                    color:#666;
+                }
+                h2{
+                    color:#999;
+                }
+                .newStrip{
+                    width:100%;
+                    h3,p{
+                        font:14px/30px "microsoft yahei";
+                        color:#f60;
+                    }
+                    .iconChange{
+                        font:14px/30px "microsoft yahei";
+                        color:#ccc;
+                    }
+                    .icon-gengduo2{
+                        display:none;
+                    }
+                }
+                table.content{
+                    display: none;
+                    width:100%;
+                    border:solid 1px #ccc;
+                    box-sizing:border-box;
+                    .topic{
+                        width:100%;
+                    }
+                    tr{
+                        border-bottom: solid 1px #ccc;
+                    }
+                    tr:last-child{
+                        border-bottom:none;
+                    }
+                    th,td{
+                        text-align: center;
+                        font:13px/30px "microsoft yahei";
+                        color:#666;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            li.showContent{
+                .newStrip{
+                    .icon-gengduo1{
+                        display:none;
+                    }
+                    .icon-gengduo2{
+                        display:block;
+                    }
+                }
+            }
+            li:last-child{
+                border:none;
+            }
+        }
+    }
+    .goods{
+        width:100%;
+        padding-bottom: 50px;
+        table{
+            width:100%;
+            .topic{
+                width:100%;
+            }
+            tr{
+                border-bottom: solid 1px #ccc;
+            }
+            th,td{
+                text-align: center;
+                font:14px/30px "microsoft yahei";
+                color:#666;
+                vertical-align: middle;
+                img{
+                    display: block;
+                    width:60px;
+                    height:60px;
+                }
+            }
+        }
+        ul{
+            width:100%;
+            padding:10px;
+            box-sizing: border-box;
+            li{
+                width:100%;
+                padding:10px 0;
+                border-bottom: solid 1px #ccc;
+                img{
+                    width:60px;
+                    height:60px;
+                }
+                .rPart{
+                    width:calc(100% - 60px);
+                    width:-webkit-calc(100% - 60px);
+                    width:-moz-calc(100% - 60px);
+                    p{
+                        font:14px/20px "microsoft yahei";
+                        color:#666;
+                    }
+                }
+            }
+            li:last-child{
+                border-bottom:none;
+            }
+        }
+    }
+}
+.main .user .newStrip h3{
+    width:70%;
+}
+.fixBottom{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+    p{
+        font:14px/30px　"microsoft yahei";
+        color:#333;
+        span{
+            color:#f60;
+        }
+    }
+}

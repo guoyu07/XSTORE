@@ -1,0 +1,50 @@
+2017-04-11 14:03:56.903 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx322cfaa6ba67fb0e]]></appid><mch_id><![CDATA[1452727202]]></mch_id><nonce_str><![CDATA[5b99356f9b1441a895bf83f0e22fc981]]></nonce_str><op_user_id><![CDATA[1340586301]]></op_user_id><out_refund_no><![CDATA[S2017040600002]]></out_refund_no><out_trade_no><![CDATA[S2017040600002_34433]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[46099720E9C9AED1B2905A6F31113691]]></sign><total_fee>10</total_fee></xml>
+2017-04-11 14:03:56.921 DEBUG path: D:\T+商城\T+演示\tdx.memb\tdx.memb\
+2017-04-11 14:03:56.958 ERROR HttpService: System.Security.Cryptography.CryptographicException: 指定的网络密码不正确。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._LoadCertFromFile(String fileName, IntPtr password, UInt32 dwFlags, Boolean persistKeySet, SafeCertContextHandle& pCertCtx)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\T+商城\T+演示\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66
+2017-04-11 14:04:54.580 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx322cfaa6ba67fb0e]]></appid><mch_id><![CDATA[1452727202]]></mch_id><nonce_str><![CDATA[f9c7eaf388384ca7b993d40fb5f6c0c0]]></nonce_str><op_user_id><![CDATA[1340586301]]></op_user_id><out_refund_no><![CDATA[S2017040600002]]></out_refund_no><out_trade_no><![CDATA[S2017040600002_34433]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[99D1A6190C8E31C2CA2925D6E70F3668]]></sign><total_fee>10</total_fee></xml>
+2017-04-11 14:04:54.595 DEBUG path: D:\T+商城\T+演示\tdx.memb\tdx.memb\
+2017-04-11 14:04:54.644 ERROR HttpService: System.Security.Cryptography.CryptographicException: 指定的网络密码不正确。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._LoadCertFromFile(String fileName, IntPtr password, UInt32 dwFlags, Boolean persistKeySet, SafeCertContextHandle& pCertCtx)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\T+商城\T+演示\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66
+2017-04-11 14:09:28.228 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx322cfaa6ba67fb0e]]></appid><mch_id><![CDATA[1452727202]]></mch_id><nonce_str><![CDATA[29c7ee1a9b854466a22a2a2a829039a7]]></nonce_str><op_user_id><![CDATA[1340586301]]></op_user_id><out_refund_no><![CDATA[S2017040600002]]></out_refund_no><out_trade_no><![CDATA[S2017040600002_34433]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[9BECB7296E7C52B2F27040DD3E21DE23]]></sign><total_fee>10</total_fee></xml>
+2017-04-11 14:09:28.248 DEBUG path: D:\T+商城\T+演示\tdx.memb\tdx.memb\
+2017-04-11 14:09:28.257 ERROR HttpService: System.Security.Cryptography.CryptographicException: 指定的网络密码不正确。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._LoadCertFromFile(String fileName, IntPtr password, UInt32 dwFlags, Boolean persistKeySet, SafeCertContextHandle& pCertCtx)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\T+商城\T+演示\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66
+2017-04-11 14:11:18.839 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx322cfaa6ba67fb0e]]></appid><mch_id><![CDATA[1452727202]]></mch_id><nonce_str><![CDATA[b71aa48975904b219cb73e7cc3d517f5]]></nonce_str><op_user_id><![CDATA[1452727202]]></op_user_id><out_refund_no><![CDATA[S2017040600002]]></out_refund_no><out_trade_no><![CDATA[S2017040600002_34433]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[05277BBFBC207347264C65B967ADB0EB]]></sign><total_fee>10</total_fee></xml>
+2017-04-11 14:11:18.862 DEBUG path: D:\T+商城\T+演示\tdx.memb\tdx.memb\
+2017-04-11 14:11:18.900 ERROR HttpService: System.Security.Cryptography.CryptographicException: 指定的网络密码不正确。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._LoadCertFromFile(String fileName, IntPtr password, UInt32 dwFlags, Boolean persistKeySet, SafeCertContextHandle& pCertCtx)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\T+商城\T+演示\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66
+2017-04-11 14:12:08.195 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx322cfaa6ba67fb0e]]></appid><mch_id><![CDATA[1452727202]]></mch_id><nonce_str><![CDATA[719048b1d34b42ea9481d26949a3ed8a]]></nonce_str><op_user_id><![CDATA[1452727202]]></op_user_id><out_refund_no><![CDATA[S2017040600002]]></out_refund_no><out_trade_no><![CDATA[S2017040600002_34433]]></out_trade_no><refund_fee>10</refund_fee><sign><![CDATA[18710D7C21B549B76610DA003B407C8D]]></sign><total_fee>10</total_fee></xml>
+2017-04-11 14:12:09.152 DEBUG path: D:\T+商城\T+演示\tdx.memb\tdx.memb\
+2017-04-11 14:12:09.195 ERROR HttpService: System.Security.Cryptography.CryptographicException: 指定的网络密码不正确。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._LoadCertFromFile(String fileName, IntPtr password, UInt32 dwFlags, Boolean persistKeySet, SafeCertContextHandle& pCertCtx)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 d:\T+商城\T+演示\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66

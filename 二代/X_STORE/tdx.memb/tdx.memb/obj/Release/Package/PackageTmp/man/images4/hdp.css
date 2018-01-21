@@ -1,0 +1,17 @@
+﻿.imgEidt
+{
+    padding: 3px;
+}
+.hdpimages
+{
+    padding: 20px;
+    width: 500px;
+    float: right;
+}
+.imgBg
+{
+     height:100%;
+}
+.imgEidt{ margin:8px; background-color:#dfdfdf; color:#ccc; font-size:32px;  height:160px; position:relative;}
+ .infoEdit{background-color:  rgba(229, 229, 229, 0.85) ;  height: 100%; position: absolute; text-align: center; top: 0;width: 100%; line-height:160px; color:#333;}
+.imgEidt:hover .imgEidt{ display:block;}

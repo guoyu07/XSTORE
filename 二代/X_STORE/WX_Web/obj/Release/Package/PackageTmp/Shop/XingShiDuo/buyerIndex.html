@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>幸事多私享空间-商品汇</title>
+		<link rel="icon" href="img/logo.png" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/buyerIndex.css"/>
+		<link rel="stylesheet" href="css/layer.css" />
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	</head>
+	<body>
+		<!--可视区-->
+		<div id='view' style="-webkit-overflow-scrolling:touch;">
+			
+		</div>
+		<!--底部导航栏-->
+		<nav id="foot">
+			<ul class="clearfix">
+				<li>
+					<a href="#mySpace">
+						<div class="index_bot">
+							<img class="picOff" src="img/mySpace.png" alt="" />
+							<img class="picOn" src="img/mySpace_on.png"/>
+						</div>
+						<p>私享空间</p>
+					</a>
+				</li>
+				<li>
+					<a href="#cart">
+						<div class="index_bot">
+							<img class="picOff" src="img/cart.png" alt="" />
+							<img class="picOn" src="img/cart_on.png"/>
+						</div>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="#myself">
+					<!--<i class="iconfont icon-iconfont02"></i>-->
+						<div class="index_bot">
+							<img class="picOff" src="img/myself.png" alt="" />
+							<img class="picOn" src="img/myself_on.png" alt=""/>
+						</div>
+						<p>我的</p>
+					</a>
+				</li>
+				<li>
+					<a href="#x-store">
+						<!--<i class="iconfont icon-wodehui"></i>-->
+						<div class="index_bot">
+							<img class="picOff" src="img/xs.png" alt="" />
+							<img class="picOn" src="img/xs_on.png"/>
+						</div>
+						<p>X-STORE</p>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<script src='js/plugins/zepto.min.js'></script>
+		<script src='js/plugins/vipspa.js'></script>
+		<script type="text/javascript"  src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="js/plugins/layer.js"></script>
+		<script>
+			$(function() {
+				//启动前端路由
+				vipspa.start({
+					view:'#view',//匹配的路由信息 在那个元素显示
+					router:{ //路由配置
+						//状态:{templateUrl:'模板地址',controller:'js操作路径' }
+						"cart":{
+							templateUrl:'views/cart.html',
+							controller:'js/modules/cart.js'
+						},
+						"mySpace":{
+							templateUrl:'views/mySpace.html',
+							controller:'js/modules/mySpace.js'
+						},
+						"myself":{
+							templateUrl:'views/myself.html',
+							controller:'js/modules/myself.js'
+						},
+						"x-store":{
+							templateUrl:'views/x-store.html',
+							controller:'js/modules/xStore.js'
+						}
+					}
+				});
+				var hashValue=window.location.hash.substring(1);
+				if(hashValue == "undefined") { 
+					window.location.hash='mySpace';
+				};
+			})
+	</script>
+	</body>
+</html>

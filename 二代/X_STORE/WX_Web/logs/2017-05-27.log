@@ -1,0 +1,206 @@
+2017-05-27 08:36:48.493 购物车 openid: 
+2017-05-27 08:37:25.691 购物车 openid: 
+2017-05-27 08:37:41.645 购物车 openid: 
+2017-05-27 14:46:14.792 paySuccess : 
+2017-05-27 14:49:13.476 paySuccess : 
+2017-05-27 14:50:21.876 paySuccess : 
+2017-05-27 14:50:23.828 paySuccess : 
+2017-05-27 14:50:26.457 paySuccess : 
+2017-05-27 14:51:35.136 paySuccess : 
+2017-05-27 15:01:01.602 paySuccess : 
+2017-05-27 15:01:27.176 paySuccess : 
+2017-05-27 15:27:36.295 orderno S2017052700042: -----
+2017-05-27 15:27:36.662 是否存在订单 1: -----
+2017-05-27 15:27:36.664 out_trade_no S2017052700042_75095: -----
+2017-05-27 15:27:36.665 out_refund_no S2017052700042: -----
+2017-05-27 15:27:36.672 total_fee 1: -----
+2017-05-27 15:27:36.673 refund_fee : -----
+2017-05-27 15:27:36.674 op_user_id 1433628402: -----
+2017-05-27 15:27:36.720 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx4b52212c5d5983ad]]></appid><mch_id><![CDATA[1433628402]]></mch_id><nonce_str><![CDATA[e67570066aca4b58b98862ed9df0af9f]]></nonce_str><op_user_id><![CDATA[1433628402]]></op_user_id><out_refund_no><![CDATA[S2017052700042]]></out_refund_no><out_trade_no><![CDATA[S2017052700042_75095]]></out_trade_no><refund_fee>1</refund_fee><sign><![CDATA[4A8CCA82D447144AE90D6B9239213E66]]></sign><total_fee>1</total_fee></xml>
+2017-05-27 15:27:36.836 DEBUG path: F:\xxc\幸事多\WX_Web\
+2017-05-27 15:27:37.036 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 f:\xxc\幸事多\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66
+2017-05-27 15:27:37.038 tuikuan System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 f:\xxc\幸事多\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66: 数据异常
+2017-05-27 15:28:43.480 orderno S2017052700042: -----
+2017-05-27 15:28:43.523 是否存在订单 1: -----
+2017-05-27 15:28:43.523 out_trade_no S2017052700042_75095: -----
+2017-05-27 15:28:43.523 out_refund_no S2017052700042: -----
+2017-05-27 15:28:43.524 total_fee 1: -----
+2017-05-27 15:28:43.524 refund_fee : -----
+2017-05-27 15:28:43.524 op_user_id 1433628402: -----
+2017-05-27 15:28:43.525 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx4b52212c5d5983ad]]></appid><mch_id><![CDATA[1433628402]]></mch_id><nonce_str><![CDATA[b3e8c6164c0b4158989b10a6c02862e8]]></nonce_str><op_user_id><![CDATA[1433628402]]></op_user_id><out_refund_no><![CDATA[S2017052700042]]></out_refund_no><out_trade_no><![CDATA[S2017052700042_75095]]></out_trade_no><refund_fee>1</refund_fee><sign><![CDATA[3CCDBD7858A539315EE8E0F29DB1A5FF]]></sign><total_fee>1</total_fee></xml>
+2017-05-27 15:28:43.533 DEBUG path: F:\xxc\幸事多\WX_Web\
+2017-05-27 15:28:43.534 ERROR HttpService: System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 f:\xxc\幸事多\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66
+2017-05-27 15:28:43.535 tuikuan System.Security.Cryptography.CryptographicException: 系统找不到指定的路径。
+
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password, X509KeyStorageFlags keyStorageFlags)
+   在 tdx.database.Common_Pay.WeiXinPay.HttpService.Post(String xml, String url, Boolean isUseCert, Int32 timeout) 位置 f:\xxc\幸事多\tdx.database\tdx.database\Common_Pay\WeiXinPay\HttpService.cs:行号 66: 数据异常
+2017-05-27 15:30:03.832 orderno : -----
+2017-05-27 15:30:03.874 是否存在订单 0: -----
+2017-05-27 15:30:09.007 orderno : -----
+2017-05-27 15:30:09.053 是否存在订单 0: -----
+2017-05-27 15:30:28.895 orderno : -----
+2017-05-27 15:30:28.936 是否存在订单 0: -----
+2017-05-27 15:31:08.559 orderno : -----
+2017-05-27 15:31:08.598 是否存在订单 0: -----
+2017-05-27 15:33:27.154 orderno S2017052700042: -----
+2017-05-27 15:33:27.403 是否存在订单 1: -----
+2017-05-27 15:33:27.404 out_trade_no S2017052700042_75095: -----
+2017-05-27 15:33:27.405 out_refund_no S2017052700042: -----
+2017-05-27 15:33:27.408 total_fee 1: -----
+2017-05-27 15:33:27.409 refund_fee : -----
+2017-05-27 15:33:27.410 op_user_id 1433628402: -----
+2017-05-27 15:33:27.427 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx4b52212c5d5983ad]]></appid><mch_id><![CDATA[1433628402]]></mch_id><nonce_str><![CDATA[16fa846644c3429baad686cea6caf3bd]]></nonce_str><op_user_id><![CDATA[1433628402]]></op_user_id><out_refund_no><![CDATA[S2017052700042]]></out_refund_no><out_trade_no><![CDATA[S2017052700042_75095]]></out_trade_no><refund_fee>1</refund_fee><sign><![CDATA[3AC0EC331FE20DFE13698804A3A4E996]]></sign><total_fee>1</total_fee></xml>
+2017-05-27 15:33:27.444 DEBUG path: F:\xxc\幸事多\WX_Web\
+2017-05-27 15:33:27.607 DEBUG WxPayApi: PostXml used cert
+2017-05-27 15:33:28.650 DEBUG WxPayApi: Refund response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx4b52212c5d5983ad]]></appid>
+<mch_id><![CDATA[1433628402]]></mch_id>
+<nonce_str><![CDATA[z2YqnquoqTsxmQPD]]></nonce_str>
+<sign><![CDATA[A3EBDD1EE9FC2F8091B4771102CC3D5C]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<transaction_id><![CDATA[4008572001201705272841692626]]></transaction_id>
+<out_trade_no><![CDATA[S2017052700042_75095]]></out_trade_no>
+<out_refund_no><![CDATA[S2017052700042]]></out_refund_no>
+<refund_id><![CDATA[50000203062017052701150139868]]></refund_id>
+<refund_channel><![CDATA[]]></refund_channel>
+<refund_fee>1</refund_fee>
+<coupon_refund_fee>0</coupon_refund_fee>
+<total_fee>1</total_fee>
+<cash_fee>1</cash_fee>
+<coupon_refund_count>0</coupon_refund_count>
+<cash_refund_fee>1</cash_refund_fee>
+</xml>
+2017-05-27 15:33:28.652 返回结果 SUCCESS: -----
+2017-05-27 15:33:35.586 paySuccess : 
+2017-05-27 15:33:38.007 orderno : -----
+2017-05-27 15:33:38.046 是否存在订单 0: -----
+2017-05-27 15:33:39.033 paySuccess : 
+2017-05-27 15:33:44.377 paySuccess : 
+2017-05-27 15:33:49.977 paySuccess : 
+2017-05-27 15:35:32.261 paySuccess : 
+2017-05-27 15:35:38.789 orderno : -----
+2017-05-27 15:35:38.989 是否存在订单 0: -----
+2017-05-27 15:37:09.643 paySuccess : 
+2017-05-27 15:37:14.071 orderno : -----
+2017-05-27 15:37:14.112 是否存在订单 0: -----
+2017-05-27 15:38:24.144 orderno S2017052700042: -----
+2017-05-27 15:38:24.181 是否存在订单 1: -----
+2017-05-27 15:38:24.182 out_trade_no S2017052700042_75095: -----
+2017-05-27 15:38:24.182 out_refund_no S2017052700042: -----
+2017-05-27 15:38:24.183 total_fee 1: -----
+2017-05-27 15:38:24.183 refund_fee : -----
+2017-05-27 15:38:24.184 op_user_id 1433628402: -----
+2017-05-27 15:38:24.191 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx4b52212c5d5983ad]]></appid><mch_id><![CDATA[1433628402]]></mch_id><nonce_str><![CDATA[ae92b75553054da39fbcd59a4681d718]]></nonce_str><op_user_id><![CDATA[1433628402]]></op_user_id><out_refund_no><![CDATA[S2017052700042]]></out_refund_no><out_trade_no><![CDATA[S2017052700042_75095]]></out_trade_no><refund_fee>1</refund_fee><sign><![CDATA[D5301096C2FFF00EDBFCC8034F033EE8]]></sign><total_fee>1</total_fee></xml>
+2017-05-27 15:38:24.206 DEBUG path: F:\xxc\幸事多\WX_Web\
+2017-05-27 15:38:24.226 DEBUG WxPayApi: PostXml used cert
+2017-05-27 15:38:24.550 DEBUG WxPayApi: Refund response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx4b52212c5d5983ad]]></appid>
+<mch_id><![CDATA[1433628402]]></mch_id>
+<nonce_str><![CDATA[zcO9gPxqdJMNrjeY]]></nonce_str>
+<sign><![CDATA[C43FC30070AD4C22B926B691E0D7E38B]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<transaction_id><![CDATA[4008572001201705272841692626]]></transaction_id>
+<out_trade_no><![CDATA[S2017052700042_75095]]></out_trade_no>
+<out_refund_no><![CDATA[S2017052700042]]></out_refund_no>
+<refund_id><![CDATA[50000203062017052701150139868]]></refund_id>
+<refund_channel><![CDATA[]]></refund_channel>
+<refund_fee>1</refund_fee>
+<coupon_refund_fee>0</coupon_refund_fee>
+<total_fee>1</total_fee>
+<cash_fee>1</cash_fee>
+<coupon_refund_count>0</coupon_refund_count>
+<cash_refund_fee>1</cash_refund_fee>
+</xml>
+2017-05-27 15:38:24.555 返回结果 SUCCESS: -----
+2017-05-27 15:38:34.989 paySuccess : 
+2017-05-27 15:38:41.209 paySuccess : 
+2017-05-27 15:38:50.127 orderno : -----
+2017-05-27 15:38:50.162 是否存在订单 0: -----
+2017-05-27 15:42:01.203 orderno S2017052700042: -----
+2017-05-27 15:42:01.376 是否存在订单 1: -----
+2017-05-27 15:42:01.376 out_trade_no S2017052700042_75095: -----
+2017-05-27 15:42:01.377 out_refund_no S2017052700042: -----
+2017-05-27 15:42:01.391 total_fee 1: -----
+2017-05-27 15:42:01.391 refund_fee : -----
+2017-05-27 15:42:01.391 op_user_id 1433628402: -----
+2017-05-27 15:42:01.396 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx4b52212c5d5983ad]]></appid><mch_id><![CDATA[1433628402]]></mch_id><nonce_str><![CDATA[81329abc03b843a8a1d0d5a045f20b2e]]></nonce_str><op_user_id><![CDATA[1433628402]]></op_user_id><out_refund_no><![CDATA[S2017052700042]]></out_refund_no><out_trade_no><![CDATA[S2017052700042_75095]]></out_trade_no><refund_fee>1</refund_fee><sign><![CDATA[E2734415D2857BC23369717108B6FCB6]]></sign><total_fee>1</total_fee></xml>
+2017-05-27 15:42:01.409 DEBUG path: F:\xxc\幸事多\WX_Web\
+2017-05-27 15:42:01.429 DEBUG WxPayApi: PostXml used cert
+2017-05-27 15:42:01.729 DEBUG WxPayApi: Refund response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx4b52212c5d5983ad]]></appid>
+<mch_id><![CDATA[1433628402]]></mch_id>
+<nonce_str><![CDATA[4TklHpbApq8NN9dy]]></nonce_str>
+<sign><![CDATA[CE83AAD0C0D5F3F80B51D7BADBF6E8D5]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<transaction_id><![CDATA[4008572001201705272841692626]]></transaction_id>
+<out_trade_no><![CDATA[S2017052700042_75095]]></out_trade_no>
+<out_refund_no><![CDATA[S2017052700042]]></out_refund_no>
+<refund_id><![CDATA[50000203062017052701150139868]]></refund_id>
+<refund_channel><![CDATA[]]></refund_channel>
+<refund_fee>1</refund_fee>
+<coupon_refund_fee>0</coupon_refund_fee>
+<total_fee>1</total_fee>
+<cash_fee>1</cash_fee>
+<coupon_refund_count>0</coupon_refund_count>
+<cash_refund_fee>1</cash_refund_fee>
+</xml>
+2017-05-27 15:42:01.735 返回结果 SUCCESS: -----
+2017-05-27 15:45:06.546 orderno S2017052700042: -----
+2017-05-27 15:45:06.710 是否存在订单 1: -----
+2017-05-27 15:45:06.710 out_trade_no S2017052700042_75095: -----
+2017-05-27 15:45:06.711 out_refund_no S2017052700042: -----
+2017-05-27 15:45:06.712 total_fee 1: -----
+2017-05-27 15:45:06.712 refund_fee : -----
+2017-05-27 15:45:06.713 op_user_id 1433628402: -----
+2017-05-27 15:45:06.722 DEBUG WxPayApi: Refund request : <xml><appid><![CDATA[wx4b52212c5d5983ad]]></appid><mch_id><![CDATA[1433628402]]></mch_id><nonce_str><![CDATA[c661760ef08d48c994665510955d7cbb]]></nonce_str><op_user_id><![CDATA[1433628402]]></op_user_id><out_refund_no><![CDATA[S2017052700042]]></out_refund_no><out_trade_no><![CDATA[S2017052700042_75095]]></out_trade_no><refund_fee>1</refund_fee><sign><![CDATA[D68B94D6C910D8019786E4B3F725F2E5]]></sign><total_fee>1</total_fee></xml>
+2017-05-27 15:45:06.736 DEBUG path: F:\xxc\幸事多\WX_Web\
+2017-05-27 15:45:06.768 DEBUG WxPayApi: PostXml used cert
+2017-05-27 15:45:07.153 DEBUG WxPayApi: Refund response : <xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx4b52212c5d5983ad]]></appid>
+<mch_id><![CDATA[1433628402]]></mch_id>
+<nonce_str><![CDATA[sqLRiFwrAFxY9qkb]]></nonce_str>
+<sign><![CDATA[354C095D8413E5C779E24EAC8FE862CC]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<transaction_id><![CDATA[4008572001201705272841692626]]></transaction_id>
+<out_trade_no><![CDATA[S2017052700042_75095]]></out_trade_no>
+<out_refund_no><![CDATA[S2017052700042]]></out_refund_no>
+<refund_id><![CDATA[50000203062017052701150139868]]></refund_id>
+<refund_channel><![CDATA[]]></refund_channel>
+<refund_fee>1</refund_fee>
+<coupon_refund_fee>0</coupon_refund_fee>
+<total_fee>1</total_fee>
+<cash_fee>1</cash_fee>
+<coupon_refund_count>0</coupon_refund_count>
+<cash_refund_fee>1</cash_refund_fee>
+</xml>
+2017-05-27 15:45:07.160 返回结果 SUCCESS: -----
+2017-05-27 15:49:20.704 发送：02383631383533303331333432383237010000000000000000000000 : 
+2017-05-27 16:13:48.644 开箱循环 861853031342827: 5
+2017-05-27 16:13:48.651 发送：02383631383533303331333432383237000000000001000000000000 : 
+2017-05-27 16:15:34.735 开箱循环 861853031342827: 5
+2017-05-27 16:15:34.742 发送：02383631383533303331333432383237000000000001000000000000 : 

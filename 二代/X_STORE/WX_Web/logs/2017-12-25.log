@@ -1,0 +1,71 @@
+2017-12-25 22:05:51.996 类：BasePage 方法：UserId: sql:SELECT id FROM WP_用户表 WHERE openid='o8eAHwFadTw_pMf6lMyrjYqa4WyY' AND openid <> ''
+2017-12-25 22:05:52.334 类：BasePage 方法：UserId: _userid:1
+2017-12-25 22:05:52.504 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-25 22:05:52.505 类：BasePage 方法：UserInfo: sql:select WP_用户表.id,用户名,密码,角色id,wx头像,ISNULL(真实姓名,'') AS 真实姓名,isnull(WP_用户表.手机号,'') as 手机号 from WP_用户表  left join wp_会员表  on WP_用户表.openid=wp_会员表.openid where WP_用户表.openid='o8eAHwFadTw_pMf6lMyrjYqa4WyY' and wp_会员表.openid <> '' and  isshow=1
+2017-12-25 22:05:52.586 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-25 22:05:52.587 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-25 22:05:52.631 类：BasePage 方法：UserInfo: UserInfo进入:
+2017-12-25 23:03:35.959 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:03:54.613 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:04:25.779 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:04:31.188 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:04:43.847 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:05:14.234 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:05:14.347 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:05:44.645 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:05:44.757 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:06:15.069 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:06:15.211 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:06:45.509 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:06:45.731 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:07:16.020 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:07:16.129 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:07:46.440 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:07:46.582 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:08:16.912 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:08:17.020 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:08:47.358 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:08:47.486 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:09:17.776 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:09:18.477 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:09:39.018 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:09:41.634 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:09:42.961 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:09:44.065 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:09:59.678 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:10:29.996 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:10:30.545 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:11:00.928 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:11:01.036 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:11:31.310 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:11:32.455 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:11:44.684 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:11:54.050 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:12:24.371 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:12:25.557 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:12:55.860 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:12:57.009 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:13:07.055 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:13:37.387 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:13:37.493 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:14:07.779 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:14:09.018 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:14:10.260 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:14:40.560 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:14:40.662 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:15:08.418 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:15:38.750 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:15:38.872 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:16:08.726 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:16:39.016 接口：paySucessOpenbox 方法：ProcessRequest: sql_state:select * from WP_订单表 where 订单编号='S201712274872250' and state = 3
+2017-12-25 23:16:40.648 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:16:47.759 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:16:47.817 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:16:47.919 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:16:48.243 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:16:48.318 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:16:48.430 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:16:51.810 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:17:01.346 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:17:13.997 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)
+2017-12-25 23:17:18.461 页面：paySuccess 方法：IsSuccess: sql:SELECT * FROM WP_订单表 WHERE 订单编号 = 'S201712274872250' AND state in(2,5)

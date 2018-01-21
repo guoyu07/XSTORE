@@ -1,0 +1,74 @@
+﻿
+            .menuduo li {
+                float: left;
+                position: relative;
+            }
+
+                .menuduo li a:hover {
+                    color: #000;
+                    /*background: url(img/bg1.png);*/
+                }
+
+                .menuduo li.focusa {
+                    /*background: url(img/bg_focus.png);*/
+                }
+
+                .menuduo li a {
+                    display: block;
+                    float: left;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 20px;
+                }
+                .menuduo li li a {
+                    display: block;
+                    float: left;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 6px;
+                }
+
+                .menuduo li ul {
+                    position: absolute;
+                    left: 0;
+                    background: url(img/bg2.png);
+                    width: 150px;
+                    /*border: 1px solid #000;*/
+                    display: none;
+                }
+
+                    .menuduo li ul a {
+                        width: 110px;
+                    }
+
+        .one {
+            border: 1px solid #000;
+            top: 30px;
+        }
+
+            .one li a:hover {
+                background: url(img/bg1.png);
+            }
+
+        .menuduo li ul.two {
+            left: 150px;
+        }
+
+        .one li a.more {
+            background: url(img/there.png) no-repeat 130px center;
+        }
+
+            .one li a.more:hover {
+                background: url(img/there.png) no-repeat 130px center;
+            }
+
+        .menuduo li ul.hdw {
+            left:-30px;
+            top:30px;
+        }
+
+        .menuduo li ul.hdwq {
+            position:absolute;
+            top:0px;
+            left: 124px;
+        }

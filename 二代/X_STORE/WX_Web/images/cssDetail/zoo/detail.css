@@ -1,0 +1,18 @@
+.nei_body { background:url(bg_bottom.jpg) no-repeat bottom center; background-size:100%; background-color:#28b2e1;}
+.d_body{position:relative; padding-top:45px; z-index:1; width:100%; min-height:500px; margin:0 auto;}
+.d_body:after{display:block;content:"";clear:both;}
+.d_content{ margin:0 1em 0.6em 1em; background:url(tm.png); border-radius:10px; padding:0px 10px 20px 10px; text-align:left;}
+.d_content table{ width:100%;}
+.d_content h1{text-align: center;font-weight:bold; width:auto; }
+.d_content h2{text-align:center;font-weight:bold; width:auto; line-height:2em; height:2em; font-size:14px; font-weight:bold;padding:8px;}
+.d_content p{line-height:1.5em; text-align:left;}
+.d_content p img { text-align:center; margin:5px auto; display:block;}
+.d_body .d_content h5 {border-top:1px solid #c0bfbf;border-bottom:1px solid #c0bfbf; height:30px; line-height:30px; margin-bottom:12px;}
+.d_body .d_content h5 #proAuthor { display:none;}
+.d_content img { max-width:80%; margin:0 auto; display:block;}
+
+/*分享*/
+.d_share{bottom:0px;position:relative; max-width:640px; margin:0 auto;}
+.d_share ul li{float:left;width:50%;}
+.d_share ul li a{text-decoration:none;display:block;margin:4px 8px;background-color:#fff;background-image:linear-gradient(to top, #DBDBDB, #F4F4F4); border-radius:13px; color:#000000;font-size:14px;padding:8px 18px 8px 10px;text-align:center;text-shadow:0.5px 0.5px 1px #FFFFFF;}
+.d_share ul li a img{height:22px;width:22px;vertical-align:top;float:left;}
