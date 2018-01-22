@@ -195,3 +195,9 @@ X:\OneDrive\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.pd
 X:\OneDrive\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.csproj.CoreCompileInputs.cache
 E:\iM\OneDrive\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.csprojResolveAssemblyReference.cache
 X:\OneDrive\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.csprojResolveAssemblyReference.cache
+D:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\bin\Debug\Creatrue.kernel.dll
+D:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\bin\Debug\Creatrue.kernel.pdb
+D:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.csprojResolveAssemblyReference.cache
+D:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.csproj.CoreCompileInputs.cache
+D:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.dll
+D:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.pdb

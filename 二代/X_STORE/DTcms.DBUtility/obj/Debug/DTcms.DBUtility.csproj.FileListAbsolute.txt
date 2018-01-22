@@ -335,3 +335,10 @@ X:\OneDrive\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
 X:\OneDrive\X_STORE\DTcms.DBUtility\bin\Debug\Newtonsoft.Json.dll
 X:\OneDrive\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csproj.CoreCompileInputs.cache
 X:\OneDrive\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csprojResolveAssemblyReference.cache
+D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.dll
+D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.pdb
+D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\bin\Debug\Newtonsoft.Json.dll
+D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csprojResolveAssemblyReference.cache
+D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csproj.CoreCompileInputs.cache
+D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
+D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
