@@ -50,12 +50,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Areas.cs" />
+    <Compile Include="Cabinet.cs" />
+    <Compile Include="CabinetLayout.cs" />
     <Compile Include="Constant.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="LoginRecord.cs" />
+    <Compile Include="Model\ProductQuery.cs" />
     <Compile Include="Model\UserQuery.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="UserHotel.cs" />
     <Compile Include="UserRole.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

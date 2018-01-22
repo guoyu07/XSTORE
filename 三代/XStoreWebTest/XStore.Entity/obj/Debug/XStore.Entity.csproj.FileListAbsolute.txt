@@ -10,3 +10,15 @@ E:\iM\微云\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.c
 E:\iM\微云\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.csproj.CoreCompileInputs.cache
 E:\iM\微云\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.dll
 E:\iM\微云\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.pdb
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\bin\Debug\XStore.Entity.dll
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\bin\Debug\XStore.Entity.pdb
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\bin\Debug\Chloe.dll
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\bin\Debug\Chloe.Extension.dll
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\bin\Debug\Chloe.MySql.dll
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\bin\Debug\Chloe.xml
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\bin\Debug\Chloe.Extension.xml
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\bin\Debug\Chloe.MySql.xml
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.csprojResolveAssemblyReference.cache
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.csproj.CoreCompileInputs.cache
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.dll
+D:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.pdb

@@ -41,7 +41,7 @@ namespace tdx.database.Common_Pay.WeiXinPay
         //=======【商户系统后台机器IP】===================================== 
         /* 此参数可手动配置也可在程序中自动获取
         */
-        public const string IP = "8.8.8.8";
+        public const string IP = "119.29.94.189";
 
 
         //=======【代理服务器设置】===================================

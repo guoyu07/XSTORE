@@ -8,16 +8,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title><%=Title %></title>
-    <script src="../../Scripts/jquery-1.10.2.min.js"></script>
-    <script src="../../Scripts/Plugins/layer.js"></script>
+    <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
+    <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/bind")%>
+    <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs")%>
 
-    <link rel="icon" href="../../Content/Icon/logo.png" type="image/x-icon" />
-
-    <link rel="stylesheet" href="../../Content/Login/reset.css" />
-    <link rel="stylesheet" href="../../Content/Login/common.css" />
-    <link rel="stylesheet" href="../../Content/Login/Bind.css" />
-
-    <link rel="stylesheet" href="../../Content/layer.css" />
 </head>
 
 <body>
@@ -56,13 +50,7 @@
         </div>
 
         <script>
-            function system_alert(message) {
-                layer.open({
-                    title: ['系统提示', 'background-color:#F60; color:#fff;'],
-                    content: message,
-                    btn: 'OK'
-                });
-            }
+           
             $(function () {
                 var telreg = /^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
                 var unreg = /^[a-zA-Z0-9_]{6,16}$/;

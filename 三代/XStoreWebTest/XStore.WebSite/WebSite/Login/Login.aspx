@@ -10,25 +10,9 @@
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title><%=Title %></title>
-    <script src="../../Scripts/jquery-1.10.2.min.js"></script>
-
-    <script src="../../Scripts/Plugins/layer.js"></script>
-
-    <link rel="icon" href="../../Content/Icon/logo.png" type="image/x-icon" />
-
-    <link href="../../Content/Login/reset.css" rel="stylesheet" />
-    <link href="../../Content/Login/common.css" rel="stylesheet" />
-    <link href="../../Content/Login/login.css" rel="stylesheet" />
-    <link href="../../Content/layer.css" rel="stylesheet" />
-    <script type="text/javascript">
-        function system_alert(message) {
-            layer.open({
-                title: ['系统提示', 'background-color:#F60; color:#fff;'],
-                content: message,
-                btn: 'OK'
-            });
-        }
-    </script>
+    <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
+    <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/login")%>
+    <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs")%>
 </head>
 <body>
     <form id="form1" runat="server">

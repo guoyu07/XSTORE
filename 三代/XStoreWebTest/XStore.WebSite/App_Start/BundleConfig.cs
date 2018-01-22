@@ -41,8 +41,52 @@ namespace XStore.WebSite
             //        Path = "~/Scripts/respond.min.js",
             //        DebugPath = "~/Scripts/respond.js",
             //    });
+            //         < link rel = "stylesheet" href = "../../Content/Login/reset.css" />
+
+            //< link rel = "stylesheet" href = "../../Content/Login/common.css" />
+
+            //   < link rel = "stylesheet" href = "../../Content/Login/Bind.css" />
+            bundles.Add(new StyleBundle("~/bundles/CommonStyle").Include(
+                "~/Content/Login/reset.css",
+                "~/Content/Login/common.css",
+                "~/Content/layer.css"
+                ));
             bundles.Add(new ScriptBundle("~/bundles/CommonJs").Include(
-                            "~/Scripts/jquery-1.10.2.min.js"));
+                "~/Scripts/jquery-1.10.2.min.js",
+                "~/Scripts/Plugins/layer.js",
+                  "~/Scripts/common.js"
+                ));
+
+            #region 登陆界面
+            bundles.Add(new StyleBundle("~/bundles/login").Include(
+               "~/Content/Login/login.css"
+               ));
+            #endregion
+            #region 欢迎界面
+            bundles.Add(new StyleBundle("~/bundles/welcome").Include(
+               "~/Content/Login/welcome.css"
+               ));
+            #endregion
+            #region 账号绑定
+            bundles.Add(new StyleBundle("~/bundles/bind").Include(
+            "~/Content/Login/bind.css"
+            ));
+            #endregion
+            #region 离线页面
+             bundles.Add(new StyleBundle("~/bundles/nopower").Include(
+           "~/Content/Login/nopower.css"
+           ));
+            #endregion
+            #region 商品列表
+            bundles.Add(new StyleBundle("~/bundles/goodslist").Include(
+           "~/fonts/iconfont.css",
+           "~/Content/Goods/buyerIndex.css"
+           ));
+            bundles.Add(new ScriptBundle("~/bundles/goodslist").Include(
+                "~/Scripts/Plugins/vipspa.js",
+                "~/Scripts/Modules/mySpace.js.js"
+                ));
+            #endregion
         }
     }
 }

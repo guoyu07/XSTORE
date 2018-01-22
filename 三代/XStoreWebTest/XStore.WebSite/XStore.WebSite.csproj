@@ -105,6 +105,9 @@
     <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
+    <Reference Include="TinyMapper, Version=2.0.0.40, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TinyMapper.2.0.8\lib\net45\TinyMapper.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -152,12 +155,20 @@
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Login\Bind.css" />
+    <Content Include="Content\Goods\buyerIndex.css" />
+    <Content Include="Content\Images\active.png" />
+    <Content Include="Content\Images\bottom.png" />
+    <Content Include="Content\Images\btns.png" />
+    <Content Include="Content\Images\no-active.png" />
+    <Content Include="Content\Images\top.png" />
+    <Content Include="Content\Login\bind.css" />
     <Content Include="Content\layer.css" />
     <Content Include="Content\Login\common.css" />
     <Content Include="Content\Icon\logo.png" />
     <Content Include="Content\Login\login.css" />
+    <Content Include="Content\Login\nopower.css" />
     <Content Include="Content\Login\reset.css" />
+    <Content Include="Content\Login\welcome.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="docs\MySqlCommand.xml" />
@@ -173,6 +184,9 @@
     <Content Include="docs\MySqlTransaction.xml" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\iconfont.css" />
+    <Content Include="fonts\iconfont.js" />
+    <Content Include="fonts\iconfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -180,10 +194,40 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\Modules\cart.js" />
+    <Content Include="Scripts\Modules\disMyself.js" />
+    <Content Include="Scripts\Modules\goodsList.js" />
+    <Content Include="Scripts\Modules\home.js" />
+    <Content Include="Scripts\Modules\hotelList.js" />
+    <Content Include="Scripts\Modules\myself.js" />
+    <Content Include="Scripts\Modules\mySpace.js" />
+    <Content Include="Scripts\Modules\news.js" />
+    <Content Include="Scripts\Modules\pickUp.js" />
+    <Content Include="Scripts\Modules\roomStatus.js" />
+    <Content Include="Scripts\Modules\x-store.js" />
+    <Content Include="Scripts\Modules\xsd.js" />
+    <Content Include="Scripts\Modules\xStore.js" />
     <Content Include="Scripts\Plugins\layer.js" />
     <Content Include="Scripts\Plugins\need\layer.css" />
+    <Content Include="Scripts\Plugins\vipspa.js" />
+    <Content Include="Scripts\Plugins\zepto.min.js" />
+    <Content Include="WebSite\Goods\Detail.aspx" />
+    <Content Include="WebSite\Goods\GoodsList.aspx" />
     <Content Include="WebSite\Login\Bind.aspx" />
     <Content Include="WebSite\Login\Login.aspx" />
+    <Content Include="WebSite\Login\NoAuth.aspx" />
+    <Content Include="WebSite\Login\NoPower.aspx" />
+    <Content Include="WebSite\Login\Welcome.aspx" />
+    <Content Include="WebSite\Operation\BindMac.aspx" />
+    <Content Include="WebSite\Operation\QaCheck.aspx" />
+    <Content Include="WebSite\Operation\WaterFillUp.aspx" />
+    <Content Include="fonts\iconfont.eot" />
+    <Content Include="fonts\iconfont.ttf" />
+    <Content Include="fonts\iconfont.woff" />
+    <Content Include="fonts\mui.ttf" />
+    <Content Include="WebSite\_Ascx\Footer.ascx" />
+    <None Include="packages.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Index.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -264,6 +308,20 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\Goods\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Goods\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Goods\GoodsList.aspx.cs">
+      <DependentUpon>GoodsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Goods\GoodsList.aspx.designer.cs">
+      <DependentUpon>GoodsList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\Login\Bind.aspx.cs">
       <DependentUpon>Bind.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -278,14 +336,61 @@
     <Compile Include="WebSite\Login\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\Login\NoAuth.aspx.cs">
+      <DependentUpon>NoAuth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Login\NoAuth.aspx.designer.cs">
+      <DependentUpon>NoAuth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Login\NoPower.aspx.cs">
+      <DependentUpon>NoPower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Login\NoPower.aspx.designer.cs">
+      <DependentUpon>NoPower.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Login\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Login\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\BindMac.aspx.cs">
+      <DependentUpon>BindMac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\BindMac.aspx.designer.cs">
+      <DependentUpon>BindMac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\QaCheck.aspx.cs">
+      <DependentUpon>QaCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\QaCheck.aspx.designer.cs">
+      <DependentUpon>QaCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\WaterFillUp.aspx.cs">
+      <DependentUpon>WaterFillUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\WaterFillUp.aspx.designer.cs">
+      <DependentUpon>WaterFillUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\_Ascx\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\_Ascx\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\" />
-    <Folder Include="WebSite\Carts\" />
     <Folder Include="WebSite\Center\" />
-    <Folder Include="WebSite\Goods\" />
     <Folder Include="WebSite\Order\" />
+    <Folder Include="WebSite\_Ashx\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
