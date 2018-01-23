@@ -39,7 +39,7 @@ namespace XStore.WebSite.WebSite.Goods
                     MessageBox.Show(this, "system_alert", "箱子未绑定房间");
                     return;
                 }
-                if (!cabinet.online)//离线
+                if (cabinet.online.HasValue&&cabinet.online.Value)//离线
                 {
                     Response.Redirect(string.Format(Constant.LoginDic + "NoPower.aspx?boxmac = {0}", cabinet.mac), false);
                     return;
@@ -54,6 +54,11 @@ namespace XStore.WebSite.WebSite.Goods
         {
             try
             {
+                if (string.IsNullOrEmpty(cabinet.products))
+                {
+                    MessageBox.Show(this, "system_alert", "酒店房间未设置默认商品");
+                    return;
+                }
                 var proidList = cabinet.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
                 var layout = context.Query<CabinetLayout>().FirstOrDefault(o => o.hotel_id == cabinet.hotel);
                 if (layout == null)
@@ -73,12 +78,13 @@ namespace XStore.WebSite.WebSite.Goods
 
                 for (int i = 0; i < proidList.Count(); i++)
                 {
-                    var proid = productList[i].ObjToInt(0);
+                    var proid = proidList[i].ObjToInt(0);
+                    var sell_out = false;
                     //如果实际商品是0，则用默认商品补全
                     if (proid == 0)
                     {
                         proid = layoutProList[i].ObjToInt(0);
-
+                        sell_out = true;
                     }
                     var pro = productList.FirstOrDefault(o => o.id == proid);
                     if (pro == null)
@@ -87,7 +93,7 @@ namespace XStore.WebSite.WebSite.Goods
                         return;
                     }
                     var proQuery = TinyMapper.Map<ProductQuery>(pro);
-                    proQuery.sell_out = true;
+                    proQuery.sell_out = sell_out;
                     list.Add(proQuery);
                 }
 
@@ -110,7 +116,7 @@ namespace XStore.WebSite.WebSite.Goods
             }
             else
             {
-                return string.Format(Constant.GoodsDic + "Detail.aspx?product_id='{0}'&boxmac={1}&position={2}", product_id, cabinet.mac,position);
+                return string.Format("Detail.aspx?product_id={0}&boxmac={1}&position={2}", product_id, cabinet.mac,position);
             }
 
         }

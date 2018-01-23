@@ -8,8 +8,8 @@
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
     <title><%=Title %></title>
     <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
-    <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/goodslist")%>
-    <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs","~/bundles/goodslist")%>
+    <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/goodslist/css")%>
+    <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs","~/bundles/goodslist/js")%>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -51,11 +51,6 @@
             <uc:Footer ID="UserFooter" runat="server" EnableViewState="False"></uc:Footer>
         </div>
         <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-        <script type="text/javascript">
-            $(function () {
-                $("a[name='con']").eq(0).addClass("on");
-            })
-        </script>
     </form>
 
 </body>

@@ -156,11 +156,18 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Goods\buyerIndex.css" />
+    <Content Include="Content\Goods\detail.css" />
     <Content Include="Content\Images\active.png" />
     <Content Include="Content\Images\bottom.png" />
     <Content Include="Content\Images\btns.png" />
+    <Content Include="Content\Images\myself.png" />
+    <Content Include="Content\Images\myself_on.png" />
+    <Content Include="Content\Images\mySpace.png" />
+    <Content Include="Content\Images\mySpace_on.png" />
     <Content Include="Content\Images\no-active.png" />
     <Content Include="Content\Images\top.png" />
+    <Content Include="Content\Images\xs.png" />
+    <Content Include="Content\Images\xs_on.png" />
     <Content Include="Content\Login\bind.css" />
     <Content Include="Content\layer.css" />
     <Content Include="Content\Login\common.css" />
@@ -169,7 +176,10 @@
     <Content Include="Content\Login\nopower.css" />
     <Content Include="Content\Login\reset.css" />
     <Content Include="Content\Login\welcome.css" />
+    <Content Include="Content\Order\payCenter.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\swiper.min.css" />
+    <Content Include="Content\weui.css" />
     <Content Include="Default.aspx" />
     <Content Include="docs\MySqlCommand.xml" />
     <Content Include="docs\MySqlCommandBuilder.xml" />
@@ -203,6 +213,7 @@
     <Content Include="Scripts\Modules\myself.js" />
     <Content Include="Scripts\Modules\mySpace.js" />
     <Content Include="Scripts\Modules\news.js" />
+    <Content Include="Scripts\Modules\payCenter.js" />
     <Content Include="Scripts\Modules\pickUp.js" />
     <Content Include="Scripts\Modules\roomStatus.js" />
     <Content Include="Scripts\Modules\x-store.js" />
@@ -212,6 +223,8 @@
     <Content Include="Scripts\Plugins\need\layer.css" />
     <Content Include="Scripts\Plugins\vipspa.js" />
     <Content Include="Scripts\Plugins\zepto.min.js" />
+    <Content Include="Scripts\swipe.js" />
+    <Content Include="Scripts\weui.js" />
     <Content Include="WebSite\Goods\Detail.aspx" />
     <Content Include="WebSite\Goods\GoodsList.aspx" />
     <Content Include="WebSite\Login\Bind.aspx" />
@@ -226,6 +239,7 @@
     <Content Include="fonts\iconfont.ttf" />
     <Content Include="fonts\iconfont.woff" />
     <Content Include="fonts\mui.ttf" />
+    <Content Include="WebSite\Order\PayCenter.aspx" />
     <Content Include="WebSite\_Ascx\Footer.ascx" />
     <None Include="packages.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -261,6 +275,7 @@
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
+    <Content Include="WebSite\_Ashx\BuyNow.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -378,6 +393,13 @@
     <Compile Include="WebSite\Operation\WaterFillUp.aspx.designer.cs">
       <DependentUpon>WaterFillUp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\Order\PayCenter.aspx.cs">
+      <DependentUpon>PayCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Order\PayCenter.aspx.designer.cs">
+      <DependentUpon>PayCenter.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\_Ascx\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -385,12 +407,13 @@
     <Compile Include="WebSite\_Ascx\Footer.ascx.designer.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\_Ashx\BuyNow.ashx.cs">
+      <DependentUpon>BuyNow.ashx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="WebSite\Center\" />
-    <Folder Include="WebSite\Order\" />
-    <Folder Include="WebSite\_Ashx\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />

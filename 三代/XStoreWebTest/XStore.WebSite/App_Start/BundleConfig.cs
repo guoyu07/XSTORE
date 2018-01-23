@@ -56,6 +56,24 @@ namespace XStore.WebSite
                 "~/Scripts/Plugins/layer.js",
                   "~/Scripts/common.js"
                 ));
+            #region Swipe
+            bundles.Add(new StyleBundle("~/bundles/swiper/css").Include(
+               "~/Content/swiper.min.css"
+               ));
+            bundles.Add(new ScriptBundle("~/bundles/swiper/js").Include(
+               "~/Scripts/swiper.min.js"
+               ));
+            #endregion
+            bundles.Add(new StyleBundle("~/bundles/weui/css").Include(
+               "~/Content/weui.css"
+               ));
+            bundles.Add(new ScriptBundle("~/bundles/weui/js").Include(
+               "~/Scripts/weui.js"
+               ));
+            #region WeUi
+
+            #endregion
+
 
             #region 登陆界面
             bundles.Add(new StyleBundle("~/bundles/login").Include(
@@ -73,20 +91,35 @@ namespace XStore.WebSite
             ));
             #endregion
             #region 离线页面
-             bundles.Add(new StyleBundle("~/bundles/nopower").Include(
-           "~/Content/Login/nopower.css"
-           ));
+            bundles.Add(new StyleBundle("~/bundles/nopower").Include(
+          "~/Content/Login/nopower.css"
+          ));
             #endregion
             #region 商品列表
-            bundles.Add(new StyleBundle("~/bundles/goodslist").Include(
+            bundles.Add(new StyleBundle("~/bundles/goodslist/css").Include(
            "~/fonts/iconfont.css",
            "~/Content/Goods/buyerIndex.css"
            ));
-            bundles.Add(new ScriptBundle("~/bundles/goodslist").Include(
+            bundles.Add(new ScriptBundle("~/bundles/goodslist/js").Include(
                 "~/Scripts/Plugins/vipspa.js",
-                "~/Scripts/Modules/mySpace.js.js"
+                "~/Scripts/Modules/mySpace.js"
                 ));
             #endregion
+            #region 商品详情
+            bundles.Add(new StyleBundle("~/bundles/detail/css").Include(
+              "~/Content/Goods/detail.css"
+              ));
+            #endregion
+
+            #region 支付中心
+            bundles.Add(new StyleBundle("~/bundles/paycenter/css").Include(
+             "~/Content/Order/payCenter.css"
+             ));
+            bundles.Add(new ScriptBundle("~/bundles/paycenter/js").Include(
+             "~/Content/Modules/payCenter.js"
+             ));
+            #endregion
+
         }
     }
 }
