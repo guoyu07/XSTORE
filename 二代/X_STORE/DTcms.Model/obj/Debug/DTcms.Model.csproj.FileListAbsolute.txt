@@ -345,7 +345,6 @@ X:\OneDrive\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csproj.CoreCompileInputs.c
 D:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Debug\DTcms.Model.dll
 D:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Debug\DTcms.Model.pdb
 D:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Debug\Newtonsoft.Json.dll
-D:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csprojResolveAssemblyReference.cache
 D:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csproj.CoreCompileInputs.cache
 D:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.dll
 D:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.pdb
