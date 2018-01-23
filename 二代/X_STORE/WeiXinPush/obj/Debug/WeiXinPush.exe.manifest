@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Mzg7eZpAKYKBkZgrt2HID9kkpDZnVHjGKccksplHD7A=</dsig:DigestValue>
+        <dsig:DigestValue>TPV2poXm7nK4tsWfgKCu9rGAIyd8xDUAQLT8kAY3rrE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -114,14 +114,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeiXinPush.exe" size="53248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeiXinPush.exe" size="52736">
       <assemblyIdentity name="WeiXinPush" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UD48cYfb/dDSZQyH0vq58A4PXcoXqOnAJsWM/GLZPmw=</dsig:DigestValue>
+        <dsig:DigestValue>oD+Dp3oM3Ty3pCU6eec7VdOIS1L6MJxZ000KeOPEwJI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
