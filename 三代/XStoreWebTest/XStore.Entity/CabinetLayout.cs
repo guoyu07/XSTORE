@@ -10,6 +10,7 @@ namespace XStore.Entity
     [Table("cabinet_layout")]
     public class CabinetLayout
     {
+        [Column(IsPrimaryKey = true)]
         public int id { get; set; }
         public int hotel_id { get; set; }
         public string products { get; set; }

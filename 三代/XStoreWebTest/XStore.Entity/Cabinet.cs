@@ -10,6 +10,7 @@ namespace XStore.Entity
     [Table("cabinet")]
     public class Cabinet
     {
+        [Column(IsPrimaryKey = true)]
         public string mac { get; set; }
         public DateTime? date { get; set; }
         public int? dealer { get; set; }

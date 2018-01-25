@@ -10,6 +10,7 @@ namespace XStore.Entity
     [Table("product")]
     public class Product
     {
+        [Column(IsPrimaryKey = true)]
         public int id { get; set; }
         public string barcode { get; set; }
         public int category { get; set; }

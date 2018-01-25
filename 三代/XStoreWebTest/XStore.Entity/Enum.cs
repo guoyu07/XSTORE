@@ -31,5 +31,22 @@ namespace XStore.Entity
             配水员 = 10
         }
         #endregion
-    }
+
+        #region -----支付状态-----
+        public enum PayState : int
+        {
+            未支付 = 0,
+            已支付 = 1
+        }
+        #endregion
+
+        #region -----开箱状态-----
+        public enum DeliverState : int
+        {
+            未开箱 = 0,
+            已开箱 = 1
+        }
+        #endregion
+
+        }
 }

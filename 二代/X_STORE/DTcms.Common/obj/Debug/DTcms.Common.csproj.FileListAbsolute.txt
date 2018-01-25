@@ -230,9 +230,13 @@ D:\Git\XSTORE\二代\X_STORE\DTcms.Common\bin\Debug\DTcms.Common.pdb
 D:\Git\XSTORE\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.csproj.CoreCompileInputs.cache
 D:\Git\XSTORE\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.dll
 D:\Git\XSTORE\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.pdb
+<<<<<<< HEAD
 X:\Git\二代\X_STORE\DTcms.Common\bin\Debug\DTcms.Common.dll
 X:\Git\二代\X_STORE\DTcms.Common\bin\Debug\DTcms.Common.pdb
 X:\Git\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.csprojResolveAssemblyReference.cache
 X:\Git\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.csproj.CoreCompileInputs.cache
 X:\Git\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.dll
 X:\Git\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.pdb
+=======
+D:\Git\XSTORE\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.csprojResolveAssemblyReference.cache
+>>>>>>> af5f934aa7a694333c9f81d335e6a371fc8ad15b

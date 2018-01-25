@@ -305,23 +305,23 @@ a.订单编号
           union all
           select openid from View_WechatPushAdmin where SendAuth = 1) d", orderDr["订单编号"]);
                 var pushDt = comfun.GetDataTableBySQL(pushSql);
-
+                //零时解决方案，直接修改发送状态，不管有没有发送成功
+                string updateOrderSql = string.Format("update WP_订单表 set hasPush = 1 where 订单编号 = '{0}'", orderDr["订单编号"]);
+                var updateBool = comfun.UpdateBySQL(updateOrderSql);
+                if (updateBool == 0)
+                {
+                    Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "更新发送状态失败");
+                }
+                else
+                {
+                    Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "发送模板成功!!!");
+                }
                 foreach (DataRow pushDr in pushDt.Rows)
                 {
                     var openId = pushDr["openid"].ToString();
                     Log.WriteLog("微信推送", "openId:", openId);
                     var responseBool = Send_WX_Message(postData, openId, tempId);
-                    //零时解决方案，直接修改发送状态，不管有没有发送成功
-                    string updateOrderSql = string.Format("update WP_订单表 set hasPush = 1 where 订单编号 = '{0}'", orderDr["订单编号"]);
-                    var updateBool = comfun.UpdateBySQL(updateOrderSql);
-                    if (updateBool == 0)
-                    {
-                        Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "更新发送状态失败");
-                    }
-                    else
-                    {
-                        Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "发送模板成功!!!");
-                    }
+                    
                     //if (responseBool)
                     //{
                     //    string updateOrderSql = string.Format("update WP_订单表 set hasPush = 1 where 订单编号 = '{0}'", orderDr["订单编号"]);

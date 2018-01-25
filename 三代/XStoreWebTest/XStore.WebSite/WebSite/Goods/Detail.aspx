@@ -14,13 +14,13 @@
         <div class="main" style="-webkit-overflow-scrolling: touch; overflow: auto!important;">
             <div class="banner swiper-container">
                 <div class="imgWrap">
-                    <img src="<%=product.image %>" alt="">
+                    <img src="<%=product.image %>" alt=""/>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
             <div class="clearfix pd3">
                 <div class="l goodsName"><%=product.name %></div>
-                <div class="r goodsPrice">¥ <span><%=(product.price1.ObjToInt(0)/100).ObjToDecimal(0) %></span></div>
+                <div class="r goodsPrice">¥ <span><%=product.price1.ObjToInt(0).CentToRMB(0) %></span></div>
             </div>
    
             <div class="goodsInfo pd3">
@@ -37,34 +37,10 @@
         </div>
         <div class="settlement clearfix">
             <div class="priceInfo l">
-                价格: ¥ <span><%=(product.price1.ObjToInt(0)/100).ObjToDecimal(0) %></span>
+                价格: ¥ <span><%=product.price1.ObjToInt(0).CentToRMB(0) %></span>
             </div>
             <input type="button" runat="server" id="buy" class="buyBtn r" style="border: none;" onserverclick="buy_ServerClick" value="立即购买" />
         </div>
-
-        <script>
-            $(function () {
-                $('#buy').on('click', function() {
-                    $.ajax({
-                        url: 'http://139.199.160.173:9119//test/create',
-                        data: { openId: "<%=Session[Constant.OpenId].ObjToStr()%>", mac:"<%=cabinet.mac%>", pos:"<%=position%>"},
-                        type: 'get',
-                        dataType: 'json',
-                        success: function(result) {
-                            console.log(result);
-                            if (result.state == '1') {
-                                console.log(1);
-                                window.location.href = result.guid;
-                                console.log(2);
-                            } else {
-                                console.log(3);
-                                console.log(result.info);
-                            }
-                        }
-                    });
-                });
-            })
-        </script>
     </form>
 </body>
 </html>

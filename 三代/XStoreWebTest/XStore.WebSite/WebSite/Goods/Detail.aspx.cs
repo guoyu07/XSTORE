@@ -1,25 +1,20 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using XStore.Common;
 using XStore.Entity;
+using XStore.Entity.Model;
 
 namespace XStore.WebSite.WebSite.Goods
 {
     public partial class Detail : BasePage
     {
-        //public int good_id = 0;
-        //public string goods_name = "";
-        //public string goods_miaoshu = "";
-        //public string goods_guige = "";
-        //public decimal goods_benzhanjia = 0;
 
-        //public string goods_img = "";
-        //string no_img = "/shop/img/no-image.jpg";//默认图片           
-        //int weizhi = 0;
         private Cabinet _cabinet;
         protected Cabinet cabinet
         {
@@ -81,8 +76,25 @@ namespace XStore.WebSite.WebSite.Goods
 
         protected void buy_ServerClick(object sender, EventArgs e)
         {
-            var requestUrl = string.Format("http://139.199.160.173:9119/test/create?openId={0}&mac={1}&pos={2}", Session[Constant.OpenId], cabinet.mac, position);
-
+            var request = new BuyRequest {
+                openId = Session[Constant.OpenId].ObjToStr(),
+                mac = cabinet.mac,
+                position = position
+            };
+            var requestUrl = string.Format("http://139.199.160.173:9119/test/create?openId={0}&mac={1}&pos={2}", request.openId, request.mac, request.position);
+            var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+            if (response.operationStatus.Equals("SUCCESS"))
+            {
+                Session[Constant.OrderNo] = response.operationMessage.ObjToStr();
+                var url = Constant.OrderDic + "PayCenter.aspx";
+                Response.Redirect(url);
+                return;
+            }
+            else
+            {
+                MessageBox.Show(this, "system_alert", "订单获取失败");
+                return;
+            }
         }
         #endregion
 
