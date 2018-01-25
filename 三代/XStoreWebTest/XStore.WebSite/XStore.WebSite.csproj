@@ -395,7 +395,6 @@
     </Compile>
     <Compile Include="WebSite\Order\PayCenter.aspx.cs">
       <DependentUpon>PayCenter.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebSite\Order\PayCenter.aspx.designer.cs">
       <DependentUpon>PayCenter.aspx</DependentUpon>

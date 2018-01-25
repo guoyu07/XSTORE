@@ -200,3 +200,9 @@ D:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\bin\Debug\Creatrue.
 D:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.csproj.CoreCompileInputs.cache
 D:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.dll
 D:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.pdb
+X:\Git\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\bin\Debug\Creatrue.kernel.dll
+X:\Git\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\bin\Debug\Creatrue.kernel.pdb
+X:\Git\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.csprojResolveAssemblyReference.cache
+X:\Git\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.csproj.CoreCompileInputs.cache
+X:\Git\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.dll
+X:\Git\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.pdb

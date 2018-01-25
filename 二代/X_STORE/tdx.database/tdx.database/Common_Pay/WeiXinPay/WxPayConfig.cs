@@ -31,12 +31,10 @@ namespace tdx.database.Common_Pay.WeiXinPay
         //证书密码
         public const string SSLCERT_PASSWORD = "1433628402";
 
-
-
         //=======【支付结果通知url】===================================== 
         /* 支付结果通知回调url，用于商户接收支付结果
         */
-        public const string NOTIFY_URL = "http://wx2.x-store.com.cn/Shop/notify.aspx ";
+        public const string NOTIFY_URL = "http://wx2.x-store.com.cn/Shop/notify.aspx";
 
         //=======【商户系统后台机器IP】===================================== 
         /* 此参数可手动配置也可在程序中自动获取

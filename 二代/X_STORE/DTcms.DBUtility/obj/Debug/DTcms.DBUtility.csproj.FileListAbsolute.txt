@@ -341,3 +341,10 @@ D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\bin\Debug\Newtonsoft.Json.dll
 D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csproj.CoreCompileInputs.cache
 D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
 D:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
+X:\Git\二代\X_STORE\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.dll
+X:\Git\二代\X_STORE\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.pdb
+X:\Git\二代\X_STORE\DTcms.DBUtility\bin\Debug\Newtonsoft.Json.dll
+X:\Git\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csprojResolveAssemblyReference.cache
+X:\Git\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csproj.CoreCompileInputs.cache
+X:\Git\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
+X:\Git\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
