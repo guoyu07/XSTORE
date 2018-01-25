@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -45,6 +48,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="Utils_Ex.cs" />
+    <Compile Include="WeiXinPay\HttpService.cs" />
+    <Compile Include="WeiXinPay\JsApiPay.cs" />
+    <Compile Include="WeiXinPay\Log.cs" />
+    <Compile Include="WeiXinPay\NativePay.cs" />
+    <Compile Include="WeiXinPay\Notify.cs" />
+    <Compile Include="WeiXinPay\ResultNotify.cs" />
+    <Compile Include="WeiXinPay\WxPayApi.cs" />
+    <Compile Include="WeiXinPay\WxPayConfig.cs" />
+    <Compile Include="WeiXinPay\WxPayData.cs" />
+    <Compile Include="WeiXinPay\WxPayException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

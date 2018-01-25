@@ -25,7 +25,7 @@
                                         <p class="goodsName over"><%#Eval("name")%></p>
 
                                     </div>
-                                    <div class="price">¥ <span><%#(Eval("price1").ObjToInt(0)/100).ObjToDecimal(0)%></span></div>
+                                    <div class="price">¥ <span><%#Eval("price1").ObjToInt(0).CentToRMB(0)%></span></div>
                                 </a>
                                 <div class="model">
                                     <p>暂无商品</p>

@@ -116,7 +116,16 @@ namespace XStore.WebSite
              "~/Content/Order/payCenter.css"
              ));
             bundles.Add(new ScriptBundle("~/bundles/paycenter/js").Include(
-             "~/Content/Modules/payCenter.js"
+             "~/Scripts/Modules/payCenter.js"
+             ));
+            #endregion
+
+            #region 支付成功
+            bundles.Add(new StyleBundle("~/bundles/paysuccess/css").Include(
+            "~/Content/Order/paySuccess.css"
+            ));
+            bundles.Add(new ScriptBundle("~/bundles/paysuccess/js").Include(
+             "~/Scripts/jquery.myProgress.js"
              ));
             #endregion
 
