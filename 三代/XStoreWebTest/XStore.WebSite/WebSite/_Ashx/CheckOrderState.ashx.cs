@@ -24,7 +24,7 @@ namespace XStore.WebSite.WebSite._Ashx
             try
             {
                 var mysqlContext = new MySqlContext(new MySqlConnectionFactory(connString));
-                var orderNo = context.Session[Constant.OrderNo].ObjToInt(0);
+                var orderNo = context.Session[Constant.OrderId].ObjToInt(0);
                 var orderInfo = mysqlContext.Query<OrderInfo>().FirstOrDefault(o => o.id == orderNo);
                 if (orderInfo == null)
                 {

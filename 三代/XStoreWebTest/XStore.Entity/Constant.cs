@@ -13,6 +13,7 @@ namespace XStore.Entity
         public const string IMEI = "boxmac";
         public const string Position = "Position";
         public const string ProductId = "product_id";
+        public const string OrderId = "OrderId";
         public const string OrderNo = "OrderNo";
 
         public const string LoginDic = "~/WebSite/Login/";
@@ -20,6 +21,6 @@ namespace XStore.Entity
         public const string OrderDic = "~/WebSite/Order/";
         public const string CenterDic = "~/WebSite/Center/";
         public const string OperationDic = "~/WebSite/Operation/";
-        public const string ApiDic = "~/WebSite/_Ashx/";
+        public const string ApiDic = "/WebSite/_Ashx/";
     }
 }

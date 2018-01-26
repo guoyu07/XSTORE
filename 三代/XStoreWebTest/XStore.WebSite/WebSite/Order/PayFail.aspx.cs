@@ -33,7 +33,7 @@ namespace XStore.WebSite.WebSite.Order
                 if (_orderInfo == null)
                 {
                     var orderNo = Session[Constant.OrderNo].ObjToInt(0);
-                    _orderInfo = context.Query<OrderInfo>().FirstOrDefault(o => o.id == orderNo);
+                    _orderInfo = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderNo));
                 }
                 return _orderInfo;
             }

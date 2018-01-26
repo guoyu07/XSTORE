@@ -63,7 +63,9 @@
     <Compile Include="Model\UserQuery.cs" />
     <Compile Include="OrderInfo.cs" />
     <Compile Include="Product.cs" />
+    <Compile Include="ProductBatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoreBatch.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserHotel.cs" />
     <Compile Include="UserRole.cs" />

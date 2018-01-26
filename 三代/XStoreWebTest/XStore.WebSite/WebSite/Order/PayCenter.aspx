@@ -26,7 +26,7 @@
                     var jsonData = $.parseJSON(response);
                     if (jsonData.success) {
                         if (jsonData.pay) {
-                            window.location.href = '<%=Constant.OrderDic+"PaySuccess.aspx"%>';
+                            window.location.href = '<%=Constant.OrderDic+"PayWaiting.aspx"%>';
                         }
                     } 
                     else {

@@ -71,7 +71,6 @@ namespace XStore.WebSite.WebSite.Goods
                 MessageBox.Show(this, "system_alert", "商品不存在");
                 return;
             }
-
         }
 
         protected void buy_ServerClick(object sender, EventArgs e)
@@ -85,7 +84,9 @@ namespace XStore.WebSite.WebSite.Goods
             var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
             if (response.operationStatus.Equals("SUCCESS"))
             {
+                var responseSplit = response.operationMessage.ObjToStr().Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
                 Session[Constant.OrderNo] = response.operationMessage.ObjToStr();
+
                 var url = Constant.OrderDic + "PayCenter.aspx";
                 Response.Redirect(url);
                 return;

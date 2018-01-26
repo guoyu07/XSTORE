@@ -7,6 +7,7 @@
     <meta name="viewport" charset="UTF-8" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
     <%: System.Web.Optimization.Styles.Render("~/bundles/payfail/css")%>
+    <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs")%>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -19,7 +20,7 @@
             </div>
         </div>
         <div class="tips-product">
-            <p>商品名:<%=productInfo.name %> &nbsp&nbsp&nbsp售价:<%=productInfo.price1 %> </p>
+            <p>商品名:<%=productInfo.name %> &nbsp&nbsp&nbsp售价:<%=productInfo.price1.CentToRMB(0) %> </p>
         </div>
         <div class="middle">
             <h3 >别着急，您可以<span>拔插电源</span>来帮助信号回家</h3>

@@ -59,7 +59,18 @@ namespace XStore.WebSite.WebSite.Goods
                     MessageBox.Show(this, "system_alert", "酒店房间未设置默认商品");
                     return;
                 }
-                var proidList = cabinet.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                var proidList = new List<int>();
+                //根据storebatch获取对应的商品id
+                var storeBatchList = cabinet.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(o=>o.ObjToInt(0));
+                foreach (var storeBatch in storeBatchList)
+                {
+
+                    proidList.Add(context.Query<StoreBatch>()
+                        .Where(o => o.id == storeBatch)
+                        .LeftJoin<ProductBatch>((a, b) => a.batch_id == b.id).Select((a, b) => b.product_id)
+                        .FirstOrDefault());
+                }
+
                 var layout = context.Query<CabinetLayout>().FirstOrDefault(o => o.hotel_id == cabinet.hotel);
                 if (layout == null)
                 {
@@ -96,7 +107,6 @@ namespace XStore.WebSite.WebSite.Goods
                     proQuery.sell_out = sell_out;
                     list.Add(proQuery);
                 }
-
                 goods_list.DataSource = list;
                 goods_list.DataBind();
             }

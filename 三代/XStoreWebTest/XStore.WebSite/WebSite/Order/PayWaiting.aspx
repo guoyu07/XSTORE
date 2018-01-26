@@ -14,6 +14,7 @@
         $(function () {
             $("#progress_bar").myProgress({ speed: 30000, percent: 100 });
             setTimeout('delayer()', 3000);
+            setTimeout('fail_check()', 30000);
         });
         function delayer() {
             $.ajax({
@@ -23,10 +24,7 @@
                     var jsonData = $.parseJSON(response);
                     if (jsonData.success) {
                         if (jsonData.pay && jsonData.deliver) {
-                            window.location.href = '<%=Constant.OrderDic+"PaySuccess.aspx"%>';
-                        }
-                        else {
-                            window.location.href = '<%=Constant.OrderDic+"PayFail.aspx"%>';
+                            window.location.href = "PaySuccess.aspx";
                         }
                     }
                     else {
@@ -34,6 +32,26 @@
                     }
                 }
             });
+        }
+        function fail_check() {
+            $.ajax({
+                url: '<%=Constant.ApiDic%>' + 'CheckOrderState.ashx',
+                  type: 'GET',
+                  success: function (response) {
+                      var jsonData = $.parseJSON(response);
+                      if (jsonData.success) {
+                          if (jsonData.pay && jsonData.deliver) {
+                              window.location.href = "PaySuccess.aspx";
+                          }
+                          else {
+                              window.location.href = "PayFail.aspx";
+                          }
+                      }
+                      else {
+                          system_alert(jsonData.message);
+                      }
+                  }
+             });
         }
     </script>
 </head>
