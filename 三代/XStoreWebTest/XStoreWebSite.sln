@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2020
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStore.WebSite", "XStore.WebSite\XStore.WebSite.csproj", "{97BD3A6F-1B98-4080-86E4-75AF76867357}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStore.Entity", "XStore.Entity\XStore.Entity.csproj", "{9B65146A-C10B-42DE-A128-874D9A8F25E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XStore.Common", "XStore.Common\XStore.Common.csproj", "{F832E63C-311B-4494-874F-E9DF13412667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.AliDayu", "Common.AliDayu\Common.AliDayu.csproj", "{8FE93D9D-F252-4101-BA5B-AA0FD90AD231}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F832E63C-311B-4494-874F-E9DF13412667}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F832E63C-311B-4494-874F-E9DF13412667}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F832E63C-311B-4494-874F-E9DF13412667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE93D9D-F252-4101-BA5B-AA0FD90AD231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE93D9D-F252-4101-BA5B-AA0FD90AD231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE93D9D-F252-4101-BA5B-AA0FD90AD231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE93D9D-F252-4101-BA5B-AA0FD90AD231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

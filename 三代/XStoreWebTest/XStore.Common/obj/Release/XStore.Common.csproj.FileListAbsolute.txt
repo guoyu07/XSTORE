@@ -1,0 +1,8 @@
+X:\Git\三代\XStoreWebTest\XStore.Common\bin\Release\XStore.Common.dll
+X:\Git\三代\XStoreWebTest\XStore.Common\bin\Release\XStore.Common.pdb
+X:\Git\三代\XStoreWebTest\XStore.Common\bin\Release\Newtonsoft.Json.dll
+X:\Git\三代\XStoreWebTest\XStore.Common\bin\Release\Newtonsoft.Json.xml
+X:\Git\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.csprojResolveAssemblyReference.cache
+X:\Git\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.csproj.CoreCompileInputs.cache
+X:\Git\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.dll
+X:\Git\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.pdb

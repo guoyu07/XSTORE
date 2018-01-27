@@ -76,7 +76,7 @@ namespace XStore.WebSite.WebSite.Goods
         protected void buy_ServerClick(object sender, EventArgs e)
         {
             var request = new BuyRequest {
-                openId = Session[Constant.OpenId].ObjToStr(),
+                openId =OpenId,
                 mac = cabinet.mac,
                 position = position
             };

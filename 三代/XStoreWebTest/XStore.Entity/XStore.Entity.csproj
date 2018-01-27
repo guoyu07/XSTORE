@@ -49,17 +49,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessToken.cs" />
     <Compile Include="Areas.cs" />
     <Compile Include="Cabinet.cs" />
     <Compile Include="CabinetLayout.cs" />
     <Compile Include="Constant.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="LoginRecord.cs" />
+    <Compile Include="MessageLog.cs" />
     <Compile Include="Model\AjaxResponse.cs" />
+    <Compile Include="Model\BindResponse.cs" />
     <Compile Include="Model\BuyRequest.cs" />
     <Compile Include="Model\BuyResponse.cs" />
+    <Compile Include="Model\MessageResponse.cs" />
+    <Compile Include="Model\OrderResponse.cs" />
     <Compile Include="Model\PayAjaxResponse.cs" />
     <Compile Include="Model\ProductQuery.cs" />
+    <Compile Include="Model\RegisterRequest.cs" />
     <Compile Include="Model\UserQuery.cs" />
     <Compile Include="OrderInfo.cs" />
     <Compile Include="Product.cs" />
@@ -67,8 +73,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StoreBatch.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="UserHistory.cs" />
     <Compile Include="UserHotel.cs" />
     <Compile Include="UserRole.cs" />
+    <Compile Include="UserWeiChat.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

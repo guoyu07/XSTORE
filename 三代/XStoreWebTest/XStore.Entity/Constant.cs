@@ -15,6 +15,7 @@ namespace XStore.Entity
         public const string ProductId = "product_id";
         public const string OrderId = "OrderId";
         public const string OrderNo = "OrderNo";
+        public const string WxCode = "code";
 
         public const string LoginDic = "~/WebSite/Login/";
         public const string GoodsDic = "~/WebSite/Goods/";

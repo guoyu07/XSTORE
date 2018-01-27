@@ -314,12 +314,15 @@
     <Content Include="fonts\iconfont.ttf" />
     <Content Include="fonts\iconfont.woff" />
     <Content Include="fonts\mui.ttf" />
+    <Content Include="WebSite\Order\AliNotify.aspx" />
     <Content Include="WebSite\Order\PayCenter.aspx" />
     <Content Include="WebSite\Order\PayFail.aspx" />
     <Content Include="WebSite\Order\PaySuccess.aspx" />
     <Content Include="WebSite\Order\PayWaiting.aspx" />
+    <Content Include="WebSite\Order\WeiXinNotify.aspx" />
     <Content Include="WebSite\_Ascx\Footer.ascx" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Index.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -354,6 +357,8 @@
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="WebSite\_Ashx\CheckOrderState.ashx" />
+    <Content Include="WebSite\_Ashx\ShortMessage.ashx" />
+    <Content Include="WebSite\_Ashx\BindAccount.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -473,6 +478,13 @@
     <Compile Include="WebSite\Operation\WaterFillUp.aspx.designer.cs">
       <DependentUpon>WaterFillUp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\Order\AliNotify.aspx.cs">
+      <DependentUpon>AliNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Order\AliNotify.aspx.designer.cs">
+      <DependentUpon>AliNotify.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\Order\PayCenter.aspx.cs">
       <DependentUpon>PayCenter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -501,6 +513,14 @@
     <Compile Include="WebSite\Order\PayWaiting.aspx.designer.cs">
       <DependentUpon>PayWaiting.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\Order\WeiXinNotify.aspx.cs">
+      <DependentUpon>WeiXinNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Order\WeiXinNotify.aspx.designer.cs">
+      <DependentUpon>WeiXinNotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Order\WxPayNotify.cs" />
     <Compile Include="WebSite\_Ascx\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -508,8 +528,14 @@
     <Compile Include="WebSite\_Ascx\Footer.ascx.designer.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\_Ashx\BindAccount.ashx.cs">
+      <DependentUpon>BindAccount.ashx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\_Ashx\CheckOrderState.ashx.cs">
       <DependentUpon>CheckOrderState.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\_Ashx\ShortMessage.ashx.cs">
+      <DependentUpon>ShortMessage.ashx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -526,6 +552,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common.AliDayu\Common.AliDayu.csproj">
+      <Project>{8FE93D9D-F252-4101-BA5B-AA0FD90AD231}</Project>
+      <Name>Common.AliDayu</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XStore.Common\XStore.Common.csproj">
       <Project>{F832E63C-311B-4494-874F-E9DF13412667}</Project>
       <Name>XStore.Common</Name>

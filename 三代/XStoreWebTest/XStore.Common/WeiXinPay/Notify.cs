@@ -54,7 +54,6 @@ namespace XStore.Common.WeiXinPay
             Log.Info(this.GetType().ToString(), "Check sign success");
             return data;
         }
-
         //派生类需要重写这个方法，进行不同的回调处理
         public virtual void ProcessNotify()
         {
