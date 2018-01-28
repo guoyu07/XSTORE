@@ -57,14 +57,17 @@
                 var yzm;
                 $('.getCode').on('click', function () {
                     var phone = $(".tel input").val();
-                    var url = '<%=Constant.ApiDic%>' + "SendMessage.ashx";
+                    var url = '<%=Constant.ApiDic%>' + "ShortMessage.ashx";
+                    console.log(url + "?" + phone);
+
                     $.post(url, { phone: phone }, function (response) {
-                        if (response.state === 0) {
+                        if (response.success) {
+                            console.log(response.code);
                             yzm = response.code;
-                            system_alert(response.info);
+                            system_alert(response.message);
                         }
                         else {
-                            system_alert(response.info);
+                            system_alert(response.message);
                         }
 
                     }, "json");
@@ -128,31 +131,33 @@
                             skin: 'msg',
                             time: 2
                         });
-                    } else if ($('.checkCode input').val().trim() == "") {
-                        layer.open({
-                            content: '请输入验证码',
-                            skin: 'msg',
-                            time: 2
-                        });
-                    } else if ($('.checkCode input').val().trim() != yzm) {
-                        layer.open({
-                            content: '请输入正确的验证码',
-                            skin: 'msg',
-                            time: 2
-                        });
+                    //} else if ($('.checkCode input').val().trim() == "") {
+                    //    layer.open({
+                    //        content: '请输入验证码',
+                    //        skin: 'msg',
+                    //        time: 2
+                    //    });
+                    //} else if ($('.checkCode input').val().trim() != yzm) {
+                    //    layer.open({
+                    //        content: '请输入正确的验证码',
+                    //        skin: 'msg',
+                    //        time: 2
+                    //    });
                     } else if ($('.account input').val().trim() == "") {
                         layer.open({
                             content: '请输入账号',
                             skin: 'msg',
                             time: 2
                         });
-                    } else if (!unreg.test($('.account input').val().trim())) {
-                        layer.open({
-                            content: '账号为6位至16位的字母数字组合',
-                            skin: 'msg',
-                            time: 2
-                        });
-                    } else if ($('.newPsd input').val().trim() == '') {
+                    }
+                    //else if (!unreg.test($('.account input').val().trim())) {
+                    //    layer.open({
+                    //        content: '账号为6位至16位的字母数字组合',
+                    //        skin: 'msg',
+                    //        time: 2
+                    //    });
+                    //}
+                    else if ($('.newPsd input').val().trim() == '') {
                         layer.open({
                             content: '请输入密码',
                             skin: 'msg',
@@ -177,8 +182,9 @@
                         var password = $('.newPsd input').val();
                         var url = '<%=Constant.ApiDic%>' + "BindAccount.ashx";
                         $.post(url, { realname: name, phone: phone, username: account, password: password }, function (response) {
-                            if (response.state === 0) {
-                                system_alert(修改成功)
+                            if (response.success) {
+                                system_alert(response.message);
+                                window.location.href = response.url;
                             }
                             else {
                                 system_alert(response.info);

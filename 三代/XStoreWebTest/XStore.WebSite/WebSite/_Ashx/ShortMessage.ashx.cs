@@ -25,13 +25,14 @@ namespace XStore.WebSite.WebSite._Ashx
             {
                 var mysqlContext = new MySqlContext(new MySqlConnectionFactory(connString));
                 string phone = context.Request["phone"].ObjToStr();
-                string openId = context.Session[Constant.OpenId].ObjToStr();
                 Random ran = new Random();
                 string code = ran.Next(1000, 10000).ToString();
-                var messageInfo = mysqlContext.Query<MessageLog>().FirstOrDefault(o => o.createTime.AddMinutes(1) > DateTime.Now && o.phone.Equals(phone));
-               
-                if (messageInfo != null)
+                var messageInfo = mysqlContext.Query<MessageLog>().OrderByDesc(o=>o.createTime).FirstOrDefault(o => o.phone.Equals(phone));
+
+                if (messageInfo != null && messageInfo.createTime.AddMinutes(1) > DateTime.Now)
                 {
+                    var addtime = messageInfo.createTime.AddMinutes(1);
+                    var isbig = addtime > DateTime.Now;
                     context.Response.Write(JsonConvert.SerializeObject(new AjaxResponse{ success = false, message = "验证已发送的您的手机，请稍后再试!" }));
                     return;
                 }
@@ -46,7 +47,6 @@ namespace XStore.WebSite.WebSite._Ashx
                         {
                             code = code,
                             createTime = DateTime.Now,
-                            openId = openId,
                             phone = phone
                         });
                         context.Response.Write(JsonConvert.SerializeObject(new AjaxResponse { success = true, message = "验证码已发送到您的手机", code = code }));

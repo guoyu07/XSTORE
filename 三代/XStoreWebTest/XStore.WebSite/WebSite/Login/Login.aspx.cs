@@ -27,17 +27,19 @@ namespace XStore.WebSite.WebSite.Login
                 {
                     username = a.username,
                     password = a.password,
-                    role_id = b.role_id
+                    role_id = b.role_id,
+                    weichat = a.weichat
                 }).FirstOrDefault();
                 if (userModel != null)
                 {
-                    if (!string.IsNullOrEmpty(userModel.weichat))
+                    bool is_same = string.IsNullOrEmpty(userModel.weichat.ObjToStr()) ? false : userModel.weichat.Equals(OpenId);
+                    if (!string.IsNullOrEmpty(userModel.weichat)&&!is_same)
                     {
                         MessageBox.Show(this,"system_alert", "用户已绑定");
                     }
                     else
                     {
-                        bool is_same = string.IsNullOrEmpty(userModel.weichat.ObjToStr()) ? false : userModel.weichat.Equals(OpenId);
+                       
                         Session[Constant.CurrentUser] = userModel;
                         #region 如果登陆成功，则记录登陆日志
                         context.Insert<LoginRecord>(new LoginRecord
@@ -53,28 +55,29 @@ namespace XStore.WebSite.WebSite.Login
                         switch ((UserRoleEnum)userModel.role_id)
                         {
                             case UserRoleEnum.经理://酒店经理
-                   
-                                MessageBox.ShowAndRedirect(this, "system_alert", is_same ? "登录成功" : "登陆成功，请修改初始密码！", is_same ? Constant.CenterDic+"hotelManager.aspx" : Constant.LoginDic + "Bind.aspx");
+                                MessageBox.Show(this, "system_alert", is_same ? "登陆成功" : "登陆成功，请修改初始密码！");
+                                Response.Redirect(is_same ? Constant.CenterDic + "ManageCenter.aspx" : Constant.LoginDic + "Bind.aspx");
                                 break;
                             case UserRoleEnum.财务://财务
-
-                                MessageBox.ShowAndRedirect(this, "system_alert", is_same ? "登录成功" : "登陆成功，请修改初始密码！", is_same ? Constant.CenterDic + "goodsList.aspx" : Constant.LoginDic + "Bind.aspx");
+                                MessageBox.Show(this, "system_alert", is_same ? "登陆成功" : "登陆成功，请修改初始密码！");
+                                Response.Redirect(is_same ? Constant.CenterDic + "FinanceCenter.aspx" : Constant.LoginDic + "Bind.aspx");
                                 break;
                             case UserRoleEnum.前台://配货员
-
-                                MessageBox.ShowAndRedirect(this, "system_alert", is_same ? "登录成功" : "登陆成功，请修改初始密码！", is_same ? Constant.CenterDic + "disMyself.aspx" : Constant.LoginDic + "Bind.aspx");
+                                MessageBox.Show(this, "system_alert", is_same ? "登陆成功" : "登陆成功，请修改初始密码！"); ;
+                                Response.Redirect(is_same ? Constant.CenterDic + "EmployeeCenter.aspx" : Constant.LoginDic + "Bind.aspx");
                                 break;
                             case UserRoleEnum.区域经理://区域经理
-                                //MessageBox.Show(this, "system_alert", "登陆成功，请修改初始密码！");
-                                //Response.Redirect(Constant.LoginDic + "Bind.aspx");
-                                MessageBox.ShowAndRedirect(this, "system_alert", is_same ? "登录成功" : "登陆成功，请修改初始密码！", is_same ? Constant.CenterDic + "areaManage.aspx" : "Bind.aspx");
+                                MessageBox.Show(this, "system_alert", is_same ? "登陆成功" : "登陆成功，请修改初始密码！");
+                                Response.Redirect(is_same ? Constant.CenterDic + "AreaManageCenter.aspx" : Constant.LoginDic + "Bind.aspx");
+                               
                                 break;
                             case UserRoleEnum.测试员:
-
-                                MessageBox.ShowAndRedirect(this, "system_alert", is_same ? "登录成功" : "登陆成功，请修改初始密码！", is_same ? Constant.CenterDic + "qaManage.aspx" : Constant.LoginDic + "Bind.aspx");
+                                MessageBox.Show(this, "system_alert", is_same ? "登陆成功" : "登陆成功，请修改初始密码！");
+                                Response.Redirect(is_same ? Constant.CenterDic + "TestCenter.aspx" : Constant.LoginDic + "Bind.aspx");
                                 break;
                             case UserRoleEnum.配水员:
-                                MessageBox.ShowAndRedirect(this, "system_alert", is_same ? "登录成功" : "登陆成功，请修改初始密码！", is_same ? Constant.CenterDic + "WaterFillUp.aspx" : Constant.LoginDic + "Bind.aspx");
+                                MessageBox.Show(this, "system_alert", is_same ?"登陆成功":"登陆成功，请修改初始密码！");
+                                Response.Redirect(is_same ? Constant.CenterDic + "PromotionCenter.aspx" : Constant.LoginDic + "Bind.aspx");
                                 break;
                         }
                         #endregion

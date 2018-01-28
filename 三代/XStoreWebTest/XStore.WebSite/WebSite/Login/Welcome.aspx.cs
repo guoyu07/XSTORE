@@ -44,7 +44,7 @@ namespace XStore.WebSite.WebSite.Login
                     return;
                 }
                 var roleInfo = context.Query<UserRole>().FirstOrDefault(o => o.username == userInfo.username);
-                var userHotelInfo = context.Query<UserHotel>().FirstOrDefault(o => o.username == userInfo.username && o.hotel_id == roomInfo.hotel);
+                var userHotelInfo = context.Query<UserHotel>().FirstOrDefault(o => o.user_username == userInfo.username && o.hotels_id == roomInfo.hotel);
                 if ((UserRoleEnum)roleInfo.role_id.ObjToInt(0) == UserRoleEnum.测试员)
                 {
                     Response.Redirect(string.Format(Constant.OperationDic+"QaCheck.aspx?boxmac={0}", boxMac));

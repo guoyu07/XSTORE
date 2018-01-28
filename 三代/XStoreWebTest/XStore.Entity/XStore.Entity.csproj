@@ -55,6 +55,7 @@
     <Compile Include="CabinetLayout.cs" />
     <Compile Include="Constant.cs" />
     <Compile Include="Enum.cs" />
+    <Compile Include="Hotel.cs" />
     <Compile Include="LoginRecord.cs" />
     <Compile Include="MessageLog.cs" />
     <Compile Include="Model\AjaxResponse.cs" />

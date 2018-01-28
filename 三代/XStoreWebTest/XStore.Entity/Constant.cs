@@ -16,12 +16,19 @@ namespace XStore.Entity
         public const string OrderId = "OrderId";
         public const string OrderNo = "OrderNo";
         public const string WxCode = "code";
+        public const string WeiUser = "WxUser";
 
         public const string LoginDic = "~/WebSite/Login/";
         public const string GoodsDic = "~/WebSite/Goods/";
         public const string OrderDic = "~/WebSite/Order/";
         public const string CenterDic = "~/WebSite/Center/";
         public const string OperationDic = "~/WebSite/Operation/";
+
+        public const string JsLoginDic = "/WebSite/Login/";
+        public const string JsGoodsDic = "/WebSite/Goods/";
+        public const string JsOrderDic = "/WebSite/Order/";
+        public const string JsCenterDic = "/WebSite/Center/";
+        public const string JsOperationDic = "/WebSite/Operation/";
         public const string ApiDic = "/WebSite/_Ashx/";
     }
 }

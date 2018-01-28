@@ -24,6 +24,11 @@ namespace XStore.WebSite
             Log = log4net.LogManager.GetLogger("Weixin.Logging");//获取一个日志记录器
             Log.Info(DateTime.Now.ToString() + ": login success");//写入一条新log
         }
+        protected override void OnInit(EventArgs e)
+        {
+            var InitOpenid = OpenId;
+            base.OnInit(e);
+        }
         private string _openid;
         protected string OpenId
         {
@@ -31,7 +36,7 @@ namespace XStore.WebSite
             {
                 if (debug)
                 {
-                    return "o8eAHwM94iBA0GGYsh8tnJ1pmuM8";//袁益鹏
+                    _openid = "o8eAHwM94iBA0GGYsh8tnJ1pmuM8";
                 }
                 if (_openid == null || string.IsNullOrEmpty(_openid))
                 {
@@ -41,13 +46,17 @@ namespace XStore.WebSite
                     }
                     else
                     {
-                        _openid = Session["OpenId"].ObjToStr();
+                        _openid = Session[Constant.OpenId].ObjToStr();
                     }
+                }
+                else
+                {
+                    Session[Constant.OpenId] = _openid;
                 }
                 return _openid;
             }
         }
-
+        
 
         protected string RedrectWeiXin()
         {

@@ -135,6 +135,29 @@ namespace XStore.WebSite
             ));
             #endregion
 
+            #region 前台个人中心
+            bundles.Add(new StyleBundle("~/bundles/employeecenter/css").Include(
+                "~/fonts/iconfont.css",
+                "~/Content/Center/distributer.css",
+                "~/Content/footer.css"
+           ));
+            bundles.Add(new ScriptBundle("~/bundles/employeecenter/js").Include(
+             "~/Scripts/Modules/dsMyself.js"
+             ));
+            #endregion
+
+            #region 常规补货
+            bundles.Add(new StyleBundle("~/bundles/roomselect/css").Include(
+                "~/fonts/iconfont.css",
+                "~/Content/Opreation/roomSelect.css",
+                "~/Content/Center/distributer.css",
+                "~/Content/footer.css"
+           ));
+            bundles.Add(new ScriptBundle("~/bundles/roomselect/js").Include(
+             "~/Scripts/Plugins/vipspa.js",
+             "~/Scripts/Plugins/vipspa-dev.js"
+             ));
+            #endregion
         }
     }
 }

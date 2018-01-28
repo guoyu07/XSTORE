@@ -16,11 +16,14 @@ namespace XStore.Entity
         public int? dealer { get; set; }
         public int? flow_id { get; set; }
         public int? hotel { get; set; }
-        public bool? online { get; set;}
+        public bool? online { get; set; }
         public string products { get; set; }
-        public string room { get; set;}
+        public string room { get; set; }
         public int state { get; set; }
         public string type { get; set; }
         public string version { get; set; }
+        public string code { get; set; }
+        public string iccid { get; set; }
+        public string iot { get; set; }
     }
 }

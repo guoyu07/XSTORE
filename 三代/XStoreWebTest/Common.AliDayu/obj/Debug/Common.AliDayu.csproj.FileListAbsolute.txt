@@ -98,3 +98,4 @@ X:\Git\三代\XStoreWebTest\Common.AliDayu\bin\Debug\TopSdk.dll
 X:\Git\三代\XStoreWebTest\Common.AliDayu\obj\Debug\Common.AliDayu.csproj.CoreCompileInputs.cache
 X:\Git\三代\XStoreWebTest\Common.AliDayu\obj\Debug\Common.AliDayu.dll
 X:\Git\三代\XStoreWebTest\Common.AliDayu\obj\Debug\Common.AliDayu.pdb
+X:\Git\三代\XStoreWebTest\Common.AliDayu\obj\Debug\Common.AliDayu.csprojResolveAssemblyReference.cache

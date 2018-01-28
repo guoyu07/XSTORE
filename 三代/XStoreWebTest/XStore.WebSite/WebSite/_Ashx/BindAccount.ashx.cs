@@ -70,25 +70,25 @@ namespace XStore.WebSite.WebSite._Ashx
                     switch ((UserRoleEnum)userRole.role_id)
                     {
                         case UserRoleEnum.经理:
-                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.CenterDic+"hotelManager.aspx" }));
+                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic+ "ManageCenter.aspx" }));
                             return;
                         case UserRoleEnum.财务:
-                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.CenterDic + "goodsList.aspx" }));
+                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic + "FinanceCenter.aspx" }));
                             return;
                         case UserRoleEnum.前台:
-                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.CenterDic + "disMyself.aspx" }));
+                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic + "EmployeeCenter.aspx" }));
                             return;
                         case UserRoleEnum.测试员:
-                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.CenterDic + "areaManage.aspx" }));
+                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic + "TestCenter.aspx" }));
                             return;
                         case UserRoleEnum.配水员:
-                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.CenterDic + "qaManage.aspx" }));
+                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic + "PromotionCenter.aspx" }));
                             return;
                         case UserRoleEnum.区域经理:
-                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.CenterDic + "fillManager.aspx" }));
+                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic + "AreaManageCenter.aspx" }));
                             return;
                         default:
-                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.CenterDic + "" }));
+                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic + "" }));
                             return;
                     }
                 }

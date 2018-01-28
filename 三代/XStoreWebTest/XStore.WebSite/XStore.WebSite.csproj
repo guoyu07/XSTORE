@@ -220,11 +220,14 @@
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Center\distributer.css" />
+    <Content Include="Content\footer.css" />
     <Content Include="Content\Goods\buyerIndex.css" />
     <Content Include="Content\Goods\detail.css" />
     <Content Include="Content\Images\active.png" />
     <Content Include="Content\Images\bottom.png" />
     <Content Include="Content\Images\btns.png" />
+    <Content Include="Content\Images\checked.png" />
     <Content Include="Content\Images\fail-emoij.png" />
     <Content Include="Content\Images\joker.jpg" />
     <Content Include="Content\Images\lc1.jpg" />
@@ -235,8 +238,15 @@
     <Content Include="Content\Images\mySpace.png" />
     <Content Include="Content\Images\mySpace_on.png" />
     <Content Include="Content\Images\no-active.png" />
+    <Content Include="Content\Images\null.png" />
+    <Content Include="Content\Images\paymentFail.png" />
+    <Content Include="Content\Images\paymentSuccessed.png" />
+    <Content Include="Content\Images\room-full.png" />
+    <Content Include="Content\Images\room.png" />
+    <Content Include="Content\Images\room_off.png" />
     <Content Include="Content\Images\tel.png" />
     <Content Include="Content\Images\top.png" />
+    <Content Include="Content\Images\unchecked.png" />
     <Content Include="Content\Images\xs.png" />
     <Content Include="Content\Images\xs_on.png" />
     <Content Include="Content\Images\yh.PNG" />
@@ -248,6 +258,7 @@
     <Content Include="Content\Login\nopower.css" />
     <Content Include="Content\Login\reset.css" />
     <Content Include="Content\Login\welcome.css" />
+    <Content Include="Content\Opreation\roomSelect.css" />
     <Content Include="Content\Order\payCenter.css" />
     <Content Include="Content\Order\payFail.css" />
     <Content Include="Content\Order\paySuccess.css" />
@@ -296,19 +307,28 @@
     <Content Include="Scripts\Modules\xStore.js" />
     <Content Include="Scripts\Plugins\layer.js" />
     <Content Include="Scripts\Plugins\need\layer.css" />
+    <Content Include="Scripts\Plugins\vipspa-dev.js" />
     <Content Include="Scripts\Plugins\vipspa.js" />
     <Content Include="Scripts\Plugins\zepto.min.js" />
     <Content Include="Scripts\swipe.js" />
     <Content Include="Scripts\weui.js" />
+    <Content Include="WebSite\Center\AreaManageCenter.aspx" />
+    <Content Include="WebSite\Center\EmployeeCenter.aspx" />
+    <Content Include="WebSite\Center\FinanceCenter.aspx" />
+    <Content Include="WebSite\Center\ManageCenter.aspx" />
+    <Content Include="WebSite\Center\PromotionCenter.aspx" />
+    <Content Include="WebSite\Center\TestCenter.aspx" />
     <Content Include="WebSite\Goods\Detail.aspx" />
     <Content Include="WebSite\Goods\GoodsList.aspx" />
     <Content Include="WebSite\Login\Bind.aspx" />
     <Content Include="WebSite\Login\Login.aspx" />
     <Content Include="WebSite\Login\NoAuth.aspx" />
     <Content Include="WebSite\Login\NoPower.aspx" />
+    <Content Include="WebSite\Login\Oath.aspx" />
     <Content Include="WebSite\Login\Welcome.aspx" />
     <Content Include="WebSite\Operation\BindMac.aspx" />
     <Content Include="WebSite\Operation\QaCheck.aspx" />
+    <Content Include="WebSite\Operation\RoomSelect.aspx" />
     <Content Include="WebSite\Operation\WaterFillUp.aspx" />
     <Content Include="fonts\iconfont.eot" />
     <Content Include="fonts\iconfont.ttf" />
@@ -320,6 +340,7 @@
     <Content Include="WebSite\Order\PaySuccess.aspx" />
     <Content Include="WebSite\Order\PayWaiting.aspx" />
     <Content Include="WebSite\Order\WeiXinNotify.aspx" />
+    <Content Include="WebSite\_Ascx\CenterFooter.ascx" />
     <Content Include="WebSite\_Ascx\Footer.ascx" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
@@ -354,11 +375,14 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="WebSite\_Ashx\CheckOrderState.ashx" />
     <Content Include="WebSite\_Ashx\ShortMessage.ashx" />
     <Content Include="WebSite\_Ashx\BindAccount.ashx" />
+    <Content Include="WebSite\_Ashx\UnBindAccount.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -408,6 +432,51 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\CenterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Center\AreaManageCenter.aspx.cs">
+      <DependentUpon>AreaManageCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Center\AreaManageCenter.aspx.designer.cs">
+      <DependentUpon>AreaManageCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Center\EmployeeCenter.aspx.cs">
+      <DependentUpon>EmployeeCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Center\EmployeeCenter.aspx.designer.cs">
+      <DependentUpon>EmployeeCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Center\FinanceCenter.aspx.cs">
+      <DependentUpon>FinanceCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Center\FinanceCenter.aspx.designer.cs">
+      <DependentUpon>FinanceCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Center\ManageCenter.aspx.cs">
+      <DependentUpon>ManageCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Center\ManageCenter.aspx.designer.cs">
+      <DependentUpon>ManageCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Center\PromotionCenter.aspx.cs">
+      <DependentUpon>PromotionCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Center\PromotionCenter.aspx.designer.cs">
+      <DependentUpon>PromotionCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Center\TestCenter.aspx.cs">
+      <DependentUpon>TestCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Center\TestCenter.aspx.designer.cs">
+      <DependentUpon>TestCenter.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\Goods\Detail.aspx.cs">
       <DependentUpon>Detail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -450,6 +519,13 @@
     <Compile Include="WebSite\Login\NoPower.aspx.designer.cs">
       <DependentUpon>NoPower.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\Login\Oath.aspx.cs">
+      <DependentUpon>Oath.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Login\Oath.aspx.designer.cs">
+      <DependentUpon>Oath.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\Login\Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -470,6 +546,13 @@
     </Compile>
     <Compile Include="WebSite\Operation\QaCheck.aspx.designer.cs">
       <DependentUpon>QaCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomSelect.aspx.cs">
+      <DependentUpon>RoomSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomSelect.aspx.designer.cs">
+      <DependentUpon>RoomSelect.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Operation\WaterFillUp.aspx.cs">
       <DependentUpon>WaterFillUp.aspx</DependentUpon>
@@ -521,6 +604,13 @@
       <DependentUpon>WeiXinNotify.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Order\WxPayNotify.cs" />
+    <Compile Include="WebSite\_Ascx\CenterFooter.ascx.cs">
+      <DependentUpon>CenterFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\_Ascx\CenterFooter.ascx.designer.cs">
+      <DependentUpon>CenterFooter.ascx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\_Ascx\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -537,10 +627,12 @@
     <Compile Include="WebSite\_Ashx\ShortMessage.ashx.cs">
       <DependentUpon>ShortMessage.ashx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\_Ashx\UnBindAccount.ashx.cs">
+      <DependentUpon>UnBindAccount.ashx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="WebSite\Center\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
