@@ -241,6 +241,8 @@
     <Content Include="Content\Images\null.png" />
     <Content Include="Content\Images\paymentFail.png" />
     <Content Include="Content\Images\paymentSuccessed.png" />
+    <Content Include="Content\Images\pickUp.png" />
+    <Content Include="Content\Images\pickUp_on.png" />
     <Content Include="Content\Images\room-full.png" />
     <Content Include="Content\Images\room.png" />
     <Content Include="Content\Images\room_off.png" />
@@ -258,7 +260,10 @@
     <Content Include="Content\Login\nopower.css" />
     <Content Include="Content\Login\reset.css" />
     <Content Include="Content\Login\welcome.css" />
+    <Content Include="WebSite\Oath\WxOath.aspx" />
+    <Content Include="Content\Opreation\roomGoods.css" />
     <Content Include="Content\Opreation\roomSelect.css" />
+    <Content Include="Content\Opreation\roomsPickUp.css" />
     <Content Include="Content\Order\payCenter.css" />
     <Content Include="Content\Order\payFail.css" />
     <Content Include="Content\Order\paySuccess.css" />
@@ -327,7 +332,10 @@
     <Content Include="WebSite\Login\Oath.aspx" />
     <Content Include="WebSite\Login\Welcome.aspx" />
     <Content Include="WebSite\Operation\BindMac.aspx" />
+    <Content Include="WebSite\Operation\FinishPickUp.aspx" />
+    <Content Include="WebSite\Operation\PickUp.aspx" />
     <Content Include="WebSite\Operation\QaCheck.aspx" />
+    <Content Include="WebSite\Operation\RoomFixed.aspx" />
     <Content Include="WebSite\Operation\RoomSelect.aspx" />
     <Content Include="WebSite\Operation\WaterFillUp.aspx" />
     <Content Include="fonts\iconfont.eot" />
@@ -396,7 +404,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
-    <Compile Include="BasePage.cs">
+    <Compile Include="WebSite\Oath\WxOath.aspx.cs">
+      <DependentUpon>WxOath.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Oath\WxOath.aspx.designer.cs">
+      <DependentUpon>WxOath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.cs">
@@ -533,6 +548,9 @@
     <Compile Include="WebSite\Login\Welcome.aspx.designer.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\MacPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="WebSite\Operation\BindMac.aspx.cs">
       <DependentUpon>BindMac.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -540,12 +558,33 @@
     <Compile Include="WebSite\Operation\BindMac.aspx.designer.cs">
       <DependentUpon>BindMac.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\Operation\FinishPickUp.aspx.cs">
+      <DependentUpon>FinishPickUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\FinishPickUp.aspx.designer.cs">
+      <DependentUpon>FinishPickUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\PickUp.aspx.cs">
+      <DependentUpon>PickUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\PickUp.aspx.designer.cs">
+      <DependentUpon>PickUp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\Operation\QaCheck.aspx.cs">
       <DependentUpon>QaCheck.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebSite\Operation\QaCheck.aspx.designer.cs">
       <DependentUpon>QaCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomFixed.aspx.cs">
+      <DependentUpon>RoomFixed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomFixed.aspx.designer.cs">
+      <DependentUpon>RoomFixed.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Operation\RoomSelect.aspx.cs">
       <DependentUpon>RoomSelect.aspx</DependentUpon>

@@ -55,6 +55,7 @@
     <Compile Include="CabinetLayout.cs" />
     <Compile Include="Constant.cs" />
     <Compile Include="Enum.cs" />
+    <Compile Include="BackOrderInfo.cs" />
     <Compile Include="Hotel.cs" />
     <Compile Include="LoginRecord.cs" />
     <Compile Include="MessageLog.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Model\BindResponse.cs" />
     <Compile Include="Model\BuyRequest.cs" />
     <Compile Include="Model\BuyResponse.cs" />
+    <Compile Include="Model\FixedProductQuery.cs" />
     <Compile Include="Model\MessageResponse.cs" />
     <Compile Include="Model\OrderResponse.cs" />
     <Compile Include="Model\PayAjaxResponse.cs" />

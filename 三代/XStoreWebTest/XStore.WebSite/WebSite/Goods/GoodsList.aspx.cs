@@ -2,33 +2,15 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using XStore.Common;
 using XStore.Entity;
 using XStore.Entity.Model;
 
 namespace XStore.WebSite.WebSite.Goods
 {
-    public partial class GoodsList : BasePage
+    public partial class GoodsList : MacPage
     {
-        #region 房间
-        private Cabinet _cabinet;
-        protected Cabinet cabinet
-        {
-            get
-            {
-                if (_cabinet == null)
-                {
-                    var boxMac = Request.QueryString[Constant.IMEI].ObjToStr();
-
-                    _cabinet = context.Query<Cabinet>().FirstOrDefault(o => o.mac.Equals(boxMac));
-                }
-                return _cabinet;
-            }
-        }
-        #endregion
+      
         protected void Page_Load(object sender, EventArgs e)
         {
             Title = "幸事多私享空间";
@@ -59,18 +41,17 @@ namespace XStore.WebSite.WebSite.Goods
                     MessageBox.Show(this, "system_alert", "酒店房间未设置默认商品");
                     return;
                 }
+                #region 绑定房间商品
                 var proidList = new List<int>();
                 //根据storebatch获取对应的商品id
                 var storeBatchList = cabinet.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(o=>o.ObjToInt(0));
                 foreach (var storeBatch in storeBatchList)
                 {
-
                     proidList.Add(context.Query<StoreBatch>()
                         .Where(o => o.id == storeBatch)
                         .LeftJoin<ProductBatch>((a, b) => a.batch_id == b.id).Select((a, b) => b.product_id)
                         .FirstOrDefault());
                 }
-
                 var layout = context.Query<CabinetLayout>().FirstOrDefault(o => o.hotel_id == cabinet.hotel);
                 if (layout == null)
                 {
@@ -109,6 +90,8 @@ namespace XStore.WebSite.WebSite.Goods
                 }
                 goods_list.DataSource = list;
                 goods_list.DataBind();
+                #endregion
+
             }
             catch (Exception ex)
             {

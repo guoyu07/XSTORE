@@ -165,5 +165,5 @@
 	width: 21px;
 }
 .new_icon {
-	background: url("../images/new_icon.png") no-repeat scroll center center / 200px auto rgba(0, 0, 0, 0);
+	background: url("/Content/images/new_icon.png") no-repeat scroll center center / 200px auto rgba(0, 0, 0, 0);
 }

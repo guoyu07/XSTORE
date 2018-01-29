@@ -11,20 +11,20 @@
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs","~/bundles/roomselect/js")%>
     <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script type="text/javascript">
-        
+        $(function () {
+            $("#foot li").removeClass("clickOn");
+            $("#foot li").eq(0).addClass("clickOn");
+        })
         function select_click(sender) {
             var obj = $(sender);
             var cls = obj.find(".label").find("img");
             if (obj.attr("class") == "active") {
-   
                 obj.removeClass("active");
                 cls.attr("src", "/Content/Images/unchecked.png");
             }
             else {
-
                 obj.addClass("active");
                 cls.attr("src", "/Content/Images/checked.png");
-
             }
         }
         function makeSureClick() {

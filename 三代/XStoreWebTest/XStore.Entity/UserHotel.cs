@@ -11,8 +11,8 @@ namespace XStore.Entity
     public class UserHotel
     {
         [Column(IsPrimaryKey = true)]
-        public int id { get; set;}
         public int hotels_id { get; set; }
+        [Column(IsPrimaryKey = true)]
         public string user_username { get; set; }
     }
 }

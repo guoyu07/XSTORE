@@ -17,7 +17,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="imgWrap">
-            <img src="../../Content/Icon/logo.png" alt="" />
+            <img src="/Content/Icon/logo.png" alt="" />
         </div>
         <div class="account">
             <input id="username" runat="server" type="text" placeholder="请输入用户名" />

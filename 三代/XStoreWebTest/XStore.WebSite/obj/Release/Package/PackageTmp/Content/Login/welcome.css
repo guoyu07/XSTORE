@@ -47,7 +47,7 @@ body {
 input {
     width: 30px;
     height: 30px;
-    background: url(../Images/no-active.png) no-repeat;
+    background: url(/Content/Images/no-active.png) no-repeat;
     background-size: 100% 100%;
     margin-right: 10px;
     border: none;
@@ -55,7 +55,7 @@ input {
 }
 
     input:checked {
-        background: url(../Images/active.png) no-repeat;
+        background: url(/Content/Images/active.png) no-repeat;
         background-size: 100% 100%;
     }
 

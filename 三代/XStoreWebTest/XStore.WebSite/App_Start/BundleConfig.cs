@@ -146,7 +146,7 @@ namespace XStore.WebSite
              ));
             #endregion
 
-            #region 常规补货
+            #region 常规补货-房间选择
             bundles.Add(new StyleBundle("~/bundles/roomselect/css").Include(
                 "~/fonts/iconfont.css",
                 "~/Content/Opreation/roomSelect.css",
@@ -157,6 +157,40 @@ namespace XStore.WebSite
              "~/Scripts/Plugins/vipspa.js",
              "~/Scripts/Plugins/vipspa-dev.js"
              ));
+            #endregion
+
+            #region 常规补货-取货列表
+            bundles.Add(new StyleBundle("~/bundles/pickup/css").Include(
+                "~/fonts/iconfont.css",
+                "~/Content/Center/distributer.css",
+                "~/Content/footer.css"
+           ));
+            bundles.Add(new ScriptBundle("~/bundles/pickup/js").Include(
+              "~/Scripts/Modules/pickUp.js",
+             "~/Scripts/Plugins/vipspa.js",
+             "~/Scripts/Plugins/vipspa-dev.js"
+             ));
+            #endregion
+
+            #region 常规补货-取货完成
+            bundles.Add(new StyleBundle("~/bundles/finishpickup/css").Include(
+               "~/fonts/iconfont.css",
+               "~/Content/Opreation/roomsPickUp.css",
+                "~/Content/Center/distributer.css",
+               "~/Content/footer.css"
+          ));
+            bundles.Add(new ScriptBundle("~/bundles/finishpickup/js").Include(
+            "~/Scripts/Plugins/vipspa.js",
+            "~/Scripts/Plugins/vipspa-dev.js"
+            ));
+            #endregion
+            #region 常规补货-房间补货
+            bundles.Add(new StyleBundle("~/bundles/roomfixed/css").Include(
+               "~/fonts/iconfont.css",
+               "~/Content/Opreation/roomGoods.css",
+                "~/Content/Center/distributer.css",
+               "~/Content/footer.css"
+          ));
             #endregion
         }
     }

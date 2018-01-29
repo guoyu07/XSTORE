@@ -74,6 +74,11 @@ namespace XStore.WebSite.WebSite.Order
                                 //执行开箱成功
                                 rbh.OpenRemoteBox(orderInfo.cabinet_mac, out_trade_no, orderInfo.pos.ObjToStr());
                             };
+                            WxPayData res = new WxPayData();
+                            res.SetValue("return_code", "SUCCESS");
+                            res.SetValue("return_msg", "订单成功");
+                            page.Response.Write(res.ToXml());
+                            page.Response.End();
                         }
                         catch (Exception e)
                         {

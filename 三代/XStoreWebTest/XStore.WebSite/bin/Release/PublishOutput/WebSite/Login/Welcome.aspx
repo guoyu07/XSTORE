@@ -7,7 +7,7 @@
 <head runat="server">
     <meta name="viewport" charset="UTF-8"  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title><%=Title %></title>
-    <link rel="icon" href="../img/logo.png" type="image/x-icon" />
+    <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
     <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/welcome")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs")%>
 </head>

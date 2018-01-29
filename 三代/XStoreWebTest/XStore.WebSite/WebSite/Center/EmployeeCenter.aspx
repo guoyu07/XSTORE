@@ -73,7 +73,8 @@
         </div>
         <script type="text/javascript">
             $(function () {
-                $("a[name='con']").eq(2).addClass("on");
+                $("#foot li").removeClass("clickOn");
+                $("#foot li").eq(1).addClass("clickOn");
                 $('.cancellation').on('click', function () {
                     layer.open({
                         content: '是否注销？',

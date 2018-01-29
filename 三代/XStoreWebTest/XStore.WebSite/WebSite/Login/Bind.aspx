@@ -35,7 +35,7 @@
         </div>
         <div class="account">
             <div class="wrap">
-                <label for="">账号：</label><input type="text" id="account_input" runat="server" placeholder="请输入账号" /></div>
+                <label for="">账号：</label><input type="text" id="account_input" runat="server" readonly="readonly" placeholder="请输入账号" /></div>
         </div>
         <div class="newPsd">
             <div class="wrap">

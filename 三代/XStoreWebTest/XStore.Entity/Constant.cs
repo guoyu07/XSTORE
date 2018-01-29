@@ -11,12 +11,14 @@ namespace XStore.Entity
         public const string CurrentUser ="CurrentUser";
         public const string OpenId = "OpenId";
         public const string IMEI = "boxmac";
+        public const string IMEIS = "totalId";
         public const string Position = "Position";
         public const string ProductId = "product_id";
         public const string OrderId = "OrderId";
         public const string OrderNo = "OrderNo";
         public const string WxCode = "code";
         public const string WeiUser = "WxUser";
+        public const string Cabinets = "Cabinets";
 
         public const string LoginDic = "~/WebSite/Login/";
         public const string GoodsDic = "~/WebSite/Goods/";
@@ -30,5 +32,7 @@ namespace XStore.Entity
         public const string JsCenterDic = "/WebSite/Center/";
         public const string JsOperationDic = "/WebSite/Operation/";
         public const string ApiDic = "/WebSite/_Ashx/";
+
+        public const string YunApi = "http://139.199.160.173:9119/";
     }
 }

@@ -80,11 +80,10 @@ namespace XStore.WebSite.WebSite.Goods
                 mac = cabinet.mac,
                 position = position
             };
-            var requestUrl = string.Format("http://139.199.160.173:9119/test/create?openId={0}&mac={1}&pos={2}", request.openId, request.mac, request.position);
+            var requestUrl = string.Format(Constant.YunApi + "test/create?openId={0}&mac={1}&pos={2}", request.openId, request.mac, request.position);
             var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
             if (response.operationStatus.Equals("SUCCESS"))
             {
-                var responseSplit = response.operationMessage.ObjToStr().Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
                 Session[Constant.OrderNo] = response.operationMessage.ObjToStr();
 
                 var url = Constant.OrderDic + "PayCenter.aspx";

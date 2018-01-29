@@ -13,7 +13,7 @@
     <form id="form2" runat="server">
         <div class="imgWrap" style="margin:100px 0px 15px;">
             
-            <img style="width: 55%; height: 55%; display:none;" src="../img/no-power.png" alt="" />
+            <img style="width: 55%; height: 55%; display:none;" src="/Content/Images/no-power.png" alt="" />
         </div>
         <div class="des" style="margin:15px;">
              <h1 style="font-weight:800;margin-bottom:45px;">通讯正在努力连接中...</h1>
