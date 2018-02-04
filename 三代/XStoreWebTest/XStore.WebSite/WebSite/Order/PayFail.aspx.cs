@@ -9,7 +9,7 @@ using XStore.Entity;
 
 namespace XStore.WebSite.WebSite.Order
 {
-    public partial class PayFail : BasePage
+    public partial class PayFail : OrderPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,39 +24,7 @@ namespace XStore.WebSite.WebSite.Order
             lc2.ImageUrl = "~/Content/Images/lc2.jpg";
             lc2.ImageUrl = "~/Content/Images/lc3.jpg";
         }
-        #region 订单信息
-        private OrderInfo _orderInfo;
-        protected OrderInfo orderInfo
-        {
-            get
-            {
-                if (_orderInfo == null)
-                {
-                    var orderNo = Session[Constant.OrderNo].ObjToInt(0);
-                    _orderInfo = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderNo));
-                }
-                return _orderInfo;
-            }
-        }
 
-        #endregion
-
-        #region 购买的商品
-        private Product _productInfo;
-        protected Product productInfo
-        {
-            get
-            {
-                if (_productInfo == null)
-                {
-                    var productId = orderInfo.product.ObjToInt(0);
-                    _productInfo = context.Query<Product>().FirstOrDefault(o => o.id == productId);
-                }
-                return _productInfo;
-            }
-        }
-
-        #endregion
        
     }
 }

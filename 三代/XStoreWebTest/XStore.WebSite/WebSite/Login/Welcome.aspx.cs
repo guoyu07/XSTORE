@@ -15,10 +15,7 @@ namespace XStore.WebSite.WebSite.Login
         protected void Page_Load(object sender, EventArgs e)
         {
             Title = "幸事多私享空间";
-            if (!IsPostBack)
-            {
-                PageInit();
-            }
+            PageInit();
         }
         private void PageInit()
         {

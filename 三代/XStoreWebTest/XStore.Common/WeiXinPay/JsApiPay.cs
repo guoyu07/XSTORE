@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
@@ -190,7 +191,7 @@ namespace XStore.Common.WeiXinPay
             jsApiParam.SetValue("signType", "MD5");
             jsApiParam.SetValue("paySign", jsApiParam.MakeSign());
 
-            string parameters = JsonConvert.SerializeObject(jsApiParam);
+            string parameters = jsApiParam.ToJson();
 
             //Log.Debug(this.GetType().ToString(), "Get jsApiParam : " + parameters);
             return parameters;

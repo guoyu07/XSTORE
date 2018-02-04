@@ -15,7 +15,7 @@
                 window.location.href = '<%= Constant.GoodsDic+"GoodsList.aspx"%>';
             }, false);
        
-            setInterval('checkOrder()', 2000);
+            setInterval('checkOrder()',2000);
         });
         function checkOrder() {
             var requesturl = '<%= Constant.ApiDic+"CheckOrderState.ashx"%>';
@@ -26,10 +26,11 @@
                     var jsonData = $.parseJSON(response);
                     if (jsonData.success) {
                         if (jsonData.pay) {
-                            window.location.href = '<%=Constant.OrderDic+"PayWaiting.aspx"%>';
+                            window.location.href = 'PayWaiting.aspx';
                         }
                     } 
                     else {
+                        console.log("返回不正确");
                         system_alert(jsonData.message);
                     }
                 }
@@ -39,7 +40,7 @@
         function jsApiCall() {
             WeixinJSBridge.invoke(
             'getBrandWCPayRequest',
-            "<%=wxJsApiParam%>",//josn串
+            <%=wxJsApiParam%>,//josn串
             function (res) {
                
             });
@@ -71,7 +72,7 @@
                             <img src="<%#Eval("image") %>" alt="" />
                             <p class="goodsName over"><%#Eval("name") %></p>
                         </div>
-                        <div class="price">¥ <span><%#Eval("price1") %></span></div>
+                        <div class="price">¥ <span><%#Eval("price1").ObjToInt(0).CentToRMB(0) %></span></div>
 
                     </li>
                 </ItemTemplate>

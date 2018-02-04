@@ -3,11 +3,8 @@ using SuperSocket.Common;
 using SuperSocket.Facility.Protocol;
 using SuperSocket.SocketBase.Protocol;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using DTcms.Common;
+using XStore.Common;
 
 namespace boxes
 {
@@ -74,6 +71,21 @@ namespace boxes
                 boxModel.Placeholder = buffer.CloneRange(offset + 47, 1);
                 boxModel.Check = buffer.CloneRange(offset + 48, 2);
                 boxModel.Command = Converts.GetTPandMac(command);
+            }
+            //三代箱子
+            else if (boxModel.Head.Equals("FF02"))
+            {
+                boxModel.Type = 2;
+                boxModel.OpenType = buffer[offset + 3];
+                boxModel.Mac = Converts.GetTPandMac(buffer.CloneRange(offset + 4, 15));
+                boxModel.FormatMac = FormatMac(boxModel.Mac);
+                boxModel.Command = Converts.GetTPandMac(command);
+                boxModel.State = buffer.CloneRange(offset + 19, 12);
+                var oderCount = int.Parse(Encoding.UTF8.GetString(buffer.CloneRange(offset + 46, 2)));
+                var orderNo = buffer.CloneRange(offset + 31, oderCount);
+                LogHelper.WriteLog("命令过来的type类型：" + (int)boxModel.OpenType);
+                boxModel.OrderNo = Encoding.UTF8.GetString(orderNo);
+
             }
             return new BoxRequestInfo(boxModel);
         }

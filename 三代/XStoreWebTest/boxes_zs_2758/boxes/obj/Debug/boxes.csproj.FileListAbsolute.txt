@@ -237,3 +237,10 @@ E:\iM\OneDrive\X_STORE\boxes_zs_2758(正式)\boxes\bin\Debug\NPOI.dll
 E:\iM\OneDrive\X_STORE\boxes_zs_2758(正式)\boxes\bin\Debug\DTcms.Common.pdb
 X:\OneDrive\X_STORE\boxes_zs_2758(正式)\boxes\bin\Debug\Newtonsoft.Json.dll
 X:\OneDrive\X_STORE\boxes_zs_2758(正式)\boxes\obj\Debug\boxes.csproj.CoreCompileInputs.cache
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\obj\Debug\boxes.csprojResolveAssemblyReference.cache
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\obj\Debug\boxes.BoxForm.resources
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\obj\Debug\boxes.Properties.Resources.resources
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\obj\Debug\boxes.csproj.GenerateResource.Cache
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\obj\Debug\boxes.csproj.CoreCompileInputs.cache
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\obj\Debug\boxes.exe
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\obj\Debug\boxes.pdb

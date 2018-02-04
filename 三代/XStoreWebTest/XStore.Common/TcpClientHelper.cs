@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
-
+using XStore.Common;
 
 namespace XStore.Common
 {
@@ -62,48 +62,48 @@ namespace XStore.Common
             Console.Read();
             
         }
-        //public static byte[] GetSendMulty(byte[] mac, byte[] box_number, byte command = 0x03)
-        //{
-        //    byte[] byte_open = new byte[12] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
-        //    int bytelength = box_number.Length > 12 ? 12 : box_number.Length;
+        public static byte[] GetSendMulty(byte[] mac, byte[] box_number, byte command = 0x03)
+        {
+            byte[] byte_open = new byte[12] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+            int bytelength = box_number.Length > 12 ? 12 : box_number.Length;
 
-        //    byte[] bs = BitConverter.GetBytes(0x1234);
+            byte[] bs = BitConverter.GetBytes(0x1234);
 
-        //    try { Console.WriteLine(bs[0].ToString("X2") + " " + bs[1].ToString("X2")); }
-        //    catch (Exception) {; }
+            try { Console.WriteLine(bs[0].ToString("X2") + " " + bs[1].ToString("X2")); }
+            catch (Exception) {; }
 
-        //    for (int i = 0; i < bytelength; i++)
-        //    {
-        //        int boxNo = (int)box_number[i];
-        //        if (boxNo > 0)
-        //            byte_open[i] = 0x01;
-        //    }
+            for (int i = 0; i < bytelength; i++)
+            {
+                int boxNo = (int)box_number[i];
+                if (boxNo > 0)
+                    byte_open[i] = 0x01;
+            }
 
-        //    byte[] r_byte = new byte[50];
-        //    try
-        //    {
-        //        Box_Date box_date = new Box_Date();
-        //        byte[] date_control = new byte[51];
-        //        date_control[0] = box_date.Date_flg[0];//
-        //        Array.Copy(box_date.Date_start, 0, date_control, 1, 2);//
-        //        date_control[3] = box_date.Date_length[0];//
-        //        Array.Copy(box_date.Date_datetime, 0, date_control, 4, 6);////
-        //        date_control[10] = command;//指令码
-        //        Array.Copy(mac, 0, date_control, 11, 15);//
-        //        Array.Copy(box_number, 0, date_control, 26, 12);
-        //        byte[] rcr = new byte[46];
-        //        Array.Copy(date_control, 3, rcr, 0, 46);
-        //        string aa = ByteToHexString(date_control);
-        //        string aas = ByteToHexString(rcr);
-        //        date_control[49] = Converts.GetCRCSUM(rcr)[0];//old
-        //        date_control[50] = Converts.GetCRCSUM(rcr)[1];//old
-        //        Array.Copy(date_control, 1, r_byte, 0, 50);
-        //    }
-        //    catch (Exception) {; }
+            byte[] r_byte = new byte[50];
+            try
+            {
+                Box_Date box_date = new Box_Date();
+                byte[] date_control = new byte[51];
+                date_control[0] = box_date.Date_flg[0];//
+                Array.Copy(box_date.Date_start, 0, date_control, 1, 2);//
+                date_control[3] = box_date.Date_length[0];//
+                Array.Copy(box_date.Date_datetime, 0, date_control, 4, 6);////
+                date_control[10] = command;//指令码
+                Array.Copy(mac, 0, date_control, 11, 15);//
+                Array.Copy(box_number, 0, date_control, 26, 12);
+                byte[] rcr = new byte[46];
+                Array.Copy(date_control, 3, rcr, 0, 46);
+                string aa = ByteToHexString(date_control);
+                string aas = ByteToHexString(rcr);
+                date_control[49] = Converts.GetCRCSUM(rcr)[0];//old
+                date_control[50] = Converts.GetCRCSUM(rcr)[1];//old
+                Array.Copy(date_control, 1, r_byte, 0, 50);
+            }
+            catch (Exception) {; }
 
 
-        //    return r_byte;
-        //}
+            return r_byte;
+        }
         public static byte[] GetSendMulty(byte[] mac, byte[] box_number,byte[] order_no, byte command = 0x01)
         {
             byte[] byte_open = new byte[12] { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
@@ -158,60 +158,60 @@ namespace XStore.Common
         }
     }
 }
-//public class Box_Date
-//{
-//    byte[] date_flg = new byte[1] { 0X01 };//协议标志位，标识是否为客户端操作
+public class Box_Date
+{
+    byte[] date_flg = new byte[1] { 0X01 };//协议标志位，标识是否为客户端操作
 
-//    public byte[] Date_flg
-//    {
-//        get { return date_flg; }
+    public byte[] Date_flg
+    {
+        get { return date_flg; }
 
-//    }
-//    byte[] date_start = new byte[2] { 0xEF, 0X03 };//数据帧头码(2Bytes)
+    }
+    byte[] date_start = new byte[2] { 0xEF, 0X03 };//数据帧头码(2Bytes)
 
-//    public byte[] Date_start
-//    {
-//        get { return date_start; }
+    public byte[] Date_start
+    {
+        get { return date_start; }
 
-//    }
-//    byte[] date_length = new byte[1] { 0x32 };//数据帧字节数（1Bytes)
+    }
+    byte[] date_length = new byte[1] { 0x32 };//数据帧字节数（1Bytes)
 
-//    public byte[] Date_length
-//    {
-//        get { return date_length; }
+    public byte[] Date_length
+    {
+        get { return date_length; }
 
-//    }
-//    byte[] date_datetime = Converts.DateTimeToBytes();//new byte[6];//时间戳（6个字节）
+    }
+    byte[] date_datetime = Converts.DateTimeToBytes();//new byte[6];//时间戳（6个字节）
 
-//    public byte[] Date_datetime
-//    {
-//        get { return date_datetime; }
+    public byte[] Date_datetime
+    {
+        get { return date_datetime; }
 
-//    }
+    }
 
 
-//    byte[] date_functioncommandword = new byte[1];//功能命令字（1Bytes)（下标9）
+    byte[] date_functioncommandword = new byte[1];//功能命令字（1Bytes)（下标9）
 
-//    public byte[] Date_functioncommandword
-//    {
-//        get { return date_functioncommandword; }
-//        set { date_functioncommandword = value; }
-//    }
-//    byte[] date_mac = new byte[15];//12字节机柜的MAC
+    public byte[] Date_functioncommandword
+    {
+        get { return date_functioncommandword; }
+        set { date_functioncommandword = value; }
+    }
+    byte[] date_mac = new byte[15];//12字节机柜的MAC
 
-//    public byte[] Date_mac
-//    {
-//        get { return date_mac; }
-//        set { date_mac = value; }
-//    }
-//    byte[] date_command = new byte[25];//控制对象的数据区
+    public byte[] Date_mac
+    {
+        get { return date_mac; }
+        set { date_mac = value; }
+    }
+    byte[] date_command = new byte[25];//控制对象的数据区
 
-//    public byte[] Date_command
-//    {
-//        get { return date_command; }
-//        set { date_command = value; }
-//    }
-//}
+    public byte[] Date_command
+    {
+        get { return date_command; }
+        set { date_command = value; }
+    }
+}
 
 public class Client_Date
 {
@@ -222,7 +222,7 @@ public class Client_Date
         get { return date_flg; }
 
     }
-    byte[] date_start = new byte[2] { 0xEF, 0X02 };//数据帧头码(2Bytes)
+    byte[] date_start = new byte[2] { 0xFF, 0X02 };//数据帧头码(2Bytes)
 
     public byte[] Date_start
     {

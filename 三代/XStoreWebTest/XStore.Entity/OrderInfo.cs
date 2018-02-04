@@ -23,7 +23,7 @@ namespace XStore.Entity
         public int price0 { get; set; }
         public int price1 { get; set; }
         public string cabinet_mac { get;set; }
-        public int store_id { get; set; }
+        public int? store_id { get; set; }
         public int product { get; set; }
     }
 }

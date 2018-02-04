@@ -54,6 +54,6 @@ public static class Utils_Ex
         return Utils.SplitString(str, strSplit, count);
     }
     public static Decimal CentToRMB(this int cent, decimal defValue) {
-        return (cent / 100).ObjToDecimal(defValue);
+        return cent.ObjToDecimal(defValue)/100;
     }
 }

@@ -8,10 +8,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using DTcms.Common;
 using SuperSocket.SocketBase.Config;
-using SuperSocket.SocketEngine;
 using System.Data;
+using XStore.Common;
 
 namespace boxes
 {
@@ -58,7 +57,7 @@ namespace boxes
         #region 服务关闭事件
         private void StopService_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("手动停止服务器之后需要人工重启", "停止服务", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (System.Windows.Forms.MessageBox.Show("手动停止服务器之后需要人工重启", "停止服务", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 boxServer.Stop();
                 ShowLog(txtLog, "服务已停止！");
@@ -92,47 +91,77 @@ namespace boxes
             //LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "所有的mac：" + JsonConvert.SerializeObject(boxServer.GetAllSessions().Select(o => new { o.CustomId, o.CustomType, o.SessionID }).ToList()));
             LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "当前session的ID：" + session.SessionID);
             //如果头命令不是EF03则关闭当前的session
-            if (!requestInfo.Body.Head.Contains("EF"))
+            if (requestInfo.Body.Head.Contains("EF"))
+            {
+
+                session.CustomId = requestInfo.Body.Mac;
+
+                switch ((类型)requestInfo.Body.Type)
+                {
+                    case 类型.微信:
+                        session.CustomType = 2;
+                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信传过来的命令：" + requestInfo.Body.Command);
+                        var command = BoxModel.ToCommand(requestInfo.Body);
+                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信端口命令：" + Converts.GetTPandMac(command));
+                        if (!OpenBoxByMac(session.CustomId, command, requestInfo.Body.OrderNo, 1))
+                        {
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱失败：");
+                            //需要发送byte数组的命令，返回微信处理
+                            //session.Send(JsonConvert.SerializeObject(new ResponseResult() { Status = false, ErrorCode = 01, Message ="箱子未连接"}));
+                        }
+                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱成功：");
+                        break;
+                    case 类型.心跳:
+                        session.CustomType = 1;
+                        //处理并存储心跳信息
+                        SaveHeart(requestInfo.Body);
+                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "心跳命令：" + requestInfo.Body.Command);
+                        //判断是否有异常开箱的情况，记录并反馈
+                        ShowLog(txtLog, requestInfo.Body.ToString());
+                        break;
+                    case 类型.开箱:
+                        session.CustomType = 1;
+                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "开箱回复命令：" + requestInfo.Body.Command);
+                        //发送微信反馈
+                        SetOrderNo(session, requestInfo.Body.State);
+                        ShowLog(txtLog, requestInfo.Body.ToString());
+                        break;
+                    default:
+                        session.CustomType = 1;
+                        break;
+                }
+
+               
+            }
+            //三代微信过来的信息
+            else if (requestInfo.Body.Head.Contains("FF"))
+            {
+                session.CustomId = requestInfo.Body.Mac;
+
+                switch ((类型)requestInfo.Body.Type)
+                {
+                    case 类型.微信:
+                        session.CustomType = 2;
+                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信传过来的命令：" + requestInfo.Body.Command);
+                        var command = BoxModel.ToCommand(requestInfo.Body);
+                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信端口命令：" + Converts.GetTPandMac(command));
+                        if (!OpenBoxByMac(session.CustomId, command, requestInfo.Body.OrderNo, 1))
+                        {
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱失败：");
+                            //需要发送byte数组的命令，返回微信处理
+                            //session.Send(JsonConvert.SerializeObject(new ResponseResult() { Status = false, ErrorCode = 01, Message ="箱子未连接"}));
+                        }
+                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "开箱命令发送成功：");
+                        break;
+                    default:
+                        session.CustomType = 1;
+                        break;
+                }
+            }
+            else
             {
                 session.Close();
                 return;
-            }
-
-            session.CustomId = requestInfo.Body.Mac;
-
-            switch ((类型)requestInfo.Body.Type)
-            {
-                case 类型.微信:
-                    session.CustomType = 2;
-                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信传过来的命令：" + requestInfo.Body.Command);
-                    var command = BoxModel.ToCommand(requestInfo.Body);
-                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信端口命令：" + Converts.GetTPandMac(command));
-                    if (!OpenBoxByMac(session.CustomId, command, requestInfo.Body.OrderNo, 1))
-                    {
-                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱失败：");
-                        //需要发送byte数组的命令，返回微信处理
-                        //session.Send(JsonConvert.SerializeObject(new ResponseResult() { Status = false, ErrorCode = 01, Message ="箱子未连接"}));
-                    }
-                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱成功：");
-                    break;
-                case 类型.心跳:
-                    session.CustomType = 1;
-                    //处理并存储心跳信息
-                    SaveHeart(requestInfo.Body);
-                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "心跳命令：" + requestInfo.Body.Command);
-                    //判断是否有异常开箱的情况，记录并反馈
-                    ShowLog(txtLog, requestInfo.Body.ToString());
-                    break;
-                case 类型.开箱:
-                    session.CustomType = 1;
-                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "开箱回复命令：" + requestInfo.Body.Command);
-                    //发送微信反馈
-                    SetOrderNo(session, requestInfo.Body.State);
-                    ShowLog(txtLog, requestInfo.Body.ToString());
-                    break;
-                default:
-                    session.CustomType = 1;
-                    break;
             }
 
 
@@ -322,7 +351,7 @@ end
             {
                 LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ex2.Message);
             }
-
+            //调用三代的心跳接口
         }
 
 
@@ -386,7 +415,7 @@ end
         #region 退出程序
         private void Exit_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("手动停止服务器之后需要人工重启", "停止服务", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (System.Windows.Forms.MessageBox.Show("手动停止服务器之后需要人工重启", "停止服务", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 boxServer.Stop();
                 ShowLog(txtLog, "服务已停止！");

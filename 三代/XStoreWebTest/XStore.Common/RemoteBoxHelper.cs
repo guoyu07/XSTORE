@@ -51,7 +51,6 @@ namespace XStore.Common.Helper
                 socketclient.Send(commandByteArr);
                 var resultStr = string.Empty;
                 socketclient.Close();
-
             }
             catch (Exception ex)
             {

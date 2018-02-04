@@ -21,7 +21,7 @@ namespace XStore.Entity
         public string room { get; set; }
         public int state { get; set; }
         public string type { get; set; }
-        public string version { get; set; }
+        //public string version { get; set; }
         public string code { get; set; }
         public string iccid { get; set; }
         public string iot { get; set; }

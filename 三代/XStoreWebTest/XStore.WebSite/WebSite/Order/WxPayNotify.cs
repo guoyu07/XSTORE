@@ -19,7 +19,6 @@ namespace XStore.WebSite.WebSite.Order
         {
 
         }
-      
         public override void ProcessNotify()
         {
             try

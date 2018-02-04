@@ -53,6 +53,7 @@
     <Compile Include="Areas.cs" />
     <Compile Include="Cabinet.cs" />
     <Compile Include="CabinetLayout.cs" />
+    <Compile Include="Cell.cs" />
     <Compile Include="Constant.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="BackOrderInfo.cs" />

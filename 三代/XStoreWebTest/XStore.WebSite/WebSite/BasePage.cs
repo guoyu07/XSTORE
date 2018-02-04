@@ -36,7 +36,7 @@ namespace XStore.WebSite
             {
                 if (debug)
                 {
-                    _openid = "o8eAHwM94iBA0GGYsh8tnJ1pmuM8";
+                    _openid = "ooZJm0e-HAspMBhNrw0bUGXD-k6M";
                 }
                 if (_openid == null || string.IsNullOrEmpty(_openid))
                 {
@@ -113,7 +113,8 @@ namespace XStore.WebSite
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, "system_alert", "数据异常");
+                Log.Info(ex.Message + ":" + ex.StackTrace);
+                MessageBox.Show(this, "system_alert", "数据异常:" + ex.Message + ":" + ex.StackTrace);
                 return string.Empty;
             }
 

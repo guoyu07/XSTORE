@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 using System.Xml;
@@ -50,6 +51,11 @@ namespace XStore.Common.WeiXinPay
                 return true;
             else
                 return false;
+        }
+        public string ToJson()
+        {
+            string jsonStr = JsonConvert.SerializeObject(m_values);
+            return jsonStr;
         }
 
         /**

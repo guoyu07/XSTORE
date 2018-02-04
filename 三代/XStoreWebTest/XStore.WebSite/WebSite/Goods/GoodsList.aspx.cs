@@ -44,14 +44,18 @@ namespace XStore.WebSite.WebSite.Goods
                 #region 绑定房间商品
                 var proidList = new List<int>();
                 //根据storebatch获取对应的商品id
-                var storeBatchList = cabinet.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(o=>o.ObjToInt(0));
-                foreach (var storeBatch in storeBatchList)
-                {
-                    proidList.Add(context.Query<StoreBatch>()
-                        .Where(o => o.id == storeBatch)
-                        .LeftJoin<ProductBatch>((a, b) => a.batch_id == b.id).Select((a, b) => b.product_id)
-                        .FirstOrDefault());
-                }
+                //var storeBatchList = cabinet.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(o=>o.ObjToInt(0));
+                //foreach (var storeBatch in storeBatchList)
+                //{
+                //    proidList.Add(context.Query<StoreBatch>()
+                //        .Where(o => o.id == storeBatch)
+                //        .LeftJoin<ProductBatch>((a, b) => a.batch_id == b.id).Select((a, b) => b.product_id)
+                //        .FirstOrDefault());
+                //}
+
+                
+                proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o=>o.product_id).ToList();
+
                 var layout = context.Query<CabinetLayout>().FirstOrDefault(o => o.hotel_id == cabinet.hotel);
                 if (layout == null)
                 {

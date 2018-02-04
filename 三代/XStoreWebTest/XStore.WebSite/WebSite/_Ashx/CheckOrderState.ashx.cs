@@ -24,8 +24,8 @@ namespace XStore.WebSite.WebSite._Ashx
             try
             {
                 var mysqlContext = new MySqlContext(new MySqlConnectionFactory(connString));
-                var orderNo = context.Session[Constant.OrderId].ObjToInt(0);
-                var orderInfo = mysqlContext.Query<OrderInfo>().FirstOrDefault(o => o.id == orderNo);
+                var orderNo = context.Session[Constant.OrderNo].ObjToStr();
+                var orderInfo = mysqlContext.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderNo));
                 if (orderInfo == null)
                 {
                     context.Response.Write(JsonConvert.SerializeObject(new PayAjaxResponse
@@ -38,14 +38,15 @@ namespace XStore.WebSite.WebSite._Ashx
                 }
                 else
                 {
-                    context.Response.Write(JsonConvert.SerializeObject(new PayAjaxResponse
+                    var result = JsonConvert.SerializeObject(new PayAjaxResponse
                     {
                         success = true,
                         code = "00",
                         message = "查询成功",
-                        pay = (PayState)orderInfo.paid.ObjToInt(0) == PayState.已支付,
-                        deliver = (DeliverState)orderInfo.paid.ObjToInt(0) == DeliverState.已开箱
-                    }));
+                        pay = orderInfo.paid,
+                        deliver = orderInfo.delivered
+                    });
+                    context.Response.Write(result);
                     return;
                 }
             }

@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>boxes</RootNamespace>
     <AssemblyName>boxes</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -119,6 +120,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Config\log4net.config" />
     <None Include="Config\log4net.unix.config" />
@@ -147,9 +149,9 @@
     <Content Include="说明.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DTcms.Common\DTcms.Common.csproj">
-      <Project>{20908989-7773-493b-b1bd-764be322a935}</Project>
-      <Name>DTcms.Common</Name>
+    <ProjectReference Include="..\..\XStore.Common\XStore.Common.csproj">
+      <Project>{f832e63c-311b-4494-874f-e9df13412667}</Project>
+      <Name>XStore.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

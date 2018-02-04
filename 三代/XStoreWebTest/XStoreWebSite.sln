@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.AliDayu", "Common.Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiXinPush", "XStore.WeiXinPush\WeiXinPush.csproj", "{577FD47F-3625-419A-B008-551769804599}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "boxes", "boxes_zs_2758\boxes\boxes.csproj", "{B1068D67-E0BB-41B8-8B19-D74209838C53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{577FD47F-3625-419A-B008-551769804599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{577FD47F-3625-419A-B008-551769804599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{577FD47F-3625-419A-B008-551769804599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1068D67-E0BB-41B8-8B19-D74209838C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1068D67-E0BB-41B8-8B19-D74209838C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1068D67-E0BB-41B8-8B19-D74209838C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1068D67-E0BB-41B8-8B19-D74209838C53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

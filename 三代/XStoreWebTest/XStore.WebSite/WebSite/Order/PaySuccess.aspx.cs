@@ -8,7 +8,7 @@ using XStore.Entity;
 
 namespace XStore.WebSite.WebSite.Order
 {
-    public partial class PaySuccess : BasePage
+    public partial class PaySuccess : OrderPage
     {
        
         protected void Page_Load(object sender, EventArgs e)
@@ -16,20 +16,6 @@ namespace XStore.WebSite.WebSite.Order
             Title = "幸事多私享空间-开箱成功";
             title_img.ImageUrl = "~/Content/Images/paymentSuccessed.png";
         }
-        #region 订单信息
-        private OrderInfo _orderInfo;
-        protected OrderInfo orderInfo
-        {
-            get
-            {
-                if (_orderInfo == null)
-                {
-                    var orderNo = Session[Constant.OrderNo].ObjToInt(0);
-                    _orderInfo = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderNo));
-                }
-                return _orderInfo;
-            }
-        }
-        #endregion
+       
     }
 }
