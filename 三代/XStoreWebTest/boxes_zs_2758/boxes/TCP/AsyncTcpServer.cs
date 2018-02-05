@@ -312,7 +312,7 @@ namespace boxes.TCP
             bool result = false;
             if (!IsRunning)
             {
-                boxes.Common.LogHelper.WriteLog(DateTime.Now.ToString("HH-mm-ss：") + tcpClient.Client.RemoteEndPoint.ToString() + "This TCP server has not been started.");
+                LogHelper.WriteLog(DateTime.Now.ToString("HH-mm-ss：") + tcpClient.Client.RemoteEndPoint.ToString() + "This TCP server has not been started.");
                 //throw new InvalidProgramException("This TCP server has not been started.");
                 return false;
             }
@@ -320,7 +320,7 @@ namespace boxes.TCP
 
             if (tcpClient == null)
             {
-                boxes.Common.LogHelper.WriteLog(DateTime.Now.ToString("HH-mm-ss：") + tcpClient.Client.RemoteEndPoint.ToString() + "参数tcpClient空值异常");
+                LogHelper.WriteLog(DateTime.Now.ToString("HH-mm-ss：") + tcpClient.Client.RemoteEndPoint.ToString() + "参数tcpClient空值异常");
                 //throw new ArgumentNullException("tcpClient");
                 return false;
             }
@@ -328,7 +328,7 @@ namespace boxes.TCP
 
             if (datagram == null)
             {
-                boxes.Common.LogHelper.WriteLog(DateTime.Now.ToString("HH-mm-ss：") + tcpClient.Client.RemoteEndPoint.ToString() + "参数datagram空值异常");
+                LogHelper.WriteLog(DateTime.Now.ToString("HH-mm-ss：") + tcpClient.Client.RemoteEndPoint.ToString() + "参数datagram空值异常");
                 //throw new ArgumentNullException("datagram");
                 return false;
             }
@@ -340,7 +340,7 @@ namespace boxes.TCP
                 if (tcpClient != null && tcpClient.Connected)
                 {
                     TCPStream = tcpClient.GetStream();
-                    boxes.Common.LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "；TCPStream：" + TCPStream.ToString());
+                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "；TCPStream：" + TCPStream.ToString());
                     if (TCPStream.CanWrite)
                     {
                         TCPStream.BeginWrite(datagram, 0, datagram.Length, HandleDatagramWritten, tcpClient);

@@ -25,7 +25,7 @@ namespace boxes.DBUtility
                     //_connectionString = "Data Source=139.199.160.173;Initial Catalog=tshop;Persist Security Info=True;User ID=xxx;Password=123456";
 #endregion
 #region 正式服务器
-                    _connectionString = "Data Source=.;Initial Catalog=tshop;Persist Security Info=True;User ID=znhx;Password=znhx@abc123.#com;";
+                    _connectionString = "Data Source=119.29.94.189;Initial Catalog=tshop;Persist Security Info=True;User ID=znhx;Password=znhx@abc123.#com;";
 #endregion
 
 

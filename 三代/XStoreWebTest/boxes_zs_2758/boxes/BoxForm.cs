@@ -11,12 +11,17 @@ using System.Windows.Forms;
 using SuperSocket.SocketBase.Config;
 using System.Data;
 using XStore.Common;
+using XStore.Entity.Model;
+using XStore.Entity;
+using System.Timers;
+using Newtonsoft.Json.Linq;
 
 namespace boxes
 {
     public partial class BoxForm : Form
     {
         BoxServer boxServer = new BoxServer();
+
         public BoxForm()
         {
             InitializeComponent();
@@ -32,6 +37,16 @@ namespace boxes
                 MaxConnectionNumber = 10000,
                 IdleSessionTimeOut = 420
             };
+
+            InitBoxes();
+            var initTimer = new System.Timers.Timer(3600000);
+            initTimer.Elapsed += initTimer_Elapsed;
+            initTimer.Start();
+
+            var offlineTimer = new System.Timers.Timer(60000);
+            offlineTimer.Elapsed += offlineTimer_Elapsed;
+            offlineTimer.Start();
+
             if (!boxServer.Setup(serverConfig))
             {
                 ShowLog(txtLog, "初始化错误");
@@ -51,6 +66,56 @@ namespace boxes
             //注册Session关闭事件
             boxServer.SessionClosed += BoxProtocolServer_SessionClosed;
             //boxServer.Stop();
+        }
+        #endregion
+        #region 初始化箱子在线信息
+        private void initTimer_Elapsed(object sender, ElapsedEventArgs e) {
+
+            InitBoxes();
+        }
+        private void InitBoxes()
+        {
+            var requestUrl = string.Format("{0}test/cabinets?page=0&size=10000 ", Constant.YunApi);
+            var response = JsonConvert.DeserializeObject<JObject>(Utils.HttpGet(requestUrl));
+            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";InitBoxesReponse:" + response);
+            if (response["operationStatus"].ObjToStr().Equals("SUCCESS"))
+            {
+                var arrList = JsonConvert.DeserializeObject<JArray>(response["operationMessage"].ObjToStr());
+                List<OnlineBox> macList = new List<OnlineBox>();
+
+                foreach (var arr in arrList)
+                {
+                    var sub = JsonConvert.DeserializeObject<JArray>(arr.ToString());
+                    var mac = new OnlineBox();
+                    mac.mac = sub[0].ObjToStr();
+                    mac.online = sub[1].ObjToInt(0) == 0 ? false : true;
+                    mac.lineTime = DateTime.Now;
+                    macList.Add(mac);
+                }
+                CacheHelper.SetCache("Boxes", macList);
+            }
+
+        }
+        #endregion
+
+        #region 离线检测
+        private void offlineTimer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            var cache = ((List<OnlineBox>)CacheHelper.GetCache("Boxes")).Where(o => DateTime.Compare(o.lineTime.AddMinutes(5), DateTime.Now) < 0 && o.online == true).Select(o=>o.mac).ToList();
+            if (cache.Count>0)
+            {
+                var macStr = cache.Aggregate((x, y) => x + "," + y);
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";离线macStr:" + macStr);
+                var requestUrl = string.Format("{0}test/offline?macs={1}", Constant.YunApi, macStr);
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";离线requestUrl:" + requestUrl);
+                var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";离线response:" + response);
+                if (!response.operationStatus.Equals("SUCCESS"))
+                {
+                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";离线通知接口请求失败");
+                }
+
+            }
         }
         #endregion
 
@@ -81,7 +146,7 @@ namespace boxes
         #region Session链接事件
         static void BoxProtocolServer_NewSessionConnected(BoxSession session)
         {
-
+           
         }
         #endregion
 
@@ -95,7 +160,7 @@ namespace boxes
             {
 
                 session.CustomId = requestInfo.Body.Mac;
-
+                session.Mac = requestInfo.Body.FormatMac;
                 switch ((类型)requestInfo.Body.Type)
                 {
                     case 类型.微信:
@@ -113,6 +178,30 @@ namespace boxes
                         break;
                     case 类型.心跳:
                         session.CustomType = 1;
+                        var cache =(List<OnlineBox>)CacheHelper.GetCache("Boxes");
+                        if (cache != null)
+                        {
+                            var mac = cache.FirstOrDefault(o => o.mac.Equals(session.Mac));
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";mac:" + mac);
+                            //如果不存在，说明是二代系统的箱子
+                            if (mac != null)
+                            {
+                                //如果之前是离线的，需要通知管理后台
+                                if (!mac.online)
+                                {
+                                    var requestUrl = string.Format("{0}test/online?mac={1}", Constant.YunApi, mac.mac);
+                                    var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+                                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";heartResponse:" + response);
+                                    if (!response.operationStatus.Equals("SUCCESS"))
+                                    {
+                                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";在线通知接口请求失败");
+                                    }
+                                }
+                                mac.online = true;
+                                mac.lineTime = DateTime.Now;
+                            }
+                           
+                        }
                         //处理并存储心跳信息
                         SaveHeart(requestInfo.Body);
                         LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "心跳命令：" + requestInfo.Body.Command);
@@ -130,8 +219,6 @@ namespace boxes
                         session.CustomType = 1;
                         break;
                 }
-
-               
             }
             //三代微信过来的信息
             else if (requestInfo.Body.Head.Contains("FF"))
@@ -185,7 +272,7 @@ namespace boxes
                 }));
             }
         }
-
+        
         private enum 类型 : byte
         {
             微信 = 2,
@@ -221,6 +308,7 @@ namespace boxes
                         case "J":break;
                         case "C":break;
                         default:
+                            ThreeUpdateOrder(errorPosition, orderNo);
                             break;
                     }
                 }
@@ -231,8 +319,8 @@ namespace boxes
             }
         }
         //修改订单
-        private void UpdateOrder(string errorPosition,string orderNo) {
-
+        private void UpdateOrder(string errorPosition,string orderNo)
+        {
             var updateSql = string.Empty;
             LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "异常箱子位置：" + errorPosition);
             if (!string.IsNullOrEmpty(errorPosition))
@@ -267,8 +355,6 @@ UPDATE wp_订单表 SET STATE=5 WHERE 订单编号='{0}'
                 string productNum = string.Empty;
                 string kw_name = string.Empty;
                 string hotel_name = string.Empty;
-                int hotel_id = 0;
-                int jituan_id = 0;
                 var sub_order_dt = DbHelperSQL.GetDataTableBySQL(sub_order_sql);
                 if (sub_order_dt.Rows.Count > 0)
                 {
@@ -298,6 +384,7 @@ UPDATE wp_订单表 SET STATE=5 WHERE 订单编号='{0}'
                 }
             }
         }
+
         //修改补货单
         private void UpdateBack(string errorPosition,string orderNo) {
             var updateSql = string.Format(@"UPDATE [dbo].[WP_补货单]
@@ -305,6 +392,21 @@ UPDATE wp_订单表 SET STATE=5 WHERE 订单编号='{0}'
       ,[Status] = {2}
  WHERE [OrderNo]= '{1}'", errorPosition, orderNo, string.IsNullOrEmpty(errorPosition) ? 2 : 3);
             DbHelperSQL.ExecuteSql(updateSql);
+        }
+
+        //三代系统修改订单
+        private void ThreeUpdateOrder(string errorPosition, string orderNo)
+        {
+            if (!string.IsNullOrEmpty(errorPosition))
+            {
+                var requestUrl = string.Format("{0}/test/open?orderId={1}", Constant.YunApi, orderNo);
+                var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+            }
+            else
+            {
+                var requestUrl = string.Format("{0}/test/fail?orderId={1}", Constant.YunApi, orderNo);
+                var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+            }
         }
 
         private void SaveHeart(BoxModel model)
@@ -351,7 +453,6 @@ end
             {
                 LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ex2.Message);
             }
-            //调用三代的心跳接口
         }
 
 

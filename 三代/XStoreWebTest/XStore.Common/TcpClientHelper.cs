@@ -129,15 +129,15 @@ namespace XStore.Common
                 date_control[3] = command;//指令码
                 Array.Copy(mac, 0, date_control, 4, 15);//
                 Array.Copy(box_number, 0, date_control, 19, 12);
-                Array.Copy(order_no, 0, date_control, 31, 15);////
-                Array.Copy(Encoding.UTF8.GetBytes(order_no.Count().ToString()), 0, date_control, 46, 2);////
+                Array.Copy(order_no, 0, date_control, 31, order_no.Count());////
+                Array.Copy(Encoding.UTF8.GetBytes(order_no.Count().ToString()), 0, date_control, 47, 1);////
                 byte[] rcr = new byte[46];
                 Array.Copy(date_control, 2, rcr, 0, 46);
                 date_control[48] = Converts.GetCRCSUM(rcr)[0];//old
                 date_control[49] = Converts.GetCRCSUM(rcr)[1];//old
 
             }
-            catch (Exception) {; }
+            catch (Exception ex) {; }
 
 
             return date_control;

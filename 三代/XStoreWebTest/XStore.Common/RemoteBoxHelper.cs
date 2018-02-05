@@ -40,6 +40,7 @@ namespace XStore.Common.Helper
                 byte[] ping = Encoding.UTF8.GetBytes(serialNumber);
                 byte[] commandByteArr = TcpClientHelper.GetSendMulty(ping, byte_open, order_no, type);
                 var commandStr = Converts.GetTPandMac(commandByteArr);
+                LogHelper.WriteLog(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + ";发送的开箱命令：" + commandStr);
                 //SocketException exception;
                 //定义一个套接字监听
                 socketclient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);

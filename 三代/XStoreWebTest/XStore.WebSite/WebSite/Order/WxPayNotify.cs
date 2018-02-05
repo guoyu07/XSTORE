@@ -65,7 +65,7 @@ namespace XStore.WebSite.WebSite.Order
                     {
                         try
                         {
-                            var requestUrl = string.Format("http://139.199.160.173:9119/test/pay?orderId={0}&payId={1}", out_trade_no, transaction_id);
+                            var requestUrl = string.Format("{2}test/pay?orderId={0}&payId={1}", out_trade_no, transaction_id,Constant.YunApi);
                             var response = JsonConvert.DeserializeObject<OrderResponse>(Utils.HttpGet(requestUrl));
                             if (response.operationStatus.Equals("SUCCESS"))
                             {

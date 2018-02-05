@@ -24,6 +24,7 @@ namespace XStore.WebSite.WebSite
             }
         }
         #endregion
+      
 
         #region 用户信息
         private User _userinfo;

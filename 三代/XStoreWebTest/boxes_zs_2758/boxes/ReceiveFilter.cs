@@ -81,7 +81,7 @@ namespace boxes
                 boxModel.FormatMac = FormatMac(boxModel.Mac);
                 boxModel.Command = Converts.GetTPandMac(command);
                 boxModel.State = buffer.CloneRange(offset + 19, 12);
-                var oderCount = int.Parse(Encoding.UTF8.GetString(buffer.CloneRange(offset + 46, 2)));
+                var oderCount = int.Parse(Encoding.UTF8.GetString(buffer.CloneRange(offset + 47, 1)));
                 var orderNo = buffer.CloneRange(offset + 31, oderCount);
                 LogHelper.WriteLog("命令过来的type类型：" + (int)boxModel.OpenType);
                 boxModel.OrderNo = Encoding.UTF8.GetString(orderNo);

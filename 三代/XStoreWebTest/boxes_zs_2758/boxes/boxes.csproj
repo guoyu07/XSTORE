@@ -94,7 +94,6 @@
     <Compile Include="Common\DataFrame.cs" />
     <Compile Include="Common\DataFrameHeader.cs" />
     <Compile Include="Common\HttpHelper.cs" />
-    <Compile Include="Common\LogHelper.cs" />
     <Compile Include="Common\OpCode.cs" />
     <Compile Include="Common\ReceiveDate.cs" />
     <Compile Include="DBUtility\DbHelperSQL.cs" />
@@ -152,6 +151,10 @@
     <ProjectReference Include="..\..\XStore.Common\XStore.Common.csproj">
       <Project>{f832e63c-311b-4494-874f-e9df13412667}</Project>
       <Name>XStore.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XStore.Entity\XStore.Entity.csproj">
+      <Project>{9B65146A-C10B-42DE-A128-874D9A8F25E3}</Project>
+      <Name>XStore.Entity</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

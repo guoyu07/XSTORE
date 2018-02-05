@@ -64,8 +64,10 @@
     <Compile Include="Model\BindResponse.cs" />
     <Compile Include="Model\BuyRequest.cs" />
     <Compile Include="Model\BuyResponse.cs" />
+    <Compile Include="Model\CabinetResponse.cs" />
     <Compile Include="Model\FixedProductQuery.cs" />
     <Compile Include="Model\MessageResponse.cs" />
+    <Compile Include="Model\OnlineBox.cs" />
     <Compile Include="Model\OrderResponse.cs" />
     <Compile Include="Model\PayAjaxResponse.cs" />
     <Compile Include="Model\ProductQuery.cs" />

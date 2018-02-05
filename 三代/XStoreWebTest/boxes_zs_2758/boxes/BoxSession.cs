@@ -13,6 +13,7 @@ namespace boxes
         public int CustomType { get; set; } = 0;
         public int Type { get; set; } = 1;
         public string OrderNo { get; set; } = string.Empty;
+        public string Mac { get; set; } = string.Empty;
         protected override void OnSessionStarted()
         {
           
