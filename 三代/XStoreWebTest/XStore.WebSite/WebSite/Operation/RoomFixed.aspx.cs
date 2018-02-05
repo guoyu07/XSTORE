@@ -110,14 +110,15 @@ namespace XStore.WebSite.WebSite.Operation
                     MessageBox.Show(this, "system_alert", "补货单生成失败");
                     return;
                 }
+               
                 var backNo = response.operationMessage.ObjToStr();
-                var storeIdList = cabinet.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(o=>o.ObjToInt(0)).ToList();
+                ViewState["BackNo"] = backNo;
                 var position =string.Empty;
-                for (int i = 0; i < storeIdList.Count; i++)
+                for (int i = 0; i < proidList.Count; i++)
                 {
-                    if (storeIdList[i] == 0)
+                    if (proidList[i] == 0)
                     {
-                        position += storeIdList[i] + ",";
+                        position += i + ",";
                     }
                 }
                 if (!string.IsNullOrEmpty(position))
@@ -134,10 +135,40 @@ namespace XStore.WebSite.WebSite.Operation
             }
             #endregion
         }
+        protected void open_again_Click(object sender, EventArgs e)
+        {
+            var position = string.Empty;
+            var proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.id).ToList();
+            for (int i = 0; i < proidList.Count; i++)
+            {
+                if (proidList[i] == 0)
+                {
+                    position += i + ",";
+                }
+            }
+            if (!string.IsNullOrEmpty(position))
+            {
+                position = position.TrimEnd(',');
+                var rbh = new RemoteBoxHelper();
+                rbh.OpenRemoteBox(cabinet.mac, ViewState["BackNo"].ObjToStr(), position, 0x02);
+            }
+        }
+
         #region 补货完成
         protected void finish_button_Click(object sender, EventArgs e)
         {
-           //TODO
+            var requestUrl = string.Format(Constant.YunApi + "test/back/open?backOrderId={0}", ViewState["BackNo"].ObjToStr());
+            var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+            if (response.operationStatus.Equals("SUCCESS"))
+            {
+                MessageBox.Show(this, "system_alert", "补货成功");
+                return;
+            }
+            else
+            {
+                MessageBox.Show(this, "system_alert", "补货失败");
+                return;
+            }
         }
         #endregion
     }

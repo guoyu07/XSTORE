@@ -40,9 +40,14 @@
                 </ul>
                 <table style="width: 100%;">
                     <tr>
-                        <td style="width: 100%;">
+                        <td style="width: 50%;">
                             <div class="btnWrap">
-                                <asp:LinkButton runat="server" ID="finishCheck" CssClass="makeSure" OnClick="finish_button_Click">配货完成</asp:LinkButton>
+                                <asp:LinkButton runat="server" ID="openAgain" CssClass="makeSure" OnClick="open_again_Click">点击开箱</asp:LinkButton>
+                            </div>
+                        </td>
+                        <td style="width: 50%;">
+                            <div class="btnWrap">
+                                <asp:LinkButton runat="server" ID="finishCheck" CssClass="makeSure" OnClientClick="system_confirm('确定已全部配货完成?')" OnClick="finish_button_Click">配货完成</asp:LinkButton>
                             </div>
                         </td>
                     </tr>

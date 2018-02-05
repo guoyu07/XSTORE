@@ -261,3 +261,13 @@ D:\Git\XSTORE\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\XStore.Entity.d
 D:\Git\XSTORE\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\Chloe.dll
 D:\Git\XSTORE\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\XStore.Entity.pdb
 D:\Git\XSTORE\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\Chloe.xml
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\boxes.exe.config
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\boxes.exe
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\boxes.pdb
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\Newtonsoft.Json.dll
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\XStore.Common.dll
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\XStore.Entity.dll
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\Chloe.dll
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\XStore.Common.pdb
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\XStore.Entity.pdb
+X:\Git\三代\XStoreWebTest\boxes_zs_2758\boxes\bin\Debug\Chloe.xml

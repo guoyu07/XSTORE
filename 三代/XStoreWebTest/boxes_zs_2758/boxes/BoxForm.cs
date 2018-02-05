@@ -283,10 +283,13 @@ namespace boxes
         {
             try
             {
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "allsessions:" + JsonConvert.SerializeObject(boxServer.GetAllSessions().Select(o=>o.CustomId).ToList()));
                 var sessions = boxServer.GetSessions(o => o.CustomId.Equals(session.CustomId) && o.CustomType == 1);
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "sessions:" + JsonConvert.SerializeObject(sessions.Select(o => o.CustomId).ToList()));
                 if (sessions.Count() != 0)
                 {
                     var orderNo = sessions.First().OrderNo;
+                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "orderNo:" + orderNo);
                     var errorPosition = string.Empty;
                     for (int i = 0; i < states.Length; i++)
                     {
@@ -308,6 +311,7 @@ namespace boxes
                         case "J":break;
                         case "C":break;
                         default:
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "三版本:" );
                             ThreeUpdateOrder(errorPosition, orderNo);
                             break;
                     }
@@ -397,15 +401,20 @@ UPDATE wp_订单表 SET STATE=5 WHERE 订单编号='{0}'
         //三代系统修改订单
         private void ThreeUpdateOrder(string errorPosition, string orderNo)
         {
-            if (!string.IsNullOrEmpty(errorPosition))
+            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "errorPosition:" + errorPosition);
+            if (string.IsNullOrEmpty(errorPosition))
             {
-                var requestUrl = string.Format("{0}/test/open?orderId={1}", Constant.YunApi, orderNo);
+                var requestUrl = string.Format("{0}test/open?orderId={1}", Constant.YunApi, orderNo);
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "successRequestUrl:" + requestUrl);
                 var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "successResponse:" + JsonConvert.SerializeObject(response));
             }
             else
             {
-                var requestUrl = string.Format("{0}/test/fail?orderId={1}", Constant.YunApi, orderNo);
+                var requestUrl = string.Format("{0}test/fail?orderId={1}", Constant.YunApi, orderNo);
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "failRequestUrl:" + requestUrl);
                 var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "failResponse:" + JsonConvert.SerializeObject(response));
             }
         }
 
