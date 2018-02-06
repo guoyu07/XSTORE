@@ -58,7 +58,7 @@ namespace XStore.WebSite.WebSite.Login
                     case UserRoleEnum.前台:
                     case UserRoleEnum.经理:
                     case UserRoleEnum.区域经理:
-                        Response.Redirect(string.Format(Constant.OperationDic+"BindMac.aspx?boxmac={0}", boxMac));
+                        Response.Redirect(string.Format(Constant.OperationDic+ "RoomFixed.aspx?boxmac={0}", boxMac));
                         break;
                     case UserRoleEnum.配水员:
                         Response.Redirect(string.Format(Constant.OperationDic + "WaterFillUp.aspx?boxmac={0}", boxMac));

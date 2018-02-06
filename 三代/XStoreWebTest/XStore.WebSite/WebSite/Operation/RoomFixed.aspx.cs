@@ -40,6 +40,10 @@ namespace XStore.WebSite.WebSite.Operation
 
             var proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.product_id.HasValue ? o.product_id.Value : 0).ToList();
             LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "proidList：" + JsonConvert.SerializeObject(proidList));
+            if (proidList.Count == 0)
+            {
+                proidList = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            }
             var layout = context.Query<CabinetLayout>().FirstOrDefault(o => o.hotel_id == cabinet.hotel);
             if (layout == null)
             {

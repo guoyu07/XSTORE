@@ -336,6 +336,7 @@
     <Content Include="WebSite\Operation\PickUp.aspx" />
     <Content Include="WebSite\Operation\QaCheck.aspx" />
     <Content Include="WebSite\Operation\RoomFixed.aspx" />
+    <Content Include="WebSite\Operation\RoomInit.aspx" />
     <Content Include="WebSite\Operation\RoomSelect.aspx" />
     <Content Include="WebSite\Operation\WaterFillUp.aspx" />
     <Content Include="fonts\iconfont.eot" />
@@ -588,6 +589,13 @@
     </Compile>
     <Compile Include="WebSite\Operation\RoomFixed.aspx.designer.cs">
       <DependentUpon>RoomFixed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomInit.aspx.cs">
+      <DependentUpon>RoomInit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomInit.aspx.designer.cs">
+      <DependentUpon>RoomInit.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Operation\RoomSelect.aspx.cs">
       <DependentUpon>RoomSelect.aspx</DependentUpon>

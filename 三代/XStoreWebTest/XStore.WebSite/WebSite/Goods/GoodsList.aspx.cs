@@ -21,7 +21,7 @@ namespace XStore.WebSite.WebSite.Goods
                     MessageBox.Show(this, "system_alert", "箱子未绑定房间");
                     return;
                 }
-                if (cabinet.online.HasValue&&cabinet.online.Value)//离线
+                if (cabinet.online.HasValue)//离线
                 {
                     if (!cabinet.online.Value)
                     {
@@ -41,15 +41,13 @@ namespace XStore.WebSite.WebSite.Goods
         {
             try
             {
-
                 #region 绑定房间商品
                 var proidList = new List<int>();
 
                 proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.product_id.HasValue ? o.product_id.Value : 0).ToList();
                 if (proidList.Count == 0)
                 {
-                    MessageBox.Show(this, "system_alert", "酒店房间未设置默认商品");
-                    return;
+                    proidList = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
                 }
 
                 var layout = context.Query<CabinetLayout>().FirstOrDefault(o => o.hotel_id == cabinet.hotel);
