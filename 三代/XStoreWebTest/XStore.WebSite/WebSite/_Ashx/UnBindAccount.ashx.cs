@@ -27,7 +27,7 @@ namespace XStore.WebSite.WebSite._Ashx
                 userInfo.weichat = string.Empty;
                 userInfo.phone = string.Empty;
                 var returnState = mysqlContext.Update(userInfo);
-                if (returnState == 0)
+                if (returnState != 0)
                 {
                     context.Session.Clear();
                     context.Response.Write(JsonConvert.SerializeObject(new AjaxResponse { success = true, message = "注销成功" }));

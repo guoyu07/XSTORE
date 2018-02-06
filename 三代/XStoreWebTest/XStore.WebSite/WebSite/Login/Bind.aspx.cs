@@ -22,6 +22,7 @@ namespace XStore.WebSite.WebSite.Login
         protected void PageInit()
         {
             User model = (User)Session[Constant.CurrentUser];
+            Session[Constant.CurrentUser] = null;
             name_input.Value = model.realname;
             phone_input.Value = model.phone;
             account_input.Value = model.username;

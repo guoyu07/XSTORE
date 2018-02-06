@@ -35,6 +35,7 @@ namespace XStore.WebSite.WebSite.Login
             {
                 var boxMac = Session[Constant.IMEI].ObjToStr();
                 var userInfo = (User)Session[Constant.CurrentUser];
+        
                 var roomInfo = context.Query<Cabinet>().FirstOrDefault(o => o.mac.Equals(boxMac));
                 if (roomInfo == null)
                 {

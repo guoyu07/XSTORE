@@ -199,6 +199,7 @@ namespace boxes
                                 }
                                 mac.online = true;
                                 mac.lineTime = DateTime.Now;
+                                CacheHelper.SetCache("Boxes", cache);
                             }
                            
                         }
