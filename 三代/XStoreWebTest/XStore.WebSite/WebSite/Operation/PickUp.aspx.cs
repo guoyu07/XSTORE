@@ -76,21 +76,17 @@ namespace XStore.WebSite.WebSite.Operation
                 var layoutList = cabinetLayOut.products.Split(new char[] { ','},StringSplitOptions.RemoveEmptyEntries).ToList();
                 for (int i = 0; i < cabinets.Count; i++)
                 {
-                    var storesStr = cabinets[i].products.ObjToStr();
-                    if (string.IsNullOrEmpty(storesStr))
-                    {
-                        MessageBox.Show(this,"system_alert","房间【"+cabinets[i].room+"】未设定商品");
-                        return;
-                    }
-                    var storeList = storesStr.Split(new char[] { ','},StringSplitOptions.RemoveEmptyEntries).Select(o=>o.ObjToInt(0)).ToList();
+                    var cabinet = cabinets[i];
+                    var storeList = context.Query<Cell>().Where(o=>o.mac.Equals(cabinet.mac)&&o.part == 0).ToList();
+   
                     if (layoutList.Count != storeList.Count)
                     {
-                        MessageBox.Show(this, "system_alert", "房间【" + cabinets[i].room + "】商品设置不全");
+                        MessageBox.Show(this, "system_alert", "房间【" + cabinet.room + "】商品设置不全");
                         return;
                     }
                     for (int j = 0; j < storeList.Count; j++)
                     {
-                        if (storeList[j] == 0)
+                        if (storeList[j].product_id==null)
                         {
                             fixProductList.Add(layoutList[j]);
                         }
@@ -127,6 +123,7 @@ namespace XStore.WebSite.WebSite.Operation
             }
             catch (Exception ex)
             {
+                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "补货房间异常：" + ex.Message + ";内部异常：" + ex.InnerException.Message);
                 MessageBox.Show(this, "system_alert", "数据异常");
                 return;
             }

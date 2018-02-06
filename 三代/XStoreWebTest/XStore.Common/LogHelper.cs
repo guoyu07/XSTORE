@@ -40,6 +40,34 @@ namespace XStore.Common
 
 
         }
+        static public void WriteLogs(string errorMsg)
+        {
+            try
+            {
+                string fileName = DateTime.Now.ToString("yyyy_MM_dd") + ".txt";
+                string dirInfo = "C:\\ErrorLogs\\" + DateTime.Now.ToString("yyyy_MM");
+                string path = dirInfo + "\\" + fileName;
+                if (!Directory.Exists(dirInfo))
+                {
+                    Directory.CreateDirectory(dirInfo);
+                }
+                if (!File.Exists(path))
+                {
+                    FileInfo myfile = new FileInfo(path);
+                    FileStream fs = myfile.Create();
+                    fs.Close();
+                }
+                StreamWriter sw = File.AppendText(path);
+                sw.WriteLine(errorMsg);
+                sw.WriteLine("");
+                sw.Flush();
+                sw.Close();
+            }
+            catch
+            { }
+
+
+        }
         static public void SaveHeart(string mac,string cmd)
         {
             try

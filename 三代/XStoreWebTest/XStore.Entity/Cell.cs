@@ -15,7 +15,7 @@ namespace XStore.Entity
         public string mac { get; set; }
         public int pos { get; set; }
         public int part { get; set; }
-        public int product_id { get; set; }
-        public int store_id { get; set; }
+        public int? product_id { get; set; }
+        public int? store_id { get; set; }
     }
 }

@@ -44,9 +44,8 @@ namespace XStore.WebSite.WebSite.Goods
 
                 #region 绑定房间商品
                 var proidList = new List<int>();
-                
-                
-                proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o=>o.product_id).ToList();
+
+                proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.product_id.HasValue ? o.product_id.Value : 0).ToList();
                 if (proidList.Count == 0)
                 {
                     MessageBox.Show(this, "system_alert", "酒店房间未设置默认商品");

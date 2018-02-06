@@ -19,16 +19,19 @@ namespace XStore.Entity
         #region -----角色权限-----
         public enum UserRoleEnum : int
         {
-            经理 = 1,
-            财务 = 2,
+           
+            管理员 = 1,
+            经理 = 2,
             前台 = 3,
+           
             区域经理 = 4,
             集团经理 = 5,
             集团财务 = 6,
             后台财务 = 7,
             后台管理员 = 8,
             测试员 = 9,
-            配水员 = 10
+            配水员 = 10,
+            财务 = 11
         }
         #endregion
 

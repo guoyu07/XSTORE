@@ -1,5 +1,6 @@
 ﻿using Chloe.MySql;
 using log4net;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -38,6 +39,7 @@ namespace XStore.WebSite
                 {
                     _openid = "ooZJm0e-HAspMBhNrw0bUGXD-k6M";
                 }
+                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "openid：");
                 if (_openid == null || string.IsNullOrEmpty(_openid))
                 {
                     if (Session[Constant.OpenId] == null || string.IsNullOrEmpty(Session[Constant.OpenId].ObjToStr()))
@@ -62,6 +64,7 @@ namespace XStore.WebSite
         {
             try
             {
+                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "重新获取openid：");
                 string root = HttpContext.Current.Request.Url.Host;
                 string url = HttpContext.Current.Request.Url.AbsolutePath;
                 string query = HttpContext.Current.Request.Url.Query;
@@ -70,18 +73,23 @@ namespace XStore.WebSite
                 WxUserInfo wxUserInfo = new WxUserInfo();
                 if (Session == null || string.IsNullOrEmpty(Session[Constant.OpenId].ObjToStr()))
                 {
+                    LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "OpenId不存在：");
                     var code = Request.QueryString[Constant.WxCode];
+                    LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "code："+ code);
                     #region 根据code获取openid
                     if (code != null && !string.IsNullOrEmpty(code))
                     {
                         OauthToken oathToken = new OauthToken();
                         oathToken = wxOath.GetOauthToken(code);//获取用户openid
                         Session[Constant.OpenId] = oathToken.openid;
+                        LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "openid：" + oathToken.openid);
                         #region 存入用户信息
                         wxUserInfo = wxOath.GetWebUserInfo(access_token(), oathToken.openid);
+                        LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") +"存入用户信息："+ JsonConvert.SerializeObject(wxUserInfo));
                         var wxUserDB = context.Query<UserWeiChat>().FirstOrDefault(o => o.openid.Equals(oathToken.openid));
                         if (wxUserDB == null)
                         {
+
                             context.Insert(new UserWeiChat
                             {
                                 createtime = DateTime.Now,
@@ -113,7 +121,7 @@ namespace XStore.WebSite
             }
             catch (Exception ex)
             {
-                Log.Info(ex.Message + ":" + ex.StackTrace);
+                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "数据异常：" + ex.InnerException.Message);
                 MessageBox.Show(this, "system_alert", "数据异常:" + ex.Message + ":" + ex.StackTrace);
                 return string.Empty;
             }
@@ -121,12 +129,13 @@ namespace XStore.WebSite
         }
         public string access_token()
         {
-            var accessToken = context.Query<AccessToken>().FirstOrDefault(o=>o.createtime.AddMinutes(110) > DateTime.Now);
+            var accessToken = context.Query<AccessToken>().ToList().Where(o=>DateTime.Compare(o.createtime.AddMinutes(110),DateTime.Now)>0).ToList();
             //如果加了两个小时还是小于当前时间，说明token过期，需要重新获取
-            if (accessToken == null)
+            if (accessToken.Count==0)
             {
                 var wxOath = new WeiXinOath();
                 var access_token = wxOath.GetAccessToken();
+                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "access_token：" + access_token);
                 context.Insert(new AccessToken
                 {
                     access_token = access_token,
@@ -137,7 +146,7 @@ namespace XStore.WebSite
             else
             {
 
-                return accessToken.access_token;
+                return accessToken.First().access_token;
             }
         }
        

@@ -40,10 +40,10 @@
       <publishTime>01/29/2018 09:30:54</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.dll">
-      <publishTime>02/05/2018 17:06:48</publishTime>
+      <publishTime>02/06/2018 13:01:21</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.pdb">
-      <publishTime>02/05/2018 17:06:48</publishTime>
+      <publishTime>02/06/2018 13:01:21</publishTime>
     </File>
     <File Include="bin/Flurl.dll">
       <publishTime>01/29/2018 09:30:54</publishTime>
@@ -313,22 +313,22 @@
       <publishTime>01/29/2018 09:30:56</publishTime>
     </File>
     <File Include="bin/XStore.Common.dll">
-      <publishTime>02/05/2018 18:07:32</publishTime>
+      <publishTime>02/06/2018 14:36:37</publishTime>
     </File>
     <File Include="bin/XStore.Common.pdb">
-      <publishTime>02/05/2018 18:07:32</publishTime>
+      <publishTime>02/06/2018 14:36:37</publishTime>
     </File>
     <File Include="bin/XStore.Entity.dll">
-      <publishTime>02/05/2018 17:06:48</publishTime>
+      <publishTime>02/06/2018 15:41:44</publishTime>
     </File>
     <File Include="bin/XStore.Entity.pdb">
-      <publishTime>02/05/2018 17:06:48</publishTime>
+      <publishTime>02/06/2018 15:41:44</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.dll">
-      <publishTime>02/05/2018 18:16:34</publishTime>
+      <publishTime>02/06/2018 16:14:13</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.pdb">
-      <publishTime>02/05/2018 18:16:34</publishTime>
+      <publishTime>02/06/2018 16:14:13</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.AspNet.FriendlyUrls.resources.dll">
       <publishTime>01/29/2018 09:30:54</publishTime>
@@ -349,7 +349,7 @@
       <publishTime>01/29/2018 09:30:53</publishTime>
     </File>
     <File Include="Content/Center/distributer.css">
-      <publishTime>01/29/2018 09:30:53</publishTime>
+      <publishTime>02/06/2018 16:06:15</publishTime>
     </File>
     <File Include="Content/footer.css">
       <publishTime>01/29/2018 19:26:20</publishTime>
@@ -472,7 +472,7 @@
       <publishTime>01/29/2018 18:25:26</publishTime>
     </File>
     <File Include="Content/Opreation/roomGoods.css">
-      <publishTime>01/29/2018 14:01:29</publishTime>
+      <publishTime>02/06/2018 16:09:35</publishTime>
     </File>
     <File Include="Content/Opreation/roomSelect.css">
       <publishTime>01/29/2018 09:30:53</publishTime>
@@ -583,7 +583,7 @@
       <publishTime>01/29/2018 09:30:53</publishTime>
     </File>
     <File Include="Scripts/common.js">
-      <publishTime>01/29/2018 09:30:53</publishTime>
+      <publishTime>02/06/2018 09:22:55</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
       <publishTime>01/29/2018 09:30:53</publishTime>
@@ -787,7 +787,7 @@
       <publishTime>01/29/2018 09:30:53</publishTime>
     </File>
     <File Include="WebSite/Operation/FinishPickUp.aspx">
-      <publishTime>01/29/2018 11:46:17</publishTime>
+      <publishTime>02/06/2018 15:13:38</publishTime>
     </File>
     <File Include="WebSite/Operation/PickUp.aspx">
       <publishTime>01/29/2018 11:46:13</publishTime>
@@ -796,7 +796,7 @@
       <publishTime>01/29/2018 09:30:53</publishTime>
     </File>
     <File Include="WebSite/Operation/RoomFixed.aspx">
-      <publishTime>01/29/2018 14:10:14</publishTime>
+      <publishTime>02/06/2018 16:10:46</publishTime>
     </File>
     <File Include="WebSite/Operation/RoomSelect.aspx">
       <publishTime>01/29/2018 11:46:10</publishTime>

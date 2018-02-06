@@ -61,6 +61,7 @@
     <Compile Include="LoginRecord.cs" />
     <Compile Include="MessageLog.cs" />
     <Compile Include="Model\AjaxResponse.cs" />
+    <Compile Include="Model\BackNoResponse.cs" />
     <Compile Include="Model\BindResponse.cs" />
     <Compile Include="Model\BuyRequest.cs" />
     <Compile Include="Model\BuyResponse.cs" />

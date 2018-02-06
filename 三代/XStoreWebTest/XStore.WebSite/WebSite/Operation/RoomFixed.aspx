@@ -18,7 +18,7 @@
         </div>
         <div class="interval"></div>
         <div id='view' style="-webkit-overflow-scrolling: touch; overflow: auto!important;">
-            <div id="mySpace" class="roomDetail">
+            <div id="mySpace">
                 <ul class="clearfix" style="margin-bottom: 40px;">
                     <asp:Repeater ID="box_rp" runat="server">
                         <ItemTemplate>
@@ -38,7 +38,9 @@
                         </ItemTemplate>
                     </asp:Repeater>
                 </ul>
-                <table style="width: 100%;">
+                <br />
+                  <br />
+                <table id="pickUp" style="width: 100%;">
                     <tr>
                         <td style="width: 50%;">
                             <div class="btnWrap">

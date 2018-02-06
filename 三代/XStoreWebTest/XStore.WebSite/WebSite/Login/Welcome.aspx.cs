@@ -15,6 +15,7 @@ namespace XStore.WebSite.WebSite.Login
         protected void Page_Load(object sender, EventArgs e)
         {
             Title = "幸事多私享空间";
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "Welcome：");
             PageInit();
         }
         private void PageInit()

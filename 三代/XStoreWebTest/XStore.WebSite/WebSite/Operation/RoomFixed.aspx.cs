@@ -36,25 +36,10 @@ namespace XStore.WebSite.WebSite.Operation
                 return;
             }
 
-            if (string.IsNullOrEmpty(cabinet.products))
-            {
-                MessageBox.Show(this, "system_alert", "酒店房间未设置默认商品");
-                return;
-            }
             #region 绑定房间商品
-            var proidList = new List<int>();
-            //根据storebatch获取对应的商品id
-            //var storeBatchList = cabinet.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(o => o.ObjToInt(0));
-            //foreach (var storeBatch in storeBatchList)
-            //{
-            //    proidList.Add(context.Query<StoreBatch>()
-            //        .Where(o => o.id == storeBatch)
-            //        .LeftJoin<ProductBatch>((a, b) => a.batch_id == b.id).Select((a, b) => b.product_id)
-            //        .FirstOrDefault());
-            //}
 
-            proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.id).ToList();
-
+            var proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.product_id.HasValue ? o.product_id.Value : 0).ToList();
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "proidList：" + JsonConvert.SerializeObject(proidList));
             var layout = context.Query<CabinetLayout>().FirstOrDefault(o => o.hotel_id == cabinet.hotel);
             if (layout == null)
             {
@@ -62,7 +47,7 @@ namespace XStore.WebSite.WebSite.Operation
                 return;
             }
             var layoutProList = layout.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "layoutProList：" + JsonConvert.SerializeObject(layoutProList));
             if (proidList.Count() != layoutProList.Count())
             {
                 MessageBox.Show(this, "system_alert", "房间设置商品不全");
@@ -91,6 +76,7 @@ namespace XStore.WebSite.WebSite.Operation
                 proQuery.sell_out = sell_out;
                 list.Add(proQuery);
             }
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "bindList：" + JsonConvert.SerializeObject(list));
             box_rp.DataSource = list;
             box_rp.DataBind();
             #endregion
@@ -98,21 +84,16 @@ namespace XStore.WebSite.WebSite.Operation
             #region 打开需要补货的格子
             try
             {
-                if (string.IsNullOrEmpty(cabinet.products))
-                {
-                    MessageBox.Show(this,"system_alert","房间未设置商品");
-                    return;
-                }
                 var requestUrl = string.Format(Constant.YunApi + "test/back/start?mac={0}&username={1}", cabinet.mac, userInfo.username);
-                var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "backNoRequestUrl：" + requestUrl);
+                var response = JsonConvert.DeserializeObject<BackNoResponse>(Utils.HttpGet(requestUrl));
+                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "backNoResponse：" + JsonConvert.SerializeObject(response));
                 if (!response.operationStatus.Equals("SUCCESS"))
                 {
                     MessageBox.Show(this, "system_alert", "补货单生成失败");
                     return;
-                }
-               
-                var backNo = response.operationMessage.ObjToStr();
-                ViewState["BackNo"] = backNo;
+                }        
+                ViewState["BackNo"] = response.operationMessage;
                 var position =string.Empty;
                 for (int i = 0; i < proidList.Count; i++)
                 {
@@ -125,12 +106,12 @@ namespace XStore.WebSite.WebSite.Operation
                 {
                     position = position.TrimEnd(',');
                     var rbh = new RemoteBoxHelper();
-                    rbh.OpenRemoteBox(cabinet.mac, backNo, position, 0x02);
+                    rbh.OpenRemoteBox(cabinet.mac, string.Empty, position, 0x02);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this,"system_alert","数据异常");
+                MessageBox.Show(this, "system_alert", "数据异常：" + ex.Message + ";内部异常：" + ex.InnerException.Message);
                 return;
             }
             #endregion
@@ -150,15 +131,18 @@ namespace XStore.WebSite.WebSite.Operation
             {
                 position = position.TrimEnd(',');
                 var rbh = new RemoteBoxHelper();
-                rbh.OpenRemoteBox(cabinet.mac, ViewState["BackNo"].ObjToStr(), position, 0x02);
+                rbh.OpenRemoteBox(cabinet.mac,string.Empty, position, 0x02);
             }
         }
 
         #region 补货完成
         protected void finish_button_Click(object sender, EventArgs e)
         {
-            var requestUrl = string.Format(Constant.YunApi + "test/back/open?backOrderId={0}", ViewState["BackNo"].ObjToStr());
+            var backIdList = ((List<int>)ViewState["BackNo"]).Select(o=>o.ObjToStr()).ToList();
+            var requestUrl = string.Format(Constant.YunApi + "test/back/open?backOrderId={0}", backIdList.Aggregate((x, y) => x + "," + y));
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "finishBackNoRequestUrl：" + requestUrl);
             var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "finishBackNoResponse：" + JsonConvert.SerializeObject(response));
             if (response.operationStatus.Equals("SUCCESS"))
             {
                 MessageBox.Show(this, "system_alert", "补货成功");

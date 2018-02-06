@@ -99,8 +99,11 @@ namespace XStore.Common.WeiXinPay
         public WxUserInfo GetWebUserInfo(string OAuthToken, string _openid)
         {
             string _result = string.Empty;
-            string url = "https://api.weixin.qq.com/sns/userinfo?access_token=" + OAuthToken + "&openid=" + _openid + "&lang=zh_CN";
-            return JsonConvert.DeserializeObject<WxUserInfo>(Utils.HttpGet(url));
+            string url = "https://api.weixin.qq.com/cgi-bin/user/info?access_token=" + OAuthToken + "&openid=" + _openid + "&lang=zh_CN";
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "用户信息请求地址：" + url);
+            var result = Utils.HttpGet(url);
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "用户信息返回结果：" + result);
+            return JsonConvert.DeserializeObject<WxUserInfo>(result);
         }
         #endregion
         
