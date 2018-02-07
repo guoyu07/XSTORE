@@ -3,7 +3,7 @@
 <%@ Import Namespace="XStore.Entity" %>
 <nav id="foot">
 	<ul class="clearfix">
-		<li style="width: 33%;">
+		<li style="width: 50%;">
 			<a href='<%=Constant.JsGoodsDic+"GoodsList.aspx" %>'  name="con">
 				<div class="index_bot">
 					<img class="picOff" src="/Content/Images/mySpace.png" alt="" />
@@ -12,8 +12,8 @@
 				<p>私享空间</p>
 			</a>
 		</li>
-		<li style="width:33%;">
-			<a href="../Buyer/myself.aspx">
+		<li style="width:50%;">
+			<a href='<%=Constant.JsOrderDic+"MyOrder.aspx" %>' name="con">
 				<div class="index_bot">
 					<img class="picOff" src="/Content/Images/myself.png" alt="" />
 					<img class="picOn" src="/Content/Images/myself_on.png" alt=""/>
@@ -21,14 +21,6 @@
 				<p>我的</p>
 			</a>
 		</li>
-		<li style="width: 33%;">
-			<a href="../Buyer/x-store.aspx">
-				<div class="index_bot">
-					<img class="picOff" src="/Content/Images/xs.png" alt="" />
-					<img class="picOn" src="/Content/Images/xs_on.png"/>
-				</div>
-				<p>操作指南</p>
-			</a>
-		</li>
+		
 	</ul>
 </nav>

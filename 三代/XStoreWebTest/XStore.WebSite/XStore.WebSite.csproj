@@ -344,6 +344,7 @@
     <Content Include="fonts\iconfont.woff" />
     <Content Include="fonts\mui.ttf" />
     <Content Include="WebSite\Order\AliNotify.aspx" />
+    <Content Include="WebSite\Order\MyOrder.aspx" />
     <Content Include="WebSite\Order\PayCenter.aspx" />
     <Content Include="WebSite\Order\PayFail.aspx" />
     <Content Include="WebSite\Order\PaySuccess.aspx" />
@@ -617,6 +618,13 @@
     </Compile>
     <Compile Include="WebSite\Order\AliNotify.aspx.designer.cs">
       <DependentUpon>AliNotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Order\MyOrder.aspx.cs">
+      <DependentUpon>MyOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Order\MyOrder.aspx.designer.cs">
+      <DependentUpon>MyOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Order\PayCenter.aspx.cs">
       <DependentUpon>PayCenter.aspx</DependentUpon>

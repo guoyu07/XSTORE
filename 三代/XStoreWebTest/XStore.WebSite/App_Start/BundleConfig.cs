@@ -110,6 +110,16 @@ namespace XStore.WebSite
               "~/Content/Goods/detail.css"
               ));
             #endregion
+            #region 我的订单
+            bundles.Add(new ScriptBundle("~/bundles/myorder/js").Include(
+               "~/Scripts/Plugins/layer.js",
+               "~/Scripts/common.js",
+               "~/Scripts/Modules/myself.js",
+               "~/Scripts/Plugins/vipspa.js"
+            ));
+
+
+            #endregion
 
             #region 支付中心
             bundles.Add(new StyleBundle("~/bundles/paycenter/css").Include(

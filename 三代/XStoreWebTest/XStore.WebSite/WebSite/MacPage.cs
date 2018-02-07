@@ -16,7 +16,16 @@ namespace XStore.WebSite.WebSite
             {
                 if (_cabinet == null)
                 {
-                    var boxMac = Request.QueryString[Constant.IMEI].ObjToStr();
+                    var boxMac = string.Empty;
+                    if (Session[Constant.IMEI] == null || string.IsNullOrEmpty(Session[Constant.IMEI].ObjToStr()))
+                    {
+                        boxMac = Request.QueryString[Constant.IMEI].ObjToStr();
+                        Session[Constant.IMEI] = boxMac;
+                    }
+                    else
+                    {
+                        boxMac = Session[Constant.IMEI].ObjToStr();
+                    }
 
                     _cabinet = context.Query<Cabinet>().FirstOrDefault(o => o.mac.Equals(boxMac));
                 }

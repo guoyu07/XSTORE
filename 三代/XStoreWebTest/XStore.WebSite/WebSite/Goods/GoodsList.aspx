@@ -47,10 +47,12 @@
                 </div>
             </div>
         </div>
-        <div style="display: block;" class="footer_bar openwebview">
+        <br />
+        <br />
+        <br />
+        <div class="footer_bar openwebview">
             <uc:Footer ID="UserFooter" runat="server" EnableViewState="False"></uc:Footer>
         </div>
-        <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     </form>
 
 </body>

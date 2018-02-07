@@ -40,10 +40,10 @@
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.dll">
-      <publishTime>02/06/2018 20:09:57</publishTime>
+      <publishTime>02/07/2018 21:00:55</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.pdb">
-      <publishTime>02/06/2018 20:09:57</publishTime>
+      <publishTime>02/07/2018 21:00:55</publishTime>
     </File>
     <File Include="bin/Flurl.dll">
       <publishTime>01/25/2018 21:29:43</publishTime>
@@ -313,22 +313,22 @@
       <publishTime>01/22/2018 22:35:25</publishTime>
     </File>
     <File Include="bin/XStore.Common.dll">
-      <publishTime>02/06/2018 20:09:57</publishTime>
+      <publishTime>02/07/2018 21:00:55</publishTime>
     </File>
     <File Include="bin/XStore.Common.pdb">
-      <publishTime>02/06/2018 20:09:57</publishTime>
+      <publishTime>02/07/2018 21:00:55</publishTime>
     </File>
     <File Include="bin/XStore.Entity.dll">
-      <publishTime>02/06/2018 20:09:57</publishTime>
+      <publishTime>02/07/2018 21:00:54</publishTime>
     </File>
     <File Include="bin/XStore.Entity.pdb">
-      <publishTime>02/06/2018 20:09:57</publishTime>
+      <publishTime>02/07/2018 21:00:54</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.dll">
-      <publishTime>02/07/2018 00:56:50</publishTime>
+      <publishTime>02/07/2018 21:01:02</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.pdb">
-      <publishTime>02/07/2018 00:56:50</publishTime>
+      <publishTime>02/07/2018 21:01:02</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.AspNet.FriendlyUrls.resources.dll">
       <publishTime>01/22/2018 22:35:24</publishTime>
@@ -355,7 +355,7 @@
       <publishTime>01/29/2018 21:58:19</publishTime>
     </File>
     <File Include="Content/Goods/buyerIndex.css">
-      <publishTime>01/24/2018 08:34:48</publishTime>
+      <publishTime>02/07/2018 20:18:50</publishTime>
     </File>
     <File Include="Content/Goods/detail.css">
       <publishTime>01/25/2018 21:29:43</publishTime>
@@ -454,7 +454,7 @@
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
     <File Include="Content/Login/common.css">
-      <publishTime>01/22/2018 22:35:24</publishTime>
+      <publishTime>02/07/2018 20:31:40</publishTime>
     </File>
     <File Include="Content/Login/login.css">
       <publishTime>01/22/2018 22:35:24</publishTime>
@@ -607,7 +607,7 @@
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
     <File Include="Scripts/Modules/goodsList.js">
-      <publishTime>01/22/2018 22:35:24</publishTime>
+      <publishTime>02/07/2018 20:41:13</publishTime>
     </File>
     <File Include="Scripts/Modules/home.js">
       <publishTime>01/22/2018 22:35:24</publishTime>
@@ -616,7 +616,7 @@
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
     <File Include="Scripts/Modules/myself.js">
-      <publishTime>01/22/2018 22:35:24</publishTime>
+      <publishTime>02/07/2018 20:35:25</publishTime>
     </File>
     <File Include="Scripts/Modules/mySpace.js">
       <publishTime>01/22/2018 22:35:24</publishTime>
@@ -760,7 +760,7 @@
       <publishTime>01/25/2018 21:29:43</publishTime>
     </File>
     <File Include="WebSite/Goods/GoodsList.aspx">
-      <publishTime>01/25/2018 21:29:43</publishTime>
+      <publishTime>02/07/2018 20:35:31</publishTime>
     </File>
     <File Include="WebSite/Login/Bind.aspx">
       <publishTime>01/29/2018 21:58:19</publishTime>
@@ -810,6 +810,9 @@
     <File Include="WebSite/Order/AliNotify.aspx">
       <publishTime>01/26/2018 21:38:48</publishTime>
     </File>
+    <File Include="WebSite/Order/MyOrder.aspx">
+      <publishTime>02/07/2018 20:28:32</publishTime>
+    </File>
     <File Include="WebSite/Order/PayCenter.aspx">
       <publishTime>02/04/2018 20:55:28</publishTime>
     </File>
@@ -829,7 +832,7 @@
       <publishTime>01/29/2018 21:58:19</publishTime>
     </File>
     <File Include="WebSite/_Ascx/Footer.ascx">
-      <publishTime>01/29/2018 21:58:19</publishTime>
+      <publishTime>02/07/2018 20:34:41</publishTime>
     </File>
     <File Include="WebSite/_Ashx/BindAccount.ashx">
       <publishTime>01/26/2018 22:53:34</publishTime>

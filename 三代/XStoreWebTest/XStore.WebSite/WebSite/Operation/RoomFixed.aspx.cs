@@ -124,6 +124,10 @@ namespace XStore.WebSite.WebSite.Operation
         {
             var position = string.Empty;
             var proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.id).ToList();
+            if (proidList.Count == 0)
+            {
+                proidList = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            }
             for (int i = 0; i < proidList.Count; i++)
             {
                 if (proidList[i] == 0)
