@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title><%=Title %></title>
     <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
+        <link href="/Content/fonts/iconfont.css" rel="stylesheet" />
     <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/login")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs")%>
 </head>

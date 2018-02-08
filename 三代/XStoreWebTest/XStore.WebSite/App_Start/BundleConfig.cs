@@ -12,40 +12,7 @@ namespace XStore.WebSite
         // 有关捆绑的详细信息，请访问 https://go.microsoft.com/fwlink/?LinkID=303951
         public static void RegisterBundles(BundleCollection bundles)
         {
-            //bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
-            //                "~/Scripts/WebForms/WebForms.js",
-            //                "~/Scripts/WebForms/WebUIValidation.js",
-            //                "~/Scripts/WebForms/MenuStandards.js",
-            //                "~/Scripts/WebForms/Focus.js",
-            //                "~/Scripts/WebForms/GridView.js",
-            //                "~/Scripts/WebForms/DetailsView.js",
-            //                "~/Scripts/WebForms/TreeView.js",
-            //                "~/Scripts/WebForms/WebParts.js"));
-
-            //// 若要使这些文件正常工作，采用适当的顺序是非常重要的；这些文件具有显式依赖关系
-            //bundles.Add(new ScriptBundle("~/bundles/MsAjaxJs").Include(
-            //        "~/Scripts/WebForms/MsAjax/MicrosoftAjax.js",
-            //        "~/Scripts/WebForms/MsAjax/MicrosoftAjaxApplicationServices.js",
-            //        "~/Scripts/WebForms/MsAjax/MicrosoftAjaxTimer.js",
-            //        "~/Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js"));
-
-            //// 使用要用于开发和学习的 Modernizr 开发版本。然后，在准备好进行生产时，
-            //// 准备生产时，使用 https://modernizr.com 中的生成工具仅选择所需的测试
-            //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-            //                "~/Scripts/modernizr-*"));
-
-            //ScriptManager.ScriptResourceMapping.AddDefinition(
-            //    "respond",
-            //    new ScriptResourceDefinition
-            //    {
-            //        Path = "~/Scripts/respond.min.js",
-            //        DebugPath = "~/Scripts/respond.js",
-            //    });
-            //         < link rel = "stylesheet" href = "../../Content/Login/reset.css" />
-
-            //< link rel = "stylesheet" href = "../../Content/Login/common.css" />
-
-            //   < link rel = "stylesheet" href = "../../Content/Login/Bind.css" />
+          
             bundles.Add(new StyleBundle("~/bundles/CommonStyle").Include(
                 "~/Content/Login/reset.css",
                 "~/Content/Login/common.css",
@@ -97,7 +64,6 @@ namespace XStore.WebSite
             #endregion
             #region 商品列表
             bundles.Add(new StyleBundle("~/bundles/goodslist/css").Include(
-           "~/fonts/iconfont.css",
            "~/Content/Goods/buyerIndex.css"
            ));
             bundles.Add(new ScriptBundle("~/bundles/goodslist/js").Include(
@@ -147,7 +113,6 @@ namespace XStore.WebSite
 
             #region 前台个人中心
             bundles.Add(new StyleBundle("~/bundles/employeecenter/css").Include(
-                "~/fonts/iconfont.css",
                 "~/Content/Center/distributer.css",
                 "~/Content/footer.css"
            ));
@@ -158,7 +123,6 @@ namespace XStore.WebSite
 
             #region 常规补货-房间选择
             bundles.Add(new StyleBundle("~/bundles/roomselect/css").Include(
-                "~/fonts/iconfont.css",
                 "~/Content/Opreation/roomSelect.css",
                 "~/Content/Center/distributer.css",
                 "~/Content/footer.css"
@@ -171,7 +135,6 @@ namespace XStore.WebSite
 
             #region 常规补货-取货列表
             bundles.Add(new StyleBundle("~/bundles/pickup/css").Include(
-                "~/fonts/iconfont.css",
                 "~/Content/Center/distributer.css",
                 "~/Content/footer.css"
            ));
@@ -184,7 +147,6 @@ namespace XStore.WebSite
 
             #region 常规补货-取货完成
             bundles.Add(new StyleBundle("~/bundles/finishpickup/css").Include(
-               "~/fonts/iconfont.css",
                "~/Content/Opreation/roomsPickUp.css",
                 "~/Content/Center/distributer.css",
                "~/Content/footer.css"
@@ -194,13 +156,22 @@ namespace XStore.WebSite
             "~/Scripts/Plugins/vipspa-dev.js"
             ));
             #endregion
+
             #region 常规补货-房间补货
             bundles.Add(new StyleBundle("~/bundles/roomfixed/css").Include(
-               "~/fonts/iconfont.css",
                "~/Content/Opreation/roomGoods.css",
                 "~/Content/Center/distributer.css",
                "~/Content/footer.css"
           ));
+            #endregion
+
+            #region 常规补货-补货记录
+            bundles.Add(new StyleBundle("~/bundles/backlog/css").Include(
+             "~/Content/Opreation/deliveryNote.css",
+            "~/Content/Center/distributer.css",
+             "~/Content/mui.min.css",
+             "~/Content/footer.css"
+            ));
             #endregion
         }
     }

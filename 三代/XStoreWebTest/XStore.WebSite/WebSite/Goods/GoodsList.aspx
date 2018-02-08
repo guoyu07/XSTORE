@@ -8,6 +8,7 @@
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
     <title><%=Title %></title>
     <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
+    <link href="/Content/fonts/iconfont.css" rel="stylesheet" />
     <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/goodslist/css")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs","~/bundles/goodslist/js")%>
 </head>

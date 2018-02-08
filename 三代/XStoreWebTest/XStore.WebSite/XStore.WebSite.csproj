@@ -216,8 +216,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Center\distributer.css" />
@@ -260,6 +258,8 @@
     <Content Include="Content\Login\nopower.css" />
     <Content Include="Content\Login\reset.css" />
     <Content Include="Content\Login\welcome.css" />
+    <Content Include="Content\mui.min.css" />
+    <Content Include="Content\Opreation\deliveryNote.css" />
     <Content Include="WebSite\Oath\WxOath.aspx" />
     <Content Include="Content\Opreation\roomGoods.css" />
     <Content Include="Content\Opreation\roomSelect.css" />
@@ -270,7 +270,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\swiper.min.css" />
     <Content Include="Content\weui.css" />
-    <Content Include="Default.aspx" />
     <Content Include="docs\MySqlCommand.xml" />
     <Content Include="docs\MySqlCommandBuilder.xml" />
     <Content Include="docs\MySqlConnection.xml" />
@@ -282,18 +281,14 @@
     <Content Include="docs\MySqlParameter.xml" />
     <Content Include="docs\MySqlParameterCollection.xml" />
     <Content Include="docs\MySqlTransaction.xml" />
-    <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="fonts\iconfont.css" />
-    <Content Include="fonts\iconfont.js" />
-    <Content Include="fonts\iconfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\iconfont.css" />
+    <Content Include="Content\fonts\iconfont.js" />
+    <Content Include="Content\fonts\iconfont.svg" />
     <Content Include="Global.asax" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\common.js" />
     <Content Include="Scripts\jquery.myProgress.js" />
     <Content Include="Scripts\Modules\cart.js" />
@@ -331,6 +326,7 @@
     <Content Include="WebSite\Login\NoPower.aspx" />
     <Content Include="WebSite\Login\Oath.aspx" />
     <Content Include="WebSite\Login\Welcome.aspx" />
+    <Content Include="WebSite\Operation\BackLog.aspx" />
     <Content Include="WebSite\Operation\BindMac.aspx" />
     <Content Include="WebSite\Operation\FinishPickUp.aspx" />
     <Content Include="WebSite\Operation\PickUp.aspx" />
@@ -339,10 +335,10 @@
     <Content Include="WebSite\Operation\RoomInit.aspx" />
     <Content Include="WebSite\Operation\RoomSelect.aspx" />
     <Content Include="WebSite\Operation\WaterFillUp.aspx" />
-    <Content Include="fonts\iconfont.eot" />
-    <Content Include="fonts\iconfont.ttf" />
-    <Content Include="fonts\iconfont.woff" />
-    <Content Include="fonts\mui.ttf" />
+    <Content Include="Content\fonts\iconfont.eot" />
+    <Content Include="Content\fonts\iconfont.ttf" />
+    <Content Include="Content\fonts\iconfont.woff" />
+    <Content Include="Content\fonts\mui.ttf" />
     <Content Include="WebSite\Order\AliNotify.aspx" />
     <Content Include="WebSite\Order\MyOrder.aspx" />
     <Content Include="WebSite\Order\PayCenter.aspx" />
@@ -355,7 +351,6 @@
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Index.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -384,11 +379,9 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Bundle.config" />
     <Content Include="WebSite\_Ashx\CheckOrderState.ashx" />
     <Content Include="WebSite\_Ashx\ShortMessage.ashx" />
     <Content Include="WebSite\_Ashx\BindAccount.ashx" />
@@ -396,17 +389,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
-    <Compile Include="OrderPage.cs">
+    <Compile Include="WebSite\OrderPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebSite\Oath\WxOath.aspx.cs">
@@ -419,39 +405,11 @@
     <Compile Include="WebSite\BasePage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DBFactory\MySqlConnectionFactory.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewSwitcher.ascx.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.designer.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
     <Compile Include="WebSite\CenterPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -555,6 +513,13 @@
     </Compile>
     <Compile Include="WebSite\MacPage.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\BackLog.aspx.cs">
+      <DependentUpon>BackLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\BackLog.aspx.designer.cs">
+      <DependentUpon>BackLog.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Operation\BindMac.aspx.cs">
       <DependentUpon>BindMac.aspx</DependentUpon>

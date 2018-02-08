@@ -16,6 +16,7 @@ namespace XStore.WebSite
             // 在应用程序启动时运行的代码
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            BundleTable.EnableOptimizations = true;
         }
     }
 }

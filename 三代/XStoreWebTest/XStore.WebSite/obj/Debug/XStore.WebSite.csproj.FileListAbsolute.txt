@@ -147,7 +147,6 @@ E:\iM\微云\XSTORE\三代\XStoreWebTest\XStore.WebSite\bin\XStore.Common.dll
 E:\iM\微云\XSTORE\三代\XStoreWebTest\XStore.WebSite\bin\XStore.Common.pdb
 X:\Git\三代\XStoreWebTest\XStore.WebSite\obj\Debug\XStore.WebSite.csprojResolveAssemblyReference.cache
 X:\Git\三代\XStoreWebTest\XStore.WebSite\obj\Debug\XStore.WebSite.csproj.CoreCompileInputs.cache
-X:\Git\三代\XStoreWebTest\XStore.WebSite\bin\ApplicationInsights.config
 X:\Git\三代\XStoreWebTest\XStore.WebSite\bin\XStore.WebSite.dll.config
 X:\Git\三代\XStoreWebTest\XStore.WebSite\bin\XStore.WebSite.dll
 X:\Git\三代\XStoreWebTest\XStore.WebSite\bin\XStore.WebSite.pdb

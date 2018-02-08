@@ -51,5 +51,13 @@ namespace XStore.Entity
         }
         #endregion
 
+        #region -----支付方式-----
+        public enum PayType : int
+        {
+            微信 = 0,
+            支付宝 = 1
         }
+        #endregion
+
+    }
 }

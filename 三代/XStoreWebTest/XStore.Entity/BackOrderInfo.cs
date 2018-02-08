@@ -18,6 +18,7 @@ namespace XStore.Entity
         public int store { get; set; }
         public string cabinet_mac { get; set; }
         public string operator_username { get;set;}
+        public int product { get; set; }
     }
 
 }

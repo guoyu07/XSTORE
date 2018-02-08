@@ -69,9 +69,12 @@
                 </div>
             </div>
         </div>
-        <div style="display: block;" class="footer_bar openwebview">
-            <uc:Footer ID="UserFooter" runat="server" EnableViewState="False"></uc:Footer>
-        </div>
+        <br />
+        <br />
+        <br />
+                <div class="footer_bar openwebview">
+        <uc:Footer ID="UserFooter" runat="server" EnableViewState="False"></uc:Footer>
+</div>
     </form>
 </body>
 </html>

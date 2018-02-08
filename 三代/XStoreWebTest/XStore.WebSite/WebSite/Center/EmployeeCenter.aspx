@@ -6,6 +6,7 @@
     <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
     <title><%:Title %></title>
     <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
+    <link href="/Content/fonts/iconfont.css" rel="stylesheet" />
     <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/employeecenter/css")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs","~/bundles/employeecenter/js")%>
 </head>
@@ -14,9 +15,8 @@
         <div id='view' style="-webkit-overflow-scrolling: touch; overflow: auto!important;">
             <div id="disMyself">
                 <div class="clearfix personalInfo">
-                    <img src="<%=wxUserInfo.headpic.ObjToStr() %>""/>
-                    <asp:Image ID="head_pic" runat="server"/>
-                    <div class="positinInfo l clearfix">
+                     <img class="headPortrait l" src="<%=wxUserInfo.headpic.ObjToStr() %>""/>
+                    <div class="positinInfo r clearfix">
                         <div class="market l">
                             <p class="name"><%=userInfo.realname %></p>
                             <p class="job">酒店服务员</p>
@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li class="deliveryNote">
-                        <a href="../pages/deliveryNote.aspx" class="clearfix">
+                        <a href='<%=Constant.JsOperationDic+"BackLog.aspx"%>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-jilu"></i>
                                 <span>投放记录</span>

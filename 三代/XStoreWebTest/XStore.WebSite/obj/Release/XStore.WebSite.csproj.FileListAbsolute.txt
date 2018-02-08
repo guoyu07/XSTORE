@@ -1,6 +1,5 @@
 X:\Git\三代\XStoreWebTest\XStore.WebSite\obj\Release\XStore.WebSite.csprojResolveAssemblyReference.cache
 X:\Git\三代\XStoreWebTest\XStore.WebSite\obj\Release\XStore.WebSite.csproj.CoreCompileInputs.cache
-X:\Git\三代\XStoreWebTest\XStore.WebSite\bin\ApplicationInsights.config
 X:\Git\三代\XStoreWebTest\XStore.WebSite\bin\XStore.WebSite.dll.config
 X:\Git\三代\XStoreWebTest\XStore.WebSite\bin\XStore.WebSite.dll
 X:\Git\三代\XStoreWebTest\XStore.WebSite\bin\XStore.WebSite.pdb

@@ -13,6 +13,7 @@ namespace XStore.Entity
         [Column(IsPrimaryKey = true)]
         public int id { get; set; }
         public string code { get; set; }
+        public int payType { get; set; }
         public DateTime date { get; set; }
         public bool delivered { get; set; }
         public string month { get; set;}
