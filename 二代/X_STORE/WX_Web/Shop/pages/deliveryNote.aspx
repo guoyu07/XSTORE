@@ -55,24 +55,6 @@
                 </asp:Repeater>
             </ul>
         </div>
-        <%--<ul>
-            <asp:Repeater ID="rp_note" runat="server">
-                <ItemTemplate>
-                    <li class="">
-                        <a href="javascript:;" class="clearfix">
-                            <div class="imgWrap l">
-                                <img src="../img/muwu.jpg">
-                            </div>
-                            <div class="l info">
-                                <p class="releaseTime over ">发布时间: <span><%#Eval("时间") %></span></p>
-                                <p class="releasePlace over">投放地点: <span><%#Eval("酒店简称") %>&nbsp;-&nbsp;<%#Eval("仓库名") %>&nbsp;-&nbsp;<%#Eval("库位名") %></span></p>
-                            </div>
-                        </a>
-                    </li>
-                </ItemTemplate>
-            </asp:Repeater>
-
-        </ul>--%>
     </form>
 </body>
 </html>

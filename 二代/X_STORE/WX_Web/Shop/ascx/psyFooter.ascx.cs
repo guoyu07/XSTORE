@@ -15,16 +15,6 @@ namespace Wx_NewWeb.Shop.ascx
         public string page = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            //if (!IsPostBack)
-            //{
-            //    string openid = (this.Parent.Parent.FindControl(Session["OpenId"] != null ? Session["OpenId"].ToString():"").ObjToStr()); 
-            //    //.FindControl("TextBox1")).Text;
-            //    //openid = Session["OpenId"] != null ? Session["OpenId"].ToString() : "";
-            //    string sql = "select 用户名 from WP_用户表 where opeind='" + openid + "'";
-            //    DataTable dt = comfun.GetDataTableBySQL(sql);
-            //    username.Text = dt.Rows[0]["用户名"].ObjToStr();
-            //}
         }
     }
 }

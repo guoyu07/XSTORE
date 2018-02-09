@@ -67,6 +67,7 @@
     <Compile Include="Model\BuyResponse.cs" />
     <Compile Include="Model\CabinetResponse.cs" />
     <Compile Include="Model\FixedProductQuery.cs" />
+    <Compile Include="Model\ManageQuery.cs" />
     <Compile Include="Model\MessageResponse.cs" />
     <Compile Include="Model\OnlineBox.cs" />
     <Compile Include="Model\OrderResponse.cs" />

@@ -123,7 +123,8 @@ namespace XStore.WebSite.WebSite.Operation
         protected void open_again_Click(object sender, EventArgs e)
         {
             var position = string.Empty;
-            var proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.id).ToList();
+            var proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.product_id.HasValue ? o.product_id.Value : 0).ToList();
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "needOpenAgain：" + JsonConvert.SerializeObject(proidList));
             if (proidList.Count == 0)
             {
                 proidList = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -158,7 +159,7 @@ namespace XStore.WebSite.WebSite.Operation
             }
             else
             {
-                MessageBox.Show(this, "system_alert", "补货失败");
+                MessageBox.Show(this, "system_alert", response.operationMessage);
                 return;
             }
         }

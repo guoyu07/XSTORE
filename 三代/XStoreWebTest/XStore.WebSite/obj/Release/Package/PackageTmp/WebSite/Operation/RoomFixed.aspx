@@ -10,6 +10,18 @@
         <link href="/Content/fonts/iconfont.css" rel="stylesheet" />
     <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/roomfixed/css")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs")%>
+    <script type="text/javascript">
+        function confirm_all_fixed() {
+            layer.open({
+                content: '确定已全部配货完成？',
+                btn: ['确定', '取消'],
+                yes: function (index) {
+
+                    $("#finishButton").click();
+                }
+            })
+        }
+    </script>
 </head>
 <body>
     <form id="form2" runat="server">
@@ -50,7 +62,8 @@
                         </td>
                         <td style="width: 50%;">
                             <div class="btnWrap">
-                                <asp:LinkButton runat="server" ID="finishCheck" CssClass="makeSure" OnClientClick="system_confirm('确定已全部配货完成?')" OnClick="finish_button_Click">配货完成</asp:LinkButton>
+                               <a class="makeSure"  onclick ="return confirm_all_fixed();">补货完成</a>
+                                <asp:Button runat="server" id="finishButton" style="display:none;" OnClick="finish_button_Click"/>
                             </div>
                         </td>
                     </tr>

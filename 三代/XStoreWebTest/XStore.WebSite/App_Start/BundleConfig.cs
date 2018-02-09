@@ -19,7 +19,7 @@ namespace XStore.WebSite
                 "~/Content/layer.css"
                 ));
             bundles.Add(new ScriptBundle("~/bundles/CommonJs").Include(
-                "~/Scripts/jquery-1.10.2.min.js",
+                "~/Scripts/jquery-1.10.2.js",
                 "~/Scripts/Plugins/layer.js",
                   "~/Scripts/common.js"
                 ));
@@ -170,6 +170,14 @@ namespace XStore.WebSite
              "~/Content/Opreation/deliveryNote.css",
             "~/Content/Center/distributer.css",
              "~/Content/mui.min.css",
+             "~/Content/footer.css"
+            ));
+            #endregion
+
+
+            #region 酒店经理个人中心
+            bundles.Add(new StyleBundle("~/bundles/managecenter/css").Include(
+             "~/Content/Center/hotelManager.css",
              "~/Content/footer.css"
             ));
             #endregion

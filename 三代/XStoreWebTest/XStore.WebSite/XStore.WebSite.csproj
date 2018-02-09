@@ -222,6 +222,7 @@
     <Content Include="Content\footer.css" />
     <Content Include="Content\Goods\buyerIndex.css" />
     <Content Include="Content\Goods\detail.css" />
+    <Content Include="Content\Center\hotelManager.css" />
     <Content Include="Content\Images\active.png" />
     <Content Include="Content\Images\bottom.png" />
     <Content Include="Content\Images\btns.png" />
@@ -382,6 +383,7 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="WebSite\_Ascx\MangeCenterFooter.ascx" />
     <Content Include="WebSite\_Ashx\CheckOrderState.ashx" />
     <Content Include="WebSite\_Ashx\ShortMessage.ashx" />
     <Content Include="WebSite\_Ashx\BindAccount.ashx" />
@@ -640,6 +642,13 @@
     </Compile>
     <Compile Include="WebSite\_Ascx\Footer.ascx.designer.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\_Ascx\MangeCenterFooter.ascx.cs">
+      <DependentUpon>MangeCenterFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\_Ascx\MangeCenterFooter.ascx.designer.cs">
+      <DependentUpon>MangeCenterFooter.ascx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\_Ashx\BindAccount.ashx.cs">
       <DependentUpon>BindAccount.ashx</DependentUpon>

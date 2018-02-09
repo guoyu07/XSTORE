@@ -6,6 +6,7 @@
     });
 }
 function system_confirm(message) {
+   
     layer.open({
         title: ['系统提示', 'background-color:#F60; color:#fff;'],
         content: message,
@@ -15,6 +16,8 @@ function system_confirm(message) {
             return true;
 
         }
+      
     });
+    return false;
 
 }
