@@ -227,6 +227,7 @@
     <Content Include="Content\Images\bottom.png" />
     <Content Include="Content\Images\btns.png" />
     <Content Include="Content\Images\checked.png" />
+    <Content Include="Content\Images\delivery.png" />
     <Content Include="Content\Images\fail-emoij.png" />
     <Content Include="Content\Images\joker.jpg" />
     <Content Include="Content\Images\lc1.jpg" />
@@ -251,6 +252,9 @@
     <Content Include="Content\Images\xs.png" />
     <Content Include="Content\Images\xs_on.png" />
     <Content Include="Content\Images\yh.PNG" />
+    <Content Include="Content\Information\achievement.css" />
+    <Content Include="Content\Information\comprehensive.css" />
+    <Content Include="Content\Information\settlement.css" />
     <Content Include="Content\Login\bind.css" />
     <Content Include="Content\layer.css" />
     <Content Include="Content\Login\common.css" />
@@ -260,7 +264,14 @@
     <Content Include="Content\Login\reset.css" />
     <Content Include="Content\Login\welcome.css" />
     <Content Include="Content\mui.min.css" />
+    <Content Include="Content\mui.picker.min.css" />
     <Content Include="Content\Opreation\deliveryNote.css" />
+    <Content Include="Scripts\mui.js" />
+    <Content Include="Scripts\mui.picker.min.js" />
+    <Content Include="WebSite\Information\Achievement.aspx" />
+    <Content Include="WebSite\Information\BaseInfo.aspx" />
+    <Content Include="WebSite\Information\RoomInfo.aspx" />
+    <Content Include="WebSite\Information\Settlement.aspx" />
     <Content Include="WebSite\Oath\WxOath.aspx" />
     <Content Include="Content\Opreation\roomGoods.css" />
     <Content Include="Content\Opreation\roomSelect.css" />
@@ -332,7 +343,9 @@
     <Content Include="WebSite\Operation\FinishPickUp.aspx" />
     <Content Include="WebSite\Operation\PickUp.aspx" />
     <Content Include="WebSite\Operation\QaCheck.aspx" />
+    <Content Include="WebSite\Operation\RoomCheck.aspx" />
     <Content Include="WebSite\Operation\RoomFixed.aspx" />
+    <Content Include="WebSite\Operation\RoomGoods.aspx" />
     <Content Include="WebSite\Operation\RoomInit.aspx" />
     <Content Include="WebSite\Operation\RoomSelect.aspx" />
     <Content Include="WebSite\Operation\WaterFillUp.aspx" />
@@ -394,6 +407,48 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="WebSite\Information\Achievement.aspx.cs">
+      <DependentUpon>Achievement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Information\Achievement.aspx.designer.cs">
+      <DependentUpon>Achievement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Information\BaseInfo.aspx.cs">
+      <DependentUpon>BaseInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Information\BaseInfo.aspx.designer.cs">
+      <DependentUpon>BaseInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Information\RoomInfo.aspx.cs">
+      <DependentUpon>RoomInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Information\RoomInfo.aspx.designer.cs">
+      <DependentUpon>RoomInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Information\Settlement.aspx.cs">
+      <DependentUpon>Settlement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Information\Settlement.aspx.designer.cs">
+      <DependentUpon>Settlement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomCheck.aspx.cs">
+      <DependentUpon>RoomCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomCheck.aspx.designer.cs">
+      <DependentUpon>RoomCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomGoods.aspx.cs">
+      <DependentUpon>RoomGoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomGoods.aspx.designer.cs">
+      <DependentUpon>RoomGoods.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\OrderPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>

@@ -40,10 +40,10 @@
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.dll">
-      <publishTime>02/07/2018 21:00:55</publishTime>
+      <publishTime>02/10/2018 18:00:01</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.pdb">
-      <publishTime>02/07/2018 21:00:55</publishTime>
+      <publishTime>02/10/2018 18:00:01</publishTime>
     </File>
     <File Include="bin/Flurl.dll">
       <publishTime>01/25/2018 21:29:43</publishTime>
@@ -313,22 +313,22 @@
       <publishTime>01/22/2018 22:35:25</publishTime>
     </File>
     <File Include="bin/XStore.Common.dll">
-      <publishTime>02/07/2018 21:00:55</publishTime>
+      <publishTime>02/10/2018 18:00:00</publishTime>
     </File>
     <File Include="bin/XStore.Common.pdb">
-      <publishTime>02/07/2018 21:00:55</publishTime>
+      <publishTime>02/10/2018 18:00:00</publishTime>
     </File>
     <File Include="bin/XStore.Entity.dll">
-      <publishTime>02/09/2018 22:56:10</publishTime>
+      <publishTime>02/10/2018 23:54:23</publishTime>
     </File>
     <File Include="bin/XStore.Entity.pdb">
-      <publishTime>02/09/2018 22:56:10</publishTime>
+      <publishTime>02/10/2018 23:54:23</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.dll">
-      <publishTime>02/09/2018 23:12:11</publishTime>
+      <publishTime>02/10/2018 23:54:28</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.pdb">
-      <publishTime>02/09/2018 23:12:11</publishTime>
+      <publishTime>02/10/2018 23:54:28</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.AspNet.FriendlyUrls.resources.dll">
       <publishTime>01/22/2018 22:35:24</publishTime>
@@ -411,6 +411,9 @@
     <File Include="Content/Images/checked.png">
       <publishTime>01/28/2018 14:42:07</publishTime>
     </File>
+    <File Include="Content/Images/delivery.png">
+      <publishTime>02/10/2018 16:56:05</publishTime>
+    </File>
     <File Include="Content/Images/fail-emoij.png">
       <publishTime>01/25/2018 21:59:17</publishTime>
     </File>
@@ -483,6 +486,15 @@
     <File Include="Content/Images/yh.PNG">
       <publishTime>01/25/2018 21:29:43</publishTime>
     </File>
+    <File Include="Content/Information/achievement.css">
+      <publishTime>02/10/2018 23:16:14</publishTime>
+    </File>
+    <File Include="Content/Information/comprehensive.css">
+      <publishTime>02/10/2018 20:16:26</publishTime>
+    </File>
+    <File Include="Content/Information/settlement.css">
+      <publishTime>02/10/2018 23:22:40</publishTime>
+    </File>
     <File Include="Content/layer.css">
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
@@ -506,6 +518,9 @@
     </File>
     <File Include="Content/mui.min.css">
       <publishTime>02/08/2018 21:36:25</publishTime>
+    </File>
+    <File Include="Content/mui.picker.min.css">
+      <publishTime>02/10/2018 23:26:09</publishTime>
     </File>
     <File Include="Content/Oath/WxOath.aspx">
       <publishTime>01/29/2018 18:25:26</publishTime>
@@ -684,6 +699,12 @@
     <File Include="Scripts/Modules/xStore.js">
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
+    <File Include="Scripts/mui.js">
+      <publishTime>02/10/2018 22:35:36</publishTime>
+    </File>
+    <File Include="Scripts/mui.picker.min.js">
+      <publishTime>02/10/2018 23:27:01</publishTime>
+    </File>
     <File Include="Scripts/Plugins/layer.js">
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
@@ -790,7 +811,7 @@
       <publishTime>01/28/2018 15:08:57</publishTime>
     </File>
     <File Include="WebSite/Center/ManageCenter.aspx">
-      <publishTime>02/09/2018 22:55:05</publishTime>
+      <publishTime>02/10/2018 23:39:34</publishTime>
     </File>
     <File Include="WebSite/Center/PromotionCenter.aspx">
       <publishTime>01/28/2018 15:06:32</publishTime>
@@ -802,7 +823,19 @@
       <publishTime>01/25/2018 21:29:43</publishTime>
     </File>
     <File Include="WebSite/Goods/GoodsList.aspx">
-      <publishTime>02/09/2018 00:29:33</publishTime>
+      <publishTime>02/10/2018 17:53:56</publishTime>
+    </File>
+    <File Include="WebSite/Information/Achievement.aspx">
+      <publishTime>02/10/2018 23:12:29</publishTime>
+    </File>
+    <File Include="WebSite/Information/BaseInfo.aspx">
+      <publishTime>02/10/2018 16:24:42</publishTime>
+    </File>
+    <File Include="WebSite/Information/RoomInfo.aspx">
+      <publishTime>02/10/2018 20:25:53</publishTime>
+    </File>
+    <File Include="WebSite/Information/Settlement.aspx">
+      <publishTime>02/10/2018 23:54:09</publishTime>
     </File>
     <File Include="WebSite/Login/Bind.aspx">
       <publishTime>01/29/2018 21:58:19</publishTime>
@@ -840,8 +873,14 @@
     <File Include="WebSite/Operation/QaCheck.aspx">
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
+    <File Include="WebSite/Operation/RoomCheck.aspx">
+      <publishTime>02/10/2018 18:07:02</publishTime>
+    </File>
     <File Include="WebSite/Operation/RoomFixed.aspx">
       <publishTime>02/09/2018 23:05:11</publishTime>
+    </File>
+    <File Include="WebSite/Operation/RoomGoods.aspx">
+      <publishTime>02/10/2018 18:19:38</publishTime>
     </File>
     <File Include="WebSite/Operation/RoomInit.aspx">
       <publishTime>02/09/2018 00:35:45</publishTime>

@@ -74,6 +74,8 @@
     <Compile Include="Model\PayAjaxResponse.cs" />
     <Compile Include="Model\ProductQuery.cs" />
     <Compile Include="Model\RegisterRequest.cs" />
+    <Compile Include="Model\RoomState.cs" />
+    <Compile Include="Model\SaleProduct.cs" />
     <Compile Include="Model\UserQuery.cs" />
     <Compile Include="OrderInfo.cs" />
     <Compile Include="Product.cs" />

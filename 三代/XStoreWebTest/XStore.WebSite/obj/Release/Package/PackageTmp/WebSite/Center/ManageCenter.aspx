@@ -62,7 +62,7 @@
             <div class="bodymenu">
                 <ul>
                     <li class="comprehensive">
-                        <a href="Manager/BaseInfoCenter.aspx" class="clearfix">
+                        <a href='<%=Constant.JsInformationDic+"BaseInfo.aspx" %>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-e617"></i>
                                 <span>基础信息</span>
@@ -80,7 +80,7 @@
                         </a>
                     </li>
                     <li class="achievement">
-                        <a href="achievement.aspx?0&hotelid=<%=hotelInfo.id %>" class="clearfix">
+                        <a href='<%=Constant.JsInformationDic+"Achievement.aspx" %>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-yeji"></i>
                                 <span>销售业绩</span>
@@ -89,7 +89,8 @@
                         </a>
                     </li>
                     <li class="settlement">
-                        <a href="settlement.aspx?0&hotelid=<%=hotelInfo.id %>" class="clearfix">
+
+                        <a href='<%=Constant.JsInformationDic+"Settlement.aspx" %>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-jiesuan"></i>
                                 <span>业绩查询</span>
@@ -99,7 +100,7 @@
                     </li>
 
                     <li class="deal">
-                        <a href="../Distributer/roomSatus.aspx" class="clearfix">
+                        <a href='<%=Constant.JsOperationDic+"RoomCheck.aspx" %>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-yewu"></i>
                                 <span>开箱检查</span>
@@ -108,7 +109,7 @@
                         </a>
                     </li>
                     <li class="deal">
-                        <a href="../Distributer/roomSelect.aspx" class="clearfix">
+                          <a href='<%=Constant.JsOperationDic+"RoomSelect.aspx"%>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-yewu"></i>
                                 <span>常规补货</span>

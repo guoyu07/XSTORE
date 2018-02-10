@@ -57,7 +57,8 @@
                             <div class="l"  style="margin-left: 1px; width: 25%;">
                                 <p  class="roomNumber">
                                     <span onclick="sort_amount_click()">销售金额</span>
-                                    <asp:ImageButton runat="server" Width="12" Height="12" ID="SortImgBtn" ImageUrl='' Sort="down" 
+                                    <asp:ImageButton runat="server" Width="12" Height="12" ID="SortImgBtn" ImageUrl='' Sort="down" 
+
 OnClick="SortImgBtn_OnClick" />
                                 </p>
                             </div>

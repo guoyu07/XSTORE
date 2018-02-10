@@ -25,12 +25,14 @@ namespace XStore.Entity
         public const string OrderDic = "~/WebSite/Order/";
         public const string CenterDic = "~/WebSite/Center/";
         public const string OperationDic = "~/WebSite/Operation/";
+        public const string InformationDic = "~/WebSite/Information/";
 
         public const string JsLoginDic = "/WebSite/Login/";
         public const string JsGoodsDic = "/WebSite/Goods/";
         public const string JsOrderDic = "/WebSite/Order/";
         public const string JsCenterDic = "/WebSite/Center/";
         public const string JsOperationDic = "/WebSite/Operation/";
+        public const string JsInformationDic = "/WebSite/Information/";
         public const string ApiDic = "/WebSite/_Ashx/";
 
         public const string YunApi = "http://139.199.160.173:9119/";

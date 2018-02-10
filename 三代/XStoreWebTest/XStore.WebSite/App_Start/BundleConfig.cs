@@ -12,7 +12,7 @@ namespace XStore.WebSite
         // 有关捆绑的详细信息，请访问 https://go.microsoft.com/fwlink/?LinkID=303951
         public static void RegisterBundles(BundleCollection bundles)
         {
-          
+
             bundles.Add(new StyleBundle("~/bundles/CommonStyle").Include(
                 "~/Content/Login/reset.css",
                 "~/Content/Login/common.css",
@@ -180,6 +180,54 @@ namespace XStore.WebSite
              "~/Content/Center/hotelManager.css",
              "~/Content/footer.css"
             ));
+            #endregion
+
+            #region 酒店经理-基础信息
+            bundles.Add(new StyleBundle("~/bundles/baseinfo/css").Include(
+            "~/Content/Information/comprehensive.css",
+            "~/Content/footer.css"
+           ));
+            #endregion
+
+            #region 酒店经理-开箱检查
+            bundles.Add(new StyleBundle("~/bundles/roomcheck/css").Include(
+           "~/Content/Center/distributer.css",
+           "~/Content/footer.css"
+          ));
+
+            bundles.Add(new StyleBundle("~/bundles/roomgoods/css").Include(
+              "~/Content/Opreation/roomGoods.css",
+               "~/Content/Center/distributer.css",
+              "~/Content/footer.css"
+         ));
+            #endregion
+            #region 酒店经理-基础信息-房间信息
+            bundles.Add(new StyleBundle("~/bundles/roominfo/css").Include(
+         "~/Content/Information/comprehensive.css",
+         "~/Content/footer.css"
+        ));
+            #endregion
+
+            #region 酒店经理-销售业绩
+            bundles.Add(new StyleBundle("~/bundles/achievement/css").Include(
+                 "~/Content/mui.min.css",
+            "~/Content/Information/achievement.css",
+            "~/Content/footer.css"
+           ));
+            bundles.Add(new ScriptBundle("~/bundles/achievement/js").Include(
+           "~/Scripts/mui.js"
+           ));
+            #endregion
+
+            #region 酒店经理-业绩查询
+            bundles.Add(new StyleBundle("~/bundles/settlement/css").Include(
+            "~/Content/mui.min.css",
+           "~/Content/Information/settlement.css",
+           "~/Content/footer.css"
+          ));
+            bundles.Add(new ScriptBundle("~/bundles/settlement/js").Include(
+           "~/Scripts/mui.js"
+           ));
             #endregion
         }
     }

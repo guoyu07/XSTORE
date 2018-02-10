@@ -27,6 +27,21 @@ namespace XStore.WebSite.WebSite
         }
         #endregion
 
+        #region 用户权限
+        private UserRole _userRole;
+
+        public UserRole userRole
+        {
+            get {
+                if (_userRole == null)
+                {
+                    _userRole = context.Query<UserRole>().FirstOrDefault(o => o.username.Equals(userInfo.username));
+                }
+                return _userRole;
+            }
+        }
+        #endregion
+
         #region 微信用户信息
         private UserWeiChat _wxuserInfo;
         public UserWeiChat wxUserInfo
@@ -58,7 +73,9 @@ namespace XStore.WebSite.WebSite
                     _hotelInfo = context.Query<Hotel>().LeftJoin<UserHotel>((a, b) => a.id == b.hotels_id).Where((a, b) => b.user_username.Equals(userInfo.username)).Select((a, b) => new Hotel
                     {
                         id = a.id,
-                        hotel_name = a.hotel_name
+                        hotel_name = a.hotel_name,
+                        simple_name = a.simple_name,
+                        address = a.address
                     }).FirstOrDefault();
                 }
                 return _hotelInfo;
