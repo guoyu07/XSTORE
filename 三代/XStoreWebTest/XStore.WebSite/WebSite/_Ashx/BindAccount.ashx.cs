@@ -85,7 +85,7 @@ namespace XStore.WebSite.WebSite._Ashx
                             context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic + "PromotionCenter.aspx" }));
                             return;
                         case UserRoleEnum.区域经理:
-                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic + "AreaManageCenter.aspx" }));
+                            context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic + "ManageCenter.aspx" }));
                             return;
                         default:
                             context.Response.Write(JsonConvert.SerializeObject(new BindResponse { success = true, message = "修改成功", url = Constant.JsCenterDic + "" }));

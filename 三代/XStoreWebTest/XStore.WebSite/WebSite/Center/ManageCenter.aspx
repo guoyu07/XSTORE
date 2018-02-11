@@ -71,7 +71,7 @@
                         </a>
                     </li>
                     <li class="comprehensive">
-                        <a href="employeeManager.aspx" class="clearfix">
+                        <a href='<%=Constant.JsInformationDic+"Employee.aspx" %>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-e617"></i>
                                 <span>人员管理</span>
@@ -118,7 +118,7 @@
                         </a>
                     </li>
                     <li class="deal" runat="server" id="changeHotel">
-                        <a href="../pages/areaManage.aspx" class="clearfix">
+                        <a href='<%=Constant.JsOperationDic+"HotelSelect.aspx"%>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-yewu"></i>
                                 <span>酒店切换</span>
@@ -128,7 +128,7 @@
                     </li>
                     <div class="interval"></div>
                     <li class="changePsd">
-                        <a href="../pages/changePsd.aspx" class="clearfix">
+                        <a href='<%=Constant.JsLoginDic+"ChangePassword.aspx"%>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-xiugaimima"></i>
                                 <span>修改密码</span>

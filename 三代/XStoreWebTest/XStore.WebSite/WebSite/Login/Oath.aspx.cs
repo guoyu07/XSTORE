@@ -49,7 +49,7 @@ namespace XStore.WebSite.WebSite.Login
                             Response.Redirect(Constant.CenterDic + "EmployeeCenter.aspx",false);
                             break;
                         case UserRoleEnum.区域经理://区域经理
-                            Response.Redirect(Constant.CenterDic + "AreaManageCenter.aspx", false);
+                            Response.Redirect(Constant.CenterDic + "ManageCenter.aspx", false);
 
                             break;
                         case UserRoleEnum.测试员:

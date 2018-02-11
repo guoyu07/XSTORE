@@ -70,13 +70,32 @@ namespace XStore.WebSite.WebSite
             {
                 if (_hotelInfo == null)
                 {
-                    _hotelInfo = context.Query<Hotel>().LeftJoin<UserHotel>((a, b) => a.id == b.hotels_id).Where((a, b) => b.user_username.Equals(userInfo.username)).Select((a, b) => new Hotel
+                    if (Session[Constant.HotelId].ObjToInt(0)==0)
                     {
-                        id = a.id,
-                        hotel_name = a.hotel_name,
-                        simple_name = a.simple_name,
-                        address = a.address
-                    }).FirstOrDefault();
+                        var hotelId = Request.QueryString[Constant.HotelId].ObjToInt(0);
+                        if (hotelId != 0)
+                        {
+                            _hotelInfo = context.Query<Hotel>().FirstOrDefault(o => o.id == hotelId);
+                            Session[Constant.HotelId] = _hotelInfo.id;
+                        }
+                        else
+                        {
+                            _hotelInfo = context.Query<Hotel>().LeftJoin<UserHotel>((a, b) => a.id == b.hotels_id).Where((a, b) => b.user_username.Equals(userInfo.username)).Select((a, b) => new Hotel
+                            {
+                                id = a.id,
+                                hotel_name = a.hotel_name,
+                                simple_name = a.simple_name,
+                                address = a.address
+                            }).FirstOrDefault();
+                            Session[Constant.HotelId] = _hotelInfo.id;
+                        }
+                    }
+                    else
+                    {
+                        var hotelId = Session[Constant.HotelId].ObjToInt(0);
+                        _hotelInfo = context.Query<Hotel>().FirstOrDefault(o => o.id == hotelId);
+                    }
+                    
                 }
                 return _hotelInfo;
             }

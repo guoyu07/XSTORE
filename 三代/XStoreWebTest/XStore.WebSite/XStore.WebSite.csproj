@@ -246,6 +246,8 @@
     <Content Include="Content\Images\room-full.png" />
     <Content Include="Content\Images\room.png" />
     <Content Include="Content\Images\room_off.png" />
+    <Content Include="Content\Images\sort33.png" />
+    <Content Include="Content\Images\sort37.png" />
     <Content Include="Content\Images\tel.png" />
     <Content Include="Content\Images\top.png" />
     <Content Include="Content\Images\unchecked.png" />
@@ -254,9 +256,11 @@
     <Content Include="Content\Images\yh.PNG" />
     <Content Include="Content\Information\achievement.css" />
     <Content Include="Content\Information\comprehensive.css" />
+    <Content Include="Content\Information\employeeManager.css" />
     <Content Include="Content\Information\settlement.css" />
     <Content Include="Content\Login\bind.css" />
     <Content Include="Content\layer.css" />
+    <Content Include="Content\Login\changePsd.css" />
     <Content Include="Content\Login\common.css" />
     <Content Include="Content\Icon\logo.png" />
     <Content Include="Content\Login\login.css" />
@@ -265,13 +269,17 @@
     <Content Include="Content\Login\welcome.css" />
     <Content Include="Content\mui.min.css" />
     <Content Include="Content\mui.picker.min.css" />
+    <Content Include="Content\Opreation\comprehensive.css" />
     <Content Include="Content\Opreation\deliveryNote.css" />
     <Content Include="Scripts\mui.js" />
     <Content Include="Scripts\mui.picker.min.js" />
     <Content Include="WebSite\Information\Achievement.aspx" />
     <Content Include="WebSite\Information\BaseInfo.aspx" />
+    <Content Include="WebSite\Information\Employee.aspx" />
+    <Content Include="WebSite\Information\GoodsInfo.aspx" />
     <Content Include="WebSite\Information\RoomInfo.aspx" />
     <Content Include="WebSite\Information\Settlement.aspx" />
+    <Content Include="WebSite\Login\ChangePassword.aspx" />
     <Content Include="WebSite\Oath\WxOath.aspx" />
     <Content Include="Content\Opreation\roomGoods.css" />
     <Content Include="Content\Opreation\roomSelect.css" />
@@ -341,6 +349,7 @@
     <Content Include="WebSite\Operation\BackLog.aspx" />
     <Content Include="WebSite\Operation\BindMac.aspx" />
     <Content Include="WebSite\Operation\FinishPickUp.aspx" />
+    <Content Include="WebSite\Operation\HotelSelect.aspx" />
     <Content Include="WebSite\Operation\PickUp.aspx" />
     <Content Include="WebSite\Operation\QaCheck.aspx" />
     <Content Include="WebSite\Operation\RoomCheck.aspx" />
@@ -401,6 +410,7 @@
     <Content Include="WebSite\_Ashx\ShortMessage.ashx" />
     <Content Include="WebSite\_Ashx\BindAccount.ashx" />
     <Content Include="WebSite\_Ashx\UnBindAccount.ashx" />
+    <Content Include="WebSite\_Ashx\ChangePassword.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -421,6 +431,20 @@
     <Compile Include="WebSite\Information\BaseInfo.aspx.designer.cs">
       <DependentUpon>BaseInfo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\Information\Employee.aspx.cs">
+      <DependentUpon>Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Information\Employee.aspx.designer.cs">
+      <DependentUpon>Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Information\GoodsInfo.aspx.cs">
+      <DependentUpon>GoodsInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Information\GoodsInfo.aspx.designer.cs">
+      <DependentUpon>GoodsInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\Information\RoomInfo.aspx.cs">
       <DependentUpon>RoomInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -434,6 +458,20 @@
     </Compile>
     <Compile Include="WebSite\Information\Settlement.aspx.designer.cs">
       <DependentUpon>Settlement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Login\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Login\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\HotelSelect.aspx.cs">
+      <DependentUpon>HotelSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\HotelSelect.aspx.designer.cs">
+      <DependentUpon>HotelSelect.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Operation\RoomCheck.aspx.cs">
       <DependentUpon>RoomCheck.aspx</DependentUpon>
@@ -707,6 +745,9 @@
     </Compile>
     <Compile Include="WebSite\_Ashx\BindAccount.ashx.cs">
       <DependentUpon>BindAccount.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\_Ashx\ChangePassword.ashx.cs">
+      <DependentUpon>ChangePassword.ashx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\_Ashx\CheckOrderState.ashx.cs">
       <DependentUpon>CheckOrderState.ashx</DependentUpon>

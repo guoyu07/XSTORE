@@ -68,7 +68,7 @@ namespace XStore.WebSite.WebSite.Login
                                 break;
                             case UserRoleEnum.区域经理://区域经理
                                 MessageBox.Show(this, "system_alert", is_same ? "登陆成功" : "登陆成功，请修改初始密码！");
-                                Response.Redirect(is_same ? Constant.CenterDic + "AreaManageCenter.aspx" : Constant.LoginDic + "Bind.aspx");
+                                Response.Redirect(is_same ? Constant.CenterDic + "ManageCenter.aspx" : Constant.LoginDic + "Bind.aspx");
                                
                                 break;
                             case UserRoleEnum.测试员:

@@ -208,6 +208,18 @@ namespace XStore.WebSite
         ));
             #endregion
 
+            #region 酒店经理-人员管理
+            bundles.Add(new StyleBundle("~/bundles/employee/css").Include(
+        "~/Content/Information/employeeManager.css",
+        "~/Content/footer.css"
+       ));
+            bundles.Add(new StyleBundle("~/bundles/changepassword/css").Include(
+       "~/Content/Login/changePsd.css",
+       "~/Content/footer.css"
+      ));
+            
+            #endregion
+
             #region 酒店经理-销售业绩
             bundles.Add(new StyleBundle("~/bundles/achievement/css").Include(
                  "~/Content/mui.min.css",
@@ -228,6 +240,13 @@ namespace XStore.WebSite
             bundles.Add(new ScriptBundle("~/bundles/settlement/js").Include(
            "~/Scripts/mui.js"
            ));
+            #endregion
+
+            #region 区域经理-酒店列表
+            bundles.Add(new StyleBundle("~/bundles/comprehensive/css").Include(
+           "~/Content/Opreation/comprehensive.css",
+           "~/Content/footer.css"
+          ));
             #endregion
         }
     }

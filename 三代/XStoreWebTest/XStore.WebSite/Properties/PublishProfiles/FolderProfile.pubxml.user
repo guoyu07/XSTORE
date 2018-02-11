@@ -319,16 +319,16 @@
       <publishTime>02/10/2018 18:00:00</publishTime>
     </File>
     <File Include="bin/XStore.Entity.dll">
-      <publishTime>02/10/2018 23:54:23</publishTime>
+      <publishTime>02/12/2018 01:27:51</publishTime>
     </File>
     <File Include="bin/XStore.Entity.pdb">
-      <publishTime>02/10/2018 23:54:23</publishTime>
+      <publishTime>02/12/2018 01:27:51</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.dll">
-      <publishTime>02/10/2018 23:54:28</publishTime>
+      <publishTime>02/12/2018 01:34:20</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.pdb">
-      <publishTime>02/10/2018 23:54:28</publishTime>
+      <publishTime>02/12/2018 01:34:20</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.AspNet.FriendlyUrls.resources.dll">
       <publishTime>01/22/2018 22:35:24</publishTime>
@@ -468,6 +468,12 @@
     <File Include="Content/Images/room_off.png">
       <publishTime>01/28/2018 14:39:56</publishTime>
     </File>
+    <File Include="Content/Images/sort33.png">
+      <publishTime>02/11/2018 21:46:57</publishTime>
+    </File>
+    <File Include="Content/Images/sort37.png">
+      <publishTime>02/11/2018 21:46:57</publishTime>
+    </File>
     <File Include="Content/Images/tel.png">
       <publishTime>01/25/2018 21:29:43</publishTime>
     </File>
@@ -492,6 +498,9 @@
     <File Include="Content/Information/comprehensive.css">
       <publishTime>02/10/2018 20:16:26</publishTime>
     </File>
+    <File Include="Content/Information/employeeManager.css">
+      <publishTime>02/11/2018 23:43:10</publishTime>
+    </File>
     <File Include="Content/Information/settlement.css">
       <publishTime>02/10/2018 23:22:40</publishTime>
     </File>
@@ -500,6 +509,9 @@
     </File>
     <File Include="Content/Login/bind.css">
       <publishTime>01/22/2018 22:35:24</publishTime>
+    </File>
+    <File Include="Content/Login/changePsd.css">
+      <publishTime>02/12/2018 00:31:00</publishTime>
     </File>
     <File Include="Content/Login/common.css">
       <publishTime>02/07/2018 20:31:40</publishTime>
@@ -524,6 +536,9 @@
     </File>
     <File Include="Content/Oath/WxOath.aspx">
       <publishTime>01/29/2018 18:25:26</publishTime>
+    </File>
+    <File Include="Content/Opreation/comprehensive.css">
+      <publishTime>02/12/2018 00:52:31</publishTime>
     </File>
     <File Include="Content/Opreation/deliveryNote.css">
       <publishTime>02/08/2018 22:27:55</publishTime>
@@ -805,13 +820,13 @@
       <publishTime>01/28/2018 15:06:08</publishTime>
     </File>
     <File Include="WebSite/Center/EmployeeCenter.aspx">
-      <publishTime>02/09/2018 00:28:20</publishTime>
+      <publishTime>02/12/2018 00:42:58</publishTime>
     </File>
     <File Include="WebSite/Center/FinanceCenter.aspx">
       <publishTime>01/28/2018 15:08:57</publishTime>
     </File>
     <File Include="WebSite/Center/ManageCenter.aspx">
-      <publishTime>02/10/2018 23:39:34</publishTime>
+      <publishTime>02/12/2018 01:39:54</publishTime>
     </File>
     <File Include="WebSite/Center/PromotionCenter.aspx">
       <publishTime>01/28/2018 15:06:32</publishTime>
@@ -829,16 +844,25 @@
       <publishTime>02/10/2018 23:12:29</publishTime>
     </File>
     <File Include="WebSite/Information/BaseInfo.aspx">
-      <publishTime>02/10/2018 16:24:42</publishTime>
+      <publishTime>02/11/2018 21:22:46</publishTime>
+    </File>
+    <File Include="WebSite/Information/Employee.aspx">
+      <publishTime>02/12/2018 00:00:18</publishTime>
+    </File>
+    <File Include="WebSite/Information/GoodsInfo.aspx">
+      <publishTime>02/11/2018 22:49:47</publishTime>
     </File>
     <File Include="WebSite/Information/RoomInfo.aspx">
-      <publishTime>02/10/2018 20:25:53</publishTime>
+      <publishTime>02/12/2018 00:50:49</publishTime>
     </File>
     <File Include="WebSite/Information/Settlement.aspx">
       <publishTime>02/10/2018 23:54:09</publishTime>
     </File>
     <File Include="WebSite/Login/Bind.aspx">
       <publishTime>01/29/2018 21:58:19</publishTime>
+    </File>
+    <File Include="WebSite/Login/ChangePassword.aspx">
+      <publishTime>02/12/2018 00:36:53</publishTime>
     </File>
     <File Include="WebSite/Login/Login.aspx">
       <publishTime>01/29/2018 21:58:19</publishTime>
@@ -866,6 +890,9 @@
     </File>
     <File Include="WebSite/Operation/FinishPickUp.aspx">
       <publishTime>02/09/2018 00:35:30</publishTime>
+    </File>
+    <File Include="WebSite/Operation/HotelSelect.aspx">
+      <publishTime>02/12/2018 01:18:43</publishTime>
     </File>
     <File Include="WebSite/Operation/PickUp.aspx">
       <publishTime>02/09/2018 00:35:27</publishTime>
@@ -923,6 +950,9 @@
     </File>
     <File Include="WebSite/_Ashx/BindAccount.ashx">
       <publishTime>01/26/2018 22:53:34</publishTime>
+    </File>
+    <File Include="WebSite/_Ashx/ChangePassword.ashx">
+      <publishTime>02/12/2018 00:15:29</publishTime>
     </File>
     <File Include="WebSite/_Ashx/CheckOrderState.ashx">
       <publishTime>01/25/2018 21:29:43</publishTime>

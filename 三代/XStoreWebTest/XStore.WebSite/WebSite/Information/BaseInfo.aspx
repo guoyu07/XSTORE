@@ -18,7 +18,7 @@
             <div class="room item">
                 <ul>
                     <li class="clearfix">
-                        <a href='RoomInfoList.aspx?hotel_id=<%#hotelInfo.id %>'>
+                        <a href='RoomInfo.aspx'>
                             <div class="l">
                                 <p class="roomNumber"><span>房间</span></p>
                             </div>
@@ -26,21 +26,21 @@
                         </a>
                     </li>
                     <li class="clearfix">
-                        <a href='GoodsInfoList.aspx?hotel_id=<%#hotelInfo.id %>'>
+                        <a href='GoodsInfo.aspx'>
                             <div class="l">
                                 <p class="roomNumber"><span>商品</span></p>
                             </div>
                              <div class="r iconfont icon-gengduo"></div>
                         </a>
                     </li>
-                    <li class="clearfix" style="display:none;">
+<%--                    <li class="clearfix" style="display:none;">
                         <a href='UserInfoList.aspx?hotel_id=<%#hotelInfo.id %>'>
                             <div class="l">
                                 <p class="roomNumber"><span>注册用户</span></p>
                             </div>
                              <div class="r iconfont icon-gengduo"></div>
                         </a>
-                    </li>
+                    </li>--%>
                 </ul>
             </div>
         </div>

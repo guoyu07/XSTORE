@@ -19,6 +19,7 @@ namespace XStore.Entity
         public const string WxCode = "code";
         public const string WeiUser = "WxUser";
         public const string Cabinets = "Cabinets";
+        public const string HotelId = "hotelId";
 
         public const string LoginDic = "~/WebSite/Login/";
         public const string GoodsDic = "~/WebSite/Goods/";

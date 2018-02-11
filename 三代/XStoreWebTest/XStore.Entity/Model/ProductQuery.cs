@@ -12,5 +12,6 @@ namespace XStore.Entity.Model
         /// 是否售罄
         /// </summary>
         public bool sell_out { get; set; } = false;
+
     }
 }

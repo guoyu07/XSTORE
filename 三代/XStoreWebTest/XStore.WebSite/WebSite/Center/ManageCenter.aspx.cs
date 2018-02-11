@@ -8,6 +8,7 @@ using System.Web.UI.WebControls;
 using XStore.Common;
 using XStore.Entity;
 using XStore.Entity.Model;
+using static XStore.Entity.Enum;
 
 namespace XStore.WebSite.WebSite.Center
 {
@@ -19,6 +20,7 @@ namespace XStore.WebSite.WebSite.Center
             Title = "幸事多私享空间-酒店经理";
             if (!IsPostBack)
             {
+            
                 PageInit();
             }
 
@@ -29,6 +31,15 @@ namespace XStore.WebSite.WebSite.Center
             var sumSales = context.Query<OrderInfo>().LeftJoin<Cabinet>((a, b) => a.cabinet_mac.Equals(b.mac)).Where((a, b) => a.paid == true && b.hotel == hotelInfo.id && a.date.Date == DateTime.Now.AddDays(-1).Date).Select((a, b) => new {
                 a.price1
             }).ToList().Sum(o => o.price1);
+
+            if (userRole.role_id == (int)UserRoleEnum.区域经理)
+            {
+                changeHotel.Visible = true;
+            }
+            else
+            {
+                changeHotel.Visible = false;
+            }
            
             manageQuery.salesLight = sumCabinet.Count == 0 ? 0 : Math.Round((double)(sumSales/sumCabinet.Count), 2);
             manageQuery.lightColor = manageQuery.salesLight > 5 ? "normal" : manageQuery.salesLight >= 2 ? "warning" : "error";

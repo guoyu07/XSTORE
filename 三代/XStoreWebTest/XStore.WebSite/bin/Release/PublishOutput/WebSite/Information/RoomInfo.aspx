@@ -11,10 +11,6 @@
     <link href="/Content/fonts/iconfont.css" rel="stylesheet" />
     <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/roominfo/css")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs")%>
-  
-    <style>
-       
-    </style>
     <script>
         function sort_amount_click() {
             $("#SortImgBtn").click();
@@ -33,26 +29,21 @@
                 <ul>
                     <li class="clearfix">
                         <a href="">
-                            <div class="l" style="width: 50%;">
+                            <div class="l" style="width: 25%;">
                                 <p class="roomNumber"><span>房间号</span></p>
                             </div>
-                    
-                           <%-- <div class="l" style="margin-left: 5px; width: 25%;">
-                                <p class="roomNumber"><span>上次补货</span></p>
 
-                            </div>--%>
-                            <div class="r status" style="width:25%;">
+                            <div class="r status" style="width: 25%;">
                                 <p class="roomNumber"><span>状态</span></p>
                             </div>
-			   <%-- <div class="l"  style="margin-left: 1px; width: 20%;">
+                            <div class="l" style=" width: 25%;">
                                 <p class="roomNumber"><span>离线时长</span></p>
-                            </div>--%>
-                            <div class="l"  style="margin-left: 1px; width: 25%;">
-                                <p  class="roomNumber">
+                            </div>
+                            <div class="l" style=" width: 25%;">
+                                <p class="roomNumber">
                                     <span onclick="sort_amount_click()">销售金额</span>
-                                    <asp:ImageButton runat="server" Width="12" Height="12" ID="SortImgBtn"  Sort="down" 
-
-OnClick="SortImgBtn_OnClick" />
+                                    <asp:ImageButton runat="server" Width="12" Height="12" ID="SortImgBtn" Sort="down"
+                                        OnClick="SortImgBtn_OnClick" />
                                 </p>
                             </div>
                         </a>
@@ -62,26 +53,20 @@ OnClick="SortImgBtn_OnClick" />
                         <ItemTemplate>
                             <li class="clearfix">
                                 <a href="#">
-                                    <div class="l" style="width: 50%;">
-                                        <p class="roomNumber"><span><%#Eval("room") %></span></p>
-                                       
-                                        
-                                    </div>
+                                    <div class="l" style="width: 25%;">
+                                        <p class="roomNumber"><span><%#Eval("room").ObjToStr() %></span></p>
 
-                                    <%--<div class="l" style="margin-left: 1px; width: 25%;">
-                                        <p class="roomNumber"><span><%# string.IsNullOrEmpty(Eval("补货时间").ObjToStr())?"--":((DateTime)Eval("补货时间")).ToString("yyyy-MM-dd") %> </span></p>
 
                                     </div>
-<div class="l" style="margin-left: 1px; width: 20%;">
-<p class="roomNumber"><%#Eval("离线时长")==null?"--":Eval("离线时长").ObjToStr() %>小时</p>
-</div>--%>
+                                    <div class="l" style=" width: 25%;">
+                                        <p class="roomNumber"><%#Eval("offline").ObjToStr() %></p>
+                                    </div>
 
-                                    <div class="r status" >
+                                    <div class="r status" style="width: 25%;">
                                         <%#(bool)Eval("online")?"<span class=\"online\">在线</span>":"<span class=\"offline\">离线</span>" %>
-                                        
                                     </div>
-                                    <div class="l" style="margin-left: 1px; width: 20%;">
-                                        <p class="roomNumber">¥<span><%#Eval("SelledAmount").ObjToDecimal(0) %></span></p>
+                                    <div class="l" style="width: 25%;">
+                                        <p class="roomNumber">¥<span><%#Eval("salesAmount").ObjToInt(0).CentToRMB(0) %></span></p>
                                     </div>
                                 </a>
                             </li>
