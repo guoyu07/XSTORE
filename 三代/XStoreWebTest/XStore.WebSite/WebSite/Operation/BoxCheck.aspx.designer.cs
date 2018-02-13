@@ -10,24 +10,33 @@
 namespace XStore.WebSite.WebSite.Operation {
     
     
-    public partial class WaterFillUp {
+    public partial class BoxCheck {
         
         /// <summary>
-        /// form 控件。
+        /// form2 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
         
         /// <summary>
-        /// water_fillup 控件。
+        /// box_rp 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor water_fillup;
+        protected global::System.Web.UI.WebControls.Repeater box_rp;
+        
+        /// <summary>
+        /// openAll 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton openAll;
     }
 }
