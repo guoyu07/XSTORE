@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace XStore.WebSite.WebSite.Center
 {
-    public partial class PromotionCenter : System.Web.UI.Page
+    public partial class PromotionCenter : CenterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
