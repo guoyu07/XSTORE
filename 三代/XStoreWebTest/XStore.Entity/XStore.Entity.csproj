@@ -52,6 +52,7 @@
     <Compile Include="AccessToken.cs" />
     <Compile Include="Areas.cs" />
     <Compile Include="Cabinet.cs" />
+    <Compile Include="CabinetCheckLog.cs" />
     <Compile Include="CabinetLayout.cs" />
     <Compile Include="Cell.cs" />
     <Compile Include="Constant.cs" />

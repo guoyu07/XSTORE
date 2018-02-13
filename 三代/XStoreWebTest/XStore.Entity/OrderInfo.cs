@@ -27,6 +27,5 @@ namespace XStore.Entity
         public int? store_id { get; set; }
         public int product { get; set; }
         public string note { get; set; }
-        public bool? has_push { get; set; }
     }
 }
