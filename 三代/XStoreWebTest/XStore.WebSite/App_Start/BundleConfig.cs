@@ -127,6 +127,8 @@ namespace XStore.WebSite
              ));
             #endregion
 
+
+
             #region 常规补货-房间选择
             bundles.Add(new StyleBundle("~/bundles/roomselect/css").Include(
                 "~/Content/Opreation/roomSelect.css",
@@ -223,7 +225,7 @@ namespace XStore.WebSite
        "~/Content/Login/changePsd.css",
        "~/Content/footer.css"
       ));
-            
+
             #endregion
 
             #region 酒店经理-销售业绩
@@ -254,6 +256,7 @@ namespace XStore.WebSite
            "~/Content/footer.css"
           ));
             #endregion
+
         }
     }
 }

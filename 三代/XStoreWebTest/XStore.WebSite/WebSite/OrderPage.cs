@@ -17,6 +17,10 @@ namespace XStore.WebSite
                 if (_orderInfo == null)
                 {
                     var orderNo = Session[Constant.OrderNo].ObjToStr();
+                    if (string.IsNullOrEmpty(orderNo))
+                    {
+                        orderNo = Request.QueryString[Constant.OrderNo].ObjToStr();
+                    }
                     _orderInfo = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderNo));
                 }
                 return _orderInfo;

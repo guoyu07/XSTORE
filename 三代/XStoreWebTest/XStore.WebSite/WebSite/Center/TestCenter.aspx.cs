@@ -11,7 +11,7 @@ namespace XStore.WebSite.WebSite.Center
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Title = "幸事多私享空间-测试员";
         }
     }
 }

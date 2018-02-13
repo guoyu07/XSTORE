@@ -47,7 +47,7 @@
         }
         function callpay() {
             if ($("#zfbPay").is(":checked")) {
-                window.location.href = 'Alipay.html?order=' + '<%=orderInfo.code %>' + '+&money=' + '<%=orderInfo.price1.ObjToInt(0).CentToRMB(0) %>';
+                window.location.href = 'Alipay.html?order=' + '<%=orderInfo.code %>' + '&money=' + '<%=orderInfo.price1.ObjToInt(0).CentToRMB(0) %>';
             }
             else {
                 if (typeof WeixinJSBridge == "undefined") {

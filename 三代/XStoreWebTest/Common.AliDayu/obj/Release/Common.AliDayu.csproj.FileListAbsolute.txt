@@ -25,3 +25,11 @@ D:\Git\XSTORE\三代\XStoreWebTest\Common.AliDayu\obj\Release\Common.AliDayu.csp
 D:\Git\XSTORE\三代\XStoreWebTest\Common.AliDayu\obj\Release\Common.AliDayu.csproj.CoreCompileInputs.cache
 D:\Git\XSTORE\三代\XStoreWebTest\Common.AliDayu\obj\Release\Common.AliDayu.dll
 D:\Git\XSTORE\三代\XStoreWebTest\Common.AliDayu\obj\Release\Common.AliDayu.pdb
+X:\Git\XStore\三代\XStoreWebTest\Common.AliDayu\bin\Release\Common.AliDayu.dll
+X:\Git\XStore\三代\XStoreWebTest\Common.AliDayu\bin\Release\Common.AliDayu.pdb
+X:\Git\XStore\三代\XStoreWebTest\Common.AliDayu\bin\Release\Newtonsoft.Json.dll
+X:\Git\XStore\三代\XStoreWebTest\Common.AliDayu\bin\Release\TopSdk.dll
+X:\Git\XStore\三代\XStoreWebTest\Common.AliDayu\obj\Release\Common.AliDayu.csprojResolveAssemblyReference.cache
+X:\Git\XStore\三代\XStoreWebTest\Common.AliDayu\obj\Release\Common.AliDayu.csproj.CoreCompileInputs.cache
+X:\Git\XStore\三代\XStoreWebTest\Common.AliDayu\obj\Release\Common.AliDayu.dll
+X:\Git\XStore\三代\XStoreWebTest\Common.AliDayu\obj\Release\Common.AliDayu.pdb

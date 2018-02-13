@@ -10,7 +10,7 @@
     <title><%:Title %></title>
     <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
     <link href="/Content/fonts/iconfont.css" rel="stylesheet" />
-    <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/testcenter/css")%>
+    <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/employeecenter/css")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs")%>
     <style>
         #form1 {

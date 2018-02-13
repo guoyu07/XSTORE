@@ -39,29 +39,30 @@ namespace XStore.WebSite.WebSite.Order
                     }
                     catch (Exception ex)
                     {
-                        //Log.WriteLog("notify_url", "验证成功", "1_catch");
                         Log.WriteLog("", "", ex.ToString());
-
+                        Response.Write("fail");
+                        return;
+                        //Log.WriteLog("notify_url", "验证成功", "1_catch");
                     }
                     //Log.WriteLog("notify_url", "验证成功", "2");
                     if (verifyResult)//验证成功
                     {
                         //Log.WriteLog("notify_url", "验证成功", "2_if");
                         //Log.WriteLog("zfb_________________________________________________________________________________", "验证成功", "");
-                        string trade_no = DTRequest.GetString("trade_no");
+                        string trade_no = DTRequest.GetString("trade_no").Trim();
                         Log.WriteLog("验证成功2_if", "trade_no", trade_no.ObjToStr());//支付宝交易号
-                        string out_trade_no = DTRequest.GetString("out_trade_no");
-                        
+                        string out_trade_no = DTRequest.GetString("out_trade_no").Trim();
                         Log.WriteLog("验证成功2_if", "order_no", out_trade_no.ObjToStr());//获取订单号
                         string total_fee = DTRequest.GetString("total_amount");
                        
                         Log.WriteLog("验证成功2_if", "total_fee", total_fee.ObjToStr());//获取总金额
                         string trade_status = DTRequest.GetString("trade_status");           //交易状态
 
-                        var orderInfo = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(out_trade_no));
+                        var orderInfo = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(out_trade_no) && o.paid == false);
+                        //如果改订单已经支付或者不存在，则不继续往下走
                         if (orderInfo == null)
                         {
-                            Response.Write("Fails");
+                            Response.Write("fail");
                             return;
                         }
                      
@@ -70,27 +71,41 @@ namespace XStore.WebSite.WebSite.Order
 
                             if (trade_status == "TRADE_FINISHED" || trade_status == "TRADE_SUCCESS")
                             {
-                                var requestUrl = string.Format("{2}test/pay?orderId={0}&payId={1}", out_trade_no, trade_no, Constant.YunApi);
+                                var requestUrl = string.Format("{2}test/pay?orderId={0}&payId={1}&payType={3}", out_trade_no, trade_no, Constant.YunApi,1);
+                                Log.WriteLog("支付接口回调", "requestUrl", requestUrl);//获取总金额
                                 var response = JsonConvert.DeserializeObject<OrderResponse>(Utils.HttpGet(requestUrl));
+                                Log.WriteLog("支付接口回调", "response", JsonConvert.SerializeObject(response));//获取总金额
                                 if (response.operationStatus.Equals("SUCCESS"))
                                 {
                                     var rbh = new RemoteBoxHelper();
+                                    Response.Write("success");
                                     //执行开箱成功
                                     rbh.OpenRemoteBox(orderInfo.cabinet_mac, out_trade_no, orderInfo.pos.ObjToStr());
-                                };
-                                Response.Write("Success");
+                                    Log.WriteLog("支付接口回调", "成功", "成功");
+                                    return;
+                                }
+                                else
+                                {
+                                    Response.Write("fail");
+                                    return;
+                                }
+                                ;
+                              
+                            }
+                            else
+                            {
+                                Response.Write("fail");
                                 return;
                             }
                         }
                     }
-                    Response.Write("Fails");
-                    return;
                 }
             }
             catch (Exception)
             {
-                Response.Write("Fails");
+                Response.Write("fail");
                 return;
+               
             }
 
         }

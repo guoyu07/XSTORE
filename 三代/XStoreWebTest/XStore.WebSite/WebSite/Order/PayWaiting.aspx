@@ -9,7 +9,8 @@
     <meta name="viewport" charset="UTF-8" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
     <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/paysuccess/css")%>
-    <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs","~/bundles/weui/js","~/bundles/paysuccess/js")%>
+    <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs","~/bundles/weui/js")%>
+    <script type="text/javascript" src="/Scripts/jquery.myProgress.js"></script>
     <script type="text/javascript">
         $(function () {
             $("#progress_bar").myProgress({ speed: 30000, percent: 100 });

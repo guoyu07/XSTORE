@@ -82,9 +82,7 @@ namespace XStore.WebSite.WebSite.Operation
             }
             if (proidList.Count>0)
             {
-                ViewState["positionList"] = proidList;
-
-                var requestUrl = string.Format(Constant.YunApi + "test/back/start?mac={0}&username={1}", cabinet.mac, userInfo.username);
+                var requestUrl = string.Format(Constant.YunApi + "test/back/startWater?mac={0}", cabinet.mac);
                 LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "backNoRequestUrl：" + requestUrl);
                 var response = JsonConvert.DeserializeObject<BackNoResponse>(Utils.HttpGet(requestUrl));
                 LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "backNoResponse：" + JsonConvert.SerializeObject(response));
@@ -93,11 +91,15 @@ namespace XStore.WebSite.WebSite.Operation
                     MessageBox.Show(this, "system_alert", "补货单生成失败");
                     return;
                 }
+                if (response.operationMessage.Count==0)
+                {
+                    MessageBox.Show(this, "system_alert", "暂无促销品补货任务");
+                    return;
+                }
                 ViewState["BackNo"] = response.operationMessage;
 
                 var rbh = new RemoteBoxHelper();
-                //var posStr = proidList.Aggregate<int>((x, y) => x.ObjToStr() + "," + y.ObjToStr());
-                //rbh.OpenRemoteBox(cabinet.mac, response.operationMessage, posStr, 0x02);
+                rbh.OpenRemoteBox(cabinet.mac,string.Empty, "0", 0x02);
             }
             else
             {
@@ -108,14 +110,23 @@ namespace XStore.WebSite.WebSite.Operation
 
         protected void water_fillup_ServerClick(object sender, EventArgs e)
         {
-            //position_list = (List<int>)ViewState["positionList"];
-            //kwid = (int)ViewState["kwId"];
-            //var postionStr = position_list.Select(o => o.ToString()).Aggregate<string>((x, y) => x + ',' + y);
-            //var updateSql = string.Format(@"update WP_箱子表 set 实际商品id = 默认商品id where 库位id = {0} and 位置 in({1})", kwid, postionStr);
-            //comfun.UpdateBySQL(updateSql);
-            //Response.Write("<script>alert('补货成功');window.close();</script>");
-            //water_fillup.Visible = false;
-            //PageInit();
+            var backIdList = ((List<int>)ViewState["BackNo"]).Select(o => o.ObjToStr()).ToList();
+            var requestUrl = string.Format(Constant.YunApi + "test/back/open?backOrderId={0}", backIdList.Aggregate((x, y) => x + "," + y));
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "finishBackNoRequestUrl：" + requestUrl);
+            var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "finishBackNoResponse：" + JsonConvert.SerializeObject(response));
+            if (response.operationStatus.Equals("SUCCESS"))
+            {
+                MessageBox.Show(this, "system_alert", "补货成功");
+                water_fillup.Visible = false;
+                return;
+            }
+            else
+            {
+                MessageBox.Show(this, "system_alert", response.operationMessage);
+                return;
+            }
+          
         }
     }
 }

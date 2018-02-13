@@ -30,11 +30,12 @@ namespace XStore.WebSite.WebSite.Login
                 MessageBox.Show(this, "system_alert", "箱子无效");
                 return;
             }
-      
-            if (Session[Constant.CurrentUser] != null)
+
+            var userInfo = context.Query<User>().FirstOrDefault((o) => o.weichat.Equals(OpenId));
+            if (userInfo != null)
             {
                 var boxMac = Session[Constant.IMEI].ObjToStr();
-                var userInfo = (User)Session[Constant.CurrentUser];
+                Session[Constant.CurrentUser] = userInfo;
         
                 var roomInfo = context.Query<Cabinet>().FirstOrDefault(o => o.mac.Equals(boxMac));
                 if (roomInfo == null)
@@ -44,22 +45,26 @@ namespace XStore.WebSite.WebSite.Login
                 }
                 var roleInfo = context.Query<UserRole>().FirstOrDefault(o => o.username == userInfo.username);
                 var userHotelInfo = context.Query<UserHotel>().FirstOrDefault(o => o.user_username == userInfo.username && o.hotels_id == roomInfo.hotel);
-                if ((UserRoleEnum)roleInfo.role_id.ObjToInt(0) == UserRoleEnum.测试员)
-                {
-                    Response.Redirect(string.Format(Constant.OperationDic+"QaCheck.aspx?boxmac={0}", boxMac));
-                    return;
-                }
                 if (userHotelInfo == null)
                 {
                     Response.Redirect(Constant.LoginDic + "NoAuth.aspx");
                     return;
                 }
+                //if ((UserRoleEnum)roleInfo.role_id.ObjToInt(0) == UserRoleEnum.测试员)
+                //{
+                //    Response.Redirect(string.Format(Constant.OperationDic+"QaCheck.aspx?boxmac={0}", boxMac));
+                //    return;
+                //}
+                
                 switch ((UserRoleEnum)roleInfo.role_id.ObjToInt(0))
                 {
                     case UserRoleEnum.前台:
                     case UserRoleEnum.经理:
                     case UserRoleEnum.区域经理:
                         Response.Redirect(string.Format(Constant.OperationDic+ "RoomFixed.aspx?boxmac={0}", boxMac));
+                        break;
+                    case UserRoleEnum.测试员:
+                        Response.Redirect(string.Format(Constant.OperationDic + "BoxCheck.aspx?boxmac={0}", boxMac));
                         break;
                     case UserRoleEnum.配水员:
                         Response.Redirect(string.Format(Constant.OperationDic + "WaterFillUp.aspx?boxmac={0}", boxMac));
