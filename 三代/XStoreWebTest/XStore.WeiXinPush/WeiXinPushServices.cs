@@ -13,6 +13,8 @@ using WeiXinPush.Model;
 using Chloe.MySql;
 using XStore.WebSite.DBFactory;
 using Chloe;
+using XStore.Entity;
+using static XStore.Entity.Enum;
 
 namespace WeiXinPush
 {
@@ -25,6 +27,7 @@ namespace WeiXinPush
         private Timer _openBoxTimer;
         private Timer _fillUpTimer;
         private Timer _fixedTimer;
+        private Timer _failpushTimer;
         public static string connString = ConfigurationManager.ConnectionStrings["ConnStr"].ConnectionString;
         private int pushHour = int.Parse(ConfigurationManager.AppSettings["PUSHHOUR"]);
         private string root = ConfigurationManager.AppSettings["HomeUrl"].ObjToStr();
@@ -60,9 +63,11 @@ namespace WeiXinPush
                 _fillUpTimer.Elapsed += _fillUpTimer_Elapsed;
                 _fillUpTimer.Start();
 
-                _fixedTimer = new Timer(4000);
-                _fixedTimer.Elapsed += _fixedTime_Elapsed;
-                _fixedTimer.Start();
+                //_fixedTimer = new Timer(4000);
+                //_fixedTimer.Elapsed += _fixedTime_Elapsed;
+                //_fixedTimer.Start();
+                _failpushTimer = new Timer(1000);
+                _failpushTimer.Elapsed += _failpushTimer_Elapsed;
 
             }
             catch (Exception ex)
@@ -74,37 +79,41 @@ namespace WeiXinPush
         private void _openboxTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
 
-            var selectSql = string.Format(@"select 订单编号,mac, LEFT(位置,LEN(位置)-1) as 位置 from (
-select top 1 
-(select isnull(箱子MAC,'') from WP_库位表 where id = a.库位id) as mac,
-(select convert(nvarchar(2),位置-1)+',' from WP_订单子表 where 订单编号 = a.订单编号 FOR XML PATH('')) as 位置,
-a.订单编号
- from WP_订单子表 a left join WP_订单表 b on a.订单编号 = b.订单编号 where b.state in (2,5) and (a.是否开箱 = 0 or a.是否开箱 is null) and datediff(MINUTE,b.下单时间,getdate()) <= 30
-) as c");
-            //DataTable selectDt = context.Session.ExecuteDataTable("select * from users where age>=@age", new { age = 18 });
-            //Log.WriteLog("_openboxTimer_Elapsed", "sql：" + selectSql, "------");
-            DataTable selectDt = comfun.GetDataTableBySQL(selectSql);
-            Log.WriteLog("_openboxTimer_Elapsed", "selectDtCount：" + selectDt.Rows.Count, "------");
-            if (selectDt.Rows.Count != 0)
+            //            var selectSql = string.Format(@"select 订单编号,mac, LEFT(位置,LEN(位置)-1) as 位置 from (
+            //select top 1 
+            //(select isnull(箱子MAC,'') from WP_库位表 where id = a.库位id) as mac,
+            //(select convert(nvarchar(2),位置-1)+',' from WP_订单子表 where 订单编号 = a.订单编号 FOR XML PATH('')) as 位置,
+            //a.订单编号
+            // from WP_订单子表 a left join WP_订单表 b on a.订单编号 = b.订单编号 where b.state in (2,5) and (a.是否开箱 = 0 or a.是否开箱 is null) and datediff(MINUTE,b.下单时间,getdate()) <= 30
+            //) as c");
+            var orderInfo = context.Query<OrderInfo>()
+                .FirstOrDefault(o =>o.paid==true && o.delivered == false && o.date.AddMinutes(30) > DateTime.Now );
+            if (orderInfo != null)
             {
-                var orderNo = selectDt.Rows[0]["订单编号"].ToString();
-                var position = selectDt.Rows[0]["位置"].ToString();
-                var mac = selectDt.Rows[0]["mac"].ToString();
-                OpenBox(orderNo, mac, position);
+                OpenBox(orderInfo.code.ObjToStr(), orderInfo.cabinet_mac.ObjToStr(), orderInfo.pos.ObjToStr());
             }
+            //DataTable selectDt = comfun.GetDataTableBySQL(selectSql);
+            //Log.WriteLog("_openboxTimer_Elapsed", "selectDtCount：" + selectDt.Rows.Count, "------");
+            //if (selectDt.Rows.Count != 0)
+            //{
+            //    var orderNo = selectDt.Rows[0]["订单编号"].ToString();
+            //    var position = selectDt.Rows[0]["位置"].ToString();
+            //    var mac = selectDt.Rows[0]["mac"].ToString();
+               
+            //}
         }
-        private void _fixedTime_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            var selectSql = string.Format(@"select top 1 * from WP_补货单 where Status in(1,3) and datediff(MINUTE,CreateTime,getdate()) <= 30");
-            DataTable selectDt = comfun.GetDataTableBySQL(selectSql);
-            if (selectDt.Rows.Count > 0)
-            {
-                var orderNo = selectDt.Rows[0]["OrderNo"].ToString();
-                var position = selectDt.Rows[0]["Position"].ToString();
-                var mac = selectDt.Rows[0]["Mac"].ToString();
-                OpenBox(orderNo, mac, position, 0x02);
-            }
-        }
+        //private void _fixedTime_Elapsed(object sender, ElapsedEventArgs e)
+        //{
+        //    var selectSql = string.Format(@"select top 1 * from WP_补货单 where Status in(1,3) and datediff(MINUTE,CreateTime,getdate()) <= 30");
+        //    DataTable selectDt = comfun.GetDataTableBySQL(selectSql);
+        //    if (selectDt.Rows.Count > 0)
+        //    {
+        //        var orderNo = selectDt.Rows[0]["OrderNo"].ToString();
+        //        var position = selectDt.Rows[0]["Position"].ToString();
+        //        var mac = selectDt.Rows[0]["Mac"].ToString();
+        //        OpenBox(orderNo, mac, position, 0x02);
+        //    }
+        //}
         private void _fillUpTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
             if (DateTime.Now.Hour >= 8 && DateTime.Now.Minute > 30)
@@ -118,7 +127,7 @@ a.订单编号
 
         private void _exceptionTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            SystemExceptionPush();
+            //SystemExceptionPush();
         }
 
         private void _timer_Elapsed(object sender, ElapsedEventArgs e)
@@ -132,150 +141,42 @@ a.订单编号
             FailOrderPush();
         }
 
-        protected override void OnStop()
+        #region 推送失败后的重复推送
+        private void _failpushTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            _timer.Stop();
-            _timer.Close();
-            Log.WriteLog("微信推送", "服务器停止时间", "服务器已停止");
-        }
-
-        #region 开箱失败订单推送
-
-        public void FailOrderPush()
-        {
-            try
+            var pushInfo = context.Query<WeiChatPushFailLog>().FirstOrDefault(o => o.issuccess == false && o.createtime.AddMinutes(30) > DateTime.Now);
+            if (pushInfo != null)
             {
-                string orderSql = string.Format(@"SELECT top 1 订单编号,酒店名,库位名,下单时间,总金额,支付方式,数量,LEFT(品名,LEN(品名)-1) 品名 
-        FROM (
-        select  c.订单编号,
-        (select top 1 仓库名 from WP_仓库表 where id=d.仓库id) as 酒店名,
-        (select top 1 库位名 from WP_库位表 where id=d.库位id) as 库位名,
-        (SELECT top 1 支付方式 FROM WP_订单支付表 WHERE 订单编号 = c.订单编号) as 支付方式,
-        c.下单时间,
-        c.总金额,
-        (select sum(a.数量) from WP_订单子表 a left join WP_商品表 b on a.商品id = b.id where a.订单编号 = c.订单编号) as 数量,
-        (select (b.品名+'('+convert(nvarchar(2),a.位置)+'号),') from WP_订单子表 a left join WP_商品表 b on a.商品id = b.id where a.订单编号 = c.订单编号 FOR XML PATH('')) as 品名 
-        from WP_订单表 c left join WP_订单子表 d on c.订单编号 = d.订单编号 where c.hasPush is null and c.state in (5)
-        ) e");
-
-                Log.WriteLog("微信推送", "orderSql:", orderSql);
-                DataTable orderDt = comfun.GetDataTableBySQL(orderSql);
-                if (orderDt.Rows.Count == 0)
-                {
-                    //Log.WriteLog("微信推送", "无销售订单", "----------");
-                    return;
-                }
-                var orderDr = orderDt.Rows[0];
-                var color = "#D74C29";
-                var title = string.Format("{0}-{1}于 {2} 发生一笔开箱失败交易订单。", orderDr["酒店名"], orderDr["库位名"], ((DateTime)orderDr["下单时间"]).ToString("yyyy-MM-dd HH:mm:ss"));
-                var keyword1 = orderDr["订单编号"];
-                var keyword2 = orderDr["品名"];
-                var keyword3 = orderDr["数量"] + "件";
-                var keyword4 = orderDr["总金额"] + " 元";
-                var remark = "特此告知！！！";
-                //var tempId = "wtVzjV2wJpVekxHYYwR3MGKdjDbjDt9vnRZUu_vFywM";
-                var tempId = "aenuM_UsdJ_RixaKWnGEFGTlwuFQqHIyhq6OwhzvcWw";
-                dynamic postData = new ExpandoObject();
-                dynamic first = new ExpandoObject();
-                first.value = title;
-                first.color = color;
-
-                dynamic keyword1Obj = new ExpandoObject();
-                keyword1Obj.value = keyword1;
-                keyword1Obj.color = color;
-
-                dynamic keyword2Obj = new ExpandoObject();
-                keyword2Obj.value = keyword2;
-                keyword2Obj.color = color;
-
-                dynamic keyword3Obj = new ExpandoObject();
-                keyword3Obj.value = keyword3;
-                keyword3Obj.color = color;
-
-                dynamic keyword4Obj = new ExpandoObject();
-                keyword4Obj.value = keyword4;
-                keyword4Obj.color = color;
-
-                dynamic remarkObj = new ExpandoObject();
-                remarkObj.value = remark;
-                remarkObj.color = color;
-
-                postData.first = first;
-                postData.keyword1 = keyword1Obj;
-                postData.keyword2 = keyword2Obj;
-                postData.keyword3 = keyword3Obj;
-                postData.keyword4 = keyword4Obj;
-                postData.remark = remarkObj;
-                //Log.WriteLog("微信推送", "postData", JsonConvert.SerializeObject(postData));
-                var url = root + "Shop/pages/AssistOpenBox.aspx?OrderNo=" + orderDr["订单编号"].ObjToStr(); ;
-                var pushSql = string.Format(@"select openid from View_WechatPushAdmin where FailSendAuth = 1", orderDr["订单编号"]);
-                var pushDt = comfun.GetDataTableBySQL(pushSql);
-
-                foreach (DataRow pushDr in pushDt.Rows)
-                {
-                    var openId = pushDr["openid"].ToString();
-                    var responseBool = Send_WX_Message(postData, openId, tempId, url);
-                    if (responseBool)
+                var orderInfo = context.Query<OrderInfo>()
+                    .LeftJoin<Product>((a, b) => a.product == b.id)
+                    .LeftJoin<Cabinet>((a, b, c) => a.cabinet_mac.Equals(c.mac))
+                    .LeftJoin<Hotel>((a, b, c, d) => c.hotel == d.id)
+                    .Where((a, b, c, d) => a.code.Equals(pushInfo.ordercode))
+                    .Select((a, b, c, d) => new
                     {
-                        string updateOrderSql = string.Format("update WP_订单表 set hasPush = 1 where 订单编号 = '{0}'", orderDr["订单编号"]);
-                        var updateBool = comfun.UpdateBySQL(updateOrderSql);
-                        if (updateBool == 0)
-                        {
-                            Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "更新发送状态失败");
-                        }
-                        else
-                        {
-                            Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "发送模板成功!!!");
-                        }
-                    }
-                    else
-                    {
-                        Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "发送模板失败!!!");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Log.WriteLog("微信推送", "数据异常：" + ex.Message, ";异常位置：" + ex.StackTrace);
-            }
-        }
-
-        #endregion
-
-        #region 订单推送
-        protected void OrderInfoPush()
-        {
-            try
-            {
-                string orderSql = string.Format(@"SELECT top 1 订单编号,酒店名,库位名,下单时间,总金额,数量,LEFT(品名,LEN(品名)-1) 品名 
-        FROM (
-        select  c.订单编号,
-        (select top 1 仓库名 from WP_仓库表 where id=d.仓库id) as 酒店名,
-        (select top 1 库位名 from WP_库位表 where id=d.库位id) as 库位名,
-        c.下单时间,
-        c.总金额,
-        (select sum(a.数量) from WP_订单子表 a left join WP_商品表 b on a.商品id = b.id where a.订单编号 = c.订单编号) as 数量,
-        (select b.品名+',' from WP_订单子表 a left join WP_商品表 b on a.商品id = b.id where a.订单编号 = c.订单编号 FOR XML PATH('')) as 品名 
-        from WP_订单表 c left join WP_订单子表 d on c.订单编号 = d.订单编号 where (c.hasPush is null or c.hasPush = 0) and c.state in (3)
-        ) e");
-                //Log.WriteLog("微信推送", "orderSql:", orderSql);
-                DataTable orderDt = comfun.GetDataTableBySQL(orderSql);
-                if (orderDt.Rows.Count == 0)
-                {
-                    //Log.WriteLog("微信推送", "无销售订单", "----------");
-                    return;
-                }
-                var orderDr = orderDt.Rows[0];
-
-
+                        a.delivered,
+                        hotelid = d.id,
+                        a.code,
+                        b.name,
+                        a.price1,
+                        d.simple_name,
+                        c.room,
+                        a.date
+                    }).FirstOrDefault();
                 var color = "#173177";
-                var title = string.Format("{0}-{1}于 {2} 发生一笔订单交易。", orderDr["酒店名"], orderDr["库位名"], ((DateTime)orderDr["下单时间"]).ToString("yyyy-MM-dd HH:mm:ss"));
-                var keyword1 = orderDr["订单编号"];
-                var keyword2 = orderDr["品名"];
-                var keyword3 = orderDr["数量"] + "件";
-                var keyword4 = orderDr["总金额"] + " 元";
+                //如果开箱失败，则推送开箱失败的订单，这里只是修改颜色
+                if (!orderInfo.delivered)
+                {
+                    color = "#D74C29";
+                }
+                var title = string.Format("{0}-{1}于 {2} 发生一笔订单交易。", orderInfo.simple_name, orderInfo.room, orderInfo.date.ToString("yyyy-MM-dd HH:mm:ss"));
+                var keyword1 = orderInfo.code;
+                var keyword2 = orderInfo.name;
+                var keyword3 = 1 + "件";
+                var keyword4 = orderInfo.price1.ObjToInt(0).CentToRMB(0) + " 元";
                 var remark = "感谢您的使用" + " " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                var tempId = "aenuM_UsdJ_RixaKWnGEFGTlwuFQqHIyhq6OwhzvcWw";
+                var tempId = "HfV9-ClzJoRJ_2ubWRrw1y3qy9IaZBnwFOt09QLRmHY";
+                
                 dynamic postData = new ExpandoObject();
                 dynamic first = new ExpandoObject();
                 first.value = title;
@@ -309,46 +210,140 @@ a.订单编号
                 postData.remark = remarkObj;
                 Log.WriteLog("微信推送", "postData", JsonConvert.SerializeObject(postData));
 
-                var pushSql = string.Format(@"  select distinct(openid) from (
-          select b.openid from (select WP_用户权限.* from WP_用户权限 left join WP_订单子表 on WP_用户权限.仓库id=WP_订单子表.仓库id where 订单编号 = '{0}') as a left join WP_用户表 b on a.用户id = b.id where (openid is not null and openid <> '' and 推送开关 = 1  and 角色id in (1,3,4))
-          union all
-          select openid from View_WechatPushAdmin where SendAuth = 1) d", orderDr["订单编号"]);
-                var pushDt = comfun.GetDataTableBySQL(pushSql);
-                //零时解决方案，直接修改发送状态，不管有没有发送成功
-                string updateOrderSql = string.Format("update WP_订单表 set hasPush = 1 where 订单编号 = '{0}'", orderDr["订单编号"]);
-                var updateBool = comfun.UpdateBySQL(updateOrderSql);
-                if (updateBool == 0)
+                Log.WriteLog("微信推送", "openId:", pushInfo.openid);
+                pushInfo.issuccess = Send_WX_Message(postData, pushInfo.openid, tempId);
+                Log.WriteLog("微信推送", "orderno:", orderInfo.code);
+                Log.WriteLog("微信推送", "responseBool:", pushInfo.issuccess.ObjToStr());
+                context.Update(pushInfo);
+            }
+           
+        }
+        #endregion
+
+        protected override void OnStop()
+        {
+            _timer.Stop();
+            _timer.Close();
+            Log.WriteLog("微信推送", "服务器停止时间", "服务器已停止");
+        }
+
+        #region 订单推送
+        protected void OrderInfoPush()
+        {
+            try
+            {
+                var orderInfo = context.Query<OrderInfo>()
+                    .LeftJoin<Product>((a, b) => a.product == b.id)
+                    .LeftJoin<Cabinet>((a, b, c) => a.cabinet_mac.Equals(c.mac))
+                    .LeftJoin<Hotel>((a, b, c, d) => c.hotel == d.id)
+                    .Where((a, b, c, d) => a.paid == true && a.delivered == true && (a.has_push.HasValue == false || a.has_push.Value == false) && a.date.AddMinutes(30) > DateTime.Now)
+                    .Select((a, b, c, d) => new
+                    {
+                        hotelid = d.id,
+                        a.code,
+                        b.name,
+                        a.price1,
+                        d.simple_name,
+                        c.room,
+                        a.date
+                    }).FirstOrDefault();
+
+                if (orderInfo == null)
                 {
-                    Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "更新发送状态失败");
+                    return;
+                }
+
+                var color = "#173177";
+                var title = string.Format("{0}-{1}于 {2} 发生一笔订单交易。", orderInfo.simple_name, orderInfo.room, orderInfo.date.ToString("yyyy-MM-dd HH:mm:ss"));
+                var keyword1 = orderInfo.code;
+                var keyword2 = orderInfo.name;
+                var keyword3 = 1 + "件";
+                var keyword4 = orderInfo.price1.ObjToInt(0).CentToRMB(0) + " 元";
+                var remark = "感谢您的使用" + " " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                var tempId = "HfV9-ClzJoRJ_2ubWRrw1y3qy9IaZBnwFOt09QLRmHY";
+                dynamic postData = new ExpandoObject();
+                dynamic first = new ExpandoObject();
+                first.value = title;
+                first.color = color;
+
+                dynamic keyword1Obj = new ExpandoObject();
+                keyword1Obj.value = keyword1;
+                keyword1Obj.color = color;
+
+                dynamic keyword2Obj = new ExpandoObject();
+                keyword2Obj.value = keyword2;
+                keyword2Obj.color = color;
+
+                dynamic keyword3Obj = new ExpandoObject();
+                keyword3Obj.value = keyword3;
+                keyword3Obj.color = color;
+
+                dynamic keyword4Obj = new ExpandoObject();
+                keyword4Obj.value = keyword4;
+                keyword4Obj.color = color;
+
+                dynamic remarkObj = new ExpandoObject();
+                remarkObj.value = remark;
+                remarkObj.color = color;
+
+                postData.first = first;
+                postData.keyword1 = keyword1Obj;
+                postData.keyword2 = keyword2Obj;
+                postData.keyword3 = keyword3Obj;
+                postData.keyword4 = keyword4Obj;
+                postData.remark = remarkObj;
+                Log.WriteLog("微信推送", "postData", JsonConvert.SerializeObject(postData));
+
+                var pushAuthList = context.Query<WeiChatPushRole>().LeftJoin<User>((a, b) => a.phone.Equals(b.phone))
+                    .Where((a, b) => a.successorder == true)
+                    .Select((a, b) => b.weichat)
+                    .ToList();
+
+                var hotelRoleList = context.Query<UserHotel>()
+                    .LeftJoin<User>((a, b) => a.user_username.Equals(b.username))
+                    .LeftJoin<UserRole>((a, b, c) => b.username.Equals(c.username))
+                    .Where((a, b, c) => a.hotels_id == orderInfo.hotelid && (c.role_id == (int)UserRoleEnum.经理 || c.role_id == (int)UserRoleEnum.区域经理))
+                    .Select((a, b, c) => b.weichat).ToList();
+                var openidList = new List<string>();
+                openidList.AddRange(pushAuthList);
+                openidList.AddRange(hotelRoleList);
+                openidList = openidList.GroupBy(o => o).Select(o => o.Key).ToList();
+                var sendFlag = false;
+                foreach (var openid in openidList)
+                {
+                    Log.WriteLog("微信推送", "openId:", openid);
+                    var responseBool = Send_WX_Message(postData, openid, tempId);
+                    Log.WriteLog("微信推送", "orderno:", orderInfo.code);
+                    Log.WriteLog("微信推送", "responseBool:", responseBool);
+                    //只要有一个发送成功则改为发送成功
+                    if (responseBool)
+                    {
+                        sendFlag = true;
+                    }
+                    else
+                    {
+                        //如果发送失败，则存入到另外一张表，由另外一个线程继续发送
+                        context.Insert(new WeiChatPushFailLog
+                        {
+                            createtime = DateTime.Now,
+                            issuccess = false,
+                            openid = openid,
+                            ordercode = orderInfo.code
+                        });
+                    }
+                }
+                var orderInfoDB = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderInfo.code));
+                orderInfoDB.has_push = sendFlag;
+                if (context.Update(orderInfo) > 0)
+                {
+                    Log.WriteLog("微信推送", "订单：" + orderInfo.code, "发送模板成功!!!");
                 }
                 else
                 {
-                    Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "发送模板成功!!!");
+                    Log.WriteLog("微信推送", "订单：" + orderInfo.code, "更新发送状态失败");
                 }
-                foreach (DataRow pushDr in pushDt.Rows)
-                {
-                    var openId = pushDr["openid"].ToString();
-                    Log.WriteLog("微信推送", "openId:", openId);
-                    var responseBool = Send_WX_Message(postData, openId, tempId);
-
-                    //if (responseBool)
-                    //{
-                    //    string updateOrderSql = string.Format("update WP_订单表 set hasPush = 1 where 订单编号 = '{0}'", orderDr["订单编号"]);
-                    //    var updateBool = comfun.UpdateBySQL(updateOrderSql);
-                    //    if (updateBool == 0)
-                    //    {
-                    //        Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "更新发送状态失败");
-                    //    }
-                    //    else
-                    //    {
-                    //        Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "发送模板成功!!!");
-                    //    }
-                    //}
-                    //else
-                    //{
-                    //    Log.WriteLog("微信推送", "订单：" + orderDr["订单编号"], "发送模板失败!!!");
-                    //}
-                }
+                ;
+             
             }
             catch (Exception ex)
             {
@@ -356,6 +351,123 @@ a.订单编号
 
             }
         }
+        #endregion
+
+        #region 开箱失败订单推送
+
+        public void FailOrderPush()
+        {
+            try
+            {
+                var orderInfo = context.Query<OrderInfo>()
+                    .LeftJoin<Product>((a, b) => a.product == b.id)
+                    .LeftJoin<Cabinet>((a, b, c) => a.cabinet_mac.Equals(c.mac))
+                    .LeftJoin<Hotel>((a, b, c, d) => c.hotel == d.id)
+                    .Where((a, b, c, d) => a.paid == true && a.delivered == false && (a.has_push.HasValue == false || a.has_push.Value == false) && a.date.AddMinutes(30) > DateTime.Now)
+                    .Select((a, b, c, d) => new
+                    {
+                        hotelid = d.id,
+                        a.code,
+                        b.name,
+                        a.price1,
+                        d.simple_name,
+                        c.room,
+                        a.date
+                    }).FirstOrDefault();
+
+                if (orderInfo == null)
+                {
+                    return;
+                }
+                var color = "#D74C29";
+                var title = string.Format("{0}-{1}于 {2} 发生一笔开箱失败交易订单。", orderInfo.simple_name, orderInfo.room, orderInfo.date.ToString("yyyy-MM-dd HH:mm:ss"));
+                var keyword1 = orderInfo.code;
+                var keyword2 = orderInfo.name;
+                var keyword3 = 1 + "件";
+                var keyword4 = orderInfo.price1 + " 元";
+                var remark = "特此告知！！！";
+                var tempId = "HfV9-ClzJoRJ_2ubWRrw1y3qy9IaZBnwFOt09QLRmHY";
+                dynamic postData = new ExpandoObject();
+                dynamic first = new ExpandoObject();
+                first.value = title;
+                first.color = color;
+
+                dynamic keyword1Obj = new ExpandoObject();
+                keyword1Obj.value = keyword1;
+                keyword1Obj.color = color;
+
+                dynamic keyword2Obj = new ExpandoObject();
+                keyword2Obj.value = keyword2;
+                keyword2Obj.color = color;
+
+                dynamic keyword3Obj = new ExpandoObject();
+                keyword3Obj.value = keyword3;
+                keyword3Obj.color = color;
+
+                dynamic keyword4Obj = new ExpandoObject();
+                keyword4Obj.value = keyword4;
+                keyword4Obj.color = color;
+
+                dynamic remarkObj = new ExpandoObject();
+                remarkObj.value = remark;
+                remarkObj.color = color;
+
+                postData.first = first;
+                postData.keyword1 = keyword1Obj;
+                postData.keyword2 = keyword2Obj;
+                postData.keyword3 = keyword3Obj;
+                postData.keyword4 = keyword4Obj;
+                postData.remark = remarkObj;
+                //辅助开箱的链接
+                var url = root + "Shop/pages/AssistOpenBox.aspx?OrderNo=" + orderInfo.code;
+
+                var sendFlag = false;
+                var openidList = context.Query<WeiChatPushRole>().LeftJoin<User>((a, b) => a.phone.Equals(b.phone))
+                        .Where((a, b) => a.failorder == true)
+                        .Select((a, b) => b.weichat)
+                        .ToList();
+
+                foreach (var openid in openidList)
+                {
+                    Log.WriteLog("微信推送", "openId:", openid);
+                    var responseBool = Send_WX_Message(postData, openid, tempId);
+                    Log.WriteLog("微信推送", "orderno:", orderInfo.code);
+                    Log.WriteLog("微信推送", "responseBool:", responseBool);
+                    //只要有一个发送成功则改为发送成功
+                    if (responseBool)
+                    {
+                        sendFlag = true;
+                    }
+                    else
+                    {
+                        //如果发送失败，则存入到另外一张表，由另外一个线程继续发送
+                        context.Insert(new WeiChatPushFailLog
+                        {
+                            createtime = DateTime.Now,
+                            issuccess = false,
+                            openid = openid,
+                            ordercode = orderInfo.code
+                        });
+                    }
+                }
+                var orderInfoDB = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderInfo.code));
+                orderInfoDB.has_push = sendFlag;
+                if (context.Update(orderInfo) > 0)
+                {
+                    Log.WriteLog("微信推送", "订单：" + orderInfo.code, "发送模板成功!!!");
+                }
+                else
+                {
+                    Log.WriteLog("微信推送", "订单：" + orderInfo.code, "更新发送状态失败");
+                }
+                ;
+            }
+            catch (Exception ex)
+            {
+                Log.WriteLog("微信推送", "数据异常：" + ex.Message, ";异常位置：" + ex.StackTrace);
+            }
+        }
+
         #endregion
 
         #region 统计推送
@@ -366,16 +478,15 @@ a.订单编号
                 if (DateTime.Now.Hour == pushHour && DateTime.Now.Minute == 59)
                 {
                     Log.WriteLog("微信推送", "进入了统计推送：", "");
-                    var orderSql = string.Format("select count(1) as count, sum(price1) as amount from order_info where paid = true and date BETWEEN DATE_SUB(curdate(),INTERVAL 1 DAY) and DATE_SUB(curdate(),INTERVAL 0 DAY);");
-                    DataTable orderDt = context.Session.ExecuteDataTable(orderSql);
-                    //Log.WriteLog("微信推送", "selectSql:", selectSql);
-                    
-                    var title = "尊敬的管理员，昨日销售业绩如下：";
-                    var keyword1 = DateTime.Now.AddDays(-1).ToString("yyyy年MM月dd日");
-                    var keyword2 = string.Format("销售商品共 {1}件，总计 {0}元", orderDt.Rows[0]["amount"].ObjToDecimal(0), orderDt.Rows[0]["count"].ObjToInt(0));
+                    var yestodyList = context.Query<OrderInfo>().Where(o => o.date.Date == DateTime.Now.AddDays(-1).Date).ToList();
+                    var monthList = context.Query<OrderInfo>().Where(o => o.date.Year == DateTime.Now.Year && o.date.Month == DateTime.Now.Month && o.date.Day >= 1).ToList();
+
+                    var title = "尊敬的管理员，销售业绩如下：";
+                    var keyword1 = "截止:" + DateTime.Now.AddDays(-1).ToString("yyyy年MM月dd日");
+                    var keyword2 = string.Format("昨日销售共 {1}件，总计 {0}元；本月销售共 {2}件，总计 {3}元", yestodyList.Sum(o => o.price1).ObjToInt(0).CentToRMB(0), yestodyList.Count, monthList.Count, monthList.Sum(o => o.price1).ObjToInt(0).CentToRMB(0));
                     var keyword3 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     var remark = "感谢您的使用";
-                    var tempId = "hO8PfzQOEve1m_XXRlkmJot0S-u5ca3_XodnymasYhc";
+                    var tempId = "hFOlM8KsC_-FCAg7oaqWQKlj68fT3K7d-F0bW6WbyCc";
                     var color = "#173177";
 
                     dynamic postData = new ExpandoObject();
@@ -406,13 +517,14 @@ a.订单编号
                     postData.keyword3 = keyword3Obj;
                     postData.remark = remarkObj;
 
-                    foreach (string openId in GetOpenId((int)EnumCommon.推送权限.业绩统计推送))
+                    var pushAuthList = context.Query<WeiChatPushRole>().LeftJoin<User>((a, b) => a.phone.Equals(b.phone))
+                   .Where((a, b) => a.statistics == true)
+                   .Select((a, b) => b.weichat)
+                   .ToList();
+                    foreach (string pushAuth in pushAuthList)
                     {
-                        var returnState = Send_WX_Message(postData, openId, tempId);
-                        if (true)
-                        {
-
-                        }
+                        var returnState = Send_WX_Message(postData, pushAuth, tempId);
+                        Log.WriteLog("微信推送", "returnState：", returnState);
                     };
                 }
             }
@@ -424,6 +536,7 @@ a.订单编号
         }
         #endregion
 
+        //TODO
         #region 系统异常推送
 
         protected void SystemExceptionPush()
@@ -529,10 +642,11 @@ a.订单编号
 
         #endregion
 
+        //TODO
         #region 补货推送
         protected void FillUpGoodsPush()
         {
-
+            var pushList = context.Query<Cabinet>().LeftJoin<Cell>((a, b) => a.mac.Equals(b.mac));
             var selectSql = string.Format(@"select  [仓库id],[酒店名称],[补货房间数],[补货商品数],[openid] from View_FillUpGoodsLog where 仓库id in(select top 1 仓库id from WP_FillUpGoodsLog where 是否推送 = 0 and 补货商品数 > 10 and 仓库id in(select 仓库id from View_FillUpGoodsLog))");
             var selectDt = comfun.GetDataTableBySQL(selectSql);
             foreach (DataRow selectDr in selectDt.Rows)
@@ -544,7 +658,7 @@ a.订单编号
                 var keyword2 = selectDr["补货房间数"].ObjToInt(0) + " 间";
                 var keyword3 = selectDr["补货商品数"].ObjToInt(0) + "件";
                 var remark = "截止至 " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss").Substring(0, 10) + " 08:00:00;\n请尽快安排补货任务;";
-                var tempId = "8A2OZkYnac3yv0oO8iNkSz_lwfp_clVfagm_AQpFB_o";
+                var tempId = "stRAyN6BY72uMxT2C1RxJVnNoXcJPI5oukekHCSzF0g";
                 dynamic postData = new ExpandoObject();
                 dynamic first = new ExpandoObject();
                 first.value = title;

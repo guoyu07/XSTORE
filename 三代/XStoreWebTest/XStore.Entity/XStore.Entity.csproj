@@ -88,6 +88,8 @@
     <Compile Include="UserHotel.cs" />
     <Compile Include="UserRole.cs" />
     <Compile Include="UserWeiChat.cs" />
+    <Compile Include="WeiChatPushFailLog.cs" />
+    <Compile Include="WeiChatPushRole.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
