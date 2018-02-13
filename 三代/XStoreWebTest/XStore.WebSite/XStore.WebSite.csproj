@@ -241,6 +241,7 @@
     <Content Include="Content\Images\null.png" />
     <Content Include="Content\Images\paymentFail.png" />
     <Content Include="Content\Images\paymentSuccessed.png" />
+    <Content Include="Content\Images\payWaiting.png" />
     <Content Include="Content\Images\pickUp.png" />
     <Content Include="Content\Images\pickUp_on.png" />
     <Content Include="Content\Images\room-full.png" />
@@ -273,6 +274,7 @@
     <Content Include="Content\Opreation\deliveryNote.css" />
     <Content Include="Scripts\mui.js" />
     <Content Include="Scripts\mui.picker.min.js" />
+    <Content Include="Scripts\Util.js" />
     <Content Include="WebSite\Information\Achievement.aspx" />
     <Content Include="WebSite\Information\BaseInfo.aspx" />
     <Content Include="WebSite\Information\Employee.aspx" />
@@ -363,11 +365,14 @@
     <Content Include="Content\fonts\iconfont.woff" />
     <Content Include="Content\fonts\mui.ttf" />
     <Content Include="WebSite\Order\AliNotify.aspx" />
+    <Content Include="WebSite\Order\Alipay.aspx" />
+    <Content Include="WebSite\Order\AliReturn.aspx" />
     <Content Include="WebSite\Order\MyOrder.aspx" />
     <Content Include="WebSite\Order\PayCenter.aspx" />
     <Content Include="WebSite\Order\PayFail.aspx" />
     <Content Include="WebSite\Order\PaySuccess.aspx" />
     <Content Include="WebSite\Order\PayWaiting.aspx" />
+    <Content Include="WebSite\Order\Alipay.html" />
     <Content Include="WebSite\Order\WeiXinNotify.aspx" />
     <Content Include="WebSite\_Ascx\CenterFooter.ascx" />
     <Content Include="WebSite\_Ascx\Footer.ascx" />
@@ -411,6 +416,7 @@
     <Content Include="WebSite\_Ashx\BindAccount.ashx" />
     <Content Include="WebSite\_Ashx\UnBindAccount.ashx" />
     <Content Include="WebSite\_Ashx\ChangePassword.ashx" />
+    <Content Include="WebSite\_Ashx\Alipay.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -679,6 +685,20 @@
     <Compile Include="WebSite\Order\AliNotify.aspx.designer.cs">
       <DependentUpon>AliNotify.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebSite\Order\Alipay.aspx.cs">
+      <DependentUpon>Alipay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Order\Alipay.aspx.designer.cs">
+      <DependentUpon>Alipay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Order\AliReturn.aspx.cs">
+      <DependentUpon>AliReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Order\AliReturn.aspx.designer.cs">
+      <DependentUpon>AliReturn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebSite\Order\MyOrder.aspx.cs">
       <DependentUpon>MyOrder.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -742,6 +762,9 @@
     </Compile>
     <Compile Include="WebSite\_Ascx\MangeCenterFooter.ascx.designer.cs">
       <DependentUpon>MangeCenterFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\_Ashx\Alipay.ashx.cs">
+      <DependentUpon>Alipay.ashx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\_Ashx\BindAccount.ashx.cs">
       <DependentUpon>BindAccount.ashx</DependentUpon>

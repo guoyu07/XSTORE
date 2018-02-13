@@ -10,7 +10,7 @@ namespace XStore.WebSite
     {
         #region 订单信息
         private OrderInfo _orderInfo;
-        protected OrderInfo orderInfo
+        public OrderInfo orderInfo
         {
             get
             {

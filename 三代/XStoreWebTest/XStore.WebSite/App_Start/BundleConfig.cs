@@ -105,6 +105,12 @@ namespace XStore.WebSite
              ));
             #endregion
 
+            #region 支付宝支付
+            bundles.Add(new ScriptBundle("~/bundles/paysuccess/js").Include(
+             "~/Scripts/Util.js"
+             ));
+            #endregion
+
             #region 开箱失败
             bundles.Add(new StyleBundle("~/bundles/payfail/css").Include(
             "~/Content/Order/payFail.css"

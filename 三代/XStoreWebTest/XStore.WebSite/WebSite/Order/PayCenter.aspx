@@ -46,18 +46,24 @@
             });
         }
         function callpay() {
-            if (typeof WeixinJSBridge == "undefined") {
-                if (document.addEventListener) {
-                    document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
-                }
-                else if (document.attachEvent) {
-                    document.attachEvent('WeixinJSBridgeReady', jsApiCall);
-                    document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
-                }
+            if ($("#zfbPay").is(":checked")) {
+                window.location.href = 'Alipay.html?order=' + '<%=orderInfo.code %>' + '+&money=' + '<%=orderInfo.price1.ObjToInt(0).CentToRMB(0) %>';
             }
             else {
-                jsApiCall();
+                if (typeof WeixinJSBridge == "undefined") {
+                    if (document.addEventListener) {
+                        document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+                    }
+                    else if (document.attachEvent) {
+                        document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                        document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+                    }
+                }
+                else {
+                    jsApiCall();
+                }
             }
+           
         }
     </script>
 </head>
