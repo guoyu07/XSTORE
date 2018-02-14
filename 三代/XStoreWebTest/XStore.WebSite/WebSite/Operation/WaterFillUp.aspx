@@ -9,7 +9,7 @@
     <title><%:Title %></title>
     <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
     <link href="/Content/fonts/iconfont.css" rel="stylesheet" />
-    <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle")%>
+    <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/paycenter/css")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs")%>
 </head>
 <body>

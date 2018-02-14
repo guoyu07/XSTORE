@@ -62,7 +62,6 @@ namespace XStore.WebSite.WebSite.Operation
                 PageInit();
                 OpenBox();
             }
-
         }
         protected void PageInit()
         {
