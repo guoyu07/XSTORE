@@ -142,6 +142,15 @@
             <param name="joinInfo"></param>
             <returns></returns>
         </member>
+        <member name="M:Chloe.IDbContext.SqlQuery``1(System.String,System.Object)">
+            <summary>
+            dbContext.SqlQuery&lt;User&gt;("select * from Users where Id=@Id", new { Id = 1 }).ToList();
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="sql"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
         <member name="M:Chloe.IDbContext.Insert``1(System.Linq.Expressions.Expression{System.Func{``0}})">
             <summary>
             context.Insert&lt;User&gt;(() => new User() { Name = "lu", Age = 18, Gender = Gender.Woman, CityId = 1, OpTime = DateTime.Now })

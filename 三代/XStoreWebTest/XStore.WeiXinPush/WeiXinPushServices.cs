@@ -15,6 +15,9 @@ using XStore.WebSite.DBFactory;
 using Chloe;
 using XStore.Entity;
 using static XStore.Entity.Enum;
+using Newtonsoft.Json.Linq;
+using XStore.Common;
+using XStore.Entity.Model;
 
 namespace WeiXinPush
 {
@@ -43,19 +46,20 @@ namespace WeiXinPush
             {
                 context = new MySqlContext(new MySqlConnectionFactory(connString));
 
-                _timer = new Timer(15000);
+                _timer = new Timer(1000);
                 _timer.Elapsed += timer_Elapsed;
                 _timer.Start();
 
-                __timer = new Timer(10000);
+                __timer = new Timer(1000);
                 __timer.Elapsed += _timer_Elapsed;
                 __timer.Start();
 
-                _exceptionTimer = new Timer(1000);
-                _exceptionTimer.Elapsed += _exceptionTimer_Elapsed;
-                _exceptionTimer.Start();
+                //TODO
+                //_exceptionTimer = new Timer(1000);
+                //_exceptionTimer.Elapsed += _exceptionTimer_Elapsed;
+                //_exceptionTimer.Start();
 
-                _openBoxTimer = new Timer(5000);
+                _openBoxTimer = new Timer(10000);
                 _openBoxTimer.Elapsed += _openboxTimer_Elapsed;
                 _openBoxTimer.Start();
 
@@ -63,11 +67,15 @@ namespace WeiXinPush
                 _fillUpTimer.Elapsed += _fillUpTimer_Elapsed;
                 _fillUpTimer.Start();
 
+                //TODO
                 //_fixedTimer = new Timer(4000);
                 //_fixedTimer.Elapsed += _fixedTime_Elapsed;
                 //_fixedTimer.Start();
+
                 _failpushTimer = new Timer(1000);
                 _failpushTimer.Elapsed += _failpushTimer_Elapsed;
+                _failpushTimer.Start();
+
 
             }
             catch (Exception ex)
@@ -78,29 +86,15 @@ namespace WeiXinPush
         //检测开箱失败订单，兵进行重新开箱操作
         private void _openboxTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
-
-            //            var selectSql = string.Format(@"select 订单编号,mac, LEFT(位置,LEN(位置)-1) as 位置 from (
-            //select top 1 
-            //(select isnull(箱子MAC,'') from WP_库位表 where id = a.库位id) as mac,
-            //(select convert(nvarchar(2),位置-1)+',' from WP_订单子表 where 订单编号 = a.订单编号 FOR XML PATH('')) as 位置,
-            //a.订单编号
-            // from WP_订单子表 a left join WP_订单表 b on a.订单编号 = b.订单编号 where b.state in (2,5) and (a.是否开箱 = 0 or a.是否开箱 is null) and datediff(MINUTE,b.下单时间,getdate()) <= 30
-            //) as c");
+            _openBoxTimer.Stop();
             var orderInfo = context.Query<OrderInfo>()
-                .FirstOrDefault(o =>o.paid==true && o.delivered == false && o.date.AddMinutes(30) > DateTime.Now );
+                .FirstOrDefault(o => o.paid == true && o.delivered == false && o.date.AddMinutes(30) > DateTime.Now);
             if (orderInfo != null)
             {
-                OpenBox(orderInfo.code.ObjToStr(), orderInfo.cabinet_mac.ObjToStr(), orderInfo.pos.ObjToStr());
+                var rbh = new RemoteBoxHelper();
+                rbh.OpenRemoteBox(orderInfo.cabinet_mac.ObjToStr(), orderInfo.code.ObjToStr(), orderInfo.pos.ObjToStr());
             }
-            //DataTable selectDt = comfun.GetDataTableBySQL(selectSql);
-            //Log.WriteLog("_openboxTimer_Elapsed", "selectDtCount：" + selectDt.Rows.Count, "------");
-            //if (selectDt.Rows.Count != 0)
-            //{
-            //    var orderNo = selectDt.Rows[0]["订单编号"].ToString();
-            //    var position = selectDt.Rows[0]["位置"].ToString();
-            //    var mac = selectDt.Rows[0]["mac"].ToString();
-               
-            //}
+            _openBoxTimer.Start();
         }
         //private void _fixedTime_Elapsed(object sender, ElapsedEventArgs e)
         //{
@@ -120,7 +114,9 @@ namespace WeiXinPush
             {
                 if (DateTime.Now.Second == 0)
                 {
+                    _fillUpTimer.Stop();
                     FillUpGoodsPush();
+                    _fillUpTimer.Start();
                 }
             }
         }
@@ -132,18 +128,23 @@ namespace WeiXinPush
 
         private void _timer_Elapsed(object sender, ElapsedEventArgs e)
         {
+            __timer.Stop();
             SummarizingOrderInfoPush();
+            __timer.Start();
         }
 
         private void timer_Elapsed(object sender, ElapsedEventArgs e)
         {
+            _timer.Stop();
             OrderInfoPush();
             FailOrderPush();
+            _timer.Start();
         }
 
         #region 推送失败后的重复推送
         private void _failpushTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
+            _failpushTimer.Stop();
             var pushInfo = context.Query<WeiChatPushFailLog>().FirstOrDefault(o => o.issuccess == false && o.createtime.AddMinutes(30) > DateTime.Now);
             if (pushInfo != null)
             {
@@ -216,14 +217,16 @@ namespace WeiXinPush
                 Log.WriteLog("微信推送", "responseBool:", pushInfo.issuccess.ObjToStr());
                 context.Update(pushInfo);
             }
-           
+            _failpushTimer.Start();
+
+
         }
         #endregion
 
         protected override void OnStop()
         {
             _timer.Stop();
-            _timer.Close();
+            //_timer.Close();
             Log.WriteLog("微信推送", "服务器停止时间", "服务器已停止");
         }
 
@@ -314,7 +317,7 @@ namespace WeiXinPush
                     Log.WriteLog("微信推送", "openId:", openid);
                     var responseBool = Send_WX_Message(postData, openid, tempId);
                     Log.WriteLog("微信推送", "orderno:", orderInfo.code);
-                    Log.WriteLog("微信推送", "responseBool:", responseBool);
+                    Log.WriteLog("微信推送", "responseBool:", responseBool.ToString());
                     //只要有一个发送成功则改为发送成功
                     if (responseBool)
                     {
@@ -332,22 +335,26 @@ namespace WeiXinPush
                         });
                     }
                 }
-                var orderInfoDB = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderInfo.code));
-                orderInfoDB.has_push = sendFlag;
-                if (context.Update(orderInfo) > 0)
+                if (openidList.Count > 0)
                 {
-                    Log.WriteLog("微信推送", "订单：" + orderInfo.code, "发送模板成功!!!");
-                }
-                else
-                {
-                    Log.WriteLog("微信推送", "订单：" + orderInfo.code, "更新发送状态失败");
-                }
+                    var orderInfoDB = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderInfo.code));
+                    orderInfoDB.has_push = sendFlag;
+                    if (context.Update(orderInfoDB) > 0)
+                    {
+                        Log.WriteLog("微信推送", "订单：" + orderInfo.code, "发送模板成功!!!");
+                    }
+                    else
+                    {
+                        Log.WriteLog("微信推送", "订单：" + orderInfo.code, "更新发送状态失败");
+                    }
                 ;
+                }
+               
              
             }
             catch (Exception ex)
             {
-                Log.WriteLog("微信推送", "数据异常：" + ex.Message, ";异常位置：" + ex.StackTrace);
+                Log.WriteLog("微信推送", "数据异常：" + ex.Message, ";异常位置：" + ex.StackTrace + ";内部异常信息：" + ex.InnerException.Message + ";内部异常位置：" + ex.InnerException.StackTrace);
 
             }
         }
@@ -426,13 +433,12 @@ namespace WeiXinPush
                         .Where((a, b) => a.failorder == true)
                         .Select((a, b) => b.weichat)
                         .ToList();
-
                 foreach (var openid in openidList)
                 {
                     Log.WriteLog("微信推送", "openId:", openid);
                     var responseBool = Send_WX_Message(postData, openid, tempId);
                     Log.WriteLog("微信推送", "orderno:", orderInfo.code);
-                    Log.WriteLog("微信推送", "responseBool:", responseBool);
+                    Log.WriteLog("微信推送", "responseBool:", responseBool.ToString());
                     //只要有一个发送成功则改为发送成功
                     if (responseBool)
                     {
@@ -450,21 +456,25 @@ namespace WeiXinPush
                         });
                     }
                 }
-                var orderInfoDB = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderInfo.code));
-                orderInfoDB.has_push = sendFlag;
-                if (context.Update(orderInfo) > 0)
+                if (openidList.Count > 0)
                 {
-                    Log.WriteLog("微信推送", "订单：" + orderInfo.code, "发送模板成功!!!");
-                }
-                else
-                {
-                    Log.WriteLog("微信推送", "订单：" + orderInfo.code, "更新发送状态失败");
-                }
+                    var orderInfoDB = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(orderInfo.code));
+                    orderInfoDB.has_push = sendFlag;
+                    if (context.Update(orderInfoDB) > 0)
+                    {
+                        Log.WriteLog("微信推送", "订单：" + orderInfo.code, "发送模板成功!!!");
+                    }
+                    else
+                    {
+                        Log.WriteLog("微信推送", "订单：" + orderInfo.code, "更新发送状态失败");
+                    }
                 ;
+                }
+              
             }
             catch (Exception ex)
             {
-                Log.WriteLog("微信推送", "数据异常：" + ex.Message, ";异常位置：" + ex.StackTrace);
+                Log.WriteLog("微信推送", "数据异常：" + ex.Message, ";异常位置：" + ex.StackTrace + ";内部异常信息：" + ex.InnerException.Message + ";内部异常位置：" + ex.InnerException.StackTrace);
             }
         }
 
@@ -475,7 +485,8 @@ namespace WeiXinPush
         {
             try
             {
-                if (DateTime.Now.Hour == pushHour && DateTime.Now.Minute == 59)
+               
+                if (DateTime.Now.Hour == pushHour && DateTime.Now.Minute == 59&&DateTime.Now.Second == 59)
                 {
                     Log.WriteLog("微信推送", "进入了统计推送：", "");
                     var yestodyList = context.Query<OrderInfo>().Where(o => o.date.Date == DateTime.Now.AddDays(-1).Date).ToList();
@@ -524,13 +535,13 @@ namespace WeiXinPush
                     foreach (string pushAuth in pushAuthList)
                     {
                         var returnState = Send_WX_Message(postData, pushAuth, tempId);
-                        Log.WriteLog("微信推送", "returnState：", returnState);
+                        Log.WriteLog("微信推送", "returnState：", returnState.ToString());
                     };
                 }
             }
             catch (Exception ex)
             {
-                Log.WriteLog("微信推送", "数据异常：" + ex.Message, ";异常位置：" + ex.StackTrace);
+                Log.WriteLog("微信推送", "数据异常：" + ex.Message, ";异常位置：" + ex.StackTrace + ";内部异常信息：" + ex.InnerException.Message + ";内部异常位置：" + ex.InnerException.StackTrace);
             }
 
         }
@@ -642,21 +653,48 @@ namespace WeiXinPush
 
         #endregion
 
-        //TODO
         #region 补货推送
         protected void FillUpGoodsPush()
         {
-            var pushList = context.Query<Cabinet>().LeftJoin<Cell>((a, b) => a.mac.Equals(b.mac));
-            var selectSql = string.Format(@"select  [仓库id],[酒店名称],[补货房间数],[补货商品数],[openid] from View_FillUpGoodsLog where 仓库id in(select top 1 仓库id from WP_FillUpGoodsLog where 是否推送 = 0 and 补货商品数 > 10 and 仓库id in(select 仓库id from View_FillUpGoodsLog))");
-            var selectDt = comfun.GetDataTableBySQL(selectSql);
-            foreach (DataRow selectDr in selectDt.Rows)
+           
+            if (CacheHelper.GetCache("FillUpList")==null)
+            {
+                var requestUrl = "http://139.199.160.173:9119/test/hotel?hotelId=0";
+                var response = JsonConvert.DeserializeObject<FillUpResponse>(Utils.HttpGet(requestUrl));
+                if (response.operationStatus.Equals("SUCCESS"))
+                {
+                    CacheHelper.SetCache("FillUpList", response.operationMessage, new TimeSpan(12, 0, 0));
+                }
+                else
+                {
+                    return;
+                }
+            }
+            var list = (List<HotelQuery>)CacheHelper.GetCache("FillUpList");
+            var nowHotel = list.FirstOrDefault(o => o.hasPush == false);
+            var pushAuthList = context.Query<WeiChatPushRole>().LeftJoin<User>((a, b) => a.phone.Equals(b.phone))
+                 .Where((a, b) => a.successorder == true)
+                 .Select((a, b) => b.weichat)
+                 .ToList();
+
+            var hotelRoleList = context.Query<UserHotel>()
+                .LeftJoin<User>((a, b) => a.user_username.Equals(b.username))
+                .LeftJoin<UserRole>((a, b, c) => b.username.Equals(c.username))
+                .Where((a, b, c) => a.hotels_id == nowHotel.hotelId&&(c.role_id == (int)UserRoleEnum.经理 || c.role_id == (int)UserRoleEnum.区域经理))
+                .Select((a, b, c) => b.weichat).ToList();
+            var openidList = new List<string>();
+            openidList.AddRange(pushAuthList);
+            openidList.AddRange(hotelRoleList);
+            openidList = openidList.GroupBy(o => o).Select(o => o.Key).ToList();
+            var hotelInfo = context.Query<Hotel>().FirstOrDefault(o => o.id == nowHotel.hotelId);
+         
+            foreach (var openId in openidList)
             {
                 var color = "#865FC5";
-                var openId = selectDr["openid"].ObjToStr();
                 var title = string.Format("尊敬的酒店经理，今日补货信息如下。");
-                var keyword1 = selectDr["酒店名称"].ObjToStr();
-                var keyword2 = selectDr["补货房间数"].ObjToInt(0) + " 间";
-                var keyword3 = selectDr["补货商品数"].ObjToInt(0) + "件";
+                var keyword1 = hotelInfo.simple_name.ObjToStr();
+                var keyword2 = nowHotel.cabNum + " 间";
+                var keyword3 = nowHotel.proNum + "件";
                 var remark = "截止至 " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss").Substring(0, 10) + " 08:00:00;\n请尽快安排补货任务;";
                 var tempId = "stRAyN6BY72uMxT2C1RxJVnNoXcJPI5oukekHCSzF0g";
                 dynamic postData = new ExpandoObject();
@@ -685,23 +723,14 @@ namespace WeiXinPush
                 postData.keyword2 = keyword2Obj;
                 postData.keyword3 = keyword3Obj;
                 postData.remark = remarkObj;
-                //Log.WriteLog("微信推送", "postData", JsonConvert.SerializeObject(postData));
                 var responseBool = Send_WX_Message(postData, openId, tempId);
 
             }
-            if (selectDt.Rows.Count > 0)
-            {
-                string updateOrderSql = string.Format("update WP_FillUpGoodsLog set 是否推送 = 1 where 仓库id = {0}", selectDt.Rows[0]["仓库id"].ObjToInt(0));
-                var updateBool = comfun.UpdateBySQL(updateOrderSql);
-                if (updateBool == 0)
-                {
-                    Log.WriteLog("微信推送", "酒店id：" + selectDt.Rows[0]["仓库id"], "更新发送状态失败");
-                }
-                else
-                {
-                    Log.WriteLog("微信推送", "酒店id：" + selectDt.Rows[0]["订单编号"], "发送模板成功!!!");
-                }
-            }
+            var model = list.FirstOrDefault(o => o.hotelId == nowHotel.hotelId);
+            model.hasPush = true;
+            CacheHelper.SetCache("FillUpList",list, new TimeSpan(12, 0, 0));
+            Log.WriteLog("微信推送", "酒店id：" + nowHotel.hotelId, "更新发送状态失败");
+           
 
         }
 
@@ -770,9 +799,9 @@ namespace WeiXinPush
 
                     string postData = JsonConvert.SerializeObject(msg);
                     //Log.WriteLog("微信推送", "模板发送postData:", JsonConvert.SerializeObject(postData));
-                    string result = webRequestPost(postUrl, postData);
-                    //Log.WriteLog("微信推送", "result:", result);
-                    if (result.Contains("ok"))
+                    JObject result = JsonConvert.DeserializeObject<JObject>(webRequestPost(postUrl, postData));
+                    Log.WriteLog("微信推送", "result:", JsonConvert.SerializeObject(result));
+                    if (result["errcode"].ObjToStr().Equals("0"))
                     {
                         return true;
                     }
@@ -847,21 +876,7 @@ namespace WeiXinPush
             }
         }
 
-        private bool OpenBox(string orderNo, string mac, string postion_list, byte type = 0x01)
-        {
-            var rbh = new RemoteBoxHelper();
-            try
-            {
-                rbh.OpenRemoteBox("" + mac + "", orderNo.Substring(1, orderNo.Length - 1), "" + postion_list + "", type);
-                return true;
-            }
-            catch (Exception ex)
-            {
-                Log.WriteLog("页面：qaBoxCheck", "方法：qaBoxCheck", "异常信息：" + ex.Message);
-                return false;
-            }
-
-        }
+        
 
     }
 
