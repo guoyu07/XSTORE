@@ -362,7 +362,7 @@ a.订单编号
                     if (selectDt.Rows.Count == 0)
                     {
                         var orderSql =
-                    @"select sum(总金额) as 金额,sum(数量) as 销量 from WP_订单表 LEFT JOIN WP_订单子表 on WP_订单表.订单编号 = WP_订单子表.订单编号 where convert(nvarchar(10),WP_订单表.下单时间,120) = convert(nvarchar(10),dateadd(day,-1,getdate()),120) and state in(3,5)  ";
+                    @"select sum(WP_订单子表.价格) as 金额,sum(数量) as 销量 from WP_订单表 LEFT JOIN WP_订单子表 on WP_订单表.订单编号 = WP_订单子表.订单编号 where convert(nvarchar(10),WP_订单表.下单时间,120) = convert(nvarchar(10),dateadd(day,-1,getdate()),120) and state in(3,5)";
                         //Log.WriteLog("微信推送", "selectSql:", selectSql);
                         var orderDt = comfun.GetDataTableBySQL(orderSql);
                         var insertSql = string.Format(@"INSERT INTO [dbo].[WP_StatisticsLog]([TotalAmount],SaleNum)VALUES({0},{1})", orderDt.Rows[0]["金额"].ObjToDecimal(0), orderDt.Rows[0]["销量"].ObjToInt(0));

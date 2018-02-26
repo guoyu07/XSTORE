@@ -102,3 +102,14 @@ X:\Git\二代\X_STORE\Common.AliDayu\obj\Debug\Common.AliDayu.csprojResolveAssem
 X:\Git\二代\X_STORE\Common.AliDayu\obj\Debug\Common.AliDayu.csproj.CoreCompileInputs.cache
 X:\Git\二代\X_STORE\Common.AliDayu\obj\Debug\Common.AliDayu.dll
 X:\Git\二代\X_STORE\Common.AliDayu\obj\Debug\Common.AliDayu.pdb
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\bin\Debug\Common.AliDayu.dll
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\bin\Debug\Common.AliDayu.pdb
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\bin\Debug\DTcms.Common.dll
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\bin\Debug\Newtonsoft.Json.dll
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\bin\Debug\TopSdk.dll
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\bin\Debug\NPOI.dll
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\bin\Debug\DTcms.Common.pdb
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\obj\Debug\Common.AliDayu.csprojResolveAssemblyReference.cache
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\obj\Debug\Common.AliDayu.csproj.CoreCompileInputs.cache
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\obj\Debug\Common.AliDayu.dll
+E:\Git\XSTORE\二代\X_STORE\Common.AliDayu\obj\Debug\Common.AliDayu.pdb
