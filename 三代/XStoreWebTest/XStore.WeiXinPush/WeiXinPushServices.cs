@@ -370,7 +370,7 @@ namespace WeiXinPush
                     .LeftJoin<Product>((a, b) => a.product == b.id)
                     .LeftJoin<Cabinet>((a, b, c) => a.cabinet_mac.Equals(c.mac))
                     .LeftJoin<Hotel>((a, b, c, d) => c.hotel == d.id)
-                    .Where((a, b, c, d) => a.paid == true && a.delivered == false && (a.has_push.HasValue == false || a.has_push.Value == false) && a.date.AddMinutes(30) > DateTime.Now)
+                    .Where((a, b, c, d) => a.paid == true && a.delivered == false && (a.has_push.HasValue == false || a.has_push.Value == false) && a.date.AddMinutes(30) >= DateTime.Now && a.date.AddSeconds(30)<=DateTime.Now)
                     .Select((a, b, c, d) => new
                     {
                         hotelid = d.id,
@@ -391,7 +391,7 @@ namespace WeiXinPush
                 var keyword1 = orderInfo.code;
                 var keyword2 = orderInfo.name;
                 var keyword3 = 1 + "件";
-                var keyword4 = orderInfo.price1 + " 元";
+                var keyword4 = orderInfo.price1.ObjToInt(0).CentToRMB(0) + " 元";
                 var remark = "特此告知！！！";
                 var tempId = "HfV9-ClzJoRJ_2ubWRrw1y3qy9IaZBnwFOt09QLRmHY";
                 dynamic postData = new ExpandoObject();

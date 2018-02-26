@@ -22,3 +22,11 @@ X:\Git\XStore\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.cspro
 X:\Git\XStore\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.csproj.CoreCompileInputs.cache
 X:\Git\XStore\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.dll
 X:\Git\XStore\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.pdb
+E:\Git\XSTORE\三代\XStoreWebTest\XStore.Common\bin\Release\XStore.Common.dll
+E:\Git\XSTORE\三代\XStoreWebTest\XStore.Common\bin\Release\XStore.Common.pdb
+E:\Git\XSTORE\三代\XStoreWebTest\XStore.Common\bin\Release\Newtonsoft.Json.dll
+E:\Git\XSTORE\三代\XStoreWebTest\XStore.Common\bin\Release\Newtonsoft.Json.xml
+E:\Git\XSTORE\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.csprojResolveAssemblyReference.cache
+E:\Git\XSTORE\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.csproj.CoreCompileInputs.cache
+E:\Git\XSTORE\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.dll
+E:\Git\XSTORE\三代\XStoreWebTest\XStore.Common\obj\Release\XStore.Common.pdb

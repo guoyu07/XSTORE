@@ -50,11 +50,6 @@ namespace XStore.WebSite.WebSite.Login
                     Response.Redirect(Constant.LoginDic + "NoAuth.aspx");
                     return;
                 }
-                //if ((UserRoleEnum)roleInfo.role_id.ObjToInt(0) == UserRoleEnum.测试员)
-                //{
-                //    Response.Redirect(string.Format(Constant.OperationDic+"QaCheck.aspx?boxmac={0}", boxMac));
-                //    return;
-                //}
                 
                 switch ((UserRoleEnum)roleInfo.role_id.ObjToInt(0))
                 {

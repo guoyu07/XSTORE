@@ -143,14 +143,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeiXinPush.exe" size="66560">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WeiXinPush.exe" size="67072">
       <assemblyIdentity name="WeiXinPush" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WZwNyCfqr9eT/IJDnu1uxgh/6wSCWMO8QdrRqkQtkP8=</dsig:DigestValue>
+        <dsig:DigestValue>kLMCBanbZ4L2eDBX3/D/BcQmchu2LwjX+bwYi/Q696Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -162,7 +162,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SCYXOgQkChWxO4+AXgcerg9LLZI+eArP2C1G1Pkd8RU=</dsig:DigestValue>
+        <dsig:DigestValue>KMJQS2ne3QWl/5GpholjH6fhPZ5iwYXSPqi0grqG1ig=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -174,7 +174,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oRYJMEZ+FlEheZic3jbr2rqH/viUP44FYKgAfvP00U4=</dsig:DigestValue>
+        <dsig:DigestValue>cALKEUnOD/aQqXd5ve8PQjzJygG9dWzY0SvCf5E7TaQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -28,6 +28,6 @@ namespace XStore.WebSite.WebSite.Information {
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::XStore.WebSite.WebSite._Ascx.MangeCenterFooter UserFooter;
+        protected global::XStore.WebSite.WebSite._Ascx.CenterFooter UserFooter;
     }
 }

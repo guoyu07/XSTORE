@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="BaseInfo.aspx.cs" Inherits="XStore.WebSite.WebSite.Information.BaseInfo" %>
-<%@ Register Src="~/WebSite/_Ascx/MangeCenterFooter.ascx" TagPrefix="uc" TagName="Footer" %>
+<%@ Register Src="~/WebSite/_Ascx/CenterFooter.ascx" TagPrefix="uc" TagName="Footer" %>
 
 <!DOCTYPE html>
 

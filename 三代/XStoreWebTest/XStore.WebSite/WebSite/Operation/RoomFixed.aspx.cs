@@ -147,6 +147,11 @@ namespace XStore.WebSite.WebSite.Operation
         #region 补货完成
         protected void finish_button_Click(object sender, EventArgs e)
         {
+            if (ViewState["BackNo"] == null)
+            {
+                MessageBox.Show(this, "system_alert", "无需补货");
+                return;
+            }
             var backIdList = ((List<int>)ViewState["BackNo"]).Select(o=>o.ObjToStr()).ToList();
             var requestUrl = string.Format(Constant.YunApi + "test/back/open?backOrderId={0}", backIdList.Aggregate((x, y) => x + "," + y));
             LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "finishBackNoRequestUrl：" + requestUrl);

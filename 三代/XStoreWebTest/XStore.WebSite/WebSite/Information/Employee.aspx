@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Employee.aspx.cs" Inherits="XStore.WebSite.WebSite.Information.Employee" %>
-<%@ Register Src="~/WebSite/_Ascx/MangeCenterFooter.ascx" TagPrefix="uc" TagName="Footer" %>
+<%@ Register Src="~/WebSite/_Ascx/CenterFooter.ascx" TagPrefix="uc" TagName="Footer" %>
 <%@ Import Namespace="XStore.Entity" %>
 <!DOCTYPE html>
 

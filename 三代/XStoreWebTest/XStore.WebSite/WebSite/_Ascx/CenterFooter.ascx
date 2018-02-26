@@ -14,7 +14,7 @@
             </a>
         </li>
         <li style="width: 50%;">
-            <a href='<%=Constant.JsCenterDic+"EmployeeCenter.aspx" %>' name="con">
+            <a href='<%=Constant.JsCenterDic+CenterPage %>' name="con">
                 <div class="index_bot">
                     <img class="picOff" src="/Content/Images/myself.png" alt="" />
                     <img class="picOn" src="/Content/Images/myself_on.png" />
@@ -22,7 +22,6 @@
                 <p>我的</p>
             </a>
         </li>
-
     </ul>
 </nav>
     </div>

@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Achievement.aspx.cs" Inherits="XStore.WebSite.WebSite.Information.Achievement" %>
 
-<%@ Register Src="~/WebSite/_Ascx/MangeCenterFooter.ascx" TagPrefix="uc" TagName="Footer" %>
+<%@ Register Src="~/WebSite/_Ascx/CenterFooter.ascx" TagPrefix="uc" TagName="Footer" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
