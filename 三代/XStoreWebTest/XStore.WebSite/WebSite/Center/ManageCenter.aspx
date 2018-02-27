@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ManageCenter.aspx.cs" Inherits="XStore.WebSite.WebSite.Center.ManageCenter" %>
 
-<%@ Register Src="~/WebSite/_Ascx/MangeCenterFooter.ascx" TagPrefix="uc" TagName="Footer" %>
+<%@ Register Src="~/WebSite/_Ascx/CenterFooter.ascx" TagPrefix="uc" TagName="Footer" %>
 <%@ Import Namespace="XStore.Entity" %>
 <!DOCTYPE html>
 
@@ -156,7 +156,7 @@
     <script>
         $(function () {
             $("#foot li").removeClass("clickOn");
-            $("#foot li").eq(0).addClass("clickOn");
+            $("#foot li").eq(1).addClass("clickOn");
             $('.cancellation').on('click', function () {
                 layer.open({
                     content: '是否注销？',

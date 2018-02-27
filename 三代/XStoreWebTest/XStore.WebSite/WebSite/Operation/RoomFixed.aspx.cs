@@ -10,6 +10,7 @@ using XStore.Common;
 using XStore.Common.Helper;
 using XStore.Entity;
 using XStore.Entity.Model;
+using static XStore.Entity.Enum;
 
 namespace XStore.WebSite.WebSite.Operation
 {
@@ -147,11 +148,15 @@ namespace XStore.WebSite.WebSite.Operation
         #region 补货完成
         protected void finish_button_Click(object sender, EventArgs e)
         {
-            if (ViewState["BackNo"] == null)
+            var redirctUrl = string.Empty;
+          
+            if (ViewState["BackNo"] == null || ((List<int>)ViewState["BackNo"]).Count == 0)
             {
                 MessageBox.Show(this, "system_alert", "无需补货");
+                PageInit();
                 return;
             }
+           
             var backIdList = ((List<int>)ViewState["BackNo"]).Select(o=>o.ObjToStr()).ToList();
             var requestUrl = string.Format(Constant.YunApi + "test/back/open?backOrderId={0}", backIdList.Aggregate((x, y) => x + "," + y));
             LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "finishBackNoRequestUrl：" + requestUrl);
@@ -160,12 +165,14 @@ namespace XStore.WebSite.WebSite.Operation
             if (response.operationStatus.Equals("SUCCESS"))
             {
                 MessageBox.Show(this, "system_alert", "补货成功");
+                PageInit();
                 return;
             }
             else
             {
                 MessageBox.Show(this, "system_alert", response.operationMessage);
                 return;
+               
             }
         }
         #endregion

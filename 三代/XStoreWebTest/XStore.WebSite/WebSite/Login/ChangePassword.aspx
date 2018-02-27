@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ChangePassword.aspx.cs" Inherits="XStore.WebSite.WebSite.Login.ChangePassword" %>
 <%@ Import Namespace="XStore.Entity" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -126,8 +125,20 @@
 		                            content: '修改成功',
 		                            btn: 'ok',
 		                            yes: function (index) {
-		                                layer.close(index);
-                                        window.location.href = "<%=Constant.JsInformationDic+"Employee.aspx"%>";
+                                        layer.close(index);
+                                        if (username === '<%=userInfo.username%>') {
+                                            if ('<%=(userRole.role_id==(int)XStore.Entity.Enum.UserRoleEnum.经理)||(userRole.role_id==(int)XStore.Entity.Enum.UserRoleEnum.区域经理)%>') {
+                                                window.location.href = "<%=Constant.JsCenterDic+"ManageCenter.aspx"%>";
+                                            }
+                                            else if ('<%=userRole.role_id==(int)XStore.Entity.Enum.UserRoleEnum.前台%>') {
+                                                window.location.href = "<%=Constant.JsCenterDic+"EmployeeCenter.aspx"%>";
+                                            }
+                                           
+                                        }
+                                        else {
+                                            window.location.href = "<%=Constant.JsInformationDic+"Employee.aspx"%>";
+                                        }
+                                       
 		                            }
 		                        });
 		                    }
