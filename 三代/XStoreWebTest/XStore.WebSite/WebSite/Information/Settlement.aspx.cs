@@ -32,9 +32,9 @@ namespace XStore.WebSite.WebSite.Information
         }
         protected void PageInit()
         {
-            var start = string.IsNullOrEmpty(start_time.ObjToStr()) ? DateTime.MinValue:DateTime.Parse(start_time);
-            var end = string.IsNullOrEmpty(end_time.ObjToStr()) ? DateTime.MaxValue : DateTime.Parse(end_time);
-            notlement.DataSource = Query(o=>o.date>= start && o.date <= end && o.paid== true && o.price1 >= 1, out totalSum, out totalAmount);
+            var start = string.IsNullOrEmpty(start_time.ObjToStr())||start_time.Equals("-起始时间-") ? DateTime.MinValue:DateTime.Parse(start_time);
+            var end = string.IsNullOrEmpty(end_time.ObjToStr())||end_time.Equals("-截止时间-") ? DateTime.MaxValue : DateTime.Parse(end_time);
+            notlement.DataSource = Query(o=>o.date>= start && o.date < end.AddDays(1) && o.paid== true && o.price1 >= 1, out totalSum, out totalAmount);
             notlement.DataBind();
 
             data_type_input.Value = data_type.ObjToStr();

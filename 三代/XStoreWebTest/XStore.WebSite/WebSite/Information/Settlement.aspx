@@ -92,6 +92,7 @@
                     });
                     dtpicker.show(function (e) {
                         $('.startDate label').text(e.value);
+                        window.location.href = "settlement.aspx?start_time=" + e.value + "&end_time=" + $('.endDate label').text() + "&data_type=" + $(".clickOn").data("type");
                     });
                 });
 
