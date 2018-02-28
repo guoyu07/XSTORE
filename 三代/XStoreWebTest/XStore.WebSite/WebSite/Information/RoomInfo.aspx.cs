@@ -28,7 +28,7 @@ namespace XStore.WebSite.WebSite.Information
                 {
                     mac = a.mac,
                     room = a.room,
-                    offline_minutes = a.offline_minutes,
+                    last_offline_date = a.last_offline_date,
                     online = a.online,
                     salesAmount = b.price1
 
@@ -37,7 +37,7 @@ namespace XStore.WebSite.WebSite.Information
                 .Select(o => new {
                     mac = AggregateFunctions.Max(o.mac),
                     room = AggregateFunctions.Max(o.room),
-                    offline = AggregateFunctions.Max(o.offline_minutes),
+                    offline = AggregateFunctions.Max(o.last_offline_date),
                     online = AggregateFunctions.Max(o.online),
                     salesAmount = AggregateFunctions.Sum(o.salesAmount)
                 }).ToList()
@@ -46,7 +46,7 @@ namespace XStore.WebSite.WebSite.Information
                         mac = o.mac,
                         room = o.room,
                         online = o.online,
-                        offline = (o.online.HasValue && o.online.Value) ? "--" : o.offline.HasValue ? Math.Round((decimal)o.offline.ObjToInt(0) / 60).ObjToStr() + " H" : "999 H",
+                        offline = (o.online.HasValue && o.online.Value) ? "--" : o.offline.HasValue ? (DateTime.Now-o.offline.Value).Hours + " H" : "999 H",
                         salesAmount = o.salesAmount
                     }
                 ).ToList();

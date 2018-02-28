@@ -36,7 +36,7 @@
                         <ItemTemplate>
                             <li class="clearfix">
                                 <div class="imgWrap l">
-                                    <img src="<%#Eval("image") %>" alt="" />
+                                    <img src="<%#GetProductImg(Eval("id").ObjToInt(0),Eval("image").ObjToStr()) %>" alt="" />
                                 </div>
                                 <div class="info l">
                                     <h3><span><%#Eval("code") %></span> &nbsp;<span><%#Eval("name") %></span></h3>

@@ -25,7 +25,7 @@ namespace XStore.Entity
         public string code { get; set; }
         public string iccid { get; set; }
         public string iot { get; set; }
-        public int? offline_minutes { get; set; }
+        public DateTime? last_offline_date { get; set; }
         public string version { get; set; }
     }
 }

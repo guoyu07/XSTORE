@@ -8,13 +8,14 @@
     <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
     <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/swiper/css","~/bundles/weui/css","~/bundles/detail/css")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs","~/bundles/swiper/js","~/bundles/weui/js")%>
+
 </head>
 <body runat="server">
     <form id="form1" runat="server" style="height: 100%;">
         <div class="main" style="-webkit-overflow-scrolling: touch; overflow: auto!important;">
             <div class="banner swiper-container">
                 <div class="imgWrap">
-                    <img src="<%=product.image %>" alt=""/>
+                    <img src="<%=GetProductImg(product.id.ObjToInt(0),product.image.ObjToStr()) %>" alt=""/>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -30,7 +31,7 @@
                 </ul>
                 <dl class="goodsContent">
                     <dd class="showTime" id="product_detail">
-                        <iframe src="<%=product.html %>" style="width:100%;height:auto;"></iframe>
+                       <%-- <iframe id="iframeWin" src="<%=GetProductHtml(product.html.ObjToStr())%>" style="width:100%;height:auto; "></iframe>--%>
                     </dd>
                 </dl>
             </div>
@@ -43,4 +44,11 @@
         </div>
     </form>
 </body>
+   
 </html>
+<script type="text/javascript">
+    $(function () {
+        $('#product_detail').load("<%=GetProductHtml(product.html.ObjToStr())%>");
+    });
+    
+</script>

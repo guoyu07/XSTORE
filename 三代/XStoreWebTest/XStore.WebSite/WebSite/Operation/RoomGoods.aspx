@@ -26,7 +26,7 @@
                             <li class="<%#(bool)Eval("sell_out")?"kong":"" %>" >
                                 <a href="#" position='<%#Container.ItemIndex %>' runat="server" onserverclick="SingleOpenBoxClick">
                                     <div class="pic">
-                                        <img src="<%#Eval("image")%>" alt="" />
+                                        <img src="<%#GetProductImg(Eval("id").ObjToInt(0),Eval("image").ObjToStr())%>" alt="" />
                                         <p class="goodsName over"><span style="font-weight: bolder"><%#Eval("code")%>&nbsp;&nbsp;<%#Eval("name")%></p>
 
                                     </div>

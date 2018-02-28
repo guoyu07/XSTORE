@@ -44,6 +44,7 @@ namespace XStore.WebSite.WebSite.Information
                         salePrice = b.price1
                     }).GroupBy(o => o.id)
                     .Select(o => new {
+                        id = o.id,
                         name = o.name,
                         code = o.code,
                         image = o.image,

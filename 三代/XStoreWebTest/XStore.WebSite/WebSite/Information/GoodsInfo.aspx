@@ -50,7 +50,7 @@
                          
                                     <div class="l" style="width: 20%;">
                                         <p class="roomNumber"><span>
-                                            <img src='<%#Eval("image") %>' alt="" class="l" /></span></p>
+                                            <img src='<%#GetProductImg(Eval("id").ObjToInt(0),Eval("image").ObjToStr()) %>' alt="" class="l" /></span></p>
                                     </div>
                                     <div class="l lh" style="margin-left: 1px;  width: 25%;">
                                         <p class="roomNumber"><span><%#Eval("name") %></span></p>

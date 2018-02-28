@@ -24,6 +24,7 @@ namespace XStore.WebSite.WebSite.Operation
                 .Where((a, b, c) => a.operator_username.Equals(userInfo.username) && a.date.AddMonths(1) > DateTime.Now)
                 .Select((a, b, c) => new
                 {
+                    id = b.id,
                     image = b.image,
                     room = c.room,
                     name = b.name,

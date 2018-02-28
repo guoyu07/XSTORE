@@ -21,7 +21,7 @@
                         <asp:Repeater ID="myOrderRepeater" runat="server">
                             <ItemTemplate>
                                 <li class="clearfix">
-                                    <img class="l" src="<%#Eval("image").ObjToStr() %>" alt="" />
+                                    <img class="l" src="<%#GetProductImg(Eval("id").ObjToInt(0),Eval("image").ObjToStr()) %>" alt="" />
                                     <div class="r">
                                         <p class="goodsName">
                                             <%#Eval("name").ToString()%>

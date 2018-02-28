@@ -37,9 +37,9 @@ namespace XStore.WebSite
             {
                 if (debug)
                 {
-                    _openid = "ooZJm0e-HAspMBhNrw0bUGXD-k6M";//袁
+                    //_openid = "ooZJm0e-HAspMBhNrw0bUGXD-k6M";//袁
                     //_openid = "ooZJm0d_Cimev2TQHdCJGq4LOlHU";//储
-                    //_openid = "ooZJm0Z0wg3kmeht0e4u40pgKuq4";//小号
+                    _openid = "ooZJm0Z0wg3kmeht0e4u40pgKuq4";//小号
                 }
                 LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "openid：");
                 if (_openid == null || string.IsNullOrEmpty(_openid))
@@ -91,7 +91,6 @@ namespace XStore.WebSite
                         var wxUserDB = context.Query<UserWeiChat>().FirstOrDefault(o => o.openid.Equals(oathToken.openid));
                         if (wxUserDB == null)
                         {
-
                             context.Insert(new UserWeiChat
                             {
                                 createtime = DateTime.Now,
@@ -147,10 +146,19 @@ namespace XStore.WebSite
             }
             else
             {
-
                 return accessToken.First().access_token;
             }
         }
-       
+
+        public string GetProductImg(int productId,string image) {
+            return "/Source/product/" + productId + "/" + image;
+
+        }
+        public string GetProductHtml( string html)
+        {
+            return "/Source/html/"+ html + ".html";
+
+        }
+
     }
 }

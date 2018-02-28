@@ -22,7 +22,7 @@
                     <ItemTemplate>
                         <li class="mui-table-view-cell">
                             <div class="mui-table">
-                                <img class="l" style="margin-right:15px;" src="<%#Eval("image").ObjToStr() %>" alt="暂无图片" />
+                                <img class="l" style="margin-right:15px;" src="<%#GetProductImg(Eval("id").ObjToInt(0),Eval("image").ObjToStr()) %>" alt="暂无图片" />
                                 <div class="mui-table-cell l">
                                     <p class="mui-ellipsis AM_title"><span><%#Eval("name").ObjToStr() %></span> &nbsp;商品编码：<span><%#Eval("code").ObjToStr() %></span></p>
                                     <h5 class="numText">房间：<span><%#Eval("room").ObjToStr() %></span> &nbsp;格号：<span class="danjia"><%#Eval("pos").ObjToInt(0)+1 %></span></h5>

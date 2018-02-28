@@ -68,6 +68,7 @@ namespace boxes
             //boxServer.Stop();
         }
         #endregion
+
         #region 初始化箱子在线信息
         private void initTimer_Elapsed(object sender, ElapsedEventArgs e) {
 

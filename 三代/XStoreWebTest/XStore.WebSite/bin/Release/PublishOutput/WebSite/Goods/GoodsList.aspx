@@ -22,7 +22,7 @@
                             <li class="<%#(bool)Eval("sell_out")?"kong":"" %>">
                                 <a href="<%#link_detail((bool)Eval("sell_out"),Container.ItemIndex,(int)Eval("id")) %>">
                                     <div class="pic">
-                                        <img src="<%#Eval("image")%>" alt="" />
+                                        <img src="<%# GetProductImg(Eval("id").ObjToInt(0),Eval("image").ObjToStr())%>" alt="" />
                                         <p class="goodsName over"><%#Eval("name")%></p>
 
                                     </div>

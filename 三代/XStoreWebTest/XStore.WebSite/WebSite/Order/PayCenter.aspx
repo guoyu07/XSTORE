@@ -75,7 +75,7 @@
                 <ItemTemplate>
                     <li>
                         <div class="pic">
-                            <img src="<%#Eval("image") %>" alt="" />
+                            <img src="<%#GetProductImg(Eval("id").ObjToInt(0),Eval("image").ObjToStr()) %>" alt="" />
                             <p class="goodsName over"><%#Eval("name") %></p>
                         </div>
                         <div class="price">¥ <span><%#Eval("price1").ObjToInt(0).CentToRMB(0) %></span></div>
