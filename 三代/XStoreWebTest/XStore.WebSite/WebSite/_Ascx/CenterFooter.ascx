@@ -4,7 +4,7 @@
 <nav id="foot">
     <ul class="clearfix">
         <li style="width: 50%;">
-            <a href='<%=Constant.JsOperationDic+"RoomSelect.aspx" %>' name="con" class="current">
+            <a href='<%=Constant.JsOperationDic+"RoomFillUp.aspx" %>' name="con" class="current">
 
                 <div class="index_bot">
                     <img class="picOff" src="/Content/Images/pickUp.png" alt="" />

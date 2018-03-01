@@ -272,6 +272,7 @@
     <Content Include="Content\mui.picker.min.css" />
     <Content Include="Content\Opreation\comprehensive.css" />
     <Content Include="Content\Opreation\deliveryNote.css" />
+    <Content Include="Content\Opreation\roomFillUp.css" />
     <Content Include="Scripts\mui.js" />
     <Content Include="Scripts\mui.picker.min.js" />
     <Content Include="Scripts\Util.js" />
@@ -356,6 +357,7 @@
     <Content Include="WebSite\Operation\PickUp.aspx" />
     <Content Include="WebSite\Operation\QaCheck.aspx" />
     <Content Include="WebSite\Operation\RoomCheck.aspx" />
+    <Content Include="WebSite\Operation\RoomFillUp.aspx" />
     <Content Include="WebSite\Operation\RoomFixed.aspx" />
     <Content Include="WebSite\Operation\RoomGoods.aspx" />
     <Content Include="WebSite\Operation\RoomInit.aspx" />
@@ -492,6 +494,13 @@
     </Compile>
     <Compile Include="WebSite\Operation\RoomCheck.aspx.designer.cs">
       <DependentUpon>RoomCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomFillUp.aspx.cs">
+      <DependentUpon>RoomFillUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Operation\RoomFillUp.aspx.designer.cs">
+      <DependentUpon>RoomFillUp.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Operation\RoomGoods.aspx.cs">
       <DependentUpon>RoomGoods.aspx</DependentUpon>

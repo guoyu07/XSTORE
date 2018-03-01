@@ -141,6 +141,15 @@ namespace XStore.WebSite
              ));
             #endregion
 
+            #region 常规补货
+            bundles.Add(new StyleBundle("~/bundles/roomfillup/css").Include(
+               "~/Content/Opreation/roomFillUp.css",
+               "~/Content/Center/distributer.css",
+               "~/Content/footer.css"
+            ));
+            
+            #endregion
+
             #region 常规补货-取货列表
             bundles.Add(new StyleBundle("~/bundles/pickup/css").Include(
                 "~/Content/Center/distributer.css",
