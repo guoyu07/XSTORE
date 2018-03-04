@@ -96,11 +96,12 @@ group by 商品id,视图出库表.品名,本站价,图片路径,WP_商品表.编
                     int str = dt.Rows[a]["默认商品id"].ObjToInt(0);
                     if (str == 0)
                     {
-                        dt.Rows[a]["实际商品id"] = rexiao_id;
-                        dt.Rows[a]["实际商品品名"] = rexiao_name;
-                        dt.Rows[a]["本站价"] = rexiao_price;
-                        dt.Rows[a]["图片路径"] = rexiao_img;
-                        dt.Rows[a]["编码"] = rexiao_code;
+                        //dt.Rows[a]["实际商品id"] = rexiao_id;
+                        //dt.Rows[a]["实际商品品名"] = rexiao_name;
+                        //dt.Rows[a]["本站价"] = rexiao_price;
+                        //dt.Rows[a]["图片路径"] = rexiao_img;
+                        //dt.Rows[a]["编码"] = rexiao_code;
+                        continue;
                     }
 
                     if (dt.Rows[a]["实际商品id"].ObjToInt(0) == 0)

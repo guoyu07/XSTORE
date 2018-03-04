@@ -28,7 +28,7 @@
                 <div class="interval"></div>
                 <ul>
                     <li class="deliveryTask">
-                        <a href='<%=Constant.JsOperationDic+"RoomSelect.aspx"%>' class="clearfix">
+                        <a href='<%=Constant.JsOperationDic+"RoomFillUp.aspx"%>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-renwu"></i>
                                 <span>常规补货</span>

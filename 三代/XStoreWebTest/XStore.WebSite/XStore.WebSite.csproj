@@ -282,6 +282,7 @@
     <Content Include="WebSite\Information\GoodsInfo.aspx" />
     <Content Include="WebSite\Information\RoomInfo.aspx" />
     <Content Include="WebSite\Information\Settlement.aspx" />
+    <Content Include="WebSite\Login\Bridge.aspx" />
     <Content Include="WebSite\Login\ChangePassword.aspx" />
     <Content Include="WebSite\Oath\WxOath.aspx" />
     <Content Include="Content\Opreation\roomGoods.css" />
@@ -466,6 +467,13 @@
     </Compile>
     <Compile Include="WebSite\Information\Settlement.aspx.designer.cs">
       <DependentUpon>Settlement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Login\Bridge.aspx.cs">
+      <DependentUpon>Bridge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Login\Bridge.aspx.designer.cs">
+      <DependentUpon>Bridge.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Login\ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>

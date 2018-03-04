@@ -40,10 +40,10 @@
       <publishTime>02/28/2018 22:35:38</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.dll">
-      <publishTime>03/01/2018 22:56:19</publishTime>
+      <publishTime>03/04/2018 20:33:58</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.pdb">
-      <publishTime>03/01/2018 22:56:19</publishTime>
+      <publishTime>03/04/2018 20:33:58</publishTime>
     </File>
     <File Include="bin/Flurl.dll">
       <publishTime>02/28/2018 22:35:39</publishTime>
@@ -313,22 +313,22 @@
       <publishTime>02/28/2018 22:35:40</publishTime>
     </File>
     <File Include="bin/XStore.Common.dll">
-      <publishTime>03/01/2018 22:56:22</publishTime>
+      <publishTime>03/04/2018 20:34:01</publishTime>
     </File>
     <File Include="bin/XStore.Common.pdb">
-      <publishTime>03/01/2018 22:56:22</publishTime>
+      <publishTime>03/04/2018 20:34:01</publishTime>
     </File>
     <File Include="bin/XStore.Entity.dll">
-      <publishTime>03/01/2018 22:56:17</publishTime>
+      <publishTime>03/04/2018 20:33:56</publishTime>
     </File>
     <File Include="bin/XStore.Entity.pdb">
-      <publishTime>03/01/2018 22:56:17</publishTime>
+      <publishTime>03/04/2018 20:33:56</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.dll">
-      <publishTime>03/01/2018 22:56:28</publishTime>
+      <publishTime>03/04/2018 21:44:12</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.pdb">
-      <publishTime>03/01/2018 22:56:28</publishTime>
+      <publishTime>03/04/2018 21:44:12</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.AspNet.FriendlyUrls.resources.dll">
       <publishTime>02/28/2018 22:35:39</publishTime>
@@ -829,13 +829,13 @@
       <publishTime>02/28/2018 22:35:35</publishTime>
     </File>
     <File Include="WebSite/Center/EmployeeCenter.aspx">
-      <publishTime>02/28/2018 22:35:35</publishTime>
+      <publishTime>03/01/2018 23:03:30</publishTime>
     </File>
     <File Include="WebSite/Center/FinanceCenter.aspx">
       <publishTime>02/28/2018 22:35:35</publishTime>
     </File>
     <File Include="WebSite/Center/ManageCenter.aspx">
-      <publishTime>02/28/2018 22:35:35</publishTime>
+      <publishTime>03/01/2018 23:03:44</publishTime>
     </File>
     <File Include="WebSite/Center/PromotionCenter.aspx">
       <publishTime>02/28/2018 22:35:35</publishTime>
@@ -847,7 +847,7 @@
       <publishTime>02/28/2018 22:35:35</publishTime>
     </File>
     <File Include="WebSite/Goods/GoodsList.aspx">
-      <publishTime>02/28/2018 22:35:35</publishTime>
+      <publishTime>03/03/2018 22:35:07</publishTime>
     </File>
     <File Include="WebSite/Information/Achievement.aspx">
       <publishTime>02/28/2018 22:35:35</publishTime>
@@ -869,6 +869,9 @@
     </File>
     <File Include="WebSite/Login/Bind.aspx">
       <publishTime>02/28/2018 22:35:35</publishTime>
+    </File>
+    <File Include="WebSite/Login/Bridge.aspx">
+      <publishTime>03/04/2018 21:18:27</publishTime>
     </File>
     <File Include="WebSite/Login/ChangePassword.aspx">
       <publishTime>02/28/2018 22:35:35</publishTime>
@@ -916,7 +919,7 @@
       <publishTime>02/28/2018 22:35:35</publishTime>
     </File>
     <File Include="WebSite/Operation/RoomFillUp.aspx">
-      <publishTime>03/01/2018 22:54:40</publishTime>
+      <publishTime>03/01/2018 23:06:10</publishTime>
     </File>
     <File Include="WebSite/Operation/RoomFixed.aspx">
       <publishTime>02/28/2018 22:35:35</publishTime>

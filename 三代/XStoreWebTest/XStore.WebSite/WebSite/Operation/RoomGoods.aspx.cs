@@ -92,8 +92,7 @@ namespace XStore.WebSite.WebSite.Operation
                 var pro = productList.FirstOrDefault(o => o.id == proid);
                 if (pro == null)
                 {
-                    MessageBox.Show(this, "system_alert", "配置的商品不存在");
-                    return;
+                    continue;
                 }
                 var proQuery = TinyMapper.Map<ProductQuery>(pro);
                 proQuery.sell_out = sell_out;
@@ -107,11 +106,11 @@ namespace XStore.WebSite.WebSite.Operation
         }
         protected void SingleOpenBoxClick(object sender, EventArgs e)
         {
-            if (userRole == null)
-            {
-                MessageBox.Show(this, "system_alert", "配置的商品不存在");
-                return;
-            }
+            //if (userRole == null)
+            //{
+            //    MessageBox.Show(this, "system_alert", "配置的商品不存在");
+            //    return;
+            //}
             if (userRole ==null || (userRole.role_id != (int)UserRoleEnum.经理 && userRole.role_id != (int)UserRoleEnum.区域经理))
             {
                 MessageBox.Show(this, "system_alert", "您没有权限");

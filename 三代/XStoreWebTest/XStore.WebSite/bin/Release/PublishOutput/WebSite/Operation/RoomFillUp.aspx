@@ -118,8 +118,9 @@
         <div class="btnWrap" style="margin-top: 10px; float:left; margin-bottom:50px; ">
             <input id="room_id" runat="server" type="hidden" class="room_id"/>
             <asp:Button  runat="server" ID="markSure" OnClick="markSure_Click" style="display:none;" Text="确认"/>
+                         <a class="makeSure"href="#" style="float:left; width:45%; line-height:40px; height:40px; margin:5px;" flag ="false" onclick="selectAll(this);">全选</a>
 		    <a class="makeSure"href="#" style="float:left; width:45%; line-height:40px; height:40px; margin:5px;" onclick="makeSureClick();">确认</a>
-             <a class="makeSure"href="#" style="float:left; width:45%; line-height:40px; height:40px; margin:5px;" flag ="false" onclick="selectAll(this);">全选</a>
+
 
 	    </div>
         

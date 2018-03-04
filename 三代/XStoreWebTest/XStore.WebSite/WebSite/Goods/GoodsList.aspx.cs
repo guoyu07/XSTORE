@@ -79,8 +79,7 @@ namespace XStore.WebSite.WebSite.Goods
                     var pro = productList.FirstOrDefault(o => o.id == proid);
                     if (pro == null)
                     {
-                        MessageBox.Show(this, "system_alert", "配置的商品不存在");
-                        return;
+                        continue;
                     }
                     var proQuery = TinyMapper.Map<ProductQuery>(pro);
                     proQuery.sell_out = sell_out;
