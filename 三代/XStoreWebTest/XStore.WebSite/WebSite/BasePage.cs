@@ -1,14 +1,17 @@
 ﻿using Chloe.MySql;
 using log4net;
+using Nelibur.ObjectMapper;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Web;
+using System.Web.UI.WebControls;
 using XStore.Common;
 using XStore.Common.WeiXinPay;
 using XStore.Entity;
+using XStore.Entity.Model;
 using XStore.WebSite.DBFactory;
 
 namespace XStore.WebSite
@@ -159,6 +162,65 @@ namespace XStore.WebSite
             return "/Source/html/"+ html + ".html";
 
         }
+
+        #region 获取商品列表
+        public List<int> BindGoods(System.Web.UI.Page page,Repeater repeater, Cabinet cabinet)
+        {
+            var proidlist = new List<int>();
+            var layout = context.Query<CabinetLayout>().FirstOrDefault(o => o.hotel_id == cabinet.hotel);
+            if (layout == null)
+            {
+                MessageBox.Show(page, "system_alert", "酒店未设置默认商品");
+                return proidlist;
+            }
+            var layoutProList = layout.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(o => o.ObjToInt(0)).Where(o => o != 0).ToList();
+
+            var proidList = new List<int>();
+
+            proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.product_id.HasValue ? o.product_id.Value : 0).ToList();
+            if (proidList.Count == 0)
+            {
+                proidList = new List<int>();
+                //如果mac对应的商品没有配置
+                for (int i = 0; i < layoutProList.Count; i++)
+                {
+                    proidList.Add(0);
+                }
+            }
+
+            if (proidList.Count() < layoutProList.Count())
+            {
+                MessageBox.Show(this, "system_alert", "房间设置商品不全");
+                return proidlist;
+            }
+            List<ProductQuery> list = new List<ProductQuery>();
+            List<Product> productList = context.Query<Product>().Where(o => o.state == 1).ToList();
+
+            for (int i = 0; i < layoutProList.Count(); i++)
+            {
+                var proid = proidList[i].ObjToInt(0);
+                var sell_out = false;
+                //如果实际商品是0，则用默认商品补全
+                if (proid == 0)
+                {
+                    proid = layoutProList[i].ObjToInt(0);
+                    sell_out = true;
+                }
+                var pro = productList.FirstOrDefault(o => o.id == proid);
+                if (pro == null)
+                {
+                    continue;
+                }
+                var proQuery = TinyMapper.Map<ProductQuery>(pro);
+                proQuery.sell_out = sell_out;
+                list.Add(proQuery);
+            }
+            repeater.DataSource = list;
+            repeater.DataBind();
+            return proidList;
+        }
+
+        #endregion
 
     }
 }

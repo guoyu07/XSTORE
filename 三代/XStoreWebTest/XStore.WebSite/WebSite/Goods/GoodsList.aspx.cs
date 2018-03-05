@@ -42,51 +42,7 @@ namespace XStore.WebSite.WebSite.Goods
             try
             {
                 #region 绑定房间商品
-                var proidList = new List<int>();
-
-                proidList = context.Query<Cell>().Where(o => o.part == 0 && o.mac.Equals(cabinet.mac)).Select(o => o.product_id.HasValue ? o.product_id.Value : 0).ToList();
-                if (proidList.Count == 0)
-                {
-                    proidList = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-                }
-
-                var layout = context.Query<CabinetLayout>().FirstOrDefault(o => o.hotel_id == cabinet.hotel);
-                if (layout == null)
-                {
-                    MessageBox.Show(this, "system_alert", "酒店未设置默认商品");
-                    return;
-                }
-                var layoutProList = layout.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-
-                if (proidList.Count() != layoutProList.Count())
-                {
-                    MessageBox.Show(this, "system_alert", "房间设置商品不全");
-                    return;
-                }
-                List<ProductQuery> list = new List<ProductQuery>();
-                List<Product> productList = context.Query<Product>().Where(o => o.state == 1).ToList();
-
-                for (int i = 0; i < proidList.Count(); i++)
-                {
-                    var proid = proidList[i].ObjToInt(0);
-                    var sell_out = false;
-                    //如果实际商品是0，则用默认商品补全
-                    if (proid == 0)
-                    {
-                        proid = layoutProList[i].ObjToInt(0);
-                        sell_out = true;
-                    }
-                    var pro = productList.FirstOrDefault(o => o.id == proid);
-                    if (pro == null)
-                    {
-                        continue;
-                    }
-                    var proQuery = TinyMapper.Map<ProductQuery>(pro);
-                    proQuery.sell_out = sell_out;
-                    list.Add(proQuery);
-                }
-                goods_list.DataSource = list;
-                goods_list.DataBind();
+                BindGoods(this,goods_list,cabinet);
                 #endregion
 
             }

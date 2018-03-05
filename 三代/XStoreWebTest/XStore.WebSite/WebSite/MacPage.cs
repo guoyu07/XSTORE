@@ -1,8 +1,12 @@
-﻿using System;
+﻿using Nelibur.ObjectMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.UI.WebControls;
+using XStore.Common;
 using XStore.Entity;
+using XStore.Entity.Model;
 
 namespace XStore.WebSite.WebSite
 {
@@ -34,7 +38,6 @@ namespace XStore.WebSite.WebSite
         }
         #endregion
       
-
         #region 用户信息
         private User _userinfo;
         public User userInfo
@@ -53,5 +56,7 @@ namespace XStore.WebSite.WebSite
             }
         }
         #endregion
+
+      
     }
 }
