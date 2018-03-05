@@ -36,11 +36,12 @@ namespace XStore.WebSite.WebSite.Login
             {
                 var boxMac = Session[Constant.IMEI].ObjToStr();
                 Session[Constant.CurrentUser] = userInfo;
-        
-                var roomInfo = context.Query<Cabinet>().FirstOrDefault(o => o.mac.Equals(boxMac));
+                //0：正常；-1：删除
+                var roomInfo = context.Query<Cabinet>().FirstOrDefault(o => o.mac.Equals(boxMac) && o.state != -1);
                 if (roomInfo == null)
                 {
-                    MessageBox.Show(this, "system_alert", "箱子未绑定房间");
+                    Response.Redirect(string.Format("http://x.x-store.com.cn/shop/pages/enter.aspx?boxmac={0}",boxMac), false);
+                    //MessageBox.Show(this, "system_alert", "箱子未绑定房间");
                     return;
                 }
                 var roleInfo = context.Query<UserRole>().FirstOrDefault(o => o.username == userInfo.username);
@@ -74,13 +75,22 @@ namespace XStore.WebSite.WebSite.Login
                         break;
                 }
             }
-          
         }
 
         protected void submit_button_ServerClick(object sender, EventArgs e)
         {
             var boxMac = Session[Constant.IMEI].ObjToStr();
-           
+            var roomInfo = context.Query<Cabinet>().FirstOrDefault(o => o.mac.Equals(boxMac) && o.state != -1);
+            if (roomInfo == null)
+            {
+                var url = "http://x.x-store.com.cn/WebSite/Login/Bridge";
+                //var url = string.Format("https://open.weixin.qq.com/connect/oauth2/authorize?appid={0}&redirect_uri={1}/shop/pages/enter.aspx?boxmac={2}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect", "wx4b52212c5d5983ad", "http://x.x-store.com.cn",  boxMac);
+
+                Response.Redirect(url, false);
+                //Response.Redirect(string.Format("http://x.x-store.com.cn/shop/pages/enter.aspx?boxmac={0}", boxMac), false);
+                //MessageBox.Show(this, "system_alert", "箱子未绑定房间");
+                return;
+            }
             if (Session[Constant.CurrentUser] == null)
             {
                 Response.Redirect(string.Format(Constant.GoodsDic + "GoodsList.aspx?boxmac={0}", boxMac));

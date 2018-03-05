@@ -272,6 +272,7 @@
     <Content Include="Content\mui.picker.min.css" />
     <Content Include="Content\Opreation\comprehensive.css" />
     <Content Include="Content\Opreation\deliveryNote.css" />
+    <Content Include="Content\Opreation\roomFillUp.css" />
     <Content Include="Scripts\mui.js" />
     <Content Include="Scripts\mui.picker.min.js" />
     <Content Include="Scripts\Util.js" />
@@ -281,6 +282,7 @@
     <Content Include="WebSite\Information\GoodsInfo.aspx" />
     <Content Include="WebSite\Information\RoomInfo.aspx" />
     <Content Include="WebSite\Information\Settlement.aspx" />
+    <Content Include="WebSite\Login\Bridge.aspx" />
     <Content Include="WebSite\Login\ChangePassword.aspx" />
     <Content Include="WebSite\Oath\WxOath.aspx" />
     <Content Include="Content\Opreation\roomGoods.css" />
@@ -465,6 +467,13 @@
     </Compile>
     <Compile Include="WebSite\Information\Settlement.aspx.designer.cs">
       <DependentUpon>Settlement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Login\Bridge.aspx.cs">
+      <DependentUpon>Bridge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Login\Bridge.aspx.designer.cs">
+      <DependentUpon>Bridge.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Login\ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>

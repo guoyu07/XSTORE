@@ -109,7 +109,7 @@
                         </a>
                     </li>
                     <li class="deal">
-                          <a href='<%=Constant.JsOperationDic+"RoomSelect.aspx"%>' class="clearfix">
+                          <a href='<%=Constant.JsOperationDic+"RoomFillUp.aspx"%>' class="clearfix">
                             <div class="l">
                                 <i class="iconfont icon-yewu"></i>
                                 <span>常规补货</span>
