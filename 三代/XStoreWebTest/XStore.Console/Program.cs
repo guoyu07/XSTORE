@@ -20,7 +20,10 @@ namespace XStore.Console
         public static string connString = ConfigurationManager.ConnectionStrings["ConnStr"].ConnectionString;
         static void Main(string[] args)
         {
-            OpenBox();
+            char[] charArray1 = new char[] { };
+           
+ 
+            //OpenBox();
 
         }
         private static void SetMacList() {

@@ -45,7 +45,6 @@
                             </li>
                         </ItemTemplate>
                     </asp:Repeater>
-
                 </ul>
                 <div class="alarm_div">
                     请到仓库取货。
