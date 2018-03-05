@@ -245,10 +245,10 @@ namespace Wx_NewWeb.Shop
         {
             get
             {
-                if (debug)
-                {
-                    return "861853032006603";
-                }
+                //if (debug)
+                //{
+                //    return "861853032006603";
+                //}
                 if (string.IsNullOrEmpty(_boxmac))
                 {
                 

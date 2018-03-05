@@ -82,6 +82,7 @@ group by 商品id,视图出库表.品名,本站价,图片路径,WP_商品表.编
                 string rexiao_price = "0";
                 string rexiao_img = "0";
                 string rexiao_code = "";
+                List<int> deleteIndex = new List<int>();
                 if (dt_rexiao.Rows.Count > 0)
                 {
                     rexiao_id = dt_rexiao.Rows[0]["商品id"].ObjToStr();
@@ -101,6 +102,7 @@ group by 商品id,视图出库表.品名,本站价,图片路径,WP_商品表.编
                         //dt.Rows[a]["本站价"] = rexiao_price;
                         //dt.Rows[a]["图片路径"] = rexiao_img;
                         //dt.Rows[a]["编码"] = rexiao_code;
+                        deleteIndex.Add(a);
                         continue;
                     }
 
@@ -118,9 +120,15 @@ group by 商品id,视图出库表.品名,本站价,图片路径,WP_商品表.编
                         dt.Rows[a]["图片路径"] = no_img;
                     }
                 }
+                for (int i = deleteIndex.Count - 1; i >= 0; i--)
+                {
+                    dt.Rows[deleteIndex[i]].Delete();
+                }
+                dt.AcceptChanges();
                 box_rp.DataSource = dt;
                 box_rp.DataBind();
             }
+
             var msg = string.Empty;
             if (!Check(out msg))
             {

@@ -109,7 +109,7 @@ namespace XStore.WebSite.WebSite.Operation
                     MessageBox.Show(this, "system_alert", "商品模板未设置");
                     return;
                 }
-                var layoutList = cabinetLayOut.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+                var layoutList = cabinetLayOut.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(o => o.ObjToInt(0)).Where(o => o != 0).ToList();
 
                 for (int i = 0; i < cabinets.Count; i++)
                 {
@@ -121,11 +121,11 @@ namespace XStore.WebSite.WebSite.Operation
                         MessageBox.Show(this, "system_alert", "房间【" + cabinet.room + "】商品设置不全");
                         return;
                     }
-                    for (int j = 0; j < storeList.Count; j++)
+                    for (int j = 0; j < layoutList.Count; j++)
                     {
                         if (storeList[j].product_id == null)
                         {
-                            fixProductList.Add(layoutList[j]);
+                            fixProductList.Add(layoutList[j].ToString());
                         }
                     }
                 }

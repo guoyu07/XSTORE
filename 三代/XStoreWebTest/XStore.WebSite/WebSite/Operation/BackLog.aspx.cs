@@ -20,8 +20,8 @@ namespace XStore.WebSite.WebSite.Operation
             
         }
         private void PageInit() {
-            var backList = context.Query<BackOrderInfo>().LeftJoin<Product>((a, b) => a.product == b.id).LeftJoin<Cabinet>((a, b, c) => a.cabinet_mac.Equals(c.mac))
-                .Where((a, b, c) => a.operator_username.Equals(userInfo.username) && a.date.AddMonths(1) > DateTime.Now)
+            var backList = context.Query<BackOrderInfo>().InnerJoin<Product>((a, b) => a.product == b.id).InnerJoin<Cabinet>((a, b, c) => a.cabinet_mac.Equals(c.mac))
+                .Where((a, b, c) => a.operator_username.Equals(userInfo.username) && a.date.AddMonths(1) > DateTime.Now && a.product != 0)
                 .Select((a, b, c) => new
                 {
                     id = b.id,

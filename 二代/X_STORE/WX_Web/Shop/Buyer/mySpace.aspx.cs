@@ -100,9 +100,7 @@ where 库位id={0} and WP_箱子表.isshow=1 order by 位置 asc  ", KuWei["id"]
                 DataTable search_dt = comfun.GetDataTableBySQL(search);
                 DataTable test = new DataTable();
                 test = search_dt.Clone();
-                test2 = search_dt.Clone();
                 object[] obj = new object[test.Columns.Count];
-                object[] obj2 = new object[test2.Columns.Count];
                 //复制表框架
                 //string sql_kw = "select id as 库位id,仓库id from WP_库位表 where 箱子MAC='" + BoxMac + "'";
                 //DataTable dt_kw = comfun.GetDataTableBySQL(sql_kw);
@@ -120,6 +118,7 @@ group by 商品id,视图出库表.品名,本站价,图片路径 order by count(�
                 string rexiao_name = "";
                 string rexiao_price = "0";
                 string rexiao_img = "0";
+                List<int> deleteIndex = new List<int>();
                 if (dt_rexiao.Rows.Count > 0)
                 {
                     rexiao_id = dt_rexiao.Rows[0]["商品id"].ObjToStr();
@@ -127,13 +126,12 @@ group by 商品id,视图出库表.品名,本站价,图片路径 order by count(�
                     rexiao_price = dt_rexiao.Rows[0]["本站价"].ObjToStr();
                     rexiao_img = dt_rexiao.Rows[0]["图片路径"].ObjToStr();
                     Log.WriteLog("页面：mySpace", "方法：goods", "rexiao_id：" + rexiao_id);
-                }                
+                }          
+                
                 for (int a = 0; a < dt.Rows.Count; a++)
                 {
                     dt.Rows[a].ItemArray.CopyTo(obj, 0);
-                    dt.Rows[a].ItemArray.CopyTo(obj2, 0);
                     test.Rows.Add(obj);
-                    test2.Rows.Add(obj2);
                     int str = dt.Rows[a]["默认商品id"].ObjToInt(0);
                     if (str == 0)
                     {
@@ -141,6 +139,8 @@ group by 商品id,视图出库表.品名,本站价,图片路径 order by count(�
                         //test.Rows[a]["实际商品品名"] = rexiao_name;
                         //test.Rows[a]["本站价"] = rexiao_price;
                         //test.Rows[a]["图片路径"] = rexiao_img; 
+                        //test.Rows[a].Delete();
+                        deleteIndex.Add(a);
                         continue;
                     }
                     if (dt.Rows[a]["实际商品id"].ObjToInt(0) == 0 && !IsOffline)
@@ -164,6 +164,11 @@ group by 商品id,视图出库表.品名,本站价,图片路径 order by count(�
                         test.Rows[a]["图片路径"] = no_img;
                     }
                 }
+                for (int i = deleteIndex.Count-1; i>=0; i--)
+                {
+                    test.Rows[deleteIndex[i]].Delete();
+                }
+                test.AcceptChanges();
                 Log.WriteLog("页面：mySpace", "方法：goods", "test数量:" + test.Rows.Count);
                 Log.WriteLog("页面：mySpace", "方法：goods", "test:" + JsonConvert.SerializeObject(test));
                 goods_list.DataSource = test;
