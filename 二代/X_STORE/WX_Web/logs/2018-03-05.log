@@ -1,0 +1,86 @@
+2018-03-05 16:51:59.887 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 16:52:00.302 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 16:53:38.124 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 16:53:38.399 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 16:56:51.823 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 16:56:52.067 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:01:06.517 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 17:01:06.796 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:01:23.645 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 17:01:23.686 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:03:15.890 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 17:03:16.158 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:03:26.587 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 17:03:26.882 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:03:46.268 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 17:03:46.309 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:04:03.248 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 17:04:03.506 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:04:09.267 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 17:04:09.548 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:04:15.632 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 17:04:15.925 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:04:57.344 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032006603'
+2018-03-05 17:04:57.384 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:05:34.448 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = ''
+2018-03-05 17:05:34.741 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:09:41.320 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032952160'
+2018-03-05 17:09:41.358 页面：mySpace 方法：PageLoad: 状态：1
+2018-03-05 17:09:41.404 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='3702' and WP_箱子表.status=1 order by 位置 asc
+2018-03-05 17:09:41.617 页面：mySpace 方法：goods: rexiao_id：110
+2018-03-05 17:09:41.665 页面：mySpace 方法：PageLoad: 异常信息：在位置 10 处没有任何行。
+2018-03-05 17:09:58.601 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032952160'
+2018-03-05 17:09:58.637 页面：mySpace 方法：PageLoad: 状态：1
+2018-03-05 17:09:58.676 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='3702' and WP_箱子表.status=1 order by 位置 asc
+2018-03-05 17:09:58.882 页面：mySpace 方法：goods: rexiao_id：110
+2018-03-05 17:09:58.893 页面：mySpace 方法：PageLoad: 异常信息：在位置 10 处没有任何行。
+2018-03-05 17:10:07.003 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032952160'
+2018-03-05 17:10:07.039 页面：mySpace 方法：PageLoad: 状态：1
+2018-03-05 17:10:07.079 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='3702' and WP_箱子表.status=1 order by 位置 asc
+2018-03-05 17:10:23.122 页面：mySpace 方法：goods: rexiao_id：110
+2018-03-05 17:11:44.453 页面：mySpace 方法：PageLoad: 异常信息：在位置 10 处没有任何行。
+2018-03-05 17:12:25.391 页面：mySpace 方法：PageLoad: 异常信息：在位置 10 处没有任何行。
+2018-03-05 17:12:30.171 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032952160'
+2018-03-05 17:12:30.208 页面：mySpace 方法：PageLoad: 状态：1
+2018-03-05 17:12:30.246 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='3702' and WP_箱子表.status=1 order by 位置 asc
+2018-03-05 17:12:36.856 页面：mySpace 方法：goods: rexiao_id：110
+2018-03-05 17:15:03.843 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = ''
+2018-03-05 17:15:04.174 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:15:12.120 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032952160'
+2018-03-05 17:15:12.160 页面：mySpace 方法：PageLoad: 状态：1
+2018-03-05 17:15:12.206 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='3702' and WP_箱子表.status=1 order by 位置 asc
+2018-03-05 17:15:20.748 页面：mySpace 方法：goods: rexiao_id：110
+2018-03-05 17:24:50.097 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = ''
+2018-03-05 17:24:50.395 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:24:54.244 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032952160'
+2018-03-05 17:24:54.282 页面：mySpace 方法：PageLoad: 状态：1
+2018-03-05 17:24:54.328 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='3702' and WP_箱子表.status=1 order by 位置 asc
+2018-03-05 17:25:00.673 页面：mySpace 方法：goods: rexiao_id：110
+2018-03-05 17:26:02.484 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = ''
+2018-03-05 17:26:02.771 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:26:07.318 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032952160'
+2018-03-05 17:26:07.352 页面：mySpace 方法：PageLoad: 状态：1
+2018-03-05 17:26:07.390 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='3702' and WP_箱子表.status=1 order by 位置 asc
+2018-03-05 17:26:09.783 页面：mySpace 方法：goods: rexiao_id：110
+2018-03-05 17:27:33.203 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = ''
+2018-03-05 17:27:33.497 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:27:35.110 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032952160'
+2018-03-05 17:27:35.146 页面：mySpace 方法：PageLoad: 状态：1
+2018-03-05 17:27:35.189 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='3702' and WP_箱子表.status=1 order by 位置 asc
+2018-03-05 17:27:39.434 页面：mySpace 方法：goods: rexiao_id：110
+2018-03-05 17:28:55.436 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = ''
+2018-03-05 17:28:55.741 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:28:59.541 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032952160'
+2018-03-05 17:28:59.581 页面：mySpace 方法：PageLoad: 状态：1
+2018-03-05 17:28:59.625 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='3702' and WP_箱子表.status=1 order by 位置 asc
+2018-03-05 17:29:01.241 页面：mySpace 方法：goods: rexiao_id：110
+2018-03-05 17:29:02.358 页面：mySpace 方法：goods: test数量:10
+2018-03-05 17:29:02.434 页面：mySpace 方法：goods: test:[{"箱子id":28779,"库位id":3702,"位置":1,"默认商品id":1171,"默认商品品名":"测试组合02","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品id":1171,"本站价":0.01,"图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品品名":"测试组合02"},{"箱子id":28780,"库位id":3702,"位置":2,"默认商品id":1172,"默认商品品名":"测试组合03","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031113207283.jpg","实际商品id":1172,"本站价":0.01,"图片路径":"/upload/201711/03/201711031113207283.jpg","实际商品品名":"测试组合03"},{"箱子id":28781,"库位id":3702,"位置":3,"默认商品id":1171,"默认商品品名":"测试组合02","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品id":1171,"本站价":0.01,"图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品品名":"测试组合02"},{"箱子id":28782,"库位id":3702,"位置":4,"默认商品id":1172,"默认商品品名":"测试组合03","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031113207283.jpg","实际商品id":1172,"本站价":0.01,"图片路径":"/upload/201711/03/201711031113207283.jpg","实际商品品名":"测试组合03"},{"箱子id":28783,"库位id":3702,"位置":5,"默认商品id":1171,"默认商品品名":"测试组合02","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品id":1171,"本站价":0.01,"图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品品名":"测试组合02"},{"箱子id":28784,"库位id":3702,"位置":6,"默认商品id":1170,"默认商品品名":"大胆爱测试","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031028547432.jpg","实际商品id":1170,"本站价":0.01,"图片路径":"/upload/201711/03/201711031028547432.jpg","实际商品品名":"大胆爱测试"},{"箱子id":28785,"库位id":3702,"位置":7,"默认商品id":1171,"默认商品品名":"测试组合02","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品id":1171,"本站价":0.01,"图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品品名":"测试组合02"},{"箱子id":28786,"库位id":3702,"位置":8,"默认商品id":111,"默认商品品名":"空气套X2","默认商品价格":"49.99","默认图片路径":"/upload/201706/12/201706121347135394.jpg","实际商品id":1171,"本站价":0.01,"图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品品名":"测试组合02"},{"箱子id":28787,"库位id":3702,"位置":9,"默认商品id":112,"默认商品品名":"粉红跳蛋","默认商品价格":"39.99","默认图片路径":"/upload/201706/15/201706151554496115.png","实际商品id":112,"本站价":39.99,"图片路径":"/upload/201706/15/201706151554496115.png","实际商品品名":"粉红跳蛋"},{"箱子id":28788,"库位id":3702,"位置":10,"默认商品id":0,"默认商品品名":null,"默认商品价格":null,"默认图片路径":null,"实际商品id":110,"本站价":24.99,"图片路径":"/upload/201706/12/201706121340484982.jpg","实际商品品名":"杜蕾斯"}]
+2018-03-05 17:29:32.796 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = ''
+2018-03-05 17:29:33.063 页面：mySpace 方法：PageLoad: 状态：2
+2018-03-05 17:29:38.378 页面：mySpace 方法：PageLoad: sql:SELECT * FROM [WP_库位表] WHERE 箱子MAC = '861853032952160'
+2018-03-05 17:29:38.416 页面：mySpace 方法：PageLoad: 状态：1
+2018-03-05 17:29:38.456 页面：mySpace 方法：goods: sql：select top 12 WP_箱子表.id as 箱子id,库位id,位置,默认商品id,(SELECT 品名 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品品名,(SELECT 本站价 FROM WP_商品表 WHERE id =默认商品id ) as 默认商品价格,(SELECT b.图片路径 FROM  [tshop].[dbo].[WP_商品表] A LEFT JOIN [tshop].[dbo].[WP_商品图片表] B ON A.编号 = B.商品编号 WHERE A.id = 默认商品id) AS 默认图片路径,实际商品id,WP_商品表.本站价,wp_商品图片表.图片路径 ,WP_商品表.品名 as 实际商品品名 from WP_箱子表 left join WP_商品表 on WP_商品表.id=实际商品id left join wp_商品图片表 on wp_商品表.编号=wp_商品图片表.商品编号  where 库位id='3702' and WP_箱子表.status=1 order by 位置 asc
+2018-03-05 17:29:40.167 页面：mySpace 方法：goods: rexiao_id：110
+2018-03-05 17:29:40.758 页面：mySpace 方法：goods: test数量:9
+2018-03-05 17:29:40.833 页面：mySpace 方法：goods: test:[{"箱子id":28779,"库位id":3702,"位置":1,"默认商品id":1171,"默认商品品名":"测试组合02","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品id":1171,"本站价":0.01,"图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品品名":"测试组合02"},{"箱子id":28780,"库位id":3702,"位置":2,"默认商品id":1172,"默认商品品名":"测试组合03","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031113207283.jpg","实际商品id":1172,"本站价":0.01,"图片路径":"/upload/201711/03/201711031113207283.jpg","实际商品品名":"测试组合03"},{"箱子id":28781,"库位id":3702,"位置":3,"默认商品id":1171,"默认商品品名":"测试组合02","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品id":1171,"本站价":0.01,"图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品品名":"测试组合02"},{"箱子id":28782,"库位id":3702,"位置":4,"默认商品id":1172,"默认商品品名":"测试组合03","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031113207283.jpg","实际商品id":1172,"本站价":0.01,"图片路径":"/upload/201711/03/201711031113207283.jpg","实际商品品名":"测试组合03"},{"箱子id":28783,"库位id":3702,"位置":5,"默认商品id":1171,"默认商品品名":"测试组合02","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品id":1171,"本站价":0.01,"图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品品名":"测试组合02"},{"箱子id":28784,"库位id":3702,"位置":6,"默认商品id":1170,"默认商品品名":"大胆爱测试","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031028547432.jpg","实际商品id":1170,"本站价":0.01,"图片路径":"/upload/201711/03/201711031028547432.jpg","实际商品品名":"大胆爱测试"},{"箱子id":28785,"库位id":3702,"位置":7,"默认商品id":1171,"默认商品品名":"测试组合02","默认商品价格":"0.01","默认图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品id":1171,"本站价":0.01,"图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品品名":"测试组合02"},{"箱子id":28786,"库位id":3702,"位置":8,"默认商品id":111,"默认商品品名":"空气套X2","默认商品价格":"49.99","默认图片路径":"/upload/201706/12/201706121347135394.jpg","实际商品id":1171,"本站价":0.01,"图片路径":"/upload/201711/03/201711031112135251.jpg","实际商品品名":"测试组合02"},{"箱子id":28787,"库位id":3702,"位置":9,"默认商品id":112,"默认商品品名":"粉红跳蛋","默认商品价格":"39.99","默认图片路径":"/upload/201706/15/201706151554496115.png","实际商品id":112,"本站价":39.99,"图片路径":"/upload/201706/15/201706151554496115.png","实际商品品名":"粉红跳蛋"}]
