@@ -10,7 +10,8 @@
     <link rel="icon" href="../img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
-    <style>
+    <link rel="stylesheet" href="../css/layer.css" />
+  <style>
         html, body {
             width: 100%;
             height: 100%;
@@ -38,24 +39,10 @@
             width: 100%;
             position: absolute;
             left: 0;
-            top: 40%;
+            top: 45%;
             z-index: 10;
         }
-        /*@media only screen and (min-width: 320px) and (max-width: 374px){
-				.main{
-					top:20%;
-				}
-			}
-			@media only screen and (min-width: 375px) and (max-width: 413px){
-				.main{
-					top:-40px;
-				}
-			}
-			@media only screen and (min-width: 414px){
-				.main{
-					top:-20px;
-				}
-			}*/
+
         .btnWrap {
             width: 100%;
             text-align: center;
@@ -100,6 +87,10 @@
                 font: 14px/20px "microsoft yahei";
                 color: #ff6600;
             }
+
+        .mb10 {
+            margin-bottom: 10px;
+        }
 
         .tips {
             display: none;
@@ -159,76 +150,63 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="top">
-            <img src="../img/guide/top.png" alt="" />
+    <form runat="server">
+    <div class="top"><img src="../img/guide/top.png" alt="" /></div>
+    <div class="main">
+        <div class="btnWrap mb10">
+            <input class="old_check" type="checkbox" /><label for="">确认已满18周岁</label>
         </div>
-        <div class="main">
-            <div class="btnWrap">
-                <input type="checkbox" /><label for="">确认已满18周岁</label>
-            </div>
-            <div class="btnWrap">
-                <div class="btn">立即开启 ENTER</div>
-            </div>
+        <div class="btnWrap">
+            <div class="btn">立即开启 ENTER</div>
+            <input type="button" id="submit_button" class="submit_button" style="display:none;" runat="server" onserverclick="submit_button_ServerClick"/>
+        </div>
+    </div>
+    <div class="tips">
+        <div class="enterFail">
             <div class="imgWrap">
-                <img src="../img/guide/btns.png" alt="" />
+                <img src="../img/fail.png" alt="" />
             </div>
-            <p><a href="javascript:;">常见问题</a></p>
-        </div>
-        <div class="bottom">
-            <img src="../img/guide/bottom.png" alt="" />
-        </div>
-        <div class="tips">
-            <div class="enterFail">
-                <div class="imgWrap">
-                    <img src="../img/fail.png" alt="" />
-                </div>
-                <p>系统提示</p>
-                <div class="des">请确认您已满18周岁</div>
-                <div class="okBtn">
-                    <span>OK</span>
-                </div>
+            <p>系统提示</p>
+            <div class="des">请确认您已满18周岁</div>
+            <div class="okBtn">
+                <span>OK</span>
             </div>
         </div>
-        <div class="waiting">
-            <div class="waitWrapper">
-                <img src="img/loading.gif" alt="" />
-            </div>
-        </div>
-        <script src="../js/plugins/zepto.min.js"></script>
-        <script>
-            $('.okBtn').on('click', function () {
-                $('.tips').hide();
-            });
-            $('.tips').on('click', function () {
-                $('.tips').hide();
-            });
-            $('.enterFail').on('click', function (event) {
-                event.stopPropagation();
-            });
-            $('.btn').on('click', function () {
-                if ($('input').prop('checked')) {
-                    window.location.href = '../Buyer/mySpace.aspx'
-                } else {
-                    $('.tips').show();
-                }
-            });
-        </script>
+    </div>
+    <div class="bottom">
+        <img src="../img/guide/bottom.png" alt="" />
+    </div>
+    <script src="../js/Utils.js"></script>
+    <script src="../js/plugins/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/layer.js"></script>
+    <script>
 
-    </form>
+        $('.okBtn').on('click', function () {
+            $('.tips').hide();
+        });
+        $('.tips').on('click', function () {
+            $('.tips').hide();
+        });
+        $('.enterFail').on('click', function (event) {
+            event.stopPropagation();
+        });
+        $('.btn').on('click', function () {
+            if ($('.old_check').prop('checked')) {
+                //var mac = commonSelf.boxmac;
+                $(".submit_button").click();
+                //window.location.href = '../Buyer/mySpace.aspx?boxmac=' + mac;
+            } else {
+                layer.open({
+                    title: ['系统提示', 'background-color:#F60; color:#fff;'],
+                    content: '请确认您已满18周岁',
+                    btn: 'OK'
+                })
+            }
+        });
 
-    <%--    		<script>
-    		    $('.okBtn').on('click', function () {
-    		        $('.tips').hide();
-    		    })
-    		    $('.btn').on('click', function () {
-    		        if ($('#enter').prop('checked')) {
-    		            window.location.href = '../Buyer/mySpace.aspx'
-    		        } else {
-    		            $('.tips').show();
-    		        }
-    		    })
-		</script>--%>
+       
+    </script>
+        </form>
 </body>
 
 </html>

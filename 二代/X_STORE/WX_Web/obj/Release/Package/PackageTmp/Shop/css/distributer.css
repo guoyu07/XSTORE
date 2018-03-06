@@ -38,52 +38,74 @@
         float: left;
         width: 20%;
         position: relative;
-        margin-bottom: 10px; }
-        #view #roomStatus ul li a {
-          width: 100%;
-          display: block; }
-          #view #roomStatus ul li a img {
+        margin-bottom: 10px; 
+      }
+        #view #roomStatus ul li img {
             display: block;
             width: 80%;
-            margin: 0 auto; }
-          #view #roomStatus ul li a .roomNumber {
-            text-align: center;
-            width: 100%;
-            font: 12px/12px "microsoft yahei";
-            color: #fff;
-            position: absolute;
-            bottom: 3.5px;
-            left: 0; }
-          #view #roomStatus ul li a .label {
-            padding: 4px;
-            border-radius: 50%;
-            font: 12px/12px "microsoft yahei";
-            color: #fff;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            background: #666; }
+            margin: 0 auto; 
+        }
+        #view #roomStatus ul li .roomNumber {
+          text-align: center;
+          width: 100%;
+          font: 12px/12px "microsoft yahei";
+          color: #fff;
+          position: absolute;
+          bottom: 3.5px;
+          left: 0; }
+        #view #roomStatus ul li .label {
+          display: none;
+          padding: 4px;
+          border-radius: 50%;
+          font: 12px/12px "microsoft yahei";
+          color: #fff;
+          position: absolute;
+          top: 0px;
+          right: 0px; }
+        #view #roomStatus ul li .offLine {
+          background: #666; }
+        #view #roomStatus ul li .noEquipment {
+          background: #f60; }
+        #view #roomStatus ul li .stop {
+          background: #F12E06; }
+      #view #roomStatus ul li.ofl .offLine {
+        display: block; }
+      #view #roomStatus ul li.nep .noEquipment {
+        display: block; }
+      #view #roomStatus ul li.stp .stop {
+        display: block; }
   #view #pickUp {
     width: 100%; }
-    #view #pickUp .topTitle {
-      width: 94%;
-      padding: 10px 3%; }
-      #view #pickUp .topTitle img {
-        width: 60px;
-        height: 60px;
-        display: block;
-        border-radius: 50%;
-        margin-right: 10px; }
-      #view #pickUp .topTitle .disInfo {
-        width: calc(100% - 70px);
-        width: -webkit-calc(100% - 70px);
-        width: -moz-calc(100% - 70px); }
-        #view #pickUp .topTitle .disInfo h3 {
-          font: 16px/40px "microsoft yahei";
-          color: #000000; }
-        #view #pickUp .topTitle .disInfo p {
-          font: 12px/20px "microsoft yahei";
-          color: #666; }
+    #view #pickUp section {
+      width: 100%;
+      padding: 10px 0;
+      border-bottom: solid 1px #ccc; }
+      #view #pickUp section .publishProgress {
+        width: 100%; }
+        #view #pickUp section .publishProgress dd {
+          width: 20%;
+          text-align: center; }
+          #view #pickUp section .publishProgress dd .icon {
+            font: 600 14px/20px "microsoft yahei";
+            color: #CCCCCC; }
+          #view #pickUp section .publishProgress dd h4 {
+            font: 14px/20px "microsoft yahei";
+            color: #CCCCCC;
+            text-align: center; }
+        #view #pickUp section .publishProgress dd:first h4 {
+          color: #a7db4c; }
+        #view #pickUp section .publishProgress dd.pass .icon {
+          color: #f60; }
+        #view #pickUp section .publishProgress dd.pass h4 {
+          color: #f60; }
+        #view #pickUp section .publishProgress dt {
+          width: 60%;
+          padding-top: 16px; }
+          #view #pickUp section .publishProgress dt .progressCenter {
+            background: #ccc;
+            height: 10px; }
+        #view #pickUp section .publishProgress dt.pass .progressCenter {
+          background: #f60; }
     #view #pickUp ul {
       width: 94%;
       padding: 0 3%; }
@@ -93,20 +115,20 @@
         width: 94%; }
         #view #pickUp ul li .imgWrap {
           margin-right: 10px;
-          width: 60px;
-          height: 60px; }
+          width: 40px;
+          height: 40px; }
           #view #pickUp ul li .imgWrap img {
             width: 100%;
             height: 100%;
             display: block; }
         #view #pickUp ul li .info h3 {
-          font: 16px/60px "microsoft yahei";
+          font: 14px/40px "microsoft yahei";
           color: #666; }
         #view #pickUp ul li .num {
-          font: 14px/60px "microsoft yahei";
+          font: 14px/40px "microsoft yahei";
           color: #666; }
           #view #pickUp ul li .num span {
-            font: 16px/60px "microsoft yahei";
+            font: 14px/40px "microsoft yahei";
             color: #666; }
     #view #pickUp .btnWrap {
       width: 94%;
@@ -119,6 +141,12 @@
         text-align: center;
         background: #FF6600;
         border-radius: 4px; }
+    #view #pickUp .noTask {
+      display: none;
+      padding-top: 40%;
+      font: 14px/30px "microsoft yahei";
+      color: #666;
+      text-align: center; }
   #view #disMyself {
     width: 100%;
     height: 100%; }
@@ -132,13 +160,27 @@
         color: #fff;
         border-radius: 50%; }
       #view #disMyself .personalInfo .positinInfo {
-        margin-left: 20px; }
+        margin-left: 10px;
+        width: calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+        width: -moz-calc(100% - 90px); }
         #view #disMyself .personalInfo .positinInfo .market {
-          font: 20px/40px "microsoft yahei";
-          color: #000; }
-        #view #disMyself .personalInfo .positinInfo .managerName {
-          font: 16px/40px "microsoft yahei";
-          color: #666; }
+          font: 16px/27px "microsoft yahei";
+          color: #000;
+          height: 80px;
+          width: 40%;
+          text-align: center; }
+          #view #disMyself .personalInfo .positinInfo .market .job, #view #disMyself .personalInfo .positinInfo .market .account {
+            font: 14px/27px "microsoft yahei";
+            color: #333; }
+        #view #disMyself .personalInfo .positinInfo .area {
+          margin-top: 20px;
+          margin-left: 3%;
+          font: 14px/20px "microsoft yahei";
+          color: #666;
+          height: 40px;
+          width: 57%;
+          text-align: center; }
     #view #disMyself ul {
       width: 100%; }
       #view #disMyself ul li {
@@ -165,15 +207,15 @@
       #view #disMyself ul .deliveryTask i {
         background: #f60; }
       #view #disMyself ul .remind i {
-        background: #f60; }
+        background: #007AFF; }
       #view #disMyself ul .report i {
         background: #f60; }
       #view #disMyself ul .deal i {
         background: #f60; }
       #view #disMyself ul .changePsd i {
-        background: #007AFF; }
+        background: #000; }
       #view #disMyself ul .cancellation i {
-        background: #007AFF; }
+        background: #000; }
   #view #news {
     width: 100%;
     height: 100%; }
@@ -343,3 +385,87 @@
       .tips .tipsContent ul .continue {
         color: #fff;
         background: #18E59A; }
+       #view #roomSelectDiv .btnWrap {
+      width: 94%;
+      padding: 10px 3%; }
+      #view #roomSelectDiv .btnWrap .makeSure {
+        display: block;
+        width: 95%;
+        font: 16px/50px "microsoft yahei";
+        color: #fff;
+        bottom:5px;
+
+        text-align: center;
+        background: #FF6600;
+        border-radius: 4px; }
+
+       #view #roomSelectDiv section .publishProgress dt {
+          width: 60%;
+          padding-top: 16px; }
+       #view .roomGoods .btnWrap {
+           clear:both;
+      width: 94%;
+      padding: 10px 3%; }
+      #view .roomGoods  .btnWrap .makeSure {
+        display: inline-block;
+        width: 45%;
+        font: 16px/50px "microsoft yahei";
+        color: #fff;
+        position:fixed;
+        bottom:5px;
+        text-align: center;
+        background: #FF6600;
+        border-radius: 4px; }
+      #view .roomGoods  .btnWrap .finishSure {
+        display:  inline-block;
+        width: 45%;
+        font: 16px/50px "microsoft yahei";
+        color: #fff;
+        position:fixed;
+        bottom:5px;
+
+        text-align: center;
+        background: #FF6600;
+        border-radius: 4px; }
+        #view .roomDetail .btnWrap {
+           clear:both;
+      width: 94%;
+      padding: 10px 3%; }
+      #view .roomDetail  .btnWrap .makeSure {
+        display: inline-block;
+        width: 95%;
+        font: 16px/50px "microsoft yahei";
+        color: #fff;
+        bottom:5px;
+        text-align: center;
+
+        background: #FF6600;
+        border-radius: 4px; }
+
+ /*.roomSelect ul {
+      width: 94%;
+      padding: 10px 3%; }
+       .roomSelect ul li {
+        float: left;
+        width: 20%;
+        position: relative;
+        margin-bottom: 10px; 
+      }
+         .roomSelect ul li .roomclass {
+            display: block;
+            width: 80%;
+            margin: 0 auto; 
+        }
+         .roomSelect ul li .roomNumber {
+          text-align: center;
+          width: 100%;
+         font: 12px/12px "microsoft yahei";
+          color: #fff;
+          position: absolute;
+          bottom: 3.5px;
+          left: 0; }
+         .roomSelect ul li .label {
+          padding: 4px;
+          position: absolute;
+          top: 0px;
+          right: 0px; }*/

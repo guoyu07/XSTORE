@@ -25,6 +25,22 @@
         }
 
     </style>
+    <script type="text/javascript">
+        $(function () {
+            pushHistory();
+            window.addEventListener("popstate", function (e) {
+                window.location.href = "mySpace.aspx";
+            }, false);
+            function pushHistory() {
+                var state = {
+                    title: "title",
+                    url: "#"
+                };
+                window.history.pushState(state, "title", "#");
+            }
+        });
+
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -45,7 +61,7 @@
                                    
                                     <div class="imgWrap l"><%-- Style="display: none;"--%>
                                         <label id="cart_id"><%#Eval("id") %></label>
-                                        <img src="<%#Eval("图片路径") %>" alt="" />
+                                        <img src="<%#Eval("图片路径") == ""?no_img:Eval("图片路径") %>" alt="" />
                                     </div>
                                     <div class="l info">
                                         <h3 class="over"><%#Eval("品名") %></h3>
@@ -59,7 +75,7 @@
 
                     </ul>
                     <div class="settlement clearfix">
-                        <div class="totalMoney l">总金额： ¥ <span><%=totalprice %></span></div>
+                        <div class="totalMoney l">总金额： ¥ <span><%=TotalPrice %></span></div>
                         <%--<div class="r goBuy">去结算</div>--%>
                         <asp:Button CssClass="r goBuy" ID="submit_order" OnClick="submit_order_Click" runat="server" Text="去结算" style="border:none" />
                         

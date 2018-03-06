@@ -1,33 +1,64 @@
-dl {
+section {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: solid 1px #ccc; }
+  section .publishProgress {
+    width: 100%; }
+    section .publishProgress dd {
+      width: 20%;
+      text-align: center; }
+      section .publishProgress dd .icon {
+        font: 600 14px/20px "microsoft yahei";
+        color: #CCCCCC; }
+      section .publishProgress dd h4 {
+        font: 14px/20px "microsoft yahei";
+        color: #CCCCCC;
+        text-align: center; }
+    section .publishProgress dd:first h4 {
+      color: #a7db4c; }
+    section .publishProgress dd.pass .icon {
+      color: #f60; }
+    section .publishProgress dd.pass h4 {
+      color: #f60; }
+    section .publishProgress dt {
+      width: 20%;
+      padding-top: 16px; }
+      section .publishProgress dt .progressCenter {
+        background: #ccc;
+        height: 10px; }
+    section .publishProgress dt.pass .progressCenter {
+      background: #f60; }
+
+.main dl {
   width: 100%; }
-  dl dt {
+  .main dl dt {
     width: 94%;
     padding: 10px 3%;
     border-bottom: solid 1px #ccc; }
-    dl dt .identifier, dl dt .goodsName, dl dt .pic, dl dt .isSure {
+    .main dl dt .identifier, .main dl dt .goodsName, .main dl dt .pic, .main dl dt .lattice {
       width: 25%;
       font: 14px/30px "microsoft yahei";
       color: #000;
       text-align: center; }
-  dl dd {
+  .main dl dd {
     width: 94%;
     padding: 10px 3%;
     border-bottom: solid 1px #ccc; }
-    dl dd .idf, dl dd .gdn {
+    .main dl dd .lid, .main dl dd .idf, .main dl dd .gdn {
       width: 25%;
       font: 12px/60px "microsoft yahei";
       color: #666;
       text-align: center; }
-    dl dd .imgWrap {
+    .main dl dd .imgWrap {
       width: 25%;
       text-align: center; }
-      dl dd .imgWrap img {
+      .main dl dd .imgWrap img {
         width: 60px;
         height: 60px; }
-    dl dd .btnWrap {
+    .main dl dd .btnWrap {
       width: 25%;
       text-align: center; }
-      dl dd .btnWrap button {
+      .main dl dd .btnWrap button {
         width: 60px;
         text-align: center;
         margin-top: 10px;
@@ -37,61 +68,19 @@ dl {
         background: #ff6600;
         background-size: 100%;
         border-radius: 4px; }
-  dl dd.close button {
+  .main dl dd.close button {
     background: #ccc; }
-  dl dd:last-child {
+  .main dl dd:last-child {
     border-bottom: none; }
-
-.fnWrap {
+.main .fnWrap {
   border-top: solid 1px #ccc;
   width: 94%;
   padding: 10px 3%; }
-  .fnWrap .finish {
+  .main .fnWrap .finish {
     border: none;
     width: 100%;
-    font: 16px/30px "microsoft yahei";
+    font: 16px/50px "microsoft yahei";
     color: #fff;
     background: #ff6600;
     text-align: center;
     border-radius: 4px; }
-
-.tips {
-  display: none;
-  width: 94%;
-  height: 80%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  padding: 20% 3%;
-  background: rgba(0, 0, 0, 0.3); }
-  .tips li {
-    width: 100%;
-    height: 60%;
-    background: #fff;
-    padding: 10% 0; }
-    .tips li .imgWrap {
-      width: 100%;
-      text-align: center; }
-    .tips li p {
-      word-break: normal;
-      width: 100%;
-      text-align: center;
-      font: 600 30px/50px "microsoft yahei";
-      color: #000; }
-    .tips li .des {
-      width: 100%;
-      text-align: center;
-      font: 14px/30px "microsoft yahei";
-      color: #666;
-      margin-bottom: 10px; }
-    .tips li .okBtn {
-      width: 100%;
-      text-align: center; }
-      .tips li .okBtn span {
-        display: inline-block;
-        padding: 0 40px;
-        background: #6fa0f6;
-        border-radius: 2px;
-        font: 14px/40px "microsoft yahei";
-        color: #fff; }

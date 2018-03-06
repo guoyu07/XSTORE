@@ -37,7 +37,7 @@
 							<img class="picOff" src="../img/xs.png" alt="" />
 							<img class="picOn" src="../img/xs_on.png"/>
 						</div>
-						<p>X-STORE</p>
+						<p>操作指南</p>
 					</a>
 				</li>
 			</ul>

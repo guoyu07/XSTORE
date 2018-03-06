@@ -1,4 +1,4 @@
-@charset "utf-8";
+嚜濃charset "utf-8";
 /* CSS Document */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
 	margin: 0;
@@ -250,14 +250,14 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 }
 input::-moz-placeholder, textarea::-moz-placeholder { color: #999;}
 
-/*團團縐*/
+/*嚙諄團選蕭*/
 .Appcontent{margin-top:50px;}
 .box .title-green,.box .title-red{text-align:left;}
     .serv_res{margin-top:30px;margin-bottom:30px;}
     .serv_res .red{font-size:18px;}
     #servspan{ font-size:18px;color:Red;margin:10px 0;display:inline-block;}
     
-/*團團縐...............    
+/*嚙諄團選蕭...............    
     .Detail span.zhongjiangred{
     color: red;
     font-size: 16px;

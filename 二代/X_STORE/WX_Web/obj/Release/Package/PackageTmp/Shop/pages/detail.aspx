@@ -39,7 +39,6 @@
 
                         </ItemTemplate>
                     </asp:Repeater>
-
                 </ul>
                 <dl class="goodsContent">
                     <dd class="showTime">
@@ -53,21 +52,15 @@
                             <dd>
                                 <%#Eval("子商品描述") %>
                             </dd>
-
                         </ItemTemplate>
                     </asp:Repeater>
-
-
                 </dl>
             </div>
-
-
-
-
         </div>
-        <span id="goods_info_id" runat="server" style="display: none"></span>
-        <span id="goods_info_weizhi" runat="server" style="display: none"></span>
-        <span id="goods_info_kw" runat="server" style="display: none"></span>
+        <span id="goods_info_id" runat="server" class="goods_info_id" style="display: none"></span>
+        <span id="goods_info_weizhi" runat="server" class="goods_info_weizhi" style="display: none"></span>
+        <span id="goods_info_kw" runat="server" class="goods_info_kw" style="display: none"></span>
+        <span id="openid_span" runat="server" class="openid_span" style="display: none"></span>
         <%--        <div class="cartLabel">
             <a href="../Buyer/cart.aspx">
                 <span runat="server" id="cart_nums">6</span>
@@ -76,7 +69,7 @@
         </div>--%>
         <div class="cartLabel">
             <a href="../Buyer/cart.aspx">
-                <span runat="server" id="cart_nums">6</span>
+                <span runat="server" id="cart_nums">0</span>
                 <div class="circle">
                     <img src="../img/cart_on.png" alt="" />
                 </div>
@@ -98,6 +91,29 @@
         <script>
 
             $(function () {
+                $.ajax({
+                    url: '../ashx/GetCartNum.ashx',
+                    data: {
+                        kwid: $('.goods_info_kw').text()
+                    },
+                    type: 'get',
+                    dataType: 'json',
+                    success: function (result) {
+                       
+                        if (result.state == '0') {
+                            $('.cartLabel span').text(parseInt(result.data));
+                        }
+                        else {
+                            layer.open({
+                                content: result.exception,
+                                btn: ['ok'],
+                                yes: function (index) {
+                                    layer.close(index);
+                                }
+                            });
+                        }
+                    }
+                })
                 var mySwiper = new Swiper('.swiper-container', {
                     direction: 'horizontal',
                     loop: true,
@@ -111,56 +127,47 @@
                     var index = $(this).index();
                     $('.goodsContent dd').eq(index).addClass('showTime').siblings().removeClass('showTime');
                 });
-                $('#buy').on('click', function () {
+                $('#buy').on('click', function() {
 
                     $.ajax({
                         url: '../ashx/buynow.ashx',
                         data: {
-                            addgoodsid: $('#goods_info_id').text(),
-                            addgoodsweizhi: $('#goods_info_weizhi').text(),
-                            addgoodskwid: $('#goods_info_kw').text()
+                            addgoodsid: $('.goods_info_id').text(),
+                            addgoodsweizhi: $('.goods_info_weizhi').text(),
+                            addgoodskwid: $('.goods_info_kw').text(),
+                            openid: $('.openid_span').text()
                         },
                         type: 'get',
                         dataType: 'json',
-                        success: function (result) {
+                        success: function(result) {
                             console.log(result);
                             if (result.state == '1') {
                                 console.log(1);
                                 window.location.href = result.guid;
                                 console.log(2);
-                            }
-                            else {
+                            } else {
                                 console.log(3);
                                 console.log(result.info);
                             }
                         }
-                    })
-                })
+                    });
+                });
 
 
                 $('.addCart').on('click', function () {
-                    var cart_nums = $('.cartLabel span').html();
-
                     $.ajax({
                         url: '../ashx/addcart.ashx',
                         data: {
-                            addgoodsid: $('#goods_info_id').text(),
-                            addgoodsweizhi: $('#goods_info_weizhi').text(),
-                            addgoodskwid: $('#goods_info_kw').text()
+                            addgoodsid: $('.goods_info_id').text(),
+                            addgoodsweizhi: $('.goods_info_weizhi').text(),
+                            addgoodskwid: $('.goods_info_kw').text()
                         },
                         type: 'get',
                         dataType: 'json',
                         success: function (result) {
-                            if (result.state == '1') {
-                                //layer.open({
-                                //    content: result.info,
-                                //    btn: ['ok'],
-                                //    yes: function (index) {
-                                //        $('.cartLabel span').text(parseInt(cart_nums) + 1);
-                                //        layer.close(index);
-                                //    }
-                                //});
-                                $('.cartLabel span').text(parseInt(cart_nums) + 1);
+                            if (result.state === 1) {
+
+                                $('.cartLabel span').text(parseInt(result.count));
                                        layer.close(index);
                             }
                             else {

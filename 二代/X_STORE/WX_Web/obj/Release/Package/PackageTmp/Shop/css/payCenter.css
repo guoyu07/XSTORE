@@ -14,12 +14,12 @@ ul {
       text-align: center; }
       ul li a .pic {
         display: inline-block;
-        width: 80%;
+        width: 100px;
         position: relative;
         overflow: hidden; }
         ul li a .pic img {
-          width: 100%;
-          height: auto; }
+          width: 100px;
+          height: 100px; }
         ul li a .pic p {
           width: 100%;
           text-align: center;

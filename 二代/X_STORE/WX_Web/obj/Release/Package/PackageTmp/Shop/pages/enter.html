@@ -2,11 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta content="portrait">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>幸事多私享空间-起始页</title>
     <link rel="icon" href="../img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/layer.css" />
     <style>
         html, body {
             width: 100%;
@@ -35,7 +37,7 @@
             width: 100%;
             position: absolute;
             left: 0;
-            top: 50%;
+            top: 45%;
             z-index: 10;
         }
 
@@ -46,16 +48,12 @@
         }
 
             .btnWrap .btn {
-
                 display: inline;
                 font: 18px/24px "microsoft yahei";
                 color: #000;
-                /*padding: 0 4px;*/
+                padding: 0 4px;
                 border: solid 1px #000;
                 border-radius: 2px;
-                /*padding-left:25px;
-                padding-right:25px;*/
-                padding:5px 25px 5px 25px;
             }
 
         input {
@@ -156,7 +154,7 @@
             <input type="checkbox" /><label for="">确认已满18周岁</label>
         </div>
         <div class="btnWrap">
-            <div class="btn" >立即开启</div>
+            <div class="btn">立即开启 ENTER</div>
         </div>
     </div>
     <div class="tips">
@@ -174,24 +172,37 @@
     <div class="bottom">
         <img src="../img/guide/bottom.png" alt="" />
     </div>
+    <script src="../js/Utils.js"></script>
     <script src="../js/plugins/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/layer.js"></script>
     <script>
-        $('.okBtn').on('click', function () {
-            $('.tips').hide();
-        });
-        $('.tips').on('click', function () {
-            $('.tips').hide();
-        });
-        $('.enterFail').on('click', function (event) {
-            event.stopPropagation();
-        });
-        $('.btn').on('click', function () {
-            if ($('input').prop('checked')) {
-                window.location.href = '../buyer/myspace.aspx'
-            } else {
-                $('.tips').show();
-            }
-        });
+
+			$('.okBtn').on('click',function(){
+				$('.tips').hide();
+			});
+			$('.tips').on('click',function(){
+				$('.tips').hide();
+			});
+			$('.enterFail').on('click',function(event){
+				event.stopPropagation();
+			});
+			$('.btn').on('click', function () {
+			    if ($('input').prop('checked')) {
+			        var mac = commonSelf.boxmac;
+			        window.location.href = '../Buyer/mySpace.aspx?boxmac=' + mac;
+				}else{
+					layer.open({
+						title:['系统提示','background-color:#F60; color:#fff;'],
+						content:'请确认您已满18周岁',
+						btn:'OK'
+					})
+				}
+			});
+
+			function CutParam() {
+
+
+			}
     </script>
 </body>
 </html>

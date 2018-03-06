@@ -34,7 +34,7 @@
                 </header>
 
                 <div class="topInputContaienr">
-<%--                    <input type="text" id="" runat="server" onchange="" style="outline:none;" value="" placeholder="请输入酒店名称" />--%>
+<%--                <input type="text" id="" runat="server" onchange="" style="outline:none;" value="" placeholder="请输入酒店名称" />--%>
                     <asp:TextBox ID="hotel_search" runat="server" OnTextChanged="hotel_search_TextChanged" placeholder="请输入酒店名称" ></asp:TextBox>
                     
                 </div>

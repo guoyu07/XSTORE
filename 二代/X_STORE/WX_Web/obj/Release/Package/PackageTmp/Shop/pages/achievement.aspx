@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
-    <title>幸事多私享空间-业绩列表</title>
+    <title>幸事多私享空间-销售业绩</title>
     <style type="text/css">
         #AchievementBox {
             width: 100%;
@@ -19,11 +19,11 @@
             z-index: 99;
         }
 
-            #AchievementBox .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
-                color: #FE8355;
-                border-bottom: 2px solid #FF5C12;
-                border-bottom-width: 50%;
-            }
+        #AchievementBox .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+            color: #FE8355;
+            border-bottom: 2px solid #FF5C12;
+            border-bottom-width: 50%;
+        }
 
         .sliderAchievementControlContents {
             width: 100%;
@@ -55,18 +55,18 @@
                 font-size: 14px;
                 color: #FF0000;
             }
-
+        
         .bootomBar {
             position: fixed;
             bottom: 0;
             width: 100%;
             height: 50px;
             padding: 0 15px;
-            text-align: right;
+
             background-color: #fff;
         }
 
-            .bootomBar p {
+            .bootomBar p.total {
                 color: #000000;
                 font-size: 15px;
                 line-height: 50px;
@@ -74,7 +74,21 @@
                 text-align: right;
             }
 
-                .bootomBar p span {
+                .bootomBar p.total span {
+                    color: #FF5053;
+                    font-size: 14px;
+                }
+                .bootomBar p.daysale {
+                color: #000000;
+                font-size: 15px;
+                line-height: 50px;
+                margin: 0;
+                text-align: left;
+                width: 50%;
+                float: left;
+            }
+
+                .bootomBar p.daysale span {
                     color: #FF5053;
                     font-size: 14px;
                 }
@@ -86,6 +100,7 @@
         .Am_table {
             width: 100%;
             background-color: #fff;
+            margin-bottom:5px;
         }
 
             .Am_table tbody tr th {
@@ -111,19 +126,20 @@
     <form id="form1" runat="server">
         <div id="AchievementBox">
             <div id="sliderAchievementControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted ">
-                <a class="mui-control-item mui-active" id="today" href="#content1">24小时</a>
-                <a class="mui-control-item" id="Week" href="#content2">7天</a>
-                <a class="mui-control-item" id="waitDeliver" href="#content3">本月</a>
-                <a class="mui-control-item" id="Month" href="#content4">本年</a>
-                <a class="mui-control-item" id="All" href="#content5">全部</a>
+                <a class="mui-control-item mui-active" id="yestoday" href="#content2">昨天</a>
+                <a class="mui-control-item" id="Week" href="#content3">7天</a>
+                <a class="mui-control-item" id="today" href="#content1">上月</a>
+                <a class="mui-control-item" id="waitDeliver" href="#content4">本月</a>
+                <a class="mui-control-item" id="Month" href="#content5">本年</a>
+                <a class="mui-control-item" id="All" href="#content6">全部</a>
             </div>
         </div>
         <div id="sliderAchievementControlContents" class="sliderAchievementControlContents">
-            <div id="content1" class="mui-control-content mui-active">
+            <div id="content1" class="mui-control-content">
                 <table border="" cellspacing="" cellpadding="" class="Am_table">
                     <tr>
                         <th>商品</th>
-                        <th>单价</th>
+                        <th>编码</th>
                         <th>数量</th>
                         <th>金额</th>
                     </tr>
@@ -131,7 +147,7 @@
                         <ItemTemplate>
                             <tr>
                                 <td><%#Eval("品名") %></td>
-                                <td>¥ <span><%#Eval("本站价") %></span></td>
+                                <td><%#Eval("编码") %></td>
                                 <td>× <span><%#Eval("总数") %></span></td>
                                 <td>¥ <span><%#Eval("总价") %></span></td>
                             </tr>
@@ -140,14 +156,41 @@
 
                 </table>
                 <div class="bootomBar">
-                    <p>总计：<span>¥<%=Atoatal %></span></p>
+                     <p class="daysale">日均房：<span>¥<%=hsale %></span></p>
+                    <p class="total">总计：<span>¥<%=Atoatal %></span></p>
                 </div>
             </div>
-            <div id="content2" class="mui-control-content">
+            <div id="content2" class="mui-control-content  mui-active">
                 <table border="" cellspacing="" cellpadding="" class="Am_table">
                     <tr>
                         <th>商品</th>
-                        <th>单价</th>
+                           <th>编码</th>
+                        <th>数量</th>
+                        <th>金额</th>
+                    </tr>
+                    <asp:Repeater ID="Yestoday" runat="server">
+                        <ItemTemplate>
+                            <tr>
+                                <td><%#Eval("品名") %></td>
+                                    <td><%#Eval("编码") %></td>
+     
+                                <td>× <span><%#Eval("总数") %></span></td>
+                                <td>¥ <span><%#Eval("总价") %></span></td>
+                            </tr>
+                        </ItemTemplate>
+                    </asp:Repeater>
+
+                </table>
+                <div class="bootomBar">
+                    <p class="daysale">日均房：<span>¥<%=daysale %></span></p>
+                    <p class="total">总计：<span>¥<%=Ftotal %></span></p>
+                </div>
+            </div>
+            <div id="content3" class="mui-control-content">
+                <table border="" cellspacing="" cellpadding="" class="Am_table">
+                    <tr>
+                        <th>商品</th>
+                           <th>编码</th>
                         <th>数量</th>
                         <th>金额</th>
                     </tr>
@@ -155,7 +198,8 @@
                         <ItemTemplate>
                             <tr>
                                 <td><%#Eval("品名") %></td>
-                                <td>¥ <span><%#Eval("本站价") %></span></td>
+                                    <td><%#Eval("编码") %></td>
+     
                                 <td>× <span><%#Eval("总数") %></span></td>
                                 <td>¥ <span><%#Eval("总价") %></span></td>
                             </tr>
@@ -164,14 +208,16 @@
 
                 </table>
                 <div class="bootomBar">
-                    <p>总计：<span>¥<%=Btoatal %></span></p>
+                      <p class="daysale">日均房：<span>¥<%=weeksale %></span></p>
+                    
+                    <p class="total">总计：<span>¥<%=Btoatal %></span></p>
                 </div>
             </div>
-            <div id="content3" class="mui-control-content">
+            <div id="content4" class="mui-control-content">
                 <table border="" cellspacing="" cellpadding="" class="Am_table">
                     <tr>
                         <th>商品</th>
-                        <th>单价</th>
+                              <th>编码</th>
                         <th>数量</th>
                         <th>金额</th>
                     </tr>
@@ -179,7 +225,7 @@
                         <ItemTemplate>
                             <tr>
                                 <td><%#Eval("品名") %></td>
-                                <td>¥ <span><%#Eval("本站价") %></span></td>
+                                    <td><%#Eval("编码") %></td>
                                 <td>× <span><%#Eval("总数") %></span></td>
                                 <td>¥ <span><%#Eval("总价") %></span></td>
                             </tr>
@@ -189,14 +235,16 @@
 
                 </table>
                 <div class="bootomBar">
-                    <p>总计：<span>¥<%=Ctoatal %></span></p>
+                      <p class="daysale">日均房：<span>¥<%=monthsale %></span></p>
+                    <p class="total">总计：<span>¥<%=Ctoatal %></span></p>
                 </div>
             </div>
-            <div id="content4" class="mui-control-content">
+            <div id="content5" class="mui-control-content">
                 <table border="" cellspacing="" cellpadding="" class="Am_table">
                     <tr>
                         <th>商品</th>
-                        <th>单价</th>
+                              <th>编码</th>
+
                         <th>数量</th>
                         <th>金额</th>
                     </tr>
@@ -204,7 +252,8 @@
                         <ItemTemplate>
                             <tr>
                                 <td><%#Eval("品名") %></td>
-                                <td>¥ <span><%#Eval("本站价") %></span></td>
+                                    <td><%#Eval("编码") %></td>
+     
                                 <td>× <span><%#Eval("总数") %></span></td>
                                 <td>¥ <span><%#Eval("总价") %></span></td>
                             </tr>
@@ -213,37 +262,44 @@
 
                 </table>
                 <div class="bootomBar">
-                    <p>总计：<span>¥<%=Dtoatal %></span></p>
+                    <p class="daysale">日均房：<span>¥<%=yearsale %></span></p>
+                    <p class="total">总计：<span>¥<%=Dtoatal %></span></p>
                 </div>
             </div>
-            <div id="content5" class="mui-control-content">
-                <table border="" cellspacing="" cellpadding="" class="Am_table">
-                    <tr>
-                        <th>商品</th>
-                        <th>单价</th>
-                        <th>数量</th>
-                        <th>金额</th>
-                    </tr>
-                    <asp:Repeater runat="server" ID="AllGoods">
-                        <ItemTemplate>
-                            <tr>
-                                <td><%#Eval("品名") %></td>
-                                <td>¥ <span><%#Eval("本站价") %></span></td>
-                                <td>× <span><%#Eval("总数") %></span></td>
-                                <td>¥ <span><%#Eval("总价") %></span></td>
-                            </tr>
+            <div id="content6" class="mui-control-content">
+                <div>
+                    <table border="" cellspacing="" cellpadding="" class="Am_table" >
+                        <tr>
+                            <th>商品</th>
+                                  <th>编码</th>
 
-                        </ItemTemplate>
-                    </asp:Repeater>
+                            <th>数量</th>
+                            <th>金额</th>
+                        </tr>
+                        <asp:Repeater runat="server" ID="AllGoods">
+                            <ItemTemplate>
+                                <tr>
+                                    <td><%#Eval("品名") %></td>
+                                        <td><%#Eval("编码") %></td>
+    
+                                    <td>× <span><%#Eval("总数") %></span></td>
+                                    <td>¥ <span><%#Eval("总价") %></span></td>
+                                </tr>
 
-                </table>
+                            </ItemTemplate>
+                        </asp:Repeater>
+
+                    </table>
+                </div>
+                <br />
+                <br />
+                <br />
                 <div class="bootomBar">
-                    <p>总计：<span>¥<%=Etoatal %></span></p>
+
+                    <p class="total">总计：<span>¥<%=Etoatal %></span></p>
                 </div>
             </div>
         </div>
-
-
         <script src="../js/plugins/mui.min.js" type="text/javascript" charset="utf-8"></script>
     </form>
 </body>

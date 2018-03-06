@@ -2,25 +2,17 @@
 <!--配送员-->
        		<nav id="foot">
 			<ul class="clearfix">
-				<li>
-					<a href="../Distributer/roomSatus.aspx" class="current">
-						<div class="index_bot">
-							<img class="picOff" src="../img/disRoom.png" alt="" />
-							<img class="picOn" src="../img/disRoom_on.png" alt=""/>
-						</div>
-						<p>房间</p>
-					</a>
-				</li>
-				<li>
-					<a href="../Distributer/PickUp.aspx" class="current">
+				<li style="width:50%;">
+                    <a href="../Distributer/roomSelect.aspx" class="current">
+                    
 						<div class="index_bot">
 							<img class="picOff" src="../img/pickUp.png" alt="" />
 							<img class="picOn" src="../img/pickUp_on.png" alt=""/>
 						</div>
-						<p>取货</p>
+						<p>常规补货</p>
 					</a>
 				</li>
-				<li>
+				<li style="width:50%;">
 					<a href="../Distributer/disMyself.aspx">
 						<div class="index_bot">
 							<img class="picOff" src="../img/myself.png" alt="" />
@@ -29,16 +21,7 @@
 						<p>我的</p>
 					</a>
 				</li>
-				<%--<li>
-					<a href="../Distributer/news.aspx">
-						<!--<i class="iconfont icon-wodehui"></i>-->
-						<div class="index_bot">
-							<img class="picOff" src="../img/news.png" alt="" />
-							<img class="picOn" src="../img/news_on.png"/>
-						</div>
-						<p>消息</p>
-					</a>
-				</li>--%>
+				
 			</ul>
 		</nav>
 <script src="../js/jquery-1.7.2.min.js"></script>
@@ -48,7 +31,6 @@
         $("a[name='con']").each(function () {
 
             $(this).removeClass("");
-<%--          //  var page = "<%=page %>";--%>
 
             switch (page) {
 
@@ -64,18 +46,7 @@
 
                     $("a[name='con']").eq(2).addClass("on");
                     break;
-                //case "car":
-
-                //    $("a[name='con']").eq(2).addClass("on");
-                //    break;
-                //case "news":
-
-                //    $("a[name='con']").eq(3).addClass("on");
-                //    break;
             }
-
-
-
         })
      
     })

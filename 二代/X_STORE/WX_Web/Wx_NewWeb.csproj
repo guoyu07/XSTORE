@@ -126,6 +126,7 @@
     <Content Include="css\layer.css" />
     <Content Include="css\mui.min.css" />
     <Content Include="css\mui.picker.min.css" />
+    <Content Include="images\cssIndex\gogo\image\1.png" />
     <Content Include="images\menu\icons_ss.png" />
     <Content Include="js\jquery.fancybox.pack.js" />
     <Content Include="appv\js\common.js" />
@@ -408,7 +409,6 @@
     <Content Include="images\cssIndex\gogo\btn_bg2.png" />
     <Content Include="images\cssIndex\gogo\comm.css" />
     <Content Include="images\cssIndex\gogo\detail.css" />
-    <Content Include="images\cssIndex\gogo\image\1.png" />
     <Content Include="images\cssIndex\gogo\image\2.png" />
     <Content Include="images\cssIndex\gogo\image\3.png" />
     <Content Include="images\cssIndex\gogo\image\4.png" />
@@ -471,7 +471,6 @@
     <Content Include="images\cssIndex\health\menu_back.png" />
     <Content Include="images\cssIndex\health\menu_down.png" />
     <Content Include="images\cssIndex\health\menu_home.png" />
-    <Content Include="images\cssIndex\images\1.jpg" />
     <Content Include="images\cssIndex\images\111.png" />
     <Content Include="images\cssIndex\images\222.png" />
     <Content Include="images\cssIndex\images\mb1\mb1_01.png" />
@@ -2643,7 +2642,6 @@
     <None Include="images\menu\Thumbs.db" />
     <None Include="images\public\Thumbs.db" />
     <Content Include="packages.config" />
-    <None Include="Properties\PublishProfiles\xsd.pubxml" />
     <None Include="Properties\PublishProfiles\lingshan.pubxml" />
     <Content Include="Shop\ashx\buynow.ashx" />
     <Content Include="Shop\ashx\Cancellation.ashx" />
@@ -2666,6 +2664,7 @@
     <Content Include="Shop\ashx\alipay.ashx" />
     <Content Include="Shop\xmlconfig\alipaypc.config" />
     <Content Include="Shop\ashx\AlipayEnter.ashx" />
+    <None Include="Properties\PublishProfiles\wx2.x-store.com.cn.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -2681,7 +2680,6 @@
     <Content Include="Talk\fonts\ionicons.eot" />
     <Content Include="Talk\fonts\ionicons.ttf" />
     <Content Include="Talk\fonts\ionicons.woff" />
-    <Content Include="Talk\images\Thumbs.db" />
     <Content Include="Talk\tools\LoadMoreDistr.ashx" />
     <Content Include="Talk\tools\LoadMoreOrder.ashx" />
     <Content Include="Talk\DistriBution.ashx" />

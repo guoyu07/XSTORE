@@ -32,3 +32,13 @@ E:\iM\OneDrive\X_STORE\Creatrue.Common\Creatrue.Common\obj\Release\Creatrue.Comm
 E:\iM\OneDrive\X_STORE\Creatrue.Common\Creatrue.Common\obj\Release\Creatrue.Common.csproj.CoreCompileInputs.cache
 E:\iM\OneDrive\X_STORE\Creatrue.Common\Creatrue.Common\obj\Release\Creatrue.Common.dll
 E:\iM\OneDrive\X_STORE\Creatrue.Common\Creatrue.Common\obj\Release\Creatrue.Common.pdb
+E:\Git\XSTORE\二代\X_STORE\Creatrue.Common\Creatrue.Common\bin\Release\Creatrue.Common.dll
+E:\Git\XSTORE\二代\X_STORE\Creatrue.Common\Creatrue.Common\bin\Release\Creatrue.Common.pdb
+E:\Git\XSTORE\二代\X_STORE\Creatrue.Common\Creatrue.Common\bin\Release\Creatrue.kernel.dll
+E:\Git\XSTORE\二代\X_STORE\Creatrue.Common\Creatrue.Common\bin\Release\Newtonsoft.Json.dll
+E:\Git\XSTORE\二代\X_STORE\Creatrue.Common\Creatrue.Common\bin\Release\ThoughtWorks.QRCode.dll
+E:\Git\XSTORE\二代\X_STORE\Creatrue.Common\Creatrue.Common\bin\Release\Creatrue.kernel.pdb
+E:\Git\XSTORE\二代\X_STORE\Creatrue.Common\Creatrue.Common\obj\Release\Creatrue.Common.csprojResolveAssemblyReference.cache
+E:\Git\XSTORE\二代\X_STORE\Creatrue.Common\Creatrue.Common\obj\Release\Creatrue.Common.csproj.CoreCompileInputs.cache
+E:\Git\XSTORE\二代\X_STORE\Creatrue.Common\Creatrue.Common\obj\Release\Creatrue.Common.dll
+E:\Git\XSTORE\二代\X_STORE\Creatrue.Common\Creatrue.Common\obj\Release\Creatrue.Common.pdb

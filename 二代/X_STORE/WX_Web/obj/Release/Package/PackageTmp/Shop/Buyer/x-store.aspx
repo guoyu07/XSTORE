@@ -23,22 +23,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div id='view' style="-webkit-overflow-scrolling: touch; overflow: auto!important;">
+        <div id='view' style="-webkit-overflow-scrolling: touch; overflow: auto!important; height:100%;">
             <div id="x-store">
-                <img src="../img/1.png" alt="" />
+                <%--<img src="../img/1.png" alt="" />
                 <img src="../img/2.png" alt="" />
                 <img src="../img/3.png" alt="" />
                 <img src="../img/4.png" alt="" />
                 <img src="../img/5.png" alt="" />
                 <img src="../img/6.png" alt="" />
-                <img src="../img/7.png" alt="" />
+                <img src="../img/7.png" alt="" />--%>
+                <img src="../img/二代箱子的设计.jpg" alt=""/>
             </div>
 
         </div>
 
-        <div style="display: block;" class="footer_bar openwebview">
+       <%-- <div style="display: block;" class="footer_bar openwebview">
             <uc:UserFooter ID="UserFooter" runat="server" EnableViewState="False"></uc:UserFooter>
-        </div>
+        </div>--%>
         <script src="../js/plugins/zepto.min.js"></script>
         <script src="../js/plugins/vipspa.js"></script>
         <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>

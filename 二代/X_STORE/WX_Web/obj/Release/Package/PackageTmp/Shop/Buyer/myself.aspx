@@ -19,6 +19,16 @@
             width: 100%;
             height: 100%;
         }
+        html body .remind {
+      background: #fff;
+      width: 94%;
+      padding: 10px 3%;
+      margin-bottom: 10px; }
+      html body .remind p {
+        width: 100%;
+        text-align: center;
+        font: 14px/20px "microsoft yahei";
+        color: #666; }
     </style>
 </head>
 <body>
@@ -30,7 +40,7 @@
                         <asp:Repeater ID="My_self" runat="server">
                             <ItemTemplate>
                                 <li class="clearfix">
-                                    <img class="l" src="<%#Eval("图片路径").ToString() %>" alt="" />
+                                    <img class="l" src="<%#Eval("图片路径")==null? "/shop/img/no-image.jpg":Eval("图片路径").ObjToStr() %>" alt="" />
                                     <div class="r">
                                         <p class="goodsName">
                                             <%#Eval("品名").ToString()%>
@@ -48,25 +58,50 @@
                         <div class="openBox">立即开箱</div>
                     </div>
                 </div>
+                <input runat="server" id="mac_input" type="hidden" class="mac_input"/>
+                
                 <div class="noOrder" id="empty" runat="server">
                     <div class="imgWrap">
                         <img src="../img/null.png" alt="" />
                     </div>
-                    <p>你还没有购买过商品，暂无订单</p>
+                    <p>无待开箱订单</p>
                 </div>
-                <a class="tel" href="tel:<%=telphone %>" style="margin-top: 0;">
+                <div class="remind" id="title" runat="server">
+                    <table>
+                        <tr>
+                            <td colspan="2"  style="padding-bottom: 10px;"><p style="text-align: left;">开箱失败自主解决：</p></td>
+                        </tr>
+		                <tr>
+		                    <td>
+		                        <p>1.</p>
+		                    </td>
+		                    <td style="padding-bottom: 10px;">
+		                        <p style="text-align: left;">请对售货机断电10秒钟后上电，等LED灯带闪烁停止后，然后点击“立即开箱”，即可实现取货。</p>
+		                    </td>
+		                </tr>
+		                <tr style="margin-top: 10px;">
+		                    <td>
+		                        <p>2.</p>
+		                    </td>
+		                    <td>
+		                        <p style="text-align: left;">如果还有问题，请拨打前台电话，由前台送货。</p>
+		                    </td>
+		                </tr>
+		            </table>
+                </div>
+                <a class="tel" href="tel:<%= HotelPhone%>" style="margin-top: 0;">
                     <div class="telWrap">
-                        <div class="telContent clearfix">
+                        <div class="telContent clearfix" style="display:none;">
                             <img src="../img/tel.png" class="l" alt="" />
-                            <span class="l">联系前台：<em><%=telphone %></em></span>
+                            <span class="l">联系前台：<em  style="font-size: 18px;"><%=HotelPhone %></em></span>
                         </div>
                     </div>
                 </a>
-                <a class="tel" href="tel:400-880-2482">
+                <a style="display:none;" class="tel" href="tel:400-880-2482">
                     <div class="telWrap">
                         <div class="telContent clearfix">
                             <img src="../img/tel.png" class="l" alt="" />
-                            <span class="l">联系客服：<em>400-880-2482</em></span>
+                            <span class="l">联系客服：<em style="font-size: 18px;">400-880-2482</em></span>
                         </div>
                     </div>
                 </a>
@@ -83,24 +118,6 @@
         <%--        <script src="../../js/jquery-1.7.2.min.js"></script>--%>
         <script src="../js/modules/myself.js"></script>
         <script type="text/javascript">
-            $(function () {
-                $("a[name='con']").eq(2).addClass("on");
-                $(".openBox").on('click', function () {
-                    $.ajax({
-                        url: '../ashx/openbox.ashx',
-                        data: {
-                            openid: $('#order_lbl').text()
-                        },
-                        type: 'get',
-                        success: function (result) {
-                            layer.open({
-                                content: result,
-                                time: 2
-                            })
-                        }
-                    })
-                })
-            })
         </script>
 
     </form>

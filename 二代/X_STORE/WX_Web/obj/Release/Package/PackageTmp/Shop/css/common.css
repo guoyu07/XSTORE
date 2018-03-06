@@ -4,3 +4,9 @@
   background: #EEEEEE;
   border-top: solid 1px #ccc;
   border-bottom: solid 1px #ccc; }
+
+.alarm_div {
+    word-wrap:break-word; 
+    padding:15px; 
+        color:#666;
+}

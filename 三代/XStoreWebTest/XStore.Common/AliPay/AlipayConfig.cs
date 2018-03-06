@@ -56,10 +56,10 @@ namespace XStore.Common.AiLiPay
 
             //页面跳转同步返回页面文件路径 要用 http://格式的完整路径，不允许加?id=123这类自定义参数
            // return_url = "http://" + HttpContext.Current.Request.Url.Authority.ToLower() + "/NotifyPay/alipaypc/return_url.aspx";
-            return_url = "http://x.x-store.com.cn/WebSite/Order/AliReturn";
+            return_url = "http://x.x-store.com.cn/WebSite/Order/AliReturn.aspx";
                  //服务器通知的页面文件路径 要用 http://格式的完整路径，不允许加?id=123这类自定义参数
                  // notify_url = "http://" + HttpContext.Current.Request.Url.Authority.ToLower() + "/ NotifyPay / alipaypc / notify_url.aspx";
-            notify_url = "http://x.x-store.com.cn/WebSite/Order/AliNotify";
+            notify_url = "http://x.x-store.com.cn/WebSite/Order/AliNotify.aspx";
 
             //↑↑↑↑↑↑↑↑↑↑请在这里配置您的基本信息↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 

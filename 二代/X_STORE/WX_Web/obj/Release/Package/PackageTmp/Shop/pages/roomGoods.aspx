@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../fonts/iconfont.css">
     <link rel="stylesheet" href="../css/roomGoods.css" />
+    <link href="../css/distributer.css" rel="stylesheet" />
+    <style type="text/css">
+           
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -20,24 +24,45 @@
             <p class="distributer">配送员：<span><%=psy_name %></span></p>
         </div>
         <div class="interval"></div>
-        <ul class="clearfix">
-            <asp:Repeater ID="box_rp" runat="server">
-                <ItemTemplate>
-                     <li class="<%#list_li(Eval("实际商品id").ObjToInt(0),Eval("位置").ObjToInt(0),Eval("id").ObjToInt(0)) %>">
-                        <a href="../pages/operation.aspx?boxid=<%#Eval("id") %>&room_id=<%=room_id %>">
-                            <div class="pic">
-                                <img src="<%#Eval("图片路径") %>" alt="" />
-                                <p class="goodsName"><%#Eval("品名") %></p>
+         <div id='view' style="-webkit-overflow-scrolling: touch; overflow: auto!important;">
+            <div id="mySpace" class="roomGoods">
+                <ul class="clearfix" style="margin-bottom:40px;">
+                    <asp:Repeater ID="box_rp" runat="server">
+                        <ItemTemplate>
+                            <li>
+                                <a href="javascript:void(0);" position='<%#Eval("位置").ObjToInt(0) %>' runat="server" onserverclick="SingleOpenBoxClick">
+                                    <div class="pic">
+                                        <img src="<%#Eval("图片路径")%>" alt="" />
+                                        <p class="goodsName over"><span style="font-weight:bolder;"><%#Eval("实际商品编码")%>&nbsp;&nbsp;</span><%#Eval("实际商品品名")%></p>
+                                    </div>
+                                    <div class="price">¥ <span><%#Eval("本站价").ObjToDecimal(0)%></span></div>
+                               
+                                <p style="display: none"><%#Eval("实际商品id")%></p>
+                                <div class="model "  style='<%#link_ul(Eval("实际商品id").ObjToInt(0)) %>'>
+                                    <p>暂无商品</p>
+                                </div>
+                                </a>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </ul>
+                <table style=" width:100%;">
+                    <tr>
+                        <td style=" width:45%;">
+                            <div class="btnWrap">
+                                <asp:LinkButton runat="server" ID="markSure" CssClass="makeSure" OnClick="makeSure_ServerClick">开箱检查</asp:LinkButton>
                             </div>
-                        </a>
-                        <div class="price">¥ <span><%#Eval("本站价").ObjToDecimal(0) %></span></div>
-                        <div class="buy" id="is_ok" runat="server">正常</div>
-                        <div class="empty" id="is_empty" runat="server">空箱</div>
-                    </li>
-                </ItemTemplate>
-            </asp:Repeater>
-  
-        </ul>
+                        </td>
+                        <td style=" width:45%;">
+                            <div class="btnWrap">
+                                <asp:LinkButton runat="server" ID="finishCheck" CssClass="finishSure" OnClick="finishCheck_Click">完成检查</asp:LinkButton>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </form>
 </body>
 </html>

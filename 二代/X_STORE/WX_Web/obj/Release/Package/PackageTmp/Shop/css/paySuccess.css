@@ -55,6 +55,17 @@ html {
         color: #fff;
         border-radius: 2px;
         border: none; }
+       html body .menu .c {
+        width: 98%;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+        border: solid 1px #FF6600;
+        font: 14px/38px "microsoft yahei";
+        color: #ff6600;
+        border-radius: 2px; }
+     
     html body .refund {
       background: #fff;
       width: 94%;

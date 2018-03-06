@@ -10,6 +10,7 @@
 <meta http-equiv="Expires" content="0" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 		<title>幸事多私享空间</title>
+     <script src="../js/jquery-1.7.2.min.js"></script>
 		<link rel="icon" href="../img/logo.png" type="image/x-icon"/>
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/common.css" />
@@ -30,10 +31,15 @@
                 //1 判断当前版本是否支持指定 JS 接口，支持批量判断
                 wx.checkJsApi({
                     jsApiList: ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage'],
-
                 });
             });
         });
+            //function show_password() {
+            //    if ($("#pswd").attr("type")=="password") {
+            //        $("#pswd").attr("");
+            //    }
+            //    $("#pswd").attr('type','text');
+            //}
     </script>
 </head>
 <body>
@@ -46,8 +52,10 @@
 		</div>
 
 		<div class="password">
-			<input id="pswd" runat="server" type="password" placeholder="请输入密码"/>
-		</div>
+            <span><input id="pswd" runat="server" type="password" placeholder="请输入密码"/></span>
+			<span> <img style="display:none;" src="../img/_对勾.png" onclick="show_password();"/></span>
+           
+  		</div>
 		<div class="btnWrap">
             <asp:Button id="login_btn" runat="server" OnClick="login_btn_Click" Text="登录" CssClass="loginBtn"  style="border:none;"/>
 <%--			<div class="loginBtn" onclick="" id="login_div">登录</div>--%>

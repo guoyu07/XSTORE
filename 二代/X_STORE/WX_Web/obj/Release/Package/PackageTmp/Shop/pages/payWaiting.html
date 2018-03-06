@@ -48,11 +48,8 @@
             var money, order;
             var urlparamStr = location.search;
             self = Util.Deserialize(urlparamStr);
-            console.log(self)
             money = self.money;
             order = self.order;
-            console.log(money)
-            console.log(order)
             var ua = window.navigator.userAgent.toLowerCase();
             if (ua.match(/MicroMessenger/i) == 'micromessenger') {
                 $(".imgWrap").show();
@@ -67,7 +64,7 @@
                 }
                 xmlhttp.onreadystatechange = function () {
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                        console.log(xmlhttp.responseText);
+
                         var o = eval('(' + xmlhttp.responseText + ')');
                         if (o.state == 1) {
                             window.location.href = "../pages/paySuccess.aspx?order=" + order + "";
@@ -76,10 +73,7 @@
                 }
                 xmlhttp.open("GET", "../ashx/AlipayEnter.ashx?order=" + order + "", true);
                 xmlhttp.send();
-
-
             } else {
-
                 $.ajax({
                     url: '../ashx/alipay.ashx',
                     type: 'post',
@@ -90,8 +84,6 @@
                         order: order
                     },
                     success: function (json) {
-
-                        console.log(json);
                         $('body').html(json)
 
                     },

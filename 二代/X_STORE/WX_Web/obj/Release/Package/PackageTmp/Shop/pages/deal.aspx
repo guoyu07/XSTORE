@@ -8,9 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/mui.min.css" />
+    <link rel="stylesheet" href="../fonts/iconfont.css" />
     <link rel="stylesheet" href="../css/common.css" />
-    <title>幸事多私享空间-业务处理</title>
+     <title>幸事多私享空间-业务处理</title>
     <style type="text/css">
+        li {
+            list-style: none;
+        }
+
         #dealBox {
             width: 100%;
             background-color: #fff;
@@ -33,7 +38,6 @@
 
         .mui-table-view-cell {
             background-color: #fff;
-            list-style: none;
         }
 
         .dealContent1Title {
@@ -117,157 +121,186 @@
             z-index: 99;
             right: 5px;
             text-align: center;
+            border: solid 1px #ccc;
+            background: #fff;
         }
 
             .fixedBox div {
                 width: 30px;
                 height: 30px;
                 line-height: 30px;
-                font-size: 14px;
-                border-radius: 15px;
-                color: #fff;
-                background-color: #FF5001;
+                border-bottom: solid 1px #ccc;
                 text-align: center;
-                margin-bottom: 15px;
             }
 
-                .fixedBox div a {
-                    color: #fff;
+                .fixedBox div:last-child {
+                    border-bottom: none;
                 }
+
+                .fixedBox div a {
+                    color: #ccc;
+                    font-size: 14px;
+                }
+
+                .fixedBox div.clickOn {
+                    background: #f60;
+                }
+
+                    .fixedBox div.clickOn a {
+                        color: #fff;
+                    }
+
+        .ReplenishmentItem {
+            display: none;
+        }
+
+            .ReplenishmentItem:first-child {
+                display: block;
+            }
+
+        .imgWrap {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+            .imgWrap img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+
+        .info h3 {
+            font: 14px/30px "microsoft yahei";
+            color: #666;
+        }
+
+        .num {
+            font: 14px/30px "microsoft yahei";
+            color: #999;
+        }
+
+        .makeSure {
+            margin-top: 10px;
+            width: 100%;
+            padding: 3%;
+            background: #fff;
+        }
+
+            .makeSure a {
+                width: 100%;
+                font: 14px/40px "microsoft yahei";
+                color: #fff;
+                display: block;
+                text-align: center;
+                background: #f60;
+            }
+
+        .deliveryRecordContainer {
+            display: none;
+        }
+
+            .deliveryRecordContainer:first-child {
+                display: block;
+            }
+
+        .errorOperation ul li dl dd {
+            width: 25%;
+        }
+
+            .errorOperation ul li dl dd a {
+                width: 100%;
+                display: block;
+                text-align: center;
+                font: 14px/30px "microsoft yahei";
+                color: #000;
+            }
+
+        .forget ul li a button, .send button {
+            color: #f60;
+            border-color: #f60;
+        }
+
+        .mui-table-cell {
+            position: relative;
+        }
+
+        .mui-btn-outlined.mui-btn-blue {
+            position: absolute;
+            bottom: 6px;
+            right: 10px;
+            border-color: #f60;
+            color: #f60;
+        }
+        .mui-btn-blue.mui-active:enabled, .mui-btn-blue:enabled:active, .mui-btn-primary.mui-active:enabled, .mui-btn-primary:enabled:active, input[type=submit].mui-active:enabled, input[type=submit]:enabled:active {
+            background-color: #f60;
+            border-color: #f60;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div id="dealBox">
-            <div id="dealBoxControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted ">
-                <a class="mui-control-item mui-active" href="#content1">常规补货</a>
-                <a class="mui-control-item" href="#content2">异常处理</a>
-            </div>
+        <<div id="dealBox">
+        <div id="dealBoxControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted ">
+            <a class="mui-control-item mui-active" href="#content1">待处理</a>
+            <a class="mui-control-item" href="#content2">已处理</a>
         </div>
-
-        <%--        <div class="fixedBox">
-            <div><a href="#shouldReplenishment">应</a></div>
-            <div><a href="#realityReplenishment">实</a></div>
-            <div><a href="#noReplenishment">未</a></div>
-
-
-        </div>--%>
-
-        <div id="rdealBoxControlContents" class="dealBoxControlContents">
-            <div id="content1" class="mui-control-content mui-active">
-                <div class="fixedBox">
-                    <div class="clickOn"><a>应</a></div>
-                    <div><a>实</a></div>
-                    <div><a>取</a></div>
-                </div>
-                <div class="box">
-                    <div class="ReplenishmentItem shouldReplenishment" id="shouldReplenishment">
-                        <div class="dealContent1Title">
-                            <span>应补货</span>
-                            <span class="mui-pull-right">总计：<%=totalA %>件</span>
-                        </div>
-                        <asp:Repeater ID="A_rp" runat="server">
-                            <ItemTemplate>
-                                <li class="mui-table-view-cell">
-                                    <div class="mui-table">
-                                        <div class="mui-table-cell mui-col-xs-10">
-                                            <p class="mui-ellipsis AM_title"><%#Eval("品名") %></p>
-                                            <h5 class="numText">数量：x1 <span class="danjia">箱号：<%#Eval("位置") %></span><span class="danjia">房间：<%#Eval("库位名") %></span></h5>
-                                            <p class="mui-h6 mui-ellipsis totle"><%#Eval("时间") %></span> </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ItemTemplate>
-                        </asp:Repeater>
-                    </div>
-                    <div class="ReplenishmentItem Replenishmented" id="realityReplenishment">
-                        <div class="dealContent1Title">
-                            <span>实际补货</span>
-                            <span class="mui-pull-right">总计：<%=totalB %>件</span>
-                        </div>
-                        <asp:Repeater ID="B_rp" runat="server">
-                            <ItemTemplate>
-                                <li class="mui-table-view-cell">
-                                    <div class="mui-table">
-                                        <div class="mui-table-cell mui-col-xs-10">
-                                            <p class="mui-ellipsis AM_title"><%#Eval("品名") %></p>
-                                            <h5 class="numText">数量：x1 <span class="danjia">箱号：<%#Eval("位置") %></span><span class="danjia">房间：<%#Eval("库位名") %></span></h5>
-                                            <p class="mui-h6 mui-ellipsis totle"><%#Eval("时间") %></span> </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ItemTemplate>
-                        </asp:Repeater>
-
-                    </div>
-
-                    <div class="ReplenishmentItem Replenishmented" id="noReplenishment">
-                        <div class="dealContent1Title">
-                            <span>未补货</span>
-                            <span class="mui-pull-right">总计：<%=totalC %>件</span>
-                        </div>
-                        <asp:Repeater runat="server" ID="C_rp">
-                            <ItemTemplate>
-                                <li class="mui-table-view-cell">
-                                    <div class="mui-table">
-                                        <div class="mui-table-cell mui-col-xs-10">
-                                            <p class="mui-ellipsis AM_title"><%#Eval("品名") %></p>
-                                            <h5 class="numText">数量：x1 <span class="danjia">箱号：<%#Eval("位置") %></span><span class="danjia">房间：<%#Eval("库位名") %></span></h5>
-                                            <p class="mui-h6 mui-ellipsis totle"><%#Eval("时间") %></span> </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ItemTemplate>
-                        </asp:Repeater>
-
-                    </div>
-                </div>
-        </div>
-                    <div id="content2" class="mui-control-content">
-                        <ul class="mui-table-view">
-                            <li class="mui-table-view-cell">
-                                <input type="button" value="补错开箱" />
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <input type="button" value="忘补开箱" />
-                            </li>
-                            <li class="mui-table-view-cell">
-                                <input type="button" value="前台送货" />
-                            </li>
-                        </ul>
-
-                        <div class="deliveryRecordContainer">
-                            <div class="deliveryRecordTitle">
-                                <span>送货记录</span>
+    </div>
+    <div id="rdealBoxControlContents" class="dealBoxControlContents">
+        <div id="content1" class="mui-control-content mui-active">
+            <ul>
+                <asp:Repeater runat="server" ID="pend_repeater">
+                    <ItemTemplate>
+                        <li class="mui-table-view-cell">
+                            <div class="mui-table">
+                                <div class="mui-table-cell mui-col-xs-10">
+                                    <p class="mui-ellipsis AM_title"><span><%#Eval("品名") %></span> &nbsp;商品编码：<span><%#Eval("编号") %></span></p>
+                                    <h5 class="numText">房间：<span><%#Eval("库位名") %></span> &nbsp;格号：<span class="danjia"><%#Eval("位置") %></span></h5>
+                                    <p class="mui-h6 mui-ellipsis totle"><%#((DateTime)Eval("时间")).ToString("yyyy-MM-dd HH:mm") %></span> </p>
+<%--                                    <input  runat="server" type="button"  id="confir1m" onserverclick="confirm_Click" class="mui-btn mui-btn-blue mui-btn-outlined" value="确认" data-id='<%#Eval("编号") %>' />--%>
+                                    <button type="button" runat="server" id="confirm" onserverclick="confirm_Click" class="mui-btn mui-btn-blue mui-btn-outlined" data-id='<%#Eval("id")%>'>确认</button>
+                                </div>
                             </div>
-                            <asp:Repeater ID="pagesB_rp" runat="server">
-                                <ItemTemplate>
-                                    <li class="mui-table-view-cell">
-                                        <div class="mui-table">
-                                            <div class="mui-table-cell mui-col-xs-10">
-                                                <p class="mui-ellipsis AM_title"><%#Eval("品名") %></p>
-                                                <h5 class="numText">数量：x1 <span class="danjia">箱号：<%#Eval("位置") %></span><span class="danjia">房间：<%#Eval("库位名") %></span></h5>
-                                                <p class="mui-h6 mui-ellipsis totle"><%#Eval("时间") %></span> </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ItemTemplate>
-                            </asp:Repeater>
-
-                        </div>
-                    </div>
+                        </li>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </ul>
         </div>
-                <script src="../js/plugins/mui.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../js/plugins/zepto.min.js"></script>
-		<script>
-			$(function(){
-				$('.fixedBox div').on('click',function(){
-					$(this).addClass('clickOn').siblings().removeClass('clickOn');
-					var index=$(this).index();
-					$('.ReplenishmentItem').eq(index).show().siblings().hide();
-				})
-			})
-		</script>
+        <div id="content2" class="mui-control-content">
+            <ul class="mui-table-view">
+                <asp:Repeater runat="server" ID="deal_repeater">
+                    <ItemTemplate>
+                       <li class="mui-table-view-cell">
+                            <div class="mui-table">
+                                <div class="mui-table-cell mui-col-xs-10">
+                                    <p class="mui-ellipsis AM_title"><span><%#Eval("品名") %></span> &nbsp;商品编码：<span><%#Eval("编号") %></span></p>
+                                    <h5 class="numText">房间：<span><%#Eval("库位名") %></span> &nbsp;格号：<span class="danjia"><%#Eval("位置") %></span></h5>
+                                    <p class="mui-h6 mui-ellipsis totle"><%#((DateTime)Eval("时间")).ToString("yyyy-MM-dd HH:mm") %></span> </p>
+                           
+                                </div>
+                            </div>
+                        </li>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/plugins/mui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/plugins/zepto.min.js"></script>
+    <script>
+        $(function () {
+            $('#content1 .fixedBox div').on('click', function () {
+                $(this).addClass('clickOn').siblings().removeClass('clickOn');
+                var index = $(this).index();
+                $('#content1 .ReplenishmentItem').eq(index).show().siblings().hide();
+            })
+            $('#content2 .fixedBox div').on('click', function () {
+                $(this).addClass('clickOn').siblings().removeClass('clickOn');
+                var index = $(this).index();
+                $('#content2 .deliveryRecordContainer').eq(index).show().siblings().hide();
+            })
+        })
+    </script>
     </form>
 </body>
 </html>

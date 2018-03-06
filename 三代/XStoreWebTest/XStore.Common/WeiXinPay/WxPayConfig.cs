@@ -34,7 +34,7 @@ namespace XStore.Common.WeiXinPay
         //=======【支付结果通知url】===================================== 
         /* 支付结果通知回调url，用于商户接收支付结果
         */
-        public const string NOTIFY_URL = "http://x.x-store.com.cn/WebSite/Order/WeiXinNotify";
+        public const string NOTIFY_URL = "http://x.x-store.com.cn/WebSite/Order/WeiXinNotify.aspx";
 
         //=======【商户系统后台机器IP】===================================== 
         /* 此参数可手动配置也可在程序中自动获取
