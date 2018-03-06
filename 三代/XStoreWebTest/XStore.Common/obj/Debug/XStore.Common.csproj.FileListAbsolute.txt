@@ -41,4 +41,3 @@ X:\Git\XStore\三代\XStoreWebTest\XStore.Common\bin\Debug\Newtonsoft.Json.xml
 X:\Git\XStore\三代\XStoreWebTest\XStore.Common\obj\Debug\XStore.Common.csproj.CoreCompileInputs.cache
 X:\Git\XStore\三代\XStoreWebTest\XStore.Common\obj\Debug\XStore.Common.dll
 X:\Git\XStore\三代\XStoreWebTest\XStore.Common\obj\Debug\XStore.Common.pdb
-X:\Git\XStore\三代\XStoreWebTest\XStore.Common\obj\Debug\XStore.Common.csprojResolveAssemblyReference.cache
