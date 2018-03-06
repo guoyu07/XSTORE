@@ -62,8 +62,9 @@ namespace Wx_NewWeb.Shop.pages
                 //{
                 //    where_sql = string.Format(" AND id IN({0})", quhuo_sql);
                 //}
-                string sql_kw = string.Format(@"
-SELECT a.id,a.库位名 FROM  WP_取货记录表 b left join  [WP_库位表] a on a.id = b.补货的房间id WHERE a.IsShow=1 AND  a.库位名  NOT LIKE '%总台%' AND  a.仓库id={0} AND b.用户id ={1} and b.是否补货完成=0", HotelInfo["id"].ObjToInt(0), UserId);
+                string sql_kw = string.Format(@"select b.id,b.库位名 from WP_取货记录表 a left join WP_库位表 b on a.补货的房间id = b.id 
+where a.分组 = (select top 1 分组 from WP_取货记录表 where 酒店id = {0} and 是否补货完成 = 0 order by 创建时间)
+and b.IsShow = 1 and b.库位名 not like '%总台%'", HotelInfo["id"].ObjToInt(0));
                 Log.WriteLog("页面：PickUp", "方法：PageInit", "sql_kw：" + sql_kw);
 	            var dt = comfun.GetDataTableBySQL(sql_kw);
                 rooms_rp.DataSource = dt;

@@ -245,7 +245,7 @@ group by 商品id,视图出库表.品名,本站价,图片路径,WP_商品表.编
         }
         protected bool Check(out string msg) {
             #region 判断是否需要补货
-            var kw_sql = string.Format(@"select id from WP_箱子表 where 库位id ={0} and 默认商品 != 0 and 实际商品id = 0", KuWeiId);
+            var kw_sql = string.Format(@"select id from WP_箱子表 where 库位id ={0} and 默认商品id != 0 and 实际商品id = 0", KuWeiId);
             var kw_dt = comfun.GetDataTableBySQL(kw_sql);
             if (kw_dt.Rows.Count == 0)
             {
@@ -302,7 +302,10 @@ group by 商品id,视图出库表.品名,本站价,图片路径,WP_商品表.编
                                 Commit Tran
                             Go";
                 #region 更新箱子信息
-                exsql += string.Format(@" UPDATE WP_箱子表 SET 实际商品id=默认商品id WHERE  箱子MAC='{0}' and 位置 in ({1})", dt.Rows[0]["箱子MAC"].ObjToStr(), dt.Rows[0]["位置"].ObjToStr());
+                var position = dt.Rows[0]["位置"].ObjToStr().Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(o => (o.ObjToInt(0) + 1).ObjToStr()).ToList().Aggregate<string>((x, y) => x.ToString() + "," + y.ToString());
+                exsql += string.Format(@" UPDATE WP_箱子表 SET 实际商品id=默认商品id WHERE   库位id = (select top 1 id from WP_库位表 where 箱子MAC='{0}') and 位置 in ({1})", dt.Rows[0]["箱子MAC"].ObjToStr(), position);
+
+                exsql += string.Format(@" UPDATE WP_取货记录表 SET 是否补货完成 = 1 WHERE mac='{0}'", dt.Rows[0]["箱子MAC"].ObjToStr());
                 #endregion
                 //foreach (DataRow item in dt.Rows)
                 //{
