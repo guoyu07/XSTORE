@@ -44,14 +44,12 @@ namespace Wx_NewWeb.Shop.Distributer
                 {
                     foot_div.Visible = false;
                 }
-                
-
-                //totalId = Request.QueryString["totalId"].ObjToStr().TrimEnd(',');
-                //Session["totalId"] = totalId;
-                var sql = string.Format(@"SELECT WP_商品表.id,品名,编号new AS 编号,ISNULL(WP_商品表.编码,'') AS 编码, ISNULL(wp_商品图片表.图片路径,'{0}') AS 图片路径,(SELECT COUNT(*) FROM 视图获取投放商品id WHERE 最新商品id = WP_商品表.id AND 投放仓库id = {1} AND 投放库位id in({2})) AS 数量 FROM [WP_商品表] 
-LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号
-WHERE WP_商品表.id IN(
-SELECT 最新商品id FROM 视图获取投放商品id WHERE 投放仓库id = {1} AND 投放库位id in({2}))", no_img, HotelInfo["id"].ObjToInt(0), TotalId);
+                var sql = string.Format(@"select count(b.id) as 数量,max(b.id) as 商品id, max(ISNULL(b.品名,'')) as 品名,max(ISNULL(c.图片路径,'{0}')) as 图片路径,max(ISNULL(b.编码,'')) AS 编码 from WP_箱子表 a 
+left join WP_商品表 b on a.默认商品id = b.id 
+left join WP_商品图片表 c on b.编码 = c.商品编号
+left join WP_库位表 d on a.库位id = d.id
+where a.库位id in({1}) and 默认商品id != 0 and d.库位名 not like '%总台%' and a.IsShow = 1 and d.IsShow = 1 and b.IsShow = 1
+group by b.id", no_img, TotalId);
                 var dt = comfun.GetDataTableBySQL(sql);
                 Rp_pickup.DataSource = dt;
                 Rp_pickup.DataBind();

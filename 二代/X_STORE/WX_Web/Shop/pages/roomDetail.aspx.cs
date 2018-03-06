@@ -97,11 +97,6 @@ group by 商品id,视图出库表.品名,本站价,图片路径,WP_商品表.编
                     int str = dt.Rows[a]["默认商品id"].ObjToInt(0);
                     if (str == 0)
                     {
-                        //dt.Rows[a]["实际商品id"] = rexiao_id;
-                        //dt.Rows[a]["实际商品品名"] = rexiao_name;
-                        //dt.Rows[a]["本站价"] = rexiao_price;
-                        //dt.Rows[a]["图片路径"] = rexiao_img;
-                        //dt.Rows[a]["编码"] = rexiao_code;
                         deleteIndex.Add(a);
                         continue;
                     }
@@ -143,11 +138,13 @@ group by 商品id,视图出库表.品名,本站价,图片路径,WP_商品表.编
             #region 将已卖的商品开箱
             try
             {
-                var sql = string.Format(@"SELECT WP_商品表.id,品名,编号new AS 编号,补货商品.箱子位置 AS 位置,补货商品.箱子MAC, wp_商品图片表.图片路径 FROM (SELECT * FROM 视图获取投放商品id WHERE  投放库位id = {0}) AS 补货商品 
-LEFT JOIN WP_商品表 ON 补货商品.最新商品id = WP_商品表.id
-LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号", KuWeiId);
+                var sql = string.Format(@"  select LEFT(位置,LEN(位置)-1) as 位置,箱子MAC from (
+ select (select convert(nvarchar(2),位置-1)+',' from WP_箱子表 where 库位id = WP_库位表.id and 默认商品id != 0 and 实际商品id = 0 and IsShow = 1  FOR XML PATH('')) as 位置,
+ 箱子MAC from WP_库位表
+ where  id = {0} and IsShow = 1) a", KuWeiId);
                 Log.WriteLog("页面：roomDetail", "方法：PageInit", "sql：" + sql);
                 var dt = comfun.GetDataTableBySQL(sql);
+                ViewState["FillUpDt"] = dt;
                 if (dt.Rows.Count > 0)
                 {
                     OpenBox(dt);
@@ -180,19 +177,15 @@ LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.�
         private void OpenBox(DataTable dt) {
 
             var rbh = new RemoteBoxHelper();
-            var mac = string.Empty;
-            var postion_list = string.Empty;
-            for (int i = 0; i < dt.Rows.Count; i++)
+            if (dt.Rows.Count == 0)
             {
-                if (i == 0)
-                {
-                    mac = dt.Rows[i]["箱子MAC"].ObjToStr();
-                }
-                postion_list += (dt.Rows[i]["位置"].ObjToInt(0) - 1).ObjToStr() + ",";
+                RedirectError("");
+                return;
             }
             try
             {
-
+                var mac = dt.Rows[0]["箱子MAC"].ObjToStr();
+                var position = dt.Rows[0]["位置"].ObjToStr();
                 var backNo = GetBackNo();
                 var insert_sql = string.Format(@"INSERT INTO [dbo].[WP_补货单]
            ([OrderNo]
@@ -209,11 +202,11 @@ LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.�
            ,{3}
            ,'{4}'
            ,{5}
-           ,'{6}')", backNo, UserId,HotelId,KuWeiId,postion_list.TrimEnd(','), (int)EnumCommon.开箱单状态.待开箱,mac);
+           ,'{6}')", backNo, UserId,HotelId,KuWeiId, position, (int)EnumCommon.开箱单状态.待开箱,mac);
                 comfun.InsertBySQL(insert_sql);
                 Log.WriteLog("页面：roomDetail", "方法：OpenBox", "mac：" + mac);
-                Log.WriteLog("页面：roomDetail", "方法：OpenBox", "postion_list：" + postion_list.TrimEnd(','));
-                rbh.OpenRemoteBox("" + mac + "", backNo.Substring(1, backNo.Length - 1), "" + postion_list.TrimEnd(',') + "",0x02);
+                Log.WriteLog("页面：roomDetail", "方法：OpenBox", "postion_list：" + position);
+                rbh.OpenRemoteBox(mac, backNo.Substring(1, backNo.Length - 1), position, 0x02);
             }
             catch(Exception ex)
             {
@@ -252,7 +245,7 @@ LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.�
         }
         protected bool Check(out string msg) {
             #region 判断是否需要补货
-            var kw_sql = string.Format(@"select id from WP_箱子表 where 库位id ={0} and 实际商品id = 0", KuWeiId);
+            var kw_sql = string.Format(@"select id from WP_箱子表 where 库位id ={0} and 默认商品 != 0 and 实际商品id = 0", KuWeiId);
             var kw_dt = comfun.GetDataTableBySQL(kw_sql);
             if (kw_dt.Rows.Count == 0)
             {
@@ -260,19 +253,10 @@ LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.�
                 return false;
             }
             #endregion
-            #region 判断当前房间是否取货，如果没有取货怎提示请先取货
-
-            var quhuo_sql = string.Format(@"select * from WP_取货记录表 where 用户id={0} and 补货的房间id={1} and 是否补货完成={2}",
-                UserId, KuWeiId, 0);
-            var quhuo_dt = comfun.GetDataTableBySQL(quhuo_sql);
-            if (quhuo_dt.Rows.Count == 0)
-            {
-                msg = "请先取货";
-                return false;
-            }
+         
             msg = string.Empty;
             return true;
-            #endregion
+
         }
 
         #region 补货开箱
@@ -287,16 +271,28 @@ LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.�
         {
             try
             {
+                if (ViewState["FillUpDt"] == null)
+                {
+                    redirect_link("");
+                    return;
+                }
+
                 var msg = string.Empty;
+                var dt = (DataTable)ViewState["FillUpDt"];
                 if (!Check(out msg))
                 {
                     redirect_link(msg);
                     return;
                 }
-                var sql = string.Format(@"SELECT WP_商品表.id,WP_商品表.本站价,品名,编号new AS 编号,补货商品.箱子位置 AS 位置, wp_商品图片表.图片路径 FROM (SELECT * FROM 视图获取投放商品id WHERE 投放仓库id = {0} AND 投放库位id = {1}) AS 补货商品 
-LEFT JOIN WP_商品表 ON 补货商品.最新商品id = WP_商品表.id
-LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号", HotelInfo["id"].ObjToInt(0), KuWeiId);
-                var dt = comfun.GetDataTableBySQL(sql);
+                if (dt.Rows.Count == 0)
+                {
+                    redirect_link(msg);
+                    return;
+                }
+//                var sql = string.Format(@"SELECT WP_商品表.id,WP_商品表.本站价,品名,编号new AS 编号,补货商品.箱子位置 AS 位置, wp_商品图片表.图片路径 FROM (SELECT * FROM 视图获取投放商品id WHERE 投放仓库id = {0} AND 投放库位id = {1}) AS 补货商品 
+//LEFT JOIN WP_商品表 ON 补货商品.最新商品id = WP_商品表.id
+//LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.编号", HotelInfo["id"].ObjToInt(0), KuWeiId);
+//                var dt = comfun.GetDataTableBySQL(sql);
                 //获取需要更新的商品id
                 var begin_exsql = " Begin Tran ";
                 var exsql = string.Empty;
@@ -305,46 +301,46 @@ LEFT JOIN  wp_商品图片表 on wp_商品图片表.商品编号=WP_商品表.�
                             Else
                                 Commit Tran
                             Go";
+                #region 更新箱子信息
+                exsql += string.Format(@" UPDATE WP_箱子表 SET 实际商品id=默认商品id WHERE  箱子MAC='{0}' and 位置 in ({1})", dt.Rows[0]["箱子MAC"].ObjToStr(), dt.Rows[0]["位置"].ObjToStr());
+                #endregion
+                //foreach (DataRow item in dt.Rows)
+                //{
+                    //var goods_id = item["id"].ObjToInt(0);
+                    //var price = item["本站价"].ObjToDecimal(0);
+                    //var position = item["位置"].ObjToInt(0);
+                    ////获取总仓的id，用于总仓的出库
+                    //var room_sql = string.Format("SELECT id FROM [dbo].[WP_库位表] WHERE 库位名 LIKE '%总台%' AND 仓库id = {0}", HotelInfo["id"].ObjToInt(0));
+                    //var room_dt = comfun.GetDataTableBySQL(room_sql);
+                    //if (room_dt.Rows.Count == 0)
+                    //{
+                    //    RedirectError("总仓没了");
+                    //    return;
+                    //}
+                    //var root_room = room_dt.Rows[0][0].ObjToInt(0);
 
-                foreach (DataRow item in dt.Rows)
-                {
-                    var goods_id = item["id"].ObjToInt(0);
-                    var price = item["本站价"].ObjToDecimal(0);
-                    var position = item["位置"].ObjToInt(0);
-                    //获取总仓的id，用于总仓的出库
-                    var room_sql = string.Format("SELECT id FROM [dbo].[WP_库位表] WHERE 库位名 LIKE '%总台%' AND 仓库id = {0}", HotelInfo["id"].ObjToInt(0));
-                    var room_dt = comfun.GetDataTableBySQL(room_sql);
-                    if (room_dt.Rows.Count == 0)
-                    {
-                        RedirectError("总仓没了");
-                        return;
-                    }
-                    var root_room = room_dt.Rows[0][0].ObjToInt(0);
+                    //#region 入库表扣除总台的库存减一
+                    //string out_num = "OutS" + DateTime.Now.ToString("yyyyMMdd") + DbHelperSQL.Query(@"select right('00000'+cast(a.num+1 as  varchar(50)),5) from (select count(1) as num from [dbo].[WP_出库表] where CONVERT(varchar(100),操作日期,23)=CONVERT(varchar(100),GETDATE(),23)) a").Tables[0].Rows[0][0].ToString();
+                    //exsql += string.Format(@" INSERT INTO [dbo].[WP_出库表] ([单据编号],[商品id],[数量],[出价],[总出价额],[操作日期],[库位id],[位置],[操作id],[出库类型])
+                    //            VALUES('{0}','{1}','{2}','{3}','{3}',GETDATE(),'{4}','{5}','{6}',{7})", out_num, goods_id, 1, price, root_room, 1, UserId, (int)EnumCommon.出库类型.手机出库);
+                    //#endregion
 
-                    #region 入库表扣除总台的库存减一
-                    string out_num = "OutS" + DateTime.Now.ToString("yyyyMMdd") + DbHelperSQL.Query(@"select right('00000'+cast(a.num+1 as  varchar(50)),5) from (select count(1) as num from [dbo].[WP_出库表] where CONVERT(varchar(100),操作日期,23)=CONVERT(varchar(100),GETDATE(),23)) a").Tables[0].Rows[0][0].ToString();
-                    exsql += string.Format(@" INSERT INTO [dbo].[WP_出库表] ([单据编号],[商品id],[数量],[出价],[总出价额],[操作日期],[库位id],[位置],[操作id],[出库类型])
-                                VALUES('{0}','{1}','{2}','{3}','{3}',GETDATE(),'{4}','{5}','{6}',{7})", out_num, goods_id, 1, price, root_room, 1, UserId, (int)EnumCommon.出库类型.手机出库);
-                    #endregion
+                    //#region 入库表库位库存加1，如果根据仓库id，库位id，位置查询结果如果没有记录则新增一条，如果有记录则更新数量加1
+                    //string ins_num = "InS" + DateTime.Now.ToString("yyyyMMdd") + DbHelperSQL.Query(@"select right('00000'+cast(a.num+1 as  varchar(50)),5) from (select count(1) as num from [dbo].[WP_入库表] where CONVERT(varchar(100),操作日期,23)=CONVERT(varchar(100),GETDATE(),23)) a").Tables[0].Rows[0][0].ToString();
+                    //exsql += string.Format(@" INSERT INTO [dbo].[WP_入库表] ([单据编号],[商品id],[数量],[进价],[总进价额],[操作日期],[库位id],[位置],[操作id],[入库类型])
+                    //            VALUES('{0}','{1}','{2}','{3}','{3}',GETDATE(),'{4}','{5}','{6}',{7})", ins_num, goods_id, 1, price, KuWeiId, position, UserId, (int)EnumCommon.入库类型.手机入库);
+                    //#endregion
 
-                    #region 入库表库位库存加1，如果根据仓库id，库位id，位置查询结果如果没有记录则新增一条，如果有记录则更新数量加1
-                    string ins_num = "InS" + DateTime.Now.ToString("yyyyMMdd") + DbHelperSQL.Query(@"select right('00000'+cast(a.num+1 as  varchar(50)),5) from (select count(1) as num from [dbo].[WP_入库表] where CONVERT(varchar(100),操作日期,23)=CONVERT(varchar(100),GETDATE(),23)) a").Tables[0].Rows[0][0].ToString();
-                    exsql += string.Format(@" INSERT INTO [dbo].[WP_入库表] ([单据编号],[商品id],[数量],[进价],[总进价额],[操作日期],[库位id],[位置],[操作id],[入库类型])
-                                VALUES('{0}','{1}','{2}','{3}','{3}',GETDATE(),'{4}','{5}','{6}',{7})", ins_num, goods_id, 1, price, KuWeiId, position, UserId, (int)EnumCommon.入库类型.手机入库);
-                    #endregion
+                   
 
-                    #region 更新箱子信息
-                    exsql += string.Format(@" UPDATE WP_箱子表 SET 实际商品id={0} WHERE  库位id='{1}' and 位置='{2}'", goods_id, KuWeiId, position);
-                    #endregion
+                    //#region 更新取货记录表
+                    //exsql += string.Format(@" UPDATE WP_取货记录表 SET 是否补货完成=1 WHERE  用户id='{0}' and 补货的房间id='{1}'", UserId, KuWeiId);
+                    //#endregion
 
-                    #region 更新取货记录表
-                    exsql += string.Format(@" UPDATE WP_取货记录表 SET 是否补货完成=1 WHERE  用户id='{0}' and 补货的房间id='{1}'", UserId, KuWeiId);
-                    #endregion
-
-                    #region 更新配送任务，并标记为已配货
-                    exsql += string.Format(@" UPDATE WP_投放任务 SET 是否投放=1,user_id={3} WHERE 投放仓库id='{0}' and 投放库位id='{1}' and 箱子位置='{2}'", HotelInfo["id"].ObjToInt(0), KuWeiId, position, UserId);
-                    #endregion
-                }
+                    //#region 更新配送任务，并标记为已配货
+                    //exsql += string.Format(@" UPDATE WP_投放任务 SET 是否投放=1,user_id={3} WHERE 投放仓库id='{0}' and 投放库位id='{1}' and 箱子位置='{2}'", HotelInfo["id"].ObjToInt(0), KuWeiId, position, UserId);
+                    //#endregion
+                //}
                 Log.WriteLog("页面：roomDetail", "方法：finish_button_Click", "ExSql:" + begin_exsql + exsql + end_sql);
                 var b = SqlDataHelper.ExecuteCommand(begin_exsql + exsql + end_sql);
                 Log.WriteLog("页面：roomDetail", "方法：finish_button_Click", "b：" + b);
