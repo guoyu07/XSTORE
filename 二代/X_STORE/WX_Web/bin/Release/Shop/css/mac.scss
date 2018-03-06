@@ -1,0 +1,49 @@
+header{
+    width:94%;
+    padding:10px 3%;
+    border-bottom: solid 1px #ccc;
+    h3{
+        font:16px/30px "microsoft yahei";
+        color:#000000;
+    }
+    p{
+        font:16px/30px "microsoft yahei";
+        color:#999;
+    }
+}
+ul{
+    width:94%;
+    padding:0px 3%;
+    height:calc(100% - 51px);
+    height:-webkit-calc(100% - 51px);
+    height:-moz-calc(100% - 51px);
+    overflow: auto;
+    li{
+        width:100%;
+        padding:6px 0;
+        border-bottom: solid 1px #ccc;
+        h4,p{
+            font:14px/30px "microsoft yahei";
+            color:#000000;
+            span{
+                color:#999;
+                font:12px/30px "microsoft yahei";
+            }
+        }
+        p{
+            display: block;
+        }
+        .btn{
+            display: none;
+            font:14px/30px "microsoft yahei";
+            color:#fff;
+            background:#ff6600;
+            text-align: center;
+            border-radius: 4px;
+            padding:0 1.5em;
+        }
+    }
+    li:last-child{
+        border-bottom:none;
+    }
+}

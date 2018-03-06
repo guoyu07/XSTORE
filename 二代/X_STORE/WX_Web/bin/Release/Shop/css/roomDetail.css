@@ -1,0 +1,86 @@
+section {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: solid 1px #ccc; }
+  section .publishProgress {
+    width: 100%; }
+    section .publishProgress dd {
+      width: 20%;
+      text-align: center; }
+      section .publishProgress dd .icon {
+        font: 600 14px/20px "microsoft yahei";
+        color: #CCCCCC; }
+      section .publishProgress dd h4 {
+        font: 14px/20px "microsoft yahei";
+        color: #CCCCCC;
+        text-align: center; }
+    section .publishProgress dd:first h4 {
+      color: #a7db4c; }
+    section .publishProgress dd.pass .icon {
+      color: #f60; }
+    section .publishProgress dd.pass h4 {
+      color: #f60; }
+    section .publishProgress dt {
+      width: 20%;
+      padding-top: 16px; }
+      section .publishProgress dt .progressCenter {
+        background: #ccc;
+        height: 10px; }
+    section .publishProgress dt.pass .progressCenter {
+      background: #f60; }
+
+.main dl {
+  width: 100%; }
+  .main dl dt {
+    width: 94%;
+    padding: 10px 3%;
+    border-bottom: solid 1px #ccc; }
+    .main dl dt .identifier, .main dl dt .goodsName, .main dl dt .pic, .main dl dt .lattice {
+      width: 25%;
+      font: 14px/30px "microsoft yahei";
+      color: #000;
+      text-align: center; }
+  .main dl dd {
+    width: 94%;
+    padding: 10px 3%;
+    border-bottom: solid 1px #ccc; }
+    .main dl dd .lid, .main dl dd .idf, .main dl dd .gdn {
+      width: 25%;
+      font: 12px/60px "microsoft yahei";
+      color: #666;
+      text-align: center; }
+    .main dl dd .imgWrap {
+      width: 25%;
+      text-align: center; }
+      .main dl dd .imgWrap img {
+        width: 60px;
+        height: 60px; }
+    .main dl dd .btnWrap {
+      width: 25%;
+      text-align: center; }
+      .main dl dd .btnWrap button {
+        width: 60px;
+        text-align: center;
+        margin-top: 10px;
+        font: 12px/40px "microsoft yahei";
+        color: #fff;
+        border: none;
+        background: #ff6600;
+        background-size: 100%;
+        border-radius: 4px; }
+  .main dl dd.close button {
+    background: #ccc; }
+  .main dl dd:last-child {
+    border-bottom: none; }
+.main .fnWrap {
+  border-top: solid 1px #ccc;
+  width: 94%;
+  padding: 10px 3%; }
+  .main .fnWrap .finish {
+    border: none;
+    width: 100%;
+    font: 16px/50px "microsoft yahei";
+    color: #fff;
+    background: #ff6600;
+    text-align: center;
+    border-radius: 4px; }

@@ -1,0 +1,117 @@
+dl{
+    width:100%;
+    dt{
+        width:94%;
+        padding:10px 3%;
+        border-bottom: solid 1px #ccc;
+        .identifier,.goodsName,.pic,.isSure{
+            width:25%;
+            font:14px/30px "microsoft yahei";
+            color:#000;
+            text-align: center;
+        }
+    }
+    dd{
+        width:94%;
+        padding:10px 3%;
+        border-bottom: solid 1px #ccc;
+        .idf,.gdn{
+            width:25%;
+            font:12px/60px "microsoft yahei";
+            color:#666;
+            text-align: center;
+        }
+        .imgWrap{
+            width:25%;
+            text-align: center;
+            img{
+                width:60px;
+                height:60px;
+            }
+        }
+        .btnWrap{
+            width:25%;
+            text-align: center;
+            button{
+                width:60px;
+                text-align: center;
+                margin-top:10px;
+                font:12px/40px "microsoft yahei";
+                color:#fff;
+                border:none;
+                background:#ff6600;
+                background-size: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
+    dd.close{
+        button{
+            background:#ccc;
+        }
+    }
+    dd:last-child{
+        border-bottom:none;
+    }
+}
+.fnWrap{
+    border-top: solid 1px #ccc;
+    width:94%;
+    padding:10px 3%;
+    .finish{
+        border:none;
+        width:100%;
+        font:16px/30px "microsoft yahei";
+        color:#fff;
+        background: #ff6600;
+        text-align: center;
+        border-radius: 4px;
+    }
+}
+.tips{
+    display: none;
+    width:94%;
+    height:80%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:99;
+    padding:20% 3%;
+    background:rgba(0,0,0,0.3);
+    li{
+        width:100%;
+        height:60%;
+        background:#fff;
+        padding:10% 0;
+        .imgWrap{
+            width:100%;
+            text-align: center;
+        }
+        p{
+            word-break:normal;
+            width:100%;
+            text-align: center;
+            font:600 30px/50px "microsoft yahei";
+            color:#000;
+        }
+        .des{
+            width:100%;
+            text-align: center;
+            font:14px/30px "microsoft yahei";
+            color:#666;
+            margin-bottom: 10px; 
+        }
+        .okBtn{
+            width:100%;
+            text-align: center;
+            span{
+                display: inline-block;
+                padding:0 40px;
+                background:#6fa0f6;
+                border-radius:2px;
+                font:14px/40px "microsoft yahei";
+                color:#fff;
+            }
+        }
+    }
+}

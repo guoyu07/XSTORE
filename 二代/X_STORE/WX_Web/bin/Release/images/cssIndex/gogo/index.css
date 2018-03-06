@@ -1,0 +1,12 @@
+﻿.i_wel,.i_hotLine,.i_foot,.i_head{ display:none;}
+.i_ads{ display:block;}
+.i_content ul li{ height:50px; border-bottom:1px solid #ddd; width:100%;}
+.i_content ul li div ,.i_content ul li p,.i_content ul li p a{ height:100%; display:block; z-index:1;}
+.i_content ul li p a{ background:url(../gogo/image/go_icon.png) no-repeat scroll right center;}
+.i_content ul li p img{ height:40px; padding:5px; float:left;}
+.i_content ul li span{ display: block; line-height:40px; height:40px; overflow:hidden; text-align:left; position:absolute; top:0; padding:5px 0 5px 50px;}
+.i_Navigation{ background-color:#646464; position: fixed; width:50%; padding:8px; border-radius:8px; top:100px;  z-index:3; display:none;}
+.i_Navigation .l_arrow{color: #646464; font-size: 25px; position: relative; top: -15px; height: 8px; overflow: hidden;}
+.i_Navigation ul{ width:100%; margin:auto; }
+.i_Navigation ul li{ float:left; width:46%; padding:2%;}
+.i_Navigation ul li a{ background-color:#787878; color:#fff; display:block; height:2em;  line-height:2em;}

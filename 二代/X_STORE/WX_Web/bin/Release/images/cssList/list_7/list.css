@@ -1,0 +1,14 @@
+﻿.l_body{position:relative;padding-top:10px; z-index:1;}
+.l_body:after{display:block;content:"";clear:both;}
+.l_content{position:relative;z-index:1; width:96%; margin:0 auto; margin-top:40px; }
+.l_content h1{border-radius:8px; font-weight: bold;display:block;font-size:12px;color:#fff; height:36px;line-height:36px;text-align: center; background-color:#A3A2A2; margin-bottom:6px;}
+.l_content ul { border-radius:8px; background-color:#FFF;}
+.l_content ul li{float:none; border-bottom:#CCC solid 1px; padding:16px 0px;}
+.l_content ul li:last-child { border:none;}
+.l_content ul li:after{display:block;clear:both;content:"";}
+.l_content ul li a{ display:block; text-decoration:none; background:url(yj.png) no-repeat right;}
+.l_content ul li a:after{display:block;clear:both;content:"";}
+.l_content ul li a img{width:28%;height:auto;float:left; margin-right:8px; margin-left:2.8%;}
+.l_content ul li a h1{font-weight:normal; font-size:12px;color:#333; height:20px; line-height:14px; text-align:left; border-width:0px; margin:0; background:none;}
+.l_content p{display:block; font-size:12px;color:#999; height:14px; line-height:14px;text-align:left;}
+.proTitle {background-color: #FFFFFF; border:none;vfont-size: 12px;height: 2em;line-height: 2em;margin: auto;overflow: hidden;padding: 0 13px;position: relative;width: 6em;z-index: 1;border-radius:8px; margin-top:6px;}

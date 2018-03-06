@@ -1,0 +1,23 @@
+﻿ /*主内容*/
+ input[type="submit"], input[type="reset"], input[type="button"],input[type="text"], button { -webkit-appearance: none; /*去掉苹果的默认UI来渲染按钮*/}
+.Appcontent{line-height:25px;margin-top:40px;}
+    .Appcontent h1{font-size: 16px;font-weight:bolder;color: #333333;}
+    .Appcontent p{font-size: 12px; font-weight: normal;text-align: left;margin-top: 20px;}
+    .Appcontent p img{text-align: center;}
+    .Appcontent .honorTitle{font-size: 14px; font-weight: bolder;color: #000033;}
+    .Appcontent p input{width:100%;height:40px;border:1px solid #cccccc;text-align: left;}
+    .Appcontent #submitBtn
+    { 
+          text-align: center;
+           width:100%;
+           background-color:#ffeb00 !important;
+           border:2px #FFFFFF solid; 
+           line-height:40px; 
+           font-size:16px; 
+           font-family:'微软雅黑'; 
+           letter-spacing:6px;
+            -moz-box-shadow: 2px 2px 3px #777777 !important;
+            -webkit-box-shadow: 2px 2px 3px #777777 !important;
+            box-shadow: 2px 2px 3px #777777 !important;
+     }
+    .errMsg{color: #ff0000;}
