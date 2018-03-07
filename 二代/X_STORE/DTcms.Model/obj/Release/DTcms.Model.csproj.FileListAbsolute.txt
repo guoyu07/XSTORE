@@ -23,3 +23,10 @@ E:\iM\OneDrive\X_STORE\DTcms.Model\obj\Release\DTcms.Model.csprojResolveAssembly
 E:\iM\OneDrive\X_STORE\DTcms.Model\obj\Release\DTcms.Model.csproj.CoreCompileInputs.cache
 E:\iM\OneDrive\X_STORE\DTcms.Model\obj\Release\DTcms.Model.dll
 E:\iM\OneDrive\X_STORE\DTcms.Model\obj\Release\DTcms.Model.pdb
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Release\DTcms.Model.dll
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Release\DTcms.Model.pdb
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Release\Newtonsoft.Json.dll
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Release\DTcms.Model.csprojResolveAssemblyReference.cache
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Release\DTcms.Model.csproj.CoreCompileInputs.cache
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Release\DTcms.Model.dll
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Release\DTcms.Model.pdb

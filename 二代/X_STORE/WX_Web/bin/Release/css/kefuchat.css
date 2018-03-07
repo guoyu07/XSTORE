@@ -1,0 +1,8 @@
+input[type="button"], input[type="submit"], input[type="reset"] {
+
+-webkit-appearance: none;
+
+}
+/*开始与客服聊天*/
+.btn_chat { padding-top:30%;}
+.btn_chat input { border:none; display:block; width:96%; margin:0 auto; background-color:red; border-radius:6px; line-height:50px; text-align:center; color:#fff; font-size:18px; }

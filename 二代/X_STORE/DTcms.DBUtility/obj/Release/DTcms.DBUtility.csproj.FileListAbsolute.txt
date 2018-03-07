@@ -23,3 +23,10 @@ E:\iM\OneDrive\X_STORE\DTcms.DBUtility\obj\Release\DTcms.DBUtility.csprojResolve
 E:\iM\OneDrive\X_STORE\DTcms.DBUtility\obj\Release\DTcms.DBUtility.csproj.CoreCompileInputs.cache
 E:\iM\OneDrive\X_STORE\DTcms.DBUtility\obj\Release\DTcms.DBUtility.dll
 E:\iM\OneDrive\X_STORE\DTcms.DBUtility\obj\Release\DTcms.DBUtility.pdb
+E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\bin\Release\DTcms.DBUtility.dll
+E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\bin\Release\DTcms.DBUtility.pdb
+E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\bin\Release\Newtonsoft.Json.dll
+E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Release\DTcms.DBUtility.csprojResolveAssemblyReference.cache
+E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Release\DTcms.DBUtility.csproj.CoreCompileInputs.cache
+E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Release\DTcms.DBUtility.dll
+E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Release\DTcms.DBUtility.pdb

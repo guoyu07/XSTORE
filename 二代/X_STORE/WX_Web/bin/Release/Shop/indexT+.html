@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+		<title>网上商城</title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<style>
+			body,header.mui-bar{
+				background:#fff;
+			}
+			dd,dl{
+				margin:0;
+			}
+			dt{
+				background:#fff;
+			}
+			dt .mui-pull-left{
+				font:14px/40px "microsoft yahei";
+				padding-left:20px;
+				border-left: solid 2px rgb(255,153,0);
+			}
+			dt .mui-pull-right{
+				font:14px/40px "microsoft yahei";
+				padding-right:20px;
+				color:rgb(255,153,0);
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+				color:rgb(255,153,0);
+			}
+			dd .mui-table-view .mui-media-object{
+				    max-width: none;;
+				    width: 80px;
+				    height:90px;
+			}
+			.productName{
+				font:14px/20px "microsoft yahei";
+				color:rgb(102,102,102);
+			}
+			.mui-media-body .productNum{
+				font:12px/20px "microsoft yahei";
+				color:rgb(153,153,153);
+				margin-bottom: 10px;
+			}
+			.productPrice{
+				font:12px/20px "microsoft yahei";
+				color:rgb(255,0,0);
+			}
+			.productPrice span{
+				font:14px/20px "microsoft yahei";
+				color:rgb(255,0,0);
+			}
+			.buyInfo{
+				font:12px/24px "microsoft yahei";
+				color:rgb(153,153,153);
+			}
+			.buyInfo .goBuy{
+				padding:5px;
+				font:14px/14px "microsoft yahei";
+				color:#fff;
+				margin:0;
+				background:rgb(255,153,0);
+				border-radius:12px;
+			}
+			.mui-content{
+				position:relative;
+			}
+			.fixBox{
+				padding:6px;
+				position:absolute;
+				right:20px;
+				top:50px;
+				z-index:999;
+				color:#fff;
+				background:#ccc;
+				border-radius: 18px;
+			}
+			.fixBox input{
+				display:none;
+				width:100px;
+				margin:0;
+			}
+			div.mui-input-row.mui-search.mui-active::before{
+				top:70%;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted homeTop">
+				<div class="mui-scroll">
+					<a class="mui-control-item" href="javascript:;">棍子</a>
+					<a class="mui-control-item" href="javascript:;">叉子</a>
+					<a class="mui-control-item" href="javascript:;">筷子</a>
+					<a class="mui-control-item" href="javascript:;">棍子</a>
+					<a class="mui-control-item" href="javascript:;">叉子</a>
+					<a class="mui-control-item" href="javascript:;">筷子</a>
+					<a class="mui-control-item" href="javascript:;">棍子</a>
+					<a class="mui-control-item" href="javascript:;">叉子</a>
+					<a class="mui-control-item" href="javascript:;">筷子</a>
+				</div>
+			</div>
+		</header>
+		<div class="mui-content">
+			<a class="fixBox mui-icon mui-icon-search" href="#bottomPopover"></a>
+		    <div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="images/商城首页/图片_u22.png">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/商城首页/图片_u22.png">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/商城首页/图片_u22.png">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/商城首页/图片_u22.png">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/商城首页/图片_u22.png">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="images/商城首页/图片_u22.png">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+			<dl>
+				<dt class="mui-clearfix">
+					<span class="mui-pull-left">棍子</span>
+					<span class="mui-pull-right">更多+</span>
+				</dt>
+				<dd>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/商城首页/p0.jpg" />
+								<div class="mui-media-body">
+									<p class="mui-ellipsis productName">滑触线 | JDC-H-160/250</p>
+									<p class="mui-ellipsis productNum">编号： <span>320166</span></p>
+									<p class="productPrice">¥<span>35.00</span></p>
+									<div class="mui-clearfix buyInfo">
+										<span class="mui-pull-left">&nbsp;2人已购买&nbsp; 库存1000件</span>
+										<h3 class="mui-pull-right goBuy">+购买</h3>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/商城首页/p0.jpg" />
+								<div class="mui-media-body">
+									<p class="mui-ellipsis productName">滑触线 | JDC-H-160/250</p>
+									<p class="mui-ellipsis productNum">编号： <span>320166</span></p>
+									<p class="productPrice">¥<span>35.00</span></p>
+									<div class="mui-clearfix buyInfo">
+										<span class="mui-pull-left">&nbsp;2人已购买&nbsp; 库存1000件</span>
+										<h3 class="mui-pull-right goBuy">+购买</h3>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/商城首页/p0.jpg" />
+								<div class="mui-media-body">
+									<p class="mui-ellipsis productName">滑触线 | JDC-H-160/250</p>
+									<p class="mui-ellipsis productNum">编号： <span>320166</span></p>
+									<p class="productPrice">¥<span>35.00</span></p>
+									<div class="mui-clearfix buyInfo">
+										<span class="mui-pull-left">&nbsp;2人已购买&nbsp; 库存1000件</span>
+										<h3 class="mui-pull-right goBuy">+购买</h3>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</dd>
+				<dt class="mui-clearfix">
+					<span class="mui-pull-left">棍子</span>
+					<span class="mui-pull-right">更多+</span>
+				</dt>
+				<dd>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/商城首页/p0.jpg" />
+								<div class="mui-media-body">
+									<p class="mui-ellipsis productName">滑触线 | JDC-H-160/250</p>
+									<p class="mui-ellipsis productNum">编号： <span>320166</span></p>
+									<p class="productPrice">¥<span>35.00</span></p>
+									<div class="mui-clearfix buyInfo">
+										<span class="mui-pull-left">&nbsp;2人已购买&nbsp; 库存1000件</span>
+										<h3 class="mui-pull-right goBuy">+购买</h3>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/商城首页/p0.jpg" />
+								<div class="mui-media-body">
+									<p class="mui-ellipsis productName">滑触线 | JDC-H-160/250</p>
+									<p class="mui-ellipsis productNum">编号： <span>320166</span></p>
+									<p class="productPrice">¥<span>35.00</span></p>
+									<div class="mui-clearfix buyInfo">
+										<span class="mui-pull-left">&nbsp;2人已购买&nbsp; 库存1000件</span>
+										<h3 class="mui-pull-right goBuy">+购买</h3>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/商城首页/p0.jpg" />
+								<div class="mui-media-body">
+									<p class="mui-ellipsis productName">滑触线 | JDC-H-160/250</p>
+									<p class="mui-ellipsis productNum">编号： <span>320166</span></p>
+									<p class="productPrice">¥<span>35.00</span></p>
+									<div class="mui-clearfix buyInfo">
+										<span class="mui-pull-left">&nbsp;2人已购买&nbsp; 库存1000件</span>
+										<h3 class="mui-pull-right goBuy">+购买</h3>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</dd>
+				<dt class="mui-clearfix">
+					<span class="mui-pull-left">棍子</span>
+					<span class="mui-pull-right">更多+</span>
+				</dt>
+				<dd>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/商城首页/p0.jpg" />
+								<div class="mui-media-body">
+									<p class="mui-ellipsis productName">滑触线 | JDC-H-160/250</p>
+									<p class="mui-ellipsis productNum">编号： <span>320166</span></p>
+									<p class="productPrice">¥<span>35.00</span></p>
+									<div class="mui-clearfix buyInfo">
+										<span class="mui-pull-left">&nbsp;2人已购买&nbsp; 库存1000件</span>
+										<h3 class="mui-pull-right goBuy">+购买</h3>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/商城首页/p0.jpg" />
+								<div class="mui-media-body">
+									<p class="mui-ellipsis productName">滑触线 | JDC-H-160/250</p>
+									<p class="mui-ellipsis productNum">编号： <span>320166</span></p>
+									<p class="productPrice">¥<span>35.00</span></p>
+									<div class="mui-clearfix buyInfo">
+										<span class="mui-pull-left">&nbsp;2人已购买&nbsp; 库存1000件</span>
+										<h3 class="mui-pull-right goBuy">+购买</h3>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class="mui-media-object mui-pull-left" src="images/商城首页/p0.jpg" />
+								<div class="mui-media-body">
+									<p class="mui-ellipsis productName">滑触线 | JDC-H-160/250</p>
+									<p class="mui-ellipsis productNum">编号： <span>320166</span></p>
+									<p class="productPrice">¥<span>35.00</span></p>
+									<div class="mui-clearfix buyInfo">
+										<span class="mui-pull-left">&nbsp;2人已购买&nbsp; 库存1000件</span>
+										<h3 class="mui-pull-right goBuy">+购买</h3>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div id="bottomPopover" class="mui-popover mui-popover-bottom">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-input-row mui-search">
+			    <input type="search" class="mui-input-clear" placeholder="" style="margin:0;background:rgb(247,247,247)"/>
+			</div>
+			<ul class="mui-table-view">
+		        <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">
+		                Item 1
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">
+		                 Item 2
+		            </a>
+		        </li>
+		        <li class="mui-table-view-cell">
+		            <a class="mui-navigate-right">
+		                 Item 3
+		            </a>
+		        </li>
+		    </ul>
+		</div>
+
+
+        <script src="js/plugins/mui.min.js"></script>
+		<script>
+			window.onload=function(){
+				mui('.mui-scroll-wrapper').scroll();
+				var gallery = mui('.mui-slider');
+				gallery.slider({
+				  	interval:4000//自动轮播周期，若为0则不自动播放，默认为0；
+				});
+			}
+		</script>
+	</body>
+</html>

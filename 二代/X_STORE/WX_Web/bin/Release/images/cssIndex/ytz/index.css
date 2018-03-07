@@ -1,0 +1,13 @@
+.i_head,.i_wel,.i_hotLine,.i_ads{ display:none;}
+.i_body { background:url( image/bg.jpg) no-repeat top left; background-size:100%; margin:0 auto; padding-top:36%;}
+.i_content{ width:65%; float:right;}
+.i_content ul{ margin:auto; display:block;}
+.i_content ul li{ width:50%; padding:0px; height:130px; }
+.i_content ul li div{}
+.i_content ul li p{display:block; height:90px; margin: 0 auto; width: 100px;}
+.i_content ul li p a{display:block; width:100px; height:90px; overflow:hidden;}
+.i_content ul li p a img{} 
+.i_content ul li span{overflow:hidden; display:block; margin:0 auto; width:100px; margin-top:8px; background:url( image/tubiao.png) no-repeat -275px -569px;}
+.i_foot{ display:none;}
+.i_Navigation{ display:none;}
+.i_copyright { padding-top:6em; padding-bottom:8em; color:#000;}

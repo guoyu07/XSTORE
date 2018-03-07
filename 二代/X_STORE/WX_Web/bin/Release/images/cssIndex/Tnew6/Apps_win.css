@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,div,p,table,td,ul,li,h1,h2,h3,h4,h5,h6,h7{margin:0;padding:0;font-size:24px;font-weight: normal;line-height: 40px;}
+body{text-align: center;}
+a{color: #333;text-decoration:none;}
+a:hover{color: #420100;}
+ 
+.mainMenu{width:100%;height: 122px;background: url(menu_bg.png) repeat-x;margin:0;padding:0;}
+  	.mainMenu ul{width:100%;height: 122px;margin:0;padding:0;overflow:hidden;}
+	.mainMenu li{width: 20%; height: 122px; margin:0;padding:0;list-style: none;float: left;text-align: center;}
+		.mainMenu li img{text-align: center;border: 0px;}
+  .footer{line-height: 80px;}	  
+	
+  .proTitle{line-height: 80px;font-size: 30px; font-weight: bolder;word-wrap:break-word; color: #fe0000;font-family: 微软雅黑;text-align: center;border-bottom: 3px solid #cccccc;} 
+  h3{line-height: 60px;font-size: 20px; font-weight: bolder;word-wrap:break-word; color: #333333;font-family: 微软雅黑;text-align: center;border-bottom: 3px dashed #cccccc;}
+#game {width:630px;height:210px;overflow:hidden;position:relative;border:3px solid #333;margin:30px auto;}
+#game ul {margin:0;padding:0;position:absolute;width:210px;height:210px;}
+#game li {margin:0;padding:0;display:block;width:210px;height:210px;line-height:210px;text-align:center;font-size:210px;font-family:Arial;font-weight:bold;}
+input{width: 200px;height: 120px;font-size: 50px;text-align: center;}
+p{width: 80%;height: auto;line-height: 30px;margin: 10px auto;padding: 0;text-align: left;}

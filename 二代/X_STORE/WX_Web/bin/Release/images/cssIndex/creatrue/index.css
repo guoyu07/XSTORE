@@ -1,0 +1,20 @@
+.i_head,.i_wel,.i_hotLine,.i_ads{ display:none;}
+.i_body { background-color:#f2f2f2; scolor:#333; font-family:"微软雅黑"; font-size:16px; background:url( image/bg.jpg) no-repeat; background-size:100%;}
+.i_content{ }
+.i_content ul{ margin:auto; display:block;}
+.i_content ul li{ display:block; float:none; position:relative; z-index:999; width:32%;}
+.i_content ul li#content_item1 { left:25%; margin-top:2%;}
+.i_content ul li#content_item2 { left:50%; margin-top:-13%;}
+.i_content ul li#content_item3 { left:25%; margin-top:-13%;}
+.i_content ul li#content_item4 { left:50%; margin-top:-13%;}
+
+.i_content ul li a{display:none; width:100%; margin:0 auto; height:100%; position:relative;}
+.i_content ul li p a { display:block;}
+.i_content ul li p a img{ display:block; width:100%; height:auto; } 
+.i_content ul li span{overflow:hidden; display:block; margin:0 auto; width:100%; padding-bottom:10%; padding-top:10%; color:#FFF; font-size:16px;}
+.i_foot{ display:none;}
+.i_Navigation{ display:none;}
+.i_copyright { color:#fff; text-align:center; position:fixed; width:80%; left:50%; margin-left:-40%; line-height:30px; bottom:10px;}
+.shchkj {color:#fff; text-align:center; display:none;}
+.shchkj a { color:#fff;}
+

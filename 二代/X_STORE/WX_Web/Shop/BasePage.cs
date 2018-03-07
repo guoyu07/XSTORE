@@ -29,9 +29,9 @@ namespace Wx_NewWeb.Shop
             {
                 if (debug)
                 {
-                    return "o8eAHwM94iBA0GGYsh8tnJ1pmuM8";//袁益鹏
+                    //return "o8eAHwM94iBA0GGYsh8tnJ1pmuM8";//袁益鹏
                     //return "o8eAHwM5_75X286k5teZThpp8ns8";//王琛
-                    //return "o8eAHwAIJWc_6rJ194St-mZaU5Vs";
+                    return "o8eAHwFadTw_pMf6lMyrjYqa4WyY";
                 }
                 Log.WriteLog("类：BasePage", "方法：OpenId", "_openid:" + _openid);
                 if (_openid == null || string.IsNullOrEmpty(_openid))
@@ -245,10 +245,10 @@ namespace Wx_NewWeb.Shop
         {
             get
             {
-                if (debug)
-                {
-                    return "861853032006603";
-                }
+                //if (debug)
+                //{
+                //    return "861853032006603";
+                //}
                 if (string.IsNullOrEmpty(_boxmac))
                 {
                 

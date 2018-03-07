@@ -40,14 +40,22 @@ namespace XStore.WebSite.WebSite.Operation
                     }
                     else
                     {
-                        var roomList = context.Query<Cabinet>().Where(o => o.hotel == hotelInfo.id).LeftJoin<Cell>((a, b) => a.mac.Equals(b.mac))
-                            .Where((a, b) => b.part == 0 && b.product_id == null)
+                        var layout = context.Query<CabinetLayout>().FirstOrDefault(o => o.hotel_id == hotelInfo.id);
+                        if (layout == null)
+                        {
+                            MessageBox.Show(this, "system_alert", "模板商品未配置");
+                            return;
+                        }
+                        var productCount = layout.products.Split(new char[] { ','},StringSplitOptions.RemoveEmptyEntries).Count();
+
+                        var roomList = context.Query<Cabinet>().Where(o => o.hotel == hotelInfo.id)
+                            .LeftJoin<Cell>((a, b) => a.mac.Equals(b.mac))
+                            .Where((a, b) => b.part == 0 && b.product_id == null && b.pos <= productCount)
                             .Select((a, b) => new
                             {
                                 a.mac,
                                 a.online,
                                 a.room
-
                             }).GroupBy(o => o.mac)
                         .Select(o => new { mac = AggregateFunctions.Max(o.mac), online = AggregateFunctions.Max(o.online), room = AggregateFunctions.Max(o.room) }).ToList();
                         rooms_rp.DataSource = roomList;
@@ -101,22 +109,23 @@ namespace XStore.WebSite.WebSite.Operation
                     MessageBox.Show(this, "system_alert", "商品模板未设置");
                     return;
                 }
-                var layoutList = cabinetLayOut.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+                var layoutList = cabinetLayOut.products.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Select(o => o.ObjToInt(0)).Where(o => o != 0).ToList();
+
                 for (int i = 0; i < cabinets.Count; i++)
                 {
                     var cabinet = cabinets[i];
-                    var storeList = context.Query<Cell>().Where(o => o.mac.Equals(cabinet.mac) && o.part == 0).ToList();
+                    var storeList = context.Query<Cell>().Where(o => o.mac.Equals(cabinet.mac) && o.part == 0 && o.pos <= layoutList.Count).ToList();
 
-                    if (layoutList.Count != storeList.Count)
+                    if (storeList.Count<layoutList.Count )
                     {
                         MessageBox.Show(this, "system_alert", "房间【" + cabinet.room + "】商品设置不全");
                         return;
                     }
-                    for (int j = 0; j < storeList.Count; j++)
+                    for (int j = 0; j < layoutList.Count; j++)
                     {
                         if (storeList[j].product_id == null)
                         {
-                            fixProductList.Add(layoutList[j]);
+                            fixProductList.Add(layoutList[j].ToString());
                         }
                     }
                 }

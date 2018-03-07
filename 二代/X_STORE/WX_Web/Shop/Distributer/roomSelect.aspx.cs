@@ -46,9 +46,11 @@ namespace Wx_NewWeb.Shop.Distributer
                         break;
                 };
 
-                string sql_kw = string.Format(@"
-SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [视图获取投放商品id] WHERE  投放库位id NOT IN(SELECT [补货的房间id] FROM [tshop].[dbo].[WP_取货记录表] WHERE 用户id ={1} AND 是否补货完成 = 0)) AND IsShow=1 AND  库位名  NOT LIKE '%总台%' AND  仓库id={0}
-", HotelInfo["id"].ObjToInt(0),UserId);
+                string sql_kw = string.Format(@"select max(b.仓库id) as 酒店id,max(b.id) as id,max(b.库位名) as 库位名 from WP_箱子表 a 
+left join WP_库位表 b on a.库位id = b.id
+where b.仓库id = {0} and b.版本号 is not null and 默认商品id != 0 and 实际商品id = 0
+AND b.IsShow=1 and a.IsShow = 1 AND  库位名  NOT LIKE '%总台%'
+group by 库位id", HotelInfo["id"].ObjToInt(0));
                 Log.WriteLog("页面：PickUp", "方法：PageInit", "sql_kw：" + sql_kw);
                 var dt = comfun.GetDataTableBySQL(sql_kw);
                 rooms_rp.DataSource = dt;
@@ -66,7 +68,6 @@ SELECT id,库位名 FROM [WP_库位表] WHERE id IN(SELECT 投放库位id FROM [
             }
             catch (Exception ex)
             {
-                //Log.WriteLog("页面：PickUp", "方法：PageInit", "异常信息：" + ex.Message);
                 RedirectError(ex.Message);
             }
         }

@@ -68,6 +68,7 @@ group by 商品id,视图出库表.品名,本站价,图片路径,编码 order by 
                 string rexiao_price = "0";
                 string rexiao_img = "0";
                 string rexiao_code = "";
+                List<int> deleteIndex = new List<int>();
                 Log.WriteLog("页面：mySpace", "方法：goods", "2：");
                 if (dt_rexiao.Rows.Count > 0)
                 {
@@ -98,6 +99,7 @@ group by 商品id,视图出库表.品名,本站价,图片路径,编码 order by 
                         //test.Rows[a]["本站价"] = rexiao_price;
                         //test.Rows[a]["实际商品编码"] = rexiao_code;
                         //test.Rows[a]["图片路径"] = rexiao_img;
+                        deleteIndex.Add(a);
                         continue;
                     }
                     Log.WriteLog("页面：mySpace", "方法：goods", "6：" + a);
@@ -115,6 +117,11 @@ group by 商品id,视图出库表.品名,本站价,图片路径,编码 order by 
                         test.Rows[a]["图片路径"] = no_img;
                     }
                 }
+                for (int i = deleteIndex.Count - 1; i >= 0; i--)
+                {
+                    test.Rows[deleteIndex[i]].Delete();
+                }
+                test.AcceptChanges();
                 Log.WriteLog("类：roomGoods", "方法：link_ul", "test：" + JsonConvert.SerializeObject(test));
                 box_rp.DataSource = test;
                 box_rp.DataBind();

@@ -63,16 +63,6 @@ namespace Wx_NewWeb.Shop.Distributer
         string user_id = "";
         protected void hotels(){
             
-            //if (Session["UserId"] != null)
-            //{
-
-            //    user_id = Session["UserId"].ToString();
-            //}
-
-            //string sql = "select id,用户id,仓库id from WP_用户权限 where 用户id='" + user_id + "' ";
-            //DataTable dt = comfun.GetDataTableBySQL(sql);
-            
-            //int hotel_id = Convert.ToInt32(dt.Rows[0]["仓库id"]);//酒店id
             DataTable dt_hotel_message = comfun.GetDataTableBySQL("select 仓库名,详细地址 from wp_仓库表 where id='" + HotelId + "'");
             if (dt_hotel_message.Rows.Count > 0)
             {

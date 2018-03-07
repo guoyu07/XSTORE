@@ -1,0 +1,25 @@
+﻿.i_wel,.i_hotLine,.i_foot,.i_head{ display:none;}
+.i_ads{ display:block;}
+.i_content ul li{ height:102px; border-bottom:1px solid #ddd; width:46%; margin:2%; float:left;}
+.i_content ul li span{ color:#ffffff; text-align:left;}
+.i_content ul li div ,.i_content ul li p,.i_content ul li p a{ height:100%; display:block; z-index:1;}
+.i_content ul li p a{}
+.i_content ul li p img{ height:40px; padding:5px; float:left; margin-top:30px;}
+.i_content ul li span{ display: block; line-height:40px; height:40px; overflow:hidden; text-align:left; position:absolute; top:0; padding:0px 0px 0px 13px;}
+.i_Navigation{ background-color:#646464; position: fixed; width:50%; padding:8px; border-radius:8px; top:100px;  z-index:3; display:none;}
+.i_Navigation .l_arrow{color: #646464; font-size: 25px; position: relative; top: -15px; height: 8px; overflow: hidden;}
+.i_Navigation ul{ width:100%; margin:auto; }
+.i_Navigation ul li{ float:left; width:46%; padding:2%;}
+.i_Navigation ul li a{ background-color:#787878; color:#fff; display:block; height:2em;  line-height:2em;}
+
+/*变化的CSS*/
+#content_item1{ background:#368ff5;}
+#content_item2{ background:#fe864a;}
+#content_item3{ background:#0fc4d9;}
+#content_item4{ background:#9656f3;}
+#content_item5{ background:#84d018; width:96%;}
+#content_item6{ display:none;}
+.i_content ul li img{ margin-left:29%;}
+#content_item5 img{ margin-left:40%; maigin-top:20%;}
+#content_item1 span{ clear:none; text-align:left;}
+#content_item5 span{ display: block; line-height:40px; height:40px; overflow:hidden; text-align:left; position:absolute; top:0; padding:5px 0px 5px 40px;}

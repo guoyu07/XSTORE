@@ -355,12 +355,6 @@ X:\Git\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csprojResolveAssemblyRef
 X:\Git\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csproj.CoreCompileInputs.cache
 X:\Git\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.dll
 X:\Git\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.pdb
-E:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Debug\DTcms.Model.dll
-E:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Debug\DTcms.Model.pdb
-E:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Debug\Newtonsoft.Json.dll
-E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csproj.CoreCompileInputs.cache
-E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.dll
-E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.pdb
 X:\Git\XStore\二代\X_STORE\DTcms.Model\bin\Debug\DTcms.Model.dll
 X:\Git\XStore\二代\X_STORE\DTcms.Model\bin\Debug\DTcms.Model.pdb
 X:\Git\XStore\二代\X_STORE\DTcms.Model\bin\Debug\Newtonsoft.Json.dll
@@ -368,3 +362,10 @@ X:\Git\XStore\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csprojResolveAsse
 X:\Git\XStore\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csproj.CoreCompileInputs.cache
 X:\Git\XStore\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.dll
 X:\Git\XStore\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.pdb
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Debug\DTcms.Model.dll
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Debug\DTcms.Model.pdb
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\bin\Debug\Newtonsoft.Json.dll
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csproj.CoreCompileInputs.cache
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.dll
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.pdb
+E:\Git\XSTORE\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csprojResolveAssemblyReference.cache

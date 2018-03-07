@@ -15,7 +15,7 @@
                 window.location.href = '<%= Constant.GoodsDic+"GoodsList.aspx"%>';
             }, false);
        
-            setInterval('checkOrder()',2000);
+            //setInterval('checkOrder()',2000);
         });
         function checkOrder() {
             var requesturl = '<%= Constant.ApiDic+"CheckOrderState.ashx"%>';
@@ -47,7 +47,7 @@
         }
         function callpay() {
             if ($("#zfbPay").is(":checked")) {
-                window.location.href = 'Alipay.html?order=' + '<%=orderInfo.code %>' + '&money=' + '<%=orderInfo.price1.ObjToInt(0).CentToRMB(0) %>';
+                window.location.href = '/WebSite/Order/Alipay.html?order=' + '<%=orderInfo.code %>' + '&money=' + '<%=orderInfo.price1.ObjToInt(0).CentToRMB(0) %>';
             }
             else {
                 if (typeof WeixinJSBridge == "undefined") {

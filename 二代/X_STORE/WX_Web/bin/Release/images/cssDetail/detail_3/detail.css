@@ -1,0 +1,34 @@
+.nei_body { background:url(bg_bottom.jpg) no-repeat bottom; background-size:100%;}
+.d_body{position:relative; padding-top:45px; z-index:1;}
+.d_body:after{display:block;content:"";clear:both;}
+.d_content{ margin:0 1em 0.5em 1em; background:url(tm.png); border-radius:10px; text-align:left; padding:0 15px 15px 15px;}
+.d_content table{ width:100%;}
+.d_content h1{text-align: center;font-weight:bold; width:auto; }
+.d_content h2{text-align:center;font-weight:bold; width:auto; line-height:2em; height:2em; font-size:16px; font-weight:bold; padding:8px;}
+.d_content { text-align:left; line-height:1.8em;}
+.d_content div { text-align:left;}
+.d_content img { text-align:center; margin:6px auto; display:block; max-width:100%; height:auto;}
+.d_content #dituContent img { max-width:none;}
+.d_body .d_content p{ text-align:left;}
+.d_body .d_content p span { display:block; text-align:left;}
+.d_content td { text-align:left;}
+.d_content p img { text-align:center; margin:5px auto; display:block;}
+.d_body .d_content h5 { font-size:14px; line-height:20px; font-weight:normal; text-align:center; padding:8px 0px; border-bottom:1px dashed #c0bfbf; border-top:1px dashed #c0bfbf; color:#666;}
+
+.d_content span { display:block;}
+/*分享*/
+.d_share{bottom:0px;position:relative;}
+.d_share ul li{float:left;width:50%;}
+.d_share ul li a{text-decoration:none;display:block;margin:4px 8px;background-color:#E8E8E8;background-image:linear-gradient(to top, #DBDBDB, #F4F4F4);border:1px solid #ADADAB;border-radius:13px;box-shadow:0 1px 1px rgba(0, 0, 0, 0.45), 0 1px 1px #EFEFEF inset;color:#000000;font-size:12px;padding:8px;text-align:center;text-shadow:0.5px 0.5px 1px #FFFFFF;}
+.d_share ul li a img{height:22px;width:22px;vertical-align:top;float:left;}
+.shchkj {color:#fff; text-align:center; display:none;}
+.china_gw { display:none;}
+
+/*案例图片放大排序*/
+ul.enlarge:after{content:'';display:block;clear:both;}
+ul.enlarge{zoom:1; margin-top:10px;}
+
+ul.enlarge li { width:50%; float:left; margin-bottom:10px;}
+ul.enlarge li a { display:block; background-color:#E2E2E2; width:95%; margin:0 auto;}
+ul.enlarge li span { display:block; text-align:center; background-color:#E2E2E2;  width:95%; margin:0 auto; padding-bottom:6px;}
+ul.enlarge li img { width:94%; margin:0 auto; height:auto; display:block; padding-top:6px; padding-bottom:6px;}

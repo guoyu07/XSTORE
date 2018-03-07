@@ -6,7 +6,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>X:\Git\XStore\三代\XStoreWebTest\XStore.WebSite\bin\Release\PublishOutput</_PublishTargetUrl>
+    <_PublishTargetUrl>X:\Git\XSTORE\三代\XStoreWebTest\XStore.WebSite\bin\Release\PublishOutput</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="About.aspx">
@@ -40,10 +40,10 @@
       <publishTime>02/28/2018 22:35:38</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.dll">
-      <publishTime>03/04/2018 20:33:58</publishTime>
+      <publishTime>03/07/2018 23:12:24</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.pdb">
-      <publishTime>03/04/2018 20:33:58</publishTime>
+      <publishTime>03/07/2018 23:12:24</publishTime>
     </File>
     <File Include="bin/Flurl.dll">
       <publishTime>02/28/2018 22:35:39</publishTime>
@@ -313,22 +313,22 @@
       <publishTime>02/28/2018 22:35:40</publishTime>
     </File>
     <File Include="bin/XStore.Common.dll">
-      <publishTime>03/04/2018 20:34:01</publishTime>
+      <publishTime>03/07/2018 23:12:26</publishTime>
     </File>
     <File Include="bin/XStore.Common.pdb">
-      <publishTime>03/04/2018 20:34:01</publishTime>
+      <publishTime>03/07/2018 23:12:26</publishTime>
     </File>
     <File Include="bin/XStore.Entity.dll">
-      <publishTime>03/04/2018 20:33:56</publishTime>
+      <publishTime>03/07/2018 23:12:20</publishTime>
     </File>
     <File Include="bin/XStore.Entity.pdb">
-      <publishTime>03/04/2018 20:33:56</publishTime>
+      <publishTime>03/07/2018 23:12:20</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.dll">
-      <publishTime>03/04/2018 21:44:12</publishTime>
+      <publishTime>03/07/2018 23:12:33</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.pdb">
-      <publishTime>03/04/2018 21:44:12</publishTime>
+      <publishTime>03/07/2018 23:12:33</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.AspNet.FriendlyUrls.resources.dll">
       <publishTime>02/28/2018 22:35:39</publishTime>
@@ -823,7 +823,7 @@
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/01/2018 22:56:29</publishTime>
+      <publishTime>03/07/2018 23:12:34</publishTime>
     </File>
     <File Include="WebSite/Center/AreaManageCenter.aspx">
       <publishTime>02/28/2018 22:35:35</publishTime>
@@ -871,7 +871,7 @@
       <publishTime>02/28/2018 22:35:35</publishTime>
     </File>
     <File Include="WebSite/Login/Bridge.aspx">
-      <publishTime>03/04/2018 21:18:27</publishTime>
+      <publishTime>03/07/2018 19:30:03</publishTime>
     </File>
     <File Include="WebSite/Login/ChangePassword.aspx">
       <publishTime>02/28/2018 22:35:35</publishTime>
@@ -895,7 +895,7 @@
       <publishTime>02/28/2018 22:35:35</publishTime>
     </File>
     <File Include="WebSite/Operation/BackLog.aspx">
-      <publishTime>02/28/2018 22:35:35</publishTime>
+      <publishTime>03/07/2018 19:30:03</publishTime>
     </File>
     <File Include="WebSite/Operation/BindMac.aspx">
       <publishTime>02/28/2018 22:35:35</publishTime>
@@ -910,7 +910,7 @@
       <publishTime>02/28/2018 22:35:35</publishTime>
     </File>
     <File Include="WebSite/Operation/PickUp.aspx">
-      <publishTime>02/28/2018 22:35:35</publishTime>
+      <publishTime>03/07/2018 19:30:03</publishTime>
     </File>
     <File Include="WebSite/Operation/QaCheck.aspx">
       <publishTime>02/28/2018 22:35:35</publishTime>
