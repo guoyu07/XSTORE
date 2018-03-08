@@ -247,4 +247,3 @@ E:\Git\XSTORE\二代\X_STORE\DTcms.Common\bin\Debug\DTcms.Common.pdb
 E:\Git\XSTORE\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.csproj.CoreCompileInputs.cache
 E:\Git\XSTORE\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.dll
 E:\Git\XSTORE\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.pdb
-E:\Git\XSTORE\二代\X_STORE\DTcms.Common\obj\Debug\DTcms.Common.csprojResolveAssemblyReference.cache

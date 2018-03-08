@@ -150,7 +150,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kLMCBanbZ4L2eDBX3/D/BcQmchu2LwjX+bwYi/Q696Q=</dsig:DigestValue>
+        <dsig:DigestValue>ycOWaRJajAKYGF5ziBIn/5cTtqAdGw6acGKvqNSojhQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -162,7 +162,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KMJQS2ne3QWl/5GpholjH6fhPZ5iwYXSPqi0grqG1ig=</dsig:DigestValue>
+        <dsig:DigestValue>vwviiRJKdyLcMmgsVbHno81pZ6Ci/3ekOscOvMDyIq4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -174,7 +174,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cALKEUnOD/aQqXd5ve8PQjzJygG9dWzY0SvCf5E7TaQ=</dsig:DigestValue>
+        <dsig:DigestValue>lJAkaj7EoUBd15tYrm/HgQbpnwqJ9zm5BQH/kUsJ1EI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -286,13 +286,13 @@
       <dsig:DigestValue>UOTTJ+wUdGK+FJi6N+DmqY29vB3rhpt6IMR4Qp+PwkM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WeiXinPush.exe.config" size="2287">
+  <file name="WeiXinPush.exe.config" size="2424">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>oJCRIzLVWayC48Vtm1KzLThQ0Gn/NDNFTQYLKlU4iaY=</dsig:DigestValue>
+      <dsig:DigestValue>Qcd6qNjkJdbgUwLwiQ4YhlKfyBkRNm29KhUNBUVtF1c=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

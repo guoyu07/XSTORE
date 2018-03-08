@@ -63,7 +63,6 @@
                     jsApiCall();
                 }
             }
-           
         }
     </script>
 </head>

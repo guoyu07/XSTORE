@@ -263,7 +263,7 @@ namespace WeiXinPush
                 var keyword3 = 1 + "件";
                 var keyword4 = orderInfo.price1.ObjToInt(0).CentToRMB(0) + " 元";
                 var remark = "感谢您的使用" + " " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-                var tempId = "HfV9-ClzJoRJ_2ubWRrw1y3qy9IaZBnwFOt09QLRmHY";
+                var tempId = "aenuM_UsdJ_RixaKWnGEFGTlwuFQqHIyhq6OwhzvcWw";
                 dynamic postData = new ExpandoObject();
                 dynamic first = new ExpandoObject();
                 first.value = title;
@@ -393,7 +393,7 @@ namespace WeiXinPush
                 var keyword3 = 1 + "件";
                 var keyword4 = orderInfo.price1.ObjToInt(0).CentToRMB(0) + " 元";
                 var remark = "特此告知！！！";
-                var tempId = "HfV9-ClzJoRJ_2ubWRrw1y3qy9IaZBnwFOt09QLRmHY";
+                var tempId = "aenuM_UsdJ_RixaKWnGEFGTlwuFQqHIyhq6OwhzvcWw";
                 dynamic postData = new ExpandoObject();
                 dynamic first = new ExpandoObject();
                 first.value = title;
@@ -497,7 +497,7 @@ namespace WeiXinPush
                     var keyword2 = string.Format("昨日销售共 {1}件，总计 {0}元；本月销售共 {2}件，总计 {3}元", yestodyList.Sum(o => o.price1).ObjToInt(0).CentToRMB(0), yestodyList.Count, monthList.Count, monthList.Sum(o => o.price1).ObjToInt(0).CentToRMB(0));
                     var keyword3 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     var remark = "感谢您的使用";
-                    var tempId = "hFOlM8KsC_-FCAg7oaqWQKlj68fT3K7d-F0bW6WbyCc";
+                    var tempId = "hO8PfzQOEve1m_XXRlkmJot0S-u5ca3_XodnymasYhc";
                     var color = "#173177";
 
                     dynamic postData = new ExpandoObject();
@@ -696,7 +696,7 @@ namespace WeiXinPush
                 var keyword2 = nowHotel.cabNum + " 间";
                 var keyword3 = nowHotel.proNum + "件";
                 var remark = "截止至 " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss").Substring(0, 10) + " 08:00:00;\n请尽快安排补货任务;";
-                var tempId = "stRAyN6BY72uMxT2C1RxJVnNoXcJPI5oukekHCSzF0g";
+                var tempId = "8A2OZkYnac3yv0oO8iNkSz_lwfp_clVfagm_AQpFB_o";
                 dynamic postData = new ExpandoObject();
                 dynamic first = new ExpandoObject();
                 first.value = title;
