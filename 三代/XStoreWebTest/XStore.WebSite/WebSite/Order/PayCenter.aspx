@@ -15,7 +15,7 @@
                 window.location.href = '<%= Constant.GoodsDic+"GoodsList.aspx"%>';
             }, false);
        
-            //setInterval('checkOrder()',2000);
+            setInterval('checkOrder()',2000);
         });
         function checkOrder() {
             var requesturl = '<%= Constant.ApiDic+"CheckOrderState.ashx"%>';
