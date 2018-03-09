@@ -27,7 +27,7 @@ namespace Wx_NewWeb.Shop.pages
                     var macDt = comfun.GetDataTableBySQL(string.Format("select * from WP_库位表 where 箱子MAC ='{0}'", mac));
                     if (macDt.Rows.Count == 0)
                     {
-                        Response.Redirect(string.Format(home_url + "/WebSite/Login/Welcome.aspx?boxmac={0}&&code={1}", mac,Request.QueryString["code"].ObjToStr()), false);
+                        Response.Redirect(string.Format(home_url + "/WebSite/Login/Welcome.aspx?boxmac={0}&&OpenId={1}", mac,OpenId), false);
                         return;
                     }
                 }

@@ -48,14 +48,23 @@ namespace XStore.WebSite
                 LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "openid：");
                 if (_openid == null || string.IsNullOrEmpty(_openid))
                 {
-                    if (Session[Constant.OpenId] == null || string.IsNullOrEmpty(Session[Constant.OpenId].ObjToStr()))
+                    if (!string.IsNullOrEmpty(Request.QueryString[Constant.OpenId].ObjToStr()))
                     {
-                        _openid = RedrectWeiXin();
+                        _openid = Request.QueryString[Constant.OpenId].ObjToStr();
+                        Session[Constant.OpenId] = _openid;
                     }
                     else
                     {
-                        _openid = Session[Constant.OpenId].ObjToStr();
+                        if (Session[Constant.OpenId] == null || string.IsNullOrEmpty(Session[Constant.OpenId].ObjToStr()))
+                        {
+                            _openid = RedrectWeiXin();
+                        }
+                        else
+                        {
+                            _openid = Session[Constant.OpenId].ObjToStr();
+                        }
                     }
+                   
                 }
                 else
                 {
@@ -64,7 +73,41 @@ namespace XStore.WebSite
                 return _openid;
             }
         }
-        
+        private string _accessToken;
+        protected string accessToken
+        {
+            get
+            {
+                
+                if (_accessToken == null || string.IsNullOrEmpty(_accessToken))
+                {
+                    if (Session[Constant.AccessToken] == null || string.IsNullOrEmpty(Session[Constant.AccessToken].ObjToStr()))
+                    {
+                        var requestUrl = Constant.YunApiV2 + "Shop/ashx/GetAccessToken.ashx";
+                        var response = JsonConvert.DeserializeObject<AjaxResponse>(Utils.HttpGet(requestUrl));
+                        if (response.success)
+                        {
+                            Session[Constant.AccessToken] = response.message.ObjToStr();
+                            _accessToken = response.message.ObjToStr();
+                        }
+                        else
+                        {
+                            MessageBox.Show(this, "system_alert", "获取AccessToken失败");
+                        }
+                    }
+                    else
+                    {
+                        _accessToken = Session[Constant.AccessToken].ObjToStr();
+                    }
+                }
+                else
+                {
+                    Session[Constant.AccessToken] = _accessToken;
+                }
+                return _accessToken;
+            }
+
+        }
 
         protected string RedrectWeiXin()
         {
@@ -89,7 +132,7 @@ namespace XStore.WebSite
                         Session[Constant.OpenId] = oathToken.openid;
                         LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "openid：" + oathToken.openid);
                         #region 存入用户信息
-                        wxUserInfo = wxOath.GetWebUserInfo(access_token(), oathToken.openid);
+                        wxUserInfo = wxOath.GetWebUserInfo(accessToken, oathToken.openid);
                         LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") +"存入用户信息："+ JsonConvert.SerializeObject(wxUserInfo));
                         var wxUserDB = context.Query<UserWeiChat>().FirstOrDefault(o => o.openid.Equals(oathToken.openid));
                         if (wxUserDB == null)
@@ -131,27 +174,7 @@ namespace XStore.WebSite
             }
 
         }
-        public string access_token()
-        {
-            var accessToken = context.Query<AccessToken>().ToList().Where(o=>DateTime.Compare(o.createtime.AddMinutes(110),DateTime.Now)>0).ToList();
-            //如果加了两个小时还是小于当前时间，说明token过期，需要重新获取
-            if (accessToken.Count==0)
-            {
-                var wxOath = new WeiXinOath();
-                var access_token = wxOath.GetAccessToken();
-                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "access_token：" + access_token);
-                context.Insert(new AccessToken
-                {
-                    access_token = access_token,
-                    createtime = DateTime.Now
-                });
-                return access_token;
-            }
-            else
-            {
-                return accessToken.First().access_token;
-            }
-        }
+       
 
         public string GetProductImg(int productId,string image) {
             return "/Source/product/" + productId + "/" + image;

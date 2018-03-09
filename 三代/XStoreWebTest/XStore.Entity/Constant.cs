@@ -9,6 +9,7 @@ namespace XStore.Entity
     public class Constant
     {
         public const string CurrentUser ="CurrentUser";
+        public const string AccessToken = "AccessToken";
         public const string OpenId = "OpenId";
         public const string IMEI = "boxmac";
         public const string IMEIS = "totalId";
@@ -37,5 +38,6 @@ namespace XStore.Entity
         public const string ApiDic = "/WebSite/_Ashx/";
 
         public const string YunApi = "http://139.199.160.173:9119/";
+        public const string YunApiV2 = "http://wx2.x-store.com.cn/";
     }
 }

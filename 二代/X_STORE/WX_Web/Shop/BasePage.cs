@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Web;
 using tdx.database.Common_Pay.WeiXinPay;
+using tdx.Weixin;
 
 namespace Wx_NewWeb.Shop
 {
@@ -335,7 +336,7 @@ namespace Wx_NewWeb.Shop
                         #region 存入用户信息
                         string sql = "select * from wp_会员表 where openid='" + web_Oatuth.openid + "'";
                         DataTable dt = comfun.GetDataTableBySQL(sql);
-                        weixinUser userinfo = _wx.GetWebUserInfo(web_Oatuth.access_token, web_Oatuth.openid);
+                        weixinUser userinfo = _wx.GetWebUserInfo(access_token(), web_Oatuth.openid);
                         string nickname = userinfo.Nickname;
                         string headpic = userinfo.Headimgurl;
                         if (dt != null && dt.Rows.Count > 0)
@@ -456,7 +457,22 @@ namespace Wx_NewWeb.Shop
         }
 
         #endregion
-
+        public string access_token()
+        {
+            var dt = comfun.GetDataTableBySQL(@"select Id from WP_AccessToken where DATEADD(hour,2, create_time) > getdate()");
+            //如果加了两个小时还是小于当前时间，说明token过期，需要重新获取
+            if (dt.Rows.Count == 0)
+            {
+                var wxOath = new weixin();
+                var access_token = wxOath.GetAccessToken();
+                comfun.InsertBySQL(string.Format("insert into WP_AccessToken(access_token) values('{0}')", access_token));
+                return access_token;
+            }
+            else
+            {
+                return dt.Rows[0]["access_token"].ObjToStr();
+            }  
+        }
         #region
         public string FindState(int hotel_id,string where_sql,string daycount, out string num)
         {
