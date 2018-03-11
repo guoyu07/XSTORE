@@ -24,7 +24,7 @@ namespace Wx_NewWeb.Shop.pages
                     Session["boxmac"] = "";
                     Session["boxmac"] = Request.QueryString["boxmac"].ObjToStr();
                     var mac = Request.QueryString["boxmac"].ObjToStr();
-                    var macDt = comfun.GetDataTableBySQL(string.Format("select * from WP_库位表 where 箱子MAC ='{0}'", mac));
+                    var macDt = comfun.GetDataTableBySQL(string.Format("select top 1 * from WP_库位表 where 箱子MAC ='{0}'", mac));
                     if (macDt.Rows.Count == 0)
                     {
                         Response.Redirect(string.Format(home_url + "/WebSite/Login/Welcome.aspx?boxmac={0}&&OpenId={1}", mac,OpenId), false);

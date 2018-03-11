@@ -348,12 +348,6 @@ X:\Git\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csprojResolveAss
 X:\Git\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csproj.CoreCompileInputs.cache
 X:\Git\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
 X:\Git\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
-X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.dll
-X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.pdb
-X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\bin\Debug\Newtonsoft.Json.dll
-X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csproj.CoreCompileInputs.cache
-X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
-X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
 E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.dll
 E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.pdb
 E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\bin\Debug\Newtonsoft.Json.dll
@@ -361,4 +355,9 @@ E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csprojRes
 E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csproj.CoreCompileInputs.cache
 E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
 E:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb
-X:\Git\XSTORE\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csprojResolveAssemblyReference.cache
+X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.dll
+X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\bin\Debug\DTcms.DBUtility.pdb
+X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\bin\Debug\Newtonsoft.Json.dll
+X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.csproj.CoreCompileInputs.cache
+X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.dll
+X:\Git\XStore\二代\X_STORE\DTcms.DBUtility\obj\Debug\DTcms.DBUtility.pdb

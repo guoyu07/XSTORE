@@ -343,7 +343,6 @@ namespace Wx_NewWeb.Shop
                         {
                             comfun.UpdateBySQL("update WP_会员表 set wx昵称='" + SQLSafe(nickname) + "',wx头像='" + headpic + "' where openid='" + web_Oatuth.openid + "'");
                             comfun.UpdateBySQL("update B2C_mem set M_name='" + SQLSafe(nickname) + "'  where openid='" + web_Oatuth.openid + "'");
-                           
                         }
                         else //将新用户加入用户表
                         {
@@ -459,7 +458,7 @@ namespace Wx_NewWeb.Shop
         #endregion
         public string access_token()
         {
-            var dt = comfun.GetDataTableBySQL(@"select Id from WP_AccessToken where DATEADD(hour,2, create_time) > getdate()");
+            var dt = comfun.GetDataTableBySQL(@"select * from WP_AccessToken where DATEADD(hour,2, create_time) > getdate() order by Id desc");
             //如果加了两个小时还是小于当前时间，说明token过期，需要重新获取
             if (dt.Rows.Count == 0)
             {
