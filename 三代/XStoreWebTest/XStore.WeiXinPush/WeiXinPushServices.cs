@@ -782,7 +782,7 @@ namespace WeiXinPush
             try
             {
                 //获取AccessToken
-                string accessToken = WeiXin.GetAccess_token().access_token;
+                string accessToken = GetAccessToken();
                 //Log.WriteLog("微信推送", "access_token:", accessToken);
                 //第一步设置所属行业
                 msgData msg = new msgData();
@@ -875,7 +875,21 @@ namespace WeiXinPush
                 }
             }
         }
+        private string GetAccessToken() {
 
+            var requestUrl = Constant.YunApiV2 + "Shop/ashx/GetAccessToken.ashx";
+            var response = JsonConvert.DeserializeObject<AjaxResponse>(Utils.HttpGet(requestUrl));
+            if (response.success)
+            {
+                //Session[Constant.AccessToken] = response.message.ObjToStr();
+                return response.message.ObjToStr();
+            }
+            else
+            {
+                return string.Empty;
+            }
+
+        }
         
 
     }

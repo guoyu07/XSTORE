@@ -51,6 +51,7 @@ namespace XStore.WebSite
                     if (!string.IsNullOrEmpty(Request.QueryString[Constant.OpenId].ObjToStr()))
                     {
                         _openid = Request.QueryString[Constant.OpenId].ObjToStr();
+                        LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "_openid：" + _openid);
                         Session[Constant.OpenId] = _openid;
                     }
                     else

@@ -22,6 +22,9 @@ namespace XStore.Entity
         public const string Cabinets = "Cabinets";
         public const string HotelId = "hotelId";
 
+        public const string YunApi = "http://139.199.160.173:9119/";
+        public const string YunApiV2 = "http://wx2.x-store.com.cn/";
+
         public const string LoginDic = "~/WebSite/Login/";
         public const string GoodsDic = "~/WebSite/Goods/";
         public const string OrderDic = "~/WebSite/Order/";
@@ -29,15 +32,14 @@ namespace XStore.Entity
         public const string OperationDic = "~/WebSite/Operation/";
         public const string InformationDic = "~/WebSite/Information/";
 
-        public const string JsLoginDic = "/WebSite/Login/";
-        public const string JsGoodsDic = "/WebSite/Goods/";
-        public const string JsOrderDic = "/WebSite/Order/";
-        public const string JsCenterDic = "/WebSite/Center/";
-        public const string JsOperationDic = "/WebSite/Operation/";
-        public const string JsInformationDic = "/WebSite/Information/";
+        public const string JsLoginDic = YunApiV2+"WebSite/Login/";
+        public const string JsGoodsDic = YunApiV2 + "WebSite/Goods/";
+        public const string JsOrderDic = YunApiV2 + "WebSite/Order/";
+        public const string JsCenterDic = YunApiV2 + "WebSite/Center/";
+        public const string JsOperationDic = YunApiV2 + "WebSite/Operation/";
+        public const string JsInformationDic = YunApiV2 + "WebSite/Information/";
         public const string ApiDic = "/WebSite/_Ashx/";
 
-        public const string YunApi = "http://139.199.160.173:9119/";
-        public const string YunApiV2 = "http://wx2.x-store.com.cn/";
+       
     }
 }

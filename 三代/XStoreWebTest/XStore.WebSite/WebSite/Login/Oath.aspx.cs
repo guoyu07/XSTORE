@@ -30,35 +30,43 @@ namespace XStore.WebSite.WebSite.Login
                     role_id = b.role_id,
                     weichat = a.weichat
                 }).FirstOrDefault();
+                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "SessionOpenId："+Session[Constant.OpenId]);
                 if (userModel == null)
                 {
-                    Response.Redirect(Constant.LoginDic + "Login.aspx", false);
+                    Response.Redirect(Constant.LoginDic + "Login.aspx");
                     return;
                 }
                 else
                 {
+                    var url = string.Empty;
                     switch ((UserRoleEnum)userModel.role_id)
                     {
                         case UserRoleEnum.经理://酒店经理
-                            Response.Redirect(Constant.CenterDic + "ManageCenter.aspx",false);
+                            url = Constant.CenterDic + "ManageCenter.aspx";
+                          
                             break;
                         case UserRoleEnum.财务://财务
-                            Response.Redirect(Constant.CenterDic + "FinanceCenter.aspx", false);
+                            url = Constant.CenterDic + "FinanceCenter.aspx";
+                            //Response.Redirect(Constant.CenterDic + "FinanceCenter.aspx");
                             break;
                         case UserRoleEnum.前台://配货员
-                            Response.Redirect(Constant.CenterDic + "EmployeeCenter.aspx",false);
+                            url = Constant.CenterDic + "EmployeeCenter.aspx";
+                            //Response.Redirect(Constant.CenterDic + "EmployeeCenter.aspx");
                             break;
                         case UserRoleEnum.区域经理://区域经理
-                            Response.Redirect(Constant.CenterDic + "ManageCenter.aspx", false);
-
+                            url = Constant.CenterDic + "ManageCenter.aspx";
+                            //Response.Redirect(Constant.CenterDic + "ManageCenter.aspx");
                             break;
                         case UserRoleEnum.测试员:
-                            Response.Redirect(Constant.CenterDic + "TestCenter.aspx",false);
+                            url = Constant.CenterDic + "TestCenter.aspx";
+                            //Response.Redirect(Constant.CenterDic + "TestCenter.aspx");
                             break;
                         case UserRoleEnum.配水员:
-                            Response.Redirect(Constant.CenterDic + "PromotionCenter.aspx", false);
+                            url = Constant.CenterDic + "PromotionCenter.aspx";
+                            //Response.Redirect(Constant.CenterDic + "PromotionCenter.aspx");
                             break;
                     }
+                    Response.Redirect(url);
                 }
 
             }

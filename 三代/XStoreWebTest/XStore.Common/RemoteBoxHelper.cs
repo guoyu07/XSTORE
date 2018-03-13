@@ -14,8 +14,8 @@ namespace XStore.Common.Helper
         Thread threadclient = null;
         Socket socketclient = null;
         private int port = 2758;
-        //private string ipAddress = "119.29.94.189";
-        private string ipAddress = "139.199.160.173";
+        private string ipAddress = "119.29.94.189";
+        //private string ipAddress = "139.199.160.173";
         public void OpenRemoteBox(string serialNumber, string orderNo, string warehouseIndexs,byte type=0x01)
         {
          

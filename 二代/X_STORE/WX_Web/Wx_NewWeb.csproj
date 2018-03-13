@@ -1594,6 +1594,7 @@
     <Content Include="Shop\pages\Manager\GoodsInfoList.aspx" />
     <Content Include="Shop\pages\Manager\RoomInfoList.aspx" />
     <Content Include="Shop\pages\Manager\UserInfoList.aspx" />
+    <Content Include="Shop\pages\oauthv3.aspx" />
     <Content Include="Shop\pages\oauth.aspx" />
     <Content Include="Shop\pages\cart.html" />
     <Content Include="Shop\pages\changePsd.aspx" />
@@ -1941,6 +1942,9 @@
     <Compile Include="Shop\ashx\chooseGoods.ashx.cs">
       <DependentUpon>chooseGoods.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Shop\ashx\GetAccessToken.ashx.cs">
+      <DependentUpon>GetAccessToken.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Shop\ashx\GetCartNum.ashx.cs">
       <DependentUpon>GetCartNum.ashx</DependentUpon>
     </Compile>
@@ -2229,6 +2233,13 @@
     </Compile>
     <Compile Include="Shop\pages\Manager\UserInfoList.aspx.designer.cs">
       <DependentUpon>UserInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shop\pages\oauthv3.aspx.cs">
+      <DependentUpon>oauthv3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shop\pages\oauthv3.aspx.designer.cs">
+      <DependentUpon>oauthv3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Shop\pages\oauth.aspx.cs">
       <DependentUpon>oauth.aspx</DependentUpon>
@@ -2675,6 +2686,7 @@
     <Content Include="Shop\ashx\GetCartNum.ashx" />
     <Content Include="Shop\ashx\managerSetPsd.ashx" />
     <Content Include="Shop\ashx\CheckOrderState.ashx" />
+    <Content Include="Shop\ashx\GetAccessToken.ashx" />
     <None Include="style\Thumbs.db" />
     <None Include="sy_img\Thumbs.db" />
     <Content Include="Talk\fonts\ionicons.eot" />

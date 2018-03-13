@@ -21,7 +21,7 @@ namespace Wx_NewWeb.Shop.ashx
         }
         public string access_token()
         {
-            var dt = comfun.GetDataTableBySQL(@"select Id from WP_AccessToken where DATEADD(hour,2, create_time) > getdate()");
+            var dt = comfun.GetDataTableBySQL(@"select top 1 * from WP_AccessToken where DATEADD(hour,2, create_time) > getdate() order by Id desc");
             //如果加了两个小时还是小于当前时间，说明token过期，需要重新获取
             if (dt.Rows.Count == 0)
             {

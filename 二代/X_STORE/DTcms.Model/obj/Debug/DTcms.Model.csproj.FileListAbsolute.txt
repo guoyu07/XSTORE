@@ -368,3 +368,4 @@ X:\Git\XStore\二代\X_STORE\DTcms.Model\bin\Debug\Newtonsoft.Json.dll
 X:\Git\XStore\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csproj.CoreCompileInputs.cache
 X:\Git\XStore\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.dll
 X:\Git\XStore\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.pdb
+X:\Git\XStore\二代\X_STORE\DTcms.Model\obj\Debug\DTcms.Model.csprojResolveAssemblyReference.cache

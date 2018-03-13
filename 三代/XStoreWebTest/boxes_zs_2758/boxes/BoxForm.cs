@@ -179,36 +179,43 @@ namespace boxes
                         break;
                     case 类型.心跳:
                         session.CustomType = 1;
-                        var cache =(List<OnlineBox>)CacheHelper.GetCache("Boxes");
-                        if (cache != null)
+                        var macDt = DbHelperSQL.GetDataTableBySQL(string.Format("select top 1 * from WP_库位表 where 箱子MAC ='{0}'", session.Mac));
+                        //如果没有查到信息，那么说明箱子在三代上
+                        if (macDt.Rows.Count == 0)
                         {
-                            var mac = cache.FirstOrDefault(o => o.mac.Equals(session.Mac));
-                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";mac:" + mac);
-                            //如果不存在，说明是二代系统的箱子
-                            if (mac != null)
+                            var cache = (List<OnlineBox>)CacheHelper.GetCache("Boxes");
+                            if (cache != null)
                             {
-                                //如果之前是离线的，需要通知管理后台
-                                if (!mac.online)
+                                var mac = cache.FirstOrDefault(o => o.mac.Equals(session.Mac));
+                                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";mac:" + mac);
+
+                                if (mac != null)
                                 {
-                                    var requestUrl = string.Format("{0}test/online?mac={1}", Constant.YunApi, mac.mac);
-                                    var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
-                                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";heartResponse:" + response);
-                                    if (!response.operationStatus.Equals("SUCCESS"))
+                                    //如果之前是离线的，需要通知管理后台
+                                    if (!mac.online)
                                     {
-                                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";在线通知接口请求失败");
+                                        var requestUrl = string.Format("{0}test/online?mac={1}", Constant.YunApi, mac.mac);
+                                        var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+                                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";heartResponse:" + response);
+                                        if (!response.operationStatus.Equals("SUCCESS"))
+                                        {
+                                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";在线通知接口请求失败");
+                                        }
                                     }
+                                    mac.online = true;
+                                    mac.lineTime = DateTime.Now;
+                                    CacheHelper.SetCache("Boxes", cache);
                                 }
-                                mac.online = true;
-                                mac.lineTime = DateTime.Now;
-                                CacheHelper.SetCache("Boxes", cache);
                             }
-                           
                         }
-                        //处理并存储心跳信息
-                        SaveHeart(requestInfo.Body);
-                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "心跳命令：" + requestInfo.Body.Command);
-                        //判断是否有异常开箱的情况，记录并反馈
-                        ShowLog(txtLog, requestInfo.Body.ToString());
+                        else
+                        {
+                            //处理并存储心跳信息
+                            SaveHeart(requestInfo.Body);
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "心跳命令：" + requestInfo.Body.Command);
+                            //判断是否有异常开箱的情况，记录并反馈
+                            ShowLog(txtLog, requestInfo.Body.ToString());
+                        }
                         break;
                     case 类型.开箱:
                         session.CustomType = 1;
