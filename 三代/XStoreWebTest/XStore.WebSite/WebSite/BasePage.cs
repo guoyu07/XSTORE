@@ -41,7 +41,7 @@ namespace XStore.WebSite
             {
                 if (debug)
                 {
-                    _openid = "ooZJm0e-HAspMBhNrw0bUGXD-k6M";//袁
+                    _openid = "o8eAHwCOGWFalh37wPcWYLjQEbRI";//袁
                     //_openid = "ooZJm0d_Cimev2TQHdCJGq4LOlHU";//储
                     //_openid = "ooZJm0Z0wg3kmeht0e4u40pgKuq4";//小号
                 }

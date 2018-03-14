@@ -272,6 +272,7 @@
     <Content Include="Content\mui.picker.min.css" />
     <Content Include="Content\Opreation\comprehensive.css" />
     <Content Include="Content\Opreation\deliveryNote.css" />
+    <Content Include="Content\Opreation\roomFillUp.css" />
     <Content Include="Scripts\mui.js" />
     <Content Include="Scripts\mui.picker.min.js" />
     <Content Include="Scripts\Util.js" />

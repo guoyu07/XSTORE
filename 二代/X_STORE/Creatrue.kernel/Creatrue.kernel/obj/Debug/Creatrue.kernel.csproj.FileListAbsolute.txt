@@ -217,3 +217,4 @@ X:\Git\XStore\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\bin\Debug\Creatrue.
 X:\Git\XStore\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.csproj.CoreCompileInputs.cache
 X:\Git\XStore\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.dll
 X:\Git\XStore\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.pdb
+X:\Git\XSTORE\二代\X_STORE\Creatrue.kernel\Creatrue.kernel\obj\Debug\Creatrue.kernel.csprojResolveAssemblyReference.cache

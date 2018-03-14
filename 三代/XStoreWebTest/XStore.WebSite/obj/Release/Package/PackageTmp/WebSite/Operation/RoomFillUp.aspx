@@ -28,10 +28,7 @@
 
                     });
                 }
-                
             }
-            
-           
         })
         function select_click(sender) {
             var obj = $(sender);
@@ -61,9 +58,10 @@
         }
         function selectAll(sender) {
             var selects = $(".roomSelectUl li").find(".label").find("img");
+            var flag = $(sender).attr("flag");
             selects.each(function () {
                 var obj = $(this);
-                if ($(sender).attr("flag")=="false") {
+                if (flag =="false") {
                     obj.closest("a").addClass("active");
                     obj.attr("src", "/Content/Images/checked.png");
                     $(sender).attr("flag", "true");
@@ -107,7 +105,7 @@
                             <a href="#" data-id='<%#Eval("mac")%>' onclick="select_click(this);">
                                 <img class="roomclass" src="/Content/Images/<%#(bool)Eval("online")?"room.png":"room_off.png" %>" />
                                 <p class="roomNumber"><%#Eval("room") %></p>
-                                <p class="label" ><img  class="gou" src="/Content/Images/unchecked.png"/></p>
+                                <p class="label" ><img  class="gou" flag ="false" src="/Content/Images/unchecked.png"/></p>
                             </a>
                         </li>
                     </ItemTemplate>

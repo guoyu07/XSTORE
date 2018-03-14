@@ -150,7 +150,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ycOWaRJajAKYGF5ziBIn/5cTtqAdGw6acGKvqNSojhQ=</dsig:DigestValue>
+        <dsig:DigestValue>mr5OOAJlxIRpAL8Ec+rzxFelWOgw5STniTXixXJaSXg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -162,19 +162,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vwviiRJKdyLcMmgsVbHno81pZ6Ci/3ekOscOvMDyIq4=</dsig:DigestValue>
+        <dsig:DigestValue>1XfstwQ+0Fxq7WnUA1dD4UzJp6RtyUI9LRsYvwpq8qE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XStore.Entity.dll" size="35328">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XStore.Entity.dll" size="35840">
       <assemblyIdentity name="XStore.Entity" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lJAkaj7EoUBd15tYrm/HgQbpnwqJ9zm5BQH/kUsJ1EI=</dsig:DigestValue>
+        <dsig:DigestValue>t0AimF95L160+JrToMcUYKaHa27cqCvV0QGcweNh9rs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

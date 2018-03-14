@@ -66,4 +66,4 @@ E:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\bin\Debug\Chloe.MySql.xml
 E:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.csproj.CoreCompileInputs.cache
 E:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.dll
 E:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.pdb
-X:\Git\XStore\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.csprojResolveAssemblyReference.cache
+X:\Git\XSTORE\三代\XStoreWebTest\XStore.Entity\obj\Debug\XStore.Entity.csprojResolveAssemblyReference.cache

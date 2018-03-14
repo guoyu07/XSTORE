@@ -21,7 +21,8 @@ namespace boxes
     public partial class BoxForm : Form
     {
         BoxServer boxServer = new BoxServer();
-
+        System.Timers.Timer offlineTimer;
+        System.Timers.Timer initTimer;
         public BoxForm()
         {
             InitializeComponent();
@@ -39,11 +40,12 @@ namespace boxes
             };
 
             InitBoxes();
-            var initTimer = new System.Timers.Timer(3600000);
+            initTimer = new System.Timers.Timer(3600000);
+            offlineTimer = new System.Timers.Timer(1000);
             initTimer.Elapsed += initTimer_Elapsed;
             initTimer.Start();
 
-            var offlineTimer = new System.Timers.Timer(60000);
+          
             offlineTimer.Elapsed += offlineTimer_Elapsed;
             offlineTimer.Start();
 
@@ -102,10 +104,11 @@ namespace boxes
         #region 离线检测
         private void offlineTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            var cache = ((List<OnlineBox>)CacheHelper.GetCache("Boxes")).Where(o => DateTime.Compare(o.lineTime.AddMinutes(5), DateTime.Now) < 0 && o.online == true).Select(o=>o.mac).ToList();
+            offlineTimer.Stop();
+            var cache = ((List<OnlineBox>)CacheHelper.GetCache("Boxes")).Where(o => DateTime.Compare(o.lineTime.AddMinutes(5), DateTime.Now) < 0 && o.online == true).ToList();
             if (cache.Count>0)
             {
-                var macStr = cache.Aggregate((x, y) => x + "," + y);
+                var macStr = cache.Select(o => o.mac).ToList().Aggregate((x, y) => x + "," + y);
                 LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";离线macStr:" + macStr);
                 var requestUrl = string.Format("{0}test/offline?macs={1}", Constant.YunApi, macStr);
                 LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";离线requestUrl:" + requestUrl);
@@ -115,8 +118,23 @@ namespace boxes
                 {
                     LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";离线通知接口请求失败");
                 }
+                else
+                {
+                    var allbox = (List<OnlineBox>)CacheHelper.GetCache("Boxes");
+                    
+                    foreach (OnlineBox ca in cache)
+                    {
+                        var box = allbox.FirstOrDefault(o => o.mac == ca.mac);
+                        if (box != null)
+                        {
+                            box.online = false;
+                        }
+                    }
+                    CacheHelper.SetCache("Boxes", allbox);
+                }
 
             }
+            offlineTimer.Start();
         }
         #endregion
 

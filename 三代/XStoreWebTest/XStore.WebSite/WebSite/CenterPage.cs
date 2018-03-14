@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using XStore.Common;
 using XStore.Entity;
+using XStore.Entity.Model;
 
 namespace XStore.WebSite.WebSite
 {
@@ -50,11 +53,25 @@ namespace XStore.WebSite.WebSite
             {
                 if (_wxuserInfo == null)
                 {
-                    _wxuserInfo = context.Query<UserWeiChat>().FirstOrDefault(o => o.openid.Equals(userInfo.weichat));
-                    if (_wxuserInfo != null)
+                    _wxuserInfo = new UserWeiChat();
+                    var requestUrl = Constant.YunApiV2 + "Shop/ashx/GetWxInfo.ashx?OpenId=" + OpenId;
+                    var response = JsonConvert.DeserializeObject<AjaxResponse>(Utils.HttpGet(requestUrl));
+                    if (response.success)
                     {
+                       
+                        _wxuserInfo.headpic = response.message.ObjToStr();
+
                         Session[Constant.WeiUser] = _wxuserInfo;
                     }
+                    else
+                    {
+                        _wxuserInfo.headpic = string.Empty;
+                    }
+                   
+                }
+                else
+                {
+                    Session[Constant.WeiUser] = _wxuserInfo;
                 }
                 return _wxuserInfo;
             }

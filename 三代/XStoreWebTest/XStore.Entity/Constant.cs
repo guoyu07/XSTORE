@@ -32,12 +32,12 @@ namespace XStore.Entity
         public const string OperationDic = "~/WebSite/Operation/";
         public const string InformationDic = "~/WebSite/Information/";
 
-        public const string JsLoginDic = YunApiV2+"WebSite/Login/";
-        public const string JsGoodsDic = YunApiV2 + "WebSite/Goods/";
-        public const string JsOrderDic = YunApiV2 + "WebSite/Order/";
-        public const string JsCenterDic = YunApiV2 + "WebSite/Center/";
-        public const string JsOperationDic = YunApiV2 + "WebSite/Operation/";
-        public const string JsInformationDic = YunApiV2 + "WebSite/Information/";
+        public const string JsLoginDic = "/WebSite/Login/";
+        public const string JsGoodsDic =  "/WebSite/Goods/";
+        public const string JsOrderDic =  "/WebSite/Order/";
+        public const string JsCenterDic =  "/WebSite/Center/";
+        public const string JsOperationDic =  "/WebSite/Operation/";
+        public const string JsInformationDic =  "/WebSite/Information/";
         public const string ApiDic = "/WebSite/_Ashx/";
 
        
