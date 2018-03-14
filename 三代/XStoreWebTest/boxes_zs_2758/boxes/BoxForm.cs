@@ -40,7 +40,7 @@ namespace boxes
             };
 
             InitBoxes();
-            initTimer = new System.Timers.Timer(3600000);
+            initTimer = new System.Timers.Timer(60000);
             offlineTimer = new System.Timers.Timer(1000);
             initTimer.Elapsed += initTimer_Elapsed;
             initTimer.Start();
@@ -95,7 +95,7 @@ namespace boxes
                     mac.lineTime = DateTime.Now;
                     macList.Add(mac);
                 }
-                CacheHelper.SetCache("Boxes", macList);
+                CacheHelper.SetCache("Boxes", macList,TimeSpan.FromHours(12));
             }
 
         }
@@ -106,6 +106,7 @@ namespace boxes
         {
             offlineTimer.Stop();
             var cache = ((List<OnlineBox>)CacheHelper.GetCache("Boxes")).Where(o => DateTime.Compare(o.lineTime.AddMinutes(5), DateTime.Now) < 0 && o.online == true).ToList();
+            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";内存中离线的cache:" + JsonConvert.SerializeObject(cache));
             if (cache.Count>0)
             {
                 var macStr = cache.Select(o => o.mac).ToList().Aggregate((x, y) => x + "," + y);
@@ -172,111 +173,144 @@ namespace boxes
         #region Session请求事件
         private void BoxProtocolServer_NewRequestReceived(BoxSession session, BoxRequestInfo requestInfo)
         {
-            //LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "所有的mac：" + JsonConvert.SerializeObject(boxServer.GetAllSessions().Select(o => new { o.CustomId, o.CustomType, o.SessionID }).ToList()));
-            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "当前session的ID：" + session.SessionID);
-            //如果头命令不是EF03则关闭当前的session
-            if (requestInfo.Body.Head.Contains("EF"))
+            try
             {
-
-                session.CustomId = requestInfo.Body.Mac;
-                session.Mac = requestInfo.Body.FormatMac;
-                switch ((类型)requestInfo.Body.Type)
+                //LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "所有的mac：" + JsonConvert.SerializeObject(boxServer.GetAllSessions().Select(o => new { o.CustomId, o.CustomType, o.SessionID }).ToList()));
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "当前session的ID：" + session.SessionID);
+                //如果头命令不是EF03则关闭当前的session
+                if (requestInfo.Body.Head.Contains("EF"))
                 {
-                    case 类型.微信:
-                        session.CustomType = 2;
-                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信传过来的命令：" + requestInfo.Body.Command);
-                        var command = BoxModel.ToCommand(requestInfo.Body);
-                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信端口命令：" + Converts.GetTPandMac(command));
-                        if (!OpenBoxByMac(session.CustomId, command, requestInfo.Body.OrderNo, 1))
-                        {
-                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱失败：");
-                            //需要发送byte数组的命令，返回微信处理
-                            //session.Send(JsonConvert.SerializeObject(new ResponseResult() { Status = false, ErrorCode = 01, Message ="箱子未连接"}));
-                        }
-                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱成功：");
-                        break;
-                    case 类型.心跳:
-                        session.CustomType = 1;
-                        var macDt = DbHelperSQL.GetDataTableBySQL(string.Format("select top 1 * from WP_库位表 where 箱子MAC ='{0}'", session.Mac));
-                        //如果没有查到信息，那么说明箱子在三代上
-                        if (macDt.Rows.Count == 0)
-                        {
-                            var cache = (List<OnlineBox>)CacheHelper.GetCache("Boxes");
-                            if (cache != null)
-                            {
-                                var mac = cache.FirstOrDefault(o => o.mac.Equals(session.Mac));
-                                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";mac:" + mac);
 
-                                if (mac != null)
+                    session.CustomId = requestInfo.Body.Mac;
+                    session.Mac = requestInfo.Body.FormatMac;
+                    switch ((类型)requestInfo.Body.Type)
+                    {
+                        case 类型.微信:
+                            session.CustomType = 2;
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信传过来的命令：" + requestInfo.Body.Command);
+                            var command = BoxModel.ToCommand(requestInfo.Body);
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信端口命令：" + Converts.GetTPandMac(command));
+                            if (!OpenBoxByMac(session.CustomId, command, requestInfo.Body.OrderNo, 1))
+                            {
+                                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱失败：");
+                                //需要发送byte数组的命令，返回微信处理
+                                //session.Send(JsonConvert.SerializeObject(new ResponseResult() { Status = false, ErrorCode = 01, Message ="箱子未连接"}));
+                            }
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱成功：");
+                            break;
+                        case 类型.心跳:
+                            session.CustomType = 1;
+                            var macDt = DbHelperSQL.GetDataTableBySQL(string.Format("select top 1 * from WP_库位表 where 箱子MAC ='{0}'", session.Mac));
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "箱子:" + session.Mac + " 是在三代上吗？：" + (macDt.Rows.Count == 0).ObjToStr());
+                            //如果没有查到信息，那么说明箱子在三代上
+                            if (macDt.Rows.Count == 0)
+                            {
+                                var cache = (List<OnlineBox>)CacheHelper.GetCache("Boxes");
+                                if (cache != null)
                                 {
-                                    //如果之前是离线的，需要通知管理后台
-                                    if (!mac.online)
+                                    var mac = cache.FirstOrDefault(o => o.mac.Equals(session.Mac));
+                                    if (mac != null)
                                     {
-                                        var requestUrl = string.Format("{0}test/online?mac={1}", Constant.YunApi, mac.mac);
-                                        var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
-                                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";heartResponse:" + response);
-                                        if (!response.operationStatus.Equals("SUCCESS"))
+                                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";内存中的Mac(" + session.Mac + ")信息:" + JsonConvert.SerializeObject(mac));
+                                        //如果之前是离线的，需要通知管理后台
+                                        if (!mac.online)
                                         {
-                                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";在线通知接口请求失败");
+                                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";Mac(" + session.Mac + ")在内存中离线");
+                                            var requestUrl = string.Format("{0}test/online?mac={1}", Constant.YunApi, mac.mac, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                                            var response = JsonConvert.DeserializeObject<BuyResponse>(Utils.HttpGet(requestUrl));
+                                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";heartResponse:" + response);
+                                            if (!response.operationStatus.Equals("SUCCESS"))
+                                            {
+                                                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";在线通知接口请求失败");
+                                            }
+                                            mac.online = true;
+                                            mac.lineTime = DateTime.Now;
+                                            try
+                                            {
+                                                var printMac = cache.FirstOrDefault(o => o.mac.Equals(session.Mac));
+                                                if (printMac != null)
+                                                {
+                                                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";Mac(" + session.Mac + ")内存中:" + JsonConvert.SerializeObject(printMac));
+                                                }
+                                                else
+                                                {
+                                                    LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";Mac(" + session.Mac + ")内存中不存在");
+                                                }
+
+                                                CacheHelper.SetCache("Boxes", cache, TimeSpan.FromHours(12));
+                                            }
+                                            catch (Exception ex)
+                                            {
+                                                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "Mac(" + session.Mac + ");异常日志：" + ex.Message + ";异常位置：" + ex.StackTrace);
+                                            }
+                                           
                                         }
+
                                     }
-                                    mac.online = true;
-                                    mac.lineTime = DateTime.Now;
-                                    CacheHelper.SetCache("Boxes", cache);
+                                    else
+                                    {
+                                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + ";" + session.Mac + "不存在内存中");
+                                    }
                                 }
                             }
-                        }
-                        else
-                        {
-                            //处理并存储心跳信息
-                            SaveHeart(requestInfo.Body);
-                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "心跳命令：" + requestInfo.Body.Command);
-                            //判断是否有异常开箱的情况，记录并反馈
+                            else
+                            {
+                                //处理并存储心跳信息
+                                SaveHeart(requestInfo.Body);
+                                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "心跳命令：" + requestInfo.Body.Command);
+                                //判断是否有异常开箱的情况，记录并反馈
+                                ShowLog(txtLog, requestInfo.Body.ToString());
+                            }
+                            break;
+                        case 类型.开箱:
+                            session.CustomType = 1;
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "开箱回复命令：" + requestInfo.Body.Command);
+                            //发送微信反馈
+                            SetOrderNo(session, requestInfo.Body.State);
                             ShowLog(txtLog, requestInfo.Body.ToString());
-                        }
-                        break;
-                    case 类型.开箱:
-                        session.CustomType = 1;
-                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "开箱回复命令：" + requestInfo.Body.Command);
-                        //发送微信反馈
-                        SetOrderNo(session, requestInfo.Body.State);
-                        ShowLog(txtLog, requestInfo.Body.ToString());
-                        break;
-                    default:
-                        session.CustomType = 1;
-                        break;
+                            break;
+                        default:
+                            session.CustomType = 1;
+                            break;
+                    }
                 }
-            }
-            //三代微信过来的信息
-            else if (requestInfo.Body.Head.Contains("FF"))
-            {
-                session.CustomId = requestInfo.Body.Mac;
-
-                switch ((类型)requestInfo.Body.Type)
+                //三代微信过来的信息
+                else if (requestInfo.Body.Head.Contains("FF"))
                 {
-                    case 类型.微信:
-                        session.CustomType = 2;
-                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信传过来的命令：" + requestInfo.Body.Command);
-                        var command = BoxModel.ToCommand(requestInfo.Body);
-                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信端口命令：" + Converts.GetTPandMac(command));
-                        if (!OpenBoxByMac(session.CustomId, command, requestInfo.Body.OrderNo, 1))
-                        {
-                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱失败：");
-                            //需要发送byte数组的命令，返回微信处理
-                            //session.Send(JsonConvert.SerializeObject(new ResponseResult() { Status = false, ErrorCode = 01, Message ="箱子未连接"}));
-                        }
-                        LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "开箱命令发送成功：");
-                        break;
-                    default:
-                        session.CustomType = 1;
-                        break;
+                    session.CustomId = requestInfo.Body.Mac;
+
+                    switch ((类型)requestInfo.Body.Type)
+                    {
+                        case 类型.微信:
+                            session.CustomType = 2;
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信传过来的命令：" + requestInfo.Body.Command);
+                            var command = BoxModel.ToCommand(requestInfo.Body);
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "微信端口命令：" + Converts.GetTPandMac(command));
+                            if (!OpenBoxByMac(session.CustomId, command, requestInfo.Body.OrderNo, 1))
+                            {
+                                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "已经开箱失败：");
+                                //需要发送byte数组的命令，返回微信处理
+                                //session.Send(JsonConvert.SerializeObject(new ResponseResult() { Status = false, ErrorCode = 01, Message ="箱子未连接"}));
+                            }
+                            LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "开箱命令发送成功：");
+                            break;
+                        default:
+                            session.CustomType = 1;
+                            break;
+                    }
+                }
+                else
+                {
+                    session.Close();
+                    return;
                 }
             }
-            else
+            catch (Exception ex)
             {
-                session.Close();
-                return;
+
+                LogHelper.WriteLog(DateTime.Now.ToString("HH:mm:ss") + "异常日志：" + ex.Message + ";异常位置：" + ex.StackTrace);
             }
+            
 
 
         }

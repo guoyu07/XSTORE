@@ -14,6 +14,7 @@ namespace XStore.WebSite.WebSite.Order
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "进入微信回调的aspx页面");
             WxPayNotify resultNotify = new WxPayNotify(this);
             resultNotify.ProcessNotify();
         }

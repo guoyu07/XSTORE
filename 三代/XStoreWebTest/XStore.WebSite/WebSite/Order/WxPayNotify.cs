@@ -1,6 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using Chloe.MySql;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,12 +11,14 @@ using XStore.Common.Helper;
 using XStore.Common.WeiXinPay;
 using XStore.Entity;
 using XStore.Entity.Model;
+using XStore.WebSite.DBFactory;
 
 namespace XStore.WebSite.WebSite.Order
 {
     public class WxPayNotify:Notify
     {
-        BasePage basePage = new BasePage();
+        public static string connString = ConfigurationManager.ConnectionStrings["ConnStr"].ConnectionString;
+        public MySqlContext context = new MySqlContext(new MySqlConnectionFactory(connString));
         public WxPayNotify(Page page) : base(page)
         {
 
@@ -23,6 +27,7 @@ namespace XStore.WebSite.WebSite.Order
         {
             try
             {
+                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "进入了微信的回调");
                 WxPayData notifyData = GetNotifyData();
                 //检查支付结果中transaction_id是否存在
                 if (!notifyData.IsSet("transaction_id"))
@@ -48,7 +53,6 @@ namespace XStore.WebSite.WebSite.Order
                 //查询订单成功
                 else
                 {
-                    var context = basePage.context;
                     string out_trade_no = notifyData.GetValue("out_trade_no").ToString();
                     out_trade_no = out_trade_no.Split('_')[0].ToString();
                     var orderInfo = context.Query<OrderInfo>().FirstOrDefault(o => o.code.Equals(out_trade_no));
@@ -65,10 +69,14 @@ namespace XStore.WebSite.WebSite.Order
                     {
                         try
                         {
+                            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "开始调用支付接口");
                             var requestUrl = string.Format("{2}test/pay?orderId={0}&payId={1}", out_trade_no, transaction_id,Constant.YunApi);
+                            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "开始调用支付接口：" + requestUrl);
                             var response = JsonConvert.DeserializeObject<OrderResponse>(Utils.HttpGet(requestUrl));
+                            LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "开始调用支付接口结束：" + JsonConvert.SerializeObject(response));
                             if (response.operationStatus.Equals("SUCCESS"))
                             {
+                                LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "开始开箱");
                                 var rbh = new RemoteBoxHelper();
                                 //执行开箱成功
                                 rbh.OpenRemoteBox(orderInfo.cabinet_mac, out_trade_no, orderInfo.pos.ObjToStr());
@@ -95,7 +103,6 @@ namespace XStore.WebSite.WebSite.Order
                         res.SetValue("return_msg", "订单金额不对");
                         page.Response.Write(res.ToXml());
                         page.Response.End();
-
                     }
                 }
             }
@@ -107,10 +114,7 @@ namespace XStore.WebSite.WebSite.Order
                 page.Response.Write(res.ToXml());
                 page.Response.End();
             }
-
         }
-
-
         //查询订单
         private bool QueryOrder(string transaction_id)
         {
