@@ -25,8 +25,25 @@
                         <p class="area l over2"><%=hotelInfo.hotel_name %></p>
                     </div>
                 </div>
+              
                 <div class="interval"></div>
                 <ul>
+                      <li class="changePsd">
+                        <a href='<%=Constant.JsInformationDic+"Wallet.aspx"%>' class="clearfix">
+                            <div class="l">
+                                <table>
+                                    <tr>
+                                        <td> <img src="/Content/Icon/钱包.png" style="height:25px; width:25px;"/></td>
+                                        <td> <span style="margin-left:5px;">钱包</span></td>
+                                    </tr>
+                                </table>
+                               
+                               
+                            </div>
+                            <div class="r iconfont icon-gengduo"></div>
+                        </a>
+                    </li>
+                    <div class="interval"></div>
                     <li class="deliveryTask">
                         <a href='<%=Constant.JsOperationDic+"RoomFillUp.aspx"%>' class="clearfix">
                             <div class="l">
@@ -46,6 +63,7 @@
                         </a>
                     </li>
                     <div class="interval"></div>
+                    
                     <li class="changePsd">
                         <a href='<%=Constant.JsLoginDic+"ChangePassword.aspx"%>' class="clearfix">
                             <div class="l">

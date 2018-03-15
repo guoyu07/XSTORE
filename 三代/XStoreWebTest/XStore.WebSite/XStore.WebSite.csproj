@@ -223,6 +223,7 @@
     <Content Include="Content\Goods\buyerIndex.css" />
     <Content Include="Content\Goods\detail.css" />
     <Content Include="Content\Center\hotelManager.css" />
+    <Content Include="Content\Icon\钱包.png" />
     <Content Include="Content\Images\active.png" />
     <Content Include="Content\Images\bottom.png" />
     <Content Include="Content\Images\btns.png" />
@@ -282,6 +283,7 @@
     <Content Include="WebSite\Information\GoodsInfo.aspx" />
     <Content Include="WebSite\Information\RoomInfo.aspx" />
     <Content Include="WebSite\Information\Settlement.aspx" />
+    <Content Include="WebSite\Information\Wallet.aspx" />
     <Content Include="WebSite\Login\Bridge.aspx" />
     <Content Include="WebSite\Login\ChangePassword.aspx" />
     <Content Include="WebSite\Oath\WxOath.aspx" />
@@ -467,6 +469,13 @@
     </Compile>
     <Compile Include="WebSite\Information\Settlement.aspx.designer.cs">
       <DependentUpon>Settlement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Information\Wallet.aspx.cs">
+      <DependentUpon>Wallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Information\Wallet.aspx.designer.cs">
+      <DependentUpon>Wallet.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Login\Bridge.aspx.cs">
       <DependentUpon>Bridge.aspx</DependentUpon>

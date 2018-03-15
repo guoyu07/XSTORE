@@ -40,8 +40,7 @@ namespace XStore.WebSite.WebSite.Login
                 var roomInfo = context.Query<Cabinet>().FirstOrDefault(o => o.mac.Equals(boxMac) && o.state != -1);
                 if (roomInfo == null)
                 {
-                    Response.Redirect(string.Format("http://x.x-store.com.cn/shop/pages/enter.aspx?boxmac={0}",boxMac), false);
-                    //MessageBox.Show(this, "system_alert", "箱子未绑定房间");
+                    Response.Redirect(string.Format(Constant.OperationDic + "BoxCheck.aspx?boxmac={0}", boxMac));
                     return;
                 }
                 var roleInfo = context.Query<UserRole>().FirstOrDefault(o => o.username == userInfo.username);

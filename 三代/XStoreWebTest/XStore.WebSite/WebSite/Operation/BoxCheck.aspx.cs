@@ -11,9 +11,33 @@ using XStore.Entity;
 
 namespace XStore.WebSite.WebSite.Operation
 {
-    public partial class BoxCheck : MacPage
+    public partial class BoxCheck : CenterPage
     {
-
+        #region 房间
+        private Cabinet _cabinet;
+        protected Cabinet cabinet
+        {
+            get
+            {
+                if (_cabinet == null)
+                {
+                    _cabinet = new Cabinet();
+                    var boxMac = string.Empty;
+                    if (Session[Constant.IMEI] == null || string.IsNullOrEmpty(Session[Constant.IMEI].ObjToStr()))
+                    {
+                        boxMac = Request.QueryString[Constant.IMEI].ObjToStr();
+                        Session[Constant.IMEI] = boxMac;
+                    }
+                    else
+                    {
+                        boxMac = Session[Constant.IMEI].ObjToStr();
+                    }
+                    _cabinet.mac = boxMac;
+                }
+                return _cabinet;
+            }
+        }
+        #endregion
         protected void Page_Load(object sender, EventArgs e)
         {
             Title = "幸事多私享空间-测试开箱";
