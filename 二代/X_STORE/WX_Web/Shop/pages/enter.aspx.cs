@@ -24,7 +24,7 @@ namespace Wx_NewWeb.Shop.pages
                     Session["boxmac"] = "";
                     Session["boxmac"] = Request.QueryString["boxmac"].ObjToStr();
                     var mac = Request.QueryString["boxmac"].ObjToStr();
-                    var macDt = comfun.GetDataTableBySQL(string.Format("select top 1 * from WP_库位表 where 箱子MAC ='{0}'", mac));
+                    var macDt = comfun.GetDataTableBySQL(string.Format("select top 1 * from WP_BarCode where BarCode ='{0}'", mac));
                     if (macDt.Rows.Count == 0)
                     {
                         Response.Redirect(string.Format(home_url + "/WebSite/Login/Welcome.aspx?boxmac={0}&&OpenId={1}", mac,OpenId), false);
@@ -38,6 +38,13 @@ namespace Wx_NewWeb.Shop.pages
                 }
                 else
                 {
+                    //var mac = Request.QueryString["boxmac"].ObjToStr();
+                    //var macDt = comfun.GetDataTableBySQL(string.Format("select top 1 * from WP_库位表 where 箱子MAC ='{0}'", mac));
+                    //if (macDt.Rows.Count == 0)
+                    //{
+                    //    Response.Redirect(string.Format("~/Shop/pages/NoAuth.aspx"));
+                    //    return;
+                    //}
                     var select_sql = string.Format(@"select id from WP_用户权限 where 用户id = {0} and 仓库id in(
 select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '{1}')", UserId, Session["boxmac"].ObjToStr());
                     Log.WriteLog("页面：enter", "方法：submit_button_ServerClick", "select_sql:" + select_sql);
@@ -47,11 +54,14 @@ select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '{1}')", UserId, Ses
                         Response.Redirect(string.Format("~/Shop/pages/qaBoxCheck.aspx?boxmac={0}", BoxMac));
                         return;
                     }
+                  
                     if (select_dt.Rows.Count == 0)
                     {
                         Response.Redirect(string.Format("~/Shop/pages/NoAuth.aspx"));
                         return;
                     }
+                   
+                    
                     switch ((EnumCommon.角色权限)UserInfo["角色id"].ObjToInt(0))
                     {
                         case EnumCommon.角色权限.前台:
@@ -93,6 +103,7 @@ select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '{1}')", UserId, Ses
             }
             else
             {
+               
                 var select_sql = string.Format(@"select id from WP_用户权限 where 用户id = {0} and 仓库id in(
 select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '{1}')", UserId, Session["boxmac"].ObjToStr());
                 Log.WriteLog("页面：enter", "方法：submit_button_ServerClick", "select_sql:" + select_sql);

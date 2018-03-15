@@ -75,7 +75,7 @@ namespace Wx_NewWeb.Shop.pages
   from wp_订单子表 a
 left join wp_商品表 c on c.id=A.商品id
 left join wp_订单表 d on a.订单编号 = d.订单编号
-where a.仓库id={0}  and  d.state in(2,3,5) and {1} and a.价格>1
+where a.仓库id={0}  and  d.state =3 and {1} and a.价格>1
 ) e group by id
 order by 总数 desc", HotelInfo["id"].ObjToInt(0), where_sql);
             var dt = comfun.GetDataTableBySQL(sql);
