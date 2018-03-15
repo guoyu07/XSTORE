@@ -224,6 +224,7 @@
     <Content Include="Content\Goods\detail.css" />
     <Content Include="Content\Center\hotelManager.css" />
     <Content Include="Content\Icon\钱包.png" />
+    <Content Include="Content\Icon\钱币.png" />
     <Content Include="Content\Images\active.png" />
     <Content Include="Content\Images\bottom.png" />
     <Content Include="Content\Images\btns.png" />
@@ -283,6 +284,7 @@
     <Content Include="WebSite\Information\GoodsInfo.aspx" />
     <Content Include="WebSite\Information\RoomInfo.aspx" />
     <Content Include="WebSite\Information\Settlement.aspx" />
+    <Content Include="WebSite\Information\ShareDetail.aspx" />
     <Content Include="WebSite\Information\Wallet.aspx" />
     <Content Include="WebSite\Login\Bridge.aspx" />
     <Content Include="WebSite\Login\ChangePassword.aspx" />
@@ -469,6 +471,13 @@
     </Compile>
     <Compile Include="WebSite\Information\Settlement.aspx.designer.cs">
       <DependentUpon>Settlement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSite\Information\ShareDetail.aspx.cs">
+      <DependentUpon>ShareDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSite\Information\ShareDetail.aspx.designer.cs">
+      <DependentUpon>ShareDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSite\Information\Wallet.aspx.cs">
       <DependentUpon>Wallet.aspx</DependentUpon>

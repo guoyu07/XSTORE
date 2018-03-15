@@ -70,6 +70,7 @@
     <Compile Include="Model\CabinetResponse.cs" />
     <Compile Include="Model\FillUpResponse.cs" />
     <Compile Include="Model\FixedProductQuery.cs" />
+    <Compile Include="Model\ListResponse.cs" />
     <Compile Include="Model\ManageQuery.cs" />
     <Compile Include="Model\MessageResponse.cs" />
     <Compile Include="Model\OnlineBox.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Model\RegisterRequest.cs" />
     <Compile Include="Model\RoomState.cs" />
     <Compile Include="Model\SaleProduct.cs" />
+    <Compile Include="Model\ShareModel.cs" />
     <Compile Include="Model\UserQuery.cs" />
     <Compile Include="OrderInfo.cs" />
     <Compile Include="Product.cs" />

@@ -44,7 +44,7 @@ namespace XStore.WebSite
                     _openid = "o8eAHwCOGWFalh37wPcWYLjQEbRI";//袁
                     //_openid = "ooZJm0d_Cimev2TQHdCJGq4LOlHU";//储
                     //_openid = "ooZJm0Z0wg3kmeht0e4u40pgKuq4";//小号
-                    _openid = "o8eAHwM5_75X286k5teZThpp8ns8";
+                    //_openid = "o8eAHwM5_75X286k5teZThpp8ns8";
                 }
                 LogHelper.WriteLogs(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "openid：");
                 if (_openid == null || string.IsNullOrEmpty(_openid))
