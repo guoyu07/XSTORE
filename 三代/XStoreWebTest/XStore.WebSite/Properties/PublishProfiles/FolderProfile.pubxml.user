@@ -40,10 +40,10 @@
       <publishTime>03/14/2018 01:53:49</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.dll">
-      <publishTime>03/14/2018 14:28:08</publishTime>
+      <publishTime>03/16/2018 09:41:31</publishTime>
     </File>
     <File Include="bin/Common.AliDayu.pdb">
-      <publishTime>03/14/2018 14:28:08</publishTime>
+      <publishTime>03/16/2018 09:41:31</publishTime>
     </File>
     <File Include="bin/Flurl.dll">
       <publishTime>03/14/2018 01:53:50</publishTime>
@@ -313,22 +313,22 @@
       <publishTime>03/14/2018 01:53:51</publishTime>
     </File>
     <File Include="bin/XStore.Common.dll">
-      <publishTime>03/14/2018 14:28:10</publishTime>
+      <publishTime>03/16/2018 09:41:32</publishTime>
     </File>
     <File Include="bin/XStore.Common.pdb">
-      <publishTime>03/14/2018 14:28:10</publishTime>
+      <publishTime>03/16/2018 09:41:32</publishTime>
     </File>
     <File Include="bin/XStore.Entity.dll">
-      <publishTime>03/14/2018 14:28:07</publishTime>
+      <publishTime>03/16/2018 09:41:30</publishTime>
     </File>
     <File Include="bin/XStore.Entity.pdb">
-      <publishTime>03/14/2018 14:28:07</publishTime>
+      <publishTime>03/16/2018 09:41:30</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.dll">
-      <publishTime>03/14/2018 14:28:16</publishTime>
+      <publishTime>03/16/2018 09:41:36</publishTime>
     </File>
     <File Include="bin/XStore.WebSite.pdb">
-      <publishTime>03/14/2018 14:28:16</publishTime>
+      <publishTime>03/16/2018 09:41:36</publishTime>
     </File>
     <File Include="bin/zh-Hans/Microsoft.AspNet.FriendlyUrls.resources.dll">
       <publishTime>03/14/2018 01:53:50</publishTime>
@@ -367,7 +367,7 @@
       <publishTime>03/14/2018 01:53:48</publishTime>
     </File>
     <File Include="Content/fonts/iconfont.css">
-      <publishTime>03/14/2018 01:53:48</publishTime>
+      <publishTime>03/15/2018 09:56:20</publishTime>
     </File>
     <File Include="Content/fonts/iconfont.eot">
       <publishTime>03/14/2018 01:53:48</publishTime>
@@ -398,6 +398,12 @@
     </File>
     <File Include="Content/Icon/logo.png">
       <publishTime>03/14/2018 01:53:48</publishTime>
+    </File>
+    <File Include="Content/Icon/钱包.png">
+      <publishTime>03/15/2018 10:25:11</publishTime>
+    </File>
+    <File Include="Content/Icon/钱币.png">
+      <publishTime>03/16/2018 09:25:12</publishTime>
     </File>
     <File Include="Content/Images/active.png">
       <publishTime>03/14/2018 01:53:48</publishTime>
@@ -654,6 +660,171 @@
     <File Include="Index.aspx">
       <publishTime>01/22/2018 22:35:24</publishTime>
     </File>
+    <File Include="Script/bootstrap.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/bootstrap.min.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/common.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/jquery-1.10.2.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/jquery-1.10.2.min.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/jquery-1.10.2.min.map">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/jquery.myProgress.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/modernizr-2.6.2.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/cart.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/disMyself.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/goodsList.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/home.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/hotelList.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/myself.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/mySpace.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/news.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/payCenter.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/pickUp.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/roomStatus.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/x-store.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/xsd.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Modules/xStore.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/mui.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/mui.picker.min.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Plugins/layer.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Plugins/need/layer.css">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Plugins/vipspa-dev.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Plugins/vipspa.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Plugins/zepto.min.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/respond.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/respond.min.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/swipe.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/Util.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/DetailsView.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/Focus.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/GridView.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/Menu.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MenuStandards.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/SmartNav.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/TreeView.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/WebForms.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/WebParts.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/WebForms/WebUIValidation.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
+    <File Include="Script/weui.js">
+      <publishTime>03/14/2018 01:53:47</publishTime>
+    </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>03/14/2018 01:53:48</publishTime>
     </File>
@@ -829,13 +1000,13 @@
       <publishTime>03/14/2018 01:53:48</publishTime>
     </File>
     <File Include="WebSite/Center/EmployeeCenter.aspx">
-      <publishTime>03/14/2018 01:53:48</publishTime>
+      <publishTime>03/16/2018 09:25:12</publishTime>
     </File>
     <File Include="WebSite/Center/FinanceCenter.aspx">
       <publishTime>03/14/2018 01:53:48</publishTime>
     </File>
     <File Include="WebSite/Center/ManageCenter.aspx">
-      <publishTime>03/14/2018 01:53:48</publishTime>
+      <publishTime>03/16/2018 09:25:12</publishTime>
     </File>
     <File Include="WebSite/Center/PromotionCenter.aspx">
       <publishTime>03/14/2018 01:53:48</publishTime>
@@ -865,7 +1036,13 @@
       <publishTime>03/14/2018 01:53:48</publishTime>
     </File>
     <File Include="WebSite/Information/Settlement.aspx">
-      <publishTime>03/14/2018 01:53:48</publishTime>
+      <publishTime>03/16/2018 09:40:26</publishTime>
+    </File>
+    <File Include="WebSite/Information/ShareDetail.aspx">
+      <publishTime>03/16/2018 09:25:12</publishTime>
+    </File>
+    <File Include="WebSite/Information/Wallet.aspx">
+      <publishTime>03/16/2018 09:38:06</publishTime>
     </File>
     <File Include="WebSite/Login/Bind.aspx">
       <publishTime>03/14/2018 01:53:48</publishTime>
@@ -943,7 +1120,7 @@
       <publishTime>02/12/2018 21:17:24</publishTime>
     </File>
     <File Include="WebSite/Order/Alipay.html">
-      <publishTime>03/14/2018 01:53:48</publishTime>
+      <publishTime>03/16/2018 09:40:27</publishTime>
     </File>
     <File Include="WebSite/Order/AliReturn.aspx">
       <publishTime>03/14/2018 01:53:48</publishTime>
@@ -961,7 +1138,7 @@
       <publishTime>03/14/2018 01:53:48</publishTime>
     </File>
     <File Include="WebSite/Order/PayWaiting.aspx">
-      <publishTime>03/14/2018 01:53:48</publishTime>
+      <publishTime>03/16/2018 09:40:27</publishTime>
     </File>
     <File Include="WebSite/Order/WeiXinNotify.aspx">
       <publishTime>03/14/2018 01:53:48</publishTime>

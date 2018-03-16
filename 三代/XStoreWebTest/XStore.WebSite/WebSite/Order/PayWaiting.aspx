@@ -10,7 +10,7 @@
     <link rel="icon" href="/Content/Icon/logo.png" type="image/x-icon" />
     <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/paysuccess/css")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs","~/bundles/weui/js")%>
-    <script type="text/javascript" src="/Scripts/jquery.myProgress.js"></script>
+    <script type="text/javascript" src="/Script/jquery.myProgress.js"></script>
     <script type="text/javascript">
         $(function () {
             $("#progress_bar").myProgress({ speed: 30000, percent: 100 });

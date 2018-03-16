@@ -99,11 +99,10 @@ select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '{1}')", UserId, Ses
             if (UserInfo == null)
             {
                 Log.WriteLog("页面：enter", "方法：submit_button_ServerClick", "UserInfo是空");
-                 Response.Redirect(string.Format("~/Shop/Buyer/mySpace.aspx?boxmac={0}", BoxMac));
+                Response.Redirect(string.Format("~/Shop/Buyer/mySpace.aspx?boxmac={0}", BoxMac));
             }
             else
             {
-               
                 var select_sql = string.Format(@"select id from WP_用户权限 where 用户id = {0} and 仓库id in(
 select 仓库id from [dbo].[WP_库位表] where 箱子MAC = '{1}')", UserId, Session["boxmac"].ObjToStr());
                 Log.WriteLog("页面：enter", "方法：submit_button_ServerClick", "select_sql:" + select_sql);

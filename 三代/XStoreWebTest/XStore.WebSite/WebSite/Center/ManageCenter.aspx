@@ -64,14 +64,12 @@
                      <li class="changePsd">
                         <a href='<%=Constant.JsInformationDic+"Wallet.aspx"%>' class="clearfix">
                             <div class="l">
-                                <table>
+                               <table>
                                     <tr>
                                         <td> <img src="/Content/Icon/钱包.png" style="height:32px; width:32px;"/></td>
                                         <td> <span style="margin-left:10px; font-size:16px;">钱包</span></td>
                                     </tr>
                                 </table>
-                               
-                               
                             </div>
                             <div class="r iconfont icon-gengduo"></div>
                         </a>

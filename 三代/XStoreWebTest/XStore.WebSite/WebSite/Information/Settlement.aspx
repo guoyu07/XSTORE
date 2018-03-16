@@ -13,7 +13,7 @@
     <%: System.Web.Optimization.Styles.Render("~/bundles/CommonStyle","~/bundles/settlement/css")%>
     <%: System.Web.Optimization.Scripts.Render("~/bundles/CommonJs","~/bundles/settlement/js")%>
     <link href="/Content/mui.picker.min.css" rel="stylesheet" />
-    <script src="/Scripts/mui.picker.min.js"></script>
+    <script src="/Script/mui.picker.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server" style="height:100%;">

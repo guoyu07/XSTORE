@@ -19,23 +19,23 @@ namespace XStore.WebSite
                 "~/Content/layer.css"
                 ));
             bundles.Add(new ScriptBundle("~/bundles/CommonJs").Include(
-                "~/Scripts/jquery-1.10.2.js",
-                "~/Scripts/Plugins/layer.js",
-                  "~/Scripts/common.js"
+                "~/Script/jquery-1.10.2.js",
+                "~/Script/Plugins/layer.js",
+                  "~/Script/common.js"
                 ));
             #region Swipe
             bundles.Add(new StyleBundle("~/bundles/swiper/css").Include(
                "~/Content/swiper.min.css"
                ));
             bundles.Add(new ScriptBundle("~/bundles/swiper/js").Include(
-               "~/Scripts/swiper.min.js"
+               "~/Script/swiper.min.js"
                ));
             #endregion
             bundles.Add(new StyleBundle("~/bundles/weui/css").Include(
                "~/Content/weui.css"
                ));
             bundles.Add(new ScriptBundle("~/bundles/weui/js").Include(
-               "~/Scripts/weui.js"
+               "~/Script/weui.js"
                ));
             #region WeUi
 
@@ -67,8 +67,8 @@ namespace XStore.WebSite
            "~/Content/Goods/buyerIndex.css"
            ));
             bundles.Add(new ScriptBundle("~/bundles/goodslist/js").Include(
-                "~/Scripts/Plugins/vipspa.js",
-                "~/Scripts/Modules/mySpace.js"
+                "~/Script/Plugins/vipspa.js",
+                "~/Script/Modules/mySpace.js"
                 ));
             #endregion
             #region 商品详情
@@ -78,10 +78,10 @@ namespace XStore.WebSite
             #endregion
             #region 我的订单
             bundles.Add(new ScriptBundle("~/bundles/myorder/js").Include(
-               "~/Scripts/Plugins/layer.js",
-               "~/Scripts/common.js",
-               "~/Scripts/Modules/myself.js",
-               "~/Scripts/Plugins/vipspa.js"
+               "~/Script/Plugins/layer.js",
+               "~/Script/common.js",
+               "~/Script/Modules/myself.js",
+               "~/Script/Plugins/vipspa.js"
             ));
 
 
@@ -92,7 +92,7 @@ namespace XStore.WebSite
              "~/Content/Order/payCenter.css"
              ));
             bundles.Add(new ScriptBundle("~/bundles/paycenter/js").Include(
-             "~/Scripts/Modules/payCenter.js"
+             "~/Script/Modules/payCenter.js"
              ));
             #endregion
 
@@ -101,13 +101,13 @@ namespace XStore.WebSite
             "~/Content/Order/paySuccess.css"
             ));
             bundles.Add(new ScriptBundle("~/bundles/paysuccess/js").Include(
-             "~/Scripts/jquery.myProgress.js"
+             "~/Script/jquery.myProgress.js"
              ));
             #endregion
 
             #region 支付宝支付
             bundles.Add(new ScriptBundle("~/bundles/paysuccess/js").Include(
-             "~/Scripts/Util.js"
+             "~/Script/Util.js"
              ));
             #endregion
 
@@ -123,7 +123,7 @@ namespace XStore.WebSite
                 "~/Content/footer.css"
            ));
             bundles.Add(new ScriptBundle("~/bundles/employeecenter/js").Include(
-             "~/Scripts/Modules/dsMyself.js"
+             "~/Script/Modules/dsMyself.js"
              ));
             #endregion
 
@@ -136,8 +136,8 @@ namespace XStore.WebSite
                 "~/Content/footer.css"
            ));
             bundles.Add(new ScriptBundle("~/bundles/roomselect/js").Include(
-             "~/Scripts/Plugins/vipspa.js",
-             "~/Scripts/Plugins/vipspa-dev.js"
+             "~/Script/Plugins/vipspa.js",
+             "~/Script/Plugins/vipspa-dev.js"
              ));
             #endregion
 
@@ -156,9 +156,9 @@ namespace XStore.WebSite
                 "~/Content/footer.css"
            ));
             bundles.Add(new ScriptBundle("~/bundles/pickup/js").Include(
-              "~/Scripts/Modules/pickUp.js",
-             "~/Scripts/Plugins/vipspa.js",
-             "~/Scripts/Plugins/vipspa-dev.js"
+              "~/Script/Modules/pickUp.js",
+             "~/Script/Plugins/vipspa.js",
+             "~/Script/Plugins/vipspa-dev.js"
              ));
             #endregion
 
@@ -169,8 +169,8 @@ namespace XStore.WebSite
                "~/Content/footer.css"
           ));
             bundles.Add(new ScriptBundle("~/bundles/finishpickup/js").Include(
-            "~/Scripts/Plugins/vipspa.js",
-            "~/Scripts/Plugins/vipspa-dev.js"
+            "~/Script/Plugins/vipspa.js",
+            "~/Script/Plugins/vipspa-dev.js"
             ));
             #endregion
 
@@ -244,7 +244,7 @@ namespace XStore.WebSite
             "~/Content/footer.css"
            ));
             bundles.Add(new ScriptBundle("~/bundles/achievement/js").Include(
-           "~/Scripts/mui.js"
+           "~/Script/mui.js"
            ));
             #endregion
 
@@ -255,7 +255,7 @@ namespace XStore.WebSite
            "~/Content/footer.css"
           ));
             bundles.Add(new ScriptBundle("~/bundles/settlement/js").Include(
-           "~/Scripts/mui.js"
+           "~/Script/mui.js"
            ));
             #endregion
 
